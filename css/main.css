@@ -1122,7 +1122,7 @@ button {
   -webkit-text-fill-color: transparent;
 }
 .bluebg{
-  background: -webkit-linear-gradient(95deg,rgb(3 51 134) 6%,rgb(4 181 255) 39%, rgb(220 245 255) 92%);
+  background:-webkit-linear-gradient(90deg,rgb(32 42 63) 0%,rgb(207 207 248) 35%, rgb(246, 252, 255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
