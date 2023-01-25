@@ -128,6 +128,7 @@
   --text-5xl:  3rem;
   --text-6xl:  3.75rem;
   --text-7xl:  5rem;
+  --text-8xl:  7rem;
 }
 
 :root {
@@ -1318,6 +1319,9 @@ h6 {
 
 .text-7xl {
   font-size: var(--text-7xl);
+}
+.text-8xl {
+  font-size: var(--text-8xl);
 }
 
 @media (max-width: 1229px) {
