@@ -128,7 +128,7 @@
   --text-5xl:  3rem;
   --text-6xl:  3.75rem;
   --text-7xl:  5rem;
-  --text-8xl:  7rem;
+  --text-8xl:  6rem;
 }
 
 :root {
@@ -1117,6 +1117,18 @@ button {
   border-image-source: linear-gradient(90deg, rgb(112 43 244) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 50%, rgba(3, 10, 32, 0) 80%);
 
 } 
+.bdline{
+
+  background-image: url(/img/general/line.svg);
+  /* z-index: 99; */
+  padding-bottom: 8px;
+  background-position: 0% 102%;
+  /* position: relative; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* position: absolute; */
+  /* color: #0cad6a; */
+}
 .purplebg{
   background:-webkit-linear-gradient(95deg,rgb(60 19 232) 10%, rgb(120 86 241) 42%, rgb(233 215 255) 77%);
   -webkit-background-clip: text;
@@ -1421,6 +1433,13 @@ h6 {
   .sm\:text-6xl {
     font-size: var(--text-6xl);
   }
+  .sm\:fw-600 {
+    font-weight: 600;
+  }
+  .sm\.text-dark {
+    color: var(--font-dark)!important;
+  }
+  
 }
 
 @media (max-width: 575px) {
@@ -3652,7 +3671,7 @@ h6 {
 
   font-weight: 700;
   letter-spacing: -0.04em;
-  font-size: 3.5rem;
+  font-size: 4rem;
   line-height: 1.25;
   letter-spacing: -.04em;
   font-family: 'Inter';
@@ -3666,7 +3685,7 @@ h6 {
 
 @media (max-width: 767px) {
   .sectionHeading.-sm .sectionHeading__title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -6745,6 +6764,13 @@ html.full-page-slider body {
   color: #FFFFFF;
 }
 
+@media (max-width: 767px) {
+
+  .sm\.text-dark {
+    color: var(--font-dark)!important;
+  }
+  
+}
 .py-0 {
   padding-top: 0rem !important;
   padding-bottom: 0rem !important;
@@ -13346,4 +13372,16 @@ html.full-page-slider body {
       width: 120%;
       height: auto;
     }
+}
+
+.badge{
+  font-size: 1.3rem;
+  line-height: 1;
+  min-width: 2.7rem;
+  position: absolute;
+  background: #02c876;
+  top: 28px;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50%;
 }
