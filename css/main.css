@@ -3724,10 +3724,10 @@ h6 {
 /* LG */
 
 .sectionHeading.-lg .sectionHeading__title {
-  line-height: 1.1;
+  line-height: 1.3;
   letter-spacing: -0.03em;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
 }
 
 @media (max-width: 991px) {
@@ -12363,7 +12363,7 @@ html.full-page-slider body {
 }
 
 .layout-pt-xl {
-  padding-top: 10rem;
+  padding-top: 10rem !important;
 }
 
 .layout-pt-2xl {
@@ -12417,7 +12417,7 @@ html.full-page-slider body {
 }
 
 .layout-pb-xl {
-  padding-bottom: 10rem;
+  padding-bottom: 10rem !important;
 }
 
 .layout-pb-2xl {
