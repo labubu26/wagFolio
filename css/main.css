@@ -1123,7 +1123,7 @@ button {
   /* z-index: 99; */
   padding-bottom: 8px;
   background-position: 0% 102%;
-  /* position: relative; */
+  position: relative;
   background-size: contain;
   background-repeat: no-repeat;
   /* position: absolute; */
@@ -13380,7 +13380,8 @@ html.full-page-slider body {
   min-width: 2.7rem;
   position: absolute;
   background: #02c876;
-  top: 28px;
+  top: 0px;
+  right: -50px;
   padding: 12px;
   color: #fff;
   border-radius: 50%;
