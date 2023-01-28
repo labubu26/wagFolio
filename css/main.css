@@ -1129,6 +1129,15 @@ button {
   /* position: absolute; */
   /* color: #0cad6a; */
 }
+.bdcir{
+  background-image: url(/img/general/cir.svg);
+  /* z-index: 99; */
+  /* padding-bottom: 8px; */
+  background-position: 0% 100%;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .purplebg{
   background:-webkit-linear-gradient(95deg,rgb(60 19 232) 10%, rgb(120 86 241) 42%, rgb(233 215 255) 77%);
   -webkit-background-clip: text;
