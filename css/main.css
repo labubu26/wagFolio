@@ -13419,6 +13419,10 @@ html.full-page-slider body {
   background: #c7c7c742;
   position: absolute;
 }
+.accordion.active{
+  box-shadow: 0px 40px 20px -20px rgb(0 0 0 / 2%);
+  transform: scale(1);
+}
 
 .active:after {
   content: "\2212";
