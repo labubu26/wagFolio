@@ -2716,7 +2716,8 @@ for (i = 0; i < acc.length; i++) {
       panel.style.padding = null
     } else {
       panel.style.maxHeight = panel.scrollHeight +64 +64 + "px";
-      panel.style.padding = 32 + "px"
+      panel.style.paddingTop = 32 + "px"
+      panel.style.paddingBottom = 32 + "px"
 
     } 
   });
