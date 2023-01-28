@@ -13475,5 +13475,11 @@ html.full-page-slider body {
     background: var(--bg-dark-2);
     color: #fff;
   }
+  .panel {
+    background-color: #ffffff;
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
 
 }
