@@ -13467,6 +13467,7 @@ html.full-page-slider body {
     font-size: 24px;
     background: #c7c7c742;
     position: absolute;
+    z-index: 300;
   }
   .active:after {
     content: "\2212";
