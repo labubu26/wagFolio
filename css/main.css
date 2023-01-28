@@ -13514,3 +13514,8 @@ html.full-page-slider body {
   }
 
 }
+
+.text-cen{
+  align-items: end;
+    display: inline-flex;
+}

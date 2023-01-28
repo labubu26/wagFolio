@@ -2709,7 +2709,7 @@ var i;
 
 
 acc[0].classList.add("active");
-acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight +64 +64 + "px";
+acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight +128 +128 + "px";
 acc[0].nextElementSibling.style.paddingTop = 32 + "px"
 acc[0].nextElementSibling.style.paddingBottom = 32 + "px"
 
