@@ -2707,7 +2707,14 @@
 var acc = document.getElementsByClassName("accordion");
 var i;
 
+
+acc[0].classList.add("active");
+acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight +64 +64 + "px";
+acc[0].nextElementSibling.style.paddingTop = 32 + "px"
+acc[0].nextElementSibling.style.paddingBottom = 32 + "px"
+
 for (i = 0; i < acc.length; i++) {
+  
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;

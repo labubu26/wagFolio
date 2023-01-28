@@ -12932,6 +12932,10 @@ html.full-page-slider body {
    font-size: inherit;
 }
 
+.list-dot li:last-child{
+   margin-bottom: 0px;
+}
+
 .list-dot  li::before {
   position: absolute;
   content: '✔';
@@ -12945,6 +12949,29 @@ html.full-page-slider body {
   background: var(--bg-dark-6);
   border-radius: 100%;
   padding: 11px;
+}
+
+.dot li{
+  position: relative;
+  /* margin-bottom: 32px; */
+  padding-left: 32px;
+  font-size: inherit;
+  line-height: 1.6em;
+  margin-bottom: 16px;
+}
+
+.dot li::before {
+  position: absolute;
+    content: '';
+    top: 25%;
+    left: 0;
+    line-height: 0.8;
+    height: 14px;
+    width: 14px;
+    font-size: 16px;
+    /* color: var(--accent-color); */
+    background: rgb(217, 217, 217);
+    border-radius: 100%;
 }
 
 /* scrool */
