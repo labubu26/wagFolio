@@ -1436,9 +1436,7 @@ h6 {
   .sm\:fw-600 {
     font-weight: 600;
   }
-  .sm\.text-dark {
-    color: var(--font-dark)!important;
-  }
+ 
   
 }
 
@@ -6765,8 +6763,7 @@ html.full-page-slider body {
 }
 
 @media (max-width: 767px) {
-
-  .sm\.text-dark {
+  .sm\:text-dark {
     color: var(--font-dark)!important;
   }
   
@@ -13443,4 +13440,38 @@ html.full-page-slider body {
   overflow: hidden;
   transform-origin: center;
   transition: all 0.4s ease-out 0s;
+}
+
+@media (max-width: 767px) {
+  .accordion {
+
+      padding: 0px;
+ 
+  
+  }
+  .active, .accordion:hover {
+    /* background-color: #ccc; */
+    box-shadow: none;
+    transform: scale(1);
+  }
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    line-height: 24px;
+    padding: 16px 20px;
+    top: 25%;
+    min-width: 0px;
+    min-height: 0px;
+    right: 0px;
+    border-radius: 50%;
+    font-size: 24px;
+    background: #c7c7c742;
+    position: absolute;
+  }
+  .active:after {
+    content: "\2212";
+    background: var(--bg-dark-2);
+    color: #fff;
+  }
+
 }
