@@ -116,6 +116,8 @@
 
     feather.replace();
     videoBtn();
+    a();
+    StickScrollSection();
 
     //
     // your custom plugins init here
@@ -2559,8 +2561,9 @@
 
 
 
-  // Scroll Section
+  // Stick Scroll Section
 
+  function StickScrollSection(){
   document.addEventListener("scroll",
     (function () {
       for (var e = document.getElementsByClassName("sticky-header"),
@@ -2577,8 +2580,8 @@
               e[o].classList.remove("sticked-hidden"),
                 e[o].classList.add("sticked"); for (var l = 0; l < d.length; l++) {
                   var c = n.getElementsByClassName("nav-step")[l],
-                    s = document.getElementById(c.querySelector(".step-link").getAttribute("href").split("#")[1]); 
-                    (s ? s.getBoundingClientRect().y : window.innerHeight + 1) <= 70 ? c.classList.add("checked") : c.classList.remove("checked")
+                    s = document.getElementById(c.querySelector(".step-link").getAttribute("href").split("#")[1]);
+                  (s ? s.getBoundingClientRect().y : window.innerHeight + 1) <= 70 ? c.classList.add("checked") : c.classList.remove("checked")
                 } e[o].querySelector(".navigation-step-display").innerHTML = Array.from(e[o].querySelectorAll(".nav-step.checked")).pop().innerHTML
             }
       }
@@ -2589,7 +2592,7 @@
           try { for (i.s(); !(n = i.n()).done;) { n.value.addEventListener("click", a) } }
           catch (e) { i.e(e) } finally { i.f() } function a(e) {
             e.preventDefault(),
-            document.querySelector(".sticky-header.sticked") && document.querySelector(".sticky-header.sticked").classList.remove("show-dd");
+              document.querySelector(".sticky-header.sticked") && document.querySelector(".sticky-header.sticked").classList.remove("show-dd");
             for (var n = document.querySelector(this.getAttribute("href")), r = 0; n && n !== document.body;)r += n.offsetTop, n = n.offsetParent;
             var i = window.pageYOffset || document.body.scrollTop, a = Math.abs(i - r); if (a) var d = parseInt(t / 1e3 * o), l = a / d, c = r > i ? 1 : -1,
               s = setInterval((function () {
@@ -2605,7 +2608,7 @@
         (function () { document.querySelector(".sticky-header.sticked").classList.toggle("show-dd") }))
     }));
 
-
+  }
   /*--------------------------------------------------
     17. PJAX
   ---------------------------------------------------*/
@@ -2699,33 +2702,57 @@
   })();
 
 
+
+  /*--------------------------------------------------
+  Other
+---------------------------------------------------*/
+  function a() {
+
+    // acc faq
+    var acc = document.getElementsByClassName("accordion");
+    var vid = document.getElementsByClassName("videoembed");
+    var i;
+    if (!acc) return;
+    if (!vid) return;
+
+    else {
+       
+      vid[0].play();
+
+
+      for (i = 0; i < acc.length; i++) {
+        if (i == 0) {
+          acc[0].classList.add("active");
+          acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight + 128 + 128 + "px";
+          acc[0].nextElementSibling.style.paddingTop = 32 + "px"
+          acc[0].nextElementSibling.style.paddingBottom = 32 + "px"
+        }
+
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            panel.style.padding = null
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + 64 + 64 + "px";
+            panel.style.paddingTop = 32 + "px"
+            panel.style.paddingBottom = 32 + "px"
+
+          }
+        });
+      }
+
+    }
+
+  }
+
+
+
 })();
 
 
 
-// acc faq
-var acc = document.getElementsByClassName("accordion");
-var i;
 
 
-acc[0].classList.add("active");
-acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight +128 +128 + "px";
-acc[0].nextElementSibling.style.paddingTop = 32 + "px"
-acc[0].nextElementSibling.style.paddingBottom = 32 + "px"
 
-for (i = 0; i < acc.length; i++) {
-  
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      panel.style.padding = null
-    } else {
-      panel.style.maxHeight = panel.scrollHeight +64 +64 + "px";
-      panel.style.paddingTop = 32 + "px"
-      panel.style.paddingBottom = 32 + "px"
-
-    } 
-  });
-}
