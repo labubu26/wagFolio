@@ -3560,7 +3560,7 @@ h6 {
 
 .social.-bordered .social__item {
   border-radius: 100%;
-  border: 1px solid var(--bg-dark-1);
+  border: 1px solid rgba(170, 170, 170, 0.755);
   width: 2.75rem;
   height: 2.75rem;
   display: flex;
@@ -13529,7 +13529,7 @@ html.full-page-slider body {
 
 #svgContainer {
 max-width: 100%;
- height: 600px;
+ height: 96px;
 background-color: #ffffff00; 
 
-margin: auto;}
+margin: -20px auto;}
