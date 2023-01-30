@@ -131,7 +131,7 @@
                       </li>
                       <li>
                         <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
-                          class="button -xs -outline-white text-white mt-32">
+                          class="button -md -outline-white text-white mt-32">
                           <i class="icon mr-8" data-feather="download"></i> Download my CV
                         </a>
                       </li>
@@ -208,6 +208,7 @@
                     problem-solving
                     skills to create user-friendly digital software designs that deliver business value.</p>
                 </div>
+                
               </div>
 
 
@@ -229,6 +230,8 @@
                 </div>
               </div>
 
+             
+
             </div>
             <!-- row end -->
           </div>
@@ -237,7 +240,7 @@
 
           <!-- container start -->
           <a href="https://www.youtube.com/watch?v=-JRyjxlwy1Q" target="_blank" rel="noopener noreferrer">
-            <div class="container-fluid px-0 layout-pt-lg text-center">
+            <div class="container-fluid px-0 layout-pt-xl  text-center">
               <div data-anim-child="slide-up delay-3" data-parallax="0.5" class="h-lg">
                 <div data-parallax-target class="bg-image js-lazy" data-bg="img/backgrounds/about.jpg"></div>
                 <p class="mx-auto w-full bg-dark-1 button -xs -black text-base italic sm:text-base text-white  mt-72 sm:mt-0"
@@ -404,8 +407,7 @@
               <div class="col-lg-2 offset-lg-1 col-md-2 offset-md-1 sm:mt-32">
                 <a data-barba href="erp-system.html"
                   class="button -xs -outline-black -light text-black text-lg sm:text-base">
-                  View detail <i class="icon size-xs str-width-md size-xs str-width-md"
-                    data-feather="arrow-right"></i>
+                  View detail <i class="icon size-xs str-width-md size-xs str-width-md" data-feather="arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -431,8 +433,7 @@
               <div class="col-lg-2 offset-lg-1 col-md-3 offset-md-1">
 
                 <div class="img-gray sm:mt-24 d-flex align-items-center">
-                  <img src="/img/general/tinder.png" alt=""
-                    height="45px">
+                  <img src="/img/general/tinder.png" alt="" height="45px">
                   <p class="text-lg  ml-16 text-black sm:text-dark sm:text-base ">
                     Alo IELTS
                   </p>
@@ -442,8 +443,7 @@
               <div class="col-lg-2 offset-lg-1 col-md-2 offset-md-1 sm:mt-32">
                 <a data-barba href="erp-system.html"
                   class="button -xs -outline-black -light text-black text-lg sm:text-base">
-                  View detail <i class="icon size-xs str-width-md size-xs str-width-md"
-                    data-feather="arrow-right"></i>
+                  View detail <i class="icon size-xs str-width-md size-xs str-width-md" data-feather="arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -481,8 +481,7 @@
               <div class="col-lg-2 offset-lg-1 col-md-2 offset-md-1 sm:mt-32">
                 <a data-barba href="erp-system.html"
                   class="button -xs -outline-black -light text-black text-lg sm:text-base">
-                  View detail <i class="icon size-xs str-width-md size-xs str-width-md"
-                    data-feather="arrow-right"></i>
+                  View detail <i class="icon size-xs str-width-md size-xs str-width-md" data-feather="arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -520,8 +519,7 @@
               <div class="col-lg-2 offset-lg-1 col-md-2 offset-md-1 sm:mt-32">
                 <a data-barba href="erp-system.html"
                   class="button -xs -outline-black -light text-black text-lg sm:text-base">
-                  View detail <i class="icon size-xs str-width-md size-xs str-width-md"
-                    data-feather="arrow-right"></i>
+                  View detail <i class="icon size-xs str-width-md size-xs str-width-md" data-feather="arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -1214,7 +1212,7 @@
 
 
       <!-- EDUCATION -->
-      <section class="layout-pt-md layout-pb-xl">
+      <section class="layout-pt-md ">
         <div data-anim-wrap>
 
           <!-- container start -->
@@ -1229,7 +1227,7 @@
                     Academic <span class="bdline">Performance</span>
                   </h1>
                   <!-- <p class="pl-0 text-lg text-black sm:text-base mt-24 sm:d-none">Computer Science & Engineering</p> -->
-
+                 
                 </div>
               </div>
               <div class="col-xl-8  row y-gap-60 x-gap-60  ">
@@ -1301,14 +1299,15 @@
                 </div>
 
               </div>
+              <div class="col-xl-12 px-0">
+                <div id="svgContainer"></div>
+              </div>
 
-
+              
 
             </div>
           </div>
-        </div>
       </section>
-
 
 
 
@@ -1471,6 +1470,17 @@
   <!-- JavaScript -->
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+  <script>
+    /* Shapes */
+    var svgContainer = document.getElementById('svgContainer');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: 'https://lottie.host/44ee280f-2a6a-47af-a5ea-0c9a6cc50b20/81jzfOmpeh.json'
+    });
+  </script>
 
 </body>
 

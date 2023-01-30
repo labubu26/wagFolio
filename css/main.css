@@ -13526,3 +13526,10 @@ html.full-page-slider body {
   align-items: end;
     display: inline-flex;
 }
+
+#svgContainer {
+max-width: 100%;
+ height: 600px;
+background-color: #ffffff00; 
+
+margin: auto;}

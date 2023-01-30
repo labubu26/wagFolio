@@ -2712,14 +2712,13 @@
     var acc = document.getElementsByClassName("accordion");
     var vid = document.getElementsByClassName("videoembed");
     var i;
+
+    if (!vid ) return;
+    else{
+       vid[0]?.play();}
+
     if (!acc) return;
-    if (!vid) return;
-
     else {
-       
-      vid[0].play();
-
-
       for (i = 0; i < acc.length; i++) {
         if (i == 0) {
           acc[0].classList.add("active");
