@@ -23,6 +23,8 @@
 
 
   <title>WagTrung</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 </head>
 
 <body class="preloader-visible" data-barba="wrapper">
@@ -89,11 +91,11 @@
         <!---------------------->
         <nav class="nav js-nav">
           <div class="nav__inner js-nav-inner">
-            <div class="nav__bg js-nav-bg"></div>
-
+            <div class="nav__bg js-nav-bg">
+            <!-- style="border-bottom: 4px solid; -->
+            <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
             <div class="nav__container"
-              style="border-bottom: 4px solid;
-           border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)">
+              >
               <div class="nav__header">
                 <button type="button" class="nav-button-back js-nav-back">
                   <i class="icon" data-feather="arrow-left-circle"></i>
@@ -120,15 +122,18 @@
                         </a>
                       </li>
 
-                      <li>
-                        <a data-barba href="my-design-process.html">
-                          Design Process
-                        </a>
-                      </li>
+                     
 
                       <li>
                         <a data-barba href="about-me.html"> About Me </a>
                       </li>
+
+                      <li>
+                        <a data-barba href="my-design-process.html">
+                          Works
+                        </a>
+                      </li>
+
                       <li>
                         <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
                           class="button -sm -outline-white text-white mt-32">
@@ -196,11 +201,11 @@
       <!--                  -->
       <!---------------------->
       <!-- section start MASTER - -->
-      <section class="masthead -type-4 -full-height js-masthead-type-4 js-shapes">
+      <section class="masthead -type-4 -full-height js-masthead-type-4 js-shapes ">
         <!-- container start -->
-        <div class="container-fluid sm:container">
-          <div class="row">
-            <div class="col-lg-auto offset-lg-1 ">
+        <div class="container sm:container">
+          <div class="row justify-content-between">
+            <div class="col-lg-auto  ">
               <div class="masthead__content md:pt-16 md:px-16">
                 <div data-split="lines" data-split-page-reveal>
                   <p class="
@@ -219,7 +224,7 @@
 
                 <div data-split="lines" data-split-page-reveal>
                   <h1 class="masthead__title js-title">
-                    I'm a Digital </br>Product Designer.</span>
+                    I'm a Digital </br> Product Designer.
                   </h1>
                 </div>
 
@@ -238,7 +243,7 @@
                         data-feather="arrow-right"></i>
                     </button>
                     <a target="_blank" href="https://www.linkedin.com/in/wagtrung/"
-                      class="button -lg -outline-black text-black sm:d-none">
+                      class="button -lg -outline-black -light text-black sm:d-none">
                       My Linkedin
                       <!-- Get in touch-->
                     </a>
@@ -250,7 +255,39 @@
             <div class="col-lg-5 masthead__img sm:d-none js-image">
 
               <!-- <div class=""> -->
-              <img class="mt-64" width="100%" src="img/general/wt.png" />
+              <div class="wt">
+                <img class="mt-64 wtimg " width="100%" src="img/general/wt.png" />
+                <div class="pop_bg">
+                  <div class="pop">
+                    <img srcset="img/general/linec.svg" alt="" width="220px">
+                  </div>
+
+                  <div class="pop">
+                    <!-- <img
+                    srcset="img/general/dowc.svg"
+                      alt="" height="100px" /> -->
+                    <lottie-player src="https://lottie.host/3d4430d6-d4e8-4d04-b34e-c5a28b5b95a3/w0a9Btp7Tg.json"
+                      background="transparent" speed="1" style="width: auto; height: 110px;" loop
+                      autoplay></lottie-player>
+
+                  </div>
+                  <div class="pop">
+                    <!-- <img srcset="img/general/piec.svg" alt="" height="100px" />
+                     -->
+                    <div class="rounded-12 overflow-hidden ">
+                      <lottie-player src="https://lottie.host/c16095b6-ce40-4cca-a667-40866612afd0/Q7Qul5O5mT.json"
+                        background="transparent" speed="1" style="width: auto; height: 100px;" loop
+                        autoplay></lottie-player>
+                    </div>
+                  </div>
+
+                  <div class="pop">
+                    <img srcset="img/general/arr.svg" alt="" height="54px" />
+                  </div>
+
+
+                </div>
+              </div>
               <!-- </div> -->
 
             </div>
@@ -276,7 +313,7 @@
       <!-- SHORT ME          -->
       <!--                  -->
       <!---------------------->
-      <section class="banner" >
+      <section class="banner">
 
         <div class="videocontainer">
 
@@ -307,7 +344,8 @@
                     </h1>
                   </div>
 
-                  <a data-barba href="about-me.html" class="button -md -outline-white -light text-white wf-800 mt-48 sm:mt-24">
+                  <a data-barba href="about-me.html"
+                    class="button -md -outline-white -light text-white wf-800 mt-48 sm:mt-24">
                     More about me <i class="icon ml-8" data-feather="arrow-right"></i>
                   </a>
                 </div>
@@ -336,7 +374,7 @@
         <div class="row justify-content-center text-center mb-40 sm:mb-72" data-anim="slide-up ">
           <div class="sectionHeading -md ">
             <p class="sectionHeading__subtitle">The Selected Projects</p>
-            <h1 class="sectionHeading__title">
+            <h1 class="sectionHeading__title bdline">
               Case Studies
             </h1>
           </div>
@@ -538,9 +576,9 @@
                 <p class="sectionHeading__subtitle -light" data-anim="slide-up  delay-2">
                   Your next projects ?
                 </p>
-                <h2 class="sectionHeading__title text-white sm:d-none" data-anim="slide-up delay-3">
+                <h2 class="sectionHeading__title text-white sm:d-none " data-anim="slide-up delay-3">
                   Create <span class="greenbg ">more impact</span> <br class="sm:d-none d-block" />
-                  with <span class="bluebg ">less work</span>
+                  with <span class="bluebg">less work</span>
                 </h2>
                 <h2 class="sectionHeading__title text-white d-none sm:d-block" data-anim="slide-up delay-3">
                   Create more impact with less work
@@ -795,17 +833,21 @@
           <div class="footer__top">
             <!-- row start -->
             <div class="row y-gap-48 justify-content-between">
-              <div class="col-lg-auto col-sm-12">
+              <div class="col-lg-auto ">
+                <div class="px-0">
+                  <div id="svgContainer" class="sm:mb-24">
+                    <lottie-player src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
+                      background="transparent" speed="1" loop
+                      autoplay></lottie-player>
+                  </div>
+                </div>
 
-                <a data-barba href="index.html" class="footer__logo text-black">
+                <!-- <a data-barba href="index.html" class="footer__logo text-black">
                   <img class="js-lazy" data-srcset="img/logo/logo.svg" height="29px" alt="WagTrung Logo" />
 
-                </a>
+                </a> -->
 
-                <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
-                  class="button -xs -outline-black text-black mt-32">
-                  <i class="icon mr-4" data-feather="arrow-down"></i>Download my CV
-                </a>
+
               </div>
 
 
@@ -816,24 +858,28 @@
                   <div>
                     <a data-barba href="case-studies.html" class="button -underline">Case Studies</a>
                   </div>
-                  <div>
-                    <a data-barba href="my-design-process.html" class="button -underline mt-4">Design Process</a>
-                  </div>
+               
                   <div>
                     <a data-barba href="about-me.html" class="button -underline mt-4">About Me</a>
                   </div>
+
+                  <div>
+                    <a data-barba href="my-design-process.html" class="button -underline mt-4">Works</a>
+                  </div>
+
+                  
+
                 </div>
               </div>
 
               <div class="col-lg-3 col-sm-6">
                 <h4 class="text-xl fw-500 text-black">Info</h4>
 
-                <div class="footer__content text-base text-dark mt-16 sm:mt-12">
-
-                  <p class="mb-4">Binh Tan, HCM City, Viet Nam</p>
-                  <a data-barba class="button -underline"
+                <div class="footer__content text-base text-dark mb-16 sm:mt-12">
+                  <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
+                  <a data-barba class="button -underline mt-4"
                     href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
-                  <a data-barba class="button -underline" href="tel:+84938074106">+84 938 074 106</a>
+                  <a data-barba class="button -underline mt-4" href="tel:+84938074106">+84 938 074 106</a>
 
                 </div>
               </div>
@@ -842,17 +888,13 @@
 
               <div class="col-lg-auto col-auto">
                 <h4 class="text-xl fw-500 text-black">Explore more</h4>
-
-                <div class="social -bordered mt-16 sm:mt-12">
-
-
+                <div class="social -bordered mt-16 sm:mt-16">
                   <a class="social__item  text-black " href="https://www.behance.net/powow/">
                     <i class="fa fa-behance"></i>
                   </a>
                   <a class="social__item  text-black" href="https://www.linkedin.com/in/wagtrung/">
                     <i class="fa fa-linkedin"></i>
                   </a>
-
                 </div>
               </div>
             </div>
@@ -864,12 +906,17 @@
             <div class="row ">
               <div class="col">
                 <div class="footer__copyright">
+                  <div class="d-flex align-items-center x-gap-32">
+                    <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
+                      class="button -sm -outline-black -light text-black sm:d-none" style="font-size:.8rem">
+                      <i class="icon size-2xs str-width-lg  mr-8" data-feather="download"></i>Download my CV
+                    </a>
+                    <p class="text-left text-dark ">
+                      © 2020, WagTrung.
+                    </p>
+                    
+                  </div>
 
-                  <p class="text-left text-dark">
-                    © 2020, WagTrung.
-                    <!-- <img class="js-lazy" data-srcset="img/general/mean.svg" height="24px"
-                      alt="WagTrung Idea" /> -->
-                  </p>
 
                 </div>
               </div>
@@ -887,9 +934,10 @@
   <!-- barba container end -->
 
   <!-- JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>

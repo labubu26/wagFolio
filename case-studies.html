@@ -20,6 +20,8 @@
   <meta name="theme-color" content="#ffffff">
 
   <title>Case Studies</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 </head>
 
 <body class="preloader-visible" data-barba="wrapper">
@@ -56,135 +58,138 @@
    <!-- to-top-button end -->
 
    <main class="">
-       <!---------------------->
-       <!-- 0                -->
-       <!-- NAV OUT         -->
-       <!--                  -->
-       <!---------------------->
-     <header class="header -light -sticky-light js-header">
-       <!-- header__bar start -->
-       <div class="header__bar">
-         <div class="header__logo js-header-logo">
-           <a data-barba href="index.html">
-             <img class="header__logo__dark js-lazy" data-srcset="img/logo/logo.svg" height="29px"
-               alt="WagTrung Logo" />
-           </a>
-         </div>
+      <!---------------------->
+      <!-- 0                -->
+      <!-- NAV OUT         -->
+      <!--                  -->
+      <!---------------------->
+      <header class="header -light -sticky-light js-header">
+        <!-- header__bar start -->
+        <div class="header__bar">
+          <div class="header__logo js-header-logo">
+            <a data-barba href="index.html">
+              <img class="header__logo__dark js-lazy" data-srcset="img/logo/logo.svg" height="29px"
+                alt="WagTrung Logo" />
+            </a>
+          </div>
 
-         <div class="header__menu js-header-menu">
-           <button type="button" class="nav-button-open js-nav-open">
-             <i class="icon" data-feather="menu"></i>
-           </button>
-         </div>
-       </div>
-       <!-- header__bar end -->
+          <div class="header__menu js-header-menu">
+            <button type="button" class="nav-button-open js-nav-open">
+              <i class="icon" data-feather="menu"></i>
+            </button>
+          </div>
+        </div>
+        <!-- header__bar end -->
 
-       <!---------------------->
-       <!-- 0                -->
-       <!-- NAV INSIDE         -->
-       <!--                  -->
-       <!---------------------->
-       <nav class="nav js-nav">
-         <div class="nav__inner js-nav-inner">
-           <div class="nav__bg js-nav-bg"></div>
+        <!---------------------->
+        <!-- 0                -->
+        <!-- NAV INSIDE         -->
+        <!--                  -->
+        <!---------------------->
+        <nav class="nav js-nav">
+          <div class="nav__inner js-nav-inner">
+            <div class="nav__bg js-nav-bg">
+            <!-- style="border-bottom: 4px solid; -->
+            <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
+            <div class="nav__container"
+              >
+              <div class="nav__header">
+                <button type="button" class="nav-button-back js-nav-back">
+                  <i class="icon" data-feather="arrow-left-circle"></i>
+                </button>
 
-           <div class="nav__container"
-             style="border-bottom: 4px solid;
-           border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)">
-             <div class="nav__header">
-               <button type="button" class="nav-button-back js-nav-back">
-                 <i class="icon" data-feather="arrow-left-circle"></i>
-               </button>
+                <button type="button" class="mt-24 nav-btn-close js-nav-close pointer-events-none">
+                  <i class="icon" data-feather="x"></i>
+                </button>
 
-               <button type="button" class="mt-24 nav-btn-close js-nav-close pointer-events-none">
-                 <i class="icon" data-feather="x"></i>
-               </button>
+              </div>
 
-             </div>
+              <div class="nav__content">
+                <div class="nav__content__left">
+                  <div class="navList__wrap">
 
-             <div class="nav__content">
-               <div class="nav__content__left">
-                 <div class="navList__wrap">
+                    <ul class="navList js-navList">
+                      <li>
+                        <a data-barba href="index.html"> Home </a>
+                      </li>
 
-                   <ul class="navList js-navList">
-                     <li>
-                       <a data-barba href="index.html"> Home </a>
-                     </li>
+                      <li>
+                        <a data-barba href="case-studies.html">
+                          Case Studies
+                        </a>
+                      </li>
 
-                     <li>
-                       <a data-barba href="case-studies.html">
-                         Case Studies
-                       </a>
-                     </li>
+                     
 
-                     <li>
-                       <a data-barba href="my-design-process.html">
-                         Design Process
-                       </a>
-                     </li>
+                      <li>
+                        <a data-barba href="about-me.html"> About Me </a>
+                      </li>
 
-                     <li>
-                       <a data-barba href="about-me.html"> About Me </a>
-                     </li>
-                     <li>
-                       <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
-                         class="button -sm -outline-white text-white mt-32">
-                         <i class="icon mr-8" data-feather="download"></i> Download my CV
-                       </a>
-                     </li>
-                   </ul>
-                 </div>
-               </div>
+                      <li>
+                        <a data-barba href="my-design-process.html">
+                          Works
+                        </a>
+                      </li>
 
-               <div class="nav__content__right">
-                 <div class="nav__info">
-                   <div class="nav__info__item js-navInfo-item">
-                     <h5 class="text-sm tracking-none fw-300">
-                       UI/UX Designer
-                     </h5>
+                      <li>
+                        <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
+                          class="button -sm -outline-white text-white mt-32">
+                          <i class="icon mr-8" data-feather="download"></i> Download my CV
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-                     <div class="nav__info__content text-lg text-white mt-16">
-                       <p>Ngo Quang Trung</p>
-                     </div>
-                   </div>
+                <div class="nav__content__right">
+                  <div class="nav__info">
+                    <div class="nav__info__item js-navInfo-item">
+                      <h5 class="text-sm tracking-none fw-300">
+                        UI/UX Designer
+                      </h5>
 
-                   <div class="nav__info__item js-navInfo-item">
-                     <h5 class="text-sm tracking-none fw-300">
-                       Social sites
-                     </h5>
+                      <div class="nav__info__content text-lg text-white mt-16">
+                        <p>Ngo Quang Trung</p>
+                      </div>
+                    </div>
 
-                     <div class="nav__info__content text-lg text-white mt-16">
-                       <a target="_blank" href="https://www.linkedin.com/in/wagtrung/">LinkedIn</a>
-                       <a target="_blank" href="https://www.behance.com/powow/">Behance</a>
-                       <a target="_blank" href="https://github.com/wagtrung26">Github</a>
-                     </div>
-                   </div>
+                    <div class="nav__info__item js-navInfo-item">
+                      <h5 class="text-sm tracking-none fw-300">
+                        Social sites
+                      </h5>
 
-                   <div class="nav__info__item js-navInfo-item">
-                     <h5 class="text-sm tracking-none fw-300">Contact Me</h5>
+                      <div class="nav__info__content text-lg text-white mt-16">
+                        <a target="_blank" href="https://www.linkedin.com/in/wagtrung/">LinkedIn</a>
+                        <a target="_blank" href="https://www.behance.com/powow/">Behance</a>
+                        <a target="_blank" href="https://github.com/wagtrung26">Github</a>
+                      </div>
+                    </div>
 
-                     <div class="nav__info__content text-lg text-white mt-16">
-                       <a href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
-                       <a href="tel:+84938074106">+84 938 074 106</a>
+                    <div class="nav__info__item js-navInfo-item">
+                      <h5 class="text-sm tracking-none fw-300">Contact Me</h5>
 
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </nav>
-       <!-- nav end -->
-     </header>
-     <!-- header end -->
+                      <div class="nav__info__content text-lg text-white mt-16">
+                        <a href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
+                        <a href="tel:+84938074106">+84 938 074 106</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- nav end -->
+      </header>
+      <!-- header end -->
 
 
 
-<!-- END-NAV -->
-<!-- END-NAV -->
-<!-- END-NAV -->
-<!-- END-NAV -->
+      <!-- END-NAV -->
+      <!-- END-NAV -->
+      <!-- END-NAV -->
+      <!-- END-NAV -->
 
 
 
@@ -335,7 +340,7 @@
 
 
 
-      <!---------------------->
+       <!---------------------->
       <!-- 6                -->
       <!-- FOOTER         -->
       <!--                  -->
@@ -346,17 +351,21 @@
           <div class="footer__top">
             <!-- row start -->
             <div class="row y-gap-48 justify-content-between">
-              <div class="col-lg-auto col-sm-12">
+              <div class="col-lg-auto ">
+                <div class="px-0">
+                  <div id="svgContainer" class="sm:mb-24">
+                    <lottie-player src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
+                      background="transparent" speed="1" loop
+                      autoplay></lottie-player>
+                  </div>
+                </div>
 
-                <a data-barba href="index.html" class="footer__logo text-black">
+                <!-- <a data-barba href="index.html" class="footer__logo text-black">
                   <img class="js-lazy" data-srcset="img/logo/logo.svg" height="29px" alt="WagTrung Logo" />
 
-                </a>
+                </a> -->
 
-                <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
-                  class="button -xs -outline-black text-black mt-32">
-                  <i class="icon mr-4" data-feather="arrow-down"></i>Download my CV
-                </a>
+
               </div>
 
 
@@ -367,24 +376,28 @@
                   <div>
                     <a data-barba href="case-studies.html" class="button -underline">Case Studies</a>
                   </div>
-                  <div>
-                    <a data-barba href="my-design-process.html" class="button -underline mt-4">Design Process</a>
-                  </div>
+               
                   <div>
                     <a data-barba href="about-me.html" class="button -underline mt-4">About Me</a>
                   </div>
+
+                  <div>
+                    <a data-barba href="my-design-process.html" class="button -underline mt-4">Works</a>
+                  </div>
+
+                  
+
                 </div>
               </div>
 
               <div class="col-lg-3 col-sm-6">
                 <h4 class="text-xl fw-500 text-black">Info</h4>
 
-                <div class="footer__content text-base text-dark mt-16 sm:mt-12">
-
-                  <p class="mb-4">Binh Tan, HCM City, Viet Nam</p>
-                  <a data-barba class="button -underline"
+                <div class="footer__content text-base text-dark mb-16 sm:mt-12">
+                  <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
+                  <a data-barba class="button -underline mt-4"
                     href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
-                  <a data-barba class="button -underline" href="tel:+84938074106">+84 938 074 106</a>
+                  <a data-barba class="button -underline mt-4" href="tel:+84938074106">+84 938 074 106</a>
 
                 </div>
               </div>
@@ -393,17 +406,13 @@
 
               <div class="col-lg-auto col-auto">
                 <h4 class="text-xl fw-500 text-black">Explore more</h4>
-
-                <div class="social -bordered mt-16 sm:mt-12">
-
-
+                <div class="social -bordered mt-16 sm:mt-16">
                   <a class="social__item  text-black " href="https://www.behance.net/powow/">
                     <i class="fa fa-behance"></i>
                   </a>
                   <a class="social__item  text-black" href="https://www.linkedin.com/in/wagtrung/">
                     <i class="fa fa-linkedin"></i>
                   </a>
-
                 </div>
               </div>
             </div>
@@ -415,12 +424,17 @@
             <div class="row ">
               <div class="col">
                 <div class="footer__copyright">
+                  <div class="d-flex align-items-center x-gap-32">
+                    <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
+                      class="button -sm -outline-black -light text-black sm:d-none" style="font-size:.8rem">
+                      <i class="icon size-2xs str-width-lg  mr-8" data-feather="download"></i>Download my CV
+                    </a>
+                    <p class="text-left text-dark ">
+                      © 2020, WagTrung.
+                    </p>
+                    
+                  </div>
 
-                  <p class="text-left text-dark">
-                    © 2020, WagTrung.
-                    <!-- <img class="js-lazy" data-srcset="img/general/mean.svg" height="24px"
-                      alt="WagTrung Idea" /> -->
-                  </p>
 
                 </div>
               </div>

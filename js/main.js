@@ -2563,50 +2563,50 @@
 
   // Stick Scroll Section
 
-  function StickScrollSection(){
-  document.addEventListener("scroll",
-    (function () {
-      for (var e = document.getElementsByClassName("sticky-header"),
-        t = document.getElementsByClassName("navigation-steps"),
-        o = 0; o < e.length; o++) {
-        var n = e[o].querySelector(".navigation-steps"),
-          r = "section-" + e[o].getAttribute("data-end"),
-          i = e[o].parentNode.getBoundingClientRect().top,
-          a = e[o].getAttribute("data-end") ? document.getElementById(r).getBoundingClientRect().top +
-            document.getElementById(r).getBoundingClientRect().height - 70 : 0,
-          d = t[o].getElementsByClassName("nav-step"); if (i >= 0)
-          e[o].classList.remove("sticked"); else if (a <= 0) e[o].classList.add("sticked-hidden"),
-            e[o].classList.remove("show-dd"); else if (i <= 0) {
-              e[o].classList.remove("sticked-hidden"),
-                e[o].classList.add("sticked"); for (var l = 0; l < d.length; l++) {
-                  var c = n.getElementsByClassName("nav-step")[l],
-                    s = document.getElementById(c.querySelector(".step-link").getAttribute("href").split("#")[1]);
-                  (s ? s.getBoundingClientRect().y : window.innerHeight + 1) <= 70 ? c.classList.add("checked") : c.classList.remove("checked")
-                } e[o].querySelector(".navigation-step-display").innerHTML = Array.from(e[o].querySelectorAll(".nav-step.checked")).pop().innerHTML
-            }
-      }
-    })), document.addEventListener("DOMContentLoaded",
+  function StickScrollSection() {
+    document.addEventListener("scroll",
       (function () {
-        !function (e, t, o) {
-          var n, i = r([].slice.call(document.querySelectorAll(e)));
-          try { for (i.s(); !(n = i.n()).done;) { n.value.addEventListener("click", a) } }
-          catch (e) { i.e(e) } finally { i.f() } function a(e) {
-            e.preventDefault(),
-              document.querySelector(".sticky-header.sticked") && document.querySelector(".sticky-header.sticked").classList.remove("show-dd");
-            for (var n = document.querySelector(this.getAttribute("href")), r = 0; n && n !== document.body;)r += n.offsetTop, n = n.offsetParent;
-            var i = window.pageYOffset || document.body.scrollTop, a = Math.abs(i - r); if (a) var d = parseInt(t / 1e3 * o), l = a / d, c = r > i ? 1 : -1,
-              s = setInterval((function () {
-                if (i = window.pageYOffset || document.body.scrollTop, (a = Math.abs(i - r + 69)) < l)
-                  return scrollBy(0, a * c), void clearInterval(s); scrollBy(0, l * c),
-                    window.pageYOffset + window.innerHeight === document.body.scrollHeight && clearInterval(s)
-              }), t / d)
-          }
-        }(".step-link", 300, 60)
-      })),
-    document.querySelectorAll(".sticky-header .navigation-dropdown-toggle").forEach((function (e) {
-      e.addEventListener("click",
-        (function () { document.querySelector(".sticky-header.sticked").classList.toggle("show-dd") }))
-    }));
+        for (var e = document.getElementsByClassName("sticky-header"),
+          t = document.getElementsByClassName("navigation-steps"),
+          o = 0; o < e.length; o++) {
+          var n = e[o].querySelector(".navigation-steps"),
+            r = "section-" + e[o].getAttribute("data-end"),
+            i = e[o].parentNode.getBoundingClientRect().top,
+            a = e[o].getAttribute("data-end") ? document.getElementById(r).getBoundingClientRect().top +
+              document.getElementById(r).getBoundingClientRect().height - 70 : 0,
+            d = t[o].getElementsByClassName("nav-step"); if (i >= 0)
+            e[o].classList.remove("sticked"); else if (a <= 0) e[o].classList.add("sticked-hidden"),
+              e[o].classList.remove("show-dd"); else if (i <= 0) {
+                e[o].classList.remove("sticked-hidden"),
+                  e[o].classList.add("sticked"); for (var l = 0; l < d.length; l++) {
+                    var c = n.getElementsByClassName("nav-step")[l],
+                      s = document.getElementById(c.querySelector(".step-link").getAttribute("href").split("#")[1]);
+                    (s ? s.getBoundingClientRect().y : window.innerHeight + 1) <= 70 ? c.classList.add("checked") : c.classList.remove("checked")
+                  } e[o].querySelector(".navigation-step-display").innerHTML = Array.from(e[o].querySelectorAll(".nav-step.checked")).pop().innerHTML
+              }
+        }
+      })), document.addEventListener("DOMContentLoaded",
+        (function () {
+          !function (e, t, o) {
+            var n, i = r([].slice.call(document.querySelectorAll(e)));
+            try { for (i.s(); !(n = i.n()).done;) { n.value.addEventListener("click", a) } }
+            catch (e) { i.e(e) } finally { i.f() } function a(e) {
+              e.preventDefault(),
+                document.querySelector(".sticky-header.sticked") && document.querySelector(".sticky-header.sticked").classList.remove("show-dd");
+              for (var n = document.querySelector(this.getAttribute("href")), r = 0; n && n !== document.body;)r += n.offsetTop, n = n.offsetParent;
+              var i = window.pageYOffset || document.body.scrollTop, a = Math.abs(i - r); if (a) var d = parseInt(t / 1e3 * o), l = a / d, c = r > i ? 1 : -1,
+                s = setInterval((function () {
+                  if (i = window.pageYOffset || document.body.scrollTop, (a = Math.abs(i - r + 69)) < l)
+                    return scrollBy(0, a * c), void clearInterval(s); scrollBy(0, l * c),
+                      window.pageYOffset + window.innerHeight === document.body.scrollHeight && clearInterval(s)
+                }), t / d)
+            }
+          }(".step-link", 300, 60)
+        })),
+      document.querySelectorAll(".sticky-header .navigation-dropdown-toggle").forEach((function (e) {
+        e.addEventListener("click",
+          (function () { document.querySelector(".sticky-header.sticked").classList.toggle("show-dd") }))
+      }));
 
   }
   /*--------------------------------------------------
@@ -2710,12 +2710,7 @@
 
     // acc faq
     var acc = document.getElementsByClassName("accordion");
-    var vid = document.getElementsByClassName("videoembed");
     var i;
-
-    if (!vid ) return;
-    else{
-       vid[0]?.play();}
 
     if (!acc) return;
     else {
@@ -2743,6 +2738,92 @@
       }
 
     }
+
+
+    //cate
+    var cate = document.getElementsByClassName(".cate");
+    if (!cate) return;
+    else {
+
+    filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer?.getElementsByClassName("btn");
+      for (var i = 0; i < btns?.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+    }
+
+    // vid
+    var vid = document.getElementsByClassName("videoembed");
+    if (!vid) return;
+    else {
+      vid[0]?.play();
+    }
+
+    // TITTE
+    var wt = document.querySelector(".wt");
+    if (!wt) return;
+    else {
+      VanillaTilt.init(wt, {
+        max: 5,
+        speed: 900,
+        // scale: 1.03,
+        transition: true,
+        // easing: "cubic-bezier(.42,.02,.31,.99)",
+        perspective: 900,
+        // glare: true,
+        // maxGlare: 0.2,
+        // axis: "x",
+
+      });
+    }
+
+
+    // WORK CATE
+
+
+  
+    
+      
+
+    
 
   }
 

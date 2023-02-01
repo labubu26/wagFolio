@@ -7,6 +7,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Primary Meta Tags -->
+<title>WagTrung Home — Digital Product Designer</title>
+<meta name="title" content="WagTrung Home — Digital Product Designer">
+<meta name="description" content="With the IT background, I am always aiming for User-Centric Solutions (User Research, Personas, Empathy Mapping...), when working in Agile development.">
+
+<!--  Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wagtrung.netlify.app/">
+<meta property="og:title" content="WagTrung Home — Digital Product Designer">
+<meta property="og:description" content="With the IT background, I am always aiming for User-Centric Solutions (User Research, Personas, Empathy Mapping...), when working in Agile development.">
+<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://wagtrung.netlify.app/">
+<meta property="twitter:title" content="WagTrung Home — Digital Product Designer">
+<meta property="twitter:description" content="With the IT background, I am always aiming for User-Centric Solutions (User Research, Personas, Empathy Mapping...), when working in Agile development.">
+<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
@@ -23,6 +42,8 @@
   <meta name="theme-color" content="#ffffff">
 
   <title>About Me</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 </head>
 
 <body class="preloader-visible" data-barba="wrapper">
@@ -59,7 +80,7 @@
     <!-- to-top-button end -->
 
     <main class="">
-      <!---------------------->
+       <!---------------------->
       <!-- 0                -->
       <!-- NAV OUT         -->
       <!--                  -->
@@ -89,11 +110,11 @@
         <!---------------------->
         <nav class="nav js-nav">
           <div class="nav__inner js-nav-inner">
-            <div class="nav__bg js-nav-bg"></div>
-
+            <div class="nav__bg js-nav-bg">
+            <!-- style="border-bottom: 4px solid; -->
+            <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
             <div class="nav__container"
-              style="border-bottom: 4px solid;
-           border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)">
+              >
               <div class="nav__header">
                 <button type="button" class="nav-button-back js-nav-back">
                   <i class="icon" data-feather="arrow-left-circle"></i>
@@ -120,18 +141,21 @@
                         </a>
                       </li>
 
-                      <li>
-                        <a data-barba href="my-design-process.html">
-                          Design Process
-                        </a>
-                      </li>
+                     
 
                       <li>
                         <a data-barba href="about-me.html"> About Me </a>
                       </li>
+
+                      <li>
+                        <a data-barba href="my-design-process.html">
+                          Works
+                        </a>
+                      </li>
+
                       <li>
                         <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
-                          class="button -md -outline-white text-white mt-32">
+                          class="button -sm -outline-white text-white mt-32">
                           <i class="icon mr-8" data-feather="download"></i> Download my CV
                         </a>
                       </li>
@@ -167,7 +191,7 @@
                       <h5 class="text-sm tracking-none fw-300">Contact Me</h5>
 
                       <div class="nav__info__content text-lg text-white mt-16">
-                        <a href="mailto:thebifule@gmail.com">nqt99designs@gmail.com</a>
+                        <a href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
                         <a href="tel:+84938074106">+84 938 074 106</a>
 
                       </div>
@@ -1368,7 +1392,7 @@
 
 
 
-      <!---------------------->
+        <!---------------------->
       <!-- 6                -->
       <!-- FOOTER         -->
       <!--                  -->
@@ -1379,9 +1403,13 @@
           <div class="footer__top">
             <!-- row start -->
             <div class="row y-gap-48 justify-content-between">
-              <div class="col-lg-auto col-sm-12">
+              <div class="col-lg-auto ">
                 <div class="px-0">
-                  <div id="svgContainer" class="sm:mb-24"></div>
+                  <div id="svgContainer" class="sm:mb-24">
+                    <lottie-player src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
+                      background="transparent" speed="1" loop
+                      autoplay></lottie-player>
+                  </div>
                 </div>
 
                 <!-- <a data-barba href="index.html" class="footer__logo text-black">
@@ -1400,12 +1428,17 @@
                   <div>
                     <a data-barba href="case-studies.html" class="button -underline">Case Studies</a>
                   </div>
-                  <div>
-                    <a data-barba href="my-design-process.html" class="button -underline mt-4">Design Process</a>
-                  </div>
+               
                   <div>
                     <a data-barba href="about-me.html" class="button -underline mt-4">About Me</a>
                   </div>
+
+                  <div>
+                    <a data-barba href="my-design-process.html" class="button -underline mt-4">Works</a>
+                  </div>
+
+                  
+
                 </div>
               </div>
 
@@ -1413,13 +1446,10 @@
                 <h4 class="text-xl fw-500 text-black">Info</h4>
 
                 <div class="footer__content text-base text-dark mb-16 sm:mt-12">
-                
-
                   <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
                   <a data-barba class="button -underline mt-4"
                     href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
                   <a data-barba class="button -underline mt-4" href="tel:+84938074106">+84 938 074 106</a>
-                
 
                 </div>
               </div>
@@ -1428,18 +1458,13 @@
 
               <div class="col-lg-auto col-auto">
                 <h4 class="text-xl fw-500 text-black">Explore more</h4>
-
                 <div class="social -bordered mt-16 sm:mt-16">
-
-
                   <a class="social__item  text-black " href="https://www.behance.net/powow/">
                     <i class="fa fa-behance"></i>
                   </a>
                   <a class="social__item  text-black" href="https://www.linkedin.com/in/wagtrung/">
                     <i class="fa fa-linkedin"></i>
                   </a>
-                
-
                 </div>
               </div>
             </div>
@@ -1451,20 +1476,17 @@
             <div class="row ">
               <div class="col">
                 <div class="footer__copyright">
-
                   <div class="d-flex align-items-center x-gap-32">
-                    
-                  
                     <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
-                    class="button -sm -outline-black -light text-black sm:d-none" style="font-size:.8rem">
-                    <i class="icon size-2xs str-width-lg  mr-8" data-feather="download"></i>Download my CV
-                  </a>
-                  <p class="text-left text-dark ">
-                    © 2020, WagTrung.
-
-                  </p>
+                      class="button -sm -outline-black -light text-black sm:d-none" style="font-size:.8rem">
+                      <i class="icon size-2xs str-width-lg  mr-8" data-feather="download"></i>Download my CV
+                    </a>
+                    <p class="text-left text-dark ">
+                      © 2020, WagTrung.
+                    </p>
+                    
                   </div>
-                  
+
 
                 </div>
               </div>
@@ -1484,21 +1506,9 @@
 
 
   <!-- JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    /* Shapes */
-    var svgContainer = document.getElementById('svgContainer');
-    var animItem = bodymovin.loadAnimation({
-      wrapper: svgContainer,
-      animType: 'svg',
-      loop: true,
-      path: 'https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json'
-    });
 
-    
-  </script>
 
 </body>
 
