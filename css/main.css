@@ -13559,7 +13559,7 @@ html.full-page-slider body {
   transform: scale(1);
 }
 
-.active:after {
+.accordion.active:after {
   content: "\2212";
   background: var(--bg-dark-2);
   color: #fff;
@@ -13796,4 +13796,13 @@ html.full-page-slider body {
      
      transform:translateX(1%) translateY( 14%) scale(1.05) 
   }
+}
+
+#myBtnContainer{
+  width: fit-content;
+  position: sticky;
+  background: #ffffff;
+  color: #3a3a3a;
+  transition: all 0.3s;
+  box-shadow: rgb(202 216 255 / 37%) 0px 9px 16px;
 }
