@@ -2865,11 +2865,27 @@ function w3RemoveClass(element, name) {
 }
 
 var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
+var btns = btnContainer?.getElementsByClassName("btn");
+for (var i = 0; i < btns?.length; i++) {
   btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+
+
+
+// more
+function more() {
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (moreText.style.display == "block") {
+    btnText.innerHTML = "Show 5 more Achievements" ; 
+    moreText.style.display = "none";
+  } else {
+    btnText.innerHTML = "Show less"; 
+    moreText.style.display = "block";
+  }
 }

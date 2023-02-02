@@ -6473,6 +6473,10 @@ body.is-cursor-active * {
 .section-border-bottom-dark > * {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
+.border-bottom-dark2{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+}
 
 .section-border-bottom-dark > *:last-child {
   border-bottom: unset;
@@ -13829,4 +13833,21 @@ html.full-page-slider body {
   overflow: hidden;
   padding: 8px;
   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#more {display: none;}
+
+#myBtn{
+  display: block;
+  /* margin: 32px auto 0; */
+  /* background: rgb(245, 246, 247);
+  border-bottom: 1px solid rgba(237, 237, 237, 0.841);
+  border-radius: 12px;
+  padding: 14px 48px;
+  font-size: 1rem;
+  font-family: 'Inter';
+  color: var(--font-dark);
+  font-weight: 500; */
 }
