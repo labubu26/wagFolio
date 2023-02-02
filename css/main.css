@@ -13526,6 +13526,7 @@ html.full-page-slider body {
 
 /* ACCC FAQ */
 .accordion {
+  min-height: 120px;
   position: relative;
   cursor: pointer;
   padding: 0 32px;
@@ -13550,17 +13551,19 @@ html.full-page-slider body {
   content: "\002B";
   color: #404040;
   line-height: 2em;
-  top: 25%;
+  top: 50%;
+    transform: translateY(-50%);
   right: 32px;
   text-align: center;
   font-size: 32px;
   font-weight: 300;
   position: absolute;
-  background: transparent;
+
   width: 64px;
   height: 64px;
   border-radius: 50%;
   border: 2px solid #EFEFEF;
+  background: transparent;
   transition: all .2s;
 }
 .accordion:hover:after {
@@ -13605,17 +13608,18 @@ html.full-page-slider body {
   }
   .accordion:after {
     content: "\002B";
-    color: #777;
-    line-height: 24px;
-    padding: 16px 20px;
+    color: #828282;
+    line-height: 32px;
+    padding: 16px;
     top: 50%;
     transform: translateY(-50%);
     min-width: 0px;
     min-height: 0px;
     right: 0px;
     border-radius: 50%;
-    font-size: 24px;
-    background: #c7c7c742;
+    font-size: 32px;
+    border: 2px solid #EFEFEF;
+    background: transparent;
     position: absolute;
     z-index: 300;
   }
