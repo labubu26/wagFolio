@@ -3778,7 +3778,7 @@ h6 {
   font-weight: 700;
   letter-spacing: -0.04em;
   font-size: 4rem;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: -0.04em;
   font-family: "Inter";
 }
@@ -13544,17 +13544,23 @@ html.full-page-slider body {
 
 .accordion:after {
   content: "\002B";
-  color: #777;
-  line-height: 2.3em;
+  color: #404040;
+  line-height: 2em;
   top: 25%;
-  min-width: 56px;
-  min-height: 56px;
   right: 32px;
   text-align: center;
-  border-radius: 50%;
-  font-size: 24px;
-  background: #c7c7c742;
+  font-size: 32px;
+  font-weight: 300;
   position: absolute;
+  background: transparent;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #EFEFEF;
+  transition: all .2s;
+}
+.accordion:hover:after {
+  background: #EFEFEF;
 }
 .accordion.active {
   box-shadow: 0px 40px 20px -20px rgb(0 0 0 / 2%);
@@ -13609,7 +13615,7 @@ html.full-page-slider body {
     position: absolute;
     z-index: 300;
   }
-  .active:after {
+  .accordion.active:after {
     content: "\2212";
     background: var(--bg-dark-2);
     color: #fff;
@@ -13644,8 +13650,9 @@ html.full-page-slider body {
   /* padding-bottom: 2rem; */
   /* filter: grayscale(1); */
   transition: all 0.5s ease;
+  border-radius: 8px;
   margin-bottom: 2rem;
-  box-shadow: 0px 5px 20px -6px #a8a8a840;
+  box-shadow: -2px 5px 20px -10px #a8a8a840;
 }
 .imgWork img:hover {
   /* filter: grayscale(0); */
@@ -13663,24 +13670,29 @@ html.full-page-slider body {
 .btn {
   border: none;
     outline: none;
-    padding: 16px 24px;
-    font-size: 0.75rem;
+    padding: 8px 32px;
+    font-size:1rem;
     font-family: 'Inter';
     color: var(--font-dark);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 600;
-    letter-spacing: 0.1em;
+    /* letter-spacing: 0.1em; */
     cursor: pointer;
 }
 
 .btn:hover {
-  background-color: rgba(221, 221, 221, 0.416);
+  color: var(--bg-dark-1);
 }
 
 .btn.active {
-  background-color: var(--bg-dark-1);
-  color: white;
   pointer-events: none;
+    color: var(--bg-dark-1);
+
+    flex-shrink: 0;
+    background: rgb(255 255 255);
+
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px;
 }
 
 /* .cursorx{
@@ -13808,10 +13820,13 @@ html.full-page-slider body {
 
 #myBtnContainer{
   width: fit-content;
-    position: sticky;
-    background: #f8f8f869;
-    transition: all 0.3s;
-    margin: 0px;
-    border-radius: 8px;
-    overflow: hidden;
+  position: sticky;
+  background: rgb(245, 246, 247);
+  border-bottom: 1px solid rgba(237, 237, 237, 0.841);
+  transition: all 0.3s;
+  margin: 0px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 8px;
+  display: flex;
 }
