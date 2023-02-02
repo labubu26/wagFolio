@@ -215,45 +215,27 @@
 
 
       <!-- section start -->
-      <section data-anim-wrap class="layout-pt-xl layout-pb-lg">
+      <section data-anim-wrap class="layout-pt-headerBar layout-pb-lg">
         <div class="container">
           <!-- row start -->
-          <div class="row">
-            <div class="col-xl-10 col-md-8">
+          <div class="row justify-content-center text-center mb-72 sm:mb-32">
               <div class="sectionHeading -md">
                 <div data-anim-child="slide-up delay-2">
-                  <h1 class="sectionHeading__title">My Creative Works</h1>
+                  <p class="sectionHeading__subtitle">Artwork gallery</p>
+                  <h1 class="sectionHeading__title bdline">Creative Works</h1>
                 </div>
               </div>
-            </div>
           </div>
           <!-- row end -->
 
-          <!-- row start -->
-          <div class="row mt-40 md:mt-24">
-            <div class="col-xl-6 col-lg-8 col-md-9">
-              <div data-anim-child="slide-up delay-3">
-                <p class="text-lg sm:text-base">
-                  <!-- My design process starts with understanding. It is about
-                  searching the right question and the problem that needs to
-                  be solved. We are designing for businesses and people. We
-                  have to think about both of them while focusing on the
-                  problems. -->
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- row end -->
-
-          <div id="myBtnContainer" data-anim-child="slide-up delay-5">
+          <div id="myBtnContainer" data-anim-child="slide-right ">
             <button class="btn active" onclick="filterSelection('all')"> Show all</button>
             <button class="btn" onclick="filterSelection('nature')"> Nature</button>
             <button class="btn" onclick="filterSelection('cars')"> Cars</button>
             <button class="btn" onclick="filterSelection('people')"> People</button>
           </div>
-
           <!-- row start -->
-          <div class="cate row x-gap-32 layout-pt-md ">
+          <div class="cate row x-gap-32 layout-pt-xs ">
             <div class="col-lg-4 col-md-6 col-sm-12 ">
               <div class="imgWork" data-anim="slide-up delay-1">
                 <img class="column" src="img/work/a (1).jpg" alt="">
@@ -487,50 +469,7 @@
   <!-- JavaScript -->
   <script src="js/vendors.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    filterSelection("all")
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("column");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-      }
-    }
 
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-      }
-    }
-
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
-      }
-      element.className = arr1.join(" ");
-    }
-
-
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
-  </script>
 
 </body>
 
