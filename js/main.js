@@ -2717,7 +2717,7 @@
       for (i = 0; i < acc.length; i++) {
         if (i == 0) {
           acc[0].classList.add("active");
-          acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight + 128+128+128+128 + "px";
+          acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight + 128 + 128 + 128 + 128 + "px";
           acc[0].nextElementSibling.style.paddingTop = 32 + "px"
           acc[0].nextElementSibling.style.paddingBottom = 32 + "px"
         }
@@ -2792,7 +2792,13 @@
     var vid = document.getElementsByClassName("videoembed");
     if (!vid) return;
     else {
-      vid[0]?.play();
+      var isPlaying = vid.currentTime > 0 && !vid.paused && !vid.ended
+        && vid.readyState > vid.HAVE_CURRENT_DATA;
+
+      if (!isPlaying) {
+        vid[0]?.play();
+      }
+
     }
 
     // TITTE
@@ -2880,11 +2886,11 @@ function more() {
   var btnText = document.getElementById("myBtn");
 
   if (moreText.style.display == "block") {
-    btnText.innerHTML = "Show 5 more Achievements" ; 
+    btnText.innerHTML = "Show 5 more Achievements";
     moreText.style.display = "none";
     moreText.style.transform = "none";
   } else {
-    btnText.innerHTML = "Show less"; 
+    btnText.innerHTML = "Show less";
     moreText.style.display = "block";
   }
 }
