@@ -2884,7 +2884,7 @@ function more() {
     moreText.style.display = "none";
     moreText.style.transform = "none";
   } else {
-    btnText.innerHTML = "Collapse the list"; 
+    btnText.innerHTML = "Show less"; 
     moreText.style.display = "block";
   }
 }

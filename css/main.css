@@ -1003,9 +1003,10 @@ button {
 }
 
 .button.-outline-black.-light2 {
-  background-color: #f9f9f9;
-  color: var(--font-dark);
-  border: none;
+  background: rgb(245, 246, 247);
+  border: 1px solid rgb(238 238 238 / 84%);
+  font-weight: 500;
+  color: #5c6374;
   min-height: 54px;
 }
 
