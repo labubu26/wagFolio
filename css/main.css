@@ -5317,6 +5317,7 @@ body.is-cursor-active * {
   letter-spacing: -0.04em;
   font-weight: 700;
   font-size: 4.5rem;
+  line-height: 1.3em;
   /* font-family: Inter; */
 }
 
