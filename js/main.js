@@ -2884,6 +2884,7 @@ function more() {
   if (moreText.style.display == "block") {
     btnText.innerHTML = "Show 5 more Achievements" ; 
     moreText.style.display = "none";
+    moreText.style.transform = "none";
   } else {
     btnText.innerHTML = "Show less"; 
     moreText.style.display = "block";

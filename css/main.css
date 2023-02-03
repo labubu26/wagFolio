@@ -13839,7 +13839,10 @@ html.full-page-slider body {
   justify-content: center;
 }
 
-#more {display: none;}
+#more {
+display:none;
+
+}
 
 #myBtn{
   display: block;
