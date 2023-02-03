@@ -2709,7 +2709,7 @@
   function a() {
 
     // acc faq
-    var acc = document.getElementsByClassName("accordion");
+    var acc = document.querySelectorAll(".accordion");
     var i;
 
     if (!acc) return;
@@ -2828,8 +2828,6 @@
 
 
 })();
-
-
 
 
 

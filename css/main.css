@@ -1152,6 +1152,19 @@ button {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 767px) {
+  .bdline {
+    background-image: none;
+    padding-bottom: 0px;
+
+  
+  }
+  .bdcir {
+    background-image: none;
+    padding-bottom: 0px;
+  }
+}
 .purplebg {
   background: -webkit-linear-gradient(
     95deg,
