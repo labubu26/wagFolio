@@ -1130,14 +1130,12 @@ button {
 }
 .bdline {
   background-image: url(/img/general/line.svg);
-  /* z-index: 99; */
   padding-bottom: 8px;
-  background-position: 0% 102%;
+  background-position: 50% 102%;
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
-  /* position: absolute; */
-  /* color: #0cad6a; */
+
 }
 .bdcir {
   background-image: url(/img/general/cir.svg);
@@ -3872,13 +3870,14 @@ h6 {
 
 @media (max-width: 991px) {
   .sectionHeading.-xl .sectionHeading__title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
+
 }
 
 @media (max-width: 575px) {
   .sectionHeading.-xl .sectionHeading__title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -13548,19 +13547,15 @@ html.full-page-slider body {
 }
 
 .accordion:after {
-  content: "\002B";
+  content: url(/img/general/chevron-down.svg);
+  stroke-width: 1;
   color: #404040;
-  line-height: 2em;
+  line-height: 12px;
   top: 50%;
-    transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 32px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 300;
   position: absolute;
-
-  width: 64px;
-  height: 64px;
+  padding: 16px;
   border-radius: 50%;
   border: 2px solid #EFEFEF;
   background: transparent;
@@ -13575,9 +13570,17 @@ html.full-page-slider body {
 }
 
 .accordion.active:after {
-  content: "\2212";
+  content: url(/img/general/chevron-up.svg);
   background: var(--bg-dark-2);
-  color: #fff;
+  line-height: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 32px;
+  position: absolute;
+  padding: 16px;
+  border-radius: 50%;
+  border: 2px solid #EFEFEF;
+  transition: all .2s;
 }
 
 .panel {
@@ -13607,26 +13610,21 @@ html.full-page-slider body {
     transform: scale(1);
   }
   .accordion:after {
-    content: "\002B";
-    color: #828282;
-    line-height: 32px;
-    padding: 16px;
+    content: url(/img/general/chevron-down.svg);
+    background: transparent;
+    line-height: 12px;
     top: 50%;
     transform: translateY(-50%);
-    min-width: 0px;
-    min-height: 0px;
-    right: 0px;
-    border-radius: 50%;
-    font-size: 32px;
-    border: 2px solid #EFEFEF;
-    background: transparent;
+    right: 32px;
     position: absolute;
-    z-index: 300;
+    padding: 16px;
+    border-radius: 50%;
+    border: 2px solid #EFEFEF;
+    transition: all .2s;
   }
   .accordion.active:after {
-    content: "\2212";
+    content: url(/img/general/chevron-up.svg);
     background: var(--bg-dark-2);
-    color: #fff;
   }
   .panel {
     background-color: #ffffff;
@@ -13827,18 +13825,18 @@ html.full-page-slider body {
 }
 
 #myBtnContainer{
-  width: fit-content;
-  position: sticky;
+  max-width: 80%;
+  /* position: sticky; */
   background: rgb(245, 246, 247);
-  border-bottom: 1px solid rgba(237, 237, 237, 0.841);
-  transition: all 0.3s;
+  border-bottom: 1px solid rgba(237, 237, 237, 0.84);
+  transition: all 0.3s ease 0s;
   margin: 0px auto;
   border-radius: 12px;
   overflow: hidden;
   padding: 8px;
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #more {display: none;}
