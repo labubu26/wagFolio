@@ -2717,7 +2717,7 @@
       for (i = 0; i < acc.length; i++) {
         if (i == 0) {
           acc[0].classList.add("active");
-          acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight + 128 + 128 + "px";
+          acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight + 128+128+128+128 + "px";
           acc[0].nextElementSibling.style.paddingTop = 32 + "px"
           acc[0].nextElementSibling.style.paddingBottom = 32 + "px"
         }
@@ -2886,7 +2886,7 @@ function more() {
     moreText.style.display = "none";
     moreText.style.transform = "none";
   } else {
-    btnText.innerHTML = "Show less"; 
+    btnText.innerHTML = "Collapse the list"; 
     moreText.style.display = "block";
   }
 }
