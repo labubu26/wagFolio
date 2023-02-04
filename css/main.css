@@ -13651,8 +13651,8 @@ html.full-page-slider body {
 
   .panel {
     background: rgb(245 246 247 / 18%);
-    padding-left:32px;
-    padding-right: 32px;
+    padding-left:16px;
+    padding-right: 16px;
   }
 }
 
