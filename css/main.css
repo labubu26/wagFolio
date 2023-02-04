@@ -13588,7 +13588,13 @@ html.full-page-slider body {
   box-shadow: 0px 40px 20px -20px rgb(0 0 0 / 2%);
   transform: scale(1);
 }
-
+.accordion.active:first-of-type + .panel{
+  transform-origin: center;
+  transition: all 0.4s ease-out 0s;
+  max-height:fit-content;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .accordion.active:after {
   content: url(/img/general/chevron-up.svg);
   background: var(--bg-dark-2);
@@ -13602,6 +13608,8 @@ html.full-page-slider body {
   border: 2px solid #EFEFEF;
   transition: all .2s;
 }
+
+
 
 .panel {
   background-color: #f1f1f124;
@@ -13618,6 +13626,8 @@ html.full-page-slider body {
   transform-origin: center;
   transition: all 0.4s ease-out 0s;
 }
+
+
 
 @media (max-width: 767px) {
   .accordion {
