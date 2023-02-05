@@ -142,7 +142,7 @@
   --bg-dark-1: #131419;
   --bg-dark-2: #1e2027;
   --bg-dark-3: #10101a;
-  --bg-dark-4: #050926;
+  --bg-dark-4: #07070f;
   --bg-dark-5: #226dc9;
   --bg-dark-6: #1111110a;
   --font-light: rgba(219, 218, 218, 0.905);
@@ -3992,7 +3992,7 @@ body.preloader-visible .preloader__progress {
   pointer-events: auto;
   height: 100%;
   width: 100%;
-  background: var(--bg-dark-3);
+  background: var(--bg-dark-4);
   /* box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.12); */
   will-change: transform;
   transform-origin: left;

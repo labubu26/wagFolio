@@ -195,7 +195,7 @@
               duration: 0.7,
               ease: 'quart.inOut',
               opacity: 0,
-              scale: 75,
+              scale: 100,
             }, '>.2')
             .to(bg, {
               ease: 'quart.inOut',
@@ -231,7 +231,7 @@
           tl
             .set(progress, {
               opacity: 0,
-              scale: 75,
+              scale: 100,
             })
             .set(progressInner, {
               scaleX: 0,
@@ -291,7 +291,7 @@
               duration: 0.9,
               ease: 'quart.inOut',
               opacity: 0,
-              scale: 75,
+              scale: 100,
               onStart: () => {
                 bg.classList.add('origin-left');
               }
