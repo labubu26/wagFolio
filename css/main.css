@@ -141,12 +141,12 @@
   --bg-light-2: #f1f6f9;
   --bg-dark-1: #131419;
   --bg-dark-2: #1e2027;
-  --bg-dark-3: #0d0d12;
+  --bg-dark-3: #10101a;
   --bg-dark-4: #050926;
   --bg-dark-5: #226dc9;
   --bg-dark-6: #1111110a;
   --font-light: rgba(219, 218, 218, 0.905);
-  --font-dark: #777e90;
+  --font-dark: #5f6574;
 }
 
 :root {
@@ -1128,12 +1128,7 @@ button {
 .bd {
   border-bottom: 1px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    90deg,
-    rgb(112 43 244) 0%,
-    rgba(29, 168, 241, 1) 18%,
-    rgba(39, 208, 152, 1) 50%,
-    rgba(3, 10, 32, 0) 80%
+  border-image-source: linear-gradient(90deg,rgb(112 43 244) 0%, rgba(29, 168, 241, 1) 18%, rgba(39, 208, 152, 1) 50%,rgba(3, 10, 32, 0) 80%
   );
 }
 .bdline {
@@ -12553,6 +12548,7 @@ html.full-page-slider body {
   .layout-pt-2xl {
     padding-top: 10rem;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -12568,6 +12564,11 @@ html.full-page-slider body {
   .layout-pt-2xl {
     padding-top: 8.125rem;
   }
+
+     .sm\:layout-pt-lg {
+      padding-top: 5rem !important;
+    }
+   
 }
 
 .layout-pb-xs {
@@ -12622,6 +12623,7 @@ html.full-page-slider body {
   .layout-pb-2xl {
     padding-bottom: 7.5rem;
   }
+ 
 }
 
 .layout-pt-pageHeader {
@@ -12850,8 +12852,8 @@ html.full-page-slider body {
 .fancy-grid.-col-2 .fancy-grid__item {
   flex: 0 0 50%;
   max-width: 50%;
-  padding: 2vw 3vw;
-  /* margin-bottom: 3.0vw; */
+  padding: 0vw 2vw;
+  margin-bottom: 3vw;
 }
 
 .fancy-grid.-col-2 .fancy-grid__item:last-child {
@@ -12976,6 +12978,7 @@ html.full-page-slider body {
   .sm\:layout-pt-headerBar {
     padding-top: 3.75rem;
   }
+
   .sm\:layout-pr-headerBar {
     padding-right: 7rem;
   }
@@ -13944,12 +13947,41 @@ display:none;
 
 .progress-container {
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: rgba(220, 255, 245, 0.264)
 }
 
 .progress-bar {
   height: 100%;
-  background: var(--accent-color);
+  background: linear-gradient(90deg,rgb(112 43 244) 0%, rgba(29, 168, 241, 1) 18%, rgb(1 230 154) 50%,rgb(47, 243, 165) 80%);
   width: 0%;
+}
+
+.lax, .lax2, .lax3, .lax4{
+  position: absolute; 
+  opacity: 0.6;
+  width: 230px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.lax{
+  top: -30%;
+  left: -20%;
+}
+.lax2{
+  top: 30%;
+  left: -22%;
+  box-shadow:  rgb(60 59 70 / 30%) -14px 64px 14px 7px, rgb(60 59 70 / 30%) 19px 34px 50px -14px
+
+}
+.lax3{
+  top: -30%;
+  right: -20%;
+}
+.lax4{
+  top: 30%;
+  right: -22%;
+  box-shadow: rgb(60 59 70 / 30%) 8px 44px 32px 12px, rgb(60 59 70 / 30%) -20px 12px 46px -10px;
+
 }

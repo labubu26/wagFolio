@@ -176,10 +176,7 @@
             //   onComplete: () => {
             //   },
             // }, )
-            .fromTo(progress, {
-              scale: 0, opacity: 0,
-            }
-              , {
+            .to(progress, {
                 scale: 2, opacity: 1,
               })
 
@@ -198,7 +195,7 @@
               duration: 0.7,
               ease: 'quart.inOut',
               opacity: 0,
-              scale: 120,
+              scale: 75,
             }, '>.2')
             .to(bg, {
               ease: 'quart.inOut',
@@ -234,7 +231,7 @@
           tl
             .set(progress, {
               opacity: 0,
-              scale: 120,
+              scale: 75,
             })
             .set(progressInner, {
               scaleX: 0,
@@ -293,8 +290,8 @@
               delay: 0.2,
               duration: 0.9,
               ease: 'quart.inOut',
-              // opacity: 0,
-              scale: 120,
+              opacity: 0,
+              scale: 75,
               onStart: () => {
                 bg.classList.add('origin-left');
               }
@@ -2730,20 +2727,20 @@
 
         acc[i].addEventListener("click", function () {
           var panel = this.nextElementSibling;
-         
-            this.classList.toggle("active");
-            console.log(this.classList.contains("active"))
-            if ( !this.classList.contains("active")) {
-              panel.style.setProperty("max-height", null, "important");
-              panel.style.setProperty("padding", null, "important");
 
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + 64 + 64 + "px";
-              panel.style.paddingTop = 32 + "px"
-              panel.style.paddingBottom = 32 + "px"
+          this.classList.toggle("active");
+          console.log(this.classList.contains("active"))
+          if (!this.classList.contains("active")) {
+            panel.style.setProperty("max-height", null, "important");
+            panel.style.setProperty("padding", null, "important");
 
-            }
-          
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + 64 + 64 + "px";
+            panel.style.paddingTop = 32 + "px"
+            panel.style.paddingBottom = 32 + "px"
+
+          }
+
         });
       }
 
@@ -2796,6 +2793,69 @@
         });
       }
 
+    }
+
+    
+    //
+    var lax =document.querySelector(".lax")
+    if (lax) {
+      gsap
+      .to('.lax', {
+        x: "240",
+        rotate: "30deg",
+        opacity: "1",
+        ease: "easeInOut",
+        scrollTrigger: {
+          trigger: ".lax",
+          start: "top 70%",
+          end: "top 70%",
+          scrub: 3,
+         
+        }
+      })
+      gsap.to('.lax2', {
+        
+        x: "260",
+        rotate: "60deg",
+        opacity: "1",
+        ease: "easeInOut",
+        scrollTrigger: {
+          trigger: ".lax2",
+          start: "top 70%",
+          end: "top 70%",
+          scrub: 3,
+         
+        }
+      },);
+      gsap
+      .to('.lax3', {
+        x: "-240",
+    
+        rotate: "-30deg",
+        opacity: "1",
+        ease: "easeInOut",
+        scrollTrigger: {
+          trigger: ".lax",
+          start: "top 70%",
+          end: "top 70%",
+          scrub: 5,
+         
+        }
+      })
+      gsap.to('.lax4', {
+        
+        x: "-260",
+        rotate: "-60deg",
+        opacity: "1",
+        ease: "easeInOut",
+        scrollTrigger: {
+          trigger: ".lax2",
+          start: "top 70%",
+          end: "top 70%",
+          scrub: 5,
+         
+        }
+      },);
     }
 
     // vid
@@ -2893,7 +2953,7 @@ function more() {
   }
 }
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -2901,3 +2961,4 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
