@@ -14493,6 +14493,7 @@ body.compensate-for-scrollbar {
   font-weight: 600;
   /* letter-spacing: 0.1em; */
   cursor: pointer;
+  flex: 1;
 }
 
 .btn:hover {
