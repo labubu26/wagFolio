@@ -5421,7 +5421,7 @@ body.is-cursor-active * {
   font-weight: 500;
   margin-top: 1rem;
   line-height: 2;
-  color: #636363;
+  color: var(--font-dark);
 }
 
 /*--------------------------------------------------
@@ -14869,3 +14869,17 @@ body.compensate-for-scrollbar {
     transform: scale(1.08) ;
   }
 } */
+
+.tagSub{
+  background: #00282345;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  display: inline-block;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
