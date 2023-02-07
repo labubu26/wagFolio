@@ -14878,8 +14878,23 @@ body.compensate-for-scrollbar {
   margin: 0;
   padding: 6px 14px;
   border-radius: 4px;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
+.uiLab{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: -25vh auto 0px;
+    position: relative;
+    z-index: 999;
+}
+.uiLab img{
+  max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+
