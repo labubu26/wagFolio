@@ -14709,7 +14709,7 @@ body.compensate-for-scrollbar {
 .header2 {
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 10001;
   width: 100%;
   /* background-color: #f1f1f1; */
 }
