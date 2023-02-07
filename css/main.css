@@ -14888,13 +14888,28 @@ body.compensate-for-scrollbar {
   width: 100%;
     display: flex;
     justify-content: center;
-    margin: -25vh auto 0px;
+    margin: -48vh auto 0px;
     position: relative;
     z-index: 999;
 }
 .uiLab img{
-  max-width: 800px;
+  max-width: 70vw;
     height: auto;
     margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  .uiLab{
+    width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: -25vh auto 0px;
+      position: relative;
+      z-index: 999;
+  }
+  .uiLab img{
+    max-width: 80vw;
+      height: auto;
+      margin: 0 auto;
+  }
+}
