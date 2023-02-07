@@ -12411,7 +12411,21 @@ html.full-page-slider body {
     display: flex !important;
   }
 }
-
+@media (min-width: 1229px) {
+  /* >1229 */
+  .xl\:d-none {
+    display: none !important;
+  }
+  .xl\:d-inline-block {
+    display: inline-block !important;
+  }
+  .xl\:d-block {
+    display: block !important;
+  }
+  .xl\:d-flex {
+    display: flex !important;
+  }
+}
 @media (max-width: 991px) {
   .md\:d-none {
     display: none !important;
