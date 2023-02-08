@@ -177,8 +177,8 @@
             //   },
             // }, )
             .to(progress, {
-                scale: 2, opacity: 1,
-              })
+              scale: 2, opacity: 1,
+            })
 
             .fromTo(progressInner, {
               scaleX: 0,
@@ -2795,56 +2795,56 @@
 
     // }
 
-    
+
     // cate filter
 
-    var siteIstotope = function() {
+    var siteIstotope = function () {
       /* activate jquery isotope */
       var $container = $('#posts').isotope({
-        itemSelector : '.item',
+        itemSelector: '.item',
         isFitWidth: true
       });
-  
-      $(window).resize(function(){
+
+      $(window).resize(function () {
         $container.isotope({
           columnWidth: '.col-sm-3'
         });
       });
-      
+
       $container.isotope({ filter: '*' });
-  
-        // filter items on button click
-      $('#filters').on( 'click', 'button', function() {
+
+      // filter items on button click
+      $('#filters').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter');
         $container.isotope({ filter: filterValue });
         $('#filters button').removeClass('active');
         $(this).addClass('active');
       });
     }
-  
+
     siteIstotope();
-   
-   
-   
-  //  lax
-    var lax =document.querySelector(".lax")
+
+
+
+    //  lax
+    var lax = document.querySelector(".lax")
     if (lax) {
       gsap
-      .to('.lax', {
-        x: "240",
-        rotate: "30deg",
-        opacity: "1",
-        ease: "easeInOut",
-        scrollTrigger: {
-          trigger: ".lax",
-          start: "top 70%",
-          end: "top 70%",
-          scrub: 3,
-         
-        }
-      })
+        .to('.lax', {
+          x: "240",
+          rotate: "30deg",
+          opacity: "1",
+          ease: "easeInOut",
+          scrollTrigger: {
+            trigger: ".lax",
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 3,
+
+          }
+        })
       gsap.to('.lax2', {
-        
+
         x: "260",
         rotate: "60deg",
         opacity: "1",
@@ -2854,26 +2854,26 @@
           start: "top 70%",
           end: "top 70%",
           scrub: 3,
-         
+
         }
       },);
       gsap
-      .to('.lax3', {
-        x: "-240",
-    
-        rotate: "-30deg",
-        opacity: "1",
-        ease: "easeInOut",
-        scrollTrigger: {
-          trigger: ".lax",
-          start: "top 70%",
-          end: "top 70%",
-          scrub: 5,
-         
-        }
-      })
+        .to('.lax3', {
+          x: "-240",
+
+          rotate: "-30deg",
+          opacity: "1",
+          ease: "easeInOut",
+          scrollTrigger: {
+            trigger: ".lax",
+            start: "top 70%",
+            end: "top 70%",
+            scrub: 5,
+
+          }
+        })
       gsap.to('.lax4', {
-        
+
         x: "-260",
         rotate: "-60deg",
         opacity: "1",
@@ -2883,10 +2883,35 @@
           start: "top 70%",
           end: "top 70%",
           scrub: 5,
-         
+
         }
       },);
     }
+
+    var imgWrap2 = document.querySelector(".img-wrap2")
+    if (imgWrap2) {
+      gsap.timeline(
+        {
+          scrollTrigger:
+          {
+            trigger: '.img-wrap2',
+            start: 'top +=70%',
+            end: '+=80% +=70%',
+            // pin: true,
+            scrub: 1,
+            // markers: true,
+          }
+        }
+      )
+       
+        .to('.uiLab',
+          {
+            transform: ' rotate3d(1, 0, 0, 0deg)', 
+            ease: "slow",
+        }, 0)
+    }
+
+
 
     // vid
     var vid = document.getElementsByClassName("videoembed");
