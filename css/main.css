@@ -14941,8 +14941,8 @@ body.compensate-for-scrollbar {
   .uiLab{
 
     
-    padding:12px;
-
+    padding:8px;
+    transform: rotate3d(1, 0, 0, 50deg);
     border-radius: 14px;
 
       
