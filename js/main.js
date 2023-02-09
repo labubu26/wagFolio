@@ -2895,20 +2895,33 @@
           scrollTrigger:
           {
             trigger: '.img-wrap2',
-            start: 'top +=70%',
-            end: '+=80% +=70%',
+            start: 'top +=80%',
+            end: '+=20% +=70%',
             // pin: true,
             scrub: 1,
-            // markers: true,
+            markers: true,
           }
         }
       )
        
+
         .to('.uiLab',
           {
             transform: ' rotate3d(1, 0, 0, 0deg)', 
             ease: "slow",
         }, 0)
+
+        .to('.upContent',{
+          transform: ' scale(0.5)', 
+          y:'40%',
+          ease: "power2",
+         }, 0 )
+        
+        .to('.img-wrap3',
+        {  x: '90%', 
+        opacity: '0',
+        ease: "easeOut",
+      }, '<0')
     }
 
 
