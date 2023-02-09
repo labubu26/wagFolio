@@ -2899,7 +2899,7 @@
             end: '+=20% +=70%',
             // pin: true,
             scrub: 1,
-            markers: true,
+            // markers: true,
           }
         }
       )
@@ -2916,12 +2916,34 @@
           y:'40%',
           ease: "power2",
          }, 0 )
+
+        
         
         .to('.img-wrap3',
-        {  x: '90%', 
+        {  x: '70%', 
         opacity: '0',
         ease: "easeOut",
       }, '<0')
+
+
+      gsap.timeline(
+        {
+          scrollTrigger:
+          {
+            trigger: '.HomeBackground-bg-gradient',
+            start: 'top +=50%',
+            end: '+=20% +=50%',
+            // pin: true,
+            scrub: 2,
+            // markers: true,
+          }
+        }
+      ) .to('.HomeBackground-bg-gradient', {
+        transform: ' scaleX(1.3)', 
+        bottom: '-10%',
+        x: '-45%',
+         ease: "power2",
+       })
     }
 
 
