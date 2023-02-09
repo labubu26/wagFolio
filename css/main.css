@@ -14938,6 +14938,7 @@ body.compensate-for-scrollbar {
     z-index: 999;
     perspective: 500px; */
   }
+
   .uiLab{
 
     
@@ -14950,6 +14951,8 @@ body.compensate-for-scrollbar {
   }
   .img-wrap2{
     border-radius: 8px;
+    border: 1px inset #f2f2f268;
+
 
   }
 }
