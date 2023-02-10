@@ -1066,7 +1066,8 @@
         gsap.set(image, { opacity: 0, y: '34px' });
 
         tl
-          .mastheadShapes(shapes, '>-0.8')
+          .uiElementsAnimate(null, '>-0.4')
+          .mastheadShapes(shapes, '<-0.5')
           .to(subtitle, splitBase, '>-2.3')
           .to(title, splitBase, '>-0.8')
           .to(infoItems, splitInfoItems, '>-0.8')
@@ -2708,7 +2709,7 @@
     // acc faq
     var acc = document.querySelectorAll(".accordion");
     // var active = document.querySelectorAll(".active");
-    console.log(acc)
+    // console.log(acc)
     var i;
 
     if (!acc) return;
