@@ -4267,7 +4267,7 @@ body.preloader-visible .preloader__progress {
 .js-prev, .js-next{
   position: absolute;
   z-index: 1000;
-  top: 45%;
+  top: 42%;
   left: 5%;
   transform: translate(0%, -50%);
   padding: 24px;
@@ -4283,7 +4283,7 @@ body.preloader-visible .preloader__progress {
 }
 .js-next{
   left:unset;
-  top:50%;
+  top:42%;
    right: 5%;
 }
 .js-section-slider2:hover .js-prev{
