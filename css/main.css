@@ -15019,7 +15019,7 @@ body.compensate-for-scrollbar {
     height: auto;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, 36%) rotate3d(1, 0, 0, 0deg) scaleX(1.5);
+    transform: translate(-50%, 36%) rotate3d(1, 0, 0, 0deg) scaleX(1.1);
     transform-origin: center;
     width: 100vw;
     /* animation: rota 5s ease infinite; */
@@ -15044,7 +15044,7 @@ body.compensate-for-scrollbar {
     transition: all 0.3s ease 0s;
     margin: 0px auto;
     border-radius: 12px;
-    overflow: hidden;
+    overflow-x: auto;
     padding: 8px;
 }
 
