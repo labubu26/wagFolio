@@ -2965,6 +2965,7 @@
         .to('.img-wrap3',
         {  x: '70%', 
         opacity: '0',
+        zIndex:'0',
         ease: "easeOut",
       }, '<0')
 
@@ -2978,12 +2979,12 @@
             end: '+=20% +=50%',
             // pin: true,
             scrub: 4,
-            markers: true,
+            // markers: true,
           }
         }
       ) .to('.HomeBackground-bg-gradient', {
-        transform: ' scaleX(1.3)', 
-        bottom: '-10%',
+        transform: ' scaleX(2)', 
+        bottom: '-20%',
         x: '-45%',
          ease: "power2",
        })
