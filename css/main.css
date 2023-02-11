@@ -14992,6 +14992,11 @@ body.compensate-for-scrollbar {
 }
 /* screen */
 @media (max-width: 767px) {
+  .tab-header {
+    width: 100vw!important;
+    overflow-x: auto;
+
+  }
   .uiLabHead {
     margin-top: -25vh;
     /* position: relative;
@@ -15183,3 +15188,23 @@ body.compensate-for-scrollbar {
   bottom: 0;
 }
 
+.bad{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  margin-right: 10px;
+  background: rgb(168 168 168 / 16%);
+  color: rgb(95 101 120);
+  border-radius: 50%;
+  transition: .3s ease;
+  /* transform: scale(0.9); */
+}
+
+.tab-header .tab-btn.active .bad{
+  background: #2ec77f;
+  color: #ffffff;
+  /* transform: scale(1); */
+
+}
