@@ -14997,6 +14997,11 @@ body.compensate-for-scrollbar {
     overflow-x: auto;
 
   }
+  .tab-body .tab-content {
+
+  padding: 32px 0px;
+
+}
   .uiLabHead {
     margin-top: -25vh;
     /* position: relative;
