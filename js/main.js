@@ -2957,7 +2957,7 @@
 
         .to('.upContent',{
           transform: ' scale(0.5)', 
-          y:'40%',
+          y:'60%',
           ease: "power2",
          }, 0 )
 
