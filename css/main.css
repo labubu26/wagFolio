@@ -14984,12 +14984,25 @@ body.compensate-for-scrollbar {
   /* -webkit-animation: rota 40s linear infinite;
   animation: rota 40s linear infinite; */
 }
+.upup{
+  clip-path: ellipse(85% 100% at 50% 0%);
+}
+.h-125vh{
+  height: 125vh;
+}
+/* screen */
 @media (max-width: 767px) {
   .uiLabHead {
     margin-top: -25vh;
     /* position: relative;
     z-index: 999;
     perspective: 500px; */
+  }
+  .h-125vh{
+    height: 110vh;
+  }
+  .upup{
+    clip-path: ellipse(100% 100% at 50% 0%);
   }
 
   .uiLab {
@@ -15061,6 +15074,7 @@ body.compensate-for-scrollbar {
   font-weight: 600;
   padding: 8px 32px;
   font-size: 1.125rem;
+  white-space: nowrap;
 }
 .tab-header .tab-btn:focus {
   outline: none;
@@ -15165,7 +15179,7 @@ body.compensate-for-scrollbar {
 }
 .tab-header[border] .underline {
   margin:8px 0;
-  height: 72%;
+  height: 48px;
   bottom: 0;
 }
 

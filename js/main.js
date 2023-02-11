@@ -1067,7 +1067,7 @@
 
         tl
           .uiElementsAnimate(null, '>-0.4')
-          .mastheadShapes(shapes, '<-0.5')
+          .mastheadShapes(shapes, '<-0.3')
           .to(subtitle, splitBase, '>-2.3')
           .to(title, splitBase, '>-0.8')
           .to(infoItems, splitInfoItems, '>-0.8')
@@ -1091,7 +1091,7 @@
             opacity: 1,
             scale: 1,
           }, '>-0.2')
-          .uiElementsAnimate(null, '>-0.4')
+          // .uiElementsAnimate(null, '>-0.4')
           .to(subtitle, splitBase, '>-0.6')
           .to(title, splitBase, '>-0.8')
           .to(infoItems, splitInfoItems, '>-0.8')
