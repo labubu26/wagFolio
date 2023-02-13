@@ -13133,24 +13133,25 @@ html.full-page-slider body {
 .list-ic p {
   text-decoration: none;
   display: inline-block;
-  margin-left: 16px;
+  margin: 0 0 0 24px;
   font-size: inherit;
 }
 .list-ic li {
   position: relative;
 }
 .list-ic li span {
+  flex-shrink: 0;
   display: inline-block;
-    font-weight: 600;
-    width: 2em;
-    height: 2em;
-    text-align: center;
-    line-height: 2em;
-    border-radius: 1em;
-    background: #f5f6f7;
-    color: #777e90;
-    position: relative;
-    border: 1px solid #f1f1f1;
+  font-weight: 600;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 1em;
+  background: rgb(245, 246, 247);
+  color: rgb(119, 126, 144);
+  position: relative;
+  border: 1px solid rgb(241, 241, 241);
 }
 .list-ic li::before {
   content: "";
@@ -13177,10 +13178,13 @@ html.full-page-slider body {
 }
 .list-ic.vertical li {
   list-style-type: none;
-  text-align: left;
+    text-align: left;
+    justify-content: start;
+    align-items:center;
+    display: flex;
 }
 .list-ic.vertical li span {
-  margin: 1.4em 0;
+  margin: 1.2em 0;
 }
 .list-ic.vertical li::before {
   top: -32px;
@@ -15190,7 +15194,7 @@ body.compensate-for-scrollbar {
 }
 .tab-header[border] .underline {
   margin:8px 0;
-  height: 48px;
+  height: 46px;
   bottom: 0;
 }
 
