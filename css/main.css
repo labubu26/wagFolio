@@ -13184,7 +13184,7 @@ html.full-page-slider body {
     display: flex;
 }
 .list-ic.vertical li span {
-  margin: 1.2em 0;
+  margin: 1.1em 0;
 }
 .list-ic.vertical li::before {
   top: -32px;
@@ -13207,7 +13207,7 @@ html.full-page-slider body {
 
 .list-dot li {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: inherit;
   padding-left: 48px;
   font-size: inherit;
 }
@@ -13216,7 +13216,7 @@ html.full-page-slider body {
   margin-bottom: 0px;
 }
 
-.list-dot li::before {
+.list-dot li::before, .list-dot.-red li::before ,.list-dot.-inf li::before  {
   position: absolute;
   content: "✔";
   top: -4px;
@@ -13229,6 +13229,39 @@ html.full-page-slider body {
   background: var(--bg-dark-6);
   border-radius: 100%;
   padding: 11px;
+
+}
+.list-dot.-red li::before {
+  content: "⨉";
+    color: rgb(227 14 79);
+    /* border: 1px solid rgb(227 14 79 / 22%); */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 24px;
+    font-weight: 700;
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    background: rgb(234 0 71 / 7%);
+    border-radius: 100%;
+    padding: 4px 10px;
+}
+.list-dot.-inf li::before {
+  content: "i";
+    color: rgb(14, 138, 227);
+    /* border: 1px solid rgb(227 14 79 / 22%); */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 24px;
+    font-weight: 700;
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    background: rgba(0, 105, 234, 0.07);
+    border-radius: 100%;
+    padding: 4px 14px;
 }
 
 .dot li {
