@@ -138,7 +138,7 @@
 :root {
   --accent-color: #1be09b;
   --bg-light-1: #f5f6f8;
-  --bg-light-2: #f1f6f9;
+  --bg-light-2: #f4faf9;
   --bg-dark-1: #131419;
   --bg-dark-2: #1e2027;
   --bg-dark-3: #10101a;
@@ -13245,11 +13245,11 @@ html.full-page-slider body {
     font-size: 16px;
     background: rgb(234 0 71 / 7%);
     border-radius: 100%;
-    padding: 4px 10px;
+    padding: 4px 9px;
 }
 .list-dot.-inf li::before {
-  content: "i";
-    color: rgb(14, 138, 227);
+  content: "▶";
+    color: rgb(2 200 118);
     /* border: 1px solid rgb(227 14 79 / 22%); */
     position: absolute;
     top: 0px;
@@ -13258,10 +13258,10 @@ html.full-page-slider body {
     font-weight: 700;
     height: 32px;
     width: 32px;
-    font-size: 16px;
-    background: rgba(0, 105, 234, 0.07);
+    font-size: 12px;
+    background: rgb(2 200 118 / 6%);
     border-radius: 100%;
-    padding: 4px 14px;
+    padding: 4px 11px;
 }
 
 .dot li {
@@ -15250,4 +15250,14 @@ body.compensate-for-scrollbar {
   color: #ffffff;
   /* transform: scale(1); */
 
+}
+
+#popp{
+position: absolute;
+    bottom: -4rem;
+    right: -2%;
+    z-index: 99;
+    background-color: #fff;
+    padding: 0 32px;
+    box-sizing: border-box;
 }

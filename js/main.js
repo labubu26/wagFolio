@@ -2989,6 +2989,31 @@
         x: '-45%',
          ease: "power2",
        })
+
+       gsap.timeline(
+        {
+          scrollTrigger:
+          {
+            trigger: '#popp',
+            start: '+=50% +=50%',
+            end: '+=30% +=50%',
+            // pin: true,
+            scrub: 2,
+            // markers: true,
+          }
+        }
+      ) .fromTo('#popp',{
+        transform: ' scale(3) rotate(120deg)',
+        opacity:'0', 
+        x: '10vw',
+        y: '-10vh',
+      }, {
+        transform: ' scale(1.1) rotate(-10deg)', 
+        y: '5vh',
+        x: '5vh',
+        opacity:'0.8',
+         ease: "elastic.inOut",
+       })
     }
 
 
@@ -3102,18 +3127,18 @@ function myFunction() {
 
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener("contextmenu",
-  event => event.preventDefault()
-  );
+// document.addEventListener("contextmenu",
+//   event => event.preventDefault()
+//   );
 
   
 
