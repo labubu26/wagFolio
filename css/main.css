@@ -13232,7 +13232,7 @@ html.full-page-slider body {
 
 }
 .list-dot.-red li::before {
-  content: "⨉";
+  content: "■";
     color: rgb(227 14 79);
     /* border: 1px solid rgb(227 14 79 / 22%); */
     position: absolute;
@@ -13242,10 +13242,10 @@ html.full-page-slider body {
     font-weight: 700;
     height: 32px;
     width: 32px;
-    font-size: 16px;
+    font-size: 15px;
     background: rgb(234 0 71 / 7%);
     border-radius: 100%;
-    padding: 4px 9px;
+    padding: 3px 11px;
 }
 .list-dot.-inf li::before {
   content: "▶";
@@ -15261,3 +15261,29 @@ position: absolute;
     padding: 0 32px;
     box-sizing: border-box;
 }
+
+blockquote {
+	font-weight: 500;
+    font-size: 1rem;
+    color: var(--font-dark);
+    position: relative;
+    padding: 32px;
+    font-style: italic;
+    background: rgb(255 255 255);
+    border-radius: 14px;
+    margin: 16px 0 0px 0;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0px 45px -12px;
+}
+
+blockquote:before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  left: 24px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  border-width: 16px;
+
+}
+
+
