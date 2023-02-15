@@ -13134,6 +13134,9 @@ html.full-page-slider body {
   .sm\:layout-ml-headerBar {
     margin-left: 7rem;
   }
+  .sm\:bg-white {
+    background-color: #ffffff;
+  }
 }
 
 /* scrool */
