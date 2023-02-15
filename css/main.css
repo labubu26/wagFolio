@@ -6864,6 +6864,10 @@ html.full-page-slider body {
   background-color: var(--accent-color);
 }
 
+.bg-accent2 {
+  background-color: #05c57c;
+}
+
 .bg-gradi-purple {
   background: -webkit-linear-gradient(
     56deg,
@@ -7016,6 +7020,9 @@ html.full-page-slider body {
 
 .text-dark {
   color: var(--font-dark);
+}
+.text-dark2 {
+  color: var(--bg-dark-3);
 }
 
 .text-black {
@@ -13242,13 +13249,13 @@ html.full-page-slider body {
     font-weight: 700;
     height: 32px;
     width: 32px;
-    font-size: 15px;
+    font-size: 8px;
     background: rgb(234 0 71 / 7%);
     border-radius: 100%;
-    padding: 3px 11px;
+    padding: 4px 12px;
 }
 .list-dot.-inf li::before {
-  content: "▶";
+  content: "■";
     color: rgb(2 200 118);
     /* border: 1px solid rgb(227 14 79 / 22%); */
     position: absolute;
@@ -13258,10 +13265,10 @@ html.full-page-slider body {
     font-weight: 700;
     height: 32px;
     width: 32px;
-    font-size: 12px;
+    font-size: 8px;
     background: rgb(2 200 118 / 6%);
     border-radius: 100%;
-    padding: 4px 11px;
+    padding: 4px 12px;
 }
 
 .dot li {
@@ -15264,25 +15271,39 @@ position: absolute;
 
 blockquote {
 	font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.175rem;
     color: var(--font-dark);
     position: relative;
-    padding: 32px;
-    font-style: italic;
-    background: rgb(255 255 255);
+    padding: 24px;
+    text-align: left;
+    /* font-style: italic; */
+    /* background: rgb(245 246 247); */
+    border: 1px solid rgb(245 246 247);
     border-radius: 14px;
     margin: 16px 0 0px 0;
-    box-shadow: rgb(0 0 0 / 8%) 0px 0px 45px -12px;
 }
 
-blockquote:before {
+/* blockquote:before {
   content: "";
   position: absolute;
-  top: -26px;
+  top: -30px;
   left: 24px;
   border-style: solid;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent rgb(245 246 247) transparent;
   border-width: 16px;
+} */
+
+blockquote:after {
+  content: "”";
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  font-style: normal;
+  font-family: sans-serif;
+  font-size: 157px;
+  line-height: 1em;
+  opacity: 0.5;
+  color: #e2e2e2;
 
 }
 
