@@ -3011,7 +3011,7 @@
         transform: ' scale(1.1) rotate(-10deg)', 
         y: '5vh',
         x: '5vh',
-        opacity:'0.8',
+        opacity:'1',
          ease: "elastic.inOut",
        })
     }

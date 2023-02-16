@@ -15272,11 +15272,11 @@ body.compensate-for-scrollbar {
 
 #popp{
 position: absolute;
-    bottom: -4rem;
+    bottom: -10rem;
     right: -2%;
     z-index: 99;
     background-color: #fff;
-    padding: 0 32px;
+    padding: 0 24px;
     box-sizing: border-box;
 }
 
