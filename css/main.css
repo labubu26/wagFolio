@@ -15048,7 +15048,9 @@ body.compensate-for-scrollbar {
   .flow.tab-header {
     width: 100vw!important;
     overflow-x: auto;
-
+  }
+  .flow.tab-header::-webkit-scrollbar {
+    display:none
   }
   .tab-body .tab-content {
 
@@ -15331,3 +15333,8 @@ blockquote:after {
   position: absolute;
 }
 
+.cen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
