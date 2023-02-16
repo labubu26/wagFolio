@@ -13400,7 +13400,8 @@ html.full-page-slider body {
     height: 2px;
     width: 50%;
     left: -25%;
-    background-color: #d1d9dd;
+    background-color: #a0a0a0;
+    border: 1.5px dashed #ffffff;
   }
 }
 .ufo-sec--navigation .sticky-header .nav-step.checked {
@@ -13410,13 +13411,15 @@ html.full-page-slider body {
   font-weight: 500;
   background-color: var(--checkedStepColor);
   border-color: var(--checkedStepColor);
+  transform: scale(1.1);
   color: #fff;
-  transition-property: background-color, border-color;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
+  transition-property: background-color, border-color, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
 }
 .ufo-sec--navigation .sticky-header .nav-step.checked:before {
-  background-color: #efefef;
+  background-color: #00c584;
+
 }
 .ufo-sec--navigation .sticky-header .nav-step.checked .step-name {
   font-weight: 500;
@@ -13635,7 +13638,7 @@ html.full-page-slider body {
   top: 16px;
   width: 0;
   left: -35%;
-  transition: width 0.15s;
+  transition: width 0.4s;
 }
 .ufo-sec--navigation
   .sticky-header.sticked
