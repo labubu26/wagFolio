@@ -13137,6 +13137,12 @@ html.full-page-slider body {
   .sm\:bg-white {
     background-color: #ffffff;
   }
+  .sm\:order-1{
+    order:1
+  }
+  .sm\:order-2{
+    order:2
+  }
 }
 
 /* scrool */
@@ -15039,7 +15045,7 @@ body.compensate-for-scrollbar {
 }
 /* screen */
 @media (max-width: 767px) {
-  .tab-header {
+  .flow.tab-header {
     width: 100vw!important;
     overflow-x: auto;
 
@@ -15309,5 +15315,19 @@ blockquote:after {
   color: #e2e2e2;
 
 }
-
+.dotcen{
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: 500;
+  color: var(--bg-dark-2);
+}
+.dotcen:before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #05c57c;
+  margin: 9px 0;
+  left: 14px;
+  position: absolute;
+}
 
