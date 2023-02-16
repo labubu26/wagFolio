@@ -15045,11 +15045,11 @@ body.compensate-for-scrollbar {
 }
 /* screen */
 @media (max-width: 767px) {
-  .flow.tab-header {
-    /* width: 100vw!important; */
+  .tab-header {
+    width: 100%!important;
     overflow-x: auto;
   }
-  .flow.tab-header::-webkit-scrollbar {
+  .tab-header::-webkit-scrollbar {
     display:none
   }
   .tab-body .tab-content {
