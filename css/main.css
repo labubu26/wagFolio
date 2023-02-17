@@ -15469,8 +15469,8 @@ blockquote:after {
   padding-bottom: 8px;
   background-position: 50% 100%;
   display: inline-block;
-  margin: -6% -5%;
-  padding: 6% 5%;
+  margin: -1% -5%;
+  padding: 1% 5%;
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
