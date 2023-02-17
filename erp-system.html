@@ -208,7 +208,9 @@
         <div data-parallax="0.3" class=" z-5 js-image h-125vh">
           <div data-parallax-target class="bg-image js-lazy"
             data-bg="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d78645141726115.62593549f409a.jpg">
-            <div class="mas"></div>
+            <div class=" mas"></div>
+            <div class=" bg-grid"></div>
+
 
             <section class="masthead -type-1 sm:text-center js-masthead-type-work-1 js-shapes">
               <div class=" layout-pt-sm sm:mt-40 layout-pb-lg">
@@ -269,28 +271,29 @@
             <!-- slider js-sliderMain-type-2 js-nav-prev   -  js-section-slider2 js-prev -->
             <div>
               <div class="js-section-slider2 " data-slider-col="base-1 lg-1 md-1 sm-1" data-gap="0" data-center
-                data-loop effect="fade" autoplay="3000" data-pagination>
+                data-loop effect="fade" autoplay="30000" data-pagination>
                 <div class="swiper-wrapper">
                   <!-- video -->
-                  <div class="swiper-slide slider-slide " style="width: 100%; height:90vh">
+                  <!-- <div class="swiper-slide slider-slide " style="width: 100%; height:90vh">
                     <iframe width="100%" height="100%"
                       src="https://www.youtube.com/embed/2w8yzyzFDao?autoplay=1&rel=1&showinfo=0&color=white&modestbranding=1"
                       frameborder="0"
                       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
-                  </div>
+                  </div> -->
                   <div class="swiper-slide slider-slide ">
-                    <div class="ratio ratio-16:9 bg-image swiper-lazy" data-background="img/backgrounds/about.jpg">
+                    <div class="ratio ratio-16:9 bg-image swiper-lazy"
+                      data-background="https://assets.website-files.com/63619a386216ae681d93409b/6362b8c632be3d1c56cdc377_image-1-hero-v1-dataplus-template-p-1600.png">
                     </div>
                   </div>
-                  <div class="swiper-slide slider-slide">
+                  <!-- <div class="swiper-slide slider-slide">
                     <div class="ratio ratio-16:9 bg-image swiper-lazy" data-background="img/general/mock.png">
                     </div>
                   </div>
                   <div class="swiper-slide slider-slide">
                     <div class="ratio ratio-16:9 bg-image swiper-lazy" data-background="img/general/future.jpg">
                     </div>
-                  </div>
+                  </div> -->
 
                 </div>
                 <!-- <div class="pagination -light js-pagination"></div> -->
@@ -301,6 +304,7 @@
               </div>
             </div>
 
+            <!-- slash -->
             <div class="img-wrap3"></div>
           </div>
         </div>
@@ -588,7 +592,7 @@
       <!-- OVERVIEW          --><!---------------------->
       <!--                  --><!---------------------->
       <!----------------------><!---------------------->
-      <div class="container layout-pt-xl layout-pb-md">
+      <div class="container layout-pt-lg layout-pb-sm">
         <div class="row justify-content-center">
           <div class="col-xl-2 " data-anim="slide-up delay-3">
             <div class="d-flex text-sm tracking-md pt-4">
@@ -620,8 +624,6 @@
 
 
 
-
-
             <!-- tab -->
             <div class="tab-wrapper mt-32">
               <div class="tab-header" full-width border>
@@ -647,7 +649,7 @@
 
                 </div>
                 <div class="tab-content">
-                  <ul class="list-dot mb-24 text-lg">
+                  <ul class="list-dot -inf mb-24 text-lg">
                     <li>
                       <p>Create account.</p>
                     </li>
@@ -725,12 +727,17 @@
       <!-- GET STARTED      --><!---------------------->
       <!--                  --><!---------------------->
       <!----------------------><!---------------------->
-      <div class="layout-pt-xl">
-        <div class="bg-dark-3  h-full layout-pt-lg layout-pb-lg d-flex justify-content-center align-items-center">
-          <div class="col-xl-10 text-center">
-            <h1 class="text-7xl sm:text-6xl text-white">Let get <span class="greenbg"> Started</span></h1>
-            <!-- <p class="text-light mt-16 col-xl-5 mx-auto">many times the team faced the choice between technical,
-                business and design</p> -->
+      <div class="">
+        <div data-parallax="0" class=" z-5 js-image ">
+          <div data-parallax-target class="bg-image js-lazy"
+            data-bg="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d78645141726115.62593549f409a.jpg">
+          </div>
+          <div class="mas"></div>
+          <!-- <div class="bg-grid"></div> -->
+          <div class=" layout-pt-lg layout-pb-lg h-full d-flex justify-content-center align-items-center">
+            <div class="col-xl-10 text-center">
+              <h1 class="text-7xl sm:text-6xl text-white">Let get <span class="greenbg pb-0">Started</span></h1>
+            </div>
           </div>
         </div>
       </div>
@@ -858,12 +865,16 @@
 
         <!-- key insight -->
         <div class="container mt-72 sm:mt-32 ">
-          <div class="row col-xl-11 mx-auto bg-light-1 sm:bg-white layout-pb-md layout-pt-md  ">
+          <div class="row col-xl-11 mx-auto bg-light-1 rounded-base sm:bg-white layout-pb-md layout-pt-md  ">
 
-            <div class="col-xl-4 offset-xl-1">
-              <p class="uppercase text-sm tracking-md fw-600 mb-8 sm:mb-8">After The Survey</p>
-              <h2 class="text-4xl sm:text-4xl leading-md fw-600 sm:mb-32"><span class="bdline pb-0">Key
+            <div class="col-xl-auto  ml-40 sm:ml-0">
+              <div class="px-16 py-12 rounded-base bg-accent2 d-inline-block mb-40">
+                <i class="icon size-2xs str-width-3xl text-white" data-feather="edit-3"></i>
+              </div>
+              <h2 class="text-5xl sm:text-4xl leading-md fw-600 sm:mb-32"><span class="bdline pb-0">Key
                   Insights</span> <br />from users</h2>
+              <!-- <p class="uppercase text-sm tracking-md fw-500 mt-8">After The Survey</p> -->
+
             </div>
 
             <div class="col-xl-6 offset-xl-1">
@@ -872,10 +883,13 @@
                   <p><span class="text-black fw-500 mr-8">Target user</span>Officer from 25 to 40</p>
                 </li>
                 <li>
-                  <p>Fill in your contact details.</p>
+                  <p><span class="text-black fw-500 mr-8">Age range</span>Officer from 25 to 40</p>
                 </li>
                 <li>
-                  <p>Voilá! You've got a job.</p>
+                  <p><span class="text-black fw-500 mr-8">Habit</span>Officer from 25 to 40</p>
+                </li>
+                <li>
+                  <p><span class="text-black fw-500 mr-8">Channel</span>Officer from 25 to 40</p>
                 </li>
 
               </ul>
@@ -972,15 +986,16 @@
       <!--                  --><!---------------------->
       <!----------------------><!---------------------->
       <div id="section-5" class="layout-pt-xl">
-        <div class="bg-accent3 layout-pt-md h-full layout-pb-md d-flex justify-content-center align-items-center">
-          <div class="col-xl-10 text-center">
-            <h1 class="text-7xl sm:text-6xl text-white">The <span class=""> Define</span></h1>
-            <p class="text-white uppercase text-sm fw-600 tracking-md mt-24 mx-auto">
-              persona
-              <span class="">•</span> empathy map
-              <span class="">•</span> CJM map
-              <span class="">•</span> Competitor Audit
-            </p>
+        <div data-parallax="0.2" class=" z-5 js-image ">
+          <div data-parallax-target class="bg-image js-lazy"
+            data-bg="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d78645141726115.62593549f409a.jpg">
+          </div>
+          <div class="mas"></div>
+          <div class="bg-grid"></div>
+          <div class=" layout-pt-lg layout-pb-lg h-full d-flex justify-content-center align-items-center">
+            <div class="col-xl-10 text-center">
+              <h1 class="text-7xl sm:text-6xl text-white">Time to <span class="bdcir2 pb-0"> Define</span></h1>
+            </div>
           </div>
         </div>
       </div>
@@ -1070,9 +1085,9 @@
           </div>
 
           <div class="col-xl-5 offset-xl-1 sm:mt-24">
-            <div data-anim="img-right cover-dark-1 delay-1" data-parallax="0" class="ratio ratio-3:4">
-              <div data-parallax-target class="bg-image2 js-lazy"
-                data-bg="https://www.gliffy.com/sites/default/files/image/2022-03/Empathy-Mapping-Example.png">
+            <div data-anim="img-right cover-dark-1 delay-1" data-parallax="0" class="ratio ratio-1:1">
+              <div data-parallax-target class="bg-image js-lazy"
+                data-bg="https://assets.website-files.com/63619a386216ae681d93409b/6369b8680238eb41c58e12d6_image-3-features-v1-dataplus-template.svg">
               </div>
             </div>
             <p class="text-base text-center italic mt-8">Empathy Map</p>
@@ -1168,14 +1183,16 @@
       <!--                  --><!---------------------->
       <!----------------------><!---------------------->
       <div id="section-7" class="layout-pt-xl">
-        <div class="bg-accent3 layout-pt-md h-full layout-pb-md d-flex justify-content-center align-items-center">
-          <div class="col-xl-10 text-center">
-            <h1 class="text-7xl sm:text-6xl text-white">Time to <span class=""> Ideate</span></h1>
-            <p class="text-white uppercase text-sm fw-600 tracking-md mt-24 mx-auto">
-              HMW
-              <span class="">•</span> Information Architecture
-              <span class="">•</span> userflows
-            </p>
+        <div data-parallax="0.2" class=" z-5 js-image ">
+          <div data-parallax-target class="bg-image js-lazy"
+            data-bg="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d78645141726115.62593549f409a.jpg">
+          </div>
+          <div class="mas"></div>
+          <div class="bg-grid"></div>
+          <div class=" layout-pt-lg layout-pb-lg h-full d-flex justify-content-center align-items-center">
+            <div class="col-xl-10 text-center">
+              <h1 class="text-7xl sm:text-6xl text-white"><span class="bd2line pb-0">Ideate</span> is the key</h1>
+            </div>
           </div>
         </div>
       </div>
@@ -1286,15 +1303,29 @@
       <!-- PROTOTYPE        --><!---------------------->
       <!--                  --><!---------------------->
       <!----------------------><!---------------------->
-      <div id="section-8" class="bg-light-2 layout-pb-xl">
+      <div id="section-8" class=" layout-pt-xl">
 
 
+        <div class="">
+          <div data-parallax="0.2" class=" z-5 js-image ">
+            <div data-parallax-target class="bg-image js-lazy"
+              data-bg="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d78645141726115.62593549f409a.jpg">
+            </div>
+            <div class="mas"></div>
+            <div class="bg-grid"></div>
+            <div class=" layout-pt-lg layout-pb-lg h-full d-flex justify-content-center align-items-center">
+              <div class="col-xl-10 text-center">
+                <h1 class="text-7xl sm:text-6xl text-white"><span class="bdzline pb-0">Draw</span> to touch</h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <!---------------------->
         <!-- CONTAINER          -->
         <!-- L3 - R7.1         -->
         <!--                  -->
         <!---------------------->
-        <section data-anim-wrap class="container layout-pt-xl layout-pb-md">
+        <section data-anim-wrap class="container layout-pt-lg layout-pb-md">
           <div class="row justify-content-center ">
             <div class="col-xl-3 ">
               <h2 class="text-6xl sm:text-4xl fw-600 sm:mb-16">Time to <span class="bdcir pb-8">Visualize</span></h2>
@@ -1408,11 +1439,16 @@
         <!--                  -->
         <!---------------------->
         <div class="">
-          <div class="bg-dark-3 layout-pt-lg h-full layout-pb-lg d-flex justify-content-center align-items-center">
-            <div class="col-xl-10 text-center">
-              <h1 class="text-7xl sm:text-6xl text-white">The<span class="greenbg"> Results</span></h1>
-              <!-- <p class="text-light mt-16 col-xl-5 mx-auto">many times the team faced the choice between technical,
-                business and design</p> -->
+          <div data-parallax="0" class=" z-5 js-image ">
+            <div data-parallax-target class="bg-image js-lazy"
+              data-bg="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d78645141726115.62593549f409a.jpg">
+            </div>
+            <div class="mas"></div>
+            <!-- <div class="bg-grid"></div> -->
+            <div class=" layout-pt-lg layout-pb-lg h-full d-flex justify-content-center align-items-center">
+              <div class="col-xl-10 text-center">
+                <h1 class="text-7xl sm:text-6xl text-white">The <span class="greenbg pb-0">Results</span></h1>
+              </div>
             </div>
           </div>
         </div>

@@ -2753,7 +2753,7 @@
       const tabBtns = tabWrapper.querySelectorAll(".tab-btn");
       const underline = tabWrapper.querySelector(".underline");
       const tabContents = tabWrapper.querySelectorAll(".tab-content");
-    
+
       activeTab = activeTab - 1;
       tabBtns[activeTab].classList.add("active");
       underline.style.width = `${tabBtns[activeTab].offsetWidth}px`;
@@ -2761,7 +2761,7 @@
       tabContents.forEach((content) => {
         content.style.transform = `translateX(-${activeTab * 100}%)`;
       });
-    
+
       tabBtns.forEach((btn, index) => {
         btn.addEventListener("click", () => {
           tabBtns.forEach((btn) => btn.classList.remove("active"));
@@ -2772,7 +2772,7 @@
             content.style.transform = `translateX(-${index * 100}%)`;
           });
         });
-    
+
         //same effect as on click when button in focus
         btn.addEventListener("focus", () => {
           tabBtns.forEach((btn) => btn.classList.remove("active"));
@@ -2785,7 +2785,7 @@
         });
       });
     }
-    
+
     const tabWrappers = document.querySelectorAll(".tab-wrapper");
     tabWrappers?.forEach((tabWrapper, index) => inittab(tabWrapper));
 
@@ -2939,7 +2939,7 @@
           scrollTrigger:
           {
             trigger: '.img-wrap2',
-            start: 'top +=80%',
+            start: 'top +=85%',
             end: '+=20% +=70%',
             // pin: true,
             scrub: 1,
@@ -2947,28 +2947,43 @@
           }
         }
       )
-       
 
         .to('.uiLab',
           {
-            transform: ' rotate3d(1, 0, 0, 0deg)', 
+            transform: ' rotate3d(1, 0, 0, 0deg)',
             ease: "slow",
+          }, 0)
+
+        .to('.upContent', {
+          transform: ' scale(0.5)',
+          y: '100%',
+          ease: "power2",
         }, 0)
 
-        .to('.upContent',{
-          transform: ' scale(0.5)', 
-          y:'60%',
-          ease: "power2",
-         }, 0 )
 
-        
-        
-        .to('.img-wrap3',
-        {  x: '70%', 
-        opacity: '0',
-        zIndex:'0',
-        ease: "easeOut",
-      }, '<0')
+
+
+          gsap.timeline(
+            {
+              scrollTrigger:
+              {
+                trigger: '.img-wrap2',
+                start: 'top +=80%',
+                end: '+=20% +=70%',
+                // pin: true,
+                scrub: true,
+                // markers: true,
+              }
+            }
+          )
+    
+            .to('.img-wrap3',
+              {
+                x: '70%',
+                opacity:'0',
+                visibility: 'hidden',
+                ease: "easeOut",
+              }, '<0')
 
 
       gsap.timeline(
@@ -2983,14 +2998,14 @@
             // markers: true,
           }
         }
-      ) .to('.HomeBackground-bg-gradient', {
-        transform: ' scaleX(2)', 
+      ).to('.HomeBackground-bg-gradient', {
+        transform: ' scaleX(2)',
         bottom: '-20%',
         x: '-45%',
-         ease: "power2",
-       })
+        ease: "power2",
+      })
 
-       gsap.timeline(
+      gsap.timeline(
         {
           scrollTrigger:
           {
@@ -3002,18 +3017,18 @@
             // markers: true,
           }
         }
-      ) .fromTo('#popp',{
+      ).fromTo('#popp', {
         transform: ' scale(3) rotate(120deg)',
-        opacity:'0', 
+        opacity: '0',
         x: '10vw',
         y: '-10vh',
       }, {
-        transform: ' scale(1.1) rotate(-10deg)', 
+        transform: ' scale(1.1) rotate(-10deg)',
         y: '5vh',
         x: '5vh',
-        opacity:'1',
-         ease: "elastic.inOut",
-       })
+        opacity: '1',
+        ease: "elastic.inOut",
+      })
     }
 
 
@@ -3140,6 +3155,5 @@ function myFunction() {
 //   event => event.preventDefault()
 //   );
 
-  
 
-  
+

@@ -13252,6 +13252,7 @@ html.full-page-slider body {
   background: var(--bg-dark-6);
   border-radius: 100%;
   padding: 11px;
+  
 
 }
 .list-dot.-red li::before {
@@ -13265,10 +13266,10 @@ html.full-page-slider body {
     font-weight: 700;
     height: 32px;
     width: 32px;
-    font-size: 20px;
     background: rgb(234 0 71 / 7%);
+    font-size: 16px;
     border-radius: 100%;
-    padding: 2px 10px;
+    padding: 2px 12px;
 }
 .list-dot.-inf li::before {
   content: "■";
@@ -13283,8 +13284,10 @@ html.full-page-slider body {
     width: 32px;
     font-size: 20px;
     background: rgb(2 200 118 / 6%);
+
+    font-size: 16px;
     border-radius: 100%;
-    padding: 2px 10px;
+    padding: 2px 12px;
 }
 
 .dot li {
@@ -13411,9 +13414,9 @@ html.full-page-slider body {
   font-weight: 500;
   background-color: var(--checkedStepColor);
   border-color: var(--checkedStepColor);
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   color: #fff;
-  transition-property: background-color, border-color, transform;
+  transition-property: background-color, border-color;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
 }
@@ -14998,12 +15001,21 @@ body.compensate-for-scrollbar {
 }
 .uiLab {
   width: 100%;
-  padding: 24px;
-  background: linear-gradient(139deg, rgb(14 14 14), rgb(31 30 32));
-  box-shadow: rgb(0 0 0 / 13%) 0px 0px 0px 6px;
+  padding: 32px 32px 40px 32px;
+  background: linear-gradient(333deg, rgb(15 18 24), rgb(30, 33, 40));
+  box-shadow: rgb(84 82 98 / 13%) 0px 97px 32px -81px;
   border-radius: 32px;
   transform: rotate3d(1, 0, 0, 30deg);
   transform-origin: center center;
+}
+
+.uiLab::before{
+  content: "wagtrung";
+  position: absolute;
+  font-size: 0.95rem;
+  bottom:8px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .img-wrap2 {
@@ -15011,7 +15023,7 @@ body.compensate-for-scrollbar {
   width: 100%;
   overflow: hidden;
   border-radius: 14px;
-  border: 3px inset rgb(119 119 119 / 38%);
+  border: 1px inset rgba(43, 47, 58, 0.793);
 
   /* background-color: red; */
 }
@@ -15042,7 +15054,7 @@ body.compensate-for-scrollbar {
   transition: 0.4s ease;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 999!important;
   /* filter: hue-rotate(200deg); */
   /* -webkit-animation: rota 40s linear infinite;
   animation: rota 40s linear infinite; */
@@ -15097,7 +15109,7 @@ body.compensate-for-scrollbar {
   bottom: 0;
   left: 0;
   right: 0;
-  background:linear-gradient(to bottom, rgba(0, 0, 1, 0.437) -9%, #01000fef 49%)
+  background:linear-gradient(to bottom, rgba(0, 0, 1, 0.059) -9%, #01000fef 69%)
 }
 
 
@@ -15352,4 +15364,70 @@ blockquote:after {
   background: -webkit-linear-gradient( 95deg, #003124 8%, rgb(66, 217, 126) 58%, #e4fffb 84% );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.bg-grid{
+
+  left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: radial-gradient(circle closest-side at 50% 50%, rgba(155, 179, 231, 0.089), #0b101b), url(https://assets.website-files.com/63619a386216ae681d93409b/6362a5416f9a010da7102c55_shape-grid-dataplus-template.svg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: 100% 200%, 68px 68px;
+    background-repeat: repeat, repeat;
+    background-attachment: scroll, scroll;
+    opacity: 0.7;
+    position: absolute;
+}
+
+.bg-grid.sub{
+  background-image: radial-gradient(circle closest-side at 50% 50%, rgba(20, 78, 227, 0) 61%, #144ee3), url(https://assets.website-files.com/63619a386216ae681d93409b/6362d60e355c8264d167d0aa_shape-light-grid-dataplus-template.svg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, 97px 97px;
+    background-repeat: repeat, repeat;
+    background-attachment: scroll, scroll;
+}
+
+.bd2line{
+  margin: 0% 0% -18% -1%;
+    padding: 0% 0% 18% 1%;
+    background-image: url(https://assets.website-files.com/632a3ac046d5e43ea89194aa/6331e8576d5e549ccc07802e_shape-text-13-promoplus-template.svg);
+    position: relative;
+    display: inline-block;
+    background-position: 50% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bdzline{
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  margin: -8% -2%;
+  padding: 8% 2%;
+  background-image: url(https://assets.website-files.com/632a3ac046d5e43ea89194aa/632cbab91ca5faa691c95500_shape-text-9-promoplus-template.svg);
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bdcir2{
+  position: relative;
+    /* z-index: -1; */
+    display: inline-block;
+    margin: -2% -6%;
+    padding: 2% 7%;
+    background-image: url(https://assets.website-files.com/632a3ac046d5e43ea89194aa/632cb02f8f7e56d61223bcb9_shape-text-7-promoplus-template.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
