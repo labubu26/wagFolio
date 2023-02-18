@@ -15541,4 +15541,7 @@ blockquote:after {
     background-image: none;
     padding: 0px;
   }
+  .tagSub{
+    font-size: 0.6rem;
+  }
 }
