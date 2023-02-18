@@ -1219,7 +1219,7 @@ button {
   /* -webkit-text-stroke: 1px #ebeffd; */
 }
 .bluebg2 {
-  background: linear-gradient(2deg, #202946 8%, #ededed 42%);
+  background: linear-gradient(2deg, #202946 11%, #ededed 59%);
   /* background-size: 100% 100%; */
   /* background-position: 100% 200%; */
   -webkit-background-clip: text;
@@ -5953,7 +5953,7 @@ body.is-cursor-active * {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__title {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   line-height: 1.1;
   font-weight: 700;
   font-family: "Inter";
@@ -9437,6 +9437,10 @@ html.full-page-slider body {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.mx-0 {
+  margin-left: 0!important;
+  margin-right: 0!important;
 }
 
 .lg\:mx-auto {
@@ -12982,7 +12986,7 @@ html.full-page-slider body {
 .fancy-grid.-col-2 .fancy-grid__item {
   flex: 0 0 50%;
   max-width: 50%;
-  padding: 0vw 2vw;
+  padding: 0vw 3.5vw;
   margin-bottom: 3vw;
 }
 
@@ -13328,8 +13332,8 @@ html.full-page-slider body {
   line-height: 0.8;
   height: 8px;
   width: 8px;
-  background: rgb(181 188 206);
-  border-radius: 100%;
+  background: rgb(7, 206, 123);
+    border-radius: 3px;
 }
 
 /* scrool */
@@ -15490,7 +15494,7 @@ blockquote:after {
 
 .bdcir2{
   position: relative;
-    /* z-index: -1; */
+    z-index: 0;
     display: inline-block;
     margin: -2% -6%;
     padding: 2% 7%;
