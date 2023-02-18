@@ -15537,7 +15537,7 @@ blockquote:after {
     background-image: none;
     padding: 0px;
   }
-  .bdcir {
+  .bdcir, .bdzline, .bd2line, .bdcir2{
     background-image: none;
     padding: 0px;
   }
