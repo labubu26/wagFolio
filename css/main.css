@@ -13186,7 +13186,7 @@ html.full-page-slider body {
   color: rgb(119, 126, 144);
   position: relative;
   border: 1px solid rgb(241, 241, 241);
-  margin: 0px 0px 32px;
+  margin: 0px 0px 16px;
 }
 .list-ic li::before {
   
@@ -13213,7 +13213,7 @@ html.full-page-slider body {
   background: #f1f1f1;
   z-index: -1;
   top: 16%;
-    left: 32px;
+    left: 18px;
     width: 0.15em;
     height: 70%;
 
@@ -13224,6 +13224,7 @@ html.full-page-slider body {
     justify-content: start;
     align-items: start;
     display: flex;
+    margin-top: 16px;
 }
 /* .list-ic.vertical li .num {
   margin: 1.1em 0;
@@ -15118,7 +15119,7 @@ body.compensate-for-scrollbar {
   }
   .tab-body .tab-content {
 
-  padding: 32px 0px;
+  padding: 16px 0px;
 
 }
   .uiLabHead {
@@ -15269,7 +15270,7 @@ body.compensate-for-scrollbar {
 .tab-body .tab-content {
   min-width: 100%;
   height: fit-content !important;
-  padding: 32px 16px 0;
+  padding: 24px 0px 0;
   font-size: 1rem;
   transition: all 0.3s;
   text-align: justify;
@@ -15401,8 +15402,9 @@ blockquote:after {
   height: 10px;
   background: #05c57c;
   margin: 9px 0;
-  left: 14px;
+  left: 16px;
   position: absolute;
+  border-radius: 3px;
 }
 
 .cen{
