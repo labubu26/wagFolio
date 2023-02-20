@@ -1147,6 +1147,22 @@ button {
   border-top: none;
 }
 
+.subSlide h3{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
+.subSlide p{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  margin-top:8px;
+  color: #dcdcdc8d;
+}
+
 .button.-underline::before {
   content: "";
   position: absolute;
@@ -15036,7 +15052,7 @@ body.compensate-for-scrollbar {
     margin: 32px 0 0px;
     padding: 6px 14px;
     border-radius: 4px;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.2em;
