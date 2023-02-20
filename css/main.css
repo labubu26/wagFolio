@@ -14855,6 +14855,18 @@ body.compensate-for-scrollbar {
   }
 }
 
+@keyframes poppop2 {
+  0% {
+    transform: scale(1)  translateX(-100%)  translateY(30%);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1.5)  translateX(0%)  translateY(10%);
+    opacity: 0.8;
+
+  }
+}
+
 @keyframes move-up-down2 {
   0% {
     transform: translateX(0%) translateY(0%) scale(1);
@@ -15566,4 +15578,64 @@ blockquote:after {
   .tagSub{
     font-size: 0.675rem;
   }
+}
+
+.subC{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(2deg, #000000ab 20%, transparent 70%);
+  transition: .5s;
+}
+.subC::after{
+  content: "↗";
+    position: absolute;
+    left: 50%;
+    color: white;
+    transition: all 0.5s ease 0s;
+    padding: 32px;
+    border-radius: 50px;
+    font-size: 32px;
+    line-height: 0.5em;
+    border: 2px solid rgb(255 255 255 / 20%);
+    top: 50% !important;
+    transform:  translate(-50%, -50%) scale(0);
+    transform-origin: center;
+}
+.subC p{
+  position: absolute;
+  bottom: 0;
+  padding: 24px;
+  color: #fff;
+  width: 100%;
+  line-height: 2.1em;
+
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  overflow: hidden; */
+}
+.subC span{
+  padding: 4px 12px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background: #00774a38;
+    color: #02ec82;
+    border: 1px solid #00ff8b4a;
+}
+.subC:hover{
+  background: linear-gradient(2deg, #000000b6 30%, transparent 100%);
+}
+.subC:hover::after{
+  transform: translate(-50%, -50%) scale(1);
+
+}
+.crop{
+  overflow: hidden;
+  border-radius: 8px;
 }
