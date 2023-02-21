@@ -15704,7 +15704,6 @@ blockquote:after {
 }
 .x i{
   font-size: 16px!important;
-
 }
 .facebook, .twitter, .linkedin, .reddit, .whatsapp {
   /* opacity: 0.6; */
@@ -15740,6 +15739,8 @@ blockquote:after {
 
    #share-buttons{
     position: fixed;
+    top: unset;
+    transform: none;
     background: white;
     bottom: 0;
     width: 100vw;
