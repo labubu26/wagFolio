@@ -3687,8 +3687,8 @@ h6 {
 
 @media (max-width: 767px) {
   .backButton {
-    bottom: 1.5rem;
-    right: 1.5rem;
+    bottom: 5rem;
+    right: 1rem;
   }
 }
 
@@ -15720,27 +15720,32 @@ blockquote:after {
 
    #share-buttons{
     position: fixed;
-    bottom: 25%;
-    /* background: #1f1f1fbd; */
-    right: 24px;
-    display: flex;
-    flex-direction: column;
-    z-index: 99;
-    /* backdrop-filter: blur(9px); */
-    /* overflow: hidden; */
-    /* border-radius: 50px; */
-    /* border: 2px solid #eaeaea21; */
-  }
-  
-  #share-buttons i {
     background: white;
-      padding: 16px;
-      border-radius: 100%;
-      font-size: 16px;
-      margin: 0px 0 16px 0;
-      box-shadow: rgb(49 49 49 / 9%) 0px -3px 15px 1px, rgb(149 149 149 / 8%) 0px 2px 5px 1px;
-      transition: .4s ease-in-out;
+    bottom: 0;
+    width: 100vw;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .facebook, .twitter, .linkedin, .reddit, .whatsapp {
+    /* opacity: 0.6; */
+    flex: 1;
+}
+  #share-buttons i {
+    border-radius: 0;
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: rgb(49 49 49 / 9%) 0px -3px 15px 1px, rgb(149 149 149 / 8%) 0px 2px 5px 1px;
+    transition: .4s ease-in-out;
   
+  }
+  .facebook:hover i, .twitter:hover i, .linkedin:hover i, .reddit:hover i, .whatsapp:hover i {
+    transform: none;
   }
   
 }
