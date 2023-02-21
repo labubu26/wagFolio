@@ -15770,6 +15770,9 @@ blockquote:after {
   .facebook:hover i, .twitter:hover i, .linkedin:hover i, .reddit:hover i, .whatsapp:hover i {
     transform: none;
   }
+  .uiLabHead.up{
+    margin-top: -42vh;
+  }
   
 }
 
