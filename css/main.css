@@ -15703,12 +15703,12 @@ blockquote:after {
   color: #18181c;
 }
 .x i{
-  font-size: 16px!important;
+  /* font-size: 24px!important; */
 }
 .facebook, .twitter, .linkedin, .reddit, .whatsapp {
   /* opacity: 0.6; */
 }
-.facebook:hover i, .twitter:hover i, .linkedin:hover i, .reddit:hover i, .whatsapp:hover i , .x i{
+.facebook:hover i, .twitter:hover i, .linkedin:hover i, .reddit:hover i, .whatsapp:hover i , .x:hover i{
   transform: scale(1.2);
 }
 .facebook:hover , .twitter:hover, .linkedin:hover, .reddit:hover, .whatsapp:hover, .x:hover {
