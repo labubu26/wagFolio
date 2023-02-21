@@ -15661,8 +15661,8 @@ blockquote:after {
 
 #share-buttons{
   position: fixed;
-  bottom: 25%;
-  /* background: #1f1f1fbd; */
+  top: 50%;
+  transform: translateY(-50%);
   right: 24px;
   display: flex;
   flex-direction: column;
@@ -15699,13 +15699,20 @@ blockquote:after {
 .whatsapp {
     color: #25D366;
 }
+.x {
+  color: #18181c;
+}
+.x i{
+  font-size: 16px!important;
+
+}
 .facebook, .twitter, .linkedin, .reddit, .whatsapp {
   /* opacity: 0.6; */
 }
-.facebook:hover i, .twitter:hover i, .linkedin:hover i, .reddit:hover i, .whatsapp:hover i {
+.facebook:hover i, .twitter:hover i, .linkedin:hover i, .reddit:hover i, .whatsapp:hover i , .x i{
   transform: scale(1.2);
 }
-.facebook:hover , .twitter:hover, .linkedin:hover, .reddit:hover, .whatsapp:hover {
+.facebook:hover , .twitter:hover, .linkedin:hover, .reddit:hover, .whatsapp:hover, .x:hover {
   color: inherit;
 }
 
@@ -15742,7 +15749,7 @@ blockquote:after {
     align-items: center;
     flex-direction: row;
   }
-  .facebook, .twitter, .linkedin, .reddit, .whatsapp {
+  .facebook, .twitter, .linkedin, .reddit, .whatsapp, .x{
     /* opacity: 0.6; */
     flex: 1;
 }
