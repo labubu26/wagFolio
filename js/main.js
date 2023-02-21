@@ -3084,11 +3084,11 @@
     
     fb.href = `https://www.facebook.com/share.php?u=${link}`;
     
-    const linkedIn = document.querySelector('.linkedin');
-    linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
+    // const linkedIn = document.querySelector('.linkedin');
+    // linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
     
-    // const reddit = document.querySelector('.reddit');
-    // reddit.href = `http://www.reddit.com/submit?url=${link}&title=${title}`;
+    const reddit = document.querySelector('.reddit');
+    reddit.href = `http://www.reddit.com/submit?url=${link}&title=${title}`;
     
     const whatsapp = document.querySelector('.whatsapp');
     whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${link}`;

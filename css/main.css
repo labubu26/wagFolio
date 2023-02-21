@@ -15717,5 +15717,31 @@ blockquote:after {
    .js-prev, .js-next{
     padding:14px
    }
+
+   #share-buttons{
+    position: fixed;
+    bottom: 25%;
+    /* background: #1f1f1fbd; */
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    /* backdrop-filter: blur(9px); */
+    /* overflow: hidden; */
+    /* border-radius: 50px; */
+    /* border: 2px solid #eaeaea21; */
+  }
+  
+  #share-buttons i {
+    background: white;
+      padding: 16px;
+      border-radius: 100%;
+      font-size: 16px;
+      margin: 0px 0 16px 0;
+      box-shadow: rgb(49 49 49 / 9%) 0px -3px 15px 1px, rgb(149 149 149 / 8%) 0px 2px 5px 1px;
+      transition: .4s ease-in-out;
+  
+  }
+  
 }
 
