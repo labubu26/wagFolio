@@ -15645,6 +15645,56 @@ blockquote:after {
   border-radius: 8px;
 }
 
+#share-buttons{
+  position: fixed;
+  bottom: 25%;
+  /* background: #1f1f1fbd; */
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  z-index: 999999;
+  /* backdrop-filter: blur(9px); */
+  /* overflow: hidden; */
+  /* border-radius: 50px; */
+  /* border: 2px solid #eaeaea21; */
+}
+
+#share-buttons i {
+  background: white;
+    padding: 16px;
+    border-radius: 100%;
+    font-size: 24px;
+    margin: 0px 0 24px 0;
+    box-shadow: rgb(49 49 49 / 9%) 0px -3px 15px 1px, rgb(149 149 149 / 8%) 0px 2px 5px 1px;
+    transition: .4s ease-in-out;
+
+}
+
+.facebook {
+      color: #3b5998;
+}
+.twitter {
+    color: #55acee;
+}
+.linkedin {
+    color: #0077b5;
+}
+.reddit {
+    color: #cb2027;
+}
+.whatsapp {
+    color: #25D366;
+}
+.facebook, .twitter, .linkedin, .reddit, .whatsapp {
+  /* opacity: 0.6; */
+}
+.facebook:hover i, .twitter:hover i, .linkedin:hover i, .reddit:hover i, .whatsapp:hover i {
+  transform: scale(1.2);
+}
+.facebook:hover , .twitter:hover, .linkedin:hover, .reddit:hover, .whatsapp:hover {
+  color: inherit;
+}
+
 /* scrr */
 @media (max-width: 767px) {
   .bdline {
@@ -15667,3 +15717,4 @@ blockquote:after {
     padding:14px
    }
 }
+
