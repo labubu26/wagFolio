@@ -3657,19 +3657,20 @@ h6 {
 /*--------------------------------------------------
 	20. Back button
 ---------------------------------------------------*/
-.backButton {
+.backButton ,.js-backButton2{
   pointer-events: none;
   opacity: 0;
-  transform: scale(0.8);
+  transform: scale(0.5);
   transition: transform 0.55s cubic-bezier(0.215, 0.61, 0.355, 1),
     opacity 0.55s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.backButton.is-visible {
+.backButton.is-visible ,.js-backButton2.is-visible{
   pointer-events: auto;
   opacity: 1;
   transform: scale(1);
 }
+
 
 .backButton {
   cursor: pointer;
@@ -15649,10 +15650,10 @@ blockquote:after {
   position: fixed;
   bottom: 25%;
   /* background: #1f1f1fbd; */
-  left: 24px;
+  right: 24px;
   display: flex;
   flex-direction: column;
-  z-index: 999999;
+  z-index: 99;
   /* backdrop-filter: blur(9px); */
   /* overflow: hidden; */
   /* border-radius: 50px; */
