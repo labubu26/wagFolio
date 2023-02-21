@@ -2489,7 +2489,7 @@
     const scrollElement = window.document.documentElement;
 
      new ScrollMagic.Scene({
-      offset: '400px',
+      offset: '800px',
     })
       .setClassToggle(button, 'is-visible')
       .addTo(App.SMcontroller);
