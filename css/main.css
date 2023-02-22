@@ -3691,15 +3691,15 @@ h6 {
 
 .backButton {
   cursor: pointer;
-  position: fixed;
-  bottom: 3rem;
-  right: 3rem;
-  z-index: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 5rem;
-  height: 5rem;
+    position: fixed;
+    bottom: 32px;
+    right: 16px;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
 }
 
 @media (max-width: 767px) {
