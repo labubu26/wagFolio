@@ -13059,7 +13059,7 @@ html.full-page-slider body {
   .fancy-grid.-col-2 .fancy-grid__item {
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0 0 5rem 0;
+    padding: 0 0 2rem 0;
   }
   .fancy-grid.-col-2 .fancy-grid__item:nth-child(2n + 2) {
     /* margin-top: 0; */
