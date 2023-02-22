@@ -15102,7 +15102,7 @@ body.compensate-for-scrollbar {
 .uiLabHead {
   margin-top: -55vh;
   position: relative;
-  z-index: 999;
+  z-index: 7;
   perspective: 500px;
   transform-origin: center;
 }
@@ -15714,6 +15714,9 @@ blockquote:after {
 .facebook:hover , .twitter:hover, .linkedin:hover, .reddit:hover, .whatsapp:hover, .x:hover {
   color: inherit;
 }
+.h-125vh2{
+  height: 125vh;
+}
 
 /* scrr */
 @media (max-width: 767px) {
@@ -15750,7 +15753,7 @@ blockquote:after {
     align-items: center;
     flex-direction: row;
     box-shadow: rgb(49 49 49 / 15%) 0px -4px 24px -4px;
-    z-index: 9991;
+    z-index: 999;
   }
   .facebook, .twitter, .linkedin, .reddit, .whatsapp, .x{
     /* opacity: 0.6; */
@@ -15772,6 +15775,10 @@ blockquote:after {
   }
   .uiLabHead.up{
     margin-top: -42vh;
+  }
+
+  .h-125vh2{
+    height: 60vh;
   }
   
 }
