@@ -2922,7 +2922,7 @@
         opacity: "1",
         ease: "easeInOut",
         scrollTrigger: {
-          trigger: ".lax2",
+          trigger: ".lax",
           start: "top 70%",
           end: "top 70%",
           scrub: 3,
@@ -2951,7 +2951,7 @@
         opacity: "1",
         ease: "easeInOut",
         scrollTrigger: {
-          trigger: ".lax2",
+          trigger: ".lax",
           start: "top 70%",
           end: "top 70%",
           scrub: 5,
