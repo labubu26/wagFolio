@@ -3689,7 +3689,7 @@ h6 {
 .js-backButton2.is-visible{
   pointer-events: auto;
   /* opacity: 1; */
-  transform: translateY(0)!important;
+  transform: translateY(-50%)!important;
 
 }
 
@@ -3710,6 +3710,12 @@ h6 {
   .backButton {
     bottom: 5.5rem;
     right: 1rem;
+  }
+  .js-backButton2.is-visible{
+    pointer-events: auto;
+    /* opacity: 1; */
+    transform: translateY(-100%)!important;
+  
   }
 }
 
