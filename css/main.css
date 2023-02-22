@@ -6040,7 +6040,7 @@ body.is-cursor-active * {
 
 @media (max-width: 767px) {
   .portfolioCard.-type-1.-hover .portfolioCard__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .portfolioCard.-type-1.-hover .portfolioCard__category {
     font-size: 1rem;
