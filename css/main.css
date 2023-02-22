@@ -112,6 +112,10 @@
     padding-bottom: 133.33333%;
     border-radius: 24px;
   }
+  .sm\:ratio-3\:4::before {
+    padding-bottom: 133.33333%;
+    border-radius: 24px;
+  }
 }
 /*--------------------------------------------------
 	01. Variables
