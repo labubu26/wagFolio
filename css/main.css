@@ -15816,6 +15816,11 @@ blockquote:after {
       width: 24px;
       font-size: 12px;
       padding: 0px 8px;}
+      .tab-header[border] .underline {
+        margin: 8px 0;
+        height: 42px;
+        bottom: 0;
+    }
 
 }
 
