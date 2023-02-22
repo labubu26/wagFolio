@@ -3684,7 +3684,7 @@ h6 {
   pointer-events: none;
   /* opacity: 0; */
   transform: translateY(100%)!important;
-  transition: transform 0.55s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.7s ease-in-out;
 }
 .js-backButton2.is-visible{
   pointer-events: auto;
