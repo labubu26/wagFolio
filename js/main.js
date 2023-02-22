@@ -1092,10 +1092,10 @@
             opacity: 1,
             scale: 1,
           }, '>-0.2')
-          // .uiElementsAnimate(null, '>-0.4')
-          // .to(subtitle, splitBase, '>-0.6')
-          // .to(title, splitBase, '>-0.8')
-          // .to(infoItems, splitInfoItems, '>-0.8')
+        // .uiElementsAnimate(null, '>-0.4')
+        // .to(subtitle, splitBase, '>-0.6')
+        // .to(title, splitBase, '>-0.8')
+        // .to(infoItems, splitInfoItems, '>-0.8')
 
       }
 
@@ -2486,13 +2486,17 @@
 
     if (!button) return;
 
+
     const scrollElement = window.document.documentElement;
 
-     new ScrollMagic.Scene({
-      offset: '600px',
+    new ScrollMagic.Scene({
+      offset: 500,
     })
       .setClassToggle(button, 'is-visible')
       .addTo(App.SMcontroller);
+
+
+
   }
 
   /*--------------------------------------------------
@@ -2885,14 +2889,14 @@
 
     siteIstotope();
 
-    
-//   $('.fancybox').on('click', function() {
-// 	  var visibleLinks = $('.fancybox');
 
-// 	  $.fancybox.open( visibleLinks, {}, visibleLinks.index( this ) );
+    //   $('.fancybox').on('click', function() {
+    // 	  var visibleLinks = $('.fancybox');
 
-// 	  return false;
-// 	});
+    // 	  $.fancybox.open( visibleLinks, {}, visibleLinks.index( this ) );
+
+    // 	  return false;
+    // 	});
 
 
 
@@ -2991,27 +2995,27 @@
 
 
 
-          gsap.timeline(
-            {
-              scrollTrigger:
-              {
-                trigger: '.img-wrap2',
-                start: 'top +=80%',
-                end: '+=20% +=70%',
-                // pin: true,
-                scrub: true,
-                // markers: true,
-              }
-            }
-          )
-    
-            .to('.img-wrap3',
-              {
-                x: '70%',
-                opacity:'0',
-                visibility: 'hidden',
-                ease: "easeOut",
-              }, '<0')
+      gsap.timeline(
+        {
+          scrollTrigger:
+          {
+            trigger: '.img-wrap2',
+            start: 'top +=80%',
+            end: '+=20% +=70%',
+            // pin: true,
+            scrub: true,
+            // markers: true,
+          }
+        }
+      )
+
+        .to('.img-wrap3',
+          {
+            x: '70%',
+            opacity: '0',
+            visibility: 'hidden',
+            ease: "easeOut",
+          }, '<0')
 
 
       gsap.timeline(
@@ -3077,24 +3081,25 @@
     // social
     const fb = document.querySelector('.facebook');
 
-    if(fb){
-    const link = encodeURI(window.location.href);
-    const msg = encodeURIComponent('Hey, I found this amazing casestudy from Quang Trung');
-    const title = encodeURIComponent('Article or Post Title Here');
-    
-    fb.href = `https://www.facebook.com/share.php?u=${link}`;
-    
-    // const linkedIn = document.querySelector('.linkedin');
-    // linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
-    
-    const reddit = document.querySelector('.reddit');
-    if(reddit){
-    reddit.href = `http://www.reddit.com/submit?url=${link}&title=${title}`;}
-    
-    const whatsapp = document.querySelector('.whatsapp');
-    if( whatsapp){
-    whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${link}`;
-    }
+    if (fb) {
+      const link = encodeURI(window.location.href);
+      const msg = encodeURIComponent('Hey, I found this amazing casestudy from Quang Trung');
+      const title = encodeURIComponent('Article or Post Title Here');
+
+      fb.href = `https://www.facebook.com/share.php?u=${link}`;
+
+      // const linkedIn = document.querySelector('.linkedin');
+      // linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
+
+      const reddit = document.querySelector('.reddit');
+      if (reddit) {
+        reddit.href = `http://www.reddit.com/submit?url=${link}&title=${title}`;
+      }
+
+      const whatsapp = document.querySelector('.whatsapp');
+      if (whatsapp) {
+        whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${link}`;
+      }
     }
     // TITTE
     var wt = document.querySelector(".wt");
@@ -3206,4 +3211,4 @@ function myFunction() {
 //   );
 
 
- 
+

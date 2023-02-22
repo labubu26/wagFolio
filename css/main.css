@@ -3151,7 +3151,7 @@ h6 {
 
 @media (max-width: 767px) {
   .nav__content {
-    padding-top: 3.75rem;
+    padding-top: 3rem;
   }
   .nav__content__left {
     flex: 0 0 60%;
@@ -3682,15 +3682,14 @@ h6 {
 
 .js-backButton2{
   pointer-events: none;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform 0.55s cubic-bezier(0.215, 0.61, 0.355, 1),
-    opacity 0.55s cubic-bezier(0.215, 0.61, 0.355, 1);
+  /* opacity: 0; */
+  transform: translateY(100%)!important;
+  transition: transform 0.55s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .js-backButton2.is-visible{
   pointer-events: auto;
-  opacity: 1;
-  transform: translateY(0);
+  /* opacity: 1; */
+  transform: translateY(0)!important;
 
 }
 
@@ -3910,7 +3909,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .sectionHeading.-md .sectionHeading__subtitle {
-    font-size: 0.775rem;
+    font-size: 0.75rem;
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
