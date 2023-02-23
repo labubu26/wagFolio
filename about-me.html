@@ -230,8 +230,8 @@
             <!-- row start -->
             <div class="row justify-content-between">
 
-              <div class="col-lg-6 col-md-10">
-                <div data-anim-child="slide-up" class="sectionHeading -sm">
+              <div class="col-lg-6 col-md-10" data-anim-child="slide-up">
+                <div  class="sectionHeading -sm">
                   <h1 class="sectionHeading__title">
                     Hi, I am <br class="d-block sm:d-none" /> <span class="bdcir pb-16 pl-0 ">Quang Trung</span>
                   </h1>
@@ -273,7 +273,7 @@
 
 
           <!-- container start -->
-          <a href="https://www.youtube.com/watch?v=-JRyjxlwy1Q" target="_blank" rel="noopener noreferrer">
+          <a data-anim-child="slide-up" href="https://www.youtube.com/watch?v=-JRyjxlwy1Q" target="_blank" rel="noopener noreferrer">
             <div class="container-fluid px-0  layout-pt-xl sm:layout-pt-lg text-center">
               <div data-anim-child="slide-up delay-3" data-parallax="0.7" class="h-lg sm:h-md">
                 <div data-parallax-target class="bg-image js-lazy" data-bg="img/backgrounds/about.jpg"></div>
@@ -289,13 +289,16 @@
 
 
 
-
+      <div data-anim="fade delay-2" class="figma-cursor" >
+        <svg width="23" height="26" fill="#18ab6e" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><path d="m7.5 17.5-2-12 10 6L10 13l-2.5 4.5Z" fill="#686DE0"></path><path d="m5.757 5.071-.928-.557.178 1.068 2 12 .235 1.412.695-1.251 2.398-4.316 5.297-1.445 1.13-.308-1.005-.603-10-6Z" stroke="#fff"></path></g><defs><filter id="a" x=".158" y=".528" width="21.866" height="24.959" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="1"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"></feColorMatrix><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1_4"></feBlend><feBlend in="SourceGraphic" in2="effect1_dropShadow_1_4" result="shape"></feBlend></filter></defs></svg>
+        <span class="figma-name">wagtrung</span>
+      </div>
 
 
 
       <!-- HORIZONTAL FLUID  -->
-      <div class="">
-        <div class="bg-dark-3 layout-pt-md h-full layout-pb-md " style="position: relative;">
+      <div  >
+        <div   class="bg-dark-3 layout-pt-lg h-full layout-pb-lg " style="position: relative;">
           <div class="bg-grid2"></div>
           <div class="col-xl-11 mx-auto">
             <div class="row  justify-content-center ">
@@ -348,9 +351,9 @@
       <!-- PROJECTS       -->
       <!--                  -->
       <!---------------------->
-      <section data-anim-wrap class="layout-pt-lg sm:layout-pt-md  layout-pb-xl sm:layout-pb-md  border-bottom-dark noSm ">
+      <section data-anim="slide-up" class="layout-pt-lg sm:layout-pt-md  layout-pb-lg sm:layout-pb-md  border-bottom-dark noSm ">
         <!-- container start -->
-        <div class="container " data-anim-child="slide-up">
+        <div class="container " >
 
           <!-- row start -->
           <div class="row">
@@ -556,7 +559,7 @@
       </section>
       <!-- section end -->
 
-      <div class="sm:d-block d-none layout-pt-xs bg-light-1">
+      <div class="sm:d-block  layout-pt-xs bg-light-1">
         <!-- DIVIDER SM -->
       </div>
 
@@ -565,9 +568,9 @@
       <!-- ACHIVEMENT       -->
       <!--                  -->
       <!---------------------->
-      <section class=" layout-pb-xl sm:layout-pb-md sm:layout-pt-md   sm:mt-16  border-bottom-dark noSm " data-anim-wrap>
+      <section class=" layout-pb-lg layout-pt-lg sm:layout-pb-md sm:layout-pt-md   border-bottom-dark noSm " data-anim="slide-up">
         <!-- container start -->
-        <div class="container" data-anim-child="slide-up">
+        <div class="container" >
 
           <!-- row start -->
           <div class="row">
@@ -830,8 +833,8 @@
                 <div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1">
 
                   <div class="img-gray mt-16 d-flex x-gap-32">
-                    <img src="https://2020.vfcd.events/wp-content/themes/vfcd/BLANK/images/logo.svg" alt=""
-                      height="30px">
+                    <!-- <img src="https://2020.vfcd.events/wp-content/themes/vfcd/BLANK/images/logo.svg" alt=""
+                      height="30px"> -->
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/RMIT_University_Logo.svg/2560px-RMIT_University_Logo.svg.png"
                       alt="" height="30px">
@@ -946,7 +949,7 @@
               <!-- row end -->
             </div>
 
-            <button onclick="more()" id="myBtn" class="button -sm -outline-black -light2 mt-48 sm:mt-32 mx-auto">Show 5
+            <button onclick="more()" id="myBtn" class="button -md -outline-black -light mt-48 sm:mt-32 mx-auto">Show 5
               more Achievements
               <i class="icon size-xs str-width-lg size-xs ml-8" data-feather="chevron-down"></i>
             </button>
@@ -986,16 +989,16 @@
 
 
             <!-- container start -->
-            <div data-anim-wrap class="container">
+            <div data-anim="slide-up"p class="container">
               <!-- row start -->
-              <div class="row justify-content-center text-center ">
+              <div class="row justify-content-center text-center " d>
                 <div class="col-lg-9 col-sm-5">
                   <div class="sectionHeading -lg ">
 
-                    <h4 class="sectionHeading__title text-white" data-anim-child="slide-up delay-1">
+                    <h4 class="sectionHeading__title text-white" >
                       " <span class="">Great things</span> are done by a series of small things brought together."
                     </h4>
-                    <p class="sectionHeading__subtitle -light mt-32" data-anim-child="slide-up delay-3">- Vincent Van
+                    <p class="sectionHeading__subtitle -light mt-32" >- Vincent Van
                       Gogh -
                     </p>
 
@@ -1021,9 +1024,9 @@
       <!-- EXPERIENCES      -->
       <!--                  -->
       <!---------------------->
-      <section data-anim-wrap class="layout-pt-lg layout-pb-xl sm:layout-pb-md  border-bottom-dark noSm ">
+      <section data-anim="slide-up" class="layout-pt-lg layout-pb-xl sm:layout-pb-md  border-bottom-dark noSm ">
         <!-- container start -->
-        <div class="container" data-anim-child="slide-up ">
+        <div class="container" >
 
           <!-- row start -->
           <div class="row">
@@ -1070,11 +1073,11 @@
           <!-- row end -->
 
 
-          <div class="section- border-bottom-dark noSm   ">
+          <div class="section- border-bottom-dark noSm   " >
 
             <button class="accordion active sm:px-0">
               <!-- 1 row start 2023-->
-              <div data-anim-child="slide-up delay-2"
+              <div 
                 class="row align-items-center no-gutters  border-bottom-dark noSm  py-32">
                 <div class="col-lg-2 col-md-1">
                   <p class="text-lg text-black sm:text-dark sm:text-base sm:fw-600">
@@ -1242,21 +1245,21 @@
       <!-- section end -->
 
 
-      <div class="sm:d-block d-none layout-pt-xs bg-light-1">
+      <div class="sm:d-block  layout-pt-xs bg-light-1">
         <!-- DIVIDER SM -->
       </div>
 
       <!-- EDUCATION -->
-      <section class="layout-pb-xl sm:layout-pb-md sm:layout-pt-md  sm:mt-16 " data-anim-wrap>
+      <section class="layout-pb-lg layout-pt-lg sm:layout-pb-md sm:layout-pt-md  " data-anim="slide-up">
         <div>
 
           <!-- container start -->
-          <div class="container">
+          <div class="container" >
             <!-- row start -->
             <div class="row align-items-start justify-content-between ">
 
               <div class="col-lg-4 lg:mr-40 sm:mr-0 col-md-10">
-                <div data-anim-child="slide-up" class="sectionHeading -sm">
+                <div  class="sectionHeading -sm">
                   <div class="sectionHeading__subtitle">Proudly</div>
                   <h1 class="sectionHeading__title">
                     Academic <span class="bdzline pl-0 ">Performance</span>
@@ -1269,7 +1272,7 @@
 
 
                 <div class="col-lg-6 col-md-10  img-gray ">
-                  <div data-anim-child="slide-up delay-1">
+                  <div >
                     <img src="img/general/vnu.png" alt="" height="40px">
 
                     <p class="pl-0 text-lg fw-600 text-black  mt-24 md:mt-20">Vietnam National University
@@ -1287,7 +1290,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-10 md:mt-32 sm:mt-24 img-gray">
-                  <div data-anim-child="slide-up delay-1">
+                  <div >
 
                     <img src="img/general/iu.png" alt="" height="40px">
                     <p class="pl-0 text-lg fw-600 text-black  mt-24 md:mt-20">International University</p>
@@ -1302,7 +1305,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-10 md:mt-32 sm:mt-24 img-gray">
-                  <div data-anim-child="slide-up delay-1">
+                  <div >
 
                     <img src="img/general/ie.png" alt="" height="40px">
                     <p class="pl-0 text-lg fw-600 text-black  mt-24 md:mt-20">IELTS Certificate</p>
@@ -1318,7 +1321,7 @@
 
 
                 <div class="col-lg-6 col-md-10 md:mt-32 sm:mt-24 img-gray">
-                  <div data-anim-child="slide-up delay-1">
+                  <div >
 
                     <img src="https://filethpt.hcm.edu.vn//UploadImages/Config/thpttanbinh/LOGO_TANBINH.jpg" alt=""
                       height="40px">
@@ -1369,8 +1372,7 @@
       <!-- SKILL       -->
       <!--                  -->
       <!---------------------->
-      <section class="layout-pt-lg sm:layout-pt-md  layout-pb-xl sm:layout-pb-md">
-        <div data-anim-wrap>
+      <section data-anim="slide-up" class="layout-pt-lg sm:layout-pt-md  layout-pb-xl sm:layout-pb-md">
 
           <!-- container start -->
           <div class="container">
@@ -1378,7 +1380,7 @@
             <div class="row align-items-start justify-content-between y-gap-40 ">
 
               <div class="col-lg-4 lg:mr-40 sm:mr-0 col-md-10">
-                <div data-anim="slide-up" class="sectionHeading -sm">
+                <div  class="sectionHeading -sm">
                   <div class="sectionHeading__subtitle">victoriously</div>
                   <h1 class="sectionHeading__title">
                     Personal <span class="bd2line pb-4 pl-0">Strengths</span>
@@ -1387,10 +1389,10 @@
 
                 </div>
               </div>
-              <div class="col-xl-8  " data-anim="slide-up delay-2">
+              <div class="col-xl-8  " >
 
                 <div class="col-lg-12 sm:px-0  ">
-                  <div data-anim-wrap class="section- border-bottom-dark noSm  ">
+                  <div class="section- border-bottom-dark noSm  ">
 
                     <button class="accordion active">
                       <div class="py-32 sm:py-24 ">
@@ -1399,7 +1401,7 @@
                           Applications (HTML, CSS, JavaScript)</h5>
                       </div>
                     </button>
-                    <div class="panel " data-anim="slide-up ">
+                    <div class="panel " >
 
                       <div class="row justify-content-start x-gap-60 ">
 
@@ -1431,7 +1433,7 @@
                           research & Design thinking process, working with Agile software development</h5>
                       </div>
                     </button>
-                    <div class="panel " data-anim-child="slide-up ">
+                    <div class="panel " >
                       <p>ggg</p>
                     </div>
 
@@ -1441,7 +1443,7 @@
                           about Graphic Principles, UX Laws & UI Grid System </h5>
                       </div>
                     </button>
-                    <div class="panel " data-anim-child="slide-up ">
+                    <div class="panel " >
                       <p>ggg</p>
                     </div>
 
@@ -1532,7 +1534,7 @@
       <!-- FOOTER         -->
       <!--                  -->
       <!---------------------->
-      <footer class="footer -type-1 " data-anim="fade">
+      <footer class="footer -type-1 " >
         <!-- container start -->
         <div class="container">
           <div class="footer__top">

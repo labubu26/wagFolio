@@ -3178,7 +3178,7 @@ function more() {
     moreText.style.display = "none";
     moreText.style.transform = "none";
   } else {
-    btnText.innerHTML = "Show less";
+    btnText.innerHTML = "Okay, I got it! Show less";
     moreText.style.display = "block";
   }
 }

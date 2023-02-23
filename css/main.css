@@ -1065,7 +1065,7 @@ button {
 
 .button.-outline-black.-light {
   background-color: transparent;
-  border: 0.0625rem solid rgba(21, 20, 38, 0.422);
+  border: 0.0625rem solid rgb(21 20 38 / 18%);
 }
 
 .button.-outline-black.-light2 {
@@ -1124,14 +1124,28 @@ button {
   padding: 0.2rem 0rem;
   transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
   border-bottom: 2px solid #d1d1d199;
+  transition: color 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .button.-underline4:hover {
   background: none;
   color: rgb(2, 1, 19);
-  border-color: rgb(2, 1, 19) ;
+  /* border-color: rgb(2, 1, 19) ; */
 
 }
+.button.-underline4::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(2, 1, 19);
+  transition: transform 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
 .button.-underline2 {
   position: relative;
   padding-bottom: 0.125rem;
@@ -1167,7 +1181,7 @@ button {
 }
 
 .slider-slide:hover .button.-underline2::before,
-.button.-underline2:hover::before {
+.button.-underline2:hover::before, .button.-underline4:hover::before {
   transform: scaleX(1);
 }
 
@@ -15719,6 +15733,126 @@ blockquote:after {
 }
 .h-125vh2{
   height: 125vh;
+}
+
+/* CURSOR STYLES */
+
+.figma-name {
+  padding: 2px 6px;
+  color: #FFF;
+  font-size: 11px;
+border-radius:2px;
+  display: inline-block;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+
+.figma-cursor, .figma-cursor-2 {
+position: absolute;
+}
+
+.figma-cursor {
+  left: 35%;
+  top: 50%;
+  animation: 10s hovering-1 infinite;
+}
+
+/* .figma-cursor-2 {
+  left: 25%;
+  top: 25%;
+  animation: 20s hovering-2 infinite;
+} */
+
+.figma-cursor .figma-name {
+background-color: #18ab6e;
+}
+
+/* .figma-cursor-2 .figma-name {
+background-color: #22A6B3;
+} */
+
+@keyframes hovering-1 {
+0% {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+10% {
+  transform: translate3d(10px, 10px, 0px);
+}
+
+20% {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+25% {
+  transform: translate3d(-40px, 20px, 0px);
+}
+
+30% {
+  transform: translate3d(-45px, 25px, 0px);
+}
+
+35% {
+  transform: translate3d(-40px, 20px, 0px);
+}
+
+50% {
+  transform: translate3d(-40px, 20px, 0px);
+}
+
+55% {
+  transform: translate3d(-200px, 40px, 0px);
+}
+
+60% {
+  transform: translate3d(-205px, 45px, 0px);
+}
+
+65% {
+  transform: translate3d(-200px, 40px, 0px);
+}
+
+70% {
+  transform: translate3d(-205px, 45px, 0px);
+}
+
+95% {
+  transform: translate3d(500px, 10px, 0px);
+}
+}
+
+@keyframes hovering-2 {
+0% {
+  transform: translate3d(0px, 0px, 0px);
+}
+20% {
+  transform: translate3d(0px, 0px, 0px);
+}
+35% {
+  transform: translate3d(15px, 10px, 0px);
+}
+45% {
+  transform: translate3d(40px, 5px, 0px);
+}
+55% {
+  transform: translate3d(0px, 0px, 0px);
+}
+65% {
+  transform: translate3d(0px, 0px, 0px);
+}
+75% {
+  transform: translate3d(20px, 0px, 0px);
+}
+85% {
+  transform: translate3d(25px, 20px, 0px);
+}
+90% {
+  transform: translate3d(25px, 5px, 0px);
+}
+95% {
+  transform: translate3d(0px, 0px, 0px);
+}
 }
 
 /* scrr */
