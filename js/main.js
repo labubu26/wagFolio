@@ -2915,7 +2915,7 @@
             trigger: ".lax",
             start: "top 70%",
             end: "top 70%",
-            scrub: 3,
+            scrub: 1,
 
           }
         })
@@ -2929,7 +2929,7 @@
           trigger: ".lax",
           start: "top 70%",
           end: "top 70%",
-          scrub: 3,
+          scrub: 2,
 
         }
       },);
@@ -2944,7 +2944,7 @@
             trigger: ".lax",
             start: "top 70%",
             end: "top 70%",
-            scrub: 5,
+            scrub: 1,
 
           }
         })
@@ -2958,7 +2958,7 @@
           trigger: ".lax",
           start: "top 70%",
           end: "top 70%",
-          scrub: 5,
+          scrub: 2,
 
         }
       },);
@@ -3197,18 +3197,18 @@ function myFunction() {
 
 // block
 
-// document.addEventListener("keydown", function (event){
-//   if (event.ctrlKey){
-//      event.preventDefault();
-//   }
-//   if(event.keyCode == 123){
-//      event.preventDefault();
-//   }
-// });
+document.addEventListener("keydown", function (event){
+  if (event.ctrlKey){
+     event.preventDefault();
+  }
+  if(event.keyCode == 123){
+     event.preventDefault();
+  }
+});
 
-// document.addEventListener("contextmenu",
-//   event => event.preventDefault()
-//   );
+document.addEventListener("contextmenu",
+  event => event.preventDefault()
+  );
 
 
 
