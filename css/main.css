@@ -13531,7 +13531,7 @@ html.full-page-slider body {
   transform: scale(0);
   opacity: 1;
   transition-property: all;
-  transition-duration: 0.8s;
+  transition-duration: 1.4s;
   transition-timing-function: ease-in-out;
 }
 .ufo-sec--navigation .sticky-header .nav-step.checked:before {
