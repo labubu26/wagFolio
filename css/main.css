@@ -4383,14 +4383,20 @@ body.preloader-visible .preloader__progress {
   /* top:40%; */
    right: -18px;
 }
-.js-section-slider2:hover .js-prev{
-  /* opacity: 1; */
+.js-prev.u, .js-next.u{
+
+  opacity:0;
+  
+
+}
+.js-section-slider2:hover .js-prev.u{
+  opacity: 1;
   /* transform: scale(1) translate(0%, -45%); */
 
 
 }
-.js-section-slider2:hover .js-next{
-/* opacity: 1; */
+.js-section-slider2:hover .js-next.u{
+opacity: 1;
   /* transform: scale(1) translate(0%, -45%); */
 
 
