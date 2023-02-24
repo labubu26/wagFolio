@@ -13367,12 +13367,11 @@ html.full-page-slider body {
     position: absolute;
     top: 0px;
     left: 0px;
-    line-height: 30px;
+    line-height: 29px;
     height: 32px;
     width: 32px;
-    background: rgb(234 0 71 / 7%);
     font-size: 18px;
-    padding: 0px 10px;
+    padding: 0px 11px;
     border-radius: 100%;
     font-family: 'inter';
 }
@@ -13380,18 +13379,17 @@ html.full-page-slider body {
   content: "●";
     color: rgb(2 200 118);
 
-    background: rgb(2 200 118 / 6%);
+    background: var(--bg-dark-6);
 
     /* border: 1px solid rgb(227 14 79 / 22%); */
     position: absolute;
     top: 0px;
     left: 0px;
-    line-height: 28px;
+    line-height: 29px;
     height: 32px;
     width: 32px;
-
     font-size: 18px;
-    padding: 0px 10px;
+    padding: 0px 11px;
     border-radius: 100%;
     font-family: 'inter';
 }
@@ -15631,7 +15629,8 @@ blockquote:after {
     box-shadow: rgb(113 113 113 / 6%) 0px 37px 27px -31px;
     border: 2px solid #e8e8e854;
     border-radius: 8px;
-    margin: 8px;
+    position: relative;
+    /* margin: 8px; */
 }
 
 
@@ -15877,6 +15876,36 @@ background-color: #22A6B3;
 95% {
   transform: translate3d(0px, 250px, 0px);
 }
+}
+
+.color{
+  height: 6px;
+  width: 100%;
+  background-color: rgb(224 224 224 / 55%);
+  display: flex;
+  margin: 0px auto 0;
+  border-radius: 50px 50px 0 0 ;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+}
+.color-60{
+  height: 100%;
+  width: 60%;
+  background-color: inherit;
+  display:block
+}
+.color-30{
+  height: 100%;
+  width: 30%;
+  background-color: inherit;
+  display:block
+}
+.color-10{
+  height: 100%;
+  width: 10%;
+  background-color: inherit;
+  display:block
 }
 
 /* scrr */
