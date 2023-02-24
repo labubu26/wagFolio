@@ -15750,7 +15750,6 @@ border-radius:2px;
 
 .figma-cursor, .figma-cursor-2 {
 position: absolute;
-overflow-x: hidden;
 }
 
 .figma-cursor {
