@@ -15713,7 +15713,7 @@ blockquote:after {
     border-radius: 100%;
     font-size: 24px;
     margin: 0px 0 24px 0;
-    box-shadow: rgb(49 49 49 / 9%) 0px -3px 15px 1px, rgb(149 149 149 / 8%) 0px 2px 5px 1px;
+    box-shadow:rgba(113, 113, 113, 0.061) 0px 0px 0px 4px;
     transition: .4s ease-in-out;
 
 }
