@@ -15755,7 +15755,7 @@ position: absolute;
 .figma-cursor {
   left: 35%;
   top: 50%;
-  animation: 10s hovering-1 infinite;
+  animation: 15s hovering-1 infinite;
 }
 
 /* .figma-cursor-2 {
