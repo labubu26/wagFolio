@@ -15966,6 +15966,9 @@ background-color: #22A6B3;
       border-radius: 100%;
       padding: 7px;
   }
+  .img-gray img{
+    height: 25px;
+  }
 
 }
 
