@@ -15890,8 +15890,7 @@ background-color: #22A6B3;
     background: white;
     bottom: 0;
     width: 100%;
-    left: 0;
-    right:unset;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15913,6 +15912,11 @@ background-color: #22A6B3;
     box-shadow: rgb(49 49 49 / 9%) 0px 1px 1px 1px;
     transition: .4s ease-in-out;
   
+  }
+  .figma-cursor {
+    left: 35%;
+    top: 50%;
+    animation: 15s hovering-2 infinite;
   }
   .facebook:hover i, .twitter:hover i, .linkedin:hover i, .reddit:hover i, .whatsapp:hover i {
     transform: none;
