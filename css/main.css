@@ -15836,28 +15836,28 @@ background-color: #22A6B3;
   transform: translate3d(0px, 0px, 0px);
 }
 35% {
-  transform: translate3d(15px, 10px, 0px);
+  transform: translate3d(40px, 10px, 0px);
 }
 45% {
-  transform: translate3d(40px, 5px, 0px);
+  transform: translate3d(-50px, -180px, 0px);
 }
 55% {
-  transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(110px, -180px, 0px);
 }
 65% {
-  transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(10px, 0px, 0px);
 }
 75% {
   transform: translate3d(20px, 0px, 0px);
 }
 85% {
-  transform: translate3d(25px, 20px, 0px);
+  transform: translate3d(-100px, 50px, 0px);
 }
 90% {
-  transform: translate3d(25px, 5px, 0px);
+  transform: translate3d(0px, 180px, 0px);
 }
 95% {
-  transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 250px, 0px);
 }
 }
 
@@ -15914,9 +15914,9 @@ background-color: #22A6B3;
   
   }
   .figma-cursor {
-    left: 35%;
-    top: 50%;
-    animation: 15s hovering-2 infinite;
+    left: 50%;
+    top: 35%;
+    animation: 20s hovering-2 infinite;
   }
   .facebook:hover i, .twitter:hover i, .linkedin:hover i, .reddit:hover i, .whatsapp:hover i {
     transform: none;
