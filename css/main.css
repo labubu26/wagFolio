@@ -14671,7 +14671,7 @@ body.compensate-for-scrollbar {
   position: absolute;
   padding: 16px;
   border-radius: 50%;
-  border: 2px solid #efefef;
+  border: 2px solid var(--bg-dark-2);
   transition: all 0.2s;
 }
 
@@ -14716,6 +14716,7 @@ body.compensate-for-scrollbar {
   .accordion.active:after {
     content: url(/img/general/chevron-up.svg);
     background: var(--bg-dark-2);
+    border-color: var(--bg-dark-2);
     right: 0px;
   }
 
