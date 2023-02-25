@@ -1844,11 +1844,11 @@
     if (!slider) return;
 
     const sliderInstance = new Swiper(slider, {
-      spaceBetween: 0,
+      spaceBetween: 30,
       speed: 600,
       parallax: true,
       autoplay: {
-        delay: 1000,
+        delay: 10000,
       },
       loop: true,
       slidesPerView: 2,
