@@ -3115,7 +3115,9 @@
          /*or touched (for touch screens:*/
  
          /*and released (for touch screens:*/
-         window.addEventListener("touchmove", slideReady);
+         window.addEventListener("dragstart", slideReady);
+        window.addEventListener("dragend", slideFinish);
+
         /*or touched (for touch screens:*/
         slider.addEventListener("touchstart", slideReady);
         /*and released (for touch screens:*/
