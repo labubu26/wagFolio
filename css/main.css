@@ -16262,6 +16262,15 @@ input#deslizador::-ms-tooltip {
   .img-gray img{
     height: 25px;
   }
+  .img-comp-slider::before {
+
+    left: -20px;
+
+    padding: 8px;
+    font-size: 16px;
+
+    box-shadow: 0 0 0px 8px #26d58d33;
+   
 
 }
 
