@@ -3115,8 +3115,6 @@
          /*or touched (for touch screens:*/
  
          /*and released (for touch screens:*/
-         Draggable.addEventListener("dragstart", slideReady)
-         Draggable.addEventListener("dragend", slideFinish);
 
         /*or touched (for touch screens:*/
         slider.addEventListener("touchstart", slideReady);
