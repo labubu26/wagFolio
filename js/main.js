@@ -3113,9 +3113,9 @@
         /*and another function when the mouse button is released:*/
         window.addEventListener("mouseup", slideFinish);
          /*or touched (for touch screens:*/
-         slider.addEventListener("dragstart", slideReady);
+ 
          /*and released (for touch screens:*/
-         window.addEventListener("dragleave", slideFinish);
+         window.addEventListener("touchmove", slideReady);
         /*or touched (for touch screens:*/
         slider.addEventListener("touchstart", slideReady);
         /*and released (for touch screens:*/
