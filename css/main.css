@@ -16271,6 +16271,17 @@ input#deslizador::-ms-tooltip {
 
     box-shadow: 0 0 0px 8px #26d58d33;
   }
+  .img-comp-slider::after{
+    display: none;
+  }
+  .img-comp-overlay::before, .img-comp-img:first-child:after {
+
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 8px;
+
+}
 
 }
 
