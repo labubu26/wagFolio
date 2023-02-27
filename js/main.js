@@ -3135,7 +3135,7 @@
         /*or touched (for touch screens:*/
         slider.addEventListener("touchmove", slideReady);
         /*and released (for touch screens:*/
-        window.addEventListener("touchcancel", slideFinish);
+        window.addEventListener("touchmove", slideFinish);
         function slideReady(e) {
           /*prevent any other actions that may occur when moving over the image:*/
           e.preventDefault();
