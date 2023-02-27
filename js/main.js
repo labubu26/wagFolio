@@ -3138,6 +3138,7 @@
         window.addEventListener("touchend", slideFinish);
 
 
+
         function slideReady(e) {
           /*prevent any other actions that may occur when moving over the image:*/
           e.preventDefault();
