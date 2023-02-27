@@ -16285,6 +16285,10 @@ input#deslizador::-ms-tooltip {
 
 }
 
+.img-enlargable{
+  cursor: zoom-in;
+}
+
 @media (max-width: 767px) {
   .layout-pt-md {
     padding-top: 3.75rem;
