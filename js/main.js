@@ -3134,13 +3134,11 @@
 
         /*or touched (for touch screens:*/
         slider.addEventListener("touchstart", slideReady);
+        slider.addEventListener("touchend", slideFinish);
+
         /*and released (for touch screens:*/
         window.addEventListener("touchend", slideFinish);
 
-
-        slider.addEventListener("dragstart", slideReady);
-        /*and released (for touch screens:*/
-        window.addEventListener("dragend", slideFinish);
 
         function slideReady(e) {
           /*prevent any other actions that may occur when moving over the image:*/
@@ -3150,8 +3148,6 @@
           /*execute a function when the slider is moved:*/
           window.addEventListener("mousemove", slideMove);
           window.addEventListener("touchmove", slideMove);
-          window.addEventListener("dragover", slideMove);
-
         }
         function slideFinish() {
           /*the slider is no longer clicked:*/
