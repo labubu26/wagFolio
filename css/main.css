@@ -15233,6 +15233,22 @@ body.compensate-for-scrollbar {
 .h-125vh{
   height: 125vh;
 }
+
+.imgZoom::before{
+  content: '⨉';
+  position: absolute;
+  top: 0%;
+  right: 0;
+  z-index: 99999;
+  width: fit-content;
+  line-height: 0.7em;
+  font-size: 2.5rem;
+  font-weight: 200;
+  padding: 0.7em;
+  background: #0000004a;
+  color: #fff;
+
+}
 /* screen */
 @media (max-width: 767px) {
   .tab-header {
@@ -16204,6 +16220,10 @@ input#deslizador::-ms-tooltip {
    }
    .js-prev, .js-next{
     padding:14px
+   }
+
+      .js-prev.in, .js-next.in{
+    display: none;
    }
 
    #share-buttons{

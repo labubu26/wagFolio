@@ -3084,7 +3084,7 @@
       var src = $(this).attr('src');
     console.log(" something1 ", src)
 
-      $('<div>').css({
+      $('<div class="imgZoom">').css({
           background: 'RGBA(0,0,0,.7) url('+src+') no-repeat center',
           backgroundSize: 'contain',
           width:'100%', height:'100%',
@@ -3102,7 +3102,7 @@
     var src = it.attr('data-enlargable');
     console.log(" something2 ", $(this))
    
-    $('<div>').css({
+    $('<div class="imgZoom">').css({
         background: 'RGBA(0,0,0,.7) url('+src+') no-repeat center',
         backgroundSize: 'contain',
         width:'100%', height:'100%',
@@ -3331,16 +3331,16 @@ function beforeAfter() {
 
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener("contextmenu",
-  event => event.preventDefault()
-  );
+// document.addEventListener("contextmenu",
+//   event => event.preventDefault()
+//   );
 
