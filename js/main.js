@@ -2975,7 +2975,7 @@
             end: '+=0% +=85%',
             // pin: true,
             scrub: 1,
-            markers: true,
+            // markers: true,
           }
         }
       )
