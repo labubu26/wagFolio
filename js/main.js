@@ -2971,8 +2971,8 @@
           scrollTrigger:
           {
             trigger: '.img-wrap2',
-            start: 'top +=85%',
-            end: '+=20% +=70%',
+            start: '+=5% +=85%',
+            end: '+=20% +=85%',
             // pin: true,
             scrub: 1,
             // markers: true,
@@ -2988,7 +2988,7 @@
 
         .to('.upContent', {
           transform: ' scale(0.5)',
-          y: '100%',
+          y: '60%',
           ease: "power2",
         }, 0)
 
@@ -3331,16 +3331,16 @@ function beforeAfter() {
 
 // block
 
-// document.addEventListener("keydown", function (event){
-//   if (event.ctrlKey){
-//      event.preventDefault();
-//   }
-//   if(event.keyCode == 123){
-//      event.preventDefault();
-//   }
-// });
+document.addEventListener("keydown", function (event){
+  if (event.ctrlKey){
+     event.preventDefault();
+  }
+  if(event.keyCode == 123){
+     event.preventDefault();
+  }
+});
 
-// document.addEventListener("contextmenu",
-//   event => event.preventDefault()
-//   );
+document.addEventListener("contextmenu",
+  event => event.preventDefault()
+  );
 
