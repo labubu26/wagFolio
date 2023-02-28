@@ -16390,3 +16390,7 @@ input#deslizador::-ms-tooltip {
   
 }
 
+mark{
+  color: #090e0a;
+    background: linear-gradient(0deg, #00ff1345 34%, transparent 0%);
+}

@@ -2971,11 +2971,11 @@
           scrollTrigger:
           {
             trigger: '.img-wrap2',
-            start: '+=5% +=85%',
-            end: '+=20% +=85%',
+            start: '+=1% +=85%',
+            end: '+=0% +=85%',
             // pin: true,
             scrub: 1,
-            // markers: true,
+            markers: true,
           }
         }
       )
@@ -2983,7 +2983,7 @@
         .to('.uiLab',
           {
             transform: ' rotate3d(1, 0, 0, 0deg)',
-            ease: "slow",
+            ease: "ease.in",
           }, 0)
 
         .to('.upContent', {
