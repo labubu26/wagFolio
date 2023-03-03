@@ -13372,6 +13372,13 @@ html.full-page-slider body {
   font-size: inherit;
 }
 
+.list-dot2 li {
+  position: relative;
+  margin-bottom: inherit;
+  /* padding-left: 48px; */
+  font-size: inherit;
+}
+
 .list-dot li:last-child {
   margin-bottom: 0px!important;
 }
@@ -13619,6 +13626,7 @@ html.full-page-slider body {
   background-color: rgba(105, 178, 149, 0.042);
   border: 6px solid rgba(50, 162, 128, 0.09);
   transform: scale(5);
+  pointer-events: none;
   opacity: 0;
 }
 /* đ */
@@ -15461,7 +15469,7 @@ body.compensate-for-scrollbar {
 }
 .tab-header[border] .underline {
   margin:8px 0;
-  height: 46px;
+  height: 50px;
   bottom: 0;
 }
 
@@ -16392,8 +16400,25 @@ input#deslizador::-ms-tooltip {
 }
 
 mark{
-  color: #090e0a;
-    background: linear-gradient(0deg, #00ff1345 34%, transparent 0%);
+  color: inherit;
+  background: linear-gradient(0deg, #00ff1150 34%, transparent 0%);
+}
+.badgeText{
+  padding: 3px 12px;
+  background: #19192a08;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  border: 0.5px solid #e5e5e54d;
+  /* letter-spacing: 1px; */
+  font-family: 'Inter';
+  color: #1d1d3c;
+  /* line-height: 1.4em; */
+}
+.flex-start{
+  align-items: flex-start;
+}
+.wrap{
+  flex-wrap: wrap;
 }
 
 /* trans */
@@ -16407,7 +16432,7 @@ mark{
     filter: invert();
 }
 
-.flag{
+/* .flag{
   width: 32px;
   height: 32px;
   box-shadow: 0 0 0 6px #9e9e9e21;
@@ -16443,33 +16468,33 @@ body {
 
 #google_translate_element2 {
   display: none !important;
-}
+} */
 
 /*  */
 /*google translate Dropdown */
  
-#google_translate_element select{
+/* #google_translate_element select{
   background:#f6edfd;
   color:#383ffa;
   border: none;
   border-radius:3px;
   padding:6px 8px
-  }
+  } */
   
   /*google translate link | logo */
-    .goog-logo-link,.goog-te-gadget span,div#goog-gt-{
+    /* .goog-logo-link,.goog-te-gadget span,div#goog-gt-{
     display:none!important;
     }
   .goog-te-gadget{
     color:transparent!important;
     font-size:0;
-  }
+  } */
   
   /* google translate banner-frame */
-  
+/*   
   .goog-te-banner-frame{
   display:none !important;
   }
   
   #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
- .goog-text-highlight { background: none !important; box-shadow: none !important;}
+ .goog-text-highlight { background: none !important; box-shadow: none !important;} */
