@@ -6091,8 +6091,8 @@ body.is-cursor-active * {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__img__inner {
-  transition: all 0.6s ease-in-out;
-  transform-origin: top center;
+  transition: all 1.4s ease-in-out;
+  transform-origin: center center;
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__title {
