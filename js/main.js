@@ -3061,6 +3061,29 @@
         opacity: '1',
         ease: "elastic.inOut",
       })
+
+      gsap.timeline(
+        {
+          scrollTrigger:
+          {
+            trigger: '#popp2',
+            start: '+=40% +=50%',
+            end: '+=40% +=50%',
+            // pin: true,
+            scrub: 2,
+            // markers: true,
+          }
+        }
+      ).fromTo('#popp2', {
+        transform: ' scale(3) rotate(120deg)',
+        opacity: '0',
+        x: '10vw',
+        y: '-10vh',
+      }, {
+        transform: ' scale(1.2) rotate(20deg)',
+        opacity: '1',
+        ease: "elastic.inOut",
+      })  
     }
 
 
@@ -3317,14 +3340,16 @@
 function more() {
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
-
   if (moreText.style.display == "block") {
-    btnText.innerHTML = "Show 5 more Achievements";
+    btnText.innerHTML = "Show more";
     moreText.style.display = "none";
     moreText.style.transform = "none";
+    btnText.style.position = "unset";
   } else {
     btnText.innerHTML = "Okay, I got it! Show less";
     moreText.style.display = "block";
+    btnText.style.position = "relative";
+
   }
 }
 
@@ -3391,16 +3416,16 @@ function beforeAfter() {
 
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener("contextmenu",
-  event => event.preventDefault()
-  );
+// document.addEventListener("contextmenu",
+//   event => event.preventDefault()
+//   );
 
