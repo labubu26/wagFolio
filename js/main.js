@@ -2898,8 +2898,22 @@
     // 	  return false;
     // 	});
 
+// gsap.resisterPlugin()
+ var mark = document.querySelector("mark")
+ if(mark){
+  console.log(" something ")
+  gsap.utils.toArray("mark").forEach( (mark) =>{
+    ScrollTrigger.create( {
+      trigger: mark,
+      start: "top bottom",
+      // scrub: 2,
 
-
+      toggleClass: "markOkay",
+      // onEnter: () => {mark.classList.add("markOkay")},
+      // markers: true,
+    })
+  })
+ }
 
 
     //  lax

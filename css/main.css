@@ -1053,6 +1053,26 @@ button {
   background-color: var(--bg-dark-3);
   border: 0.0625rem solid var(--bg-dark-3);
 }
+.button.-green{
+  background: #272730;
+  border-radius: 14px;
+  color: #fff;
+  box-shadow: 0 0 0 8px #90909030;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button.-green .icon{
+  transition: all 0.5s;
+
+}
+.button.-green:hover .icon{
+  transform: translateX(4px)
+}
+.button.-green:hover{
+  background: #111119;
+  color: #fff;
+  box-shadow: 0 0 0 0px #90909030;
+}
 
 .button.-black:hover {
   background-color: transparent;
@@ -4367,15 +4387,16 @@ body.preloader-visible .preloader__progress {
   position: absolute;
   z-index: 1000;
   top: 50%;
+  transform: translate(0%, -50%) ;
   left: -18px;
-  transform: scale(1) translate(0%, 0%);
   padding: 24px;
   z-index: 99;
   background: #ffffff;
   border-radius: 100%;
   box-shadow: 0px 10px 25px -2px #2626261e;
   /* opacity:0.7; */
-  /* transform: scale(0); */
+
+  transform: scale(1) ;
   transition: 0.3s ease-in-out;
   transform-origin: center;
   line-height: 1em;
@@ -4388,20 +4409,16 @@ body.preloader-visible .preloader__progress {
 }
 
 .js-prev.in, .js-next.in{
-  position: absolute;
-    top: 45%;
+
     left: 10vw;
-    transform: scale(1) translate(0%, -50%);
     padding: 24px;
+  transform: translate(0%, -50%) scale(1) ;
+
     z-index: 99;
     background: #ffffff;
     border-radius: 100%;
     box-shadow: 0px 10px 10px -4px #2626261e, 0px 0px 0px 16px #0909090f;
-  /* opacity:0.7; */
-  /* transform: scale(0); */
-  transition: 0.3s ease-in-out;
-  transform-origin: center;
-
+    transition: 0.3s ease-in-out;
 }
 .js-next.in{
   left:unset;
@@ -4411,34 +4428,25 @@ body.preloader-visible .preloader__progress {
 /* u: hover moi show ra next-prev */
 .js-prev.u, .js-next.u{
   opacity:0;
-  transform: scale(2) translate(0%, -40%);
+  transform:translate(0%, -50%) scale(2) ;
   transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-
 }
-.js-section-slider2:hover .js-prev.u{
+.js-section-slider2:hover .js-prev.u, .js-section-slider2:hover .js-next.u{
   opacity: 1;
-  transform: scale(1)  translate(0%, -40%) ;
-
-
-}
-.js-section-slider2:hover .js-next.u{
-opacity: 1;
-transform: scale(1) translate(0%, -40%) ;
-
-
+  transform: translate(0%, -50%) scale(1) ;
 }
 
-.js-prev.u:hover , .js-next.u:hover {
-  transform: scale(1.2)  translate(0%, -40%)!important;
-  box-shadow: 0px 0px 40px 0px #292a3146;
 
-}
 .js-prev:hover , .js-next:hover {
-  transform: scale(1.2)  translate(0%, 0%);
+  transform: scale(1.2) ;
   box-shadow: 0px 0px 40px 0px #292a3146;
-
 }
+.js-prev.in:hover , .js-next.in:hover {
+  transform: translate(0%, -50%) scale(1.2) ;
+  box-shadow: 0px 0px 40px 0px #292a3146;
+}
+
 /*--------------------------------------------------
 	29. Cursor
 ---------------------------------------------------*/
@@ -16468,8 +16476,18 @@ input#deslizador::-ms-tooltip {
 
 mark{
   color: inherit;
-  background: linear-gradient(0deg, #00ff1150 34%, transparent 0%);
+  position: relative;
+  background: linear-gradient(0deg, #7af1ace4 9%, #bafbc528 0%);
+  padding: 0 4px 2px;
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  transition: background-size 2s ease-in-out;
 }
+.markOkay{
+  background-size: 100% 100%;
+}
+
 .badgeText{
   padding: 3px 12px;
   background: #19192a08;
