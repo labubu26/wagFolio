@@ -109,8 +109,8 @@
 
 @media (max-width: 767px) {
   .ratio-4\:3::before {
-    padding-bottom: 133.33333%;
-    border-radius: 24px;
+    /* padding-bottom: 133.33333%;
+    border-radius: 24px; */
   }
   .sm\:ratio-3\:4::before {
     padding-bottom: 133.33333%;
@@ -987,8 +987,8 @@ button {
 
 .button.-mdOk {
   /* min-width: 8.25rem; */
-  border: 1px solid white;
-  border-radius: 100%;
+  border: 2px solid #ffffff82;
+    border-radius: 100%;
   padding: 3.5rem;
   font-size: 1.5rem;
   line-height: 1;
@@ -2817,7 +2817,7 @@ h6 {
     height: 3.75rem;
   }
   .header__bar {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 }
 
@@ -6115,7 +6115,7 @@ body.is-cursor-active * {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__category {
-  padding: 12px 0 32px;
+  padding: 12px 0 0px;
   font-size: 1rem;
   color: var(--font-dark);
   font-weight: 400;
@@ -13112,7 +13112,7 @@ html.full-page-slider body {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 0vw 3.5vw;
-  margin-bottom: 3vw;
+  margin-bottom: 7vw;
 }
 
 .fancy-grid.-col-2 .fancy-grid__item:last-child {
@@ -16508,6 +16508,66 @@ mark{
     /* letter-spacing: 1px; */
     font-family: 'Inter';
     color: #1d1d3c;
+}
+.badgeText3{
+  align-items: center;
+    display: inline-flex;
+  padding: 12px 16px;
+  background: #00000030;
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #ffffff;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 99;
+}
+@keyframes ping {
+  75%,to {
+      transform: scale(2);
+      opacity: 0
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0,0,.2,1) infinite
+}
+.kk{
+  background: #0ddb96;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+.kkk{
+  background: #21f68e;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+}
+.badgeText4{
+  padding: 12px 16px;
+  background: #00000030;
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #ffffff;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 99;
 }
 .flex-start{
   align-items: flex-start;
