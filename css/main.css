@@ -2817,7 +2817,7 @@ h6 {
     height: 3.75rem;
   }
   .header__bar {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 }
 
@@ -2999,7 +2999,7 @@ h6 {
 }
 .header__menu .nav-button-open {
   cursor: pointer;
-  padding: 1rem;
+  /* padding: 1rem; */
   /* border: 2px solid var(--bg-dark-3);
   border-radius: 100%; */
 }
@@ -13481,10 +13481,20 @@ html.full-page-slider body {
 .dot li {
   position: relative;
   /* margin-bottom: 32px; */
+  font-weight: inherit;
   padding-left: 32px;
   font-size: inherit;
   line-height: 1.6em;
-  margin-bottom: 16px;
+  margin-bottom: inherit;
+}
+
+.dott li{
+  position: relative;
+  /* margin-bottom: 32px; */
+  /* padding-left: 32px; */
+  font-size: inherit;
+  line-height: 1.6em;
+  margin-bottom: inherit;
 }
 
 .dot li::before {
@@ -13495,7 +13505,7 @@ html.full-page-slider body {
   line-height: 0.8;
   height: 8px;
   width: 8px;
-  background: rgb(7, 206, 123);
+  background: rgba(105, 106, 112, 0.582);
     border-radius: 3px;
 }
 
@@ -14687,13 +14697,12 @@ body.compensate-for-scrollbar {
 }
 
 .badge {
-  font-size: 1.3rem;
-  line-height: 1;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   min-width: 2.7rem;
   position: absolute;
   background: #02c876;
   top: 0px;
-  right: -50px;
   padding: 12px;
   color: #fff;
   border-radius: 50%;
@@ -15693,6 +15702,9 @@ blockquote:after {
     background-position: 50% 100%;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.self-start{
+  align-self: start;
 }
 .bdzline{
   position: relative;
