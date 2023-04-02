@@ -1159,6 +1159,7 @@ button {
   /* border-color: rgb(2, 1, 19) ; */
 
 }
+
 .button.-underline4::before {
   content: "";
   position: absolute;
@@ -1207,7 +1208,9 @@ button {
 }
 
 .slider-slide:hover .button.-underline2::before,
-.button.-underline2:hover::before, .button.-underline4:hover::before {
+.button.-underline2:hover::before, .button.-underline4:hover::before,
+
+.p-item:hover  .button.-underline4::before{
   transform: scaleX(1);
 }
 
