@@ -186,8 +186,8 @@
             }, {
               scaleX: 1,
               ease: 'none',
-              duration: 1,
-              delay: 0,
+              duration: 0.4,
+              // delay: 0,
               onStart: () => {
                 // bg.classList.add('origin-left');
               }
@@ -249,7 +249,7 @@
               translateX: "-100%",
               // background: "blue",
               onStart: () => {
-                bg.classList.remove('origin-left');
+                // bg.classList.remove('origin-left');
                 document.documentElement.classList.add('html-overflow-hidden');
               },
             }, '>0.2')
@@ -261,7 +261,7 @@
             },)
             .to(progressInner, {
               scaleX: 1,
-              duration: 0.7,
+              duration: 0.4,
               ease: 'none',
             }, '>-0.1')
 
@@ -289,17 +289,17 @@
 
             .to(progress, {
               delay: 0.2,
-              duration: 0.9,
+              duration: 0.7,
               ease: 'quart.inOut',
               opacity: 0,
               scale: 100,
-              onStart: () => {
-                bg.classList.add('origin-left');
-              }
-            }, '>0.2')
+              // onStart: () => {
+              //   bg.classList.add('origin-left');
+              // }
+            }, )
             .to(bg, {
               ease: 'quart.inOut',
-              duration: 0.7,
+              duration: 0.6,
               opacity: 0,
               display: "none",
               onComplete: () => {
@@ -307,7 +307,7 @@
                 document.documentElement.classList.remove('overflow-hidden');
                 document.body.classList.remove('overflow-hidden');
               },
-            }, '>-0.7')
+            }, '>-0.5')
 
         },
         extendTimeline: true,
