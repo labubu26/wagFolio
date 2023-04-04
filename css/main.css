@@ -15350,11 +15350,12 @@ body.compensate-for-scrollbar {
 }
 /* screen */
 @media (max-width: 767px) {
-  .badge-dark{
+  .badgeText3{
+    position: absolute;
       padding: 4px 8px;
-
-      font-size: 0.75rem;
-  
+      font-size: 0.5rem;
+      top: 8px;
+      left: 8px;
   }
   .tab-header {
     width: 100% !important;
