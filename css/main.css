@@ -13508,6 +13508,7 @@ html.full-page-slider body {
   background-image: url(/img/general/suc.svg);
   line-height: 0;
   border-radius: 0;
+  transform: scale(0.8);
 }
 
 .dot .-suc.-gray::before {
