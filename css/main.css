@@ -14753,8 +14753,7 @@ body.compensate-for-scrollbar {
 .active,
 .accordion:hover {
   /* background-color: #ccc; */
-  box-shadow: 0px 40px 40px -12px rgb(0 0 0 / 4%),
-    0px 0px 14px -4px rgb(0 0 0 / 5%);
+  box-shadow:rgba(0, 0, 0, 0.04) 0px 20px 40px -12px, rgba(0, 0, 0, 0.24) 0px 0px 77px -44px;
   transform: scale(1.01);
 }
 
