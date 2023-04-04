@@ -15350,6 +15350,12 @@ body.compensate-for-scrollbar {
 }
 /* screen */
 @media (max-width: 767px) {
+  .badge-dark{
+      padding: 4px 8px;
+
+      font-size: 0.75rem;
+  
+  }
   .tab-header {
     width: 100% !important;
     overflow-x: auto;
