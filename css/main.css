@@ -5352,7 +5352,7 @@ body.is-cursor-active * {
 .masthead.-type-1 .masthead__title {
   line-height: 1.2;
   letter-spacing: -0.03em;
-  font-size: 5.875vw;
+  font-size: 5.5vw;
 }
 
 @media (max-width: 1229px) {
@@ -5375,7 +5375,7 @@ body.is-cursor-active * {
 
 @media (max-width: 575px) {
   .masthead.-type-1 .masthead__title {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 
@@ -5384,7 +5384,9 @@ body.is-cursor-active * {
     display: none;
   }
 }
-
+ img{
+  border-radius: 8px;
+ }
 .masthead.-type-1 .masthead__text {
   /* max-width: 18.75rem; */
   color: rgba(238, 243, 255, 0.475);
@@ -6026,7 +6028,7 @@ body.is-cursor-active * {
 }
 .portfolioCard.-type-1.-hover.block {
   /* opacity: 0.7; */
-  cursor: not-allowed;
+  /* cursor: not-allowed; */
 
   /* pointer-events:visible; */
 }
@@ -6034,7 +6036,7 @@ body.is-cursor-active * {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.616);
+  background-color: unset;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -6535,12 +6537,13 @@ body.is-cursor-active * {
   position: relative;
   z-index: 2;
   display: block;
+  height: 100%;
 }
 
 .projects-nav__item.-prev .projects-nav__content {
   padding-left: 7.5rem;
   padding-right: 5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 @media (max-width: 767px) {
@@ -15348,49 +15351,7 @@ body.compensate-for-scrollbar {
   background: #0000004a;
   color: #fff;
 }
-/* screen */
-@media (max-width: 767px) {
-  .badgeText3{
-    position: absolute;
-      padding: 4px 8px;
-      font-size: 0.5rem;
-      top: 8px;
-      left: 8px;
-  }
-  .tab-header {
-    width: 100% !important;
-    overflow-x: auto;
-  }
-  .tab-header::-webkit-scrollbar {
-    display: none;
-    /* height: 2px; */
-  }
-  .tab-body .tab-content {
-    padding: 16px 0px;
-  }
-  .uiLabHead {
-    margin-top: -25vh;
-    /* position: relative;
-    z-index: 999;
-    perspective: 500px; */
-  }
-  .h-125vh {
-    height: 110vh;
-  }
-  .upup {
-    clip-path: ellipse(100% 100% at 50% 0%);
-  }
 
-  .uiLab {
-    padding: 8px;
-    transform: rotate3d(1, 0, 0, 20deg);
-    border-radius: 14px;
-  }
-  .img-wrap2 {
-    border-radius: 8px;
-    border: 1px inset #f2f2f268;
-  }
-}
 
 .mas {
   position: absolute;
@@ -16613,6 +16574,21 @@ mark {
   left: 24px;
   z-index: 99;
 }
+.badgeText4 {
+  align-items: center;
+  display: inline-flex;
+  padding: 8px 12px;
+  background: #34343440;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  line-height: 1;
+  color: #e0e1f0ad;
+  margin-bottom: 16px;
+
+}
 @keyframes ping {
   75%,
   to {
@@ -16640,22 +16616,7 @@ mark {
   border-radius: 50%;
   display: inline-block;
 }
-.badgeText4 {
-  padding: 12px 16px;
-  background: #00000030;
-  backdrop-filter: blur(8px);
-  border-radius: 8px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 1;
-  color: #ffffff;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  z-index: 99;
-}
+
 .flex-start {
   align-items: flex-start;
 }
@@ -16743,3 +16704,46 @@ body {
   
   #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
  .goog-text-highlight { background: none !important; box-shadow: none !important;} */
+
+ /* screen */
+@media (max-width: 767px) {
+  .badgeText3{
+    padding: 8px 14px;
+    font-size: 0.65rem;
+    top: 16px;
+    left: 16px;
+  }
+  .tab-header {
+    width: 100% !important;
+    overflow-x: auto;
+  }
+  .tab-header::-webkit-scrollbar {
+    display: none;
+    /* height: 2px; */
+  }
+  .tab-body .tab-content {
+    padding: 16px 0px;
+  }
+  .uiLabHead {
+    margin-top: -25vh;
+    /* position: relative;
+    z-index: 999;
+    perspective: 500px; */
+  }
+  .h-125vh {
+    height: 110vh;
+  }
+  .upup {
+    clip-path: ellipse(100% 100% at 50% 0%);
+  }
+
+  .uiLab {
+    padding: 8px;
+    transform: rotate3d(1, 0, 0, 20deg);
+    border-radius: 14px;
+  }
+  .img-wrap2 {
+    border-radius: 8px;
+    border: 1px inset #f2f2f268;
+  }
+}
