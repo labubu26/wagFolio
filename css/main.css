@@ -278,8 +278,8 @@
   height: calc(100% + 0.125rem);
   width: calc(100% + 0.125rem);
   transform-origin: bottom;
-  -webkit-animation-duration: 1, 2s;
-  animation-duration: 1.2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-animation-fill-mode: both;
@@ -299,8 +299,8 @@
 [data-anim^="img-up"] > *,
 [data-anim-child^="img-up"] > * {
   transform-origin: top;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 
   -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
@@ -14135,6 +14135,7 @@ body.compensate-for-scrollbar {
 .fancybox-image,
 .fancybox-spaceball {
   background: transparent;
+  border-radius: initial;
   border: 0;
   height: 100%;
   left: 0;
@@ -14917,7 +14918,7 @@ body.compensate-for-scrollbar {
   font-weight: 600;
   /* letter-spacing: 0.1em; */
   cursor: pointer;
-  flex: 1;
+  flex-grow: 1;
 }
 
 .btn:hover {
@@ -14928,7 +14929,7 @@ body.compensate-for-scrollbar {
   pointer-events: none;
   color: var(--bg-dark-1);
 
-  flex: 1;
+  /* flex: 1; */
   background: rgb(255 255 255);
 
   border-radius: 8px;
