@@ -1022,7 +1022,7 @@
           ease: 'quart.inOut',
           scale: 1,
           opacity: 1,
-        }, '>-1.5')
+        }, '>-1.8')
 
 
 
