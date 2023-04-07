@@ -15184,7 +15184,7 @@ body.compensate-for-scrollbar {
   right: 0;
   bottom: 0;
   background: rgb(6 7 14 / 82%);
-  backdrop-filter: blur(6px);
+  /* backdrop-filter: grayscale(80%); */
   /* filter: grayscale(1); */
   visibility: hidden;
   opacity: 0;
@@ -16695,7 +16695,12 @@ body {
  /* screen */
 @media (max-width: 767px) {
 
-
+  .btn {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
   .sm\:fw-600 {
     font-weight: 600!important;
   }
