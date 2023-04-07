@@ -1686,9 +1686,7 @@ h6 {
   .sm\:text-6xl {
     font-size: var(--text-6xl);
   }
-  .sm\:fw-600 {
-    font-weight: 600;
-  }
+
   .sm\:leading-sm {
     line-height: 1.2 !important;
   }
@@ -14732,14 +14730,15 @@ body.compensate-for-scrollbar {
 
 .badge-dark{
   display: inline-block;
-    width: fit-content;
-    padding: 8px 16px;
-    background: #1f2638a3;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: "Inter";
-    color: #9191c1;
-    font-weight: 500;
+  width: fit-content;
+  padding: 8px 16px;
+  background: #1f2638a3;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Inter";
+  color: #a3a3be;
+  font-weight: 500
 }
 
 /* ACCC FAQ */
@@ -16331,7 +16330,7 @@ input#deslizador::-ms-tooltip {
   .bd2line,
   .bdcir2 {
     background-image: none;
-    padding: 0px;
+    /* padding: 0px; */
   }
   .tagSub {
     font-size: 0.675rem;
@@ -16708,6 +16707,9 @@ body {
 
  /* screen */
 @media (max-width: 767px) {
+  .sm\:fw-600 {
+    font-weight: 600!important;
+  }
   .badgeText3{
     padding: 8px 14px;
     font-size: 0.65rem;
