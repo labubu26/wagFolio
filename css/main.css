@@ -5373,7 +5373,7 @@ body.is-cursor-active * {
 
 @media (max-width: 575px) {
   .masthead.-type-1 .masthead__title {
-    font-size: 2.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -5387,7 +5387,7 @@ body.is-cursor-active * {
  }
 .masthead.-type-1 .masthead__text {
   /* max-width: 18.75rem; */
-  color: rgba(238, 243, 255, 0.475);
+  color: rgba(208, 218, 239, 0.475);
   font-weight: 400;
   font-size: 1rem;
 }
