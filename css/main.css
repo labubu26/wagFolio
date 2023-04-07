@@ -6094,7 +6094,7 @@ body.is-cursor-active * {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__title {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   line-height: 1.1;
   font-weight: 700;
   font-family: "Inter";
@@ -6106,6 +6106,7 @@ body.is-cursor-active * {
 .portfolioCard.-type-1.-hover .portfolioCard__category {
   padding: 12px 0 0px;
   font-size: 1rem;
+  line-height: 1.8rem;
   color: var(--font-dark);
   font-weight: 400;
 }
