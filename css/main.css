@@ -15051,10 +15051,10 @@ body.compensate-for-scrollbar {
   transition: all 0.3s ease 0s;
   margin: 0px auto;
   border-radius: 12px;
-  overflow-x: auto;
+  overflow-x: hidden;
   padding: 8px;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: center;
 }
 
