@@ -16701,6 +16701,9 @@ body {
 
  /* screen */
 @media (max-width: 767px) {
+  p{
+    font-size: inherit;
+  }
   mark {
     color: inherit;
     position: relative;
