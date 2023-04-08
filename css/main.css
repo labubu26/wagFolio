@@ -3229,8 +3229,8 @@ h6 {
 }
 
 .nav__info__item h5 {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.285);
+  font-size: 1rem;
+  color: rgb(73 76 93);
 }
 
 .nav__info__item a,
