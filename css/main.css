@@ -14904,6 +14904,8 @@ body.compensate-for-scrollbar {
   font-weight: 600;
   /* letter-spacing: 0.1em; */
   cursor: pointer;
+  /* flex: 1; */
+    white-space: nowrap;
   
 }
 
@@ -14914,8 +14916,7 @@ body.compensate-for-scrollbar {
 .btn.active {
   pointer-events: none;
   color: var(--bg-dark-1);
-  flex: 1;
-    white-space: nowrap;
+  
 
   /* flex: 1; */
   background: rgb(255 255 255);
