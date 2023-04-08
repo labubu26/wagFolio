@@ -14904,8 +14904,8 @@ body.compensate-for-scrollbar {
   font-weight: 600;
   /* letter-spacing: 0.1em; */
   cursor: pointer;
-  /* flex: 1; */
-    white-space: nowrap;
+  flex: 1;
+  white-space: nowrap;
   
 }
 
@@ -16702,7 +16702,7 @@ body {
     border: none;
     outline: none;
     padding: 8px 16px;
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
   .sm\:fw-600 {
     font-weight: 600!important;
