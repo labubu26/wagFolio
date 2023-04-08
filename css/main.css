@@ -16701,6 +16701,16 @@ body {
 
  /* screen */
 @media (max-width: 767px) {
+  mark {
+    color: inherit;
+    position: relative;
+    background: linear-gradient(0deg, #7af1ace4 2%, #bafbc528 0%);
+    padding: 0px;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    transition: background-size 1s ease-in-out;
+  }
 
   .btn {
     border: none;
