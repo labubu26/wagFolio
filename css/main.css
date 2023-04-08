@@ -16289,10 +16289,10 @@ input#deslizador::-ms-tooltip {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 14px;
-  padding: 8px 24px;
+  padding: 6px 14px;
   border-radius: 4px;
   margin: 32px;
-  background: #0c0c0c4a;
+  background: #0c0c0c8a;
   backdrop-filter: blur(4px);
 }
 .img-comp-img:first-child:after {
