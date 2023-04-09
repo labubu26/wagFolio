@@ -15682,7 +15682,7 @@ blockquote:after {
       rgba(155, 179, 231, 0.089),
       #0b101b
     ),
-    url(https://assets.website-files.com/63619a386216ae681d93409b/6362a5416f9a010da7102c55_shape-grid-dataplus-template.svg);
+    url(/img/general/bg-grid.svg);
   background-position: 0px 0px, 50% 50%;
   background-size: 100% 200%, 68px 68px;
   background-repeat: repeat, repeat;
@@ -15710,7 +15710,7 @@ blockquote:after {
       rgba(155, 179, 231, 0.089) -109%,
       #0b101b
     ),
-    url(https://assets.website-files.com/63619a386216ae681d93409b/6362a5416f9a010da7102c55_shape-grid-dataplus-template.svg);
+    url(/img/general/bg-grid.svg);
   background-position: 0px 0px, 0% 0%;
   background-size: 100% 100%, 68px 68px;
   background-repeat: repeat, repeat;
@@ -15863,6 +15863,10 @@ blockquote:after {
 .subC:hover::after {
   transform: translate(-50%, -50%) scale(1);
 }
+
+/*  */
+
+
 .crop {
   overflow: hidden;
   border-radius: 8px;
