@@ -6135,7 +6135,8 @@ body.is-cursor-active * {
     font-size: 1.75rem;
   }
   .portfolioCard.-type-1.-hover .portfolioCard__category {
-    font-size: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
   }
   .portfolioCard.-type-1.-hover .portfolioCard__categorySub {
     font-size: 0.875rem;
@@ -14842,9 +14843,10 @@ body.compensate-for-scrollbar {
   }
 
   .panel {
-    background: rgb(245 246 247 / 18%);
-    padding-left: 16px;
-    padding-right: 16px;
+    background: rgb(255 255 255);
+    padding-left: 0px;
+    padding-right: 0px;
+
   }
   .dot li {
     padding-left: 24px;
@@ -16464,6 +16466,21 @@ input#deslizador::-ms-tooltip {
 .img-enlargable {
   cursor: zoom-in;
 }
+
+.textmore-1{
+  display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+
+.textmore-2{
+  display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
 
 @media (max-width: 767px) {
   .layout-pt-md {
