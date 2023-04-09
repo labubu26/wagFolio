@@ -13402,12 +13402,6 @@ html.full-page-slider body {
   background: lightblue;
 } */
 
-.list-dot li {
-  position: relative;
-  margin-bottom: inherit;
-  padding-left: 48px;
-  font-size: inherit;
-}
 
 .list-dot2 li {
   position: relative;
@@ -13416,77 +13410,7 @@ html.full-page-slider body {
   font-size: inherit;
 }
 
-.list-dot li:last-child {
-  margin-bottom: 0px !important;
-}
 
-.list-dot li::before {
-  position: absolute;
-  content: "✔";
-  top: -4px;
-  left: 0;
-  line-height: 0.8;
-  height: 32px;
-  width: 32px;
-  font-size: 16px;
-  color: var(--accent-color);
-  background: var(--bg-dark-6);
-  border-radius: 100%;
-  padding: 11px;
-}
-.list-dot.-solid li::before {
-  position: absolute;
-  content: "✔";
-  top: 0px;
-  left: 0;
-  line-height: 2em;
-  font-family: ui-rounded;
-  height: 2em;
-  width: 2em;
-  font-weight: 600;
-  font-size: 0.8em;
-  color: #00d685;
-  background: #00d68508;
-  box-shadow: 0px 0px 0px 2px #28e99b17;
-  border-radius: 100%;
-  padding: 0 9px;
-}
-.list-dot.-solid li {
-  /* padding-left: 60px; */
-}
-.list-dot.-red li::before {
-  content: "●";
-  color: rgb(227 14 79);
-  /* border: 1px solid rgb(227 14 79 / 22%); */
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  line-height: 29px;
-  height: 32px;
-  width: 32px;
-  font-size: 18px;
-  padding: 0px 11px;
-  border-radius: 100%;
-  /* font-family: "inter"; */
-}
-.list-dot.-inf li::before {
-  content: "●";
-  color: rgb(2 200 118);
-
-  background: var(--bg-dark-6);
-
-  /* border: 1px solid rgb(227 14 79 / 22%); */
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  line-height: 29px;
-  height: 32px;
-  width: 32px;
-  font-size: 18px;
-  padding: 0px 11px;
-  border-radius: 100%;
-  /* font-family: "inter"; */
-}
 
 .dot li {
   position: relative;
@@ -13498,7 +13422,7 @@ html.full-page-slider body {
   margin-bottom: inherit;
 }
 
-.dott li, .dot-suc li {
+.dott li, .dot-suc li , .dot-not li {
   position: relative;
   /* margin-bottom: 32px; */
   /* padding-left: 32px; */
@@ -13507,9 +13431,8 @@ html.full-page-slider body {
   margin-bottom: inherit;
 }
 
-.dot-suc li{
+.dot-suc li, .dot-not li{
   padding-left: 32px;
-
 }
 
 
@@ -13536,7 +13459,21 @@ html.full-page-slider body {
   background-image: url(/img/general/suc.svg);
   line-height: 0;
   border-radius: 0;
-  transform: scale(0.8);
+  /* transform: scale(0.8); */
+}
+
+.dot-not li::before{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: unset;
+  background-image: url(/img/general/not.svg);
+  line-height: 0;
+  border-radius: 0;
+  /* transform: scale(0.8); */
 }
 
 .dot .-suc.-gray::before {
