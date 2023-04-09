@@ -6138,8 +6138,8 @@ body.is-cursor-active * {
     font-size: 1.75rem;
   }
   .portfolioCard.-type-1.-hover .portfolioCard__category {
-    font-size: 0.875rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.8;
   }
   .portfolioCard.-type-1.-hover .portfolioCard__categorySub {
     font-size: 0.875rem;
