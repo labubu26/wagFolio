@@ -2829,6 +2829,11 @@ h6 {
   padding: 0 3rem;
 }
 
+.header__bar.invert {
+  filter: invert(1)
+
+}
+
 @media (max-width: 767px) {
   .header {
     height: 3.75rem;
