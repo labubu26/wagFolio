@@ -855,6 +855,23 @@ body::-webkit-scrollbar-thumb {
   border-left: none;
 }
 
+div::-webkit-scrollbar {
+  display: block;
+  height: 6px;
+  width: 6px;
+
+}
+div::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.064);
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: rgba(160, 160, 160, 0.338);
+  border-radius: 50px;
+  border-right: none;
+  border-left: none;
+}
+
 @media (min-width: 1260px) {
   .container {
     max-width: 77rem;
@@ -5361,6 +5378,7 @@ body.is-cursor-active * {
   line-height: 1.3;
   letter-spacing: -0.03em;
   font-size: 4.5rem;
+  font-weight: 600;
 }
 
 @media (max-width: 1229px) {
@@ -15421,12 +15439,11 @@ body.compensate-for-scrollbar {
   /* border: 1px solid #6a00fb; */
   background-color: transparent;
   transition: all 0.3s ease;
-  font-size: 1.25rem;
   /* font-family: "Inter"; */
   color: var(--font-dark);
-  font-weight: 600;
+  font-weight: 500;
   padding: 8px 32px;
-  font-size: 1.125rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 .tab-header .tab-btn:focus {
@@ -15529,7 +15546,7 @@ body.compensate-for-scrollbar {
 }
 .tab-header[border] .underline {
   margin: 8px 0;
-  height: 50px;
+  height: calc(100% - 16px);
   bottom: 0;
 }
 
