@@ -862,6 +862,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 575px) {
+  body::-webkit-scrollbar{
+    display: none;
+  }
   .container {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
