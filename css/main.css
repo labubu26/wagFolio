@@ -3251,13 +3251,14 @@ h6 {
 
 .nav__info__item h5 {
   font-size: 1rem;
-  color: rgb(73 76 93);
+  color: rgb(71, 75, 96);
 }
 
 .nav__info__item a,
 .nav__info__item p {
   display: block;
   font-size: 1.125rem;
+  padding: 4px 0;
 }
 
 @media (max-width: 991px) {
@@ -3992,7 +3993,7 @@ h6 {
 }
 
 .sectionHeading__subtitle.-light {
-  color: rgb(162, 176, 209);
+  color:rgb(179 187 205);
   margin-bottom: 1.2rem;
   font-size: 0.75rem;
 }

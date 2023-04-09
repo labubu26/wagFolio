@@ -286,9 +286,8 @@
           const tl = gsap.timeline();
 
           return tl
-
             .to(progress, {
-              delay: 0.2,
+              // delay: 0.2,
               duration: 0.7,
               ease: 'quart.inOut',
               opacity: 0,
@@ -296,7 +295,7 @@
               // onStart: () => {
               //   bg.classList.add('origin-left');
               // }
-            }, )
+            }, '>.4')
             .to(bg, {
               ease: 'quart.inOut',
               duration: 0.6,
@@ -307,7 +306,7 @@
                 document.documentElement.classList.remove('overflow-hidden');
                 document.body.classList.remove('overflow-hidden');
               },
-            }, '>-0.5')
+            }, '>-.7')
 
         },
         extendTimeline: true,
@@ -3430,16 +3429,16 @@ function beforeAfter() {
 
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener("contextmenu",
-  event => event.preventDefault()
-  );
+// document.addEventListener("contextmenu",
+//   event => event.preventDefault()
+//   );
 
