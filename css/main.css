@@ -15388,7 +15388,7 @@ body.compensate-for-scrollbar {
   color: var(--font-dark);
   font-weight: 600;
   padding: 12px 24px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   white-space: nowrap;
 }
 .tab-header .tab-btn:focus {
@@ -15692,8 +15692,8 @@ blockquote:after {
   position: relative;
   z-index: 0;
   display: inline-block;
-  margin: -2% -6%;
-  padding: 2% 7%;
+  margin: -2% -8px;
+  padding: 2% 8px;
   background-image: url(/img/general/cir2.svg);
   background-position: 50% 50%;
   background-size: contain;

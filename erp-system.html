@@ -1,183 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Primary Meta Tags -->
+    <meta
+      name="keywords"
+      content="ui/ux designer, designer, ui/ux designer là gì, it viec,thiết kế web
+  , tuyển dụng ui/ux designer, ux research, Ngo Quang Trung, Quang Trung, wagtrung, cv, portfolio, uxfolio"
+    />
+    <meta name="title" content="WagTrung" />
+    <meta
+      name="description"
+      content="An UX Case Study by WagTrung - Ngo Quang Trung"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Primary Meta Tags -->
-  <meta name="keywords" content="ui/ux designer, designer, ui/ux designer là gì, it viec,thiết kế web
-  , tuyển dụng ui/ux designer, ux research, Ngo Quang Trung, Quang Trung, wagtrung, cv, portfolio, uxfolio" />
-  <meta name="title" content="WagTrung" />
-  <meta name="description" content="An UX Case Study by WagTrung - Ngo Quang Trung" />
+    <!--  Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wagtrung.com/erp-system" />
+    <meta property="og:title" content="WagTrung" />
+    <meta
+      property="og:description"
+      content="An UX Case Study by WagTrung - Ngo Quang Trung"
+    />
+    <meta property="og:image" content="img/meta/case.png" />
 
-  <!--  Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://wagtrung.com/erp-system" />
-  <meta property="og:title" content="WagTrung" />
-  <meta property="og:description" content="An UX Case Study by WagTrung - Ngo Quang Trung" />
-  <meta property="og:image" content="img/meta/case.png" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/vendors.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css" />
-  <link rel="stylesheet" href="css/main.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
-  <meta name="theme-color" content="#ffffff" />
+    <title>A HRM System</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  </head>
 
-  <title>A HRM System</title>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-</head>
+  <body class="preloader-visible" data-barba="wrapper">
+    <!---------------------->
+    <!-- 0                -->
+    <!-- PRE-LOAD         -->
+    <!--                  -->
+    <!---------------------->
 
-<body class="preloader-visible" data-barba="wrapper">
-  <!---------------------->
-  <!-- 0                -->
-  <!-- PRE-LOAD         -->
-  <!--                  -->
-  <!---------------------->
+    <div class="preloader js-preloader">
+      <div class="preloader__bg"></div>
 
-  <div class="preloader js-preloader">
-    <div class="preloader__bg"></div>
-
-    <div class="preloader__progress">
-      <div class="preloader__progress__inner"></div>
-    </div>
-  </div>
-
-  <div class="header2">
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-    </div>
-  </div>
-
-  <div class="barba-container" data-barba="container">
-    <div data-cursor class="backButton js-backButton">
-      <span class="backButton__bg"></span>
-      <div class="backButton__icon__wrap">
-        <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+      <div class="preloader__progress">
+        <div class="preloader__progress__inner"></div>
       </div>
     </div>
 
-    <main class="text-lg sm:text-base">
-      <!---------------------->
-      <!-- 0                -->
-      <!-- NAV OUT         -->
-      <!--                  -->
-      <!---------------------->
-      <header class="header -light -sticky-light js-header">
-        <!-- header__bar invert   start -->
-        <div class="header__bar invert">
-          <div class="header__logo js-header-logo">
-            <a data-barba href="index.html">
-              <img class="header__logo__dark js-lazy" data-srcset="img/logo/logo.svg" height="29px"
-                alt="WagTrung Logo" />
-            </a>
-          </div>
+    <div class="header2">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
 
-          <div class="header__menu js-header-menu">
-            <button type="button" class="nav-button-open js-nav-open">
-              <i class="icon" data-feather="menu"></i>
-            </button>
-          </div>
+    <div class="barba-container" data-barba="container">
+      <div data-cursor class="backButton js-backButton">
+        <span class="backButton__bg"></span>
+        <div class="backButton__icon__wrap">
+          <i
+            class="backButton__button js-top-button"
+            data-feather="arrow-up"
+          ></i>
         </div>
-        <!-- header__bar invert   end -->
+      </div>
 
+      <main class="text-lg sm:text-base">
         <!---------------------->
         <!-- 0                -->
-        <!-- NAV INSIDE         -->
+        <!-- NAV OUT         -->
         <!--                  -->
         <!---------------------->
-        <nav class="nav js-nav">
-          <div class="nav__inner js-nav-inner">
-            <div class="nav__bg js-nav-bg" style="position: relative">
-              <div class="bg-grid"></div>
-              <!-- style="border-bottom: 4px solid; -->
-              <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
-              <div class="nav__container">
-                <div class="nav__header">
-                  <button type="button" class="nav-button-back js-nav-back">
-                    <i class="icon" data-feather="arrow-left-circle"></i>
-                  </button>
+        <header class="header -light -sticky-light js-header">
+          <!-- header__bar invert   start -->
+          <div class="header__bar invert">
+            <div class="header__logo js-header-logo">
+              <a data-barba href="index.html">
+                <img
+                  class="header__logo__dark js-lazy"
+                  data-srcset="img/logo/logo.svg"
+                  height="29px"
+                  alt="WagTrung Logo"
+                />
+              </a>
+            </div>
 
-                  <button type="button" class="mt-24 nav-btn-close js-nav-close pointer-events-none">
-                    <i class="icon str-weight-3xl" data-feather="x"></i>
-                  </button>
-                </div>
+            <div class="header__menu js-header-menu">
+              <button type="button" class="nav-button-open js-nav-open">
+                <i class="icon" data-feather="menu"></i>
+              </button>
+            </div>
+          </div>
+          <!-- header__bar invert   end -->
 
-                <div class="nav__content">
-                  <div class="nav__content__left">
-                    <div class="navList__wrap">
-                      <ul class="navList js-navList">
-                        <li>
-                          <a data-barba href="index.html"> Home </a>
-                        </li>
+          <!---------------------->
+          <!-- 0                -->
+          <!-- NAV INSIDE         -->
+          <!--                  -->
+          <!---------------------->
+          <nav class="nav js-nav">
+            <div class="nav__inner js-nav-inner">
+              <div class="nav__bg js-nav-bg" style="position: relative">
+                <div class="bg-grid"></div>
+                <!-- style="border-bottom: 4px solid; -->
+                <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
+                <div class="nav__container">
+                  <div class="nav__header">
+                    <button type="button" class="nav-button-back js-nav-back">
+                      <i class="icon" data-feather="arrow-left-circle"></i>
+                    </button>
 
-                        <li>
-                          <a data-barba href="case-studies.html">
-                            Case Study
-                          </a>
-                        </li>
-
-                        <li>
-                          <a data-barba href="about-me.html"> About Me </a>
-                        </li>
-
-                        <li>
-                          <a data-barba href="works.html"> Works </a>
-                        </li>
-
-                        <li>
-                          <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
-                            class="button -sm -outline-white text-white -light mt-32">
-                            <i class="icon mr-8" data-feather="download"></i>
-                            Download my CV
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                    <button
+                      type="button"
+                      class="mt-24 nav-btn-close js-nav-close pointer-events-none"
+                    >
+                      <i class="icon str-weight-3xl" data-feather="x"></i>
+                    </button>
                   </div>
 
-                  <div class="nav__content__right">
-                    <div class="nav__info">
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500">
-                          UI/UX Designer
-                        </h5>
+                  <div class="nav__content">
+                    <div class="nav__content__left">
+                      <div class="navList__wrap">
+                        <ul class="navList js-navList">
+                          <li>
+                            <a data-barba href="index.html"> Home </a>
+                          </li>
 
-                        <div class="nav__info__content text-lg text-white mt-16">
-                          <p>Ngo Quang Trung</p>
-                        </div>
+                          <li>
+                            <a data-barba href="case-studies.html">
+                              Case Study
+                            </a>
+                          </li>
+
+                          <li>
+                            <a data-barba href="about-me.html"> About Me </a>
+                          </li>
+
+                          <li>
+                            <a data-barba href="works.html"> Works </a>
+                          </li>
+
+                          <li>
+                            <a
+                              target="_blank"
+                              href="img/backgrounds/Final-thesis-NQTrung.pdf"
+                              download="QuangTrung_CV"
+                              class="button -sm -outline-white text-white -light mt-32"
+                            >
+                              <i class="icon mr-8" data-feather="download"></i>
+                              Download my CV
+                            </a>
+                          </li>
+                        </ul>
                       </div>
+                    </div>
 
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500">
-                          Social sites
-                        </h5>
+                    <div class="nav__content__right">
+                      <div class="nav__info">
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            UI/UX Designer
+                          </h5>
 
-                        <div class="nav__info__content text-lg text-white mt-16">
-                          <a target="_blank" href="https://www.linkedin.com/in/wagtrung/">LinkedIn</a>
-                          <a target="_blank" href="https://www.behance.com/powow/">Behance</a>
+                          <div
+                            class="nav__info__content text-lg text-white mt-16"
+                          >
+                            <p>Ngo Quang Trung</p>
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500">
-                          Contact Me
-                        </h5>
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Social sites
+                          </h5>
 
-                        <div class="nav__info__content text-lg text-white mt-16">
-                          <a href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
-                          <a href="tel:+84938074106">+84 938 074 106</a>
+                          <div
+                            class="nav__info__content text-lg text-white mt-16"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://www.linkedin.com/in/wagtrung/"
+                              >LinkedIn</a
+                            >
+                            <a
+                              target="_blank"
+                              href="https://www.behance.com/powow/"
+                              >Behance</a
+                            >
+                          </div>
+                        </div>
+
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Contact Me
+                          </h5>
+
+                          <div
+                            class="nav__info__content text-lg text-white mt-16"
+                          >
+                            <a href="mailto:nqt99designs@gmail.com"
+                              >nqt99designs@gmail.com</a
+                            >
+                            <a href="tel:+84938074106">+84 938 074 106</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -185,81 +230,113 @@
                 </div>
               </div>
             </div>
-          </div>
-        </nav>
-        <!-- nav end -->
-      </header>
-      <!-- header end -->
+          </nav>
+          <!-- nav end -->
+        </header>
+        <!-- header end -->
 
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
 
-      <!---------------------->
-      <!--                 -->
-      <!-- INTRO BG + TEXT  -->
-      <!--                  -->
-      <!---------------------->
-      <div class="container-fluid px-0 z-5 relative upup">
-        <div data-parallax="0.3" class="z-5 js-image h-125vh">
-          <div data-parallax-target class="bg-image js-lazy" data-bg="img/general/intro.jpg">
-            <div class="mas2"></div>
-            <div class="bg-grid"></div>
+        <!---------------------->
+        <!--                 -->
+        <!-- INTRO BG + TEXT  -->
+        <!--                  -->
+        <!---------------------->
+        <div class="container-fluid px-0 z-5 relative upup">
+          <div data-parallax="0.3" class="z-5 js-image h-125vh">
+            <div
+              data-parallax-target
+              class="bg-image js-lazy"
+              data-bg="img/general/intro.jpg"
+            >
+              <div class="mas2"></div>
+              <div class="bg-grid"></div>
 
-            <section class="masthead -type-1 sm:text-center js-masthead-type-work-1 js-shapes">
-              <div class="layout-pt-sm layout-pb-lg">
-                <div class="container-fluid sm:container">
-                  <div class="row justify-content-center">
-                    <div class="text-center row justify-content-center col-md-9 col-sm-12 z-3 upContent">
-                      <!-- sub top -->
-                      <div class="col-md-12" data-split="lines" data-split-page-reveal>
-                        <p class="masthead__subtitle tagSub mb-32 sm:mb-24 js-subtitle">
-                          UX Case Study
-                        </p>
-                      </div>
-                      <!-- Title -->
-                      <div class="col-md-12" data-split="lines" data-split-page-reveal>
-                        <h1 class="masthead__title sm: text-white js-title">
-                          <span class="bluebg">An Optimal HR System</span>
-                        </h1>
-                      </div>
-                      <!-- sub bot -->
-                      <div class="mt-24 sm:mt-16 col-md-8" data-split="lines">
-                        <p class="js-info-item masthead__text">
-                          How did I help reduce the time it takes to review
-                          "Leave Requests" ?
-                        </p>
-                      </div>
-                      <!-- author -->
-                      <div class="mt-32 sm:mt-56 col-md-8" data-split="lines">
-                        <a data-barba href="about.html" class="text-cen2 js-info-item">
-                          <img class="header__logo__dark js-lazy" data-srcset="img/general/wt.png" height="32px" />
-                          <p class="mt-8 text-sm fw-500 ml-4">Quang Trung</p>
-                        </a>
+              <section
+                class="masthead -type-1 sm:text-center js-masthead-type-work-1 js-shapes"
+              >
+                <div class="layout-pt-sm layout-pb-lg">
+                  <div class="container-fluid sm:container">
+                    <div class="row justify-content-center">
+                      <div
+                        class="text-center row justify-content-center col-md-9 col-sm-12 z-3 upContent"
+                      >
+                        <!-- sub top -->
+                        <div
+                          class="col-md-12"
+                          data-split="lines"
+                          data-split-page-reveal
+                        >
+                          <p
+                            class="masthead__subtitle tagSub mb-32 sm:mb-24 js-subtitle"
+                          >
+                            UX Case Study
+                          </p>
+                        </div>
+                        <!-- Title -->
+                        <div
+                          class="col-md-12"
+                          data-split="lines"
+                          data-split-page-reveal
+                        >
+                          <h1 class="masthead__title sm: text-white js-title">
+                            <span class="bluebg">An Optimal HR System</span>
+                          </h1>
+                        </div>
+                        <!-- sub bot -->
+                        <div class="mt-24 sm:mt-16 col-md-8" data-split="lines">
+                          <p class="js-info-item masthead__text">
+                            How did I help reduce the time it takes to review
+                            "Leave Requests" ?
+                          </p>
+                        </div>
+                        <!-- author -->
+                        <div class="mt-32 sm:mt-56 col-md-8" data-split="lines">
+                          <a
+                            data-barba
+                            href="about.html"
+                            class="text-cen2 js-info-item"
+                          >
+                            <img
+                              class="header__logo__dark js-lazy"
+                              data-srcset="img/general/wt.png"
+                              height="32px"
+                            />
+                            <p class="mt-8 text-sm fw-500 ml-4">Quang Trung</p>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
+            <!-- glow -->
+            <img
+              class="HomeBackground-bg-gradient"
+              src="img/4-ERP-casestudy/gradient.png"
+              alt=""
+              width="2460"
+              height="1150"
+            />
           </div>
-          <!-- glow -->
-          <img class="HomeBackground-bg-gradient" src="img/4-ERP-casestudy/gradient.png" alt="" width="2460"
-            height="1150" />
         </div>
-      </div>
 
-      <!---------------------->
-      <!--                 -->
-      <!-- IPAD             -->
-      <!--                  -->
-      <!---------------------->
-      <div class="d-flex sm:container justify-content-center align-items-center uiLabHead">
-        <div class="col-lg-10 uiLab">
-          <div class="img-wrap2">
-            <!-- video 16:9-->
-            <!-- <div class=" wrap16-9">
+        <!---------------------->
+        <!--                 -->
+        <!-- IPAD             -->
+        <!--                  -->
+        <!---------------------->
+        <div
+          class="d-flex sm:container justify-content-center align-items-center uiLabHead"
+        >
+          <div class="col-lg-10 uiLab">
+            <div class="img-wrap2">
+              <!-- video 16:9-->
+              <!-- <div class=" wrap16-9">
               <iframe class="content16-9" width="100%" height="100%"
                 src="https://www.youtube.com/embed/2w8yzyzFDao?autoplay=1&rel=1&showinfo=0&color=white&modestbranding=1"
                 frameborder="0"
@@ -267,23 +344,23 @@
                 allowfullscreen></iframe>
             </div> -->
 
-            <!-- img 16:9 -->
-            <!-- <div data-parallax="0.95" class="ratio ratio-16:9 ">
+              <!-- img 16:9 -->
+              <!-- <div data-parallax="0.95" class="ratio ratio-16:9 ">
                 <div data-parallax-target class="bg-image2 js-lazy" data-bg="img/4-ERP-casestudy/tinder.png"></div>
               </div> -->
 
-            <!-- compare -->
-            <div class="img-comp-container">
-              <div class="img-comp-img">
-                <img src="/img/4-ERP-casestudy/newintro.png" />
+              <!-- compare -->
+              <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img src="/img/4-ERP-casestudy/newintro.png" />
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="/img/4-ERP-casestudy/oldintro.png" />
+                </div>
               </div>
-              <div class="img-comp-img img-comp-overlay">
-                <img src="/img/4-ERP-casestudy/oldintro.png" />
-              </div>
-            </div>
 
-            <!-- IPAD SLIDER (js-sliderMain-type-2 js-nav-prev   -  js-section-slider2 js-prev) -->
-            <!-- <div>
+              <!-- IPAD SLIDER (js-sliderMain-type-2 js-nav-prev   -  js-section-slider2 js-prev) -->
+              <!-- <div>
               <div class="js-section-slider2 " data-slider-col="base-1 lg-1 md-1 sm-1" data-gap="0" data-center
                 data-loop effect="fade" autoplay="30000" data-pagination>
                 <div class="swiper-wrapper">
@@ -311,330 +388,369 @@
               </div>
             </div> -->
 
-            <!-- slash light ipad -->
-            <div class="img-wrap3"></div>
-          </div>
-        </div>
-      </div>
-
-      <!----------------------><!---------------------->
-      <!-- CONTAINER        --><!---------------------->
-      <!-- ROLE             --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div class="container">
-        <div class="layout-pt-md layout-pb-md cen">
-          <div class="row y-gap-40 x-gap-40 col-md-11 sm:px-0 sm:text-center justify-content-center">
-            <div class="col-lg-3 col-sm-6">
-              <div class="text-cen2">
-                <i class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs" data-feather="navigation"></i>
-                <p class="text-black">Role</p>
-              </div>
-              <p class="sm:fw-500 text-dark leading-xl mt-8">
-                UX/UI Designer, Researcher
-              </p>
-            </div>
-
-            <div class="col-lg-3 col-sm-6">
-              <div class="text-cen2">
-                <i class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs" data-feather="clock"></i>
-                <p class="text-black">Timeline</p>
-              </div>
-              <p class="sm:fw-500 text-dark leading-xl mt-8">
-                Jan - Mar 2020
-              </p>
-            </div>
-
-            <div class="col-lg-3 col-sm-6">
-              <div class="text-cen2">
-                <i class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs" data-feather="grid"></i>
-                <p class="text-black">Categories</p>
-              </div>
-              <p class="sm:fw-500 text-dark leading-xl mt-8">Web-based App</p>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="text-cen2">
-                <i class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs" data-feather="user"></i>
-                <p class="text-black">Client</p>
-              </div>
-              <p class="sm:fw-500 text-dark leading-xl mt-8">MEU Solution</p>
+              <!-- slash light ipad -->
+              <div class="img-wrap3"></div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- <div id="google_translate_element"></div> -->
-
-      <!-- DIVIDER -->
-      <div class="py-8 bg-light-1"></div>
-
-      <!----------------------><!---------------------->
-      <!-- CONTAINER        --><!---------------------->
-      <!-- INDEX            --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div class="container layout-pt-md layout-pb-sm sm:d-none">
-        <div class="row justify-content-center">
-          <div class="col-md-11">
-            <!-- sticker -->
-            <div id="popp" class="sm:d-none">
-              <img srcset="img/general/ve.svg" alt="" width="170px" />
-            </div>
-            <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">
-              Project Index
-            </h2>
-            <!-- tab -->
-            <div class="tab-wrapper">
-              <div class="tab-header" full-width border>
-                <button class="tab-btn text-cen2 justify-content-center">
-                  <span class="bad">0</span>Overview
-                </button>
-                <button class="tab-btn text-cen2 justify-content-center">
-                  <span class="bad">1</span>Empathize
-                </button>
-                <button class="tab-btn text-cen2 justify-content-center">
-                  <span class="bad">2</span> Define
-                </button>
-                <button class="tab-btn text-cen2 justify-content-center">
-                  <span class="bad">3</span>Ideate
-                </button>
-                <button class="tab-btn text-cen2 justify-content-center">
-                  <span class="bad">4</span>Prototype
-                </button>
-                <button class="tab-btn text-cen2 justify-content-center">
-                  <span class="bad">5</span>Test & Future
-                </button>
-                <div class="underline"></div>
+        <!----------------------><!---------------------->
+        <!-- CONTAINER        --><!---------------------->
+        <!-- ROLE             --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div class="container">
+          <div class="layout-pt-md layout-pb-md cen">
+            <div
+              class="row y-gap-40 x-gap-40 col-md-11 sm:px-0 sm:text-center justify-content-center"
+            >
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="navigation"
+                  ></i>
+                  <p class="text-black">Role</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">
+                  UX/UI Designer, Researcher
+                </p>
               </div>
 
-              <div class="tab-body mt-16 sm:mt-0">
-                <div class="tab-content">
-                  <ul class="list-ic vertical">
-                    <li>
-                      <span class="num">1</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">About Project: </span>What is this project?
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">2</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Problem Statements: </span>Why we start? The
-                        Problems & Challenges.
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">3</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">The Goals: </span>Project Targets & User
-                        Targets
-                      </p>
-                    </li>
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="clock"
+                  ></i>
+                  <p class="text-black">Timeline</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">
+                  Jan - Mar 2020
+                </p>
+              </div>
 
-                    <li>
-                      <span class="num">4</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Role / Timeline: </span>Project
-                        Responsibility
-                      </p>
-                    </li>
-                  </ul>
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="grid"
+                  ></i>
+                  <p class="text-black">Categories</p>
                 </div>
-                <div class="tab-content">
-                  <ul class="list-ic vertical">
-                    <li>
-                      <span class="num">1</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Desk Research:
-                        </span>
-                        Collect & analyze from online resources
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">2</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Quantitative Research:
-                        </span>
-                        Get key insights from user's surveys
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">3</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Qualitative Research:
-                        </span>
-                        Interview target users or focus groups with a list of
-                        prepared questions
-                      </p>
-                    </li>
-                  </ul>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">Web-based App</p>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="user"
+                  ></i>
+                  <p class="text-black">Client</p>
                 </div>
-                <div class="tab-content">
-                  <ul class="list-ic vertical">
-                    <li>
-                      <span class="num">1</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Persona:
-                        </span>
-                        Analyze some representatives of focus groups about
-                        his/her Frustrations & Goals
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">2</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Empathy Map:
-                        </span>
-                        What they says/does/feel/thinks and their Pains &
-                        Gains
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">3</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">User Journey Map:
-                        </span>
-                        Figure out user's Pain points & Touch points
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">4</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Competitor Analysis:
-                        </span>
-                        (if required)
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="tab-content">
-                  <ul class="list-ic vertical">
-                    <li>
-                      <span class="num">1</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">HMW:
-                        </span>
-                        feasible solutions for researched pain points
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">2</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">IA:
-                        </span>
-                        Project Hierarchy
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">3</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">User-flow:
-                        </span>
-                        Visualize the project flows
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="tab-content">
-                  <ul class="list-ic vertical">
-                    <li>
-                      <span class="num">1</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Wire-frame (Low/High):
-                        </span>
-                        Before the final screens
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">2</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Style-guild / Visual Design:
-                        </span>
-                        Colors, Typography, Icon, UI Element, ...
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">3</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Prototype & Mockups
-                        </span>
-                        Interactive demo, Presentation
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="tab-content">
-                  <ul class="list-ic vertical">
-                    <li>
-                      <span class="num">1</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Usability Test:
-                        </span>
-                        A/B testing, Eyes tracking, survey, analytics,...
-                      </p>
-                    </li>
-                    <li>
-                      <span class="num">2</span>
-                      <p class=" ">
-                        <span class="text-black d-inline-block fw-500 mr-4">Learned & The Result:
-                        </span>
-                        Achieve the target goals & What the team have learned
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">MEU Solution</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- DIVIDER1 -->
-      <div class="py-8 bg-light-1 sm:d-none"></div>
+        <!-- <div id="google_translate_element"></div> -->
 
-      <!-- SHARE STICK -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
-      <div data-cursor id="share-buttons" class="js-backButton2">
-        <p class="mb-24 fw-600 text-xs text-center bg-light-1 px-8 py-4 rounded-base sm:d-none">
-          Share
-        </p>
+        <!-- DIVIDER -->
+        <div class="py-8 bg-light-1"></div>
 
-        <!-- facebook -->
-        <a class="facebook" target="blank"><i class="fab fa-facebook"></i></a>
+        <!----------------------><!---------------------->
+        <!-- CONTAINER        --><!---------------------->
+        <!-- INDEX            --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div class="container layout-pt-md layout-pb-sm sm:d-none">
+          <div class="row justify-content-center">
+            <div class="col-md-11">
+              <!-- sticker -->
+              <div id="popp" class="sm:d-none">
+                <img srcset="img/general/ve.svg" alt="" width="170px" />
+              </div>
+              <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                Project Index
+              </h2>
+              <!-- tab -->
+              <div class="tab-wrapper">
+                <div class="tab-header" full-width border>
+                  <button class="tab-btn text-cen2 justify-content-center">
+                    <span class="bad">0</span>Overview
+                  </button>
+                  <button class="tab-btn text-cen2 justify-content-center">
+                    <span class="bad">1</span>Empathize
+                  </button>
+                  <button class="tab-btn text-cen2 justify-content-center">
+                    <span class="bad">2</span> Define
+                  </button>
+                  <button class="tab-btn text-cen2 justify-content-center">
+                    <span class="bad">3</span>Ideate
+                  </button>
+                  <button class="tab-btn text-cen2 justify-content-center">
+                    <span class="bad">4</span>Prototype
+                  </button>
+                  <button class="tab-btn text-cen2 justify-content-center">
+                    <span class="bad">5</span>Test & Future
+                  </button>
+                  <div class="underline"></div>
+                </div>
 
-        <!-- linkedin -->
-        <!-- <a class="linkedin" target="blank"><i class="fab fa-linkedin"></i></a> -->
+                <div class="tab-body mt-16 sm:mt-0">
+                  <div class="tab-content">
+                    <ul class="list-ic vertical">
+                      <li>
+                        <span class="num">1</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >About Project: </span
+                          >What is this project?
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">2</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Problem Statements: </span
+                          >Why we start? The Problems & Challenges.
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">3</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >The Goals: </span
+                          >Project Targets & User Targets
+                        </p>
+                      </li>
 
-        <!-- reddit -->
-        <a class="reddit" target="blank"><i class="fab fa-reddit"></i></a>
+                      <li>
+                        <span class="num">4</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Role / Timeline: </span
+                          >Project Responsibility
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content">
+                    <ul class="list-ic vertical">
+                      <li>
+                        <span class="num">1</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Desk Research:
+                          </span>
+                          Collect & analyze from online resources
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">2</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Quantitative Research:
+                          </span>
+                          Get key insights from user's surveys
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">3</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Qualitative Research:
+                          </span>
+                          Interview target users or focus groups with a list of
+                          prepared questions
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content">
+                    <ul class="list-ic vertical">
+                      <li>
+                        <span class="num">1</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Persona:
+                          </span>
+                          Analyze some representatives of focus groups about
+                          his/her Frustrations & Goals
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">2</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Empathy Map:
+                          </span>
+                          What they says/does/feel/thinks and their Pains &
+                          Gains
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">3</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >User Journey Map:
+                          </span>
+                          Figure out user's Pain points & Touch points
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">4</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Competitor Analysis:
+                          </span>
+                          (if required)
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
 
-        <!-- whatsapp-->
-        <a class="whatsapp" target="blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
+                  <div class="tab-content">
+                    <ul class="list-ic vertical">
+                      <li>
+                        <span class="num">1</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >HMW:
+                          </span>
+                          feasible solutions for researched pain points
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">2</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >IA:
+                          </span>
+                          Project Hierarchy
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">3</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >User-flow:
+                          </span>
+                          Visualize the project flows
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
 
-      <!----------------------><!---------------------->
-      <!-- CONTAINER         --><!---------------------->
-      <!-- 0. OVERVIEW       --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div data-anim="slide-up delay-3" class="container layout-pt-md">
-        <div class="row justify-content-center">
-          <div class="col-md-9 col-sm-12">
-            <div class="">
+                  <div class="tab-content">
+                    <ul class="list-ic vertical">
+                      <li>
+                        <span class="num">1</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Wire-frame (Low/High):
+                          </span>
+                          Before the final screens
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">2</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Style-guild / Visual Design:
+                          </span>
+                          Colors, Typography, Icon, UI Element, ...
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">3</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Prototype & Mockups
+                          </span>
+                          Interactive demo, Presentation
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="tab-content">
+                    <ul class="list-ic vertical">
+                      <li>
+                        <span class="num">1</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Usability Test:
+                          </span>
+                          A/B testing, Eyes tracking, survey, analytics,...
+                        </p>
+                      </li>
+                      <li>
+                        <span class="num">2</span>
+                        <p class=" ">
+                          <span class="text-black d-inline-block fw-500 mr-4"
+                            >Learned & The Result:
+                          </span>
+                          Achieve the target goals & What the team have learned
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIVIDER1 -->
+        <div class="py-8 bg-light-1 sm:d-none"></div>
+
+        <!-- SHARE STICK -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        />
+        <div data-cursor id="share-buttons" class="js-backButton2">
+          <p
+            class="mb-24 fw-600 text-xs text-center bg-light-1 px-8 py-4 rounded-base sm:d-none"
+          >
+            Share
+          </p>
+
+          <!-- facebook -->
+          <a class="facebook" target="blank"><i class="fab fa-facebook"></i></a>
+
+          <!-- linkedin -->
+          <!-- <a class="linkedin" target="blank"><i class="fab fa-linkedin"></i></a> -->
+
+          <!-- reddit -->
+          <a class="reddit" target="blank"><i class="fab fa-reddit"></i></a>
+
+          <!-- whatsapp-->
+          <a class="whatsapp" target="blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <!----------------------><!---------------------->
+        <!-- CONTAINER         --><!---------------------->
+        <!-- 0. OVERVIEW       --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div data-anim="slide-up delay-3" class="container layout-pt-md">
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-sm-12">
               <div class="">
-                <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">
-                  About HRM System
-                </h2>
+                <div class="">
+                  <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                    About HRM System
+                  </h2>
 
-                <!-- <button id="btn1" class="button sm:ml-16 -sm -outline-black -light px-24 "
+                  <!-- <button id="btn1" class="button sm:ml-16 -sm -outline-black -light px-24 "
                 onclick="onClickSwitchTextParagraph1()">
               </button> -->
-              </div>
+                </div>
 
-              <!-- <p id="msg1" class="   text-black">
+                <!-- <p id="msg1" class="   text-black">
                 Before building a Product in-house project about Enterprise, Product in-house project about Enterprise
               </p>
               <p id="msg2" class="   mt-24 sm:mt-16">
@@ -642,306 +758,345 @@
                 phase of building a Human Resource Management system (HRM)Resource Management software (ERP), our
                 team had previous experience building from scratch.
               </p> -->
-              <p class="text-black">
-                In this post, I will share about
-                <mark>one of the case studies about "Leave Page" in HRM System,
-                  where I and my team achieved to help the HR department to
-                  simplify HR processes and save their time</mark>.
-              </p>
-              <p class="mt-24 sm:mt-16">
-                About the whole project. Our team previously had experience in
-                developing Enterprise Resource Management software (ERP) for a
-                real estate client (this ERP includes HRM and many other
-                applications like: Intranet, CRM, Dynamic Processes, Task
-                Management, and other satellite projects). Since then,
-                <mark>Team product has worked with PMs and POs to rebuild ideas
-                  and product roadmaps for an independent HRM product from
-                  that previous ERP</mark>
-                according to the Agile process.
-              </p>
-            </div>
-
-            <!-- tab -->
-            <div class="tab-wrapper layout-pt-xs">
-              <div class="tab-header" full-width border>
-                <button class="tab-btn">The Challenges</button>
-                <button class="tab-btn">The Objectives</button>
-                <div class="underline"></div>
-              </div>
-              <div class="tab-body">
-                <div class="tab-content">
-                  <!-- LIST -->
-
-                  <ul class="dot-not text-dark mb-16">
-                    <li>
-                      <p>
-                        The traditional HRM processes is really a big
-                        challenge for companies with a large number of
-                        employees.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        The current HR applications are still not optimized
-                        and diverse in features to meet management needs.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        During the development process, many times the team
-                        has to face between user experience and technology
-                        feasibility.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="tab-content">
-                  <ul class="dot-suc text-dark mb-16">
-                    <li>
-                      <p>
-                        Reduce complex processes to simple for Office People.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Through surveys and interviews to understand the
-                        features required for an HRM system.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Balance project resources by setting a priority list
-                        every month (2 sprints) for features of the entire HRM
-                        system.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- img-fit -->
-            <div class="layout-pt-md">
-              <div class="">
-                <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">
-                  Eye tracking insight
-                </h2>
-                <p>
-                  We see that users have to turn their heads a lots to view
-                  the whole information which may causes eye-strain.
+                <p class="text-black">
+                  In this post, I will share about
+                  <mark
+                    >one of the case studies about "Leave Page" in HRM System,
+                    where I and my team achieved to help the HR department to
+                    simplify HR processes and save their time</mark
+                  >.
+                </p>
+                <p class="mt-24 sm:mt-16">
+                  About the whole project. Our team previously had experience in
+                  developing Enterprise Resource Management software (ERP) for a
+                  real estate client (this ERP includes HRM and many other
+                  applications like: Intranet, CRM, Dynamic Processes, Task
+                  Management, and other satellite projects). Since then,
+                  <mark
+                    >Team product has worked with PMs and POs to rebuild ideas
+                    and product roadmaps for an independent HRM product from
+                    that previous ERP</mark
+                  >
+                  according to the Agile process.
                 </p>
               </div>
 
-              <img data-enlargable class="img-fluid layout-pt-xs" data-anim="img-right cover-light-1 "
-                src="/img/4-ERP-casestudy/eye0.png" />
-              <img data-enlargable class="img-fluid layout-pt-xs" data-anim="img-right cover-light-1 "
-                src="/img/4-ERP-casestudy/eye2.gif" />
-              <!-- <img
+              <!-- tab -->
+              <div class="tab-wrapper layout-pt-xs">
+                <div class="tab-header" full-width border>
+                  <button class="tab-btn">The Challenges</button>
+                  <button class="tab-btn">The Objectives</button>
+                  <div class="underline"></div>
+                </div>
+                <div class="tab-body">
+                  <div class="tab-content">
+                    <!-- LIST -->
+
+                    <ul class="dot-not text-dark mb-16">
+                      <li>
+                        <p>
+                          The traditional HRM processes is really a big
+                          challenge for companies with a large number of
+                          employees.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          The current HR applications are still not optimized
+                          and diverse in features to meet management needs.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          During the development process, many times the team
+                          has to face between user experience and technology
+                          feasibility.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content">
+                    <ul class="dot-suc text-dark mb-16">
+                      <li>
+                        <p>
+                          Reduce complex processes to simple for Office People.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Through surveys and interviews to understand the
+                          features required for an HRM system.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Balance project resources by setting a priority list
+                          every month (2 sprints) for features of the entire HRM
+                          system.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- img-fit -->
+              <div class="layout-pt-md">
+                <div class="">
+                  <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                    Eye tracking insight
+                  </h2>
+                  <p>
+                    We see that users have to turn their heads a lots to view
+                    the whole information which may causes eye-strain.
+                  </p>
+                </div>
+
+                <div class="c" data-anim="img-right cover-light-1 ">
+
+                <img
+                  data-enlargable
+                  class="img-fluid layout-pt-xs"
+                  src="/img/4-ERP-casestudy/eye0.png"
+                /></div>
+                <div class="c" data-anim="img-right cover-light-1 ">
+
+                <img
+                  data-enlargable
+                  class="img-fluid layout-pt-xs"
+                  src="/img/4-ERP-casestudy/eye2.gif"
+                /></div>
+                <!-- <img
                   data-enlargable
                   class="img-fluid mt-32"
                   src="/img/4-ERP-casestudy/eye1.gif"
                 /> -->
-              <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">
-                Eyetracking for the old "Leave Page"
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!----------------------><!---------------------->
-      <!-- STICK            --><!---------------------->
-      <!-- 5 steps          --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-3" class="ufo-sec--navigation container layout-pb-md layout-pt-md">
-        <!-- <h2 class="text-4xl sm:text-2xl     fw-600 text-center mb-40 sm:mb-32">The Design Process</h2> -->
-
-        <div class="sticky-header" id="sticky-header" data-start="4" data-end="9" style="z-index: 10000">
-          <!-- Stick short -->
-          <div class="grid col-md-9 mx-auto">
-            <div class="navigation-mobile-display">
-              <div class="navigation-step-display nav-step checked"></div>
-              <div class="navigation-dropdown-toggle"></div>
-            </div>
-
-            <div class="navigation-steps">
-              <div class="nav-step">
-                <div class="nav-step-content">
-                  <a href="#section-4" class="step-link">
-                    <div class="step-number">1</div>
-                    <div class="step-name">Empathize</div>
-                  </a>
-                </div>
-              </div>
-              <div class="nav-step">
-                <div class="nav-step-content">
-                  <a href="#section-5" class="step-link">
-                    <div class="step-number">2</div>
-                    <div class="step-name">Define</div>
-                  </a>
-                </div>
-              </div>
-              <div class="nav-step">
-                <div class="nav-step-content">
-                  <a href="#section-7" class="step-link">
-                    <div class="step-number">3</div>
-                    <div class="step-name">Ideate</div>
-                  </a>
-                </div>
-              </div>
-              <div class="nav-step">
-                <div class="nav-step-content">
-                  <a href="#section-8" class="step-link">
-                    <div class="step-number">4</div>
-                    <div class="step-name">Prototype</div>
-                  </a>
-                </div>
-              </div>
-              <div class="nav-step">
-                <div class="nav-step-content">
-                  <a href="#section-9" class="step-link">
-                    <div class="step-number">5</div>
-                    <div class="step-name">Test</div>
-                  </a>
-                </div>
+                <p
+                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                >
+                  Eyetracking for the old "Leave Page"
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="sm:d-block py-8 bg-light-1">
-        <!-- DIVIDER -->
-      </div>
+        <!----------------------><!---------------------->
+        <!-- STICK            --><!---------------------->
+        <!-- 5 steps          --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div
+          id="section-3"
+          class="ufo-sec--navigation container layout-pb-md layout-pt-md"
+        >
+          <!-- <h2 class="text-4xl sm:text-2xl     fw-600 text-center mb-40 sm:mb-32">The Design Process</h2> -->
 
-      <!----------------------><!---------------------->
-      <!-- 1                --><!---------------------->
-      <!-- EMPATHIZE        --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-4">
-        <div class="container layout-pt-md">
-          <div class="row justify-content-center">
-            <div class="col-md-9 col-sm-12">
-              <div class=" ">
-                <div class="">
-                  <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">
-                    How did we survey?
-                  </h2>
-                  <!-- <button id="btn3" class="button sm:ml-16 -sm -outline-black -light px-24 "
+          <div
+            class="sticky-header"
+            id="sticky-header"
+            data-start="4"
+            data-end="9"
+            style="z-index: 10000"
+          >
+            <!-- Stick short -->
+            <div class="grid col-md-9 mx-auto">
+              <div class="navigation-mobile-display">
+                <div class="navigation-step-display nav-step checked"></div>
+                <div class="navigation-dropdown-toggle"></div>
+              </div>
+
+              <div class="navigation-steps">
+                <div class="nav-step">
+                  <div class="nav-step-content">
+                    <a href="#section-4" class="step-link">
+                      <div class="step-number">1</div>
+                      <div class="step-name">Empathize</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav-step">
+                  <div class="nav-step-content">
+                    <a href="#section-5" class="step-link">
+                      <div class="step-number">2</div>
+                      <div class="step-name">Define</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav-step">
+                  <div class="nav-step-content">
+                    <a href="#section-7" class="step-link">
+                      <div class="step-number">3</div>
+                      <div class="step-name">Ideate</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav-step">
+                  <div class="nav-step-content">
+                    <a href="#section-8" class="step-link">
+                      <div class="step-number">4</div>
+                      <div class="step-name">Prototype</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="nav-step">
+                  <div class="nav-step-content">
+                    <a href="#section-9" class="step-link">
+                      <div class="step-number">5</div>
+                      <div class="step-name">Test</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:d-block py-8 bg-light-1">
+          <!-- DIVIDER -->
+        </div>
+
+        <!----------------------><!---------------------->
+        <!-- 1                --><!---------------------->
+        <!-- EMPATHIZE        --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div id="section-4">
+          <div class="container layout-pt-md">
+            <div class="row justify-content-center">
+              <div class="col-md-9 col-sm-12">
+                <div class=" ">
+                  <div class="">
+                    <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                      How did we survey?
+                    </h2>
+                    <!-- <button id="btn3" class="button sm:ml-16 -sm -outline-black -light px-24 "
                     onclick="onClickSwitchTextParagraph1()">
                   </button> -->
+                  </div>
+
+                  <p class="text-black">
+                    Understanding the target group of users that the system will
+                    serve through the survey is also a good thing, right?
+                  </p>
+                  <p class="mt-24 sm:mt-16">
+                    After understanding the overall goal of the entire project.
+                    In the first sprint,
+                    <mark
+                      >we conduct user surveys to get a project overview</mark
+                    >
+                    of the context, focus groups, required features, user
+                    insights, and more.
+                  </p>
                 </div>
 
-                <p class="text-black">
-                  Understanding the target group of users that the system will
-                  serve through the survey is also a good thing, right?
-                </p>
-                <p class="mt-24 sm:mt-16">
-                  After understanding the overall goal of the entire project.
-                  In the first sprint,
-                  <mark>we conduct user surveys to get a project overview</mark>
-                  of the context, focus groups, required features, user
-                  insights, and more.
-                </p>
-              </div>
-
-              <div class="row y-gap-32 x-gap-32 layout-pt-xs">
-                <div class="col-md-6">
-                  <div class="noi2 text-center py-32">
-                    <div class="text-cen2">
-                      <h3 class="text-2xl sm:text-xl fw-600 ">23</h3>
-                      <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
+                <div class="row y-gap-32 x-gap-32 layout-pt-xs">
+                  <div class="col-md-6">
+                    <div class="noi2 text-center py-32">
+                      <div class="text-cen2">
+                        <h3 class="text-2xl sm:text-xl fw-600">23</h3>
+                        <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
                       <i class="icon size-2xs str-width-3xl text-dark" data-feather="user"></i>
                     </div> -->
+                      </div>
+                      <p class="mt-16 sm:mt-12">
+                        <!-- <span class="dotcen">Colors</span>  -->
+                        Survey Participants
+                      </p>
                     </div>
-                    <p class="mt-16 sm:mt-12">
-                      <!-- <span class="dotcen">Colors</span>  -->
-                      Survey Participants
-                    </p>
                   </div>
-                </div>
 
-                <div class="col-md-6">
-                  <div class="noi2 text-center py-32">
-                    <div class="text-cen2">
-                      <h3 class="text-2xl sm:text-xl fw-600 ">7</h3>
-                      <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
+                  <div class="col-md-6">
+                    <div class="noi2 text-center py-32">
+                      <div class="text-cen2">
+                        <h3 class="text-2xl sm:text-xl fw-600">7</h3>
+                        <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
                       <i class="icon size-2xs str-width-3xl text-dark" data-feather="user"></i>
                     </div> -->
+                      </div>
+                      <p class="mt-16 sm:mt-12">
+                        <!-- <span class="dotcen">Colors</span>  -->
+                        Interview Participants
+                      </p>
                     </div>
-                    <p class="mt-16 sm:mt-12">
-                      <!-- <span class="dotcen">Colors</span>  -->
-                      Interview Participants
-                    </p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-9 col-sm-12 layout-pt-xs">
-              <!-- img fit -->
-              <div data-anim="img-right cover-light-1 ">
-                <img data-enlargable class="img-fluid" src="/img/4-ERP-casestudy/quan.png" />
-                <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">
-                  Quantitative Refection
-                </p>
+              <div class="col-md-9 col-sm-12 layout-pt-xs">
+                <!-- img fit -->
+                <div data-anim="img-right cover-light-1 ">
+                  <img
+                    data-enlargable
+                    class="img-fluid"
+                    src="/img/4-ERP-casestudy/quan.png"
+                  />
+                  <p
+                    class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                  >
+                    Quantitative Refection
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- key insight -->
-        <div class="container layout-pt-xs">
-          <div
-            class="row align-items-center justify-content-center col-md-9 mx-auto noi rounded-4 px-32 py-32 sm:px-24 sm:py-24">
-            <div class="col-md-4 sm:px-0">
-              <div class="px-12 py-8 rounded-base bg-accent2 d-inline-block mb-24">
-                <i class="icon size-2xs str-width-3xl text-white" data-feather="layers"></i>
+          <!-- key insight -->
+          <div class="container layout-pt-xs">
+            <div
+              class="row align-items-center justify-content-center col-md-9 mx-auto noi rounded-4 px-32 py-32 sm:px-24 sm:py-24"
+            >
+              <div class="col-md-4 sm:px-0">
+                <div
+                  class="px-12 py-8 rounded-base bg-accent2 d-inline-block mb-24"
+                >
+                  <i
+                    class="icon size-2xs str-width-3xl text-white"
+                    data-feather="layers"
+                  ></i>
+                </div>
+                <h2 class="text-2xl sm:text-xl fw-600">
+                  <span class="bd2line pb-0">Key Insights</span>
+                </h2>
+                <p class="fw-400 mt-16 sm:mb-32">
+                  After the survey, we got some key information.
+                </p>
               </div>
-              <h2 class="text-2xl sm:text-xl fw-600 ">
-                <span class="bd2line pb-0">Key Insights</span>
-              </h2>
-              <p class="fw-400 mt-16 sm:mb-32">
-                After the survey, we got some key information.
-              </p>
-            </div>
 
-            <div class="col-md-7 offset-xl-1 sm:px-0">
-              <ul class="dott text-dark mb-16 mt-16">
-                <li class="mt-24 sm:mt-16">
-                  <p>
-                    <span class="text-black fw-500 mr-8">Age range</span>The
-                    main Vietnamese working age (25-30)
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span class="text-black fw-500 mr-8">Gender</span>Mainly
-                    female officers
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span class="text-black fw-500 mr-8">Channel</span>Word /
-                    Excel, Traditional Papers, Gmail, Outlook,..
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span class="text-black fw-500 mr-8">Features</span>
-                    Payrolls, Recruitment, Leave Requests, OT, Staff
-                    Management,..
-                  </p>
-                </li>
-              </ul>
+              <div class="col-md-7 offset-xl-1 sm:px-0">
+                <ul class="dott text-dark mb-16 mt-16">
+                  <li class="mt-24 sm:mt-16">
+                    <p>
+                      <span class="text-black fw-500 mr-8">Age range</span>The
+                      main Vietnamese working age (25-30)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="text-black fw-500 mr-8">Gender</span>Mainly
+                      female officers
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="text-black fw-500 mr-8">Channel</span>Word /
+                      Excel, Traditional Papers, Gmail, Outlook,..
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="text-black fw-500 mr-8">Features</span>
+                      Payrolls, Recruitment, Leave Requests, OT, Staff
+                      Management,..
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- key insight2 -->
-        <!-- <div class="container mt-72 sm:mt-32 ">
+          <!-- key insight2 -->
+          <!-- <div class="container mt-72 sm:mt-32 ">
           <div class="row  mx-auto noi rounded-4 px-40 sm:px-16 sm:py-32 layout-pb-sm layout-pt-sm  ">
 
             <div class="col-md-4 ">
@@ -983,8 +1138,8 @@
           </div>
         </div> -->
 
-        <!-- key insight3 slide full -->
-        <!-- <div class="container layout-pt-md">
+          <!-- key insight3 slide full -->
+          <!-- <div class="container layout-pt-md">
           <div class="row justify-content-center">
             <div class="col-md-9  ">
               <div class="js-section-slider2 overflow-hidden" data-slider-col="base-1 lg-1 md-1 sm-1" data-gap="0"
@@ -1017,121 +1172,270 @@
           </div>
         </div> -->
 
-        <!---------------------->
-        <!-- CONTAINER       -->
-        <!-- L5 - R5.1       -->
-        <!-- QUAL          -->
-        <!---------------------->
-        <div class="container layout-pt-md">
-          <div class="row justify-content-center">
-            <div class="col-md-9 col-sm-12">
-              <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24  ">
-                Let's Interview
-              </h2>
-              <p class="text-black">
-                After having focus groups, we need to understand more about
-                user issues. Therefore,
-                <mark>the Team conducted different interviews for each target
-                  feature</mark>
-                in the entire HRM system, at different times.
-              </p>
+          <!---------------------->
+          <!-- CONTAINER       -->
+          <!-- L5 - R5.1       -->
+          <!-- QUAL          -->
+          <!---------------------->
+          <div class="container layout-pt-md">
+            <div class="row justify-content-center">
+              <div class="col-md-9 col-sm-12">
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                  Let's Interview
+                </h2>
+                <p class="text-black">
+                  After having focus groups, we need to understand more about
+                  user issues. Therefore,
+                  <mark
+                    >the Team conducted different interviews for each target
+                    feature</mark
+                  >
+                  in the entire HRM system, at different times.
+                </p>
 
-              <p class="mt-24 sm:mt-16">
-                <mark>Below is the process of interview for the "Leave page"
-                  features.</mark>
-                Interviewers selected from the focus groups will be asked the
-                same questions when dealing with things related to the "Leave"
-                processes. In addition,
-                <mark>The team also took advantage of the old HRM (in the
-                  previous ERP system) to ask interviewers to complete some
-                  tasks</mark>. Then, we analyzed their Touch-points, Eye-tracking &
-                Difficulties interacting with that old one for remaking a
-                better "Leave page".
-              </p>
+                <p class="mt-24 sm:mt-16">
+                  <mark
+                    >Below is the process of interview for the "Leave page"
+                    features.</mark
+                  >
+                  Interviewers selected from the focus groups will be asked the
+                  same questions when dealing with things related to the "Leave"
+                  processes. In addition,
+                  <mark
+                    >The team also took advantage of the old HRM (in the
+                    previous ERP system) to ask interviewers to complete some
+                    tasks</mark
+                  >. Then, we analyzed their Touch-points, Eye-tracking &
+                  Difficulties interacting with that old one for remaking a
+                  better "Leave page".
+                </p>
 
-              <!-- key insight interview -->
-              <div class="layout-pt-xs">
-                <div class="noi mx-0 my-0 rounded-4 px-32 py-32 sm:px-24 sm:py-24">
-                  <div class="">
-                    <div class=" ">
-                      <!-- <div class="px-12 py-8 rounded-base bg-accent2 d-inline-block mr-16">
+                <!-- key insight interview -->
+                <div class="layout-pt-xs">
+                  <div
+                    class="noi mx-0 my-0 rounded-4 px-32 py-32 sm:px-24 sm:py-24"
+                  >
+                    <div class="">
+                      <div class=" ">
+                        <!-- <div class="px-12 py-8 rounded-base bg-accent2 d-inline-block mr-16">
                         <i class="icon size-2xs str-width-3xl text-white" data-feather="pen-tool"></i>
                       </div> -->
 
-                      <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24  ">
-                        Interview Reflection
-                      </h2>
-                      <!-- <p class="text-sm sm:text-xs mt-8 tracking-sm fw-600 uppercase">
+                        <h2 class="text-2xl sm:text-xl fw-600 mb-32 sm:mb-24">
+                          Interview Reflection
+                        </h2>
+                        <!-- <p class="text-sm sm:text-xs mt-8 tracking-sm fw-600 uppercase">
                         "Leave Page" In HRM System
                       </p> -->
+                      </div>
+                    </div>
+
+                    <div class="">
+                      <ul class="list-dot2 mb-20 sm:mb-16">
+                        <li class="d-flex flex-start">
+                          <span class="badgeText text-black fw-500 mr-16"
+                            >7/7</span
+                          >
+                          <p>Successfully created a leave request.</p>
+                        </li>
+
+                        <li class="d-flex flex-start">
+                          <span class="badgeText text-black fw-500 mr-16"
+                            >6/7</span
+                          >
+                          <p>
+                            Don't know how much leave they have left for
+                            different types of company leave.
+                          </p>
+                        </li>
+
+                        <li class="d-flex flex-start">
+                          <span class="badgeText text-black fw-500 mr-16"
+                            >5/7</span
+                          >
+                          <p>
+                            Find it
+                            <mark
+                              >boring because they have to click too many times
+                              through different tabs</mark
+                            >
+                            in the current "Leave page".
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- tab -->
+                    <div class="tab-wrapper layout-pt-xs">
+                      <div class="tab-header" full-width border>
+                        <button class="tab-btn">User Issues</button>
+                        <button class="tab-btn">User Needs</button>
+                        <div class="underline"></div>
+                      </div>
+                      <div class="tab-body">
+                        <div class="tab-content">
+                          <!-- LIST -->
+
+                          <ul class="dot-not text-dark mb-16">
+                            <li>
+                              <p>
+                                Don't know how many days of paid leave left that
+                                i have
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                How are my Leave Requests? my current leave
+                                request is accepted or not?
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="tab-content">
+                          <ul class="dot-suc text-dark mb-16">
+                            <li>
+                              <p>
+                                Visualize the parameters of different Leave
+                                types
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                Solve the problem of leave application status
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                  <div class="">
-                    <ul class="list-dot2 mb-20 sm:mb-16">
-                      <li class="d-flex flex-start">
-                        <span class="badgeText text-black fw-500 mr-16">7/7</span>
-                        <p>Successfully created a leave request.</p>
-                      </li>
+        <!----------------------><!---------------------->
+        <!-- 2                --><!---------------------->
+        <!-- DEFINE           --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div id="section-5" class="layout-pt-xl sm:layout-pt-lg">
+          <div data-parallax="0.5" class="z-5 js-image">
+            <div
+              data-parallax-target
+              class="bg-image js-lazy"
+              data-bg="https://www.saasdesign.io/for_dribbble__low_quality_.webp"
+            ></div>
+            <div class="mas2"></div>
+            <div class="bg-grid"></div>
+            <div
+              class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center"
+            >
+              <div class="col-md-10 text-center">
+                <h1 class="text-7xl sm:text-4xl text-white fw-600">
+                  Time to <span class="bdcir2 pb-0">Define</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                      <li class="d-flex flex-start">
-                        <span class="badgeText text-black fw-500 mr-16">6/7</span>
-                        <p>
-                          Don't know how much leave they have left for
-                          different types of company leave.
-                        </p>
-                      </li>
+        <div class="container layout-pt-md" data-anim-wrap>
+          <!---------------------->
+          <!-- CONTAINER       -->
+          <!-- L5 - R5.1       -->
+          <!-- PERSONA          -->
+          <!---------------------->
+          <div class="row cen">
+            <div class="col-md-9 col-sm-12">
+              <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                Tell me about you
+              </h2>
 
-                      <li class="d-flex flex-start">
-                        <span class="badgeText text-black fw-500 mr-16">5/7</span>
-                        <p>
-                          Find it
-                          <mark>boring because they have to click too many times
-                            through different tabs</mark>
-                          in the current "Leave page".
-                        </p>
-                      </li>
-                    </ul>
+              <!-- key insight interview -->
+              <div class="">
+                <div
+                  class="noi mx-0 my-0 rounded-4 px-32 py-32 sm:px-24 sm:py-24"
+                >
+                  <div class="  ">
+                    <span class="text-2xl sm:text-xl fw-600 text-black"
+                      >Nam Bình</span
+                    >
+                    <span class="d-block">25 Male ▪ HR Staff ▪ Single</span>
                   </div>
 
                   <!-- tab -->
                   <div class="tab-wrapper layout-pt-xs">
                     <div class="tab-header" full-width border>
-                      <button class="tab-btn">User Issues</button>
-                      <button class="tab-btn">User Needs</button>
+                      <button class="tab-btn">Bio</button>
+                      <button class="tab-btn">Pains</button>
+                      <button class="tab-btn">Gains</button>
                       <div class="underline"></div>
                     </div>
                     <div class="tab-body">
                       <div class="tab-content">
-                        <!-- LIST -->
-
+                        <p class="text-dark text-left">
+                          <span class="text-black"
+                            >"Human resource management needs to be smarter and
+                            more efficient by applying technology
+                            products"</span
+                          >
+                          <span class="mt-12 d-block">
+                            Binh is an HR officer of a technology company. He
+                            has quite a headache with outdated human resource
+                            management processes. He wishes to easily solve the
+                            processes of working with HR through the use of an
+                            optimized HRM system.
+                          </span>
+                        </p>
+                      </div>
+                      <div class="tab-content">
                         <ul class="dot-not text-dark mb-16">
                           <li>
                             <p>
-                              Don't know how many days of paid leave left that
-                              i have
+                              For some short-term leave applications, I also
+                              <mark
+                                >have to look at each application in detail
+                                before it is approved.</mark
+                              >
                             </p>
                           </li>
                           <li>
                             <p>
-                              How are my Leave Requests? my current leave
-                              request is accepted or not?
+                              <mark
+                                >People applying for leave in the same time
+                                frame</mark
+                              >, which is an inadequacy for the overall
+                              performance of the company.
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <mark
+                                >Lack of interaction in work between
+                                colleagues</mark
+                              >
+                              when they didn't know the leave status of each
+                              other.
                             </p>
                           </li>
                         </ul>
                       </div>
+
                       <div class="tab-content">
                         <ul class="dot-suc text-dark mb-16">
                           <li>
-                            <p>
-                              Visualize the parameters of different Leave
-                              types
-                            </p>
+                            <p>'Fast approval of leave requests' feature.</p>
                           </li>
                           <li>
                             <p>
-                              Solve the problem of leave application status
+                              "Conflict warning" with Leave Applications whose
+                              leave time frame overlaps with other colleagues.
                             </p>
+                          </li>
+                          <li>
+                            <p>"Leave Schedule" feature for company members</p>
                           </li>
                         </ul>
                       </div>
@@ -1139,291 +1443,198 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!----------------------><!---------------------->
-      <!-- 2                --><!---------------------->
-      <!-- DEFINE           --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-5" class="layout-pt-xl sm:layout-pt-lg">
-        <div data-parallax="0.5" class="z-5 js-image">
-          <div data-parallax-target class="bg-image js-lazy"
-            data-bg="https://www.saasdesign.io/for_dribbble__low_quality_.webp"></div>
-          <div class="mas2"></div>
-          <div class="bg-grid"></div>
-          <div class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center">
-            <div class="col-md-10 text-center">
-              <h1 class="text-7xl sm:text-4xl text-white fw-600">
-                Time to <span class="bdcir2 pb-0">Define</span>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container layout-pt-md" data-anim-wrap>
-        <!---------------------->
-        <!-- CONTAINER       -->
-        <!-- L5 - R5.1       -->
-        <!-- PERSONA          -->
-        <!---------------------->
-        <div class="row cen">
-          <div class="col-md-9 col-sm-12">
-            <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">
-              Tell me about you
-            </h2>
-
-            <!-- key insight interview -->
-            <div class="">
-              <div class="noi mx-0 my-0 rounded-4 px-32 py-32 sm:px-24 sm:py-24">
-                <div class="  ">
-                  <span class="text-2xl sm:text-xl fw-500 text-black mb-24 sm:mb-8 mr-8">Nam Bình</span>
-                  <span class="d-block">25 Male ▪ HR Staff ▪ Single</span>
-                </div>
-
-                <!-- tab -->
-                <div class="tab-wrapper layout-pt-xs">
-                  <div class="tab-header" full-width border>
-                    <button class="tab-btn">Bio</button>
-                    <button class="tab-btn">Pains</button>
-                    <button class="tab-btn">Gains</button>
-                    <div class="underline"></div>
-                  </div>
-                  <div class="tab-body">
-                    <div class="tab-content">
-                      <p class="text-dark text-left">
-                        <span class="text-black">"Human resource management needs to be smarter and
-                          more efficient by applying technology
-                          products"</span>
-                        <span class="mt-12 d-block">
-                          Binh is an HR officer of a technology company. He
-                          has quite a headache with outdated human resource
-                          management processes. He wishes to easily solve the
-                          processes of working with HR through the use of an
-                          optimized HRM system.
-                        </span>
-                      </p>
-                    </div>
-                    <div class="tab-content">
-                      <ul class="dot-not text-dark mb-16">
-                        <li>
-                          <p>
-                            For some short-term leave applications, I also
-                            <mark>have to look at each application in detail
-                              before it is approved.</mark>
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            <mark>People applying for leave in the same time
-                              frame</mark>, which is an inadequacy for the overall
-                            performance of the company.
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            <mark>Lack of interaction in work between
-                              colleagues</mark>
-                            when they didn't know the leave status of each
-                            other.
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="tab-content">
-                      <ul class="dot-suc text-dark mb-16">
-                        <li>
-                          <p>'Fast approval of leave requests' feature.</p>
-                        </li>
-                        <li>
-                          <p>
-                            "Conflict warning" with Leave Applications whose
-                            leave time frame overlaps with other colleagues.
-                          </p>
-                        </li>
-                        <li>
-                          <p>"Leave Schedule" feature for company members</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- img fit -->
-            <div class="layout-pt-xs">
-              <div data-anim="img-right cover-light-1 ">
-                <img data-enlargable class="img-fluid" src="/img/4-ERP-casestudy/Empa.png" />
-                <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">
-                  Empathy Map - A Story of Nam Bình
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!---------------------->
-        <!-- CONTAINER       -->
-        <!--                -->
-        <!-- JOURNEY       -->
-        <!---------------------->
-        <div class="layout-pt-md" data-anim-wrap>
-          <div class="row justify-content-center">
-            <div class="col-md-9 col-sm-12">
-              <div>
-                <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24  ">
-                  Go through the stages
-                </h2>
-              </div>
-
-              <!-- img-fit -->
-              <div data-anim="img-right cover-light-1 ">
-                <img data-enlargable class="img-fluid" src="/img/4-ERP-casestudy/jm.png" />
-                <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">
-                  UJM - "Approval of leave requests"
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!---------------------->
-        <!-- CONTAINER          -->
-        <!-- L5 - R5.1         -->
-        <!-- COMPETITORS       -->
-        <!---------------------->
-        <div class="layout-pt-md" data-anim-wrap>
-          <div class="row justify-content-center">
-            <div class="col-md-9 col-sm-12">
-              <div>
-                <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">
-                  Competitors Audit
-                </h2>
-              </div>
-
-              <div>
-                <p class="mt-24 sm:mt-16">
-                  Learning about other companies' current products would be
-                  more effective when bringing our HRM products to market.
-                </p>
-              </div>
-
-              <div class=" ">
-                <ul class="dot-suc text-dark mb-16">
-                  <li class="mt-24 sm:mt-16">
-                    <p>
-                      <span class="text-black fw-500 mr-8">B***.VN Company</span>A formidable competitor to us, they
-                      provide a wide
-                      range of solutions for businesses not only about HRM
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <span class="text-black fw-500 mr-8">The other 2 companies</span>
-                      are less competitive, because the system is set up quite
-                      old, so the interface is a bit outdated, mainly in the
-                      form of tables and tabs.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-
-
+              <!-- img fit -->
               <div class="layout-pt-xs">
                 <div data-anim="img-right cover-light-1 ">
-                  <img data-enlargable class="img-fluid" src="/img/4-ERP-casestudy/competi.png" />
-                  <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">
-                    Competitor Analysis
+                  <img
+                    data-enlargable
+                    class="img-fluid"
+                    src="/img/4-ERP-casestudy/Empa.png"
+                  />
+                  <p
+                    class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                  >
+                    Empathy Map - A Story of Nam Bình
                   </p>
                 </div>
               </div>
-
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-
-      <!----------------------><!---------------------->
-      <!-- 3                --><!---------------------->
-      <!-- IDEATE           --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-7" class="layout-pt-xl sm:layout-pt-lg">
-        <div data-parallax="0.5" class="z-5 js-image">
-          <div data-parallax-target class="bg-image js-lazy"
-            data-bg="https://freight.cargo.site/w/4808/q/75/i/d065c9b2e37413d595591080d54ad04f9f7be5c82ae0d7a090ae1ff59bb0e642/Auth1.jpg">
-          </div>
-          <div class="mas2"></div>
-          <div class="bg-grid2"></div>
-          <div class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center">
-            <div class="col-md-10 text-center">
-              <h1 class="text-7xl sm:text-4xl text-white fw-600">
-                <span class="bd2line pb-0">Ideate</span>
-                <span class="">it now!</span>
-              </h1>
             </div>
           </div>
-        </div>
-      </div>
 
-      <section data-anim-wrap class="container layout-pt-md">
-        <div class="row justify-content-center">
-          <div class="col-md-9 col-sm-12">
-            <div class="md:mt-20">
-              <div class="row x-gap-60 sm:y-gap-48 align-items-center">
-                <!-- <h2 class="text-4xl sm:text-2xl     fw-600 sm:mb-16 mb-32">Make a change</h2> -->
-
-                <!-- <button id="btn3" class="button sm:ml-16 -sm -outline-black -light px-24 "
-                      onclick="onClickSwitchTextParagraph1()">
-                    </button> -->
-              </div>
-
-              <div class="row ">
-                <div class="col-md-12">
-                  <h3 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">How might we ?</h3>
-
-                  <ul class="dot-suc text-dark mb-16">
-                  <li>
-                    1 UI page for all "Leave" features
-                    to remove tabs and visualize the information immediately
-                    when the user clicks on the "leave" page
-                  </li>
-                  <li>
-                    "Leave Type (paid/unpaid)" Section
-                    by using pie charts for different types of company leave.
-                    In addition,<mark> Applying Zeigarnik Effect</mark> to
-                    show the number of leave types the user has used during
-                    the year.
-                  </li>
-                  <li>
-                    <mark>"Fast approval of leave requests" Button</mark>. In some cases
-                    just 1 click is enough, it will be a big
-                    problem when HR is faced with too many leave requests and
-                    they have to click on every single one to accept it.
-                  </li>
-                  <li>
-                    "Colorize the status of leave applications"
-                      Element, so users don't have to wonder about the review status
-                    of your leave requests.
-                  </li>
-                  <li>
-                    "Leave schedule in the company" Section
-                    to connect company members and provide flexibility in
-                    allocating work.
-                  </li>
-                </ul>
+          <!---------------------->
+          <!-- CONTAINER       -->
+          <!--                -->
+          <!-- JOURNEY       -->
+          <!---------------------->
+          <div class="layout-pt-md" data-anim-wrap>
+            <div class="row justify-content-center">
+              <div class="col-md-9 col-sm-12">
+                <div>
+                  <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                    Go through the stages
+                  </h2>
                 </div>
 
-                <!-- <div class="col-md-12 mt-16 sm:mt-16">
+                <!-- img-fit -->
+                <div data-anim="img-right cover-light-1 ">
+                  <img
+                    data-enlargable
+                    class="img-fluid"
+                    src="/img/4-ERP-casestudy/jm.png"
+                  />
+                  <p
+                    class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                  >
+                    UJM - "Approval of leave requests"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!---------------------->
+          <!-- CONTAINER          -->
+          <!-- L5 - R5.1         -->
+          <!-- COMPETITORS       -->
+          <!---------------------->
+          <div class="layout-pt-md" data-anim-wrap>
+            <div class="row justify-content-center">
+              <div class="col-md-9 col-sm-12">
+                <div>
+                  <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                    Competitors Audit
+                  </h2>
+                </div>
+
+                <div>
+                  <p class="mt-24 sm:mt-16">
+                    Learning about other companies' current products would be
+                    more effective when bringing our HRM products to market.
+                  </p>
+                </div>
+
+                <div class=" ">
+                  <ul class="dot-suc text-dark mb-16">
+                    <li class="mt-24 sm:mt-16">
+                      <p>
+                        <span class="text-black fw-500 mr-8"
+                          >B***.VN Company</span
+                        >A formidable competitor to us, they provide a wide
+                        range of solutions for businesses not only about HRM
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span class="text-black fw-500 mr-8"
+                          >The other 2 companies</span
+                        >
+                        are less competitive, because the system is set up quite
+                        old, so the interface is a bit outdated, mainly in the
+                        form of tables and tabs.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="layout-pt-xs">
+                  <div data-anim="img-right cover-light-1 ">
+                    <img
+                      data-enlargable
+                      class="img-fluid"
+                      src="/img/4-ERP-casestudy/competi.png"
+                    />
+                    <p
+                      class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                    >
+                      Competitor Analysis
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!----------------------><!---------------------->
+        <!-- 3                --><!---------------------->
+        <!-- IDEATE           --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div id="section-7" class="layout-pt-xl sm:layout-pt-lg">
+          <div data-parallax="0.5" class="z-5 js-image">
+            <div
+              data-parallax-target
+              class="bg-image js-lazy"
+              data-bg="https://freight.cargo.site/w/4808/q/75/i/d065c9b2e37413d595591080d54ad04f9f7be5c82ae0d7a090ae1ff59bb0e642/Auth1.jpg"
+            ></div>
+            <div class="mas2"></div>
+            <div class="bg-grid2"></div>
+            <div
+              class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center"
+            >
+              <div class="col-md-10 text-center">
+                <h1 class="text-7xl sm:text-4xl text-white fw-600">
+                  <span class="bd2line pb-0">Ideate</span>
+                  <span class="">it now!</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section data-anim-wrap class="container layout-pt-md">
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-sm-12">
+              <div class="md:mt-20">
+                <div class="row x-gap-60 sm:y-gap-48 align-items-center">
+                  <!-- <h2 class="text-4xl sm:text-2xl     fw-600 sm:mb-16 mb-32">Make a change</h2> -->
+
+                  <!-- <button id="btn3" class="button sm:ml-16 -sm -outline-black -light px-24 "
+                      onclick="onClickSwitchTextParagraph1()">
+                    </button> -->
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                      How might we ?
+                    </h3>
+
+                    <ul class="dot-suc text-dark mb-16">
+                      <li>
+                        1 UI page for all "Leave" features to remove tabs and
+                        visualize the information immediately when the user
+                        clicks on the "leave" page
+                      </li>
+                      <li>
+                        "Leave Type (paid/unpaid)" Section by using pie charts
+                        for different types of company leave. In addition,<mark>
+                          Applying Zeigarnik Effect</mark
+                        >
+                        to show the number of leave types the user has used
+                        during the year.
+                      </li>
+                      <li>
+                        <mark>"Fast approval of leave requests" Button</mark>.
+                        In some cases just 1 click is enough, it will be a big
+                        problem when HR is faced with too many leave requests
+                        and they have to click on every single one to accept it.
+                      </li>
+                      <li>
+                        "Colorize the status of leave applications" Element, so
+                        users don't have to wonder about the review status of
+                        your leave requests.
+                      </li>
+                      <li>
+                        "Leave schedule in the company" Section to connect
+                        company members and provide flexibility in allocating
+                        work.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- <div class="col-md-12 mt-16 sm:mt-16">
                   <div class=" text-cen2">
 
                     <h3 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">Information Architecture</h3>
@@ -1444,110 +1655,111 @@
                     define.
                   </p>
                 </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!---------------------->
-      <!-- CONTAINER       -->
-      <!--                -->
-      <!-- userflow       -->
-      <!---------------------->
-      <div class="layout-pt-md container">
-        <div class="row justify-content-center">
-          <div class="col-md-9" style="position: relative">
-            <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">
-              Userflow - "Fast approval of leave requests"
-            </h2>
-
-
-            <div class="img-comp-container">
-              <div class="img-comp-img">
-                <img data-enlargable src="/img/4-ERP-casestudy/aprove2.png" />
-              </div>
-              <div class="img-comp-img img-comp-overlay">
-                <img data-enlargable src="/img/4-ERP-casestudy/aprove.png" />
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-9">
-            <div class="row x-gap-32 layout-pt-xs">
-              <div class="col-md-6">
-                <div class="noi3 py-32 px-32 text-left">
-                  <div class="text-cen2">
-                    <h3 class="text-2xl sm:text-xl fw-600 ">Before</h3>
-                  </div>
-                  <p class="mt-16 sm:mt-12">
-                    To review an employee's leave application request, HR
-                    people have to spend a lot of time to deal with
-                    <mark>hidden information</mark> in the tab and
-                    <mark>having to click too many times</mark>.
-                  </p>
-                  <div class=" ">
-                    <ul class="dot-not text-dark mb-16">
-                      <li class="mt-24 sm:mt-16">
-                        <p>
-                          <span class="text-black fw-500 mr-8">1 click</span>on Tab, to reach "List of employees who
-                          need to be
-                          approved for leave"
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          <span class="text-black fw-500 mr-8">1 click</span>on Element, to view the details of each
-                          leave
-                          request
-                        </p>
-                      </li>
-                      <li>
-                        <p>
-                          <span class="text-black fw-500 mr-8">1 click</span>on Button, to make a decision to accept or
-                          reject
-                          the leave request or forward it to another manager
-                          to check.
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 sm:mt-24">
-                <div class="noi3 py-32 px-32 text-left">
-                  <div class="text-cen2">
-                    <h3 class="text-2xl sm:text-xl fw-600 ">After</h3>
-                  </div>
-                  <p class="mt-16 sm:mt-12">
-                    Everything is visible on one page,
-                    <mark>no more tabs - no more hidden information</mark>.
-                    Place
-                    <mark>accept/decline buttons right next to each employee's
-                      leave request</mark>
-                    and still allow them to click on element to view details
-                    if needed.
-                  </p>
-                  <div class=" ">
-                    <ul class="dot-suc text-dark mb-16">
-                      <li class="mt-24 sm:mt-16">
-                        <p>
-                          <span class="text-black fw-500 mr-8">1 click</span>on Button, to make a decision to accept or
-                          reject
-                          the leave request
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
 
-      <!-- <div class="layout-pt-md container">
+        <!---------------------->
+        <!-- CONTAINER       -->
+        <!--                -->
+        <!-- userflow       -->
+        <!---------------------->
+        <div class="layout-pt-md container">
+          <div class="row justify-content-center">
+            <div class="col-md-9" style="position: relative">
+              <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                Userflow - "Fast approval of leave requests"
+              </h2>
+
+              <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img data-enlargable src="/img/4-ERP-casestudy/aprove2.png" />
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img data-enlargable src="/img/4-ERP-casestudy/aprove.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-9">
+              <div class="row x-gap-32 layout-pt-xs">
+                <div class="col-md-6">
+                  <div class="noi3 py-32 px-32 text-left">
+                    <div class="text-cen2">
+                      <h3 class="text-2xl sm:text-xl fw-600">Before</h3>
+                    </div>
+                    <p class="mt-16 sm:mt-12">
+                      To review an employee's leave application request, HR
+                      people have to spend a lot of time to deal with
+                      <mark>hidden information</mark> in the tab and
+                      <mark>having to click too many times</mark>.
+                    </p>
+                    <div class=" ">
+                      <ul class="dot-not text-dark mb-16">
+                        <li class="mt-24 sm:mt-16">
+                          <p>
+                            <span class="text-black fw-500 mr-8">1 click</span
+                            >on Tab, to reach "List of employees who need to be
+                            approved for leave"
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <span class="text-black fw-500 mr-8">1 click</span
+                            >on Element, to view the details of each leave
+                            request
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <span class="text-black fw-500 mr-8">1 click</span
+                            >on Button, to make a decision to accept or reject
+                            the leave request or forward it to another manager
+                            to check.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 sm:mt-24">
+                  <div class="noi3 py-32 px-32 text-left">
+                    <div class="text-cen2">
+                      <h3 class="text-2xl sm:text-xl fw-600">After</h3>
+                    </div>
+                    <p class="mt-16 sm:mt-12">
+                      Everything is visible on one page,
+                      <mark>no more tabs - no more hidden information</mark>.
+                      Place
+                      <mark
+                        >accept/decline buttons right next to each employee's
+                        leave request</mark
+                      >
+                      and still allow them to click on element to view details
+                      if needed.
+                    </p>
+                    <div class=" ">
+                      <ul class="dot-suc text-dark mb-16">
+                        <li class="mt-24 sm:mt-16">
+                          <p>
+                            <span class="text-black fw-500 mr-8">1 click</span
+                            >on Button, to make a decision to accept or reject
+                            the leave request
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="layout-pt-md container">
 
 
         <div class="row justify-content-center">
@@ -1599,8 +1811,8 @@
         </div>
       </div> -->
 
-      <!-- CONTAIN SLIDER2 start -->
-      <!-- <div class="layout-pt-xs">
+        <!-- CONTAIN SLIDER2 start -->
+        <!-- <div class="layout-pt-xs">
         <h2 class="text-4xl sm:text-2xl  text-center fw-600 mb-32">Other userflows </h2>
 
         <div class="js-sliderMain-type-2 ">
@@ -1629,565 +1841,725 @@
         </div>
       </div> -->
 
-      <!---------------------->
-      <!-- CONTAINER       -->
-      <!--                -->
-      <!-- IA       -->
-      <!---------------------->
-      <div class="layout-pt-md container" data-anim-wrap>
-        <div class="row justify-content-center">
-          <div class="col-md-9">
-            <!-- text -->
-            <div class="d-flex text-sm sm:text-xs tracking-md mb-16">
-              <!-- <p class="text-black fw-700 mr-16">2.2</p> -->
-              <!-- <p class="uppercase fw-600">Customer journey map</p> -->
-            </div>
-            <div>
-              <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24  ">
-                Information Architecture
-              </h2>
-            </div>
-
-            <!-- img-fit -->
-            <div data-anim="img-right cover-light-1 ">
-              <img data-enlargable class="img-fluid" src="img/4-ERP-casestudy/ia.png" />
-              <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">
-                IA - Leave Request page
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!----------------------><!---------------------->
-      <!-- 4                --><!---------------------->
-      <!-- PROTOTYPE        --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-8" class="layout-pt-xl sm:layout-pt-lg">
-        <div class=" ">
-          <div data-parallax="0.2" class="z-5 js-image">
-            <div data-parallax-target class="bg-image js-lazy"
-              data-bg="https://cdn.dribbble.com/users/2099699/screenshots/11500708/3d_software_-_ui_elements_4x.png">
-            </div>
-            <div class="mas"></div>
-            <div class="bg-grid"></div>
-            <div class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center">
-              <div class="col-md-10 text-center">
-                <h1 class="text-7xl sm:text-4xl text-white fw-600">
-                  <span class="bdzline pb-0">Draw </span>
-                  <span class=""> & Touch</span>
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
         <!---------------------->
-        <!-- CONTAINER          -->
-        <!-- L3 - R7.1         -->
-        <!--                  -->
+        <!-- CONTAINER       -->
+        <!--                -->
+        <!-- IA       -->
         <!---------------------->
-        <section data-anim-wrap class="container layout-pt-md">
+        <div class="layout-pt-md container" data-anim-wrap>
           <div class="row justify-content-center">
-            <div class="col-md-9 col-sm-12">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="text-cen2 mb-32 sm:mb-24 ">
-                    <div class="px-12 py-12 leading-xs rounded-base bg-accent2 d-inline-block mr-16">
-                      <i class="icon size-2xs str-width-3xl text-white" data-feather="pen-tool"></i>
-                    </div>
-                    <h3 class="text-4xl sm:text-2xl fw-600 ">Visual Design</h3>
-                  </div>
+            <div class="col-md-9">
+              <!-- text -->
+              <div class="d-flex text-sm sm:text-xs tracking-md mb-16">
+                <!-- <p class="text-black fw-700 mr-16">2.2</p> -->
+                <!-- <p class="uppercase fw-600">Customer journey map</p> -->
+              </div>
+              <div>
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                  Information Architecture
+                </h2>
+              </div>
 
-                  <div class="row y-gap-32 x-gap-32 ">
-                    <div class="col-md-6">
-                      <div class="noi2 text-center py-40">
-                        <div class="text-cen2">
-                          <h3 class="text-2xl sm:text-xl fw-600 ">
-                            Color palette
-                          </h3>
-
-                          <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
-                          <i class="icon size-2xs str-width-2xl text-dark" data-feather="user"></i>
-                        </div> -->
-                        </div>
-
-                        <p class="mt-8">
-                          <!-- <span class="dotcen">Colors</span>  -->
-                          60/30/10
-                        </p>
-                        <div class="color">
-                          <div class="color-60" style="background: #e6e7e7"></div>
-                          <div class="color-30" style="background: #21316c"></div>
-                          <div class="color-10" style="background: #5d77ff"></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="noi2 text-center py-40">
-                        <div class="text-cen2">
-                          <h3 class="text-2xl sm:text-xl fw-600 ">
-                            Typography
-                          </h3>
-                        </div>
-                        <p class="mt-8">Major Third (1.25)</p>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="noi2 text-center py-40">
-                        <div class="text-cen2">
-                          <h3 class="text-2xl sm:text-xl fw-600 ">
-                            UI Components
-                          </h3>
-                        </div>
-                        <p class="mt-8">30+ elements</p>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="noi2 text-center py-40">
-                        <div class="text-cen2">
-                          <h3 class="text-2xl sm:text-xl fw-600 ">
-                            Grid & Spacing
-                          </h3>
-                          <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
-                          <i class="icon size-2xs str-width-2xl text-dark" data-feather="user"></i>
-                        </div> -->
-                        </div>
-                        <p class="mt-8">
-                          <!-- <span class="dotcen">Colors</span>  -->
-                          8pt-grid / 12 Columns
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-12 layout-pt-md">
-                  <div>
-                    <div class="text-cen2 mb-32 sm:mb-24">
-                      <div class="px-12 py-12 leading-xs rounded-base bg-accent2 d-inline-block mr-16">
-                        <i class="icon size-2xs str-width-3xl text-white" data-feather="monitor"></i>
-                      </div>
-                      <h3 class="text-4xl sm:text-2xl fw-600  ">
-                        Lowfield wireframe
-                      </h3>
-                    </div>
-                    <p class="">
-                      Our team uses <mark> the quick paper wireframe </mark>to
-                      bring speed and convenience when working in the agile
-                      software development process. When things can change in
-                      a flash as required by the stackholder,
-                      <mark>iteration and adjustment is a must.</mark>
-                    </p>
-                  </div>
-                </div>
-
-
+              <!-- img-fit -->
+              <div data-anim="img-right cover-light-1 ">
+                <img
+                  data-enlargable
+                  class="img-fluid"
+                  src="img/4-ERP-casestudy/ia.png"
+                />
+                <p
+                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                >
+                  IA - Leave Request page
+                </p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <!---------------------->
-        <!-- FLUID           -->
-        <!-- SLIDER           -->
-        <!--                  -->
-        <!---------------------->
-
-        <div class="layout-pt-md">
-
-          <div class="js-section-slider2 relative" data-slider-col="base-2 lg-2 md-1 sm-1" data-gap="20" autoplay="3000"
-            data-loop data-center data-pagination>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slider-slide">
-                <div class="ratio ratio-3:2 bg-image swiper-lazy" data-enlargable="img/4-ERP-casestudy/slider-3.jpg"
-                  data-background="img/4-ERP-casestudy/slider-3.jpg"></div>
+        <!----------------------><!---------------------->
+        <!-- 4                --><!---------------------->
+        <!-- PROTOTYPE        --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div id="section-8" class="layout-pt-xl sm:layout-pt-lg">
+          <div class=" ">
+            <div data-parallax="0.2" class="z-5 js-image">
+              <div
+                data-parallax-target
+                class="bg-image js-lazy"
+                data-bg="https://cdn.dribbble.com/users/2099699/screenshots/11500708/3d_software_-_ui_elements_4x.png"
+              ></div>
+              <div class="mas"></div>
+              <div class="bg-grid"></div>
+              <div
+                class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center"
+              >
+                <div class="col-md-10 text-center">
+                  <h1 class="text-7xl sm:text-4xl text-white fw-600">
+                    <span class="bdzline pb-0">Draw </span>
+                    <span class=""> & Touch</span>
+                  </h1>
+                </div>
               </div>
+            </div>
+          </div>
+          <!---------------------->
+          <!-- CONTAINER          -->
+          <!-- L3 - R7.1         -->
+          <!--                  -->
+          <!---------------------->
+          <section data-anim-wrap class="container layout-pt-md">
+            <div class="row justify-content-center">
+              <div class="col-md-9 col-sm-12">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="text-cen2 mb-32 sm:mb-24">
+                      <div
+                        class="px-12 py-12 leading-xs rounded-base bg-accent2 d-inline-block mr-16"
+                      >
+                        <i
+                          class="icon size-2xs str-width-3xl text-white"
+                          data-feather="pen-tool"
+                        ></i>
+                      </div>
+                      <h3 class="text-4xl sm:text-2xl fw-600">Visual Design</h3>
+                    </div>
 
-              <!-- <div class="swiper-slide slider-slide">
+                    <div class="row y-gap-32 x-gap-32">
+                      <div class="col-md-6">
+                        <div class="noi2 text-center py-40">
+                          <div class="text-cen2">
+                            <h3 class="text-2xl sm:text-xl fw-600">
+                              Color palette
+                            </h3>
+
+                            <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
+                          <i class="icon size-2xs str-width-2xl text-dark" data-feather="user"></i>
+                        </div> -->
+                          </div>
+
+                          <p class="mt-8">
+                            <!-- <span class="dotcen">Colors</span>  -->
+                            60/30/10
+                          </p>
+                          <div class="color">
+                            <div
+                              class="color-60"
+                              style="background: #e6e7e7"
+                            ></div>
+                            <div
+                              class="color-30"
+                              style="background: #21316c"
+                            ></div>
+                            <div
+                              class="color-10"
+                              style="background: #5d77ff"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="noi2 text-center py-40">
+                          <div class="text-cen2">
+                            <h3 class="text-2xl sm:text-xl fw-600">
+                              Typography
+                            </h3>
+                          </div>
+                          <p class="mt-8">Major Third (1.25)</p>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="noi2 text-center py-40">
+                          <div class="text-cen2">
+                            <h3 class="text-2xl sm:text-xl fw-600">
+                              UI Components
+                            </h3>
+                          </div>
+                          <p class="mt-8">30+ elements</p>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="noi2 text-center py-40">
+                          <div class="text-cen2">
+                            <h3 class="text-2xl sm:text-xl fw-600">
+                              Grid & Spacing
+                            </h3>
+                            <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
+                          <i class="icon size-2xs str-width-2xl text-dark" data-feather="user"></i>
+                        </div> -->
+                          </div>
+                          <p class="mt-8">
+                            <!-- <span class="dotcen">Colors</span>  -->
+                            8pt-grid / 12 Columns
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 layout-pt-md">
+                    <div>
+                      <div class="text-cen2 mb-32 sm:mb-24">
+                        <div
+                          class="px-12 py-12 leading-xs rounded-base bg-accent2 d-inline-block mr-16"
+                        >
+                          <i
+                            class="icon size-2xs str-width-3xl text-white"
+                            data-feather="monitor"
+                          ></i>
+                        </div>
+                        <h3 class="text-4xl sm:text-2xl fw-600">
+                          Lowfield wireframe
+                        </h3>
+                      </div>
+                      <p class="">
+                        Our team uses <mark> the quick paper wireframe </mark>to
+                        bring speed and convenience when working in the agile
+                        software development process. When things can change in
+                        a flash as required by the stackholder,
+                        <mark>iteration and adjustment is a must.</mark>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!---------------------->
+          <!-- FLUID           -->
+          <!-- SLIDER           -->
+          <!--                  -->
+          <!---------------------->
+
+          <div class="layout-pt-md">
+            <div
+              class="js-section-slider2 relative"
+              data-slider-col="base-2 lg-2 md-1 sm-1"
+              data-gap="20"
+              autoplay="3000"
+              data-loop
+              data-center
+              data-pagination
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slider-slide">
+                  <div
+                    class="ratio ratio-3:2 bg-image swiper-lazy"
+                    data-enlargable="img/4-ERP-casestudy/slider-3.jpg"
+                    data-background="img/4-ERP-casestudy/slider-3.jpg"
+                  ></div>
+                </div>
+
+                <!-- <div class="swiper-slide slider-slide">
                 <img data-enlargable class="img-fluid" src="img/4-ERP-casestudy/ia.png">
               </div> -->
 
-              <div class="swiper-slide slider-slide">
-                <div class="ratio ratio-3:2 bg-image swiper-lazy" data-enlargable="img/4-ERP-casestudy/slider-1.jpg"
-                  data-background="img/4-ERP-casestudy/slider-1.jpg"></div>
+                <div class="swiper-slide slider-slide">
+                  <div
+                    class="ratio ratio-3:2 bg-image swiper-lazy"
+                    data-enlargable="img/4-ERP-casestudy/slider-1.jpg"
+                    data-background="img/4-ERP-casestudy/slider-1.jpg"
+                  ></div>
+                </div>
+
+                <div class="swiper-slide slider-slide">
+                  <div
+                    class="ratio ratio-3:2 bg-image swiper-lazy"
+                    data-enlargable="img/4-ERP-casestudy/slider-4.jpg"
+                    data-background="img/4-ERP-casestudy/slider-4.jpg"
+                  ></div>
+                </div>
+
+                <div class="swiper-slide slider-slide">
+                  <div
+                    class="ratio ratio-3:2 bg-image swiper-lazy"
+                    data-enlargable="img/4-ERP-casestudy/slider-5.jpg"
+                    data-background="img/4-ERP-casestudy/slider-5.jpg"
+                  ></div>
+                </div>
+
+                <div class="swiper-slide slider-slide">
+                  <div
+                    class="ratio ratio-3:2 bg-image swiper-lazy"
+                    data-enlargable="img/4-ERP-casestudy/slider-6.jpg"
+                    data-background="img/4-ERP-casestudy/slider-6.jpg"
+                  ></div>
+                </div>
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+              <div class="js-prev in u">
+                <i
+                  class="icon str-width-xl size-md text-black"
+                  data-feather="arrow-left"
+                ></i>
+              </div>
+              <div class="js-next in u">
+                <i
+                  class="icon str-width-xl size-md text-black"
+                  data-feather="arrow-right"
+                ></i>
               </div>
 
-              <div class="swiper-slide slider-slide">
-                <div class="ratio ratio-3:2 bg-image swiper-lazy" data-enlargable="img/4-ERP-casestudy/slider-4.jpg"
-                  data-background="img/4-ERP-casestudy/slider-4.jpg"></div>
-              </div>
-
-              <div class="swiper-slide slider-slide">
-                <div class="ratio ratio-3:2 bg-image swiper-lazy" data-enlargable="img/4-ERP-casestudy/slider-5.jpg"
-                  data-background="img/4-ERP-casestudy/slider-5.jpg"></div>
-              </div>
-
-              <div class="swiper-slide slider-slide">
-                <div class="ratio ratio-3:2 bg-image swiper-lazy" data-enlargable="img/4-ERP-casestudy/slider-6.jpg"
-                  data-background="img/4-ERP-casestudy/slider-6.jpg"></div>
-              </div>
+              <div class="pagination -dark pb-4 mt-48 js-pagination"></div>
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="js-prev in u">
-              <i class="icon str-width-xl size-md text-black" data-feather="arrow-left"></i>
-            </div>
-            <div class="js-next in u">
-              <i class="icon str-width-xl size-md text-black" data-feather="arrow-right"></i>
-            </div>
-
-            <div class="pagination -dark pb-4 mt-48 js-pagination"></div>
           </div>
-        </div>
 
-        <!---------------------->
-        <!-- FLUID            -->
-        <!-- PROTOTYPE        -->
-        <!--                  -->
-        <!---------------------->
-        <!-- <div class="layout-pt-md    row justify-content-center w-full">
+          <!---------------------->
+          <!-- FLUID            -->
+          <!-- PROTOTYPE        -->
+          <!--                  -->
+          <!---------------------->
+          <!-- <div class="layout-pt-md    row justify-content-center w-full">
           <h2 class="text-6xl sm:text-4xl sm:text-2xl     fw-600 sm:mb-16 mb-32">Prototype</h2>
           <iframe style="border: 2px solid rgba(0, 0, 0, 0.1);" width="80%" height="650"
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fidd3IUjYUkEGbcZMHvVGia%2Fwag-component%3Fpage-id%3D9%253A47%26node-id%3D273%253A18895%26viewport%3D-392%252C-455%252C0.06%26scaling%3D"
             allowfullscreen></iframe>
         </div> -->
-      </div>
+        </div>
 
-      <!----------------------><!---------------------->
-      <!-- 5                --><!---------------------->
-      <!-- RESULT           --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-9">
-        <!---------------------->
-        <!--                 -->
-        <!-- fLUID - TEXTCEN   -->
-        <!--                  -->
-        <!---------------------->
-        <div class="layout-pt-xl sm:layout-pt-lg">
-          <div data-parallax="0" class="z-5 js-image">
-            <div data-parallax-target class="bg-image js-lazy" data-bg="img/general/bbgg.jpg"></div>
-            <div class="mas"></div>
-            <!-- <div class="bg-grid"></div> -->
-            <div class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center">
-              <div class="col-md-10 text-center">
-                <h1 class="text-7xl sm:text-4xl text-white fw-600">
-                  The <span class="greenbg pb-0">Results</span>
-                </h1>
+        <!----------------------><!---------------------->
+        <!-- 5                --><!---------------------->
+        <!-- RESULT           --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div id="section-9">
+          <!---------------------->
+          <!--                 -->
+          <!-- fLUID - TEXTCEN   -->
+          <!--                  -->
+          <!---------------------->
+          <div class="layout-pt-xl sm:layout-pt-lg">
+            <div data-parallax="0" class="z-5 js-image">
+              <div
+                data-parallax-target
+                class="bg-image js-lazy"
+                data-bg="img/general/bbgg.jpg"
+              ></div>
+              <div class="mas"></div>
+              <!-- <div class="bg-grid"></div> -->
+              <div
+                class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center"
+              >
+                <div class="col-md-10 text-center">
+                  <h1 class="text-7xl sm:text-4xl text-white fw-600">
+                    The <span class="greenbg pb-0">Results</span>
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-------------------------->
-        <!-- CONTAINER            -->
-        <!-- LEFT(2) - RIGHT(7-2) -->
-        <!--                       -->
-        <!--------------------------->
-        <div class="container">
-          <div class="row justify-content-center layout-pt-md">
-            <div class="col-md-9 col-sm-12">
-              <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">
-                Achievements & Learned
-              </h2>
-              <p class="">
-                At this stage, The team conducts Usability Testing such as:
-                <mark>A/B testing, Heuristic Testing,... </mark> to bring
-                users a stable sample product and minimize basic errors.
-                <br /><br />
-                Got the prototype done. The HRM product in general and the
-                "Leave page" in particular, is brought to a sample users to
-                experience for getting feedbacks, From which the Team
-                <mark>continues to iterate and make other improvements.</mark>
-              </p>
-
-              <!-- img-fit -->
-              <div class="layout-pt-md">
-                <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24 ">
-                  New Eye-tracking testing
+          <!-------------------------->
+          <!-- CONTAINER            -->
+          <!-- LEFT(2) - RIGHT(7-2) -->
+          <!--                       -->
+          <!--------------------------->
+          <div class="container">
+            <div class="row justify-content-center layout-pt-md">
+              <div class="col-md-9 col-sm-12">
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                  Achievements & Learned
                 </h2>
-                <img data-enlargable class="img-fluid" data-anim="img-right cover-light-1 "
-                  src="/img/4-ERP-casestudy/eyenew.png" />
-                <img data-enlargable class="img-fluid layout-pt-xs" data-anim="img-right cover-light-1 "
-                  src="/img/4-ERP-casestudy/eyenew.gif" />
-
-                <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">
-                  Eyetracking for the new "Leave Page"
+                <p class="">
+                  At this stage, The team conducts Usability Testing such as:
+                  <mark>A/B testing, Heuristic Testing,... </mark> to bring
+                  users a stable sample product and minimize basic errors.
+                  <br /><br />
+                  Got the prototype done. The HRM product in general and the
+                  "Leave page" in particular, is brought to a sample users to
+                  experience for getting feedbacks, From which the Team
+                  <mark>continues to iterate and make other improvements.</mark>
                 </p>
-              </div>
 
-              <p class="">
-                Finally, <mark>the result is extremely worthy</mark>. Compared
-                to the old version of HRM (utilized from the ERP system), this
-                new version of HRM which is re-designed according to the needs
-                of the users, received a lot of love, not only for the UI but
-                also for the way it works. It really saves the HR department
-                time.
-                <mark>One of the good examples is the "Fast leave request review"
-                  feature in the "Leave Page" as mentioned in this
-                  Casestudy</mark>.
-              </p>
+                <!-- img-fit -->
+                <div class="layout-pt-md">
+                  <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                    New Eye-tracking testing
+                  </h2>
+                  <div class="c" data-anim="img-right cover-light-1 ">
+                    <img
+                      data-enlargable
+                      class="img-fluid"
+                      src="/img/4-ERP-casestudy/eyenew.png"
+                    />
+                  </div>
+                  <div class="c" data-anim="img-right cover-light-1 ">
+                    <img
+                      data-enlargable
+                      class="img-fluid layout-pt-xs"
+                      src="/img/4-ERP-casestudy/eyenew.gif"
+                    />
+                  </div>
+                  <p
+                    class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                  >
+                    Eyetracking for the new "Leave Page"
+                  </p>
+                </div>
 
-              <div class="layout-pt-md">
-                <div>
-                  <div class="text-cen2 mb-32 sm:mb-24 ">
-                    <div class="px-12 py-12 leading-xs rounded-base bg-accent2 d-inline-block mr-16">
-                      <i class="icon size-2xs str-width-3xl text-white" data-feather="thumbs-up"></i>
+                <p class="">
+                  Finally, <mark>the result is extremely worthy</mark>. Compared
+                  to the old version of HRM (utilized from the ERP system), this
+                  new version of HRM which is re-designed according to the needs
+                  of the users, received a lot of love, not only for the UI but
+                  also for the way it works. It really saves the HR department
+                  time.
+                  <mark
+                    >One of the good examples is the "Fast leave request review"
+                    feature in the "Leave Page" as mentioned in this
+                    Casestudy</mark
+                  >.
+                </p>
+
+                <div class="layout-pt-md">
+                  <div>
+                    <div class="text-cen2 mb-32 sm:mb-24">
+                      <div
+                        class="px-12 py-12 leading-xs rounded-base bg-accent2 d-inline-block mr-16"
+                      >
+                        <i
+                          class="icon size-2xs str-width-3xl text-white"
+                          data-feather="thumbs-up"
+                        ></i>
+                      </div>
+                      <h3 class="text-4xl sm:text-2xl fw-600">My Takeaways</h3>
                     </div>
-                    <h3 class="text-4xl sm:text-2xl fw-600 ">My Takeaways</h3>
+                    <p class="">
+                      A small change will have a big impact, consider choosing
+                      the most suitable instead of choosing the best.
+                      <br />
+                      <br />We often teach each other about user experience
+                      (UX), but it is users in their own circumstances that will
+                      teach us how to solve the system's current problems.
+                      Empathy creates high efficiency without making users think
+                      much when using the product. In addition, it is important
+                      to consider the potential trade-off between
+                      financial/technological resources in product design.
+                    </p>
                   </div>
-                  <p class="">
-                    A small change will have a big impact, consider choosing
-                    the most suitable instead of choosing the best.
-                    <br />
-                    <br />We often teach each other about user experience
-                    (UX), but it is users in their own circumstances that will
-                    teach us how to solve the system's current problems.
-                    Empathy creates high efficiency without making users think
-                    much when using the product. In addition, it is important
-                    to consider the potential trade-off between
-                    financial/technological resources in product design.
-                  </p>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-9 col-sm-12 layout-pt-md" data-anim-wrap>
-              <!-- text -->
-              <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
-                Gestalt principles applied
-              </h2>
+              <div class="col-md-9 col-sm-12 layout-pt-md" data-anim-wrap>
+                <!-- text -->
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-32 sm:mb-24">
+                  Gestalt principles applied
+                </h2>
 
-              <!-- img-fit -->
-              <div data-anim="img-right cover-light-1 ">
-                <img data-enlargable class="img-fluid" src="/img/4-ERP-casestudy/uxlaw.png" />
-                <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">
-                  Psychology through experiences - "Leave Page" UX Laws
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!---------------------->
-        <!--                  -->
-        <!-- FLUID - 4ITEMS   -->
-        <!--                  -->
-        <!---------------------->
-        <div class="layout-pt-md">
-          <div class="bg-gradi-green layout-pt-lg h-full layout-pb-lg" style="position: relative">
-            <div class="bg-grid2"></div>
-            <div class="col-md-11 mx-auto">
-              <div class="row y-gap-60 x-gap-60">
-                <div class="col-lg-3 sm:pb-40 text-center">
-                  <h1 class="text-7xl sm:text-4xl fw-600 greenbg">2</h1>
-                  <p class="text-xl leading-xl mt-16 sm:mt-16 fw-500">
-                    Buttons
-                  </p>
-                </div>
-
-                <div class="col-lg-3 sm:pb-40 text-center">
-                  <h1 class="text-7xl sm:text-4xl fw-600 greenbg">1,785</h1>
-                  <p class="text-xl leading-xl mt-16 sm:mt-16 fw-500">
-                    clicks over 4 months
-                  </p>
-                </div>
-
-                <div class="col-lg-3 sm:pb-40 text-center">
-                  <h1 class="text-7xl sm:text-4xl fw-600 greenbg">5+</h1>
-                  <p class="text-xl leading-xl mt-16 sm:mt-16 fw-500">
-                    Iterations
-                  </p>
-                </div>
-
-                <div class="col-lg-3 sm:pb-40 text-center">
-                  <h1 class="text-7xl sm:text-4xl fw-600 greenbg">6</h1>
-                  <p class="text-xl leading-xl mt-16 sm:mt-16 fw-500">
-                    Cups of coffee
+                <!-- img-fit -->
+                <div data-anim="img-right cover-light-1 ">
+                  <img
+                    data-enlargable
+                    class="img-fluid"
+                    src="/img/4-ERP-casestudy/uxlaw.png"
+                  />
+                  <p
+                    class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                  >
+                    Psychology through experiences - "Leave Page" UX Laws
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- section start -->
-      <section class="projects-nav">
-        <!-- row start -->
-        <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a data-barba href="ielts-tinder.html" class="projects-nav__item -prev bg-dark-3">
-              <div class="projects-nav__img">
-                <div class="bg-image js-lazy" data-bg="img/general/itinder.png"></div>
-              </div>
-
-              <div class="projects-nav__content">
-                <div class="projects-nav__icon">
-                  <i class="size-xl str-width-md text-white" data-feather="arrow-left-circle"></i>
-                </div>
-                <div class="ml-24 sm:ml-0">
-                  <p class="badgeText4">UI/UX casestudy</p>
-                  <h3 class="text-4xl sm:text-2xl leading-lg fw-400 tracking-none text-white">
-                    IELTS Tinder Platform
-                  </h3>
-                </div>
-
-                <p class="projects-nav__text -prev text-sm fw-500 text-white tracking-md uppercase">
-                  PREV
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-6">
-            <a data-barba href="vfcd.html" class="projects-nav__item -next bg-dark-3">
-              <div class="projects-nav__img">
-                <div class="bg-image js-lazy" data-bg="img/i-vfcd/thumbnail.png"></div>
-              </div>
-
-              <div class="projects-nav__content">
-                <div class="mr-24 sm:mr-0">
-                  <p class="badgeText4">Keyvisual design</p>
-                  <h3 class="text-4xl sm:text-2xl leading-lg fw-400 tracking-none text-white">
-                    Vietnam Festival of Creativity & Design
-                  </h3>
-                </div>
-
-                <div class="projects-nav__icon">
-                  <i class="size-xl str-width-md text-white" data-feather="arrow-right-circle"></i>
-                </div>
-
-                <p class="projects-nav__text -next text-sm fw-500 text-white tracking-md uppercase">
-                  NEXT
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <!-- row end -->
-      </section>
-      <!-- section end -->
-
-      <!---------------------->
-      <!-- 6                -->
-      <!-- FOOTER         -->
-      <!--                  -->
-      <!---------------------->
-      <footer class="footer -type-1" data-anim="fade">
-        <!-- container start -->
-        <div class="container">
-          <div class="footer__top">
-            <!-- row start -->
-            <div class="row y-gap-48 justify-content-between">
-              <div class="col-lg-auto">
-                <div class="px-0">
-                  <div id="svgContainer" class="">
-                    <lottie-player src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
-                      background="transparent" speed="1" loop autoplay></lottie-player>
-                  </div>
-                </div>
-
-                <!-- <a data-barba href="index.html" class="footer__logo text-black">
-                  <img class="js-lazy" data-srcset="img/logo/logo.svg" height="29px" alt="WagTrung Logo" />
-
-                </a> -->
-              </div>
-
-              <div class="col-lg-auto col-sm-4">
-                <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Links</h4>
-
-                <div class="footer__content text-base text-dark mt-8 sm:mt-4">
-                  <div>
-                    <a data-barba href="case-studies.html" class="button -underline">Case Study</a>
+          <!---------------------->
+          <!--                  -->
+          <!-- FLUID - 4ITEMS   -->
+          <!--                  -->
+          <!---------------------->
+          <div class="layout-pt-md">
+            <div
+              class="bg-gradi-green layout-pt-lg h-full layout-pb-lg"
+              style="position: relative"
+            >
+              <div class="bg-grid2"></div>
+              <div class="col-md-11 mx-auto">
+                <div class="row y-gap-60 x-gap-60">
+                  <div class="col-lg-3 sm:pb-40 text-center">
+                    <h1 class="text-7xl sm:text-4xl fw-600 greenbg">2</h1>
+                    <p class="text-xl leading-xl mt-16 sm:mt-16 fw-500">
+                      Buttons
+                    </p>
                   </div>
 
-                  <div>
-                    <a data-barba href="about-me.html" class="button -underline sm:mt-4 mt-12">About Me</a>
+                  <div class="col-lg-3 sm:pb-40 text-center">
+                    <h1 class="text-7xl sm:text-4xl fw-600 greenbg">1,785</h1>
+                    <p class="text-xl leading-xl mt-16 sm:mt-16 fw-500">
+                      clicks over 4 months
+                    </p>
                   </div>
 
-                  <div>
-                    <a data-barba href="works.html" class="button -underline sm:mt-4 mt-12">Works</a>
+                  <div class="col-lg-3 sm:pb-40 text-center">
+                    <h1 class="text-7xl sm:text-4xl fw-600 greenbg">5+</h1>
+                    <p class="text-xl leading-xl mt-16 sm:mt-16 fw-500">
+                      Iterations
+                    </p>
                   </div>
-                </div>
-              </div>
 
-              <div class="col-lg-3 col-sm-6">
-                <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Info</h4>
-
-                <div class="footer__content text-base text-dark mb-16 sm:mt-12">
-                  <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
-                  <div>
-                    <a data-barba class="button -underline sm:mt-4 mt-12"
-                      href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
-                  </div>
-                  <div>
-                    <a data-barba class="button -underline sm:mt-4 mt-12" href="tel:+84938074106">+84 938 074 106</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-auto col-auto">
-                <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">
-                  Explore more
-                </h4>
-                <div class="social -bordered mt-16 sm:mt-16">
-                  <a class="social__item text-black" href="https://www.behance.net/powow/">
-                    <i class="fab fa-behance"></i>
-                  </a>
-                  <a class="social__item text-black" href="https://www.linkedin.com/in/wagtrung/">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- row end -->
-          </div>
-
-          <div class="footer__bottom">
-            <!-- row start -->
-            <div class="row">
-              <div class="col">
-                <div class="footer__copyright">
-                  <div class="d-flex align-items-center x-gap-32">
-                    <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
-                      class="button -sm -outline-black -light text-black sm:d-none" style="font-size: 0.8rem">
-                      <i class="icon size-2xs str-width-lg mr-8" data-feather="download"></i>Download my CV
-                    </a>
-                    <p class="text-left fw-500 text-dark">
-                      © 2020, This web is fully coded by wagtrung.
+                  <div class="col-lg-3 sm:pb-40 text-center">
+                    <h1 class="text-7xl sm:text-4xl fw-600 greenbg">6</h1>
+                    <p class="text-xl leading-xl mt-16 sm:mt-16 fw-500">
+                      Cups of coffee
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- row end © 2020, This web is fully coded by wagtrung.    -->
           </div>
         </div>
-        <!-- container end -->
-      </footer>
-      <!-- footer end  -->
-    </main>
-  </div>
-  <!-- barba container end -->
-  <!-- <a  onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl"
+
+        <!-- section start -->
+        <section class="projects-nav">
+          <!-- row start -->
+          <div class="row no-gutters">
+            <div class="col-lg-6">
+              <a
+                data-barba
+                href="ielts-tinder.html"
+                class="projects-nav__item -prev bg-dark-3"
+              >
+                <div class="projects-nav__img">
+                  <div
+                    class="bg-image js-lazy"
+                    data-bg="img/general/itinder.png"
+                  ></div>
+                </div>
+
+                <div class="projects-nav__content">
+                  <div class="projects-nav__icon">
+                    <i
+                      class="size-xl str-width-md text-white"
+                      data-feather="arrow-left-circle"
+                    ></i>
+                  </div>
+                  <div class="ml-24 sm:ml-0">
+                    <p class="badgeText4">UI/UX casestudy</p>
+                    <h3
+                      class="text-4xl sm:text-2xl leading-lg fw-400 tracking-none text-white"
+                    >
+                      IELTS Tinder Platform
+                    </h3>
+                  </div>
+
+                  <p
+                    class="projects-nav__text -prev text-sm fw-500 text-white tracking-md uppercase"
+                  >
+                    PREV
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-6">
+              <a
+                data-barba
+                href="vfcd.html"
+                class="projects-nav__item -next bg-dark-3"
+              >
+                <div class="projects-nav__img">
+                  <div
+                    class="bg-image js-lazy"
+                    data-bg="img/i-vfcd/thumbnail.png"
+                  ></div>
+                </div>
+
+                <div class="projects-nav__content">
+                  <div class="mr-24 sm:mr-0">
+                    <p class="badgeText4">Keyvisual design</p>
+                    <h3
+                      class="text-4xl sm:text-2xl leading-lg fw-400 tracking-none text-white"
+                    >
+                      Vietnam Festival of Creativity & Design
+                    </h3>
+                  </div>
+
+                  <div class="projects-nav__icon">
+                    <i
+                      class="size-xl str-width-md text-white"
+                      data-feather="arrow-right-circle"
+                    ></i>
+                  </div>
+
+                  <p
+                    class="projects-nav__text -next text-sm fw-500 text-white tracking-md uppercase"
+                  >
+                    NEXT
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- row end -->
+        </section>
+        <!-- section end -->
+
+        <!---------------------->
+        <!-- 6                -->
+        <!-- FOOTER         -->
+        <!--                  -->
+        <!---------------------->
+        <footer class="footer -type-1" data-anim="fade">
+          <!-- container start -->
+          <div class="container">
+            <div class="footer__top">
+              <!-- row start -->
+              <div class="row y-gap-48 justify-content-between">
+                <div class="col-lg-auto">
+                  <div class="px-0">
+                    <div id="svgContainer" class="">
+                      <lottie-player
+                        src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay
+                      ></lottie-player>
+                    </div>
+                  </div>
+
+                  <!-- <a data-barba href="index.html" class="footer__logo text-black">
+                  <img class="js-lazy" data-srcset="img/logo/logo.svg" height="29px" alt="WagTrung Logo" />
+
+                </a> -->
+                </div>
+
+                <div class="col-lg-auto col-sm-4">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Links</h4>
+
+                  <div class="footer__content text-base text-dark mt-8 sm:mt-4">
+                    <div>
+                      <a
+                        data-barba
+                        href="case-studies.html"
+                        class="button -underline"
+                        >Case Study</a
+                      >
+                    </div>
+
+                    <div>
+                      <a
+                        data-barba
+                        href="about-me.html"
+                        class="button -underline sm:mt-4 mt-12"
+                        >About Me</a
+                      >
+                    </div>
+
+                    <div>
+                      <a
+                        data-barba
+                        href="works.html"
+                        class="button -underline sm:mt-4 mt-12"
+                        >Works</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Info</h4>
+
+                  <div
+                    class="footer__content text-base text-dark mb-16 sm:mt-12"
+                  >
+                    <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
+                    <div>
+                      <a
+                        data-barba
+                        class="button -underline sm:mt-4 mt-12"
+                        href="mailto:nqt99designs@gmail.com"
+                        >nqt99designs@gmail.com</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        data-barba
+                        class="button -underline sm:mt-4 mt-12"
+                        href="tel:+84938074106"
+                        >+84 938 074 106</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-auto col-auto">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">
+                    Explore more
+                  </h4>
+                  <div class="social -bordered mt-16 sm:mt-16">
+                    <a
+                      class="social__item text-black"
+                      href="https://www.behance.net/powow/"
+                    >
+                      <i class="fab fa-behance"></i>
+                    </a>
+                    <a
+                      class="social__item text-black"
+                      href="https://www.linkedin.com/in/wagtrung/"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- row end -->
+            </div>
+
+            <div class="footer__bottom">
+              <!-- row start -->
+              <div class="row">
+                <div class="col">
+                  <div class="footer__copyright">
+                    <div class="d-flex align-items-center x-gap-32">
+                      <a
+                        target="_blank"
+                        href="img/backgrounds/Final-thesis-NQTrung.pdf"
+                        download="QuangTrung_CV"
+                        class="button -sm -outline-black -light text-black sm:d-none"
+                        style="font-size: 0.8rem"
+                      >
+                        <i
+                          class="icon size-2xs str-width-lg mr-8"
+                          data-feather="download"
+                        ></i
+                        >Download my CV
+                      </a>
+                      <p class="text-left fw-500 text-dark">
+                        © 2020, This web is fully coded by wagtrung.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row end © 2020, This web is fully coded by wagtrung.    -->
+            </div>
+          </div>
+          <!-- container end -->
+        </footer>
+        <!-- footer end  -->
+      </main>
+    </div>
+    <!-- barba container end -->
+    <!-- <a  onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl"
     style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32"
       alt="English" /></a>
   <a  onclick="doGTranslate('en|vn');return false;" title="Vietnamese" class="gflag nturl"
     style="background-position:-100px -400px;">vn</a> -->
-  <!-- <a href="#" onclick="doGTranslate('en|ru');return false;" title="German" class="gflag nturl"
+    <!-- <a href="#" onclick="doGTranslate('en|ru');return false;" title="German" class="gflag nturl"
     style="background-position:-500px -200px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32"
       alt="German" /></a> -->
 
-  <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
-  <!-- <script src="js/erp-system.js"></script> -->
-  <!-- <script type="text/javascript"
+    <!-- JavaScript -->
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/erp-system.js"></script> -->
+    <!-- <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script> -->
-</body>
-
+  </body>
 </html>
