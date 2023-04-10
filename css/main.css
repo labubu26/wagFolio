@@ -1465,7 +1465,7 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
+  line-height: 1.68;
   letter-spacing: -0.02em;
   font-weight: 500;
   color: var(--bg-dark-3);
@@ -16396,7 +16396,7 @@ input#deslizador::-ms-tooltip {
   }
   .tab-header[border] .underline {
     margin: 8px 0;
-    height: 42px;
+    /* height: 42px; */
     bottom: 0;
   }
   .sm\:h-md {
