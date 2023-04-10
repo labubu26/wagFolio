@@ -4008,7 +4008,7 @@ h6 {
 .sectionHeading.-sm .sectionHeading__title {
   font-weight: 600;
   font-size: 3.75rem;
-  line-height: 1.3;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   /* font-family: "Inter"; */
 }
@@ -13427,7 +13427,7 @@ html.full-page-slider body {
   /* margin-bottom: 32px; */
   /* padding-left: 32px; */
   font-size: inherit;
-  line-height: 1.6em;
+  /* line-height: 1.6em; */
   margin-bottom: inherit;
 }
 
@@ -13435,7 +13435,9 @@ html.full-page-slider body {
   padding-left: 32px;
 }
 
-
+/* .dot-suc li:last-child, .dot-not li:last-child{
+  margin-bottom: 0px!important;
+} */
 
 .dot li::before {
   position: absolute;
