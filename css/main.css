@@ -123,8 +123,8 @@
 :root {
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
+  --text-base: 1.1rem;
+  --text-lg: 1.15rem;
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
   --text-3xl: 2rem;
@@ -833,7 +833,7 @@ body {
   overflow-x: hidden;
   background-color: white;
   color: var(--font-dark);
-  line-height: 1.9;
+  line-height: 1.8;
   width: 100%;
   max-width: 100%;
   padding: 0;
@@ -12813,15 +12813,15 @@ html.full-page-slider body {
 }
 
 .layout-pt-xs {
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
 }
 
 .layout-pt-sm {
-  padding-top: 3.75rem;
+  padding-top: 4.5rem;
 }
 
 .layout-pt-md {
-  padding-top: 5rem;
+  padding-top: 6rem;
 }
 
 .layout-pt-lg {
@@ -16316,8 +16316,53 @@ input#deslizador::-ms-tooltip {
   border: 0;
 }
 
+.note{
+  padding: 32px;
+  background: #bbf0d926;
+  box-shadow: #c0f1ded4 0px 0px 0 2px;
+  position: relative;
+  color: #29453b;
+}
+.note .tab-header{
+  background: rgb(192 228 214 / 16%);
+  border-bottom: 1px solid rgb(187 228 213 / 49%);
+  color: inherit;
+}
+.note .badgeText{
+  background: rgb(202 243 227 / 44%);
+  border:none;
+}
+.note .tab-header .tab-btn{
+  color: #7f9a90;
+}
+.note .text-black{
+  color: #182a24;
+}
+.note .text-dark {
+  color: #29453b;
+}
+.note:before{
+  content:"";
+  position: absolute;
+  top:0;
+  right:0;
+  width: 100px;
+    height: 100%;
+    padding: 16px;
+    box-sizing: content-box;
+    /* background: #33334a; */
+    background-image: url(/img/general/note.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
 /* scrr */
 @media (max-width: 767px) {
+  .note{
+    padding: 18px;
+
+  }
   .bdline {
     background-image: none;
     padding: 0px;
@@ -16544,11 +16589,10 @@ input#deslizador::-ms-tooltip {
 mark {
   color: inherit;
   position: relative;
-  background: linear-gradient(0deg, #7ce9a9e4 6%, #bafbc528 0%);
-  padding: 0 0px 0px 0;
+  background: linear-gradient(0deg, #7ce9a9e4 2%, #bafbc528 10%);
+  padding: 0px;
   background-size: 0% 100%;
   background-repeat: no-repeat;
-  border-radius: 2px;
   transition: background-size 2s ease-in-out;
 }
 .markOkay {
