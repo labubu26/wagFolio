@@ -74,143 +74,115 @@
 
     <main class="">
 
+      <!---------------------->
+      <!-- 0                -->
+      <!-- NAV OUT         -->
+      <!--                  -->
+      <!---------------------->
+      <header class="header -light -sticky-light js-header">
+        <!-- header__bar invert   start -->
+        <div class="header__bar invert  ">
+          <div class="header__logo js-header-logo">
+            <a data-barba href="index.html">
+              <img class="header__logo__dark js-lazy" data-srcset="img/logo/logo.svg" height="29px"
+                alt="WagTrung Logo" />
+            </a>
+          </div>
+
+          <div class="header__menu js-header-menu">
+            <button type="button" class="nav-button-open js-nav-open">
+              <i class="icon" data-feather="menu"></i>
+            </button>
+          </div>
+        </div>
+        <!-- header__bar invert   end -->
+
         <!---------------------->
         <!-- 0                -->
-        <!-- NAV OUT         -->
+        <!-- NAV INSIDE         -->
         <!--                  -->
         <!---------------------->
-        <header class="header -light -sticky-light js-header">
-          <!-- header__bar invert   start -->
-          <div class="header__bar invert  ">
-            <div class="header__logo js-header-logo">
-              <a data-barba href="index.html">
-                <img
-                  class="header__logo__dark js-lazy"
-                  data-srcset="img/logo/logo.svg"
-                  height="29px"
-                  alt="WagTrung Logo"
-                />
-              </a>
-            </div>
+        <nav class="nav js-nav">
+          <div class="nav__inner js-nav-inner">
+            <div class="nav__bg js-nav-bg" style="position: relative">
+              <div class="bg-grid"></div>
+              <!-- style="border-bottom: 4px solid; -->
+              <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
+              <div class="nav__container">
+                <div class="nav__header">
+                  <button type="button" class="nav-button-back js-nav-back">
+                    <i class="icon" data-feather="arrow-left-circle"></i>
+                  </button>
 
-            <div class="header__menu js-header-menu">
-              <button type="button" class="nav-button-open js-nav-open">
-                <i class="icon" data-feather="menu"></i>
-              </button>
-            </div>
-          </div>
-          <!-- header__bar invert   end -->
+                  <button type="button" class="mt-24 nav-btn-close js-nav-close pointer-events-none">
+                    <i class="icon str-weight-3xl" data-feather="x"></i>
+                  </button>
+                </div>
 
-          <!---------------------->
-          <!-- 0                -->
-          <!-- NAV INSIDE         -->
-          <!--                  -->
-          <!---------------------->
-          <nav class="nav js-nav">
-            <div class="nav__inner js-nav-inner">
-              <div class="nav__bg js-nav-bg" style="position: relative">
-                <div class="bg-grid"></div>
-                <!-- style="border-bottom: 4px solid; -->
-                <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
-                <div class="nav__container">
-                  <div class="nav__header">
-                    <button type="button" class="nav-button-back js-nav-back">
-                      <i class="icon" data-feather="arrow-left-circle"></i>
-                    </button>
+                <div class="nav__content">
+                  <div class="nav__content__left">
+                    <div class="navList__wrap">
+                      <ul class="navList js-navList">
+                        <li>
+                          <a data-barba href="index.html"> Home </a>
+                        </li>
 
-                    <button
-                      type="button"
-                      class="mt-24 nav-btn-close js-nav-close pointer-events-none"
-                    >
-                      <i class="icon str-weight-3xl" data-feather="x"></i>
-                    </button>
+                        <li>
+                          <a data-barba href="case-studies.html">
+                            Case Study
+                          </a>
+                        </li>
+
+                        <li>
+                          <a data-barba href="about-me.html"> About Me </a>
+                        </li>
+
+                        <li>
+                          <a data-barba href="works.html"> Works </a>
+                        </li>
+
+                        <li>
+                          <a target="_blank" href="img/backgrounds/Final-thesis-NQTrung.pdf" download="QuangTrung_CV"
+                            class="button -sm -outline-white text-white -light mt-32">
+                            <i class="icon mr-8" data-feather="download"></i>
+                            Download my CV
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
-                  <div class="nav__content">
-                    <div class="nav__content__left">
-                      <div class="navList__wrap">
-                        <ul class="navList js-navList">
-                          <li>
-                            <a data-barba href="index.html"> Home </a>
-                          </li>
+                  <div class="nav__content__right">
+                    <div class="nav__info">
+                      <div class="nav__info__item js-navInfo-item">
+                        <h5 class="text-sm tracking-none fw-500">
+                          UI/UX Designer
+                        </h5>
 
-                          <li>
-                            <a data-barba href="case-studies.html">
-                              Case Study
-                            </a>
-                          </li>
-
-                          <li>
-                            <a data-barba href="about-me.html"> About Me </a>
-                          </li>
-
-                          <li>
-                            <a data-barba href="works.html"> Works </a>
-                          </li>
-
-                          <li>
-                            <a
-                              target="_blank"
-                              href="img/backgrounds/Final-thesis-NQTrung.pdf"
-                              download="QuangTrung_CV"
-                              class="button -sm -outline-white text-white -light mt-32"
-                            >
-                              <i class="icon mr-8" data-feather="download"></i>
-                              Download my CV
-                            </a>
-                          </li>
-                        </ul>
+                        <div class="nav__info__content text-lg text-white mt-16">
+                          <p>Ngo Quang Trung</p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="nav__content__right">
-                      <div class="nav__info">
-                        <div class="nav__info__item js-navInfo-item">
-                          <h5 class="text-sm tracking-none fw-500">
-                            UI/UX Designer
-                          </h5>
+                      <div class="nav__info__item js-navInfo-item">
+                        <h5 class="text-sm tracking-none fw-500">
+                          Social sites
+                        </h5>
 
-                          <div
-                            class="nav__info__content text-lg text-white mt-16"
-                          >
-                            <p>Ngo Quang Trung</p>
-                          </div>
+                        <div class="nav__info__content text-lg text-white mt-16">
+                          <a target="_blank" href="https://www.linkedin.com/in/wagtrung/">LinkedIn</a>
+                          <a target="_blank" href="https://www.behance.com/powow/">Behance</a>
                         </div>
+                      </div>
 
-                        <div class="nav__info__item js-navInfo-item">
-                          <h5 class="text-sm tracking-none fw-500">
-                            Social sites
-                          </h5>
+                      <div class="nav__info__item js-navInfo-item">
+                        <h5 class="text-sm tracking-none fw-500">
+                          Contact Me
+                        </h5>
 
-                          <div
-                            class="nav__info__content text-lg text-white mt-16"
-                          >
-                            <a
-                              target="_blank"
-                              href="https://www.linkedin.com/in/wagtrung/"
-                              >LinkedIn</a
-                            >
-                            <a
-                              target="_blank"
-                              href="https://www.behance.com/powow/"
-                              >Behance</a
-                            >
-                          </div>
-                        </div>
-
-                        <div class="nav__info__item js-navInfo-item">
-                          <h5 class="text-sm tracking-none fw-500">
-                            Contact Me
-                          </h5>
-
-                          <div
-                            class="nav__info__content text-lg text-white mt-16"
-                          >
-                            <a href="mailto:nqt99designs@gmail.com"
-                              >nqt99designs@gmail.com</a
-                            >
-                            <a href="tel:+84938074106">+84 938 074 106</a>
-                          </div>
+                        <div class="nav__info__content text-lg text-white mt-16">
+                          <a href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
+                          <a href="tel:+84938074106">+84 938 074 106</a>
                         </div>
                       </div>
                     </div>
@@ -218,15 +190,16 @@
                 </div>
               </div>
             </div>
-          </nav>
-          <!-- nav end -->
-        </header>
-        <!-- header end -->
+          </div>
+        </nav>
+        <!-- nav end -->
+      </header>
+      <!-- header end -->
 
-        <!-- END-NAV -->
-        <!-- END-NAV -->
-        <!-- END-NAV -->
-        <!-- END-NAV -->
+      <!-- END-NAV -->
+      <!-- END-NAV -->
+      <!-- END-NAV -->
+      <!-- END-NAV -->
 
 
 
@@ -256,7 +229,7 @@
                       </div>
                       <!-- Title -->
                       <div class="col-md-12" data-split="lines" data-split-page-reveal>
-                        <h1 class="masthead__title sm:text-lg sm:text-base   text-white js-title">
+                        <h1 class="masthead__title text-white js-title">
                           <span class="bluebg">Pandemic Visualization</span>
                         </h1>
                       </div>
@@ -301,8 +274,7 @@
             <div class=" wrap16-9">
               <iframe class="content16-9" width="100%" height="100%"
                 src="https://www.youtube.com/embed/PPf_cgzvXWQ?autoplay=1&rel=0&showinfo=0&color=white&modestbranding=1"
-                frameborder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; "
+                frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; "
                 allowfullscreen></iframe>
             </div>
 
@@ -550,9 +522,9 @@
 
             <div class="col-md-9">
               <div class="">
-         
-                  <h2 class="text-4xl sm:text-2xl fw-600 mb-16  ">About this Project</h2>
-                
+
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-16  ">About this Project</h2>
+
 
                 <p class="text-lg sm:text-base  text-black ">
                   Pandemic in general and COVID-19 in particular has affected every aspect of our lives, from our health
@@ -573,9 +545,9 @@
 
             </div>
 
-            <div class="col-md-11 mt-56 sm:mt-32 noi3 px-32 py-32">
+            <div class="col-md-11 mt-56 sm:mt-32 noi3 px-32 py-32 sm:px-16 sm:py-16">
               <!-- tab -->
-              <div class="tab-wrapper layout-pt-xs">
+              <div class="tab-wrapper">
                 <div class="tab-header" full-width border>
                   <button class="tab-btn">The Context</button>
                   <button class="tab-btn">User's Issues</button>
@@ -584,22 +556,22 @@
                 <div class="tab-body">
                   <div class="tab-content">
 
-                    <div class="text-cen2 badgeText mb-16 mt-24">
+                    <div class="text-cen2 badgeText mb-24 mt-24">
                       <i class="icon size-2xs str-width-3xl mr-8 text-accent2" data-feather="clock"></i>
                       <p class="text-left text-dark text-sm uppercase fw-600 ">2019 - 2022</p>
                     </div>
 
-                    <div class="row y-gap-32 x-gap-32 mb-32  sm:mt-24 ">
+                    <div class="row y-gap-32 x-gap-32">
 
                       <div class="col-md-4 ">
                         <div class="noi text-center py-32">
                           <div class=" text-cen2">
-                            <h3 class="text-5xl sm:text-3xl fw-600  ">Top 1</h3>
+                            <h3 class="text-4xl sm:text-2xl fw-600   ">Top 1</h3>
                             <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
                             <i class="icon size-2xs str-width-3xl text-dark" data-feather="user"></i>
                           </div> -->
                           </div>
-                          <p class="text-lg sm:text-base   mt-16 sm:mt-12">
+                          <p class="text-lg sm:text-base  mt-8 ">
                             <!-- <span class="dotcen">Colors</span>  -->
                             Google Trends
                           </p>
@@ -612,10 +584,10 @@
                         <div class="noi text-center py-32">
                           <div class=" text-cen2">
 
-                            <h3 class="text-5xl sm:text-3xl fw-600  ">43k+</h3>
+                            <h3 class="text-4xl sm:text-2xl fw-600   ">43k+</h3>
 
                           </div>
-                          <p class="text-lg sm:text-base   mt-16 sm:mt-12">
+                          <p class="text-lg sm:text-base  mt-8 ">
                             Vietnamese Deaths
                           </p>
                         </div>
@@ -624,10 +596,10 @@
                       <div class="col-md-4 ">
                         <div class="noi text-center py-32">
                           <div class=" text-cen2">
-                            <h3 class="text-5xl sm:text-3xl fw-600  ">6,6M+</h3>
+                            <h3 class="text-4xl sm:text-2xl fw-600   ">6,6M+</h3>
 
                           </div>
-                          <p class="text-lg sm:text-base   mt-16 sm:mt-12">
+                          <p class="text-lg sm:text-base  mt-8 ">
                             Global Deaths
                           </p>
                         </div>
@@ -636,17 +608,17 @@
 
                     </div>
 
-                    <div class="text-cen2 badgeText mb-16">
+                    <div class="text-cen2 badgeText mb-24 mt-24">
                       <i class="icon size-2xs str-width-3xl mr-8 text-accent2" data-feather="clock"></i>
                       <p class="text-left text-dark text-sm uppercase fw-600">2023 - now</p>
                     </div>
 
-                    <div class="row y-gap-32 x-gap-32 sm:mt-24 ">
+                    <div class="row y-gap-32 x-gap-32 ">
 
                       <div class="col-md-4 ">
                         <div class="noi text-center py-32">
                           <div class=" text-cen2">
-                            <h3 class="text-5xl sm:text-3xl fw-600  ">Variants </h3>
+                            <h3 class="text-4xl sm:text-2xl fw-600   ">Variants </h3>
                           </div>
                           <p class="text-base  mt-16 sm:mt-12">
                             BF7 (China) , XBB (Vietnam),..
@@ -660,7 +632,7 @@
                         <div class="noi text-center py-32">
                           <div class=" text-cen2">
 
-                            <h3 class="text-5xl sm:text-3xl fw-600  ">Endemic</h3>
+                            <h3 class="text-4xl sm:text-2xl fw-600   ">Endemic</h3>
 
                           </div>
                           <p class="text-base  mt-16 sm:mt-12">
@@ -672,7 +644,7 @@
                       <div class="col-md-4 ">
                         <div class="noi text-center py-32">
                           <div class=" text-cen2">
-                            <h3 class="text-5xl sm:text-3xl fw-600  ">500k+</h3>
+                            <h3 class="text-4xl sm:text-2xl fw-600   ">500k+</h3>
 
                           </div>
                           <p class="text-base  mt-16 sm:mt-12">
@@ -739,7 +711,8 @@
                         <!-- img fit -->
                         <div data-anim="img-right cover-light-1 ">
                           <img data-enlargable class="img-fluid" src="/img/covid/ap.jpg">
-                          <p class="text-base text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24       ">Competitors Audit </p>
+                          <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">Competitors Audit
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -793,7 +766,7 @@
                 <i class="icon size-2xs str-width-3xl mr-12 text-accent2" data-feather="shield"></i>
                 <p class="text-accent2 tracking-sm text-sm uppercase fw-600 ">Disease.sh API</p>
               </div>
-              <h2 class="text-5xl sm:text-4xl   fw-600 "><span class="">Truthful Data
+              <h2 class="text-4xl sm:text-2xl  fw-600  "><span class="">Truthful Data
                   Source </span>
               </h2>
               <p class=" text-base fw-400 mt-16 sm:mb-32 pr-48">1. Reliable Mutil-Source: Crawl ing from
@@ -810,25 +783,25 @@
               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
               <div data-anim="img-right cover-light-1 ">
-              <lottie-player src="https://lottie.host/ef5bb0aa-9100-48b1-a495-a76283740b98/pxHtclzv8y.json"
-                background="transparent" speed="2" style="width: 100%; height: auto;" loop autoplay></lottie-player>
+                <lottie-player src="https://lottie.host/ef5bb0aa-9100-48b1-a495-a76283740b98/pxHtclzv8y.json"
+                  background="transparent" speed="2" style="width: 100%; height: auto;" loop autoplay></lottie-player>
               </div>
             </div>
 
           </div>
 
           <!-- 2Text - img -->
-          <div class="row align-items-center col-md-11 layout-pt-lg">
+          <div class="row align-items-center col-md-11 col-sm-12 x-gap-32 y-gay-32 layout-pt-md ">
 
             <div class="col-md-6 sm:mt-32">
               <!-- img fit -->
               <div data-anim="img-right cover-light-1 ">
-                <img  class="img-fluid" src="img/covid/f2.gif">
+                <img class="img-fluid" src="img/covid/f2.gif">
               </div>
-              
+
             </div>
 
-            <div class="col-md-6 pl-48" data-anim="fade delay-2">
+            <div class="col-md-6 col-sm-12 " data-anim="fade delay-2">
               <!-- <div class="px-12 py-8 rounded-base bg-accent2 d-inline-block mb-32">
                 <i class="icon size-2xs str-width-3xl text-white" data-feather="layers"></i>
               </div> -->
@@ -836,7 +809,7 @@
                 <!-- <i class="icon size-2xs str-width-3xl mr-12 text-accent2" data-feather="shield"></i> -->
                 <p class="text-accent2 tracking-sm text-sm uppercase fw-600 ">Playing with charts</p>
               </div>
-              <h2 class="text-5xl sm:text-4xl   fw-600 "><span class="">View charts
+              <h2 class="text-4xl sm:text-2xl  fw-600  "><span class="">View charts
                   as you want </span>
               </h2>
               <p class=" text-base fw-400 mt-16 sm:mb-32 ">Make a change for a better view, this system allow
@@ -846,7 +819,7 @@
           </div>
 
           <!--3 img-text -->
-          <div class="row align-items-center col-md-11 layout-pt-lg">
+          <div class="row align-items-center col-md-11 col-sm-12 x-gap-32 y-gay-32 layout-pt-md ">
 
 
             <div class="col-md-6 pr-48" data-anim="fade delay-1">
@@ -857,7 +830,7 @@
                 <i class="icon size-2xs str-width-3xl mr-12 text-accent2" data-feather="shield"></i>
                 <p class="text-accent2 tracking-sm text-sm uppercase fw-600 ">Search & Sort</p>
               </div>
-              <h2 class="text-5xl sm:text-4xl   fw-600 "><span class="">View a country you
+              <h2 class="text-4xl sm:text-2xl  fw-600  "><span class="">View a country you
                   want</span>
               </h2>
               <p class=" text-base fw-400 mt-16 sm:mb-32 ">allows you to select other countries to view with
@@ -874,7 +847,7 @@
           </div>
 
           <!-- 4Text - img -->
-          <div class="row align-items-center col-md-11 layout-pt-lg">
+          <div class="row align-items-center col-md-11 col-sm-12 x-gap-32 y-gay-32 layout-pt-md ">
 
             <div class="col-md-6 sm:mt-32">
               <!-- img fit -->
@@ -883,7 +856,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 pl-48" data-anim="fade delay-2">
+            <div class="col-md-6 col-sm-12 " data-anim="fade delay-2">
               <!-- <div class="px-12 py-8 rounded-base bg-accent2 d-inline-block mb-32">
                 <i class="icon size-2xs str-width-3xl text-white" data-feather="layers"></i>
               </div> -->
@@ -891,7 +864,7 @@
                 <i class="icon size-2xs str-width-3xl mr-12 text-accent2" data-feather="shield"></i>
                 <p class="text-accent2 tracking-sm text-sm uppercase fw-600 ">National covid-19 prediction</p>
               </div>
-              <h2 class="text-5xl sm:text-4xl   fw-600 "><span class="">Scheduling without
+              <h2 class="text-4xl sm:text-2xl  fw-600  "><span class="">Scheduling without
                   hesitation</span>
               </h2>
               <p class=" text-base fw-400 mt-16 sm:mb-32 ">make informed decisions about travel, health, and
@@ -902,7 +875,7 @@
           </div>
 
           <!-- 5img-text -->
-          <div class="row align-items-center col-md-11 layout-pt-lg">
+          <div class="row align-items-center col-md-11 col-sm-12 x-gap-32 y-gay-32 layout-pt-md ">
 
 
             <div class="col-md-6 pr-48" data-anim="fade delay-1">
@@ -913,7 +886,7 @@
                 <i class="icon size-2xs str-width-3xl mr-12 text-accent2" data-feather="shield"></i>
                 <p class="text-accent2 tracking-sm text-sm uppercase fw-600 ">Recommendation</p>
               </div>
-              <h2 class="text-5xl sm:text-4xl   fw-600 "><span class="">Control the Virus
+              <h2 class="text-4xl sm:text-2xl  fw-600  "><span class="">Control the Virus
                   spread</span>
               </h2>
               <p class=" text-base fw-400 mt-16 sm:mb-32 ">Grouping countries with similar epidemic situation
@@ -930,7 +903,7 @@
           </div>
 
           <!-- 6Text - img -->
-          <div class="row align-items-center col-md-11 layout-pt-lg">
+          <div class="row align-items-center col-md-11 col-sm-12 x-gap-32 y-gay-32 layout-pt-md ">
 
             <div class="col-md-6 sm:mt-32">
               <!-- img fit -->
@@ -939,7 +912,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 pl-48" data-anim="fade delay-2">
+            <div class="col-md-6 col-sm-12 " data-anim="fade delay-2">
               <!-- <div class="px-12 py-8 rounded-base bg-accent2 d-inline-block mb-32">
                 <i class="icon size-2xs str-width-3xl text-white" data-feather="layers"></i>
               </div> -->
@@ -947,7 +920,7 @@
                 <i class="icon size-2xs str-width-3xl mr-12 text-accent2" data-feather="shield"></i>
                 <p class="text-accent2 tracking-sm text-sm uppercase fw-600 ">Vaccines efficiency </p>
               </div>
-              <h2 class="text-5xl sm:text-4xl   fw-600 "><span class="">National Vaccine
+              <h2 class="text-4xl sm:text-2xl  fw-600  "><span class="">National Vaccine
                   evaluation </span>
               </h2>
               <p class=" text-base fw-400 mt-16 sm:mb-32 ">Epidemic status of the country after vaccine
@@ -957,7 +930,7 @@
           </div>
 
           <!-- 7img-text -->
-          <div class="row align-items-center col-md-11 layout-pt-lg">
+          <div class="row align-items-center col-md-11 col-sm-12 x-gap-32 y-gay-32 layout-pt-md ">
 
 
             <div class="col-md-6 pr-48" data-anim="fade delay-1">
@@ -968,7 +941,7 @@
                 <i class="icon size-2xs str-width-3xl mr-12 text-accent2" data-feather="shield"></i>
                 <p class="text-accent2 tracking-sm text-sm uppercase fw-600 ">Continental comparison </p>
               </div>
-              <h2 class="text-5xl sm:text-4xl   fw-600 "><span class="">countries in the same
+              <h2 class="text-4xl sm:text-2xl  fw-600  "><span class="">countries in the same
                   region</span>
               </h2>
               <p class=" text-base fw-400 mt-16 sm:mb-32 ">They can identify areas that need extra support,
@@ -987,7 +960,7 @@
 
 
           <!-- 8img-text -->
-          <div class="row align-items-center col-md-11 layout-pt-lg">
+          <div class="row align-items-center col-md-11 col-sm-12 x-gap-32 y-gay-32 layout-pt-md ">
 
             <div class="col-md-6 sm:mt-32">
               <!-- img fit -->
@@ -996,7 +969,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 pl-48" data-anim="fade delay-2">
+            <div class="col-md-6 col-sm-12 " data-anim="fade delay-2">
               <!-- <div class="px-12 py-8 rounded-base bg-accent2 d-inline-block mb-32">
                 <i class="icon size-2xs str-width-3xl text-white" data-feather="layers"></i>
               </div> -->
@@ -1004,7 +977,7 @@
                 <i class="icon size-2xs str-width-3xl mr-12 text-accent2" data-feather="shield"></i>
                 <p class="text-accent2 tracking-sm text-sm uppercase fw-600 ">IP Detection </p>
               </div>
-              <h2 class="text-5xl sm:text-4xl   fw-600 "><span class="">Your country is our
+              <h2 class="text-4xl sm:text-2xl  fw-600  "><span class="">Your country is our
                   priority.</span>
               </h2>
               <p class=" text-base fw-400 mt-16 sm:mb-32 ">Detect user IP browser for the first loading
@@ -1017,7 +990,7 @@
 
 
           <!-- 9Text - img -->
-          <div class="row align-items-center col-md-11 layout-pt-lg">
+          <div class="row align-items-center col-md-11 col-sm-12 x-gap-32 y-gay-32 layout-pt-md ">
 
 
 
@@ -1046,7 +1019,7 @@
           </div>
 
           <!-- 10img-text -->
-          <div class="row align-items-center col-md-11 layout-pt-lg">
+          <div class="row align-items-center col-md-11 col-sm-12 x-gap-32 y-gay-32 layout-pt-md ">
             <div class="col-md-6 sm:mt-32">
               <!-- img fit -->
               <div data-anim="img-right cover-light-1 ">
@@ -1054,7 +1027,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 pl-48" data-anim="fade delay-2">
+            <div class="col-md-6 col-sm-12 " data-anim="fade delay-2">
               <!-- <div class="px-12 py-8 rounded-base bg-accent2 d-inline-block mb-32">
                 <i class="icon size-2xs str-width-3xl text-white" data-feather="layers"></i>
               </div> -->
@@ -1062,7 +1035,7 @@
                 <i class="icon size-2xs str-width-3xl mr-12 text-accent2" data-feather="shield"></i>
                 <p class="text-accent2 tracking-sm text-sm uppercase fw-600 ">Deployment Github x Netlify </p>
               </div>
-              <h2 class="text-5xl sm:text-4xl   fw-600 "><span class="">Free for online
+              <h2 class="text-4xl sm:text-2xl  fw-600  "><span class="">Free for online
                   accessing</span>
               </h2>
               <p class=" text-base fw-400 mt-16 sm:mb-32 ">Ready to use as Web version for engaging many
@@ -1102,20 +1075,20 @@
         </div>
       </div>
 
-      <div class="container layout-pt-md sm:layout-pt-sm ">
+      <div class="container layout-pt-md">
         <!-- <h2 class="text-4xl text-center sm:text-3xl  fw-600 mb-48">How did i make this project?</h2> -->
 
         <div class="row justify-content-center">
 
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div data-anim="img-right cover-light-1 ">
               <img data-enlargable class="img-fluid rounded-base" src="/img/covid/covid6.png">
-              <p class="text-base text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24       ">File Structure </p>
+              <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">File Structure </p>
             </div>
           </div>
 
 
-          <div class="col-md-6">
+          <div class="col-md-7">
 
 
 
@@ -1131,7 +1104,8 @@
             </p> -->
             <button class="accordion active sm:px-0 ">
               <div class="py-24 sm:py-24 ">
-                <h5 class="text-black text-lg sm:text-base  sm:text-lg sm:text-base  sm:leading-3xl leading-5xl fw-600">How to make National
+                <h5 class="text-black text-lg sm:text-base  sm:text-lg sm:text-base  sm:leading-3xl leading-5xl fw-600">
+                  How to make National
                   Overview
                   of Covid-19 Pandemic?</h5>
               </div>
@@ -1177,7 +1151,8 @@
             </div>
             <button class="accordion sm:px-0">
               <div class="py-24 sm:py-24 ">
-                <h5 class="text-black text-lg sm:text-base  sm:text-lg sm:text-base  sm:leading-3xl leading-5xl fw-600">How to make Worldwide
+                <h5 class="text-black text-lg sm:text-base  sm:text-lg sm:text-base  sm:leading-3xl leading-5xl fw-600">
+                  How to make Worldwide
                   Overview
                   for Covid-19 Pandemic?</h5>
               </div>
@@ -1225,7 +1200,7 @@
       <!-- SLIDER           -->
       <!--                  -->
       <!---------------------->
-      <div class="layout-pt-xs" >
+      <div class="layout-pt-xs">
         <div class="js-section-slider2 relative" data-slider-col="base-2 lg-2 md-1 sm-1" data-gap="20" autoplay="3000"
           data-loop data-center data-pagination>
           <div class="swiper-wrapper">
@@ -1520,12 +1495,12 @@
                   <div class=" text-cen2">
                     <h3 class="text-3xl sm:text-2xl fw-600  ">After Flow</h3>
                   </div>
-                  <p class="text-lg sm:text-base   mt-16 sm:mt-12">
+                  <p class="text-lg sm:text-base  mt-8 ">
 
                     People have to do a lot of stuff to have to do a lot of stuff to have to do a lot of stuff to
                   </p>
                   <div class="">
-                    <ul class="list-dot -inf mb-20 sm:mb-16 text-lg sm:text-base ">
+                    <ul class="dot-suc text-dark mb-16  ">
 
                       <li class="mt-24 sm:mt-16">
                         <p><span class="text-black fw-500 mr-8 ">5 clicks</span>to finidh a simple task</p>
@@ -1623,8 +1598,7 @@
         <div class="layout-pt-xl">
           <div class=" h-full  layout-pt-lg  layout-pb-2xl " data-parallax="0.4" class=" z-5 js-image "
             style="position:relative;">
-            <div data-parallax-target class="bg-image js-lazy"
-              data-bg="img/general/bbgg.jpg">
+            <div data-parallax-target class="bg-image js-lazy" data-bg="img/general/bbgg.jpg">
             </div>
             <div class="mas"></div>
 
@@ -1688,13 +1662,13 @@
           <div class="row justify-content-center align-items-center  ">
 
             <div class="col-md-11 noi3 rounded-base relative" style="margin-top: -100px;">
-              <div class="row justify-content-between align-items-center x-gap-60 py-32 px-32 ">
+              <div class="row justify-content-between align-items-center x-gap-32 py-32 px-32 sm:py-16 sm:px-16 ">
 
                 <div class="col-md-5">
                   <!-- img fit -->
                   <div data-anim="img-right cover-light-1 ">
                     <img data-enlargable class="img-fluid" src="/img/covid/swot.png">
-                    <p class="text-base text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24       ">SWOT Analysis </p>
+                    <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">SWOT Analysis </p>
                   </div>
                 </div>
                 <div class="col-md-7 ">
@@ -1709,7 +1683,7 @@
                     </div>
                     <div class="tab-body">
                       <div class="tab-content px-8">
-                        <ul class="list-dot -solid text-lg sm:text-base  text-black fw-400  mb-24 sm:mb-16 sm:mt-12">
+                        <ul class="dot-suc text-dark mb-16 ">
 
                           <!-- <div class="text-cen2  ml-8"> -->
                           <!-- <i class="icon size-2xs str-width-xl mr-16 text-accent2" data-feather="compass"></i> -->
@@ -1734,7 +1708,7 @@
                         </ul>
                       </div>
                       <div class="tab-content px-8">
-                        <ul class="list-dot -solid text-lg sm:text-base  text-black fw-400  mb-24 sm:mb-16 sm:mt-12">
+                        <ul class="dot-suc text-dark mb-16 ">
 
                           <!-- <div class="text-cen2 ml-8"> -->
                           <!-- <i class="icon size-2xs str-width-xl mr-16 text-accent2" data-feather="navigation"></i> -->
@@ -1780,7 +1754,8 @@
                     <div class="text-cen2 mb-40">
                       <h2 class="text-5xl sm:text-3xl sm:text-left text-center  fw-600">The Final Screens
                       </h2>
-                      <a href="https://wagtrung-covid.netlify.app/" target="_blank" class="button -md -green ml-32">Preview
+                      <a href="https://wagtrung-covid.netlify.app/" target="_blank"
+                        class="button -md -green ml-32">Preview
                         <i class="icon size-2xs str-width-3xl ml-8 text-accent" data-feather="arrow-up-right"></i>
                       </a>
                     </div>
@@ -1833,28 +1808,28 @@
 
 
 
-<!-- section start -->
-<section class="projects-nav layout-pt-xl">
-  <!-- row start -->
-  <div class="row no-gutters">
-    <div class="col-lg-6">
-      <a data-barba href="erp-system.html" class="projects-nav__item -prev bg-dark-3">
-        <div class="projects-nav__img">
-          <div class="bg-image js-lazy" data-bg="img/general/hrmpng.png"></div>
-        </div>
+      <!-- section start -->
+      <section class="projects-nav layout-pt-xl">
+        <!-- row start -->
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a data-barba href="erp-system.html" class="projects-nav__item -prev bg-dark-3">
+              <div class="projects-nav__img">
+                <div class="bg-image js-lazy" data-bg="img/general/hrmpng.png"></div>
+              </div>
 
-        <div class="projects-nav__content">
-          <div class="projects-nav__icon">
-            <i class="size-xl str-width-md text-white" data-feather="arrow-left-circle"></i>
-          </div>
-          <div class="ml-24 sm:ml-0">
-            <p class="badgeText4">UI/UX casestudy</p>
-            <h3 class="text-4xl sm:text-2xl  leading-lg fw-400 tracking-none text-white ">
-              Human Resource Management
-            </h3>
-          </div>
+              <div class="projects-nav__content">
+                <div class="projects-nav__icon">
+                  <i class="size-xl str-width-md text-white" data-feather="arrow-left-circle"></i>
+                </div>
+                <div class="ml-24 sm:ml-0">
+                  <p class="badgeText4">UI/UX casestudy</p>
+                  <h3 class="text-4xl sm:text-2xl  leading-lg fw-400 tracking-none text-white ">
+                    Human Resource Management
+                  </h3>
+                </div>
 
-          <p class="
+                <p class="
                 projects-nav__text
                 -prev
                 text-sm
@@ -1863,32 +1838,32 @@
                 tracking-md
                 uppercase
               ">
-            PREV
-          </p>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-lg-6">
-      <a data-barba href="ielts-tinder.html" class="projects-nav__item -next bg-dark-3">
-        <div class="projects-nav__img">
-          <div class="bg-image js-lazy" data-bg="img/general/itinder.png"></div>
-        </div>
-
-        <div class="projects-nav__content">
-          <div class="mr-24 sm:mr-0">
-            <p class="badgeText4">UI/UX casestudy</p>
-            <h3 class="text-4xl sm:text-2xl  leading-lg fw-400 tracking-none text-white ">
-              IELTS Tinder Platform
-            </h3>
+                  PREV
+                </p>
+              </div>
+            </a>
           </div>
 
+          <div class="col-lg-6">
+            <a data-barba href="ielts-tinder.html" class="projects-nav__item -next bg-dark-3">
+              <div class="projects-nav__img">
+                <div class="bg-image js-lazy" data-bg="img/general/itinder.png"></div>
+              </div>
 
-          <div class="projects-nav__icon">
-            <i class="size-xl str-width-md text-white" data-feather="arrow-right-circle"></i>
-          </div>
+              <div class="projects-nav__content">
+                <div class="mr-24 sm:mr-0">
+                  <p class="badgeText4">UI/UX casestudy</p>
+                  <h3 class="text-4xl sm:text-2xl  leading-lg fw-400 tracking-none text-white ">
+                    IELTS Tinder Platform
+                  </h3>
+                </div>
 
-          <p class="
+
+                <div class="projects-nav__icon">
+                  <i class="size-xl str-width-md text-white" data-feather="arrow-right-circle"></i>
+                </div>
+
+                <p class="
                 projects-nav__text
                 -next
                 text-sm
@@ -1897,15 +1872,15 @@
                 tracking-md
                 uppercase
               ">
-            NEXT
-          </p>
+                  NEXT
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
-      </a>
-    </div>
-  </div>
-  <!-- row end -->
-</section>
-<!-- section end -->
+        <!-- row end -->
+      </section>
+      <!-- section end -->
 
       <!---------------------->
       <!-- 6                -->
@@ -1944,11 +1919,11 @@
                   </div>
 
                   <div>
-                    <a data-barba href="about-me.html" class="button -underline sm:mt-4 mt-12" >About Me</a>
+                    <a data-barba href="about-me.html" class="button -underline sm:mt-4 mt-12">About Me</a>
                   </div>
 
                   <div>
-                    <a data-barba href="works.html" class="button -underline sm:mt-4 mt-12" >Works</a>
+                    <a data-barba href="works.html" class="button -underline sm:mt-4 mt-12">Works</a>
                   </div>
 
 
@@ -1962,11 +1937,11 @@
                 <div class="footer__content text-base text-dark mb-16 sm:mt-12">
                   <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
                   <div>
-                    <a data-barba class="button -underline sm:mt-4 mt-12" 
+                    <a data-barba class="button -underline sm:mt-4 mt-12"
                       href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
                   </div>
                   <div>
-                    <a data-barba class="button -underline sm:mt-4 mt-12"  href="tel:+84938074106">+84 938 074 106</a>
+                    <a data-barba class="button -underline sm:mt-4 mt-12" href="tel:+84938074106">+84 938 074 106</a>
                   </div>
 
                 </div>
@@ -2000,7 +1975,7 @@
                       <i class="icon size-2xs str-width-lg  mr-8" data-feather="download"></i>Download my CV
                     </a>
                     <p class="text-left fw-500 text-dark ">
-                      © 2020, This web is fully coded by wagtrung.  
+                      © 2020, This web is fully coded by wagtrung.
                     </p>
 
 

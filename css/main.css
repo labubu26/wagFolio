@@ -1465,7 +1465,7 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.68;
+  line-height: 1.375;
   letter-spacing: -0.02em;
   font-weight: 500;
   color: var(--bg-dark-3);
