@@ -16274,6 +16274,26 @@ input#deslizador::-ms-tooltip {
   background: #0c0c0c8a;
   backdrop-filter: blur(4px);
 }
+.img-topleft{
+  position: relative;
+}
+.img-topleft::before{
+  content: "before";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin: 48px 24px;
+  background: #0c0c0c8a;
+  backdrop-filter: blur(4px);
+}
 .img-comp-img:first-child:after {
   content: "after";
   top: 0;
@@ -16431,11 +16451,16 @@ input#deslizador::-ms-tooltip {
     display: none;
   }
   .img-comp-overlay::before,
-  .img-comp-img:first-child:after {
+  .img-comp-img:first-child:after,
+  .img-topleft::before {
     font-size: 11px;
     padding: 4px 8px;
     border-radius: 4px;
     margin: 8px;
+  }
+  .img-topleft::before {
+    margin: 32px 8px;
+
   }
 }
 
