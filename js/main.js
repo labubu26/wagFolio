@@ -3426,19 +3426,50 @@ function beforeAfter() {
 //   })
 // }
 
+$(function() {  
+  $('.btn-posnawr')
+    .on('mouseenter', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+			$(this).find('span').css({top:relY, left:relX})
+    })
+    .on('mouseout', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+    	$(this).find('span').css({top:relY, left:relX})
+    });
+  $('[href=#]').click(function(){return false});
+
+  $('.-outline-white')
+  .on('mouseenter', function(e) {
+    var parentOffset = $(this).offset(),
+        relX = e.pageX - parentOffset.left,
+        relY = e.pageY - parentOffset.top;
+    $(this).find('span').css({top:relY, left:relX})
+  })
+  .on('mouseout', function(e) {
+    var parentOffset = $(this).offset(),
+        relX = e.pageX - parentOffset.left,
+        relY = e.pageY - parentOffset.top;
+    $(this).find('span').css({top:relY, left:relX})
+  });
+$('[href=#]').click(function(){return false});
+});
 
 // block
 
-// document.addEventListener("keydown", function (event){
-//   if (event.ctrlKey){
-//      event.preventDefault();
-//   }
-//   if(event.keyCode == 123){
-//      event.preventDefault();
-//   }
-// });
+document.addEventListener("keydown", function (event){
+  if (event.ctrlKey){
+     event.preventDefault();
+  }
+  if(event.keyCode == 123){
+     event.preventDefault();
+  }
+});
 
-// document.addEventListener("contextmenu",
-//   event => event.preventDefault()
-//   );
+document.addEventListener("contextmenu",
+  event => event.preventDefault()
+  );
 
