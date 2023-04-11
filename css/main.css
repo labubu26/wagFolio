@@ -1689,7 +1689,7 @@ h6 {
     font-size: var(--text-sm);
   }
   .sm\:text-base {
-    font-size: var(--text-base);
+    font-size: var(--text-base)!important;
   }
   .sm\:text-lg {
     font-size: var(--text-lg);
@@ -13453,7 +13453,7 @@ html.full-page-slider body {
 .dot-suc li::before, .dot .-suc::before{
   content: "";
   position: absolute;
-  top: 2px;
+  top: 6px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -13467,7 +13467,7 @@ html.full-page-slider body {
 .dot-not li::before{
   content: "";
   position: absolute;
-  top: 2px;
+  top: 6px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -13481,7 +13481,7 @@ html.full-page-slider body {
 .dot .-suc.-gray::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 6px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -15388,7 +15388,7 @@ body.compensate-for-scrollbar {
   color: var(--font-dark);
   font-weight: 600;
   padding: 12px 24px;
-  font-size: 1.125rem;
+  font-size: inherit;
   white-space: nowrap;
 }
 .tab-header .tab-btn:focus {
@@ -16525,15 +16525,13 @@ mark {
 }
 
 .badgeText {
-  padding: 3px 12px;
+  padding: 4px 12px;
+  line-height: 1.68;
   background: #19192a08;
   border-radius: 6px;
   font-size: 0.85rem;
   border: 0.5px solid #e5e5e54d;
-  /* letter-spacing: 1px; */
-  /* font-family: "Inter"; */
   color: #1d1d3c;
-  /* line-height: 1.4em; */
 }
 .badgeText2 {
   padding: 3px 8px;
