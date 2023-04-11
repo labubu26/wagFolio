@@ -4803,6 +4803,10 @@ body.is-cursor-active * {
     opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
 }
 
+.swiper-slide{
+  box-shadow: 0 0 8px 0px #e9e9e959;
+}
+
 /*--------------------------------------------------
 	32. Main slider type-3
 ---------------------------------------------------*/
