@@ -4407,7 +4407,7 @@ body.preloader-visible .preloader__progress {
 .js-next {
   position: absolute;
   z-index: 1000;
-  top: 50%;
+  top: calc(50% + 24px);
   transform: translate(0%, -50%);
   left: -32px;
   padding: 24px;
@@ -4431,6 +4431,7 @@ body.preloader-visible .preloader__progress {
 .js-prev.in,
 .js-next.in {
   left: 10vw;
+  margin-top: -48px;
   padding: 24px;
   /* transform: translate(0%, -50%) scale(1) ; */
 
@@ -4804,7 +4805,7 @@ body.is-cursor-active * {
 }
 
 .swiper-slide{
-  box-shadow: 0 0 8px 0px #e9e9e959;
+  box-shadow: rgb(233 233 233 / 62%) 0px 0px 24px 0px;
 }
 
 /*--------------------------------------------------
@@ -12812,7 +12813,7 @@ html.full-page-slider body {
 }
 
 .layout-pt-xs {
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
 }
 
 .layout-pt-sm {
@@ -15505,7 +15506,7 @@ body.compensate-for-scrollbar {
   height: 24px;
   line-height: 24px;
   font-size: 12px;
-  margin-right: 10px;
+  margin-right: 6px;
   background: rgb(168 168 168 / 16%);
   color: rgb(95 101 120);
   border-radius: 50%;
@@ -16492,6 +16493,7 @@ input#deslizador::-ms-tooltip {
   }
   .sm\:layout-pt-xs {
     padding-top: 1.5rem !important;
+    /* 24px */
   }
 
   .sm\:layout-pb-xl {
@@ -16698,6 +16700,9 @@ body {
 
  /* screen */
 @media (max-width: 767px) {
+  .swiper-slide{
+    box-shadow: none;
+  }
   #myBtn::before {
 
     height: 200px;
