@@ -6168,7 +6168,7 @@ body.is-cursor-active * {
     padding: 24px 0 0;
   }
   .portfolioCard.-type-1.-hover .portfolioCard__category {
-    font-size: 0.875rem;
+    font-size: 1rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
