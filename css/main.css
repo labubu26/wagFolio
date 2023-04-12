@@ -833,7 +833,7 @@ body {
   overflow-x: hidden;
   background-color: white;
   color: var(--font-dark);
-  line-height: 1.9;
+  line-height: 1.75;
   width: 100%;
   max-width: 100%;
   padding: 0;
@@ -16361,11 +16361,11 @@ input#deslizador::-ms-tooltip {
   position: relative;
 }
 .img-topleft::before{
-  content: "before";
+  content: "Old screen";
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   color: white;
   font-weight: 500;
   text-transform: uppercase;
