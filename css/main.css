@@ -6144,7 +6144,7 @@ body.is-cursor-active * {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__category {
-  padding: 12px 0 0px;
+  padding: 8px 0 0px;
   font-size: 1rem;
   line-height: inherit;
   color: var(--font-dark);
@@ -16808,6 +16808,11 @@ body {
   .sm\:o-gutters>.col,.sm\:no-gutters>[class*=col-]{padding-right:0;padding-left:0}
   .swiper-slide{
     box-shadow: none;
+  }
+  body {
+
+    line-height: 1.68;
+
   }
   #myBtn::before {
 
