@@ -12901,7 +12901,7 @@ html.full-page-slider body {
 @media (max-width: 767px) {
   /* XS */
   .layout-pt-xs {
-    padding-top:2,5rem;
+    padding-top:2.5rem;
   }
   .layout-pb-xs {
     padding-bottom:2.5rem;
@@ -13481,7 +13481,7 @@ html.full-page-slider body {
 .dot li::before {
   position: absolute;
   content: "";
-  top: 8px;
+  top: 5px;
   left: 0;
   line-height: 0.8;
   height: 8px;
@@ -13492,7 +13492,7 @@ html.full-page-slider body {
 .dot-suc li::before, .dot .-suc::before{
   content: "";
   position: absolute;
-  top: 6px;
+  top: 4px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -13506,7 +13506,7 @@ html.full-page-slider body {
 .dot-not li::before{
   content: "";
   position: absolute;
-  top: 6px;
+  top: 4px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -13520,7 +13520,7 @@ html.full-page-slider body {
 .dot .-suc.-gray::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 4px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -16625,6 +16625,7 @@ input#deslizador::-ms-tooltip {
 mark {
   color: inherit;
   position: relative!important;
+  line-height: 1;
   z-index: 1;
   background: linear-gradient(0deg, #7ce9a9e4 2%, #bafbc528 10%);
   padding: 0px;
