@@ -3916,7 +3916,7 @@ h6 {
 }
 
 .social__item:hover {
-  color: var(--bg-light-2);
+  color: var(--bg-light-1);
   background: var(--bg-dark-1);
 }
 
@@ -3986,7 +3986,7 @@ h6 {
 ---------------------------------------------------*/
 .sectionHeading__subtitle {
   font-size: 0.875rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -4005,7 +4005,7 @@ h6 {
 
 .sectionHeading__subtitle.-light {
   color:rgb(179 187 205);
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
 }
 
 /* SM */
@@ -4095,7 +4095,7 @@ h6 {
 .sectionHeading.-xl .sectionHeading__title {
   line-height: 1.3;
   letter-spacing: -0.06em;
-  font-weight:  600  ;
+  font-weight:  600;
   font-size: 5.5rem;
   /* font-family: "Inter"; */
 }
@@ -6587,6 +6587,7 @@ body.is-cursor-active * {
   z-index: 2;
   display: block;
   height: 100%;
+  box-shadow: 0px 0px 0 1px #ffffff1a;
 }
 
 .projects-nav__item.-prev .projects-nav__content {
@@ -6599,12 +6600,12 @@ body.is-cursor-active * {
   .projects-nav__item.-prev .projects-nav__content {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   .projects-nav__item.-prev .projects-nav__content .projects-nav__icon {
     position: absolute;
     bottom: 2.5rem;
-    right: 2.25rem;
+    right: 2.5rem;
   }
 }
 
@@ -6623,7 +6624,7 @@ body.is-cursor-active * {
   .projects-nav__item.-next .projects-nav__content .projects-nav__icon {
     position: absolute;
     bottom: 2.5rem;
-    left: 2.25rem;
+    left: 2.5rem;
   }
 }
 
@@ -15263,9 +15264,9 @@ body.compensate-for-scrollbar {
   color: rgb(35 255 149 / 81%);
   display: inline-block;
   margin: 32px 0 32px;
-  padding: 6px 12px;
-  line-height: 1.2;
-  border-radius: 4px;
+  padding: 8px 12px;
+  /* line-height: 1.2; */
+  border-radius: 6px;
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -16684,15 +16685,15 @@ mark {
   align-items: center;
   display: inline-flex;
   padding: 8px 12px;
-  /* border: 2px solid #9a9a9a12; */
-  background: #67676726;
-  border-radius: 4px;
+  border: 2px solid #ffffff38;
+  /* background: #67676726; */
+  border-radius: 6px;
   font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1.3px;
   line-height: 1.4;
-  color: #e0e1f0ad;
+  color: #ffffffc7;
   margin-bottom: 16px;
 
 }
@@ -16814,6 +16815,11 @@ body {
 
  /* screen */
 @media (max-width: 767px) {
+
+  /* .projects-nav__item.-prev .projects-nav__content, .projects-nav__item.-next .projects-nav__content{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  } */
   .sm\:no-gutters{margin-right:0;margin-left:0}
   .sm\:o-gutters>.col,.sm\:no-gutters>[class*=col-]{padding-right:0;padding-left:0}
   .swiper-slide{

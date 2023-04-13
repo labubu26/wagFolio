@@ -3065,12 +3065,12 @@
       ).fromTo('#popp', {
         transform: ' scale(3) rotate(120deg)',
         opacity: '0',
-        x: '10vw',
-        y: '-10vh',
+        // x: '10vw',
+        // y: '-10vh',
       }, {
         transform: ' scale(1) rotate(-10deg)',
-        y: '5vh',
-        x: '50vh',
+        // y: '5vh',
+        // x: '50vh',
         opacity: '1',
         ease: "elastic.inOut",
       })
