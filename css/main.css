@@ -12825,7 +12825,9 @@ html.full-page-slider body {
 
 
 /* layout-pt  */
-
+.layout-pt-2xs {
+  padding-top: 1.5rem;
+}
 .layout-pt-xs {
   padding-top: 2.5rem;
 }
@@ -14763,6 +14765,7 @@ body.compensate-for-scrollbar {
   transition: all 0.5s;
 }
 
+
 .active,
 .accordion:hover {
   /* background-color: #ccc; */
@@ -14785,6 +14788,7 @@ body.compensate-for-scrollbar {
   background: transparent;
   transition: all 0.2s;
 }
+
 .accordion:hover:after {
   background: rgb(255 255 255);
   box-shadow: 0 2px 2px #3b3a3a1f, 0 0 0 14px #dddde03b;
@@ -14814,6 +14818,8 @@ body.compensate-for-scrollbar {
   transition: all 0.2s;
   box-shadow: none;
 }
+
+
 
 .panel {
   background-color: #f1f1f124;
@@ -14859,6 +14865,16 @@ body.compensate-for-scrollbar {
     border-color: var(--bg-dark-2);
     right: 0px;
   }
+
+  /*  */
+  .accordion.sm{
+    min-height: unset !important;
+    padding: 24px 60px 24px 0px;
+  }
+  .accordion.sm:after, .accordion.sm.active:after{
+    right: 16px;
+    /* position: absolute; */
+    padding: 6px;}
 
   .panel {
     background: rgb(255 255 255);
@@ -15556,8 +15572,20 @@ body.compensate-for-scrollbar {
   transition: 0.3s ease;
   /* transform: scale(0.9); */
 }
+.bad2{
+  display: inline-block;
+    width: fit-content;
+    line-height: 1;
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 12px;
+    background: rgb(168 168 168 / 16%);
+    color: rgb(95 101 120);
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
 
-.tab-header .tab-btn.active .bad {
+.tab-header .tab-btn.active .bad , .tab-header .tab-btn.active .bad2 {
   background: #2ec77f;
   color: #ffffff;
   /* transform: scale(1); */
