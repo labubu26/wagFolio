@@ -7195,7 +7195,7 @@ html.full-page-slider body {
 }
 
 .fw-600 {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 
 .fw-700 {
@@ -16866,7 +16866,7 @@ body {
     font-size: 1rem;
   }
   .sm\:fw-600 {
-    font-weight: 600!important;
+    font-weight: 700!important;
   }
   .badgeText3{
     padding: 8px 12px;
