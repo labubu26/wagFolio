@@ -6638,8 +6638,9 @@ body.is-cursor-active * {
   z-index: 0;
   transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
     transform 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
-  opacity: 0.2;
-  transform: scale(1.2);
+    opacity: 0.2;
+    transform: scale(1.1);
+    filter:saturate(0) ;
 }
 
 .projects-nav__img::after {
@@ -6705,6 +6706,7 @@ body.is-cursor-active * {
 .projects-nav__item:hover .projects-nav__img {
   opacity: 1;
   transform: none;
+  filter: unset;
 }
 
 /*--------------------------------------------------
