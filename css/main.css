@@ -154,7 +154,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 :root {
-  --font-primary: "DM Sans";
+  --font-primary: "DM Sans", "Poppins", sans-serif;
   --font-secondary: "Poppins", sans-serif;
 }
 
@@ -7195,7 +7195,7 @@ html.full-page-slider body {
 }
 
 .fw-600 {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .fw-700 {
@@ -16866,7 +16866,7 @@ body {
     font-size: 1rem;
   }
   .sm\:fw-600 {
-    font-weight: 700!important;
+    font-weight: 600!important;
   }
   .badgeText3{
     padding: 8px 12px;
