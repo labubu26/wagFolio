@@ -1842,7 +1842,7 @@ h6 {
   left: -0.4vw;
   z-index: 0;
   color: rgba(0, 0, 0, 0.02);
-  font-weight: 700;
+  font-weight: 600  ;;
   line-height: 1;
   letter-spacing: -0.03em;
   font-size: 50vw;
@@ -1972,7 +1972,7 @@ h6 {
   z-index: 10;
   font-size: 1.875rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 600  ;;
   letter-spacing: -0.04em;
   width: fit-content;
 }
@@ -2281,17 +2281,17 @@ h6 {
 
 .blogPost.-single .blogPost__content h4 {
   font-size: 1.625rem;
-  font-weight: 700;
+  font-weight: 600  ;;
 }
 
 .blogPost.-single .blogPost__content h5 {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600  ;;
 }
 
 .blogPost.-single .blogPost__content h6 {
   font-size: 1.375rem;
-  font-weight: 700;
+  font-weight: 600  ;;
 }
 
 .blogPost.-single .blogPost__content img {
@@ -3886,7 +3886,7 @@ h6 {
 }
 
 .breadcrumbs .active {
-  font-weight: 700;
+  font-weight: 600  ;;
 }
 
 /*--------------------------------------------------
@@ -4011,7 +4011,7 @@ h6 {
 /* SM */
 
 .sectionHeading.-sm .sectionHeading__title {
-  font-weight: 700;
+  font-weight: 600  ;;
   font-size: 3.75rem;
   line-height: 1.2;
   letter-spacing: -0.03em;
@@ -4094,8 +4094,8 @@ h6 {
 
 .sectionHeading.-xl .sectionHeading__title {
   line-height: 1.3;
-  letter-spacing: -0.3rem;
-  font-weight: 700;
+  letter-spacing: -0.06em;
+  font-weight: 600  ;;
   font-size: 5.5rem;
   /* font-family: "Inter"; */
 }
@@ -5394,7 +5394,7 @@ body.is-cursor-active * {
   line-height: 1.2;
   letter-spacing: -0.03em;
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: 600  ;;
 }
 
 @media (max-width: 1229px) {
@@ -5618,7 +5618,7 @@ body.is-cursor-active * {
 
 .masthead.-type-4 .masthead__title {
   letter-spacing: -0.04em;
-  font-weight: 700;
+  font-weight: 600  ;;
   font-size: 4.5rem;
   line-height: 1.3em;
   font-family: "Poppins";
@@ -6140,7 +6140,7 @@ body.is-cursor-active * {
 .portfolioCard.-type-1.-hover .portfolioCard__title {
   font-size: 2.25rem;
   /* line-height: 1.1; */
-  font-weight: 700;
+  font-weight: 600  ;;
   /* font-family: "Inter"; */
   letter-spacing: -0.04em;
   padding: 24px 0 0px;
@@ -13692,7 +13692,7 @@ html.full-page-slider body {
   border: 2px solid #d1d9dd;
   font-family: var(--h1Font);
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600  ;;
   line-height: 1.08;
   color: #282a2b;
   display: flex;
@@ -14508,7 +14508,7 @@ body.compensate-for-scrollbar {
 .fancybox-share h1 {
   color: #222;
   font-size: 35px;
-  font-weight: 700;
+  font-weight: 600  ;;
   margin: 0 0 20px;
 }
 .fancybox-share p {
@@ -14520,7 +14520,7 @@ body.compensate-for-scrollbar {
   border-radius: 3px;
   display: inline-block;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600  ;;
   line-height: 40px;
   margin: 0 5px 10px;
   min-width: 130px;
