@@ -3196,7 +3196,7 @@
         /*or touched (for touch screens:*/
 
         /*and released (for touch screens:*/
-
+        slider.addEventListener("touchmove", slideReady);
         /*or touched (for touch screens:*/
         slider.addEventListener("touchstart", slideReady);
         /*and released (for touch screens:*/
@@ -3359,7 +3359,7 @@ function more() {
     moreText.style.transform = "none";
     btnText.style.position = "unset";
   } else {
-    btnText.innerHTML = "Okay, I got it! Show less";
+    btnText.innerHTML = "I got it! show less";
     moreText.style.display = "block";
     btnText.style.position = "relative";
 

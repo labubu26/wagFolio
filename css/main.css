@@ -15858,6 +15858,20 @@ blockquote:after {
     /* margin-top: 2.5rem; */
     border-radius: 16px;
 }
+.noitab.small{
+  /* background: #fcfcfd; */
+  padding: 24px 16px;
+  box-shadow: 0 40px 32px -24px rgba(15,15,15,.12);
+  border: 1px solid #e6e8ecce;
+}
+
+.noitab.big{
+  padding: 32px 28px;
+  border-radius: 24px;
+  box-shadow: 0 64px 64px -48px rgba(31,47,70,.12);
+  border: 2px solid #e6e8ecce;
+}
+
 
 .noi2 {
   background: #ffffff;
@@ -16843,10 +16857,24 @@ body {
   
   #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
  .goog-text-highlight { background: none !important; box-shadow: none !important;} */
-
+.subcap{
+  font-size: 0.875rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: var(--font-dark);
+}
  /* screen */
 @media (max-width: 767px) {
-
+  /* NO STYLE ON SM Screen */
+  * > .smno{
+    padding: 0!important;
+    border: 0!important;
+    background: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+  }
   /* .projects-nav__item.-prev .projects-nav__content, .projects-nav__item.-next .projects-nav__content{
     padding-left: 2rem;
     padding-right: 2rem;
