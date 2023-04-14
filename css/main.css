@@ -1471,7 +1471,7 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.375;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   font-weight: 500;
   color: var(--bg-dark-3);
@@ -14869,7 +14869,7 @@ body.compensate-for-scrollbar {
   /*  */
   .accordion.sm{
     min-height: unset !important;
-    padding: 24px 60px 24px 0px;
+    padding: 24px 68px 24px 0px;
   }
   .accordion.sm:after, .accordion.sm.active:after{
     right: 16px;
