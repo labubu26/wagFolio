@@ -85,7 +85,7 @@
     <main>
       <!---------------------->
       <!-- 0                -->
-      <!-- NAV OUT         -->
+      <!-- NAV OUT write        -->
       <!--                  -->
       <!---------------------->
       <header class="header -light -sticky-light js-header">
@@ -98,24 +98,31 @@
             </a>
           </div>
 
-          <div class="header__menu js-header-menu row  align-items-between justify-content-end col-4">
-            <div class="col-3 text-center md:d-none">
+          <div class="header__menu js-header-menu row  align-items-start justify-content-end col-4">
+            <div class="col-4 text-center md:d-none">
               <a data-barba href="writing.html">
-                <div class="button -underline4 text-base text-black text-cen2">Writings</div>
+                <div class="button -underline4 text-cen2 fw-600 text-base text-dark">
+                  <i class="icon size-3xs mr-8 text-accent2" data-feather="edit-3"></i>
+                  Writings
+                </div>
               </a>
             </div>
-            <div class="col-3 text-center md:d-none">
+
+            <div class="col-4 text-center md:d-none">
               <a data-barba href="writing.html">
-                <div class="button -underline4 text-base text-black text-cen2">My CV</div>
+                <div class="button -underline4 text-cen2 fw-600 text-base text-dark">
+                  <i class="icon size-3xs mr-8 text-accent2" data-feather="download"></i>
+                  My CV
+                </div>
               </a>
             </div>
-            <div class="col-auto md:px-0">
+            <div class="col-auto ml-8 md:px-0 md:ml-0">
               <button type="button" class="nav-button-open js-nav-open">
                 <i class="icon" data-feather="menu"></i>
               </button>
             </div>
-            
-            
+
+
           </div>
         </div>
         <!-- header__bar end -->
@@ -142,7 +149,7 @@
                   </button>
                 </div>
 
-                <div class="nav__content">
+                <div class="nav__content sm:pt-0">
                   <div class="nav__content__left">
                     <div class="navList__wrap">
                       <ul class="navList js-navList">
@@ -162,6 +169,10 @@
 
                         <li>
                           <a data-barba href="works.html"> Works </a>
+                        </li>
+
+                        <li class="d-none sm:d-block">
+                          <a data-barba href="writing.html"> Writings </a>
                         </li>
 
                         <li>

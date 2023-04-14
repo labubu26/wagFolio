@@ -7072,7 +7072,7 @@ html.full-page-slider body {
   background-color: #169e6a;
 }
 .text-accent2 {
-  color: #169e6a;
+  color: #169e6a!important;
 }
 .bg-gradi-purple {
   background: -webkit-linear-gradient(
@@ -13192,7 +13192,7 @@ html.full-page-slider body {
   .fancy-grid.-col-2 .fancy-grid__item {
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0 0 2.5rem 0;
+    padding: 0 0 3rem 0;
   }
   .fancy-grid.-col-2 .fancy-grid__item:nth-child(2n + 2) {
     /* margin-top: 0; */
@@ -15510,6 +15510,7 @@ body.compensate-for-scrollbar {
   font-size: inherit;
   transition: all 0.3s;
   text-align: left;
+  overflow: hidden;
 }
 .tab-wrapper[rounded] {
   border-radius: 10px;
