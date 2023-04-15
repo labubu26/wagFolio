@@ -14841,9 +14841,8 @@ body.compensate-for-scrollbar {
   .accordion {
     padding: 0px 72px 0px 0px;
   }
-  .active,
-  .accordion:hover {
-    box-shadow: none;
+ .accordion:hover , .active{
+    box-shadow: none !important;
     transform: scale(1);
   }
   .accordion:after {
@@ -14869,7 +14868,7 @@ body.compensate-for-scrollbar {
   /*  */
   .accordion.sm{
     min-height: unset !important;
-    padding: 24px 68px 24px 0px;
+    padding: 32px 68px 32px 0px;
   }
   .accordion.sm:after, .accordion.sm.active:after{
     right: 16px;
@@ -14882,6 +14881,12 @@ body.compensate-for-scrollbar {
     padding-right: 0px;
 
   }
+
+  .accordion.active:first-of-type + .panel{
+    padding-top:0px !important;
+  }
+
+
   .dot li {
     padding-left: 24px;
   }
@@ -16859,7 +16864,7 @@ body {
   #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
  .goog-text-highlight { background: none !important; box-shadow: none !important;} */
 .subcap{
-  font-size: 0.875rem;
+  /* font-size: inherit; */
     line-height: 1.6;
     text-transform: uppercase;
     font-weight: 600;
