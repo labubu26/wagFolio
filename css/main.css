@@ -12821,6 +12821,7 @@ html.full-page-slider body {
   .xs\:order-6 {
     order: 6;
   }
+
 }
 
 
@@ -12909,6 +12910,10 @@ html.full-page-slider body {
 }
 
 @media (max-width: 767px) {
+    /* layout-pt  */
+.layout-pt-2xs {
+  padding-top: 1rem;
+}
   /* XS */
   .layout-pt-xs {
     padding-top:2.5rem;
@@ -14884,6 +14889,8 @@ body.compensate-for-scrollbar {
 
  .accordion.sm ~ .panel{
     padding-top:0px !important;
+    padding-bottom:0px !important;
+
   }
 
 
@@ -16871,6 +16878,9 @@ body {
     letter-spacing: 0.6px;
     color: var(--font-dark);
 }
+.p-sticky{
+  height:100vh; overflow-y: scroll; 
+}
  /* screen */
 @media (max-width: 767px) {
   /* NO STYLE ON SM Screen */
@@ -16880,6 +16890,9 @@ body {
     background: none!important;
     box-shadow: none!important;
     border-radius: 0!important;
+  }
+  .p-sticky{
+    height: auto;
   }
   /* .projects-nav__item.-prev .projects-nav__content, .projects-nav__item.-next .projects-nav__content{
     padding-left: 2rem;
