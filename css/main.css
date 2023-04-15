@@ -3378,7 +3378,7 @@ h6 {
 .navList .menu-item-has-children > a::after {
   display: inline-block;
   vertical-align: middle;
-  font-family: "icomoon" !important;
+  /* font-family: "icomoon" !important; */
   font-style: normal;
   font-weight: normal;
   font-size: 0.875rem;
@@ -14794,7 +14794,7 @@ body.compensate-for-scrollbar {
   box-shadow: 0 2px 2px #3b3a3a1f, 0 0 0 14px #dddde03b;
 }
 .accordion.active {
-  box-shadow: 0px 40px 20px -20px rgb(0 0 0 / 5%);
+  box-shadow:0 32px 32px -48px rgba(31,47,70,.12);
   transform: scale(1);
 }
 .accordion.active:first-of-type + .panel {
@@ -14882,7 +14882,7 @@ body.compensate-for-scrollbar {
 
   }
 
-  .accordion.active:first-of-type + .panel{
+ .accordion.sm ~ .panel{
     padding-top:0px !important;
   }
 
@@ -15584,7 +15584,7 @@ body.compensate-for-scrollbar {
     line-height: 1;
     padding: 8px;
     font-size: 14px;
-    margin-right: 12px;
+    margin-right: 8px;
     background: rgb(168 168 168 / 16%);
     color: rgb(95 101 120);
     border-radius: 8px;
