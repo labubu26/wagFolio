@@ -13465,7 +13465,9 @@ html.full-page-slider body {
 }
 
 
-
+.leading-1{
+line-height: 1!important;
+}
 .dot li {
   position: relative;
   /* margin-bottom: 32px; */
