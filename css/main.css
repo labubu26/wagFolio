@@ -850,12 +850,12 @@ body::-webkit-scrollbar {
   width: 8px;
 }
 body::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.137);
+  background: rgba(0, 0, 0, 0.075);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(48, 178, 117);
-  /* border-radius: 50px; */
+  background-color: rgb(31, 195, 118);
+  border-radius: 100px;
   border-right: none;
   border-left: none;
 }

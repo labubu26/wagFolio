@@ -2900,11 +2900,13 @@
 // gsap.resisterPlugin()
  var mark = document.querySelector("mark")
  if(mark){
-  console.log(" something ")
+  // console.log(" something ")
   gsap.utils.toArray("mark").forEach( (mark) =>{
     ScrollTrigger.create( {
       trigger: mark,
       start: "top bottom",
+      // markers: true,
+
       // scrub: 2,
 
       toggleClass: "markOkay",
