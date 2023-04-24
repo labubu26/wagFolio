@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Primary Meta Tags -->
+    <meta
+      name="keywords"
+      content="ui/ux designer, designer, ui/ux designer là gì, it viec,thiết kế web
+  , tuyển dụng ui/ux designer, ux research, Ngo Quang Trung, Quang Trung, wagtrung, cv, portfolio, uxfolio"
+    />
+    <meta name="title" content="WagTrung" />
+    <meta
+      name="description"
+      content="An UX Case Study by WagTrung - Ngo Quang Trung"
+    />
+
+    <!--  Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wagtrung.com/erp-system" />
+    <meta property="og:title" content="WagTrung" />
+    <meta
+      property="og:description"
+      content="An UX Case Study by WagTrung - Ngo Quang Trung"
+    />
+    <meta property="og:image" content="img/meta/case.png" />
+
+    <!-- Google fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/vendors.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Responsive Real Estate Store</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  </head>
+
+  <body class="preloader-visible" data-barba="wrapper">
+    <!---------------------->
+    <!-- 0                -->
+    <!-- PRE-LOAD         -->
+    <!--                  -->
+    <!---------------------->
+
+    <div class="preloader js-preloader">
+      <div class="preloader__bg"></div>
+
+      <div class="preloader__progress">
+        <div class="preloader__progress__inner"></div>
+      </div>
+    </div>
+
+    <div class="header2">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+
+    <div class="barba-container" data-barba="container">
+      <div data-cursor class="backButton js-backButton">
+        <span class="backButton__bg"></span>
+        <div class="backButton__icon__wrap">
+          <i
+            class="backButton__button js-top-button"
+            data-feather="arrow-up"
+          ></i>
+        </div>
+      </div>
+
+      <main class="text-lg sm:text-base fw-400">
+        <!---------------------->
+        <!-- 0                -->
+        <!-- NAV OUT         -->
+        <!--                  -->
+        <!---------------------->
+        <header class="header -light -sticky-light js-header">
+          <!-- header__bar invert   start -->
+          <div class="header__bar invert">
+            <div class="header__logo js-header-logo">
+              <a data-barba href="index.html">
+                <img
+                  class="header__logo__dark js-lazy"
+                  data-srcset="img/logo/logo.svg"
+                  height="29px!important"
+                  alt="WagTrung Logo"
+                />
+              </a>
+            </div>
+
+            <div class="header__menu js-header-menu">
+              <button type="button" class="nav-button-open js-nav-open">
+                <i class="icon" data-feather="menu"></i>
+              </button>
+            </div>
+          </div>
+          <!-- header__bar invert   end -->
+
+          <!---------------------->
+          <!-- 0                -->
+          <!-- NAV INSIDE         -->
+          <!--                  -->
+          <!---------------------->
+          <nav class="nav js-nav">
+            <div class="nav__inner js-nav-inner">
+              <div class="nav__bg js-nav-bg" style="position: relative">
+                <div class="bg-grid"></div>
+                <!-- style="border-bottom: 4px solid; -->
+                <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
+                <div class="nav__container">
+                  <div class="nav__header">
+                    <button type="button" class="nav-button-back js-nav-back">
+                      <i class="icon" data-feather="arrow-left-circle"></i>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="mt-24 nav-btn-close js-nav-close pointer-events-none"
+                    >
+                      <i class="icon str-weight-3xl" data-feather="x"></i>
+                    </button>
+                  </div>
+
+                  <div class="nav__content">
+                    <div class="nav__content__left">
+                      <div class="navList__wrap">
+                        <ul class="navList js-navList">
+                          <li>
+                            <a data-barba href="index.html"> Home </a>
+                          </li>
+
+                          <li>
+                            <a data-barba href="case-studies.html">
+                              Case Study
+                            </a>
+                          </li>
+
+                          <li>
+                            <a data-barba href="about-me.html"> About Me </a>
+                          </li>
+
+                          <li>
+                            <a data-barba href="works.html"> Works </a>
+                          </li>
+
+                          <li>
+                            <a
+                              target="_blank"
+                              href="img/backgrounds/CV_QuangTrung_UIUX.pdf"
+                              download="CV_QuangTrung_UIUX"
+                              class="button -sm -outline-white text-white -light mt-32"
+                            >
+                              <i class="icon mr-8" data-feather="download"></i>
+                              Download my CV
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="nav__content__right">
+                      <div class="nav__info">
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            UI/UX Designer
+                          </h5>
+
+                          <div
+                            class="nav__info__content text-lg text-white mt-16"
+                          >
+                            <p>Ngo Quang Trung</p>
+                          </div>
+                        </div>
+
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Social sites
+                          </h5>
+
+                          <div
+                            class="nav__info__content text-lg text-white mt-16"
+                          >
+                            <a
+                              target="_blank"
+                              href="https://www.linkedin.com/in/wagtrung/"
+                              >LinkedIn</a
+                            >
+                            <a
+                              target="_blank"
+                              href="https://www.behance.com/powow/"
+                              >Behance</a
+                            >
+                          </div>
+                        </div>
+
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Contact Me
+                          </h5>
+
+                          <div
+                            class="nav__info__content text-lg text-white mt-16"
+                          >
+                            <a href="mailto:nqt99designs@gmail.com"
+                              >nqt99designs@gmail.com</a
+                            >
+                            <a href="tel:+84938074106">+84 938 074 106</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- nav end -->
+        </header>
+        <!-- header end -->
+
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+
+        <!---------------------->
+        <!--                 -->
+        <!-- INTRO BG + TEXT  -->
+        <!--                  -->
+        <!---------------------->
+        <div class="container-fluid px-0 z-5 relative upup">
+          <div data-parallax="0.3" class="z-5 js-image h-125vh">
+            <div
+              data-parallax-target
+              class="bg-image js-lazy"
+              data-bg="img/general/intro.jpg"
+            >
+              <div class="mas"></div>
+              <div class="bg-grid"></div>
+
+              <section
+                class="masthead -type-1 sm:text-center js-masthead-type-work-1 js-shapes"
+              >
+                <div class="layout-pt-sm layout-pb-lg">
+                  <div class="container-fluid sm:container">
+                    <div class="row justify-content-center">
+                      <div
+                        class="text-center row justify-content-center col-md-9 col-sm-12 z-3 upContent"
+                      >
+                        <!-- sub top -->
+                        <div
+                          class="col-md-12"
+                          data-split="lines"
+                          data-split-page-reveal
+                        >
+                          <p class="masthead__subtitle tagSub js-subtitle">
+                            Responsive Design
+                          </p>
+                        </div>
+                        <!-- Title -->
+                        <div
+                          class="col-md-12"
+                          data-split="lines"
+                          data-split-page-reveal
+                        >
+                          <h1 class="masthead__title text-white js-title">
+                            <span class="bluebg">Real Estate E-Commerce</span>
+                          </h1>
+                        </div>
+                        <!-- sub bot -->
+                        <div class="mt-32 sm:mt-16 col-md-8" data-split="lines">
+                          <p class="js-info-item masthead__text">
+                            Commercial floor to support real estate purchase and
+                            sale.
+                          </p>
+                        </div>
+                        <!-- author -->
+                        <div class="mt-32 sm:mt-56 col-md-8" data-split="lines">
+                          <a
+                            data-barba
+                            href="about.html"
+                            class="text-cen2 js-info-item"
+                          >
+                            <img
+                              class="header__logo__dark js-lazy"
+                              data-srcset="img/general/wt.png"
+                              height="32px"
+                            />
+                            <p class="mt-8 text-sm fw-500 ml-4">Quang Trung</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!-- glow -->
+            <!-- <img
+              class="HomeBackground-bg-gradient"
+              src="img/4-ERP-casestudy/gradient.png"
+              alt=""
+              width="2460"
+              height="1150"
+            /> -->
+          </div>
+        </div>
+
+        <!---------------------->
+        <!--                 -->
+        <!-- IPAD             -->
+        <!--                  -->
+        <!---------------------->
+        <div
+          class="d-flex sm:container justify-content-center align-items-center uiLabHead"
+        >
+          <div class="col-lg-10 uiLab">
+            <div class="img-wrap2">
+              <!-- video 16:9-->
+              <!-- <div class="wrap16-9">
+                <iframe
+                  class="content16-9"
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/owEhzthZaBE?start=5911"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div> -->
+
+              <!-- img 16:9 -->
+              <div data-parallax="0.95" class="ratio ratio-16:9">
+                <div
+                  data-parallax-target
+                  class="bg-image2 js-lazy"
+                  data-bg="img/i-mobile/tr (1).png"
+                ></div>
+              </div>
+
+              <!-- compare -->
+              <!-- <div class="img-comp-container ">
+              <div class="img-comp-img"><img src="/img/4-ERP-casestudy/newintro.png" /></div>
+              <div class="img-comp-img img-comp-overlay"><img src="/img/4-ERP-casestudy/oldintro.png" /></div>
+            </div> -->
+
+              <!-- IPAD SLIDER (js-sliderMain-type-2 js-nav-prev   -  js-section-slider2 js-prev) -->
+              <!-- <div>
+              <div class="js-section-slider2 " data-slider-col="base-1 lg-1 md-1 sm-1" data-gap="0" data-center
+                data-loop effect="fade" autoplay="30000" data-pagination>
+                <div class="swiper-wrapper">
+                  
+                
+                  <div class="swiper-slide slider-slide wrap16-9">
+                    <iframe class="content16-9" width="100%" height="100%"
+                      src="https://www.youtube.com/embed/2w8yzyzFDao?autoplay=1&rel=1&showinfo=0&color=white&modestbranding=1"
+                      frameborder="0"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+
+                  <div class="swiper-slide slider-slide ">
+                    <div class="ratio ratio-16:9 bg-image swiper-lazy"
+                      data-background="https://assets.website-files.com/63619a386216ae681d93409b/6362b8c632be3d1c56cdc377_image-1-hero-v1-dataplus-template-p-1600.png">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="js-prev u"><i class="icon str-width-2xl size-xs text-black" data-feather="arrow-left"></i>
+                </div>
+                <div class="js-next u"><i class="icon str-width-2xl size-xs text-black" data-feather="arrow-right"></i>
+                </div>
+              </div>
+            </div> -->
+
+              <!-- slash light ipad -->
+              <div class="img-wrap3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!----------------------><!---------------------->
+        <!-- CONTAINER        --><!---------------------->
+        <!-- ROLE             --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div class="container">
+          <div class="layout-pt-md layout-pb-md cen">
+            <div
+              class="row y-gap-40 x-gap-40 col-md-11 sm:px-0 sm:text-center justify-content-center"
+            >
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="navigation"
+                  ></i>
+                  <p class="text-black">Role</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">
+                  UI/UX Designer
+                </p>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="clock"
+                  ></i>
+                  <p class="text-black">Timeline</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">May 2022</p>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="grid"
+                  ></i>
+                  <p class="text-black">Categories</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">
+                  Mobile App, Web App
+                </p>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="user"
+                  ></i>
+                  <p class="text-black">Client</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">
+                  Thang Long Real
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="google_translate_element"></div> -->
+
+        <!-- DIVIDER -->
+        <div class="py-8 bg-light-1"></div>
+
+        <!-- SHARE STICK -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        />
+        <div data-cursor id="share-buttons" class="js-backButton2">
+          <p
+            class="mb-24 fw-600 text-xs text-center bg-light-1 px-8 py-4 rounded-base sm:d-none"
+          >
+            Share
+          </p>
+
+          <!-- facebook -->
+          <a class="facebook" target="blank"><i class="fab fa-facebook"></i></a>
+
+          <!-- linkedin -->
+          <!-- <a class="linkedin" target="blank"><i class="fab fa-linkedin"></i></a> -->
+
+          <!-- reddit -->
+          <a class="reddit" target="blank"><i class="fab fa-reddit"></i></a>
+
+          <!-- whatsapp-->
+          <a class="whatsapp" target="blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <!----------------------><!---------------------->
+        <!-- CONTAINER         --><!---------------------->
+        <!-- 0. OVERVIEW       --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div data-anim="slide-up delay-3" class="container layout-pt-sm">
+          <div class="row justify-content-center">
+            <div class="col-md-9">
+              <!-- <div class="">
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-16">
+                  About VFCD 2021 Festival.
+                </h2>
+
+                <p class="text-black">
+                  This is the Key Visual design project for the Vietnam Design &
+                  Communication Festival organized by RMIT University annually
+                  <a
+                    href="https://vnexpress.net/vfcd-2021-ket-noi-nhieu-to-chuc-trong-nganh-van-hoa-sang-tao-4381411.html"
+                    target="_blank"
+                    class="button -underline4 text-base sm:text-base text-black text-cen2 px-4 py-0"
+                  >
+                    <i
+                      class="icon size-3xs mr-8 text-accent2"
+                      data-feather="external-link"
+                    ></i>
+                    VFCD on Vnexpress.net
+                  </a>
+                  .
+                </p>
+                <p class="mt-24 sm:mt-16">
+                  The project's theme of the year is "Creative Future", seeking
+                  a dominant image widely used in the media and vfcd website, in
+                  order to honor the creative values of Vietnamese people in the
+                  new era. The number of participants 50+ nationwide has gone
+                  through ideation round. Then Top 5 will present their idea.
+                  Finally, the judges will vote for Top 4. Luckily, I was one of
+                  the guys in Top 4 that year.
+                </p>
+              </div> -->
+              <h2 class="text-4xl sm:text-2xl fw-600 mb-16">
+                UI Dashboard Designs
+              </h2>
+              <p class="mt-24 sm:mt-16">
+                For some security and branding reasons, some information will be
+                blurred as well as not showing the entire UI made for the
+                project. This is a support system to sell apartments online at
+                online sales for customers who want to make a deposit or buy and
+                sell in a certain period of time (Flash sale).
+
+                <br /><br />And In this UI case study,
+                <mark
+                  >We provide a solution for the responsive UI part that helps
+                  increase the customer's apartment deposit by 20%, because not
+                  everyone who comes to the event brings a laptop with
+                  them.</mark
+                >
+                And choosing to change the display to adapt well on the phone
+                application is the solution that Team brings to customers to
+                increase the user experience and flexibility when using.
+
+                <br /><br />
+                And below are some pictures of the dashboard page for the two
+                main users of the system: admin (seller) and buyer.
+              </p>
+
+              <!-- img-fit -->
+              <div class="layout-pt-xs" data-anim="img-up cover-light-1 ">
+                <!-- <img  class="img-fluid rounded-0" src="img/i-mobile/1.png">
+                <img  class="img-fluid rounded-0" src="img/i-mobile/22.png">
+                <img  class="img-fluid rounded-0" src="img/i-mobile/222.png">
+                <img  class="img-fluid rounded-0" src="img/i-mobile/2.png">
+                <img  class="img-fluid rounded-0" src="img/i-mobile/5.png">
+                <img  class="img-fluid rounded-0" src="img/i-mobile/3.png">
+                <img  class="img-fluid rounded-0" src="img/i-mobile/4.png">
+                <img  class="img-fluid rounded-0" src="img/i-mobile/6.png"> -->
+                <!-- <img  class="img-fluid rounded-0" src="img/i-mobile/7.png"> -->
+                <img
+                  class="img-fluid "
+                  src="img/i-mobile/tr (2).png"
+                />
+                <p
+                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                >
+                  Admin View Page
+                </p>
+              </div>
+
+              <div class="layout-pt-xs" data-anim="img-up cover-light-1 ">
+                <img
+                  class="img-fluid "
+                  src="img/i-mobile/tr (3).png"
+                />
+                <p
+                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                >
+                  Buyers View Page
+                </p>
+              </div>
+
+              <h2 class="text-4xl sm:text-2xl fw-600 mb-16 layout-pt-md">
+                Mobile Responsive Solution
+              </h2>
+              <p class="mt-24 sm:mt-16">
+                Change the display of charts to suit the limited display space
+                of mobile devices, in addition to prioritizing the user's needs.
+                and finally omit unnecessary parts for informational purposes
+                only.
+              </p>
+
+              <div class="layout-pt-xs row x-gap-60">
+                <div class="col-md-6">
+                  <img class="img-fluid" src="img/i-mobile/tr (6).png" />
+                  <p
+                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                >
+                  Mobile Login Page
+                </p>
+                </div>
+                <div class="col-md-6">
+                  <img class="img-fluid noi" src="img/i-mobile/tr (5).png" />
+                  <p
+                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                >
+                  Mobile Buyers Dashboard
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section start -->
+        <section class="projects-nav layout-pt-xl">
+          <!-- row start -->
+          <div class="row no-gutters">
+            <div class="col-lg-6">
+              <a
+                data-barba
+                href="erp-system.html"
+                class="projects-nav__item -prev bg-dark-3"
+              >
+                <div class="projects-nav__img">
+                  <div
+                    class="bg-image js-lazy"
+                    data-bg="img/general/hrmpng.png"
+                  ></div>
+                </div>
+
+                <div class="projects-nav__content">
+                  <div class="projects-nav__icon">
+                    <i
+                      class="size-xl str-width-md text-white"
+                      data-feather="arrow-left-circle"
+                    ></i>
+                  </div>
+                  <div class="ml-24 sm:ml-0">
+                    <p class="badgeText4">UI/UX casestudy</p>
+                    <h3
+                      class="text-4xl sm:text-3xl fw-400 text-white leading-xl"
+                    >
+                      Human Resource Management
+                    </h3>
+                  </div>
+
+                  <p
+                    class="projects-nav__text -prev text-sm fw-500 text-white tracking-md uppercase"
+                  >
+                    PREV
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-6">
+              <a
+                data-barba
+                href="ielts-tinder.html"
+                class="projects-nav__item -next bg-dark-3"
+              >
+                <div class="projects-nav__img">
+                  <div
+                    class="bg-image js-lazy"
+                    data-bg="img/general/itinder.png"
+                  ></div>
+                </div>
+
+                <div class="projects-nav__content">
+                  <div class="mr-24 sm:mr-0">
+                    <p class="badgeText4">UI/UX casestudy</p>
+                    <h3
+                      class="text-4xl sm:text-3xl fw-400 text-white leading-xl"
+                    >
+                      IELTS Tinder Platform
+                    </h3>
+                  </div>
+
+                  <div class="projects-nav__icon">
+                    <i
+                      class="size-xl str-width-md text-white"
+                      data-feather="arrow-right-circle"
+                    ></i>
+                  </div>
+
+                  <p
+                    class="projects-nav__text -next text-sm fw-500 text-white tracking-md uppercase"
+                  >
+                    NEXT
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- row end -->
+        </section>
+        <!-- section end -->
+
+        <!---------------------->
+        <!-- 6                -->
+        <!-- FOOTER         -->
+        <!--                  -->
+        <!---------------------->
+        <footer class="footer -type-1" data-anim="fade">
+          <!-- container start -->
+          <div class="container">
+            <div class="footer__top">
+              <!-- row start -->
+              <div class="row y-gap-48 justify-content-between">
+                <div class="col-lg-auto">
+                  <div class="px-0">
+                    <div id="svgContainer" class="">
+                      <lottie-player
+                        src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay
+                      ></lottie-player>
+                    </div>
+                  </div>
+
+                  <!-- <a data-barba href="index.html" class="footer__logo text-black">
+                  <img class="js-lazy" data-srcset="img/logo/logo.svg" height="29px!important" alt="WagTrung Logo" />
+
+                </a> -->
+                </div>
+
+                <div class="col-lg-auto col-sm-4">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Links</h4>
+
+                  <div class="footer__content text-base text-dark mt-8">
+                    <div>
+                      <a
+                        data-barba
+                        href="case-studies.html"
+                        class="button -underline"
+                        >Case Study</a
+                      >
+                    </div>
+
+                    <div>
+                      <a
+                        data-barba
+                        href="about-me.html"
+                        class="button -underline sm:mt-4 mt-12"
+                        >About Me</a
+                      >
+                    </div>
+
+                    <div>
+                      <a
+                        data-barba
+                        href="works.html"
+                        class="button -underline sm:mt-4 mt-12"
+                        >Works</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Info</h4>
+
+                  <div
+                    class="footer__content text-base text-dark mb-16 sm:mt-12"
+                  >
+                    <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
+                    <div>
+                      <a
+                        data-barba
+                        class="button -underline sm:mt-4 mt-12"
+                        href="mailto:nqt99designs@gmail.com"
+                        >nqt99designs@gmail.com</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        data-barba
+                        class="button -underline sm:mt-4 mt-12"
+                        href="tel:+84938074106"
+                        >+84 938 074 106</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-auto col-auto">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">
+                    Explore more
+                  </h4>
+                  <div class="social -bordered mt-16 sm:mt-16">
+                    <a
+                      class="social__item text-black"
+                      href="https://www.behance.net/powow/"
+                    >
+                      <i class="fab fa-behance"></i>
+                    </a>
+                    <a
+                      class="social__item text-black"
+                      href="https://www.linkedin.com/in/wagtrung/"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- row end -->
+            </div>
+
+            <div class="footer__bottom">
+              <!-- row start -->
+              <div class="row">
+                <div class="col">
+                  <div class="footer__copyright">
+                    <div class="d-flex align-items-center x-gap-32">
+                      <a
+                        target="_blank"
+                        href="img/backgrounds/CV_QuangTrung_UIUX.pdf"
+                        download="CV_QuangTrung_UIUX"
+                        class="button -sm -outline-black -light text-black sm:d-none"
+                        style="font-size: 0.8rem"
+                      >
+                        <i
+                          class="icon size-2xs str-width-lg mr-8"
+                          data-feather="download"
+                        ></i
+                        >Download my CV
+                      </a>
+                      <p class="text-left fw-500 text-dark">
+                        © 2022, designed & coded by
+                        <a data-barba href="about-me.html">
+                          <span
+                            class="button -underline4 pb-0 text-sm text-dark"
+                          >
+                            wagtrung.</span
+                          >
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row end © 2020, This web is fully coded by wagtrung.    -->
+            </div>
+          </div>
+          <!-- container end -->
+        </footer>
+        <!-- footer end  -->
+      </main>
+    </div>
+    <!-- barba container end -->
+    <!-- <a  onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl"
+    style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32"
+      alt="English" /></a>
+  <a  onclick="doGTranslate('en|vn');return false;" title="Vietnamese" class="gflag nturl"
+    style="background-position:-100px -400px;">vn</a> -->
+    <!-- <a href="#" onclick="doGTranslate('en|ru');return false;" title="German" class="gflag nturl"
+    style="background-position:-500px -200px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32"
+      alt="German" /></a> -->
+
+    <!-- JavaScript -->
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/erp-system.js"></script> -->
+    <!-- <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script> -->
+  </body>
+</html>
