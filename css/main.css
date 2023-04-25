@@ -14977,7 +14977,7 @@ body.compensate-for-scrollbar {
   background: rgb(255 255 255);
 
   border-radius: 8px;
-  box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px !important;
 }
 
 /* .cursorx{
