@@ -3460,6 +3460,31 @@ function beforeAfter() {
 // $('[href=#]').click(function(){return false});
 // });
 
+// download with pass
+function downloadFile(url, fileName) {
+  fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+    .then(res => res.blob())
+    .then(res => {
+      const aElement = document.createElement('a');
+      aElement.setAttribute('download', fileName);
+      const href = URL.createObjectURL(res);
+      aElement.href = href;
+      // aElement.setAttribute('href', href);
+      aElement.setAttribute('target', '_blank');
+      aElement.click();
+      URL.revokeObjectURL(href);
+    });
+};
+
+function checkpass(a, b) {
+  let person = prompt("Hey! Please ask / mail Trung for the password to download this file", 'nqt99designs@gmail.com');
+  if (person == 'mnbvcx') {
+    downloadFile(a, b);
+    return false;
+  }
+  else return false;
+}
+
 // block
 
 document.addEventListener("keydown", function (event){
