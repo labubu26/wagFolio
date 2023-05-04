@@ -16893,6 +16893,9 @@ body {
     box-shadow: none!important;
     border-radius: 0!important;
   }
+  .item .item-wrap:after{
+    display: none;
+  }
   .p-sticky{
     height: auto;
   }

@@ -3477,7 +3477,7 @@ function downloadFile(url, fileName) {
 };
 
 function checkpass(a, b) {
-  let person = prompt("Hey! Please ask / mail Trung for the password to download this file", 'nqt99designs@gmail.com');
+  let person = prompt("Hey! Please mail Trung for the password to download this file", 'nqt99designs@gmail.com');
   if (person == 'mnbvcx') {
     downloadFile(a, b);
     return false;
