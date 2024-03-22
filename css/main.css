@@ -16095,8 +16095,8 @@ blockquote:after {
   text-transform: uppercase;
   display: inline-block;
   position: absolute;
-  top: 24px;
-  left: 20px;
+  top: 20px;
+  left: 18px;
   font-family: 'Poppins';
 }
 
