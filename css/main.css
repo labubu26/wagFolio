@@ -17084,10 +17084,10 @@ body {
 }
 
 .curso-grow{
-  height: 100px;
-  width: 100px;
-  top: calc(100px / 2 * -1);
-  left: calc(100px / 2 * -1);
+  height: 150px;
+  width: 150px;
+  top: calc(150px / 2 * -1);
+  left: calc(150px / 2 * -1);
 
 
   /* transform: scale(2) !important; */
