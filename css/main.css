@@ -3267,7 +3267,7 @@ h6 {
 
 @media (max-width: 767px) {
   .nav__content {
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
   }
   .nav__content__left {
     flex: 0 0 60%;
@@ -3283,6 +3283,9 @@ h6 {
   .nav__content__left {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .nav__header{
+    right: 2rem;
   }
 }
 
@@ -5606,9 +5609,11 @@ body.is-cursor-active * {
   right: 0;
   width: 100%;
 } */
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .masthead.-type-4 {
-    height: auto !important;
+    /* height: auto !important; */
+    display: flex;
+    align-items: center;
   }
 }
 
