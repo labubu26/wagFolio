@@ -119,6 +119,7 @@
     videoBtn();
     a();
     StickScrollSection();
+    cursomove();
 
     //
     // your custom plugins init here
@@ -1353,186 +1354,186 @@
     05. Custom cursor
   ---------------------------------------------------*/
 
-  const Cursor = (function () {
+  // const Cursor = (function () {
 
-    const cursor = document.querySelector(".js-cursor");
-    let follower;
-    let label;
-    let icon;
+  //   const cursor = document.querySelector(".js-cursor");
+  //   let follower;
+  //   let label;
+  //   let icon;
 
-    let clientX;
-    let clientY;
-    let cursorWidth;
-    let cursorHeight;
-    let cursorTriggers;
-    let state;
+  //   let clientX;
+  //   let clientY;
+  //   let cursorWidth;
+  //   let cursorHeight;
+  //   let cursorTriggers;
+  //   let state;
 
-    function variables() {
+  //   function variables() {
 
-      follower = cursor.querySelector(".js-follower");
-      label = cursor.querySelector(".js-label");
-      icon = cursor.querySelector(".js-icon");
+  //     follower = cursor.querySelector(".js-follower");
+  //     label = cursor.querySelector(".js-label");
+  //     icon = cursor.querySelector(".js-icon");
 
-      clientX = -100;
-      clientY = -100;
-      cursorWidth = cursor.offsetWidth / 2;
-      cursorHeight = cursor.offsetHeight / 2;
-      cursorTriggers;
-      state = false;
+  //     clientX = -100;
+  //     clientY = -100;
+  //     cursorWidth = cursor.offsetWidth / 2;
+  //     cursorHeight = cursor.offsetHeight / 2;
+  //     cursorTriggers;
+  //     state = false;
 
-    }
+  //   }
 
-    function init() {
+  //   function init() {
 
-      if (!cursor) return;
+  //     if (!cursor) return;
 
-      variables();
-      state = true;
-      cursor.classList.add('is-enabled');
+  //     variables();
+  //     state = true;
+  //     cursor.classList.add('is-enabled');
 
-      document.addEventListener("mousedown", e => {
-        cursor.classList.add('is-mouse-down');
-      });
+  //     document.addEventListener("mousedown", e => {
+  //       cursor.classList.add('is-mouse-down');
+  //     });
 
-      document.addEventListener("mouseup", e => {
-        cursor.classList.remove('is-mouse-down');
-      });
+  //     document.addEventListener("mouseup", e => {
+  //       cursor.classList.remove('is-mouse-down');
+  //     });
 
-      document.addEventListener("mousemove", (event) => {
-        clientX = event.clientX;
-        clientY = event.clientY;
-      });
+  //     document.addEventListener("mousemove", (event) => {
+  //       clientX = event.clientX;
+  //       clientY = event.clientY;
+  //     });
 
-      const render = () => {
-        cursor.style.transform = `translate(${clientX - cursorWidth}px, ${clientY - cursorHeight}px)`;
-        requestAnimationFrame(render);
-      };
+  //     const render = () => {
+  //       cursor.style.transform = `translate(${clientX - cursorWidth}px, ${clientY - cursorHeight}px)`;
+  //       requestAnimationFrame(render);
+  //     };
 
-      requestAnimationFrame(render);
+  //     requestAnimationFrame(render);
 
-      update();
-      breakpoint();
+  //     update();
+  //     breakpoint();
 
-    }
+  //   }
 
-    function enterHandler({ target }) {
+  //   function enterHandler({ target }) {
 
-      cursor.classList.add('is-active');
+  //     cursor.classList.add('is-active');
 
-      if (target.getAttribute('data-cursor-label')) {
-        App.body.classList.add('is-cursor-active');
-        cursor.classList.add('has-label');
-        label.innerHTML = target.getAttribute('data-cursor-label');
-      }
+  //     if (target.getAttribute('data-cursor-label')) {
+  //       App.body.classList.add('is-cursor-active');
+  //       cursor.classList.add('has-label');
+  //       label.innerHTML = target.getAttribute('data-cursor-label');
+  //     }
 
-      if (target.getAttribute('data-cursor-icon')) {
-        App.body.classList.add('is-cursor-active');
-        cursor.classList.add('has-icon');
-        const iconAttr = target.getAttribute('data-cursor-icon');
-        icon.innerHTML = feather.icons[iconAttr].toSvg();
-      }
+  //     if (target.getAttribute('data-cursor-icon')) {
+  //       App.body.classList.add('is-cursor-active');
+  //       cursor.classList.add('has-icon');
+  //       const iconAttr = target.getAttribute('data-cursor-icon');
+  //       icon.innerHTML = feather.icons[iconAttr].toSvg();
+  //     }
 
-    }
+  //   }
 
-    function leaveHandler({ target }) {
+  //   function leaveHandler({ target }) {
 
-      App.body.classList.remove('is-cursor-active');
-      cursor.classList.remove('is-active');
-      cursor.classList.remove('has-label');
-      cursor.classList.remove('has-icon');
-      label.innerHTML = '';
-      icon.innerHTML = '';
+  //     App.body.classList.remove('is-cursor-active');
+  //     cursor.classList.remove('is-active');
+  //     cursor.classList.remove('has-label');
+  //     cursor.classList.remove('has-icon');
+  //     label.innerHTML = '';
+  //     icon.innerHTML = '';
 
-    }
+  //   }
 
-    function update() {
+  //   function update() {
 
-      if (!cursor) return;
+  //     if (!cursor) return;
 
-      cursorTriggers = document.querySelectorAll([
-        "button",
-        "a",
-        "input",
-        "[data-cursor]",
-        "[data-cursor-label]",
-        "[data-cursor-icon]",
-        "textarea"
-      ]);
+  //     cursorTriggers = document.querySelectorAll([
+  //       "button",
+  //       "a",
+  //       "input",
+  //       "[data-cursor]",
+  //       "[data-cursor-label]",
+  //       "[data-cursor-icon]",
+  //       "textarea"
+  //     ]);
 
-      cursorTriggers.forEach(el => {
-        el.addEventListener("mouseenter", enterHandler);
-        el.addEventListener("mouseleave", leaveHandler);
-      });
+  //     cursorTriggers.forEach(el => {
+  //       el.addEventListener("mouseenter", enterHandler);
+  //       el.addEventListener("mouseleave", leaveHandler);
+  //     });
 
-    }
+  //   }
 
-    function clear() {
+  //   function clear() {
 
-      if (!cursor) return;
+  //     if (!cursor) return;
 
-      cursorTriggers.forEach(el => {
-        el.removeEventListener("mouseenter", enterHandler);
-        el.removeEventListener("mouseleave", leaveHandler);
-      });
+  //     cursorTriggers.forEach(el => {
+  //       el.removeEventListener("mouseenter", enterHandler);
+  //       el.removeEventListener("mouseleave", leaveHandler);
+  //     });
 
-    }
+  //   }
 
-    function hide() {
+  //   function hide() {
 
-      if (!cursor) return;
-      cursor.classList.add('is-hidden');
+  //     if (!cursor) return;
+  //     cursor.classList.add('is-hidden');
 
-    }
+  //   }
 
-    function show() {
+  //   function show() {
 
-      if (!cursor) return;
-      cursor.classList.remove('is-hidden');
+  //     if (!cursor) return;
+  //     cursor.classList.remove('is-hidden');
 
-    }
+  //   }
 
-    function breakpoint() {
+  //   function breakpoint() {
 
-      if (!state) return;
-      if (!App.config.cursorFollower.disableBreakpoint) return;
+  //     if (!state) return;
+  //     if (!App.config.cursorFollower.disableBreakpoint) return;
 
-      let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  //     let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-      if (width < App.config.cursorFollower.disableBreakpoint) {
-        state = false;
-        cursor.classList.remove('is-enabled');
-        clear();
-      } else {
-        state = true;
-        cursor.classList.add('is-enabled');
-        update();
-      }
+  //     if (width < App.config.cursorFollower.disableBreakpoint) {
+  //       state = false;
+  //       cursor.classList.remove('is-enabled');
+  //       clear();
+  //     } else {
+  //       state = true;
+  //       cursor.classList.add('is-enabled');
+  //       update();
+  //     }
 
-      window.addEventListener('resize', () => {
-        let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  //     window.addEventListener('resize', () => {
+  //       let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-        if (width < App.config.cursorFollower.disableBreakpoint) {
-          state = false;
-          cursor.classList.remove('is-enabled');
-          clear();
-        } else {
-          state = true;
-          cursor.classList.add('is-enabled');
-          update();
-        }
-      })
+  //       if (width < App.config.cursorFollower.disableBreakpoint) {
+  //         state = false;
+  //         cursor.classList.remove('is-enabled');
+  //         clear();
+  //       } else {
+  //         state = true;
+  //         cursor.classList.add('is-enabled');
+  //         update();
+  //       }
+  //     })
 
-    }
+  //   }
 
-    return {
-      init: init,
-      update: update,
-      clear: clear,
-      hide: hide,
-      show: show,
-    };
+  //   return {
+  //     init: init,
+  //     update: update,
+  //     clear: clear,
+  //     hide: hide,
+  //     show: show,
+  //   };
 
-  })();
+  // })();
 
   /*--------------------------------------------------
     06. Elements reveal
@@ -2897,24 +2898,24 @@
     // 	  return false;
     // 	});
 
-// gsap.resisterPlugin()
- var mark = document.querySelector("mark")
- if(mark){
-  // console.log(" something ")
-  gsap.utils.toArray("mark").forEach( (mark) =>{
-    ScrollTrigger.create( {
-      trigger: mark,
-      start: "top bottom",
-      // markers: true,
+    // gsap.resisterPlugin()
+    var mark = document.querySelector("mark")
+    if (mark) {
+      // console.log(" something ")
+      gsap.utils.toArray("mark").forEach((mark) => {
+        ScrollTrigger.create({
+          trigger: mark,
+          start: "top bottom",
+          // markers: true,
 
-      // scrub: 2,
+          // scrub: 2,
 
-      toggleClass: "markOkay",
-      // onEnter: () => {mark.classList.add("markOkay")},
-      // markers: true,
-    })
-  })
- }
+          toggleClass: "markOkay",
+          // onEnter: () => {mark.classList.add("markOkay")},
+          // markers: true,
+        })
+      })
+    }
 
 
     //  lax
@@ -3098,7 +3099,7 @@
         transform: ' scale(1.2) rotate(20deg)',
         opacity: '1',
         ease: "elastic.inOut",
-      })  
+      })
     }
 
 
@@ -3157,9 +3158,9 @@
     });
 
 
-   
 
- 
+
+
 
 
     // img-compare
@@ -3385,7 +3386,7 @@ function beforeAfter() {
 
 // trans
 
- // trans ,ja,la,de,ru,zh-CN,ko,es
+// trans ,ja,la,de,ru,zh-CN,ko,es
 //  var google_translate_element = document.getElementById('google_translate_element2')
 //  if (google_translate_element) {
 //   function googleTranslateElementInit() {
@@ -3395,7 +3396,7 @@ function beforeAfter() {
 //        autoDisplay: false
 //      }, 'google_translate_element2');
 //      console.log(" trans ")
-   
+
 //     }
 //  }
 
@@ -3484,6 +3485,108 @@ function checkpass(a, b) {
   }
   else return false;
 }
+
+let curso = document.createElement("div");
+curso.className = "curso";
+document.body.appendChild(curso);
+//mouse
+// let curso = document.querySelector(".curso");
+function cursomove() {
+ 
+
+  // window.addEventListener('mouseover', cursoFunc);
+
+  // function cursoFunc(e) {
+  //   curso.style.top = e.clientY + "px";
+  //   curso.style.left = e.clientX + "px";
+  // }
+
+ 
+
+// Select the circle element
+const circleElement = curso;
+
+// Create objects to track mouse position and custom cursor position
+const mouse = { x: 0, y: 0 }; // Track current mouse position
+const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
+const circle = { x: 0, y: 0 }; // Track the circle position
+
+// Initialize variables to track scaling and rotation
+let currentScale = 0; // Track current scale value
+let currentAngle = 0; // Track current angle value
+
+// Update mouse position on the 'mousemove' event
+window.addEventListener('mousemove', (e) => {
+  mouse.x = e.x;
+  mouse.y = e.y;
+});
+
+const alllink = document.querySelectorAll("a, .button, img");
+
+alllink.forEach(link => {
+    link.addEventListener("mouseleave", () => {
+      curso.classList.remove("curso-grow")
+    });
+    link.addEventListener("mouseover", () => {
+      curso.classList.add("curso-grow")
+      console.log("helo")
+    });
+  });
+
+// Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
+const speed = 0.2;
+
+// Start animation
+const tick = () => {
+  
+  // MOVE
+  // Calculate circle movement based on mouse position and smoothing
+  circle.x += (mouse.x - circle.x) * speed;
+  circle.y += (mouse.y - circle.y) * speed;
+  // Create a transformation string for cursor translation
+  const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
+
+  // SQUEEZE
+  // 1. Calculate the change in mouse position (deltaMouse)
+  const deltaMouseX = mouse.x - previousMouse.x;
+  const deltaMouseY = mouse.y - previousMouse.y;
+  // Update previous mouse position for the next frame
+  previousMouse.x = mouse.x;
+  previousMouse.y = mouse.y;
+  // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
+  const mouseVelocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 4, 150); 
+  // 3. Convert mouse velocity to a value in the range [0, 0.5]
+  const scaleValue = (mouseVelocity / 140) * 0.5;
+  // 4. Smoothly update the current scale
+  currentScale += (scaleValue - currentScale) * speed;
+  // 5. Create a transformation string for scaling
+  const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
+
+  // ROTATE
+  // 1. Calculate the angle using the atan2 function
+  const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
+  // 2. Check for a threshold to reduce shakiness at low mouse velocity
+  if (mouseVelocity > 16) {
+    currentAngle = angle;
+  }
+  // 3. Create a transformation string for rotation
+  const rotateTransform = `rotate(${currentAngle}deg)`;
+
+  // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
+  circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+
+  // Request the next frame to continue the animation
+  window.requestAnimationFrame(tick);
+
+  
+}
+
+// Start the animation loop
+tick();
+
+}
+
+
 
 // block
 
