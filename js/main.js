@@ -3477,7 +3477,7 @@ function downloadFile(url, fileName) {
 };
 
 function checkpass(a, b) {
-  let person = prompt("This is Trung 🖐️ Mail nqt99designs@gmail.com for the CODE to download this file", '');
+  let person = prompt("Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file", '');
   if (person == 'mnbvcx') {
     downloadFile(a, b);
     return false;
@@ -3487,16 +3487,16 @@ function checkpass(a, b) {
 
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener("contextmenu",
-  event => event.preventDefault()
-  );
+// document.addEventListener("contextmenu",
+//   event => event.preventDefault()
+//   );
 
