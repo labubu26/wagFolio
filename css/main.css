@@ -17077,7 +17077,7 @@ body {
   pointer-events: none;
   backdrop-filter: invert(0.95) hue-rotate(160deg) saturate(1.3) contrast(1.5);
   -webkit-backdrop-filter: invert(0.95) hue-rotate(160deg) saturate(1.3);
-  z-index: 20000;
+  z-index: 3000;
   transition: all 0.2s ease-out;
   transition-property: width, height, top, left;
   transform-origin: 50% 

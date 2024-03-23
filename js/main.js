@@ -3534,7 +3534,7 @@ alllink.forEach(link => {
   });
 
 // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-const speed = 0.2;
+const speed = 0.17;
 
 // Start animation
 const tick = () => {
@@ -3566,7 +3566,7 @@ const tick = () => {
   // 1. Calculate the angle using the atan2 function
   const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
   // 2. Check for a threshold to reduce shakiness at low mouse velocity
-  if (mouseVelocity > 40) {
+  if (mouseVelocity > 20) {
     currentAngle = angle;
   }
   // 3. Create a transformation string for rotation
