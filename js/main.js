@@ -3507,7 +3507,7 @@ function cursomove() {
 const circleElement = curso;
 
 // Create objects to track mouse position and custom cursor position
-const mouse = { x: 0, y: 0 }; // Track current mouse position
+const mouse = { x:600, y: -50 }; // Track current mouse position
 const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
 const circle = { x: 0, y: 0 }; // Track the circle position
 
@@ -3521,7 +3521,7 @@ window.addEventListener('mousemove', (e) => {
   mouse.y = e.y;
 });
 
-const alllink = document.querySelectorAll("a, .button, button, img, .backButton, .img-comp-slider, .js-prev, .js-next");
+const alllink = document.querySelectorAll("a, .button, button, img, .bg-image, .backButton, .img-comp-slider, .js-prev, .js-next");
 
 alllink.forEach(link => {
     link.addEventListener("mouseleave", () => {
@@ -3534,7 +3534,7 @@ alllink.forEach(link => {
   });
 
 // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-const speed = 0.17;
+const speed = 0.3;
 
 // Start animation
 const tick = () => {
@@ -3556,7 +3556,7 @@ const tick = () => {
   // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
   const mouseVelocity = Math.min(Math.sqrt(deltaMouseX**2 + deltaMouseY**2) * 4, 150); 
   // 3. Convert mouse velocity to a value in the range [0, 0.5]
-  const scaleValue = (mouseVelocity / 150) * 0.5;
+  const scaleValue = (mouseVelocity / 150) * 0.36;
   // 4. Smoothly update the current scale
   currentScale += (scaleValue - currentScale) * speed;
   // 5. Create a transformation string for scaling

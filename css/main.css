@@ -826,7 +826,7 @@ html {
   
 }
 a, .button, button, img, .backButton, .js-prev, .js-next{
-  cursor: none !important;
+  /* cursor: none !important; */
 
 }
 
@@ -985,7 +985,7 @@ button {
   border: unset;
   border-radius: unset;
   background-color: unset;
-  /* cursor:none !important; */
+  cursor: pointer;
 }
 
 .button {
@@ -1104,7 +1104,7 @@ button {
   color: #fff;
   box-shadow: 0 0 0 8px #90909030;
   transition: all 0.5s;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 .button.-green .icon {
   transition: all 0.5s;
@@ -1315,7 +1315,7 @@ button {
 }
 .caseCard:hover {
   /* box-shadow: 0 28px 40px 2px #eaeaea8a; */
-  /* cursor: pointer; */
+  cursor: pointer; 
 }
 
 .caseCard:hover .button.-icon .icon {
@@ -3045,7 +3045,7 @@ h6 {
   transform: translate(0px, 0px);
 }
 .header__menu .nav-button-open {
-  /* cursor: pointer; */
+  cursor: pointer; 
   /* padding: 1rem; */
   /* border: 2px solid var(--bg-dark-3);
   border-radius: 100%; */
@@ -3380,7 +3380,7 @@ h6 {
 }
 
 .navList li a {
-  /* cursor: pointer; */
+  cursor: pointer; 
   display: inline-block;
   color: white;
   padding: 8px 0;
@@ -3498,7 +3498,7 @@ h6 {
 }
 
 .navClassic-wrap a {
-  /* cursor: pointer; */
+  cursor: pointer; 
   font-size: inherit;
   line-height: inherit;
   color: inherit;
@@ -3510,7 +3510,7 @@ h6 {
 }
 
 .navClassic-list > li {
-  /* cursor: pointer; */
+  cursor: pointer; 
   position: relative;
   display: flex;
   align-items: center;
@@ -3720,7 +3720,7 @@ h6 {
 }
 
 .sectionVideo__btn {
-  /* cursor: pointer; */
+  cursor: pointer; 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3823,7 +3823,7 @@ h6 {
 }
 
 .backButton {
-  /* cursor: pointer; */
+  cursor: pointer;
   position: fixed;
   bottom: 32px;
   right: 16px;
@@ -13792,7 +13792,7 @@ line-height: 1!important;
     transition: all 0.15s;
     position: relative;
     z-index: 1;
-    /* cursor: pointer; */
+    cursor: pointer; 
   }
 }
 .ufo-sec--navigation .sticky-header .step-name {
@@ -13881,7 +13881,7 @@ line-height: 1!important;
   background-position: 50%;
   background-repeat: no-repeat;
   transition: transform 0.15s ease-in-out;
-  /* cursor: pointer; */
+  cursor: pointer; 
 }
 .ufo-sec--navigation .sticky-header.sticked.show-dd {
   height: auto;
@@ -14277,7 +14277,7 @@ body.compensate-for-scrollbar {
   border: 0;
   border-radius: 0;
   box-shadow: none;
-  /* cursor: pointer; */
+  cursor: pointer;
   display: inline-block;
   height: 44px;
   margin: 0;
@@ -14346,7 +14346,7 @@ body.compensate-for-scrollbar {
   border: 0;
   border-radius: 0;
   color: #ccc;
-  /* cursor: pointer; */
+  cursor: pointer;
   opacity: 0.8;
   padding: 8px;
   position: absolute;
@@ -14704,7 +14704,7 @@ body.compensate-for-scrollbar {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  /* cursor: pointer; */
+  cursor: pointer;
   float: left;
   height: 75px;
   margin: 2px;
@@ -14813,7 +14813,7 @@ body.compensate-for-scrollbar {
 .accordion {
   min-height: 120px;
   position: relative;
-  /* cursor: pointer; */
+  cursor: pointer; 
   padding: 0px 120px 0px 32px;
   width: 100%;
   border: none;
@@ -15008,7 +15008,7 @@ body.compensate-for-scrollbar {
   /* text-transform: uppercase; */
   font-weight: 600;
   /* letter-spacing: 0.1em; */
-  /* cursor: pointer; */
+  cursor: pointer; 
   flex: 1;
   white-space: nowrap;
   
@@ -15323,6 +15323,9 @@ body.compensate-for-scrollbar {
   width: 100%;
   height: auto;
 }
+.img-fluid:hover{
+  cursor: zoom-in;
+}
 
 /* @keyframes zo {
   0%{
@@ -15502,7 +15505,7 @@ body.compensate-for-scrollbar {
 
 .tab-header .tab-btn {
   border: none;
-  /* cursor: pointer; */
+  cursor: pointer; 
   z-index: 1;
   /* border: 1px solid #6a00fb; */
   background-color: transparent;
@@ -17075,10 +17078,14 @@ body {
   top: calc(var(--circle-size) / 2 * -1);
   left: calc(var(--circle-size) / 2 * -1);
   pointer-events: none;
-  backdrop-filter: invert(0.95) hue-rotate(160deg) saturate(1.3) contrast(1.5);
-  -webkit-backdrop-filter: invert(0.95) hue-rotate(160deg) saturate(1.3);
+  
+  /* backdrop-filter: invert(0.95) hue-rotate(160deg) saturate(1.3) contrast(1.5);
+  -webkit-backdrop-filter: invert(0.95) hue-rotate(160deg) saturate(1.3); */
+  background: #fff;
+  mix-blend-mode: difference;
+  -webkit-mix-blend-mode: difference;
   z-index: 3000;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out 0.1s;
   transition-property: width, height, top, left;
   transform-origin: 50% 
 }
