@@ -120,7 +120,7 @@
     a();
     StickScrollSection();
     cursomove();
-    hoverChange();
+    // hoverChange();
 
     //
     // your custom plugins init here
@@ -3590,6 +3590,7 @@ function cursomove() {
 // hoverChange
 function hoverChange() {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  // ABCDEFGHIJKLMNOPQRSTUVWXYZ
   let interval = null;
   let hChange = document.querySelector(".hoverChange");
 
