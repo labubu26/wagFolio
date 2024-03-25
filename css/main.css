@@ -822,7 +822,7 @@ html {
   font-size: 16px;
   cursor: none !important;
 
-  /* cursor: url('/img/general/defaultcursor.svg'), auto !important; */
+  /* cursor: url('/img/general/defaultcursor.svg') 12 12, auto !important; */
   
 }
 a, .button, button, img, .backButton, .js-prev, .js-next{
@@ -17078,12 +17078,11 @@ body {
   top: calc(var(--circle-size) / 2 * -1);
   left: calc(var(--circle-size) / 2 * -1);
   pointer-events: none;
-  
-  /* backdrop-filter: invert(0.95) hue-rotate(160deg) saturate(1.3) contrast(1.5);
-  -webkit-backdrop-filter: invert(0.95) hue-rotate(160deg) saturate(1.3); */
+  backdrop-filter: grayscale(1.5) contrast(1.3);
+  -webkit-backdrop-filter: grayscale(1.5) contrast(1.3); 
   background: #fff;
-  mix-blend-mode: difference;
-  -webkit-mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
+  -webkit-mix-blend-mode: exclusion;
   z-index: 3000;
   transition: all 0.3s ease-out 0.1s;
   transition-property: width, height, top, left;
@@ -17096,9 +17095,8 @@ body {
   top: calc(150px / 2 * -1);
   left: calc(150px / 2 * -1);
 
-
   /* transform: scale(2) !important; */
   /* backdrop-filter: grayscale(1); */
-
   /* background: black; */
 }
+
