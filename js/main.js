@@ -121,6 +121,7 @@
     StickScrollSection();
     cursomove();
     // hoverChange();
+    stagerhover();
 
     //
     // your custom plugins init here
@@ -3597,12 +3598,12 @@ function hoverChange() {
   if (!hChange) return;
   else hChangeFunc();
 
-  function hChangeFunc(){
+  function hChangeFunc() {
     hChange.onmouseover = event => {
       let iteration = 0;
-  
+
       clearInterval(interval);
-  
+
       interval = setInterval(() => {
         event.target.innerText = event.target.innerText
           .split("")
@@ -3610,34 +3611,70 @@ function hoverChange() {
             if (index < iteration) {
               return event.target.dataset.value[index];
             }
-  
+
             return letters[Math.floor(Math.random() * 26)]
           })
           .join("");
-  
+
         if (iteration >= event.target.dataset.value.length) {
           clearInterval(interval);
         }
-  
+
         iteration += 1 / 3;
       }, 30);
     }
   }
 }
 
+// stagerhover
+function stagerhover() {
+  let elements = document.querySelectorAll(".stagerhover");
+
+  if (!elements) return;
+  else stagerhoverFunc();
+
+  function stagerhoverFunc() {
+    elements.forEach((element) => {
+      let innerText = element.innerText;
+      element.innerHTML = "";
+
+      let textContainer = document.createElement("div");
+      textContainer.classList.add("block");
+
+      for (let letter of innerText) {
+        let span = document.createElement("span");
+        span.innerText = letter.trim() === "" ? "\xa0" : letter;
+        span.classList.add("letter");
+        textContainer.appendChild(span);
+      }
+
+      element.appendChild(textContainer);
+      element.appendChild(textContainer.cloneNode(true));
+    });
+
+    elements.forEach((element) => {
+      element.addEventListener("mouseover", () => {
+        element.classList.remove("play");
+      });
+    });
+
+  }
+}
+
+
 
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener("contextmenu",
-  event => event.preventDefault()
-  );
+// document.addEventListener("contextmenu",
+//   event => event.preventDefault()
+//   );
 

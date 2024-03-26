@@ -91,143 +91,144 @@
       </div>
 
       <main class="text-lg sm:text-base fw-400">
-        <!---------------------->
-        <!-- 0                -->
-        <!-- NAV OUT         -->
-        <!--                  -->
-        <!---------------------->
-        <header class="header -light -sticky-light js-header">
-          <!-- header__bar invert   start -->
-          <div class="header__bar invert">
-            <div class="header__logo js-header-logo">
-              <a data-barba href="index.html">
-                <img
-                  class="header__logo__dark js-lazy"
-                  data-srcset="img/logo/logo.svg"
-                  height="29px!important"
-                  alt="WagTrung Logo"
-                />
-              </a>
-            </div>
+     <!---------------------->
+      <!-- 0                -->
+      <!-- NAV OUT         -->
+      <!--                  -->
+      <!---------------------->
+      <header class=" header -light -sticky-light js-header">
+        <!-- header__bar start -->
+        <div class="header__bar ">
+          <div class="header__logo js-header-logo">
+            <a data-barba href="index.html">
+              <img class="header__logo__dark js-lazy" data-srcset="img/logo/logo.svg" height="29px!important"
+                alt="WagTrung Logo" />
+            </a>
+          </div>
 
-            <div class="header__menu js-header-menu">
+          <div class="cen">
+            <!-- Translate -->
+            <!-- <div class="">
+              <ul class="trans mr-16">
+                <li >
+                  <a class="vi" href="#" title="Tiếng Việt">
+                    <div class="flag mr-24"
+                      style="background:url('https://www.sciencekids.co.nz/images/pictures/flags680/Vietnam.jpg')"></div>
+                  </a>
+                </li>
+                <li>
+                  <a class="en" href="#" title="English">
+                    <div class="flag"
+                      style="background:url('https://www.sciencekids.co.nz/images/pictures/flags680/United_Kingdom.jpg')"></div>
+                  </a>
+                </li>
+              </ul>
+              <div id="google_translate_element2"></div>
+            </div> -->
+            <!-- <div id='google_translate_element'>index</div> -->
+            <div class=" header__menu js-header-menu">
               <button type="button" class="nav-button-open js-nav-open">
                 <i class="icon" data-feather="menu"></i>
               </button>
             </div>
+
           </div>
-          <!-- header__bar invert   end -->
+        </div>
+        <!-- header__bar end -->
 
-          <!---------------------->
-          <!-- 0                -->
-          <!-- NAV INSIDE         -->
-          <!--                  -->
-          <!---------------------->
-          <nav class="nav js-nav">
-            <div class="nav__inner js-nav-inner">
-              <div class="nav__bg js-nav-bg" style="position: relative">
-                <div class="bg-grid"></div>
-                <!-- style="border-bottom: 4px solid; -->
-                <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
-                <div class="nav__container">
-                  <div class="nav__header">
-                    <button type="button" class="nav-button-back js-nav-back">
-                      <i class="icon" data-feather="arrow-left-circle"></i>
-                    </button>
+        <!---------------------->
+        <!-- 0                -->
+        <!-- NAV INSIDE         -->
+        <!--                  -->
+        <!---------------------->
+        <nav class="nav js-nav">
+          <div class="nav__inner js-nav-inner">
+            <div class="nav__bg js-nav-bg" style="position:relative">
+              <div class="bg-grid"></div>
+              <!-- style="border-bottom: 4px solid; -->
+              <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
+              <div class="nav__container">
+                <div class="nav__header">
+                  <button type="button" class="nav-button-back js-nav-back">
+                    <i class="icon" data-feather="arrow-left-circle"></i>
+                  </button>
 
-                    <button
-                      type="button"
-                      class="mt-24 nav-btn-close js-nav-close pointer-events-none"
-                    >
-                      <i class="icon str-weight-3xl" data-feather="x"></i>
-                    </button>
+                  <button type="button" class="mt-24 nav-btn-close js-nav-close pointer-events-none">
+                    <i class="icon str-weight-3xl" data-feather="x"></i>
+                  </button>
+
+                </div>
+
+                <div class="nav__content">
+                  <div class="nav__content__left">
+                    <div class="navList__wrap">
+
+                      <ul class="navList js-navList">
+                        <li>
+                          <a class="stagerhover" data-barba href="index.html"> Home </a>
+                        </li>
+
+                        <li>
+                          <a class="stagerhover" data-barba href="case-studies.html">
+                            Case Study
+                          </a>
+                        </li>
+
+
+
+                        <li>
+                          <a class="stagerhover" data-barba href="about-me.html"> About Me </a>
+                        </li>
+
+                        <li>
+                          <a class="stagerhover" data-barba href="works.html">
+                            Works
+                          </a>
+                        </li>
+
+                        <li>
+                          <a target="_blank"
+                            onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
+                            class="button -sm -outline-white text-white  -light mt-32 ">
+                            <i class="icon mr-8" data-feather="download"></i> Download my CV
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
-                  <div class="nav__content">
-                    <div class="nav__content__left">
-                      <div class="navList__wrap">
-                        <ul class="navList js-navList">
-                          <li>
-                            <a data-barba href="index.html"> Home </a>
-                          </li>
+                  <div class="nav__content__right">
+                    <div class="nav__info">
+                      <div class="nav__info__item js-navInfo-item">
+                        <h5 class="text-sm tracking-none fw-500 ">
+                          UI/UX Designer
+                        </h5>
 
-                          <li>
-                            <a data-barba href="case-studies.html">
-                              Case Study
-                            </a>
-                          </li>
-
-                          <li>
-                            <a data-barba href="about-me.html"> About Me </a>
-                          </li>
-
-                          <li>
-                            <a data-barba href="works.html"> Works </a>
-                          </li>
-
-                          <li>
-                            <a
-                              target="_blank"
-                              href="img/backgrounds/CV_QuangTrung_UIUX.pdf"
-                              download="CV_QuangTrung_UIUX"
-                              class="button -sm -outline-white text-white -light mt-32"
-                            >
-                              <i class="icon mr-8" data-feather="download"></i>
-                              Download my CV
-                            </a>
-                          </li>
-                        </ul>
+                        <div class="nav__info__content text-lg mt-16">
+                          <p>Ngo Quang Trung</p>
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="nav__content__right">
-                      <div class="nav__info">
-                        <div class="nav__info__item js-navInfo-item">
-                          <h5 class="text-sm tracking-none fw-500">
-                            UI/UX Designer
-                          </h5>
+                      <div class="nav__info__item js-navInfo-item">
+                        <h5 class="text-sm tracking-none fw-500 ">
+                          Social sites
+                        </h5>
 
-                          <div
-                            class="nav__info__content text-lg text-white mt-16"
-                          >
-                            <p>Ngo Quang Trung</p>
-                          </div>
+                        <div class="nav__info__content text-lg mt-16">
+                          <a class="stagerhover" target="_blank"
+                            href="https://www.linkedin.com/in/wagtrung/">LinkedIn</a>
+                          <a class="stagerhover" target="_blank" href="https://www.behance.com/powow/">Behance</a>
+
                         </div>
+                      </div>
 
-                        <div class="nav__info__item js-navInfo-item">
-                          <h5 class="text-sm tracking-none fw-500">
-                            Social sites
-                          </h5>
+                      <div class="nav__info__item js-navInfo-item">
+                        <h5 class="text-sm tracking-none fw-500 ">Contact Me</h5>
 
-                          <div
-                            class="nav__info__content text-lg text-white mt-16"
-                          >
-                            <a
-                              target="_blank"
-                              href="https://www.linkedin.com/in/wagtrung/"
-                              >LinkedIn</a
-                            >
-                            <a
-                              target="_blank"
-                              href="https://www.behance.com/powow/"
-                              >Behance</a
-                            >
-                          </div>
-                        </div>
+                        <div class="nav__info__content text-lg mt-16">
+                          <a class="stagerhover" href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
+                          <a class="stagerhover" href="tel:+84938074106">+84 938 074 106</a>
 
-                        <div class="nav__info__item js-navInfo-item">
-                          <h5 class="text-sm tracking-none fw-500">
-                            Contact Me
-                          </h5>
-
-                          <div
-                            class="nav__info__content text-lg text-white mt-16"
-                          >
-                            <a href="mailto:nqt99designs@gmail.com"
-                              >nqt99designs@gmail.com</a
-                            >
-                            <a href="tel:+84938074106">+84 938 074 106</a>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -235,15 +236,17 @@
                 </div>
               </div>
             </div>
-          </nav>
-          <!-- nav end -->
-        </header>
-        <!-- header end -->
+        </nav>
+        <!-- nav end -->
+      </header>
+      <!-- header end -->
 
-        <!-- END-NAV -->
-        <!-- END-NAV -->
-        <!-- END-NAV -->
-        <!-- END-NAV -->
+
+
+      <!-- END-NAV -->
+      <!-- END-NAV -->
+      <!-- END-NAV -->
+      <!-- END-NAV -->
 
         <!---------------------->
         <!--                 -->
@@ -748,7 +751,7 @@
                       <a
                         data-barba
                         href="case-studies.html"
-                        class="button -underline"
+                        class="button -underline stagerhover"
                         >Case Study</a
                       >
                     </div>
@@ -757,7 +760,7 @@
                       <a
                         data-barba
                         href="about-me.html"
-                        class="button -underline sm:mt-4 mt-12"
+                        class="button -underline stagerhover sm:mt-4 mt-12"
                         >About Me</a
                       >
                     </div>
@@ -766,7 +769,7 @@
                       <a
                         data-barba
                         href="works.html"
-                        class="button -underline sm:mt-4 mt-12"
+                        class="button -underline stagerhover sm:mt-4 mt-12"
                         >Works</a
                       >
                     </div>
@@ -783,7 +786,7 @@
                     <div>
                       <a
                         data-barba
-                        class="button -underline sm:mt-4 mt-12"
+                        class="button -underline stagerhover sm:mt-4 mt-12"
                         href="mailto:nqt99designs@gmail.com"
                         >nqt99designs@gmail.com</a
                       >
@@ -791,7 +794,7 @@
                     <div>
                       <a
                         data-barba
-                        class="button -underline sm:mt-4 mt-12"
+                        class="button -underline stagerhover sm:mt-4 mt-12"
                         href="tel:+84938074106"
                         >+84 938 074 106</a
                       >
