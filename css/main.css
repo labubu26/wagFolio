@@ -4100,10 +4100,11 @@ h6 {
   transform: scale(1);
 }
 
+/* share-button */
 .js-backButton2 {
   pointer-events: none;
   /* opacity: 0; */
-  transform: translateY(100%) !important;
+  transform: translateY(150%) !important;
   transition: transform 0.7s ease-in-out;
 }
 
@@ -18266,7 +18267,8 @@ blockquote:after {
 .reddit:hover,
 .whatsapp:hover,
 .x:hover {
-  color: inherit;
+  color: var(--bg-dark-4);
+  cursor: alias;
 }
 
 .h-125vh2 {
