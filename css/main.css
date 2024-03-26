@@ -1204,6 +1204,7 @@ button {
   transition: all 700ms cubic-bezier(0.165, 0.84, 0.44, 1);
   display: inline-flex;
   align-items: center;
+  padding:0 2rem;
 }
 
 .button.-underline {
@@ -3507,6 +3508,7 @@ h6 {
 
 .navList li:last-child a{
   width:fit-content;
+  /* height:fit-content */
 }
 
 .navList:hover > li{
