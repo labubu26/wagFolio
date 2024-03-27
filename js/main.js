@@ -520,7 +520,7 @@
           opacity: 0,
         }, {
           ease: "quart.out",
-          duration: 0.8,
+          duration: 0.5,
           y: '0px',
           opacity: 1,
         }, '>-0.2')
@@ -528,24 +528,24 @@
           y: '100%',
         }, {
           ease: 'quart.out',
-          stagger: 0.2,
-          duration: 0.7,
+          stagger: 0.1,
+          duration: 0.5,
           y: '0%',
-        }, '>-0.7')
+        }, '>-0.5')
         .fromTo(navInfoItems, {
           opacity: 0,
           y: '90px',
         }, {
           ease: "quart.out",
-          stagger: 0.2,
-          duration: 0.7,
+          stagger: 0.1,
+          duration: 0.5,
           opacity: 1,
           y: '0px',
           onComplete: () => {
             navList.classList.add('is-visible');
             navBtnClose.classList.remove('pointer-events-none');
           },
-        }, '<')
+        }, '<0')
 
     }
 
@@ -559,7 +559,7 @@
 
         .to([navBtnClose, navBack], {
           ease: "quart.out",
-          duration: 0.6,
+          duration: 0.4,
           opacity: 0,
           y: '-16px',
           onStart: () => {
@@ -570,19 +570,19 @@
         })
         .to(navActiveListLinks, {
           ease: "quart.out",
-          duration: 0.8,
+          duration: 0.6,
           y: '-100%',
-        }, '>-0.2')
+        }, '>-0.5')
         .to(navInfoItems, {
           opacity: 0,
           y: '-34px',
           ease: "quart.out",
-          duration: 0.8,
-        }, '<')
+          duration: 0.6,
+        }, '>-0.5')
 
         .to(navBg, {
           ease: "quart.inOut",
-          duration: 1,
+          duration: 0.5,
           transformOrigin: 'right',
           scaleY: 0,
           onComplete: () => {
@@ -590,7 +590,7 @@
             navBg.classList.remove('origin-top');
             navInner.classList.remove('is-active');
           },
-        }, '<0.1')
+        }, '>-0.2')
 
     }
 
@@ -3536,7 +3536,7 @@ function cursomove() {
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  const speed = 0.3;
+  const speed = 0.2;
 
   // Start animation
   const tick = () => {
