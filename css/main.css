@@ -1122,12 +1122,16 @@ button {
 
 .button.-white {
   background-color: white;
-  border: 0.0625rem solid white;
+  color: var(--bg-dark-4);
+  border: 0.0625rem solid;
+  border-color: transparent;
 }
 
 .button.-white:hover {
-  background-color: transparent;
+  /* background-color: transparent; */
   color: white;
+  border-color: rgb(27 29 41 / 49%);
+
 }
 
 .button.-black {
@@ -1157,7 +1161,7 @@ button {
   color: #fff;
   box-shadow: 0 0 0 0px #90909030;
 }
-.button.-black::before, .button.-outline-black::before, .button.-outline-white::before{
+.button.-black::before, .button.-outline-black::before, .button.-outline-white::before, .button.-white::before{
   background-color: var(--bg-light-1);
   content: "";
   display: block;
@@ -1170,14 +1174,14 @@ button {
   z-index: -2;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) ;
 }
-.button.-outline-black::before{
+.button.-outline-black::before, .button.-white::before{
   background-color: var(--bg-dark-4);
 }
 .button.-black:hover {
   /* background-color: transparent; */
   color: var(--bg-dark-3);
 }
-.button.-black:hover::before, .button.-outline-black:hover::before, .button.-outline-white:hover::before{
+.button.-black:hover::before, .button.-outline-black:hover::before, .button.-outline-white:hover::before, .button.-white:hover::before{
   top: 0%;
   border-radius: 0%;
   width: 100%;
@@ -1195,9 +1199,11 @@ button {
 }
 
 .button.-outline-black.-light {
-  background-color: transparent;
+  /* background-color: transparent; */
+  color: var(--bg-dark-4);
   border: 2px solid rgb(21 20 38 / 18%);
 }
+
 
 .button.-outline-black.-light2 {
   background: rgb(245, 246, 247);
@@ -17336,32 +17342,29 @@ body.compensate-for-scrollbar {
 }
 
 #more {
-  display: none;
+  visibility: hidden;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-property: visibility,max-height;
+  max-height: 0;
+  overflow: hidden;
+}
+#more.open{
+  visibility: visible;
+  /* Set max-height to something bigger than the box could ever be */
+  max-height: 600px;
 }
 
-#myBtn {
-  display: block;
-  /* margin: 32px auto 0; */
-  /* background: rgb(245, 246, 247);
-  border-bottom: 1px solid rgba(237, 237, 237, 0.841);
-  border-radius: 12px;
-  padding: 14px 48px;
-  font-size: 1rem;
-  font-family: 'Inter';
-  color: var(--font-dark);
-  font-weight: 500; */
-}
-
-#myBtn::before {
-  content: "";
+#blurmask {
   position: absolute;
-  background: linear-gradient(0deg, #ffffffed 30%, #ffffff00 100%);
+  background: linear-gradient(0deg, #ffffffed 50%, #ffffff00 100%);
   left: 0;
-  bottom: 80px;
+  bottom: 0;
   width: 100%;
-  height: 300px;
+  height: 200px;
   z-index: 0;
   pointer-events: none;
+  opacity:1;
+  transition: opacity .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .header2 {

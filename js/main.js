@@ -3357,17 +3357,21 @@
 function more() {
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
-  if (moreText.style.display == "block") {
+  var blurmask = document.getElementById("blurmask");
+
+  
+  if (moreText.classList.contains('open')) {
+    moreText.classList.remove('open')
     btnText.innerHTML = "Show more";
-    moreText.style.display = "none";
-    moreText.style.transform = "none";
-    btnText.style.position = "unset";
+    blurmask.style.opacity = "1";
   } else {
-    btnText.innerHTML = "I got it! show less";
-    moreText.style.display = "block";
-    btnText.style.position = "relative";
+    moreText.classList.add('open');
+    btnText.innerHTML = "Show less";
+    blurmask.style.opacity = "0";
 
   }
+
+  
 }
 
 window.onscroll = function () { myFunction() };
@@ -3531,7 +3535,6 @@ function cursomove() {
     });
     link.addEventListener("mouseover", () => {
       curso.classList.add("curso-grow")
-      console.log("helo")
     });
   });
 
