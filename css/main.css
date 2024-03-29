@@ -3454,10 +3454,16 @@ h6 {
 /*--------------------------------------------------
 	15.3. Navigation list
 ---------------------------------------------------*/
+.navList__wrap{
+  height:100%
+}
 .navList__wrap ul {
   pointer-events: none;
   display:flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
 }
 
 .navList__wrap ul.is-visible {
@@ -3498,7 +3504,7 @@ h6 {
 .navList li a{
   cursor: pointer;
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1.5;
   height: calc(3rem * 1.5);
   width:100%;
@@ -3507,10 +3513,10 @@ h6 {
 }
 
 .navList li:last-child a{
-  width:fit-content;
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-  /* height:fit-content */
+  height: fit-content;
+  width: fit-content;
+  /* padding: 1.5rem 2.25rem; */
+  margin-top: 1rem;
 }
 
 .navList:hover > li{
@@ -3751,6 +3757,10 @@ h6 {
   .navList li a {
     font-size: 3.4vw;
     height: calc(3.6vw * 1.5)
+  }
+  .navList li:last-child a{
+
+    padding: 1.5rem 2.25rem;
   }
 
   .subnav-list li a {

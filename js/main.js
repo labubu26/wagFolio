@@ -525,7 +525,7 @@
           opacity: 1,
         }, '>-0.2')
         .fromTo(navListLinks, {
-          y: '100%',
+          y: '150%',
         }, {
           ease: 'quart.out',
           stagger: 0.1,
@@ -571,7 +571,7 @@
         .to(navActiveListLinks, {
           ease: "quart.out",
           duration: 0.6,
-          y: '-100%',
+          y: '-150%',
         }, '>-0.5')
         .to(navInfoItems, {
           opacity: 0,
@@ -3536,7 +3536,7 @@ function cursomove() {
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  const speed = 0.2;
+  const speed = 0.25;
 
   // Start animation
   const tick = () => {
