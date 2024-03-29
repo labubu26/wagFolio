@@ -1100,6 +1100,12 @@ button {
 .button.-black {
   text-align: center;
   border-radius: 3.75rem;
+  position:relative;
+  border-radius: 100px;
+  overflow:hidden;
+  z-index:1;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) ;
+
 }
 
 @media (max-width: 767px) {
@@ -1149,10 +1155,30 @@ button {
   color: #fff;
   box-shadow: 0 0 0 0px #90909030;
 }
-
+.button.-black::before, .button.-outline-black::before, .button.-outline-white::before{
+  background-color: var(--bg-light-1);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-radius: 100%;
+  z-index: -2;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) ;
+}
+.button.-outline-black::before{
+  background-color: var(--bg-dark-4);
+}
 .button.-black:hover {
-  background-color: transparent;
+  /* background-color: transparent; */
   color: var(--bg-dark-3);
+}
+.button.-black:hover::before, .button.-outline-black:hover::before, .button.-outline-white:hover::before{
+  top: 0%;
+  border-radius: 0%;
+  width: 100%;
 }
 
 .button.-black:hover svg {
@@ -1180,7 +1206,7 @@ button {
 }
 
 .button.-outline-black:hover {
-  background-color: var(--bg-dark-3);
+  /* background-color: var(--bg-dark-3); */
   color: white;
 }
 
@@ -1192,7 +1218,7 @@ button {
 
 .button.-outline-white:hover,
 .button.-outline-white.-light:hover {
-  background-color: white;
+  /* background-color: white; */
   color: black !important;
   border-color: transparent;
 }
@@ -5886,6 +5912,7 @@ img {
 
 .masthead.-type-3 .masthead__content.-left-padding .masthead__button {
   margin-left: 4.6875rem;
+  display:flex;
 }
 
 @media (max-width: 575px) {
