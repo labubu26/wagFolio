@@ -825,6 +825,7 @@
 /*--------------------------------------------------
 	03. Base
 ---------------------------------------------------*/
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -835,7 +836,7 @@ html {
   font-size: 16px;
   cursor: none !important;
 
-  /* cursor: url('/img/general/defaultcursor.svg') 12 12, auto !important; */
+  /* cursor: url('/img/general/defaultcursor.svg') 12 12, auto; */
 
 }
 
