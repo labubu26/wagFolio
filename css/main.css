@@ -1105,7 +1105,9 @@ button {
   overflow:hidden;
   z-index:1;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) ;
-
+}
+.button.-black svg{
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) ;
 }
 
 @media (max-width: 767px) {
@@ -1162,7 +1164,7 @@ button {
   height: 100%;
   left: 0;
   position: absolute;
-  top: 100%;
+  top: -150%;
   width: 100%;
   border-radius: 100%;
   z-index: -2;
@@ -5965,6 +5967,8 @@ img {
   overflow: visible;
   width: 100%;
   height: 100vh !important;
+  display:flex;
+  align-items:center;
 }
 .masthead.-type-4 .masthead__button {
 display:flex;
@@ -5978,13 +5982,7 @@ display:flex;
   right: 0;
   width: 100%;
 } */
-@media (max-width: 1200px) {
-  .masthead.-type-4 {
-    /* height: auto !important; */
-    display: flex;
-    align-items: center;
-  }
-}
+
 
 @media (max-width: 991px) {
   .masthead.-type-4 .masthead__img {
