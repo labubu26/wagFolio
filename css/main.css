@@ -1166,14 +1166,17 @@ button {
   background-color: var(--bg-light-1);
   content: "";
   display: block;
-  height: 100%;
-  left: 0;
   position: absolute;
-  top: -150%;
-  width: 100%;
-  border-radius: 100%;
+
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+
   z-index: -2;
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) ;
+  transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) ;
+  transform: scaleY(0) ;
+  transform-origin: top;
 }
 .button.-outline-black::before, .button.-white::before{
   background-color: var(--bg-dark-4);
@@ -1183,9 +1186,8 @@ button {
   color: var(--bg-dark-3);
 }
 .button.-black:hover::before, .button.-outline-black:hover::before, .button.-outline-white:hover::before, .button.-white:hover::before{
-  top: 0%;
-  border-radius: 0%;
-  width: 100%;
+  transform: scaleY(1) ;
+  transform-origin: bottom ;
 }
 
 .button.-black:hover svg {
@@ -1291,7 +1293,7 @@ button {
   height: 0.1rem;
   background: var(--bg-dark-4);
   transition: transform 300ms cubic-bezier(0.77, 0, 0.175, 1);
-  transform-origin: left;
+  transform-origin: 100%;
   transform: scaleX(0);
 }
 
@@ -1333,6 +1335,7 @@ button {
 .button.-underline4:hover::before,
 .p-item:hover .button.-underline4::before {
   transform: scaleX(1);
+  transform-origin: 0%
 }
 
 .subSlide {
@@ -1369,12 +1372,14 @@ button {
   height: 0.1rem;
   background-color: currentColor;
   transition: transform 300ms cubic-bezier(0.77, 0, 0.175, 1);
-  transform-origin: left;
+  transform-origin: 100%;
   transform: scaleX(0);
 }
 
 .button.-underline:hover::before {
   transform: scaleX(1);
+  transform-origin: 0%
+
 }
 
 .button.-icon .icon {
@@ -17352,7 +17357,7 @@ body.compensate-for-scrollbar {
 #more.open{
   visibility: visible;
   /* Set max-height to something bigger than the box could ever be */
-  max-height: 600px;
+  max-height: 1200px;
 }
 
 #blurmask {
@@ -19239,7 +19244,7 @@ body {
 @media (max-width: 767px) {
 
   /* NO STYLE ON SM Screen */
-  
+ 
   *>.smno {
     padding: 0 !important;
     border: 0 !important;
