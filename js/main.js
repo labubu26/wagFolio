@@ -1,4 +1,4 @@
-import modalComp from "./modal.js"
+// import modalComp from "./modal.js"
 
 
 (function () {
@@ -121,6 +121,7 @@ import modalComp from "./modal.js"
     feather.replace();
     videoBtn();
     a();
+    moreplease();
     StickScrollSection();
     cursomove();
     // hoverChange();
@@ -3355,28 +3356,29 @@ import modalComp from "./modal.js"
 
 
 
-
-
-// more
-function more() {
+// more moreplease
+function moreplease() {
   var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+  var btnMore = document.getElementById("btnMore");
   var blurmask = document.getElementById("blurmask");
 
-  
-  if (moreText.classList.contains('open')) {
-    moreText.classList.remove('open')
-    btnText.innerHTML = "Show more";
-    blurmask.style.opacity = "1";
-  } else {
-    moreText.classList.add('open');
-    btnText.innerHTML = "Show less";
-    blurmask.style.opacity = "0";
-
+  if (!btnMore) return;
+  else {
+    btnMore.addEventListener("click", () => {
+      if (moreText.classList.contains('open')) {
+        moreText.classList.remove('open')
+        btnMore.innerHTML = "Show more";
+        blurmask.style.opacity = "1";
+      } else {
+        moreText.classList.add('open');
+        btnMore.innerHTML = "Show less";
+        blurmask.style.opacity = "0";
+      }
+    });
   }
-
-  
 }
+
+
 
 window.onscroll = function () { myFunction() };
 
@@ -3472,8 +3474,7 @@ function beforeAfter() {
 // });
 
 
-modalComp();
-
+     
 
 
 
@@ -3525,7 +3526,7 @@ function cursomove() {
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  const speed = 0.2;
+  const speed = 0.22;
 
   // Start animation
   const tick = () => {
@@ -3547,7 +3548,7 @@ function cursomove() {
     // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
     const mouseVelocity = Math.min(Math.sqrt(deltaMouseX ** 2 + deltaMouseY ** 2) * 4, 150);
     // 3. Convert mouse velocity to a value in the range [0, 0.5]
-    const scaleValue = (mouseVelocity / 150) * 0.36;
+    const scaleValue = (mouseVelocity / 150) * 0.18;
     // 4. Smoothly update the current scale
     currentScale += (scaleValue - currentScale) * speed;
     // 5. Create a transformation string for scaling
@@ -3577,10 +3578,38 @@ function cursomove() {
 
 }
 
+
+    // download with pass
+    function downloadFile(url, fileName) {
+      fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+        .then(res => res.blob())
+        .then(res => {
+          const aElement = document.createElement('a');
+          aElement.setAttribute('download', fileName);
+          const href = URL.createObjectURL(res);
+          aElement.href = href;
+          // aElement.setAttribute('href', href);
+          aElement.setAttribute('target', '_blank');
+          aElement.click();
+          URL.revokeObjectURL(href);
+        });
+    };
+    function checkpass( a, b) {
+      let person = prompt("Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file", '');
+      
+      if (person == 'mnbvcx') {
+        downloadFile(a, b);
+        console.log("DDungs");
+        return false;
+      }
+      else 
+      console.log("Saii");
+      return false;
+    }
+
 // hoverChange
 function hoverChange() {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  // ABCDEFGHIJKLMNOPQRSTUVWXYZ
   let interval = null;
   let hChange = document.querySelector(".hoverChange");
 
@@ -3655,15 +3684,15 @@ function stagerhover() {
 
 // block
 
-// document.addEventListener("keydown", function (event){
-//   if (event.ctrlKey){
-//      event.preventDefault();
-//   }
-//   if(event.keyCode == 123){
-//      event.preventDefault();
-//   }
-// });
+document.addEventListener("keydown", function (event){
+  if (event.ctrlKey){
+     event.preventDefault();
+  }
+  if(event.keyCode == 123){
+     event.preventDefault();
+  }
+});
 
-// document.addEventListener("contextmenu",
-//   event => event.preventDefault()
-//   );
+document.addEventListener("contextmenu",
+  event => event.preventDefault()
+  );

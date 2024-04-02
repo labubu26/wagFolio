@@ -752,10 +752,12 @@
             </div>
 
             <div id="blurmask"></div>
-            <div class="cen"><button onclick="more()" id="myBtn" class="button -md -outline-black -light mt-16 mx-auto">
+            <div class="cen">
+              <button onclick="moreplease()" id="btnMore" class="button -md -outline-black -light mt-16 mx-auto">
               Show More
               <i class="icon size-xs str-width-lg size-xs ml-4" data-feather="chevron-down"></i>
-            </button></div>
+            </button>
+          </div>
             
           </div>
         </div>
@@ -1693,6 +1695,12 @@
                     Download CV Here
                     <!-- Send an email-->
                   </a>
+                  <a target="_blank" onclick="modalComp()"
+                    class="button -md -white mt-32 text-black" id="downpass">
+                    <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
+                    Tesst thu
+                    <!-- Send an email-->
+                  </a>
                 </div>
               </div>
             </div>
@@ -1822,7 +1830,9 @@
 
   <!-- JavaScript -->
   <script src="js/vendors.js"></script>
-  <script type="module" src="js/main.js"></script>
+  <script src="js/main.js"></script>
+<script type="module" src="js/modal.js"></script>
+
   <!-- checkpass modal-->
 
 </body>

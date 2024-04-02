@@ -47,7 +47,7 @@ export default function modalComp() {
   
       
       <!-- Trigger/Open The Modal -->
-  <button class="button -md -white mt-32 text-black" id="modalBtn">Open Modal test</button>
+      <!-- <button class="button -md -white mt-32 text-black" id="modalBtn">Open Modal test</button> -->
   
   <!-- The Modal -->
   <div id="myModal" class="modal">
@@ -55,11 +55,9 @@ export default function modalComp() {
     <!-- Modal content -->
     <div class="modal-content">
       <span id="closeBtn">&times;</span>
-      <form>
-  <label for="fname">Password:</label><br>
-  <input type="text" id="fname" value="John"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+  <label for="passModal">Password:</label><br>
+  <input type="text" id="passModal" ><br><br>
+  <button class="button -md -black text-white mt-32" id="submitModal">submit</button>
       
     </div>
   
@@ -76,11 +74,17 @@ export default function modalComp() {
     connectedCallback() {
       var modal = this.shadowRoot.getElementById("myModal");
 
-      this.shadowRoot.querySelector('#modalBtn').addEventListener('click', () => {
+ 
         modal.style.display = "block";
-        checkpass();
+        // checkpass();
+
+ 
+      this.shadowRoot.querySelector("#submitModal").addEventListener('click', () => {
+        var pass = this.shadowRoot.querySelector("#passModal").value;
+        // checkpass(pass)
       });
 
+      // Close Modal
       this.shadowRoot.querySelector("#closeBtn").addEventListener('click', () => {
         modal.style.display = "none";
       });
@@ -92,37 +96,18 @@ export default function modalComp() {
       });
 
 
-    }
-  }
 
-  // download with pass
-  function downloadFile(url, fileName) {
-    fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
-      .then(res => res.blob())
-      .then(res => {
-        const aElement = document.createElement('a');
-        aElement.setAttribute('download', fileName);
-        const href = URL.createObjectURL(res);
-        aElement.href = href;
-        // aElement.setAttribute('href', href);
-        aElement.setAttribute('target', '_blank');
-        aElement.click();
-        URL.revokeObjectURL(href);
-      });
-  };
-  function checkpass(a, b) {
-    // let person = prompt("Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file", '');
-    var person = document.getElementById("fname").value;
-    console.log("nó", person);
-  
-    if (person == 'mnbvcx') {
-      downloadFile(a, b);
-      return false;
+ 
+
+
     }
-    else return false;
+
+    
   }
 
   window.customElements.define('modal-pass', modalPass);
 
 
 };
+
+
