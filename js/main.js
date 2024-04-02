@@ -1,3 +1,6 @@
+import modalComp from "./modal.js"
+
+
 (function () {
   "use strict";
 
@@ -126,6 +129,7 @@
     //
     // your custom plugins init here
     //
+
 
   }
 
@@ -3135,7 +3139,7 @@
         position: 'fixed',
         zIndex: '10000',
         top: '0', left: '0',
-        cursor: 'zoom-out'
+        cursor: 'var(--cursorZoomOut)'
       }).click(function () {
         $(this).remove();
       }).appendTo('body');
@@ -3153,7 +3157,7 @@
         position: 'fixed',
         zIndex: '10000',
         top: '0', left: '0',
-        cursor: 'zoom-out'
+        cursor: 'var(--cursorZoomOut)'
       }).click(function () {
         $(this).remove();
       }).appendTo('body');
@@ -3467,30 +3471,12 @@ function beforeAfter() {
 // $('[href=#]').click(function(){return false});
 // });
 
-// download with pass
-function downloadFile(url, fileName) {
-  fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
-    .then(res => res.blob())
-    .then(res => {
-      const aElement = document.createElement('a');
-      aElement.setAttribute('download', fileName);
-      const href = URL.createObjectURL(res);
-      aElement.href = href;
-      // aElement.setAttribute('href', href);
-      aElement.setAttribute('target', '_blank');
-      aElement.click();
-      URL.revokeObjectURL(href);
-    });
-};
 
-function checkpass(a, b) {
-  let person = prompt("Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file", '');
-  if (person == 'mnbvcx') {
-    downloadFile(a, b);
-    return false;
-  }
-  else return false;
-}
+modalComp();
+
+
+
+
 
 let curso = document.createElement("div");
 curso.className = "curso";
@@ -3539,7 +3525,7 @@ function cursomove() {
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  const speed = 0.25;
+  const speed = 0.2;
 
   // Start animation
   const tick = () => {
@@ -3666,18 +3652,18 @@ function stagerhover() {
 
 
 
+
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener("contextmenu",
-  event => event.preventDefault()
-  );
-
+// document.addEventListener("contextmenu",
+//   event => event.preventDefault()
+//   );
