@@ -1,4 +1,5 @@
-// import modalComp from "./modal.js"
+import modalPass from "./module/modal.js"
+window.customElements.define('modal-pass', modalPass);
 
 
 (function () {
@@ -3579,33 +3580,7 @@ function cursomove() {
 }
 
 
-    // download with pass
-    function downloadFile(url, fileName) {
-      fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
-        .then(res => res.blob())
-        .then(res => {
-          const aElement = document.createElement('a');
-          aElement.setAttribute('download', fileName);
-          const href = URL.createObjectURL(res);
-          aElement.href = href;
-          // aElement.setAttribute('href', href);
-          aElement.setAttribute('target', '_blank');
-          aElement.click();
-          URL.revokeObjectURL(href);
-        });
-    };
-    function checkpass( a, b) {
-      let person = prompt("Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file", '');
-      
-      if (person == 'mnbvcx') {
-        downloadFile(a, b);
-        console.log("DDungs");
-        return false;
-      }
-      else 
-      console.log("Saii");
-      return false;
-    }
+
 
 // hoverChange
 function hoverChange() {
@@ -3682,17 +3657,60 @@ function stagerhover() {
 
 
 
+
+    // download with pass
+    function downloadFile(url, fileName) {
+      fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+        .then(res => res.blob())
+        .then(res => {
+          const aElement = document.createElement('a');
+          aElement.setAttribute('download', fileName);
+          const href = URL.createObjectURL(res);
+          aElement.href = href;
+          // aElement.setAttribute('href', href);
+          aElement.setAttribute('target', '_blank');
+          aElement.click();
+          URL.revokeObjectURL(href);
+        });
+    };
+
+    function checkpass( val, a, b) {
+      // let person = prompt("Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file", '');
+      if (val == 'mnbvcx') {
+        downloadFile(a, b);
+        return 0;
+      }
+      else return 0;
+    }
+
+    var modalElement = document.querySelector("modal-pass");
+    document.querySelectorAll(".downpass").forEach((element) => 
+    {element.addEventListener("click", () => {
+     
+      modalElement.open();
+      document.querySelector("#passSubmit").addEventListener("click", () => {
+        
+        var val = document.querySelector("#passInput").value;
+        checkpass(val,'img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf');
+        modalElement.close()
+      })
+    })
+    
+  });
+
+
+
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener("contextmenu",
-  event => event.preventDefault()
-  );
+// document.addEventListener("contextmenu",
+//   event => event.preventDefault()
+//   );

@@ -19497,3 +19497,10 @@ body {
   /* backdrop-filter: grayscale(1); */
   /* background: black; */
 }
+
+.cen-col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

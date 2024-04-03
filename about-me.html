@@ -47,6 +47,7 @@
   <link rel="stylesheet" href="css/vendors.css" />
   <link rel="stylesheet" href="css/main.css" />
 
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon/favicon.ico" />
   <meta name="theme-color" content="#ffffff" />
@@ -1688,19 +1689,41 @@
                   <h2 class="sectionHeading__title text-white">
                     <span class="sm:text-3xl">My Resume in PDF</span>
                   </h2>
-                  <modal-pass>hok</modal-pass>
-                  <a target="_blank" onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
-                    class="button -md -white mt-32 text-black">
-                    <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
-                    Download CV Here
-                    <!-- Send an email-->
+
+                  <modal-pass >
+                    <div slot="info">
+                      Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file
+                    </div>
+                    <div class="cen-col">
+                    <!-- <label for="pass">Pass</label> -->
+                    <input type="text"  id="passInput">
+                    <a target="_blank" 
+                    class="button -md -black " id="passSubmit">
+                    Submit
                   </a>
-                  <a target="_blank" onclick="modalComp()"
-                    class="button -md -white mt-32 text-black" id="downpass">
+                    </div>
+                  </modal-pass>
+                  <a target="_blank" 
+                    class="button -md -white mt-32 text-black downpass">
                     <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
                     Tesst thu
                     <!-- Send an email-->
                   </a>
+
+                  <a target="_blank" 
+                    class="button -md -white mt-32 text-black downpass">
+                    <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
+                    Tesst thu 2
+                    <!-- Send an email-->
+                  </a>
+                  <!-- <a target="_blank" onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
+                    class="button -md -white mt-32 text-black">
+                    <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
+                    Download CV Here
+                  </a> -->
+                  
+
+
                 </div>
               </div>
             </div>
@@ -1830,8 +1853,7 @@
 
   <!-- JavaScript -->
   <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
-<script type="module" src="js/modal.js"></script>
+  <script type="module" src="js/main.js"></script>
 
   <!-- checkpass modal-->
 
