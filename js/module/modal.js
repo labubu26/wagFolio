@@ -19,10 +19,9 @@ export default class modalPass extends HTMLElement {
     
       <!-- Modal content -->
       <div class="modal-content">
-
-        <h2><slot name="info"></slot></h2>
-
         <span id="closeBtn">&times;</span>
+
+        <slot name="info"></slot>
         <slot></slot>
       </div>
     

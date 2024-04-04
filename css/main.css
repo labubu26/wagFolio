@@ -1211,6 +1211,8 @@ button {
 .button.-white:hover::before {
   transform: scaleY(1);
   transform-origin: bottom;
+  
+
 }
 
 .button.-black:hover svg {

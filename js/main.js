@@ -1,5 +1,4 @@
-import modalPass from "./module/modal.js"
-window.customElements.define('modal-pass', modalPass);
+import modalPass from "./module/modal.js";
 
 
 (function () {
@@ -2735,26 +2734,15 @@ window.customElements.define('modal-pass', modalPass);
 ---------------------------------------------------*/
   function a() {
 
+
+
+
     // acc faq
     var acc = document.querySelectorAll(".accordion");
-    // var active = document.querySelectorAll(".active");
-    // console.log(acc)
     var i;
-
     if (!acc) return;
     else {
-
-
-
       for (i = 0; i < acc.length; i++) {
-        // if (i == 0 ) {
-        //   acc[0].classList.add("active");
-        //   acc[0].nextElementSibling.style.maxHeight = acc[0].scrollHeight + 128 + 128 + 128 + 128 + "px";
-        //   acc[0].nextElementSibling.style.paddingTop = 32 + "px"
-        //   acc[0].nextElementSibling.style.paddingBottom = 32 + "px"
-        // }
-
-
         acc[i].addEventListener("click", function () {
           var panel = this.nextElementSibling;
 
@@ -2773,7 +2761,6 @@ window.customElements.define('modal-pass', modalPass);
 
         });
       }
-
     }
 
     // tab
@@ -3127,7 +3114,6 @@ window.customElements.define('modal-pass', modalPass);
 
 
 
-
     //img-zoom
 
     $('img[data-enlargable]').addClass('img-enlargable').click(function () {
@@ -3166,14 +3152,10 @@ window.customElements.define('modal-pass', modalPass);
     });
 
 
-
-
-
-
-
     // img-compare
     var x1 = document.getElementsByClassName("img-comp-img");
-
+    if (x1) initComparisons();
+    else return;
     function initComparisons() {
       var x, i;
       /*find all elements with an "overlay" class:*/
@@ -3260,9 +3242,6 @@ window.customElements.define('modal-pass', modalPass);
       }
     }
 
-    if (!x1) return;
-    else initComparisons();
-
     // social
     const fb = document.querySelector('.facebook');
 
@@ -3286,8 +3265,64 @@ window.customElements.define('modal-pass', modalPass);
         whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${link}`;
       }
     }
+
+
+
+    // download with pass
+    function downloadFile(url, fileName) {
+      fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+        .then(res => res.blob())
+        .then(res => {
+          const aElement = document.createElement('a');
+          aElement.setAttribute('download', fileName);
+          const href = URL.createObjectURL(res);
+          aElement.href = href;
+          // aElement.setAttribute('href', href);
+          aElement.setAttribute('target', '_blank');
+          aElement.click();
+          URL.revokeObjectURL(href);
+        });
+    };
+
+    function checkpass(val, pass, file, filename) {
+      // let person = prompt("Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file", '');
+      if (val == pass) {
+        downloadFile(file, filename);
+        return 0;
+      }
+      else return 0;
+    }
+
+    var modalElement = document.querySelector("modal-pass");
+    if (modalElement) {
+      document.querySelectorAll(".modalcta").forEach((element) => {
+        element.addEventListener("click", () => {
+          modalElement.open();
+          document.querySelector("#passSubmit").addEventListener("click", () => {
+            var val = document.querySelector("#passInput").value;
+
+            if(modalElement.dataset.file == "cv"){
+            checkpass(val, "cv1234", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
+            }
+            else if(modalElement.dataset.file == "ie"){
+              checkpass(val, "ie1234",'img/backgrounds/ie.jpg', 'IELTS_QuangTrung.jpg');
+            }
+            else if(modalElement.dataset.file == "tc"){
+              checkpass(val, "tc1234",'img/backgrounds/QuangTrung_Transcript.pdf', 'QuangTrung_Transcript.pdf');
+            }
+            modalElement.close()
+          })
+        })
+
+      });
+
+    }
+
+
+
+    // Alway end a()
     // TITTE
-    var wt = document.querySelector(".wt");
+    const wt = document.querySelector(".wt");
     if (!wt) return;
     else {
       VanillaTilt.init(wt, {
@@ -3302,15 +3337,24 @@ window.customElements.define('modal-pass', modalPass);
         // axis: "x",
 
       });
-    }
+    };
+
   }
-
-
+  // End a()
 
 
 
 
 })();
+
+
+// Component dèine here (load 1 lần)
+window.customElements.define('modal-pass', modalPass);
+
+
+
+
+
 
 // cate
 
@@ -3475,7 +3519,7 @@ function beforeAfter() {
 // });
 
 
-     
+
 
 
 
@@ -3658,45 +3702,7 @@ function stagerhover() {
 
 
 
-    // download with pass
-    function downloadFile(url, fileName) {
-      fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
-        .then(res => res.blob())
-        .then(res => {
-          const aElement = document.createElement('a');
-          aElement.setAttribute('download', fileName);
-          const href = URL.createObjectURL(res);
-          aElement.href = href;
-          // aElement.setAttribute('href', href);
-          aElement.setAttribute('target', '_blank');
-          aElement.click();
-          URL.revokeObjectURL(href);
-        });
-    };
 
-    function checkpass( val, a, b) {
-      // let person = prompt("Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file", '');
-      if (val == 'mnbvcx') {
-        downloadFile(a, b);
-        return 0;
-      }
-      else return 0;
-    }
-
-    var modalElement = document.querySelector("modal-pass");
-    document.querySelectorAll(".downpass").forEach((element) => 
-    {element.addEventListener("click", () => {
-     
-      modalElement.open();
-      document.querySelector("#passSubmit").addEventListener("click", () => {
-        
-        var val = document.querySelector("#passInput").value;
-        checkpass(val,'img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf');
-        modalElement.close()
-      })
-    })
-    
-  });
 
 
 

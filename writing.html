@@ -56,6 +56,19 @@
 </head>
 
 <body class="preloader-visible" data-barba="wrapper">
+
+  <modal-pass data-file="cv">
+    <div slot="info">
+      Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file
+    </div>
+    <div class="cen-col">
+    <!-- <label for="pass">Pass</label> -->
+    <input type="text"  id="passInput">
+    <a target="_blank" class="button -md -black " id="passSubmit">
+    Submit
+    </a>
+    </div>
+  </modal-pass>
   <!---------------------->
   <!-- 0                -->
   <!-- PRE-LOAD         -->
@@ -185,8 +198,7 @@
 
                         <li>
                           <a target="_blank"
-                            onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
-                            class="button -sm -outline-white text-white  -light ">
+                            class="modalcta button -sm -outline-white text-white  -light ">
                             <i class="icon mr-8" data-feather="download"></i> Download my CV
                           </a>
                         </li>
@@ -744,8 +756,8 @@
               <div class="col">
                 <div class="footer__copyright">
                   <div class="d-flex align-items-center x-gap-32">
-                    <a target="_blank" onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
-                      class="button -sm -outline-black -light text-black sm:d-none" style="font-size: 0.8rem">
+                     <a target="_blank" 
+                      class="modalcta button -sm -outline-black -light text-black sm:d-none" style="font-size: 0.8rem">
                       <i class="icon size-2xs str-width-lg mr-8" data-feather="download"></i>Download my CV
                     </a>
                     <p class="text-left fw-500 text-dark">
@@ -770,7 +782,7 @@
   <!-- JavaScript -->
   <script src="js/vendors.js"></script>
   <script type="module" src="js/main.js"></script>
-<script type="module" src="js/modal.js"></script>
+ 
 </body>
 
 </html>

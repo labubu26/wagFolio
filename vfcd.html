@@ -59,6 +59,19 @@
   </head>
 
   <body class="preloader-visible" data-barba="wrapper">
+
+  <modal-pass data-file="cv">
+    <div slot="info">
+      Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file
+    </div>
+    <div class="cen-col">
+    <!-- <label for="pass">Pass</label> -->
+    <input type="text"  id="passInput">
+    <a target="_blank" class="button -md -black " id="passSubmit">
+    Submit
+    </a>
+    </div>
+  </modal-pass>
     <!---------------------->
     <!-- 0                -->
     <!-- PRE-LOAD         -->
@@ -170,8 +183,7 @@
 
                         <li>
                           <a target="_blank"
-                            onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
-                            class="button -sm -outline-white text-white  -light ">
+                            class="modalcta button -sm -outline-white text-white  -light ">
                             <i class="icon mr-8" data-feather="download"></i> Download my CV
                           </a>
                         </li>
@@ -1267,7 +1279,7 @@
     <!-- JavaScript -->
     <script src="js/vendors.js"></script>
     <script type="module" src="js/main.js"></script>
-<script type="module" src="js/modal.js"></script>
+ 
     <!-- <script src="js/erp-system.js"></script> -->
     <!-- <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script> -->

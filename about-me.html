@@ -59,6 +59,31 @@
 
 <body class="preloader-visible" data-barba="wrapper">
 
+  <modal-pass data-file="cv">
+    <div slot="info">
+      Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file
+    </div>
+    <div class="cen-col">
+    <!-- <label for="pass">Pass</label> -->
+    <input type="text"  id="passInput">
+    <a target="_blank" class="button -md -black " id="passSubmit">
+    Submit
+    </a>
+    </div>
+  </modal-pass>
+
+  <modal-pass data-file="cv">
+    <div slot="info">
+      Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file
+    </div>
+    <div class="cen-col">
+    <!-- <label for="pass">Pass</label> -->
+    <input type="text"  id="passInput">
+    <a target="_blank" class="button -md -black " id="passSubmit">
+    Submit
+    </a>
+    </div>
+  </modal-pass>
 
   <!---------------------->
   <!-- 0                -->
@@ -123,8 +148,8 @@
             </div> -->
 
             <div class="col-4 text-center md:d-none">
-              <a data-barba target="_blank" onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')">
-                <div class="button -underline4 text-cen2 fw-600 text-base text-dark">
+              <a data-barba target="_blank">
+                <div class="modalcta button -underline4 text-cen2 fw-600 text-base text-dark">
                   <i class="icon size-3xs mr-8 text-accent2" data-feather="download"></i>
                   My CV
                 </div>
@@ -191,8 +216,7 @@
 
                         <li>
                           <a target="_blank"
-                            onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
-                            class="button -sm -outline-white text-white  -light ">
+                            class="modalcta button -sm -outline-white text-white  -light ">
                             <i class="icon mr-8" data-feather="download"></i> Download my CV
                           </a>
                         </li>
@@ -1690,32 +1714,13 @@
                     <span class="sm:text-3xl">My Resume in PDF</span>
                   </h2>
 
-                  <modal-pass >
-                    <div slot="info">
-                      Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file
-                    </div>
-                    <div class="cen-col">
-                    <!-- <label for="pass">Pass</label> -->
-                    <input type="text"  id="passInput">
-                    <a target="_blank" 
-                    class="button -md -black " id="passSubmit">
-                    Submit
-                  </a>
-                    </div>
-                  </modal-pass>
+                  <!-- Modal cta -->
                   <a target="_blank" 
-                    class="button -md -white mt-32 text-black downpass">
+                    class="button -md -white mt-32 text-black modalcta">
                     <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
-                    Tesst thu
-                    <!-- Send an email-->
+                    Download CV Here
                   </a>
 
-                  <a target="_blank" 
-                    class="button -md -white mt-32 text-black downpass">
-                    <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
-                    Tesst thu 2
-                    <!-- Send an email-->
-                  </a>
                   <!-- <a target="_blank" onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
                     class="button -md -white mt-32 text-black">
                     <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
@@ -1826,10 +1831,12 @@
               <div class="col">
                 <div class="footer__copyright">
                   <div class="d-flex align-items-center x-gap-32">
-                    <a target="_blank" onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
-                      class="button -sm -outline-black -light text-black sm:d-none" style="font-size: 0.8rem">
+
+                     <a target="_blank" 
+                      class="modalcta button -sm -outline-black -light text-black sm:d-none" style="font-size: 0.8rem">
                       <i class="icon size-2xs str-width-lg mr-8" data-feather="download"></i>Download my CV
                     </a>
+
                     <p class="text-left fw-500 text-dark">
                       © 2022, designed & coded by
                       <a data-barba href="about-me.html">
