@@ -1,4 +1,6 @@
 import modalPass from "./module/modal.js";
+import modalUnlock from "./module/modalunlock.js";
+
 
 
 (function () {
@@ -3268,7 +3270,7 @@ import modalPass from "./module/modal.js";
 
 
 
-    // download with pass
+    // DOWNLOAD with pass
     function downloadFile(url, fileName) {
       fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
         .then(res => res.blob())
@@ -3285,7 +3287,6 @@ import modalPass from "./module/modal.js";
     };
 
     function checkpass(val, pass, file, filename) {
-      // let person = prompt("Hi there 🖐️ Please mail to nqt99designs@gmail.com for the CODE to download this file", '');
       if (val == pass) {
         downloadFile(file, filename);
         return 0;
@@ -3294,7 +3295,7 @@ import modalPass from "./module/modal.js";
     }
 
     var modalElement = document.querySelector("modal-pass");
-    if (modalElement) {
+    if (modalElement ) {
       document.querySelectorAll(".modalcta").forEach((element) => {
         element.addEventListener("click", () => {
           modalElement.open();
@@ -3311,6 +3312,31 @@ import modalPass from "./module/modal.js";
               checkpass(val, "tc1234",'img/backgrounds/QuangTrung_Transcript.pdf', 'QuangTrung_Transcript.pdf');
             }
             modalElement.close()
+          })
+        })
+
+      });
+
+    }
+
+    // UNLOCK modal
+    var modalUnlock = document.querySelector("modal-unlock");
+    if (modalUnlock ) {
+      document.querySelectorAll(".modalunlockcta").forEach((element) => {
+        element.addEventListener("click", () => {
+          modalUnlock.open();
+          document.querySelector("#unlockSubmit").addEventListener("click", () => {
+            var val = document.querySelector("#unlockpassInput").value;
+            if(val == "123"){
+              element.href = element.dataset.href;
+              element.click()
+              modalUnlock.close()
+            }
+            else {
+              modalUnlock.close()
+              return false;}
+
+            
           })
         })
 
@@ -3350,6 +3376,8 @@ import modalPass from "./module/modal.js";
 
 // Component dèine here (load 1 lần)
 window.customElements.define('modal-pass', modalPass);
+window.customElements.define('modal-unlock', modalUnlock);
+
 
 
 
@@ -3559,7 +3587,7 @@ function cursomove() {
     mouse.y = e.y;
   });
 
-  const alllink = document.querySelectorAll("a, .button, button, img, .bg-image, .backButton, .img-comp-slider, .js-prev, .js-next");
+  const alllink = document.querySelectorAll("a, .button, button, .img-fluid, .img-enlargable , .bg-image, .backButton, .img-comp-slider, .js-prev, .js-next");
 
   alllink.forEach(link => {
     link.addEventListener("mouseleave", () => {
@@ -3627,41 +3655,41 @@ function cursomove() {
 
 
 // hoverChange
-function hoverChange() {
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  let interval = null;
-  let hChange = document.querySelector(".hoverChange");
+// function hoverChange() {
+//   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//   let interval = null;
+//   let hChange = document.querySelector(".hoverChange");
 
-  if (!hChange) return;
-  else hChangeFunc();
+//   if (!hChange) return;
+//   else hChangeFunc();
 
-  function hChangeFunc() {
-    hChange.onmouseover = event => {
-      let iteration = 0;
+//   function hChangeFunc() {
+//     hChange.onmouseover = event => {
+//       let iteration = 0;
 
-      clearInterval(interval);
+//       clearInterval(interval);
 
-      interval = setInterval(() => {
-        event.target.innerText = event.target.innerText
-          .split("")
-          .map((letter, index) => {
-            if (index < iteration) {
-              return event.target.dataset.value[index];
-            }
+//       interval = setInterval(() => {
+//         event.target.innerText = event.target.innerText
+//           .split("")
+//           .map((letter, index) => {
+//             if (index < iteration) {
+//               return event.target.dataset.value[index];
+//             }
 
-            return letters[Math.floor(Math.random() * 26)]
-          })
-          .join("");
+//             return letters[Math.floor(Math.random() * 26)]
+//           })
+//           .join("");
 
-        if (iteration >= event.target.dataset.value.length) {
-          clearInterval(interval);
-        }
+//         if (iteration >= event.target.dataset.value.length) {
+//           clearInterval(interval);
+//         }
 
-        iteration += 1 / 3;
-      }, 30);
-    }
-  }
-}
+//         iteration += 1 / 3;
+//       }, 30);
+//     }
+//   }
+// }
 
 // stagerhover
 function stagerhover() {
