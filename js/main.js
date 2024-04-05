@@ -3699,13 +3699,6 @@ function stagerhover() {
 }
 
 
-
-
-
-
-
-
-
 // block
 
 document.addEventListener("keydown", function (event){

@@ -16,7 +16,6 @@ export default class modalPass extends HTMLElement {
     const template = 
     ` 
     <div id="myModal" class="modal">
-    
       <!-- Modal content -->
       <div class="modal-content">
         <span id="closeBtn">&times;</span>
