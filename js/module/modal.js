@@ -9,7 +9,6 @@ export default class modalPass extends HTMLElement {
     // const dataPass = this.getAttribute(data-pass) || "oka";
 
     
-   
   }
   render(){
     const style = `<link rel="stylesheet" href="js/module/modal.css" > `
@@ -29,15 +28,10 @@ export default class modalPass extends HTMLElement {
     this.shadowRoot.innerHTML = ` ${style} ${template} `
   }
 
- 
-
 
   connectedCallback() {
-
     // this. open();
     this.closeown()
-
-
   }
 
 
@@ -45,25 +39,25 @@ export default class modalPass extends HTMLElement {
 
   open(){
     const modal = this.shadowRoot.getElementById("myModal");
-    modal.style.display = "block";
+    modal.classList.add('active');
   }
 
   close(){
     const modal = this.shadowRoot.getElementById("myModal");
-    modal.style.display = "none";
+    
+    modal.classList.remove('active');
   }
 
   closeown(){
     const modal = this.shadowRoot.getElementById("myModal");
-
-     // Close Modal
      this.shadowRoot.querySelector("#closeBtn").addEventListener('click', () => {
-      modal.style.display = "none";
+      modal.classList.remove('active');
     });
 
     this.shadowRoot.addEventListener('click', (event) => {
       if (event.target == modal) {
-        modal.style.display = "none";
+        modal.classList.remove('active');
+
       }
     });
   }

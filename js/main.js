@@ -3597,7 +3597,7 @@ function cursomove() {
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  const speed = 0.22;
+  const speed = 0.3;
 
   // Start animation
   const tick = () => {

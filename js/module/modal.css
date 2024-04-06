@@ -1,26 +1,56 @@
 /* The Modal (background) */
 .modal {
-  display: none;
+
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
-  z-index: 9999;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  backface-visibility: hidden;
+  transition: opacity 0.5s cubic-bezier(.55,0,.1,1), visibility 0.5s cubic-bezier(.55,0,.1,1);
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(2px);
+}
+.modal.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
-  padding: 20px;
-  width: 80%;
-  /* Could be more or less, depending on screen size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 600px;
+  max-width: 75rem;
+  min-height: 20rem;
+  padding: 1rem;
+  border-radius: 3px;
+  opacity: 0;
+  overflow-y: auto;
+  visibility: hidden;
+  box-shadow: 0 2px 10px rgba(#000, 0.1);
+  backface-visibility: hidden;
+  transform: scale(1.2);
+  transition: all 0.5s cubic-bezier(.55,0,.1,1);
 }
+.modal.active .modal-content{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  }
+
+
 
 /* The closeBtn Button */
 #closeBtn {
@@ -34,5 +64,4 @@
 #closeBtn:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
