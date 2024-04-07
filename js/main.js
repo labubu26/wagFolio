@@ -3311,7 +3311,10 @@ import modalUnlock from "./module/modalunlock.js";
             else if(modalElement.dataset.file == "tc"){
               checkpass(val, "tc1234",'img/backgrounds/QuangTrung_Transcript.pdf', 'QuangTrung_Transcript.pdf');
             }
-            modalElement.close()
+            
+            modalElement.close();
+            
+            
           })
         })
 

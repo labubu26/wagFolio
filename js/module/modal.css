@@ -1,4 +1,9 @@
 /* The Modal (background) */
+
+@import url("/css/main.css"); 
+a{
+  text-decoration-line: none;
+}
 .modal {
 
   z-index: 3000;
@@ -13,9 +18,9 @@
   opacity: 0;
   visibility: hidden;
   backface-visibility: hidden;
-  transition: opacity 0.5s cubic-bezier(.55,0,.1,1), visibility 0.5s cubic-bezier(.55,0,.1,1);
+  transition: opacity 0.5s cubic-bezier(.55,0,.1,1), visibility 0.3s cubic-bezier(.55,0,.1,1);
   background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
 }
 .modal.active {
   opacity: 1;
@@ -25,43 +30,46 @@
 /* Modal Content/Box */
 .modal-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   flex-direction: column;
   position: relative;
   margin: 0 auto;
   background-color: #fff;
-  width: 600px;
+  width: 400px;
   max-width: 75rem;
-  min-height: 20rem;
-  padding: 1rem;
-  border-radius: 3px;
+  min-height: fit-content;
+  padding: 3rem;
+  border-radius: 6px;
   opacity: 0;
   overflow-y: auto;
+  overflow-x: unset;
   visibility: hidden;
   box-shadow: 0 2px 10px rgba(#000, 0.1);
   backface-visibility: hidden;
-  transform: scale(1.2);
+  transform: translateY(-50px);
   transition: all 0.5s cubic-bezier(.55,0,.1,1);
 }
 .modal.active .modal-content{
   visibility: visible;
   opacity: 1;
-  transform: scale(1);
+  transform: translateY(0);
   }
 
 
 
 /* The closeBtn Button */
 #closeBtn {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s cubic-bezier(.55,0,.1,1);
 }
 
-#closeBtn:hover,
-#closeBtn:focus {
-  color: black;
-  text-decoration: none;
+#closeBtn:hover svg{
+  stroke: red
 }

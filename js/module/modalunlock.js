@@ -16,10 +16,22 @@ export default class modalUnlock extends HTMLElement {
     const template = 
     ` 
     <div id="myModal" class="modal">
+      <!-- Modal content -->
       <div class="modal-content">
-        <span id="closeBtn">&times;</span>
+        <div class="button" id="closeBtn">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L17 17" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17 1L0.999999 17" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </div>
 
-        <slot name="info">Passcode to access</slot>
+        <slot name="info">
+        <h4> NDA Access<h4>
+        
+        <p class="mt-8 fw-400 text-dark text-base ">Please mail to 
+        <a class="button -underline4 px-4 fw-500 text-black" href="mailto:nqt99designs@gmail.com">WAG🖐️</a>
+         for the Passcode to access<p>
+        </slot>
         <slot></slot>
       </div>
     
@@ -44,25 +56,31 @@ export default class modalUnlock extends HTMLElement {
 
   open(){
     const modal = this.shadowRoot.getElementById("myModal");
-    modal.style.display = "block";
+    modal.classList.add('active');
+    document.querySelector("body").style.overflowY = "hidden";
   }
 
   close(){
     const modal = this.shadowRoot.getElementById("myModal");
-    modal.style.display = "none";
+    
+    modal.classList.remove('active');
+    document.querySelector("body").style.overflowY = "unset";
   }
 
   closeown(){
     const modal = this.shadowRoot.getElementById("myModal");
-
-     // Close Modal
      this.shadowRoot.querySelector("#closeBtn").addEventListener('click', () => {
-      modal.style.display = "none";
+      modal.classList.remove('active');
+    document.querySelector("body").style.overflowY = "unset";
+
     });
 
     this.shadowRoot.addEventListener('click', (event) => {
       if (event.target == modal) {
-        modal.style.display = "none";
+        modal.classList.remove('active');
+    document.querySelector("body").style.overflowY = "unset";
+
+
       }
     });
   }
