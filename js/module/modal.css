@@ -47,13 +47,13 @@ a{
   visibility: hidden;
   box-shadow: 0 2px 10px rgba(#000, 0.1);
   backface-visibility: hidden;
-  transform: translateY(-50px);
-  transition: all 0.5s cubic-bezier(.55,0,.1,1);
+  transform: translateY(-5rem) ;
+  transition: all 0.3s cubic-bezier(.55,0,.1,1);
 }
 .modal.active .modal-content{
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) ;
   }
 
 
