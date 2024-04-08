@@ -316,7 +316,7 @@ import modalUnlock from "./module/modalunlock.js";
                 document.documentElement.classList.remove('overflow-hidden');
                 document.body.classList.remove('overflow-hidden');
               },
-            }, '>-.7')
+            }, '<.5')
 
         },
         extendTimeline: true,
