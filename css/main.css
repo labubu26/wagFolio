@@ -1519,6 +1519,7 @@ form input[type="email"] {
   transition: border 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+
 @media (max-width: 767px) {
 
   form input[type="text"],
@@ -3863,7 +3864,7 @@ h6 {
 
   .navList li a {
     font-size: 3.4vw;
-    height: calc(3.6vw * 1.5)
+    height: calc(4vw * 1.5)
   }
 
   .navList li:last-child a {
@@ -14415,7 +14416,7 @@ html.full-page-slider body {
   }
 }
 
-.w-1\/1 {
+.w-1\/1, .w-full {
   width: 100%;
 }
 

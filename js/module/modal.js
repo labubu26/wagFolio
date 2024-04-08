@@ -28,7 +28,7 @@ export default class modalPass extends HTMLElement {
         <h4> NDA Access<h4>
         
         <p class="mt-8 fw-400 text-dark text-base ">Please mail to 
-        <a class="button -underline4 px-4 fw-500 text-black" href="mailto:nqt99designs@gmail.com">WAG🖐️</a>
+        <a class="button -underline4 px-2 fw-500 text-black" href="mailto:nqt99designs@gmail.com">WAG🖐️</a>
          for the Passcode to download<p>
         </slot>
         <slot></slot>

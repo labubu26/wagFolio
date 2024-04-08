@@ -3268,7 +3268,53 @@ import modalUnlock from "./module/modalunlock.js";
       }
     }
 
+    var toastfail = Toastify({
+      text: "Oh no, Wrong Passcode",
+      duration: 3000,
+      gravity: "top", // `top` or `bottom`
+      position: "center", // `left`, `center` or `right`,
+      offset: {
+        y: 20 
+      },
+      style: {
+        background: "#131824",
+        boxShadow: "none",
+        border: "2px solid rgb(183 183 183 / 20%)",
+        borderRadius: "6px",
+      },
+    });
 
+    var toastsuccessdownload = Toastify({
+      text: "Downloaded",
+      duration: 3000,
+      gravity: "top", // `top` or `bottom`
+      position: "center", // `left`, `center` or `right`,
+      offset: {
+        y: 20 
+      },
+      style: {
+        background: "#131824",
+        boxShadow: "none",
+        border: "2px solid rgb(183 183 183 / 20%)",
+        borderRadius: "6px",
+      },
+    });
+
+    var toastempty = Toastify({
+      text: "Please type your given Passcode from WAG",
+      duration: 3000,
+      gravity: "top", // `top` or `bottom`
+      position: "center", // `left`, `center` or `right`,
+      offset: {
+        y: 20 
+      },
+      style: {
+        background: "#131824",
+        boxShadow: "none",
+        border: "2px solid rgb(183 183 183 / 20%)",
+        borderRadius: "6px",
+      },
+    });
 
     // DOWNLOAD with pass
     function downloadFile(url, fileName) {
@@ -3289,36 +3335,43 @@ import modalUnlock from "./module/modalunlock.js";
     function checkpass(val, pass, file, filename) {
       if (val == pass) {
         downloadFile(file, filename);
-        return 0;
+        toastsuccessdownload.showToast();
       }
-      else return 0;
+      else {
+        toastfail.showToast();
+      }
     }
 
     var modalElement = document.querySelector("modal-pass");
+    var passSubmit = document.querySelector("#passSubmit");
     if (modalElement ) {
+      
       document.querySelectorAll(".modalcta").forEach((element) => {
         element.addEventListener("click", () => {
           modalElement.open();
-          document.querySelector("#passSubmit").addEventListener("click", () => {
-            var val = document.querySelector("#passInput").value;
-
-            if(modalElement.dataset.file == "cv"){
-            checkpass(val, "cv1234", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
-            }
-            else if(modalElement.dataset.file == "ie"){
-              checkpass(val, "ie1234",'img/backgrounds/ie.jpg', 'IELTS_QuangTrung.jpg');
-            }
-            else if(modalElement.dataset.file == "tc"){
-              checkpass(val, "tc1234",'img/backgrounds/QuangTrung_Transcript.pdf', 'QuangTrung_Transcript.pdf');
-            }
-            
-            modalElement.close();
-            
-            
-          })
+        
         })
 
       });
+
+      passSubmit.addEventListener("click", () => {
+        var val = "";
+        val = document.querySelector("#passInput").value;
+        
+        if(val && modalElement.dataset.file == "cv"){
+        checkpass(val, "cv1234", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
+        }
+        // else if(modalElement.dataset.file == "ie"){
+        //   checkpass(val, "ie1234",'img/backgrounds/ie.jpg', 'IELTS_QuangTrung.jpg');
+        // }
+        // else if(modalElement.dataset.file == "tc"){
+        //   checkpass(val, "tc1234",'img/backgrounds/QuangTrung_Transcript.pdf', 'QuangTrung_Transcript.pdf');
+        // }
+        else if(val == ""){
+          toastempty.showToast()
+        }
+        modalElement.close();
+      })
 
     }
 
@@ -3328,17 +3381,24 @@ import modalUnlock from "./module/modalunlock.js";
       document.querySelectorAll(".modalunlockcta").forEach((element) => {
         element.addEventListener("click", () => {
           modalUnlock.open();
-          document.querySelector("#unlockSubmit").addEventListener("click", () => {
-            var val = document.querySelector("#unlockpassInput").value;
-            if(val == "123"){
-              element.href = element.dataset.href;
-              element.click();
-              modalUnlock.close();
-            }
-            else {
-              modalUnlock.close()
-              return false;}
-          })
+        })
+
+
+        document.querySelector("#unlockSubmit").addEventListener("click", () => {
+          var val = document.querySelector("#unlockpassInput").value;
+          if(val == "123"){
+            element.href = element.dataset.href;
+            element.click();
+            modalUnlock.close();
+          }
+          else if(val == ""){
+            toastempty.showToast();
+            modalUnlock.close()
+          }
+          else {
+            toastfail.showToast();
+            modalUnlock.close()
+            return false;}
         })
 
       });
