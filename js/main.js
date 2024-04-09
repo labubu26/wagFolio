@@ -187,7 +187,9 @@ import modalUnlock from "./module/modalunlock.js";
             //   onComplete: () => {
             //   },
             // }, )
-            .to(progress, {
+            .fromTo(progress,{
+              scale: 0, opacity: 0,
+            }, {
               scale: 2, opacity: 1,
             })
 
@@ -207,7 +209,7 @@ import modalUnlock from "./module/modalunlock.js";
               ease: 'quart.inOut',
               opacity: 0,
               scale: 100,
-            }, '>.2')
+            }, '>.4')
             .to(bg, {
               ease: 'quart.inOut',
               duration: 0.5,
@@ -217,7 +219,7 @@ import modalUnlock from "./module/modalunlock.js";
               onComplete: () => {
                 document.documentElement.classList.remove('html-overflow-hidden');
               },
-            }, '>-0.7')
+            }, '>-0.5')
 
         },
         extendTimeline: true,
@@ -316,7 +318,7 @@ import modalUnlock from "./module/modalunlock.js";
                 document.documentElement.classList.remove('overflow-hidden');
                 document.body.classList.remove('overflow-hidden');
               },
-            }, '<.5')
+            }, '>-.6')
 
         },
         extendTimeline: true,
@@ -3343,37 +3345,40 @@ import modalUnlock from "./module/modalunlock.js";
     }
 
     var modalElement = document.querySelector("modal-pass");
-    var passSubmit = document.querySelector("#passSubmit");
+    // var passSubmit = document.querySelector("#passSubmit");
     if (modalElement ) {
+      console.log("modalElement");
       
       document.querySelectorAll(".modalcta").forEach((element) => {
         element.addEventListener("click", () => {
           modalElement.open();
-        
+          console.log("CTA modalcta");
         })
 
       });
-
-      passSubmit.addEventListener("click", () => {
-        var val = "";
-        val = document.querySelector("#passInput").value;
-        
-        if(val && modalElement.dataset.file == "cv"){
-        checkpass(val, "cv1234", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
-        }
-        // else if(modalElement.dataset.file == "ie"){
-        //   checkpass(val, "ie1234",'img/backgrounds/ie.jpg', 'IELTS_QuangTrung.jpg');
-        // }
-        // else if(modalElement.dataset.file == "tc"){
-        //   checkpass(val, "tc1234",'img/backgrounds/QuangTrung_Transcript.pdf', 'QuangTrung_Transcript.pdf');
-        // }
-        else if(val == ""){
-          toastempty.showToast()
-        }
-        modalElement.close();
-      })
-
+      
     }
+
+
+    document.querySelector("#passSubmit").addEventListener("click", () => {
+      console.log(" CTAsubmit");
+      var val = "";
+      val = document.querySelector("#passInput").value;
+      
+      if(val && modalElement.dataset.file == "cv"){
+      checkpass(val, "cv1234", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
+      }
+      // else if(modalElement.dataset.file == "ie"){
+      //   checkpass(val, "ie1234",'img/backgrounds/ie.jpg', 'IELTS_QuangTrung.jpg');
+      // }
+      // else if(modalElement.dataset.file == "tc"){
+      //   checkpass(val, "tc1234",'img/backgrounds/QuangTrung_Transcript.pdf', 'QuangTrung_Transcript.pdf');
+      // }
+      else if(val == ""){
+        toastempty.showToast()
+      }
+      modalElement.close();
+    })
 
     // UNLOCK modal
     var modalUnlock = document.querySelector("modal-unlock");
@@ -3425,6 +3430,8 @@ import modalUnlock from "./module/modalunlock.js";
 
       });
     };
+
+
 
   }
   // End a()
@@ -3520,7 +3527,10 @@ function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
+  if(document.getElementById("myBar")){
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  
 }
 
 
