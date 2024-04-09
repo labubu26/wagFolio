@@ -187,7 +187,7 @@ import modalUnlock from "./module/modalunlock.js";
             //   onComplete: () => {
             //   },
             // }, )
-            .fromTo(progress,{
+            .fromTo(progress, {
               scale: 0, opacity: 0,
             }, {
               scale: 2, opacity: 1,
@@ -3270,146 +3270,34 @@ import modalUnlock from "./module/modalunlock.js";
       }
     }
 
-    var toastfail = Toastify({
-      text: "Oh no, Wrong Passcode",
-      duration: 3000,
-      gravity: "top", // `top` or `bottom`
-      position: "center", // `left`, `center` or `right`,
-      offset: {
-        y: 20 
-      },
-      style: {
-        background: "#131824",
-        boxShadow: "none",
-        border: "2px solid rgb(183 183 183 / 20%)",
-        borderRadius: "6px",
-      },
-    });
 
-    var toastsuccessdownload = Toastify({
-      text: "Downloaded",
-      duration: 3000,
-      gravity: "top", // `top` or `bottom`
-      position: "center", // `left`, `center` or `right`,
-      offset: {
-        y: 20 
-      },
-      style: {
-        background: "#131824",
-        boxShadow: "none",
-        border: "2px solid rgb(183 183 183 / 20%)",
-        borderRadius: "6px",
-      },
-    });
 
-    var toastempty = Toastify({
-      text: "Please type your given Passcode from WAG",
-      duration: 3000,
-      gravity: "top", // `top` or `bottom`
-      position: "center", // `left`, `center` or `right`,
-      offset: {
-        y: 20 
-      },
-      style: {
-        background: "#131824",
-        boxShadow: "none",
-        border: "2px solid rgb(183 183 183 / 20%)",
-        borderRadius: "6px",
-      },
-    });
 
-    // DOWNLOAD with pass
-    function downloadFile(url, fileName) {
-      fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
-        .then(res => res.blob())
-        .then(res => {
-          const aElement = document.createElement('a');
-          aElement.setAttribute('download', fileName);
-          const href = URL.createObjectURL(res);
-          aElement.href = href;
-          // aElement.setAttribute('href', href);
-          aElement.setAttribute('target', '_blank');
-          aElement.click();
-          URL.revokeObjectURL(href);
-        });
-    };
 
-    function checkpass(val, pass, file, filename) {
-      if (val == pass) {
-        downloadFile(file, filename);
-        toastsuccessdownload.showToast();
-      }
-      else {
-        toastfail.showToast();
-      }
-    }
 
-    var modalElement = document.querySelector("modal-pass");
-    // var passSubmit = document.querySelector("#passSubmit");
-    if (modalElement ) {
-      console.log("modalElement");
-      
+
+    if (modalElement) {
       document.querySelectorAll(".modalcta").forEach((element) => {
         element.addEventListener("click", () => {
           modalElement.open();
-          console.log("CTA modalcta");
         })
 
       });
-      
+
     }
 
 
-    document.querySelector("#passSubmit").addEventListener("click", () => {
-      console.log(" CTAsubmit");
-      var val = "";
-      val = document.querySelector("#passInput").value;
-      
-      if(val && modalElement.dataset.file == "cv"){
-      checkpass(val, "cv1234", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
-      }
-      // else if(modalElement.dataset.file == "ie"){
-      //   checkpass(val, "ie1234",'img/backgrounds/ie.jpg', 'IELTS_QuangTrung.jpg');
-      // }
-      // else if(modalElement.dataset.file == "tc"){
-      //   checkpass(val, "tc1234",'img/backgrounds/QuangTrung_Transcript.pdf', 'QuangTrung_Transcript.pdf');
-      // }
-      else if(val == ""){
-        toastempty.showToast()
-      }
-      modalElement.close();
-    })
 
     // UNLOCK modal
-    var modalUnlock = document.querySelector("modal-unlock");
-    if (modalUnlock ) {
+    if (modalUnlockElement) {
       document.querySelectorAll(".modalunlockcta").forEach((element) => {
         element.addEventListener("click", () => {
-          modalUnlock.open();
-        })
-
-
-        document.querySelector("#unlockSubmit").addEventListener("click", () => {
-          var val = document.querySelector("#unlockpassInput").value;
-          if(val == "123"){
-            element.href = element.dataset.href;
-            element.click();
-            modalUnlock.close();
-          }
-          else if(val == ""){
-            toastempty.showToast();
-            modalUnlock.close()
-          }
-          else {
-            toastfail.showToast();
-            modalUnlock.close()
-            return false;}
+          modalUnlockElement.open();
         })
 
       });
 
     }
-
 
 
     // Alway end a()
@@ -3441,12 +3329,139 @@ import modalUnlock from "./module/modalunlock.js";
 
 })();
 
+// Call 1 lần thôi
+
+
+
+// DOWNLOAD with pass
+function downloadFile(url, fileName) {
+  fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+    .then(res => res.blob())
+    .then(res => {
+      const aElement = document.createElement('a');
+      aElement.setAttribute('download', fileName);
+      const href = URL.createObjectURL(res);
+      aElement.href = href;
+      // aElement.setAttribute('href', href);
+      aElement.setAttribute('target', '_blank');
+      aElement.click();
+      URL.revokeObjectURL(href);
+    });
+};
+
+function checkpass(val, pass, file, filename) {
+  if (val == pass) {
+    downloadFile(file, filename);
+    toastsuccessdownload.showToast();
+  }
+  else {
+    toastfail.showToast();
+  }
+}
+
+var toastfail = Toastify({
+  text: "Oh no, Wrong Passcode",
+  duration: 3000,
+  gravity: "top", // `top` or `bottom`
+  position: "center", // `left`, `center` or `right`,
+  offset: {
+    y: 20
+  },
+  style: {
+    background: "#131824",
+    boxShadow: "none",
+    border: "2px solid rgb(183 183 183 / 20%)",
+    borderRadius: "6px",
+  },
+});
+
+var toastsuccessdownload = Toastify({
+  text: "Downloaded",
+  duration: 3000,
+  gravity: "top", // `top` or `bottom`
+  position: "center", // `left`, `center` or `right`,
+  offset: {
+    y: 20
+  },
+  style: {
+    background: "#131824",
+    boxShadow: "none",
+    border: "2px solid rgb(183 183 183 / 20%)",
+    borderRadius: "6px",
+  },
+});
+
+var toastempty = Toastify({
+  text: "Please type your given Passcode from WAG",
+  duration: 3000,
+  gravity: "top", // `top` or `bottom`
+  position: "center", // `left`, `center` or `right`,
+  offset: {
+    y: 20
+  },
+  style: {
+    background: "#131824",
+    boxShadow: "none",
+    border: "2px solid rgb(183 183 183 / 20%)",
+    borderRadius: "6px",
+  },
+});
+
+var modalElement = document.querySelector("modal-pass");
+var modalUnlockElement = document.querySelector("modal-unlock");
+
+
+document.querySelector("#passSubmit").addEventListener("click", () => {
+  var val = "";
+  val = document.querySelector("#passInput").value;
+
+  if (val && modalElement.dataset.file == "cv") {
+    checkpass(val, "wagcv", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
+  }
+  // else if(modalElement.dataset.file == "ie"){
+  //   checkpass(val, "ie1234",'img/backgrounds/ie.jpg', 'IELTS_QuangTrung.jpg');
+  // }
+  // else if(modalElement.dataset.file == "tc"){
+  //   checkpass(val, "tc1234",'img/backgrounds/QuangTrung_Transcript.pdf', 'QuangTrung_Transcript.pdf');
+  // }
+  else if (val == "") {
+    toastempty.showToast()
+  }
+  modalElement.close();
+})
+
+
+
+
+document.querySelectorAll(".modalunlockcta").forEach((element) => {
+
+  document.querySelector("#unlockSubmit").addEventListener("click", () => {
+    var val = document.querySelector("#unlockpassInput").value;
+    if (val == "wagpost") {
+      element.href = element.dataset.href;
+      element.click();
+      modalUnlockElement.close();
+    }
+    else if (val == "") {
+      toastempty.showToast();
+      modalUnlockElement.close()
+    }
+    else {
+      toastfail.showToast();
+      modalUnlockElement.close()
+      return false;
+    }
+  })
+
+});
+
+
+
+
 
 // Component dèine here (load 1 lần)
 window.customElements.define('modal-pass', modalPass);
 window.customElements.define('modal-unlock', modalUnlock);
-
-
 
 
 
@@ -3527,10 +3542,10 @@ function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
-  if(document.getElementById("myBar")){
+  if (document.getElementById("myBar")) {
     document.getElementById("myBar").style.width = scrolled + "%";
   }
-  
+
 }
 
 

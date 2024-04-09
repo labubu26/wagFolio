@@ -20,13 +20,13 @@ export default class modalUnlock extends HTMLElement {
       <div class="modal-content">
         <div class="button" id="closeBtn">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L17 17" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M17 1L0.999999 17" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1 1L17 17" stroke="#6b6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17 1L0.999999 17" stroke="#6b6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         </div>
 
         <slot name="info">
-        <h4> NDA Access<h4>
+        <h4 class="fw-600"> NDA Access<h4>
         
         <p class="mt-8 fw-400 text-dark text-base ">Please mail to 
         <a class="button -underline4 px-2 fw-500 text-black" href="mailto:nqt99designs@gmail.com">WAG🖐️</a>

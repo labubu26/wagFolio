@@ -1509,7 +1509,7 @@ form input[type="search"],
 form textarea,
 form input[type="email"] {
   border: 0;
-  font-size: 1.1875rem;
+  font-size: 1.275rem;
   line-height: 1.5;
   font-weight: 500;
   width: 100%;
@@ -18808,8 +18808,16 @@ input#deslizador::-ms-tooltip {
   padding: 6px 14px;
   border-radius: 4px;
   margin: 24px;
-  background: #0c0c0c8a;
+  /* background: #0c0c0c8a; */
   backdrop-filter: blur(4px);
+  background: #0c0c0c8a;
+  background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 0%, rgb(255 255 255 / 30%) 50%, rgba(100, 181, 239, 0) 100%);
+  background-repeat: no-repeat;
+  animation: 4s ease-in-out 0s infinite normal none running bg-move;
+}
+@keyframes bg-move {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
 }
 
 .img-topleft {
@@ -18832,6 +18840,10 @@ input#deslizador::-ms-tooltip {
   margin: 24px;
   background: #0c0c0c8a;
   backdrop-filter: blur(4px);
+
+  background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 0%, rgb(255 255 255 / 30%) 50%, rgba(100, 181, 239, 0) 100%);
+  background-repeat: no-repeat;
+  animation: 4s ease-in-out 0s infinite normal none running bg-move;
 }
 
 .img-comp-img:first-child:after {
