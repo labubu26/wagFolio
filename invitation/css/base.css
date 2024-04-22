@@ -1,0 +1,252 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+  font-size: 16px;
+  --color-text: #FFF;
+  --color-bg: #18357D;
+  --color-bg-alt: #8ca9af;
+  /* --color-link: rgba(0,0,0,0.6);
+  --color-link-hover: #000; */
+  --page-padding: 1.5rem;
+  --color-title: #000;
+}
+
+.demo-2 {
+  --color-bg: #030c22;
+  --color-bg-alt: #000b2a;
+  --color-title: #FFF;
+}
+
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  height: 100vh;
+  background: url(../img/noise.png), radial-gradient(circle, var(--color-bg) 90%, var(--color-bg-alt) 100%);
+  /* background: url(../img/noise.png), radial-gradient(circle, var(--color-bg) 0%, var(--color-bg-alt) 100%); */
+
+  background-size: 150px, 100% 100vh;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  outline: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--color-link-hover);
+  outline: none;
+}
+
+/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus {
+  /* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+  outline: none;
+  background: lightgrey;
+}
+
+a:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+  background: transparent;
+}
+
+a:focus-visible {
+  /* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+  outline: 2px solid red;
+  background: transparent;
+}
+
+.unbutton {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.unbutton:focus {
+  outline: none;
+}
+
+.frame {
+  padding: var(--page-padding);
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: grid;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  grid-row-gap: 1rem;
+  grid-column-gap: 2rem;
+  pointer-events: none;
+  justify-items: start;
+  grid-template-columns: auto auto;
+  grid-template-areas: "title" "archive" "back" "github" "demos" "sponsor" "tags";
+}
+
+.frame #cdawrap {
+  justify-self: start;
+}
+
+.frame a {
+  pointer-events: auto;
+}
+
+.frame__title {
+  grid-area: title;
+  font-size: inherit;
+  margin: 0;
+}
+
+.frame__back {
+  grid-area: back;
+  justify-self: start;
+}
+
+.frame__archive {
+  grid-area: archive;
+  justify-self: start;
+}
+
+.frame__tags {
+  grid-area: tags;
+}
+
+.frame__github {
+  grid-area: github;
+}
+
+.frame__demos {
+  grid-area: demos;
+  display: flex;
+  gap: 1rem;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.gloock-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scene {
+  perspective: 1000px;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__img {
+  width: 5em;
+  border-radius: 5px;
+  aspect-ratio: 2/3;
+  background-position: center;
+  background-size: cover;
+  overflow:hidden;
+}
+
+.headings {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  color: var(--color-title);
+  text-transform: uppercase;
+}
+
+.headings__main {
+  font-family: "Bebas Neue", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-size: 12vh;
+  font-weight: 700;
+  background: linear-gradient(45deg, #fcfaff80 20%, #fff 40%, #fff 60%, #fcfaff80 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3.5s linear infinite;
+ 
+}
+@keyframes shine {
+  to {
+    background-position: -200% center;
+  }
+}
+
+.headings_subtitle {
+  line-height: 4;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #fcfaff9c
+}
+
+
+
+@media screen and (min-width: 53em) {
+  .frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto auto auto 1fr;
+    grid-template-rows: auto auto;
+    align-content: space-between;
+    grid-template-areas: "title back archive github sponsor" "tags tags tags demos demos";
+  }
+  .frame #cdawrap,
+  .frame__demos {
+    justify-self: end;
+  }
+
+  .card__img {
+    width: 10em;
+    /* border: 1px  solid;
+    border-image-slice: 1;
+     border-image-source: linear-gradient(45deg, #ffffff23, rgba(255, 255, 255, 0.03)); */
+  }
+}
