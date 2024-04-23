@@ -3627,6 +3627,7 @@ h6 {
 .stagerhover.play .letter {
   /* transform: translateY(-100%); */
   transform: translate3d(0, -100%, 0);
+
 }
 
 .stagerhover .block {
