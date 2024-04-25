@@ -3437,14 +3437,17 @@ document.querySelectorAll(".modalunlockcta").forEach((element) => {
 
   document.querySelector("#unlockSubmit").addEventListener("click", () => {
     var val = document.querySelector("#unlockpassInput").value;
+
     if (val == "wagpost") {
       element.href = element.dataset.href;
       element.click();
       modalUnlockElement.close();
+      return false;
     }
     else if (val == "") {
       toastempty.showToast();
-      modalUnlockElement.close()
+      modalUnlockElement.close();
+      return false;
     }
     else {
       toastfail.showToast();
@@ -3815,15 +3818,15 @@ function stagerhover() {
 
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
 
-document.addEventListener("contextmenu",
-  event => event.preventDefault()
-  );
+// document.addEventListener("contextmenu",
+//   event => event.preventDefault()
+//   );
