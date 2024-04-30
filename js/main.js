@@ -3287,12 +3287,13 @@ import modalUnlock from "./module/modalunlock.js";
     }
 
 
-
     // UNLOCK modal
     if (modalUnlockElement) {
       document.querySelectorAll(".modalunlockcta").forEach((element) => {
         element.addEventListener("click", () => {
           modalUnlockElement.open();
+          elm = element;
+
         })
 
       });
@@ -3333,6 +3334,7 @@ import modalUnlock from "./module/modalunlock.js";
 
 
 
+
 // DOWNLOAD with pass
 function downloadFile(url, fileName) {
   fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
@@ -3361,7 +3363,7 @@ function checkpass(val, pass, file, filename) {
 
 var toastfail = Toastify({
   text: "Oh no, Wrong Passcode",
-  duration: 3000,
+  duration: 2000,
   gravity: "top", // `top` or `bottom`
   position: "center", // `left`, `center` or `right`,
   offset: {
@@ -3377,7 +3379,7 @@ var toastfail = Toastify({
 
 var toastsuccessdownload = Toastify({
   text: "Downloaded",
-  duration: 3000,
+  duration: 2000,
   gravity: "top", // `top` or `bottom`
   position: "center", // `left`, `center` or `right`,
   offset: {
@@ -3393,7 +3395,7 @@ var toastsuccessdownload = Toastify({
 
 var toastempty = Toastify({
   text: "Please type your given Passcode from WAG",
-  duration: 3000,
+  duration: 2000,
   gravity: "top", // `top` or `bottom`
   position: "center", // `left`, `center` or `right`,
   offset: {
@@ -3433,30 +3435,28 @@ document.querySelector("#passSubmit").addEventListener("click", () => {
 
 
 
-document.querySelectorAll(".modalunlockcta").forEach((element) => {
+var elm;
 
-  document.querySelector("#unlockSubmit").addEventListener("click", () => {
-    var val = document.querySelector("#unlockpassInput").value;
+document.querySelector("#unlockSubmit").addEventListener("click", () => {
+var val = document.querySelector("#unlockpassInput").value;
 
-    if (val == "wagpost") {
-      element.href = element.dataset.href;
-      element.click();
-      modalUnlockElement.close();
-      return false;
-    }
-    else if (val == "") {
-      toastempty.showToast();
-      modalUnlockElement.close();
-      return false;
-    }
-    else {
-      toastfail.showToast();
-      modalUnlockElement.close()
-      return false;
-    }
-  })
+  if (val == "wagpost") {
+    elm.href = elm.dataset.href;
+    elm.click();
+  }
+  else if (val == "") {
+    toastempty.showToast();
+  }
+  else {
+    toastfail.showToast();
+  }
+  modalUnlockElement.close();
+})
 
-});
+
+
+
+
 
 
 
