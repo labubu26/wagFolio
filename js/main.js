@@ -3293,7 +3293,6 @@ import modalUnlock from "./module/modalunlock.js";
         element.addEventListener("click", () => {
           modalUnlockElement.open();
           elm = element;
-
         })
 
       });
@@ -3436,11 +3435,10 @@ document.querySelector("#passSubmit").addEventListener("click", () => {
 
 
 var elm;
-
 document.querySelector("#unlockSubmit").addEventListener("click", () => {
-var val = document.querySelector("#unlockpassInput").value;
-
-  if (val == "wagpost") {
+let val = document.querySelector("#unlockpassInput").value;
+let pass =  elm.dataset.pass || "wagpost" ;
+  if (val ==  pass) {
     elm.href = elm.dataset.href;
     elm.click();
   }
