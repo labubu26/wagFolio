@@ -320,11 +320,11 @@
 [data-anim^="img-up"]>*,
 [data-anim-child^="img-up"]>* {
   transform-origin: top;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 
-  -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -381,7 +381,7 @@
 
 @-webkit-keyframes imgReveal {
   0% {
-    transform: scale(2);
+    transform: scale(1);
   }
 
   100% {
@@ -391,7 +391,7 @@
 
 @keyframes imgReveal {
   0% {
-    transform: scale(2);
+    transform: scale(1);
   }
 
   100% {
