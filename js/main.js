@@ -188,7 +188,7 @@ import modalUnlock from "./module/modalunlock.js";
             //   },
             // }, )
             .fromTo(progress, {
-              scale: 0, opacity: 0,
+              scale: 1, opacity: 1,
             }, {
               scale: 2, opacity: 1,
             })
