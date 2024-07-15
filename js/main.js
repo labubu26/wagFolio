@@ -3312,8 +3312,8 @@ import modalUnlock from "./module/modalunlock.js";
         transition: true,
         // easing: "cubic-bezier(.42,.02,.31,.99)",
         perspective: 400,
-        // glare: true,
-        // maxGlare: 0.2,
+        glare: true,
+        maxGlare: 0.05,
         // axis: "x",
 
       });
