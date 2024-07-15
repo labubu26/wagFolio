@@ -3306,12 +3306,12 @@ import modalUnlock from "./module/modalunlock.js";
     if (!wt) return;
     else {
       VanillaTilt.init(wt, {
-        max: 5,
-        speed: 900,
+        max: 1.5,
+        speed: 1200,
         // scale: 1.03,
         transition: true,
         // easing: "cubic-bezier(.42,.02,.31,.99)",
-        perspective: 900,
+        perspective: 400,
         // glare: true,
         // maxGlare: 0.2,
         // axis: "x",
