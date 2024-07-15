@@ -188,7 +188,7 @@ import modalUnlock from "./module/modalunlock.js";
             //   },
             // }, )
             .fromTo(progress, {
-              scale: 1, opacity: 1,
+              scale: 6, opacity: 0.5,
             }, {
               scale: 2, opacity: 1,
             })
@@ -307,7 +307,7 @@ import modalUnlock from "./module/modalunlock.js";
               // onStart: () => {
               //   bg.classList.add('origin-left');
               // }
-            }, '>.4')
+            }, '>0.4')
             .to(bg, {
               ease: 'quart.inOut',
               duration: 0.6,
@@ -318,7 +318,7 @@ import modalUnlock from "./module/modalunlock.js";
                 document.documentElement.classList.remove('overflow-hidden');
                 document.body.classList.remove('overflow-hidden');
               },
-            }, '>-.6')
+            }, '>-.5')
 
         },
         extendTimeline: true,

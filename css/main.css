@@ -4652,7 +4652,7 @@ body.preloader-visible .preloader__progress {
 .preloader__progress {
   position: absolute;
   transform: scale(0);
-  opacity:0;
+  opacity:1;
   z-index: 200;
   display: flex;
   justify-content: center;
