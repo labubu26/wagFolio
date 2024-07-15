@@ -890,7 +890,7 @@ body {
 /*                   */
 /* ----------------- */
 body::-webkit-scrollbar {
-  display: block;
+  display:inline-block;
   width: 7px;
   background: transparent;
 }
@@ -901,7 +901,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--accent-color);
+  background-color: var(--bg-dark-1);
   border-radius: 100px;
   border-right: none;
   border-left: none;
