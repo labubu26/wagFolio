@@ -19505,7 +19505,7 @@ body {
   mix-blend-mode: exclusion;
   -webkit-mix-blend-mode: exclusion;
   z-index: 3000;
-  transition: all 0.5s cubic-bezier( 0.68, -0.55, 0.265, 1.55 );
+  transition: all 0.4s cubic-bezier( 0.68, -0.55, 0.265, 1.55 );
   transition-property:  width, height, top, left;
   transform-origin: 50%;
   /* cubic-bezier( 0.77, 0, 0.175, 1 ) */
@@ -19516,11 +19516,16 @@ body {
   width: 150px;
   top: calc(150px / 2 * -1);
   left: calc(150px / 2 * -1);
+  background:transparent;
+  border: 2px solid #fff;
+  backdrop-filter: none;
+  -webkit-backdrop-filter:none;
 
   /* transform: scale(2) !important; */
   /* backdrop-filter: grayscale(1); */
   /* background: black; */
 }
+
 
 .cen-col{
   display: flex;
