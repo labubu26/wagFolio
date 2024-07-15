@@ -3114,6 +3114,13 @@ import modalUnlock from "./module/modalunlock.js";
       alignment: rive.Alignment.Center,
     });
   
+    cfg = new rive.Layout({
+      fit: rive.Fit.Contain,
+      minX: 50,
+      minY: 50,
+      maxX: 100,
+      maxY: 100,
+  });
   
     const r = new rive.Rive({
       src: "img/backgrounds/avtt.riv",
