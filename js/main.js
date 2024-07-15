@@ -3101,7 +3101,35 @@ import modalUnlock from "./module/modalunlock.js";
       })
     }
 
+    
+  if (document.getElementById("canvas")) {
+    // Fill the canvas, cropping Rive if necessary
+    let cfg = new rive.Layout({
+      fit: rive.Fit.Cover,
+    });
+  
+    // Fit to the width and align to the top of the canvas
+    cfg = new rive.Layout({
+      fit: rive.Fit.FitWidth,
+      alignment: rive.Alignment.Center,
+    });
+  
+  
+    const r = new rive.Rive({
+      src: "img/backgrounds/avtt.riv",
+      // OR the path to a discoverable and public Rive asset
+      // src: '/public/example.riv',
+      canvas: document.getElementById("canvas"),
+      layout: cfg,
+      autoplay: true,
+      stateMachines: "State Machine 1",
+  
+      onLoad: () => {
+        r.resizeDrawingSurfaceToCanvas();
+      },
+    });
 
+  }
 
     // vid
     var vid = document.getElementsByClassName("videoembed");
@@ -3312,8 +3340,8 @@ import modalUnlock from "./module/modalunlock.js";
         transition: true,
         // easing: "cubic-bezier(.42,.02,.31,.99)",
         perspective: 400,
-        glare: true,
-        maxGlare: 0.05,
+        // glare: true,
+        // maxGlare: 0.05,
         // axis: "x",
 
       });
@@ -3325,42 +3353,53 @@ import modalUnlock from "./module/modalunlock.js";
   // End a()
 
   // duyệt tất cả tấm ảnh cần lazy-load
-const lazyImages = document.querySelectorAll('[lazy]');
+  const lazyImages = document.querySelectorAll('[lazy]');
 
-// chờ các tấm ảnh này xuất hiện trên màn hình
-const lazyImageObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry) => {
-    // tấm ảnh này đã xuất hiện trên màn hình
-    if (entry.isIntersecting) {
-      const lazyImage = entry.target;
-      const src = lazyImage.dataset.src;
+  // chờ các tấm ảnh này xuất hiện trên màn hình
+  const lazyImageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      // tấm ảnh này đã xuất hiện trên màn hình
+      if (entry.isIntersecting) {
+        const lazyImage = entry.target;
+        const src = lazyImage.dataset.src;
 
-      lazyImage.tagName.toLowerCase() === 'img'
-      // <img>: copy data-src sang src
-        ? lazyImage.src = src
+        lazyImage.tagName.toLowerCase() === 'img'
+          // <img>: copy data-src sang src
+          ? lazyImage.src = src
 
-      // <div>: copy data-src sang background-image
-      : lazyImage.style.backgroundImage = "url(\'" + src + "\')";
+          // <div>: copy data-src sang background-image
+          : lazyImage.style.backgroundImage = "url(\'" + src + "\')";
 
-      // copy xong rồi thì bỏ attribute lazy đi
-      lazyImage.removeAttribute('lazy');
+        // copy xong rồi thì bỏ attribute lazy đi
+        lazyImage.removeAttribute('lazy');
 
-      // job done, không cần observe nó nữa
-      observer.unobserve(lazyImage);
-    }
+        // job done, không cần observe nó nữa
+        observer.unobserve(lazyImage);
+      }
+    });
   });
-});
 
-// Observe từng tấm ảnh và chờ nó xuất hiện trên màn hình
-lazyImages.forEach((lazyImage) => {
-  lazyImageObserver.observe(lazyImage);
-});
+  // Observe từng tấm ảnh và chờ nó xuất hiện trên màn hình
+  lazyImages.forEach((lazyImage) => {
+    lazyImageObserver.observe(lazyImage);
+  });
+
 
 
 
 })();
 
-// Call 1 lần thôi
+// duuoiws Call 1 lần thôi
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3467,9 +3506,9 @@ document.querySelector("#passSubmit").addEventListener("click", () => {
 
 var elm;
 document.querySelector("#unlockSubmit").addEventListener("click", () => {
-let val = document.querySelector("#unlockpassInput").value;
-let pass =  elm.dataset.pass || "wagpost" ;
-  if (val ==  pass) {
+  let val = document.querySelector("#unlockpassInput").value;
+  let pass = elm.dataset.pass || "wagpost";
+  if (val == pass) {
     elm.href = elm.dataset.href;
     elm.click();
   }
@@ -3843,6 +3882,7 @@ function stagerhover() {
 
   }
 }
+
 
 
 // block

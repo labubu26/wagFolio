@@ -338,8 +338,10 @@
               flex-direction: column;
               justify-content: center;
               height: 100vh;">
+              <!-- class ="wt" -->
                 <div class="wt" >
-                  <img data-src="img/general/wt.png" lazy class="wtimg" width="100%" src="img/general/wt.png"  />
+                  <canvas id="canvas"  width="500" height="500"></canvas>
+                  <!-- <img data-src="img/general/wt.png" lazy class="wtimg" width="100%" src="img/general/wt.png"  /> -->
                   <!-- <div class="pop">
                     <img srcset="img/general/piec.svg" alt="" height="100px" />
                   
@@ -372,7 +374,7 @@
             </div>
           </div>
         </div>
-        <!-- container end -->
+        <!-- container h end -->
 
 
         <!-- ui-element start -->
@@ -1275,10 +1277,14 @@
   <!-- barba container end -->
 
   <!-- JavaScript -->
+ 
 
   <script src="js/vendors.js"></script>
+ <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
   <script type="module" src="js/main.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
+
  
 
 </body>
