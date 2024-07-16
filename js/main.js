@@ -3324,12 +3324,12 @@ import modalUnlock from "./module/modalunlock.js";
     if (!wt) return;
     else {
       VanillaTilt.init(wt, {
-        max: 5,
-        speed: 1500,
-        scale: 1.1,
+        max: 8,
+        speed: 300,
+        scale: 1.05,
         transition: true,
         // easing: "cubic-bezier(.42,.02,.31,.99)",
-        perspective: 500,
+        perspective: 800, // Transform perspective, the lower the more extreme the tilt gets
         // glare: true,
         // maxGlare: 0.05,
         // axis: "x",
