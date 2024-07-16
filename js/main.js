@@ -3101,39 +3101,22 @@ import modalUnlock from "./module/modalunlock.js";
       })
     }
 
-    
-  if (document.getElementById("canvas")) {
-    // Fill the canvas, cropping Rive if necessary
-    let cfg = new rive.Layout({
-      fit: rive.Fit.Cover,
-    });
-  
-    // Fit to the width and align to the top of the canvas
-    cfg = new rive.Layout({
+    // rive
+  if (document.getElementById("canvass")) {
+
+
+    let layout = new rive.Layout({
       fit: rive.Fit.FitWidth,
-      alignment: rive.Alignment.Center,
-    });
-  
-    cfg = new rive.Layout({
-      fit: rive.Fit.Contain,
-      minX: 50,
-      minY: 50,
-      maxX: 100,
-      maxY: 100,
   });
   
     const r = new rive.Rive({
       src: "img/backgrounds/avtt.riv",
-      // OR the path to a discoverable and public Rive asset
-      // src: '/public/example.riv',
-      canvas: document.getElementById("canvas"),
-      layout: cfg,
+      canvas: document.getElementById("canvass"),
       autoplay: true,
+      layout: layout,
       stateMachines: "State Machine 1",
   
-      onLoad: () => {
-        r.resizeDrawingSurfaceToCanvas();
-      },
+    
     });
 
   }
@@ -3341,12 +3324,12 @@ import modalUnlock from "./module/modalunlock.js";
     if (!wt) return;
     else {
       VanillaTilt.init(wt, {
-        max: 1.5,
-        speed: 1200,
-        // scale: 1.03,
+        max: 5,
+        speed: 1500,
+        scale: 1.1,
         transition: true,
         // easing: "cubic-bezier(.42,.02,.31,.99)",
-        perspective: 400,
+        perspective: 500,
         // glare: true,
         // maxGlare: 0.05,
         // axis: "x",
