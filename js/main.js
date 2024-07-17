@@ -3325,7 +3325,7 @@ import modalUnlock from "./module/modalunlock.js";
     else {
       VanillaTilt.init(wt, {
         max: 4,
-        speed: 500,
+        speed: 1200,
         // scale: 1.05,
         transition: true,
         // easing: "cubic-bezier(.42,.02,.31,.99)",
