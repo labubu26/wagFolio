@@ -3106,7 +3106,7 @@ import modalUnlock from "./module/modalunlock.js";
 
 
     let layout = new rive.Layout({
-      fit: rive.Fit.FitWidth,
+      fit: rive.Fit.Fill,
   });
   
     const r = new rive.Rive({
@@ -3324,9 +3324,9 @@ import modalUnlock from "./module/modalunlock.js";
     if (!wt) return;
     else {
       VanillaTilt.init(wt, {
-        max: 8,
-        speed: 300,
-        scale: 1.05,
+        max: 4,
+        speed: 500,
+        // scale: 1.05,
         transition: true,
         // easing: "cubic-bezier(.42,.02,.31,.99)",
         perspective: 800, // Transform perspective, the lower the more extreme the tilt gets

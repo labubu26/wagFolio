@@ -17319,11 +17319,10 @@ body.compensate-for-scrollbar {
   position: absolute;
   height: fit-content;
   width: fit-content;
-
   box-sizing: border-box;
   display: block;
   animation: move-up-down 4s ease-in-out infinite alternate;
-  box-shadow: 10px 60px 30px -40px rgba(33, 33, 33, 0.175);
+  /* box-shadow: 10px 60px 30px -40px rgba(33, 33, 33, 0.175); */
 
   /* background: rgb(207 126 126 / 79%); */
 }
