@@ -179,9 +179,7 @@ import modalUnlock from "./module/modalunlock.js";
               opacity: 1,
               display: "block",
             })
-            .set(progress, {
-              scale: 1, opacity: 1,
-            })
+
 
             // .from(bg, {
             //   ease: 'quart.inOut',
@@ -191,10 +189,12 @@ import modalUnlock from "./module/modalunlock.js";
             //   onComplete: () => {
             //   },
             // }, )
-            .to(progress,{
-              scale: 2, opacity: 1, animation: "none"
-            })
-
+            .to(progress, {
+              duration: 0.4,
+              ease: 'quart.inOut',
+              animation: "none",
+              scale: 2, opacity: 1
+            }, '>0')
             .fromTo(progressInner, {
               scaleX: 0,
             }, {
@@ -205,12 +205,14 @@ import modalUnlock from "./module/modalunlock.js";
               onStart: () => {
                 // bg.classList.add('origin-left');
               }
-            })
+            }, '>0.1')
+            
             .to(progress, {
               duration: 0.7,
               ease: 'quart.inOut',
               opacity: 0,
               scale: 100,
+              
             }, '>.4')
             .to(bg, {
               ease: 'quart.inOut',
@@ -277,7 +279,7 @@ import modalUnlock from "./module/modalunlock.js";
               scaleX: 1,
               duration: 0.4,
               ease: 'none',
-            }, '>-0.1')
+            }, '>0.1')
 
 
           return tl;
@@ -3108,7 +3110,7 @@ import modalUnlock from "./module/modalunlock.js";
 
 
     let layout = new rive.Layout({
-      fit: rive.Fit.Fill,
+      fit: rive.Fit.Cover,
   });
   
     const r = new rive.Rive({

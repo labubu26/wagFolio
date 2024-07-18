@@ -4648,13 +4648,20 @@ body.preloader-visible .preloader__progress {
   transform-origin: left;
   transform: translateX(0);
 }
+@keyframes relogoani {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
 /* logo */
 .preloader__progress {
   position: absolute;
-  transform: scale(1);
-  opacity: 1;
-  opacity:1;
-  animation: poppop 0.4s ease-in infinite alternate;
+  transform: scale(2);
+  animation: relogoani 0.6s ease-in-out infinite alternate;
 
   z-index: 200;
   display: flex;
@@ -6099,7 +6106,7 @@ img {
 }
 
 .masthead.-type-4 .masthead__text {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   margin-top: 1.25rem;
   font-weight: 500;
   line-height: 1.6;
@@ -17395,7 +17402,7 @@ body.compensate-for-scrollbar {
   }
 
   to {
-    transform: scale(1.1);
+    transform: scale(2);
   }
 }
 
