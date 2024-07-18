@@ -4648,11 +4648,14 @@ body.preloader-visible .preloader__progress {
   transform-origin: left;
   transform: translateX(0);
 }
-
+/* logo */
 .preloader__progress {
   position: absolute;
-  transform: scale(0);
+  transform: scale(1);
+  opacity: 1;
   opacity:1;
+  animation: poppop 0.4s ease-in infinite alternate;
+
   z-index: 200;
   display: flex;
   justify-content: center;
@@ -4660,7 +4663,6 @@ body.preloader-visible .preloader__progress {
   width: 3.5rem;
   height: 3.5rem;
   background-color: #5b5b5b39;
-  opacity: 0;
   -webkit-mask-image: var(--preloader-image);
   -webkit-mask-size: contain;
   -webkit-mask-position: center;

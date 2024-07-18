@@ -179,6 +179,10 @@ import modalUnlock from "./module/modalunlock.js";
               opacity: 1,
               display: "block",
             })
+            .set(progress, {
+              scale: 1, opacity: 1,
+            })
+
             // .from(bg, {
             //   ease: 'quart.inOut',
             //   duration: 0.5,
@@ -187,10 +191,8 @@ import modalUnlock from "./module/modalunlock.js";
             //   onComplete: () => {
             //   },
             // }, )
-            .fromTo(progress, {
-              scale: 6, opacity: 0.5,
-            }, {
-              scale: 2, opacity: 1,
+            .to(progress,{
+              scale: 2, opacity: 1, animation: "none"
             })
 
             .fromTo(progressInner, {
