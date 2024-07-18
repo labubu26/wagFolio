@@ -6096,6 +6096,14 @@ img {
   /* padding-top: 2.5rem; */
 }
 
+.masthead.-type-4 .masthead__text {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--font-dark);
+}
+
 @media (max-width: 991px) {
   .masthead.-type-4 .masthead__content {
     padding-top: 8.75rem;
@@ -6141,13 +6149,7 @@ img {
   
 }
 
-.masthead.-type-4 .masthead__text {
-  font-size: 1.25rem;
-  margin-top: 1.25rem;
-  font-weight: 500;
-  line-height: 1.6;
-  color: var(--font-dark);
-}
+
 
 /*--------------------------------------------------
 	39. Card
