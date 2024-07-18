@@ -6122,6 +6122,11 @@ img {
   .masthead.-type-4 .masthead__title {
     font-size: 3rem;
   }
+  .masthead.-type-4 .masthead__text {
+    font-size: 1rem;
+    margin-top: 1rem;
+ 
+  }
 }
 
 @media (max-width: 767px) {
