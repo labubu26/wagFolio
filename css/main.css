@@ -17302,7 +17302,7 @@ body.compensate-for-scrollbar {
 }
 
 .wt .wtimg {
-  animation: poppop 2.8s ease infinite alternate;
+  /* animation: poppop 2.8s ease infinite alternate; */
 }
 
 .pop_bg {
