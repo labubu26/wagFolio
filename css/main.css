@@ -6136,17 +6136,49 @@ img {
 }
 
 @media (max-width: 991px) {
-  .masthead.-type-4 .masthead__title {
+  /* .masthead.-type-4 .masthead__title {
     font-size: 3rem;
   }
   .masthead.-type-4 .masthead__text {
     font-size: 1rem;
     margin-top: 1rem;
  
+  } */
+  .masthead.-type-4 .masthead__title {
+    letter-spacing: -0.03em;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 1.2em;
+  font-family: "Poppins";
+  }
+  .masthead.-type-4 .masthead__text {
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--font-dark);
+ 
   }
 }
-
 @media (max-width: 767px) {
+  .masthead.-type-4 .masthead__title {
+    letter-spacing: -0.03em;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 1.2em;
+  font-family: "Poppins";
+  }
+  .masthead.-type-4 .masthead__text {
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--font-dark);
+ 
+  }
+  
+}
+@media (max-width: 576px) {
   .masthead.-type-4 .masthead__title {
     font-size: 2.75rem;
   }
