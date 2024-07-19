@@ -166,10 +166,13 @@ import modalUnlock from "./module/modalunlock.js";
         effect: (target, config) => {
 
           document.documentElement.classList.add('html-overflow-hidden');
+
           const tl = gsap.timeline();
 
           if (!document.body.classList.contains('preloader-visible')) {
             document.documentElement.classList.remove('html-overflow-hidden');
+          document.documentElement.classList.add('playthumb');
+
             return tl;
           }
 
@@ -178,6 +181,9 @@ import modalUnlock from "./module/modalunlock.js";
               // translateX: "0%",
               opacity: 1,
               display: "block",
+              onStart: () => {
+                // document.documentElement.classList.add('playthumb');
+              }
             })
 
 

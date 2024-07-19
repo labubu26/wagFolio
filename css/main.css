@@ -892,7 +892,11 @@ body {
 body::-webkit-scrollbar {
   display:inline-block;
   width: 7px;
-  background: transparent;
+  background: none;
+}
+
+.playthumb body::-webkit-scrollbar {
+  display:none;
 }
 
 body::-webkit-scrollbar-track {
