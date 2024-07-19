@@ -17386,7 +17386,7 @@ body.compensate-for-scrollbar {
 
 .pop:nth-child(4) {
   right: 0rem;
-  top: 0rem;
+  top: -3rem;
   /* transform: rotate(-20deg); */
 }
 
@@ -17404,8 +17404,8 @@ body.compensate-for-scrollbar {
 }
 
 .pop:nth-child(3) {
-  right: -4rem;
-  bottom: -4rem;
+  right: -3rem;
+  bottom: -3rem;
   animation: scale 1.5s ease-in infinite alternate;
 
   /* transform: rotate(-27deg); */
