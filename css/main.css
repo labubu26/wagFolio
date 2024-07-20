@@ -4658,7 +4658,7 @@ body.preloader-visible .preloader__progress {
   }
 
   to {
-    opacity: 0.4;
+    opacity: 0.6;
   }
 }
 /* logo */
@@ -4673,7 +4673,7 @@ body.preloader-visible .preloader__progress {
   align-items: center;
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #5b5b5b39;
+  background-color: #5b5b5b46;
   -webkit-mask-image: var(--preloader-image);
   -webkit-mask-size: contain;
   -webkit-mask-position: center;
