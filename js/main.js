@@ -3749,18 +3749,26 @@ function cursomove() {
   alllink.forEach(link => {
     link.addEventListener("mouseleave", () => {
       curso.classList.remove("curso-grow")
+      curso.classList.remove("curso-press")
+
     });
     link.addEventListener("mouseover", () => {
       curso.classList.add("curso-grow")
+      curso.classList.remove("curso-press")
+
     });
     // nhấn giữ
     link.addEventListener("mousedown", () => {
       curso.classList.remove("curso-grow")
+      curso.classList.add("curso-press")
     });
-    // nhấn click
+    // nhả giữ
     link.addEventListener("click", () => {
       curso.classList.remove("curso-grow")
+      curso.classList.remove("curso-press")
     });
+    // nhấn click
+ 
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)

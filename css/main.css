@@ -19595,7 +19595,19 @@ body {
   /* backdrop-filter: grayscale(1); */
   /* background: black; */
 }
+.curso-press {
+  height: 100px;
+  width: 100px;
+  top: calc(100px / 2 * -1);
+  left: calc(100px / 2 * -1);
 
+  /* backdrop-filter: none;
+  -webkit-backdrop-filter:none; */
+
+  /* transform: scale(2) !important; */
+  /* backdrop-filter: grayscale(1); */
+  /* background: black; */
+}
 
 .cen-col{
   display: flex;
