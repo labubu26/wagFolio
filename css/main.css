@@ -17567,11 +17567,13 @@ body.compensate-for-scrollbar {
   box-shadow: rgb(60 59 70 / 30%) 8px 44px 32px 12px,
     rgb(60 59 70 / 30%) -20px 12px 46px -10px;
 }
-
+.item{
+  height:fit-content;
+  }
 /* lightbox */
 .item .item-wrap {
   width: 100%;
-  height: auto;
+  height: fit-content;
   display: block;
   position: relative;
   margin-bottom: 2rem;
@@ -17642,7 +17644,7 @@ body.compensate-for-scrollbar {
 
 .img-fluid {
   width: 100%;
-  height: auto;
+  height: fit-content;
 }
 
 .img-fluid:hover {
