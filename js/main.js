@@ -3762,12 +3762,19 @@ function cursomove() {
       curso.classList.remove("curso-grow")
       curso.classList.add("curso-press")
     });
-    // nhả giữ
-    link.addEventListener("click", () => {
-      curso.classList.remove("curso-grow")
+
+    // nhấn click
+    link.addEventListener("mouseup", () => {
+      curso.classList.add("curso-grow")
       curso.classList.remove("curso-press")
     });
-    // nhấn click
+
+    link.addEventListener("click", () => {
+      curso.classList.add("curso-grow")
+      curso.classList.remove("curso-press")
+    });
+
+  
  
   });
 
