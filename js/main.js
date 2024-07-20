@@ -3753,6 +3753,14 @@ function cursomove() {
     link.addEventListener("mouseover", () => {
       curso.classList.add("curso-grow")
     });
+    // nhấn giữ
+    link.addEventListener("mousedown", () => {
+      curso.classList.remove("curso-grow")
+    });
+    // nhấn click
+    link.addEventListener("click", () => {
+      curso.classList.remove("curso-grow")
+    });
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
