@@ -19601,6 +19601,7 @@ body {
   top: calc(100px / 2 * -1);
   left: calc(100px / 2 * -1);
 
+
   /* backdrop-filter: none;
   -webkit-backdrop-filter:none; */
 
@@ -19608,6 +19609,8 @@ body {
   /* backdrop-filter: grayscale(1); */
   /* background: black; */
 }
+
+
 
 .cen-col{
   display: flex;

@@ -3770,12 +3770,12 @@ function cursomove() {
     });
 
     link.addEventListener("click", () => {
-      curso.classList.add("curso-grow")
-      curso.classList.remove("curso-press")
+
+        curso.classList.add("curso-grow")
+      curso.classList.remove("curso-press") 
+      
     });
 
-  
- 
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
