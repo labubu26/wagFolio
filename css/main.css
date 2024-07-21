@@ -17654,7 +17654,7 @@ body.compensate-for-scrollbar {
 
 .img-fluid {
   width: 100%;
-  height: fit-content;
+  min-height: 200px;
 }
 
 .img-fluid:hover {
