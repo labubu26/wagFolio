@@ -3744,7 +3744,7 @@ function cursomove() {
     mouse.y = e.y;
   });
 
-  const alllink = document.querySelectorAll("a, .button, button, .img-fluid, .img-enlargable , .bg-image, .backButton, .img-comp-slider, .js-prev, .js-next");
+  const alllink = document.querySelectorAll("a, .button, button, .img-enlargable , .bg-image, .backButton, .img-comp-slider, .js-prev, .js-next");
 
   alllink.forEach(link => {
     link.addEventListener("mouseleave", () => {
