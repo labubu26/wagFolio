@@ -2872,12 +2872,20 @@ import modalUnlock from "./module/modalunlock.js";
 
     // cate filter
 
+
+    // init Isotope
+
+
+
     var siteIstotope = function () {
       /* activate jquery isotope */
       var $container = $('#posts').isotope({
         itemSelector: '.item',
-        isFitWidth: true
+        isFitWidth: true,
+    
       });
+
+
 
       $(window).resize(function () {
         $container.isotope({
@@ -2886,6 +2894,12 @@ import modalUnlock from "./module/modalunlock.js";
       });
 
       $container.isotope({ filter: '*' });
+
+      // layout Isotope after each image loads
+$container.imagesLoaded().progress( function() {
+  $container.isotope('layout');
+});
+
 
       // filter items on button click
       $('#filters').on('click', 'button', function () {
