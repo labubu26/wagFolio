@@ -3073,6 +3073,11 @@ h6 {
   opacity: 1;
 }
 
+.header .header__logo__dark {
+  height: 30px;
+  width:auto;
+}
+
 
 .header .header__logo a {
   color: black;
