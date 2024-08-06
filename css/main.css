@@ -17712,7 +17712,7 @@ body.compensate-for-scrollbar {
   visibility: visible; */
 }
 .web, .design, .brand{
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .img-fluid {
