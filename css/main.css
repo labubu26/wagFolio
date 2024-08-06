@@ -53,6 +53,11 @@
   51. Utilities
 
 -------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
 .ratio .ratior {
   position: relative;
   display: block;
@@ -166,8 +171,6 @@
   --font-dark: #5f6574;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
   --font-primary: "DM Sans", "Poppins", sans-serif;
@@ -3087,6 +3090,13 @@ h6 {
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+.header .header__logo__dark {
+  width: 9rem;
+  height: 3.5rem;
+  }
 }
 
 .header .header__logo__dark:hover .header__logo__dark__inner 
@@ -17528,7 +17538,9 @@ body.compensate-for-scrollbar {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+/* #filters .btn:last-child{
+  flex:0;
+} */
 #more {
   visibility: hidden;
   transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -18481,9 +18493,15 @@ blockquote:after {
   color: #25d366;
 }
 
-.x {
-  color: #18181c;
+.x 
+  {
+    color: var(--bg-dark-3);
+    display: flex;
+    justify-content: center;
+    padding: 1.375rem;
+    border-right: 1px solid var(--bg-dark-6);
 }
+
 
 .x i {
   /* font-size: 24px!important; */
