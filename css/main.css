@@ -17649,7 +17649,7 @@ body.compensate-for-scrollbar {
   margin-bottom: 2rem;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: rgba(168, 168, 168, 0.355) -2px 1px 20px -10px;
+  box-shadow: rgba(141, 141, 143, 0.20) 0px 8px 56px -16px;
 }
 
 .item .item-wrap .icon-search2 {
