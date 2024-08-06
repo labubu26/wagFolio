@@ -17856,7 +17856,8 @@ body.compensate-for-scrollbar {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to bottom, rgb(0 0 1 / 65%) -23%, #01000ffa 61%);
+  background: linear-gradient(to bottom, rgb(0 0 1 / 100%) -23%, #020019fa 61%);
+  /* background: linear-gradient(to bottom, rgb(0 0 1 / 65%) -23%, #01000ffa 61%); */
 }
 
 .HomeBackground-bg-gradient {
