@@ -148,6 +148,7 @@
 }  
 :root {
   --preloader-image: url("../img/general/loader.svg");
+  --logo-image: url("../img/logo/logo.svg");
 }
 
 /* Root color */
@@ -3073,9 +3074,32 @@ h6 {
   opacity: 1;
 }
 
+/* logo wag */
 .header .header__logo__dark {
-  height: 32px;
-  width:auto;
+  width: 10rem;
+  height: 4rem;
+  background-color: var(--bg-dark-3);;
+  -webkit-mask-image: var(--logo-image);
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: var(--logo-image);
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.header .header__logo__dark:hover .header__logo__dark__inner 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1 !important;
+  background-image: linear-gradient(80deg, #ddd0 0px, rgba(237, 237, 237, 0.7) 40px, #fff0 80px);
+  background-size: 20rem;
+  animation: shine-lines 2s infinite linear;
 }
 
 
@@ -17676,7 +17700,16 @@ body.compensate-for-scrollbar {
   /* height: auto; */
   min-height: 200px;
   background: #F1F5FC;
-  
+ 
+}
+
+@keyframes shine-lines {
+  0% {
+    background-position: -10rem;
+  }
+  40%, 100% {
+    background-position: 10rem;
+  }
 }
 
 .img-fluid:hover {
