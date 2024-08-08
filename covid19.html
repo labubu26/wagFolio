@@ -66,6 +66,18 @@
 
   <body class="preloader-visible" data-barba="wrapper">
 
+    <!-- Lock content link có pass -->
+    <script>
+      // Get the referrer URL
+      const referrer = document.referrer;
+
+      // Check if the referrer is from the index.html page
+      if (referrer !== 'https://wagtrung.com/index.html') {
+          // Redirect the user back to the index page
+          window.location.replace('https://wagtrung.com/index.html');
+      }
+  </script>
+
   <modal-pass data-file="cv">
     <!-- <div slot="info"></div> -->
     <div class="cen-col mt-24">
