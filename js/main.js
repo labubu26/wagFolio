@@ -3400,13 +3400,13 @@ $container.imagesLoaded().progress( function() {
 
 
 // Function to prompt the user for confirmation based on the current URL
-function confirmScriptLoad(url) {
+function confirmScriptLoad(url, confirmationRequiredUrls) {
   var currentURL = window.location.href;
-  
-  // Check if the user is not on the homepage link (e.g. a.com/index)
-  if (currentURL !== 'https://wagtrung.com/index.html') {
+
+  // Check if the current URL requires confirmation
+  if (confirmationRequiredUrls.includes(currentURL)) {
       var confirmMessage = 'Are you sure you want to load this script?\n' + url;
-      
+
       if (confirm(confirmMessage)) {
           // Create a new script element
           var script = document.createElement('script');
@@ -3427,8 +3427,11 @@ function confirmScriptLoad(url) {
   }
 }
 
-// Example usage: call confirmScriptLoad with the URL you want to load
-confirmScriptLoad('https://wagtrung.com/covid19.html');
+// List of URLs that require confirmation before loading the script
+var confirmationRequiredUrls = ['https://wagtrung.com/covid19.html', 'https://wagtrung.com/designsystem2023.html'];
+
+// Example usage: call confirmScriptLoad with the URL you want to load and the list of required confirmation URLs
+confirmScriptLoad('https://wagtrung.com/index.html', confirmationRequiredUrls);
 
 })();
 
