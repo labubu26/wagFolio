@@ -6734,7 +6734,7 @@ img {
 
 .portfolioCard.-type-1.-hover .portfolioCard__contentCover {
   opacity: 0;
-  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 0.4s ease-in-out;
 }
 
 .portfolioCard.-type-1.-hover:hover .portfolioCard__contentCover {
@@ -19662,10 +19662,10 @@ body {
 }
 
 .curso-grow {
-  height: 150px;
-  width: 150px;
-  top: calc(150px / 2 * -1);
-  left: calc(150px / 2 * -1);
+  height: 80px;
+  width: 80px;
+  top: calc(80px / 2 * -1);
+  left: calc(80px / 2 * -1);
   background:transparent;
   border: 2px solid #fff;
   /* backdrop-filter: none;
@@ -19676,10 +19676,10 @@ body {
   /* background: black; */
 }
 .curso-press {
-  height: 100px;
-  width: 100px;
-  top: calc(100px / 2 * -1);
-  left: calc(100px / 2 * -1);
+  height: 40px;
+  width: 40px;
+  top: calc(40px / 2 * -1);
+  left: calc(40px / 2 * -1);
 
 
   /* backdrop-filter: none;
