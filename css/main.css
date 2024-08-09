@@ -1366,7 +1366,7 @@ button {
 }
 
 .button.-underline2:hover {
-  color: inherit;
+  color: #ffff;
 }
 
 .slider-slide:hover .button.-underline2::before,
