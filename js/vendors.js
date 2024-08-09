@@ -1,5 +1,3 @@
-
-
 const cdnLinks = [
   'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js', 
 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js',
