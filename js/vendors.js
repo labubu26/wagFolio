@@ -6,20 +6,19 @@ const cdnLinks = [
 'https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js',
 'https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
-  // 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js',
 'https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js',
 // 'https://cdnjs.cloudflare.com/ajax/libs/isotope-packery/2.0.1/packery-mode.pkgd.min.js',
 // 'https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js',
 // 'https://cdnjs.cloudflare.com/ajax/libs/classnames/2.5.2/dedupe.js',
 // 'https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js',
 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js',
-
-// 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js',
-// 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js',
-
 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js',
 'https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js',
 'https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js',
+
+  // 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js',
+// 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js',
+// 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js',
 // 'https://assets.codepen.io/16327/DrawSVGPlugin3.min.js',
 // 'https://assets.codepen.io/16327/SplitText3.min.js',
 // 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomEase.min.js'
