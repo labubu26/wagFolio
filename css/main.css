@@ -19325,11 +19325,11 @@ mark {
   position: relative !important;
   line-height: 1;
   z-index: 1;
-  background: linear-gradient(0deg, #7ce9a9e4 2%, #bafbc528 10%);
+  background: linear-gradient(0deg, #bdbdbd 2%, #8b96bf1c 2%);
   padding: 0px;
   background-size: 0% 100%;
   background-repeat: no-repeat;
-  transition: background-size 2s ease-in-out;
+  transition: background-size 2s ease;
 }
 
 .markOkay {
