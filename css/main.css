@@ -987,6 +987,9 @@ div::-webkit-scrollbar-thumb {
   body::-webkit-scrollbar {
     display: none;
   }
+  .cursok-grow{
+    display:none;
+  }
 
   .container {
     padding-right: 1.5rem;
