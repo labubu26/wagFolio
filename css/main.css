@@ -1975,7 +1975,9 @@ h6 {
     line-height: 1.9 !important;
   }
 }
-
+.tracking-super-tight {
+  letter-spacing: -0.05em !important;
+}
 .tracking-tight {
   letter-spacing: -0.02em !important;
 }
