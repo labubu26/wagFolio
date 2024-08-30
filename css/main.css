@@ -869,7 +869,7 @@ html {
 
   mix-blend-mode: exclusion;
   -webkit-mix-blend-mode: exclusion;
-  z-index: 3000;
+  z-index: 11000;
   transition: all 0.4s ease 0.2s;
   transition-property:  width, height, top, left;
   transform-origin: 50%;
@@ -877,6 +877,8 @@ html {
 
 }
 .cursok-grow{
+  z-index: 11000;
+
   height: 12px;
   width: 12px;
   top: calc(12px / 2 * -1);
