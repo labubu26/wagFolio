@@ -17219,7 +17219,7 @@ body.compensate-for-scrollbar {
   min-height: 120px;
   position: relative;
   /* cursor: var(--cursorPointer); */
-  padding: 0px 120px 0px 32px;
+  padding: 0px 120px 0px 0px;
   width: 100%;
   border: none;
   text-align: left;
@@ -17231,7 +17231,7 @@ body.compensate-for-scrollbar {
 .active,
 .accordion:hover {
   /* background-color: #ccc; */
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 20px 40px -12px, rgba(0, 0, 0, 0.2) 0px 0px 77px -44px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 27px 63px -49px;
   transform: scale(1.01);
 }
 
@@ -17763,11 +17763,14 @@ body.compensate-for-scrollbar {
 .img-fluid {
   width: 100%;
   /* height: auto; */
-  min-height: 200px;
+  /* min-height: 200px; */
   background: #F1F5FC;
  
 }
+.img-fluid .minh{
+  min-height: 200px;
 
+}
 @keyframes shine-lines {
   0% {
     background-position: -10rem;
@@ -19514,7 +19517,7 @@ body {
   /* font-size: inherit; */
   line-height: 1.6;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.6px;
   color: var(--font-dark);
 }
