@@ -3415,8 +3415,6 @@ $container.imagesLoaded().progress( function() {
 
 
 
-
-
 // DOWNLOAD with pass
 function downloadFile(url, fileName) {
   fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
@@ -3721,10 +3719,17 @@ function beforeAfter() {
 
 
 
-
+// CURSOR 
+document.body.style.cursor = 'none';
 let curso = document.createElement("div");
 curso.className = "curso";
 document.body.appendChild(curso);
+
+// inercurso
+let cursork = document.createElement("div");
+cursork.className = "cursork";
+document.body.appendChild(cursork);
+
 //mouse
 // let curso = document.querySelector(".curso");
 function cursomove() {
@@ -3741,11 +3746,13 @@ function cursomove() {
 
   // Select the circle element
   const circleElement = curso;
+  const circleElementk = cursork;
 
   // Create objects to track mouse position and custom cursor position
   const mouse = { x: 600, y: -50 }; // Track current mouse position
   const previousMouse = { x: 0, y: 0 } // Store the previous mouse position
   const circle = { x: 0, y: 0 }; // Track the circle position
+  const circlek = { x: 0, y: 0 }; // Track the circle position
 
   // Initialize variables to track scaling and rotation
   let currentScale = 0; // Track current scale value
@@ -3762,11 +3769,15 @@ function cursomove() {
   alllink.forEach(link => {
     link.addEventListener("mouseleave", () => {
       curso.classList.remove("curso-grow")
+      cursork.classList.remove("cursok-grow")
+
       curso.classList.remove("curso-press")
 
     });
     link.addEventListener("mouseover", () => {
       curso.classList.add("curso-grow")
+      cursork.classList.add("cursok-grow")
+
       curso.classList.remove("curso-press")
 
     });
@@ -3792,7 +3803,7 @@ function cursomove() {
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  const speed = 0.3;
+  const speed = 0.8;
 
   // Start animation
   const tick = () => {
@@ -3801,8 +3812,16 @@ function cursomove() {
     // Calculate circle movement based on mouse position and smoothing
     circle.x += (mouse.x - circle.x) * speed;
     circle.y += (mouse.y - circle.y) * speed;
+
+    // Inner curso
+    circlek.x += (mouse.x - circlek.x);
+    circlek.y += (mouse.y - circlek.y);
+    
     // Create a transformation string for cursor translation
     const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
+    // Inner
+    const translateTransformk = `translate(${circlek.x}px, ${circlek.y}px)`;
+
 
     // SQUEEZE
     // 1. Calculate the change in mouse position (deltaMouse)
@@ -3814,7 +3833,7 @@ function cursomove() {
     // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
     const mouseVelocity = Math.min(Math.sqrt(deltaMouseX ** 2 + deltaMouseY ** 2) * 4, 150);
     // 3. Convert mouse velocity to a value in the range [0, 0.5]
-    const scaleValue = (mouseVelocity / 150) * 0.1;
+    const scaleValue = (mouseVelocity / 150) * 0.2;
     // 4. Smoothly update the current scale
     currentScale += (scaleValue - currentScale) * speed;
     // 5. Create a transformation string for scaling
@@ -3832,6 +3851,7 @@ function cursomove() {
 
     // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
     circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+    circleElementk.style.transform = `${translateTransformk}`;
 
     // Request the next frame to continue the animation
     window.requestAnimationFrame(tick);
