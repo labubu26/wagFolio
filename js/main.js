@@ -2767,9 +2767,9 @@ import modalUnlock from "./module/modalunlock.js";
             panel.style.setProperty("padding", null, "important");
 
           } else {
-            panel.style.maxHeight = panel.scrollHeight + 64 + 64 + "px";
-            panel.style.paddingTop = 32 + "px"
-            panel.style.paddingBottom = 32 + "px"
+            panel.style.maxHeight = panel.scrollHeight + 48 + 48 + "px";
+            panel.style.paddingTop = 24 + "px"
+            panel.style.paddingBottom = 24 + "px"
 
           }
 
@@ -3803,7 +3803,7 @@ function cursomove() {
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  const speed = 0.3;
+  const speed = 0.5;
 
   // Start animation
   const tick = () => {
@@ -3833,7 +3833,7 @@ function cursomove() {
     // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
     const mouseVelocity = Math.min(Math.sqrt(deltaMouseX ** 2 + deltaMouseY ** 2) * 4, 150);
     // 3. Convert mouse velocity to a value in the range [0, 0.5]
-    const scaleValue = (mouseVelocity / 150) * 0.3;
+    const scaleValue = (mouseVelocity / 150) * 0.1;
     // 4. Smoothly update the current scale
     currentScale += (scaleValue - currentScale) * speed;
     // 5. Create a transformation string for scaling
