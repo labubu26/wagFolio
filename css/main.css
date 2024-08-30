@@ -870,17 +870,17 @@ html {
   mix-blend-mode: exclusion;
   -webkit-mix-blend-mode: exclusion;
   z-index: 3000;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease 0.2s;
   transition-property:  width, height, top, left;
   transform-origin: 50%;
   cursor: none;
 
 }
 .cursok-grow{
-  height: 10px;
-  width: 10px;
-  top: calc(10px / 2 * -1);
-  left: calc(10px / 2 * -1);
+  height: 12px;
+  width: 12px;
+  top: calc(12px / 2 * -1);
+  left: calc(12px / 2 * -1);
   cursor: none;
 
 }
