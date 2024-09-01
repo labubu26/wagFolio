@@ -870,7 +870,7 @@ html {
   mix-blend-mode: exclusion;
   -webkit-mix-blend-mode: exclusion;
   z-index: 11000;
-  transition: all 0.4s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
   transition-property:  width, height, top, left;
   transform-origin: 50%;
   cursor: none;
@@ -878,14 +878,13 @@ html {
 }
 .cursok-grow{
   z-index: 11000;
-
   height: 12px;
   width: 12px;
   top: calc(12px / 2 * -1);
   left: calc(12px / 2 * -1);
-  cursor: none;
-
 }
+
+
 /* .cursok-grow::before{
   content: "Hello";
   position: absolute;
@@ -17268,6 +17267,12 @@ body.compensate-for-scrollbar {
   transform: scale(1);
 }
 
+.accordion.active:hover:after 
+ {
+  background: rgb(255 255 255);
+  box-shadow: 0 -2px 2px #3b3a3a1f, 0 0 0 14px #dddde03b;
+}
+
 .accordion.active:first-of-type+.panel {
   transform-origin: center;
   transition: all 0.4s ease-out 0s;
@@ -17276,7 +17281,7 @@ body.compensate-for-scrollbar {
   padding-bottom: 24px;
 }
 
-.accordion.active:after {
+/* .accordion.active:after {
   content: url(/img/general/chevron-up.svg);
   background: var(--bg-dark-2);
   line-height: 12px;
@@ -17289,9 +17294,15 @@ body.compensate-for-scrollbar {
   border: 2px solid var(--bg-dark-2);
   transition: all 0.2s;
   box-shadow: none;
+} */
+
+.accordion.active.accordion:after{
+  transform: translateY(-50%) rotate(180deg);
+  transform-origin: center;
+  color: #fff;
+
+  
 }
-
-
 
 .panel {
   /* background-color: #f1f1f124; */
@@ -17335,12 +17346,12 @@ body.compensate-for-scrollbar {
     transition: all 0.2s;
   }
 
-  .accordion.active:after {
+  /* .accordion.active:after {
     content: url(/img/general/chevron-up.svg);
     background: var(--bg-dark-2);
     border-color: var(--bg-dark-2);
     right: 0px;
-  }
+  } */
 
   /*  */
   .accordion.sm {
