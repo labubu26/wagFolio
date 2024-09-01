@@ -900,7 +900,7 @@ button,
 .backButton,
 .js-prev,
 .js-next {
-  /* cursor: none !important; */
+  cursor: none !important;
   /* cursor: var(--cursorPointer); */
 }
 
