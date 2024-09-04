@@ -3769,32 +3769,33 @@ function cursomove() {
     link.addEventListener("mouseleave", () => {
       curso.classList.remove("curso-grow")
       cursork.classList.remove("cursok-grow")
-
       curso.classList.remove("curso-press")
 
     });
     link.addEventListener("mouseover", () => {
       curso.classList.add("curso-grow")
       cursork.classList.add("cursok-grow")
-
       curso.classList.remove("curso-press")
 
     });
     // nhấn giữ
     link.addEventListener("mousedown", () => {
       curso.classList.remove("curso-grow")
+      cursork.classList.remove("cursok-grow")
       curso.classList.add("curso-press")
     });
 
     // nhấn click
     link.addEventListener("mouseup", () => {
       curso.classList.add("curso-grow")
+      cursork.classList.add("cursok-grow")
       curso.classList.remove("curso-press")
     });
 
     link.addEventListener("click", () => {
 
-        curso.classList.add("curso-grow")
+      curso.classList.add("curso-grow")
+      cursork.classList.add("cursok-grow")
       curso.classList.remove("curso-press") 
       
     });
