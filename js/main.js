@@ -171,7 +171,7 @@ import modalUnlock from "./module/modalunlock.js";
 
           if (!document.body.classList.contains('preloader-visible')) {
             document.documentElement.classList.remove('html-overflow-hidden');
-          document.documentElement.classList.add('playthumb');
+            document.documentElement.classList.add('playthumb');
 
             return tl;
           }
@@ -182,7 +182,6 @@ import modalUnlock from "./module/modalunlock.js";
               opacity: 1,
               display: "block",
               onStart: () => {
-                // document.documentElement.classList.add('playthumb');
               }
             })
 
