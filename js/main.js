@@ -3779,26 +3779,26 @@ function cursomove() {
 
     });
     // nhấn giữ
-    link.addEventListener("mousedown", () => {
+    link.addEventListener("mousedown" , () => {
       curso.classList.remove("curso-grow")
       cursork.classList.remove("cursok-grow")
       curso.classList.add("curso-press")
     });
 
     // nhấn click
-    link.addEventListener("mouseup", () => {
+    link.addEventListener("click", () => {
       curso.classList.add("curso-grow")
       cursork.classList.add("cursok-grow")
       curso.classList.remove("curso-press")
     });
 
-    link.addEventListener("click", () => {
+    // link.addEventListener("click", () => {
 
-      curso.classList.add("curso-grow")
-      cursork.classList.add("cursok-grow")
-      curso.classList.remove("curso-press") 
+    //   curso.classList.remove("curso-grow")
+    //   cursork.classList.remove("cursok-grow")
+    //   curso.classList.remove("curso-press") 
       
-    });
+    // });
 
   });
 
