@@ -936,13 +936,13 @@ body {
 /*                   */
 /* ----------------- */
 body::-webkit-scrollbar {
-  display:inline-block;
+  display:none;
   width: 7px;
   background: none;
 }
 
 .playthumb body::-webkit-scrollbar {
-  display:none;
+  display:inline-block;
 }
 
 body::-webkit-scrollbar-track {
@@ -19741,7 +19741,7 @@ body {
   top: calc(var(--circle-grow) / 2 * -1);
   left: calc(var(--circle-grow) / 2 * -1);
   background:transparent;
-  border: 2px solid #fff;
+  border: 2px solid #ffffffeb;
   /* backdrop-filter: none;
   -webkit-backdrop-filter:none; */
 
@@ -19749,6 +19749,7 @@ body {
   /* backdrop-filter: grayscale(1); */
   /* background: black; */
 }
+
 .curso-press {
   height: 40px;
   width: 40px;
