@@ -1,7 +1,7 @@
-ErrorDocument 404 /info.html
-ErrorDocument 401 /info.html
-ErrorDocument 403 /info.html
-ErrorDocument 404 /info.html
-ErrorDocument 500 /info.html
+ErrorDocument 404 /index.html
+ErrorDocument 401 /index.html
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 500 /index.html
 
 RewriteRule ^(([^/]+/)*[^.]+)$ /$1.html [L]
