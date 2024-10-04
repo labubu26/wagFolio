@@ -6845,6 +6845,9 @@ img {
 }
 
 @media (max-width: 767px) {
+  .portfolioCard.-type-1 .portfolioCard__contentCover {
+    display:none
+  }
   .portfolioCard.-type-1.-hover .portfolioCard__title {
     font-size: 1.5rem;
     padding: 24px 0 0;
