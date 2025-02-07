@@ -3770,27 +3770,27 @@ function cursomove() {
     link.addEventListener("mouseleave", () => {
       curso.classList.remove("curso-grow")
       cursork.classList.remove("cursok-grow")
-      curso.classList.remove("curso-press")
+      // curso.classList.remove("curso-press")
 
     });
     link.addEventListener("mouseover", () => {
       curso.classList.add("curso-grow")
       cursork.classList.add("cursok-grow")
-      curso.classList.remove("curso-press")
+      // curso.classList.remove("curso-press")
 
     });
     // nhấn giữ
-    link.addEventListener("mousedown" , () => {
-      curso.classList.remove("curso-grow")
-      cursork.classList.remove("cursok-grow")
-      curso.classList.add("curso-press")
-    });
+    // link.addEventListener("mousedown" , () => {
+    //   curso.classList.remove("curso-grow")
+    //   cursork.classList.remove("cursok-grow")
+    //   curso.classList.add("curso-press")
+    // });
 
     // nhấn click
     link.addEventListener("click", () => {
-      curso.classList.add("curso-grow")
-      cursork.classList.add("cursok-grow")
-      curso.classList.remove("curso-press")
+      curso.classList.remove("curso-grow")
+      cursork.classList.remove("cursok-grow")
+      // curso.classList.remove("curso-press")
     });
 
     // link.addEventListener("click", () => {
@@ -3804,7 +3804,7 @@ function cursomove() {
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  const speed = 0.5;
+  const speed = 0.7;
 
   // Start animation
   const tick = () => {
@@ -3826,32 +3826,32 @@ function cursomove() {
 
     // SQUEEZE
     // 1. Calculate the change in mouse position (deltaMouse)
-    const deltaMouseX = mouse.x - previousMouse.x;
-    const deltaMouseY = mouse.y - previousMouse.y;
+    // const deltaMouseX = mouse.x - previousMouse.x;
+    // const deltaMouseY = mouse.y - previousMouse.y;
     // Update previous mouse position for the next frame
-    previousMouse.x = mouse.x;
-    previousMouse.y = mouse.y;
+    // previousMouse.x = mouse.x;
+    // previousMouse.y = mouse.y;
     // 2. Calculate mouse velocity using Pythagorean theorem and adjust speed
-    const mouseVelocity = Math.min(Math.sqrt(deltaMouseX ** 2 + deltaMouseY ** 2) * 4, 150);
+    // const mouseVelocity = Math.min(Math.sqrt(deltaMouseX ** 2 + deltaMouseY ** 2) * 4, 150);
     // 3. Convert mouse velocity to a value in the range [0, 0.5]
-    const scaleValue = (mouseVelocity / 150) * 0.1;
+    // const scaleValue = (mouseVelocity / 150) * 0.1;
     // 4. Smoothly update the current scale
-    currentScale += (scaleValue - currentScale) * speed;
+    // currentScale += (scaleValue - currentScale) * speed;
     // 5. Create a transformation string for scaling
-    const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
+    // const scaleTransform = `scale(${1 + currentScale}, ${1 - currentScale})`;
 
     // ROTATE
     // 1. Calculate the angle using the atan2 function
-    const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
+    // const angle = Math.atan2(deltaMouseY, deltaMouseX) * 180 / Math.PI;
     // 2. Check for a threshold to reduce shakiness at low mouse velocity
-    if (mouseVelocity > 18) {
-      currentAngle = angle;
-    }
+    // if (mouseVelocity > 18) {
+    //   currentAngle = angle;
+    // }
     // 3. Create a transformation string for rotation
-    const rotateTransform = `rotate(${currentAngle}deg)`;
+    // const rotateTransform = `rotate(${currentAngle}deg)`;
 
-    // Apply all transformations to the circle element in a specific order: translate -> rotate -> scale
-    circleElement.style.transform = `${translateTransform} ${rotateTransform} ${scaleTransform}`;
+    // Apply all transformations `${translateTransform} ${rotateTransform} ${scaleTransform}` translate -> rotate -> scale
+    circleElement.style.transform = `${translateTransform} `;
     circleElementk.style.transform = `${translateTransformk}`;
 
     // Request the next frame to continue the animation
