@@ -1,12 +1,12 @@
 
 const priorityScripts = [
   'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js',
-  'https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js',
   'https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js',
 ];
 
 const asyncScripts = [
+  'https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js',
   'https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js',
