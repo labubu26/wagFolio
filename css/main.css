@@ -3143,13 +3143,6 @@ h6 {
   mask-repeat: no-repeat;
 }
 
-@media (max-width: 991px) {
-.header .header__logo__dark {
-  width: 9rem;
-  height: 3.5rem;
-  }
-}
-
 .header .header__logo__dark:hover .header__logo__dark__inner 
 {
   position: absolute;
@@ -3162,6 +3155,18 @@ h6 {
   background-size: 20rem;
   animation: shine-lines 2s infinite linear;
 }
+
+
+@media (max-width: 991px) {
+.header .header__logo__dark {
+  width: 9rem;
+  height: 3.5rem;
+  }
+  .header__logo__dark__inner 
+{display:none
+}
+}
+
 
 
 .header .header__logo a {
