@@ -214,12 +214,12 @@ import modalUnlock from "./module/modalunlock.js";
             }, '>0.1')
             
             .to(progress, {
-              duration: 0.7,
+              duration: 1,
               ease: 'quart.inOut',
               opacity: 0,
               scale: 100,
               
-            }, '>.4')
+            }, '>0')
             .to(bg, {
               ease: 'quart.inOut',
               duration: 0.5,
@@ -310,17 +310,17 @@ import modalUnlock from "./module/modalunlock.js";
           return tl
             .to(progress, {
               // delay: 0.2,
-              duration: 0.7,
+              duration: 1,
               ease: 'quart.inOut',
               opacity: 0,
               scale: 100,
               // onStart: () => {
               //   bg.classList.add('origin-left');
               // }
-            }, '>0.4')
+            }, '>0')
             .to(bg, {
               ease: 'quart.inOut',
-              duration: 0.6,
+              duration: 0.5,
               opacity: 0,
               display: "none",
               onComplete: () => {
