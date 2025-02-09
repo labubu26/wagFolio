@@ -182,7 +182,7 @@ import modalUnlock from "./module/modalunlock.js";
               opacity: 1,
               display: "block",
               onStart: () => {
-            document.documentElement.classList.add('playthumb');
+                document.documentElement.classList.add('playthumb');
               }
             })
 
@@ -212,13 +212,13 @@ import modalUnlock from "./module/modalunlock.js";
                 // bg.classList.add('origin-left');
               }
             }, '>0.1')
-            
+
             .to(progress, {
               duration: 1,
               ease: 'quart.inOut',
               opacity: 0,
               scale: 100,
-              
+
             }, '>0')
             .to(bg, {
               ease: 'quart.inOut',
@@ -1062,12 +1062,16 @@ import modalUnlock from "./module/modalunlock.js";
       const infoItems = masthead.querySelectorAll('.js-info-item .split__line');
 
 
+
       const splitBase = {
         stagger: 0.1,
         duration: 1,
         ease: 'quart.out',
         y: '0%',
+
       };
+
+
 
       const splitInfoItems = {
         stagger: 0.08,
@@ -1078,7 +1082,12 @@ import modalUnlock from "./module/modalunlock.js";
       };
 
 
+
+
+
       gsap.set(infoItems, { opacity: 0, y: '34px' });
+
+
 
 
       if (masthead.classList.contains('js-shapes')) {
@@ -1091,7 +1100,9 @@ import modalUnlock from "./module/modalunlock.js";
           .uiElementsAnimate(null, '>-0.4')
           .mastheadShapes(shapes, '<-0.3')
           .to(subtitle, splitBase, '>-2.3')
+
           .to(title, splitBase, '>-0.8')
+
           .to(infoItems, splitInfoItems, '>-0.8')
           .to(image, {
             duration: 1,
@@ -1119,6 +1130,47 @@ import modalUnlock from "./module/modalunlock.js";
         // .to(infoItems, splitInfoItems, '>-0.8')
 
       }
+
+    }
+
+    function jsCheTong(tl) {
+
+      if (!document.querySelector('.js-tao')) {
+        return tl;
+      }
+
+      // const Chetong = document.querySelector('.js-che-tong');
+      else {
+
+        if(document.querySelector('.js-tao')){
+        const taos = gsap.utils.toArray('.js-tao .split__line');
+
+          // chế
+        taos.forEach(tao => {
+          tl.to(tao, {
+            stagger: 1,
+            duration: 1,
+            ease: 'quart.out',
+            opacity: 1,
+            y: '0%',
+            lineHeight: '1.3',
+            scrollTrigger: {
+              trigger: tao,
+              markers: false,
+              scrub: 1.5,
+              start: "top bottom",
+              end: "top bottom",
+            }
+          })
+        });
+
+        }
+        
+
+      }
+
+
+
 
     }
 
@@ -1297,7 +1349,8 @@ import modalUnlock from "./module/modalunlock.js";
         document.querySelector('.js-sliderMain-type-1') ||
         document.querySelector('.js-sliderMain-type-2') ||
         document.querySelector('.js-sliderMain-type-3') ||
-        document.querySelector('.js-masthead-blog-article')
+        document.querySelector('.js-masthead-blog-article') ||
+        document.querySelector('.js-che-tong')
       ) {
         return tl;
       }
@@ -1330,7 +1383,8 @@ import modalUnlock from "./module/modalunlock.js";
         document.querySelector('.js-sliderMain-type-1') ||
         document.querySelector('.js-sliderMain-type-2') ||
         document.querySelector('.js-sliderMain-type-3') ||
-        document.querySelector('.js-masthead-blog-article')
+        document.querySelector('.js-masthead-blog-article') ||
+        document.querySelector('.js-che-tong')
       ) {
         RevealAnim.init();
       }
@@ -1346,6 +1400,7 @@ import modalUnlock from "./module/modalunlock.js";
       sliderMainType_2(tl);
       sliderMainType_3(tl);
       mastheadBlogArticle(tl);
+      jsCheTong(tl);
       base(tl);
 
       tl.add(() => {
@@ -2882,7 +2937,7 @@ import modalUnlock from "./module/modalunlock.js";
       var $container = $('#posts').isotope({
         itemSelector: '.item',
         isFitWidth: true,
-    
+
       });
 
 
@@ -2896,9 +2951,9 @@ import modalUnlock from "./module/modalunlock.js";
       $container.isotope({ filter: '*' });
 
       // layout Isotope after each image loads
-$container.imagesLoaded().progress( function() {
-  $container.isotope('layout');
-});
+      $container.imagesLoaded().progress(function () {
+        $container.isotope('layout');
+      });
 
 
       // filter items on button click
@@ -3126,24 +3181,24 @@ $container.imagesLoaded().progress( function() {
     }
 
     // rive
-  if (document.getElementById("canvass")) {
+    if (document.getElementById("canvass")) {
 
 
-    let layout = new rive.Layout({
-      fit: rive.Fit.Cover,
-  });
-  
-    const r = new rive.Rive({
-      src: "img/backgrounds/avtt.riv",
-      canvas: document.getElementById("canvass"),
-      autoplay: true,
-      layout: layout,
-      stateMachines: "State Machine 1",
-  
-    
-    });
+      let layout = new rive.Layout({
+        fit: rive.Fit.Cover,
+      });
 
-  }
+      const r = new rive.Rive({
+        src: "img/backgrounds/avtt.riv",
+        canvas: document.getElementById("canvass"),
+        autoplay: true,
+        layout: layout,
+        stateMachines: "State Machine 1",
+
+
+      });
+
+    }
 
     // vid
     var vid = document.getElementsByClassName("videoembed");
@@ -3798,7 +3853,7 @@ function cursomove() {
     //   curso.classList.remove("curso-grow")
     //   cursork.classList.remove("cursok-grow")
     //   curso.classList.remove("curso-press") 
-      
+
     // });
 
   });
@@ -3817,7 +3872,7 @@ function cursomove() {
     // Inner curso
     circlek.x += (mouse.x - circlek.x);
     circlek.y += (mouse.y - circlek.y);
-    
+
     // Create a transformation string for cursor translation
     const translateTransform = `translate(${circle.x}px, ${circle.y}px)`;
     // Inner
