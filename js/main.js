@@ -229,7 +229,7 @@ import modalUnlock from "./module/modalunlock.js";
               onComplete: () => {
                 document.documentElement.classList.remove('html-overflow-hidden');
               },
-            }, '>-0.5')
+            }, '>-0.4')
 
         },
         extendTimeline: true,
@@ -267,14 +267,14 @@ import modalUnlock from "./module/modalunlock.js";
 
             .from(bg, {
               ease: 'quart.inOut',
-              duration: 0.7,
+              duration: 0.5,
               translateX: "-100%",
               // background: "blue",
               onStart: () => {
                 // bg.classList.remove('origin-left');
                 document.documentElement.classList.add('html-overflow-hidden');
               },
-            }, '>0.2')
+            }, '>0')
             .to(progress, {
               duration: 0.9,
               ease: 'quart.out',
@@ -328,7 +328,7 @@ import modalUnlock from "./module/modalunlock.js";
                 document.documentElement.classList.remove('overflow-hidden');
                 document.body.classList.remove('overflow-hidden');
               },
-            }, '>-.5')
+            }, '>-0.4')
 
         },
         extendTimeline: true,
