@@ -26,11 +26,12 @@ export default class modalUnlock extends HTMLElement {
         </div>
 
         <slot name="info">
-        <h4 class="fw-600"> NDA Access<h4>
+        <h4 class="fw-600">Content is protected.<h4>
         
-        <p class="mt-8 fw-400 text-dark text-base ">Please mail to 
+        <p class="mt-8 fw-400 text-dark text-base ">To view please enter the
+         passcode from
         <a class="button -underline4 px-2 fw-600 text-black" href="mailto:nqt99designs@gmail.com">WAG🖐️</a>
-         for the Passcode to access<p>
+         <p>
         </slot>
         <slot></slot>
       </div>

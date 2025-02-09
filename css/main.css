@@ -870,7 +870,7 @@ html {
   mix-blend-mode: exclusion;
   -webkit-mix-blend-mode: exclusion;
   z-index: 11000;
-  transition: all 0.4s ease 0.2s;
+  transition: all 0.3s ease 0.2s;
   transition-property:  width, height, top, left;
   transform-origin: 50%;
   cursor: none;
@@ -19744,7 +19744,7 @@ body {
 }
 
 .curso-grow {
-  --circle-grow: 100px;
+  --circle-grow: 60px;
 
   height: var(--circle-grow);
   width: var(--circle-grow);
