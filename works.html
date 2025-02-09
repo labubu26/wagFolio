@@ -1,143 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "G-Q2V304TRLZ");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Primary Meta Tags -->
+    <meta
+      name="description"
+      content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions."
+    />
 
-  gtag('config', 'G-Q2V304TRLZ');
-</script>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Primary Meta Tags -->
-  <meta name="description"
-    content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions.">
+    <!--  Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wagtrung.netlify.app/works" />
+    <meta property="og:title" content="Works - WagTrung" />
+    <meta
+      property="og:description"
+      content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions."
+    />
+    <meta property="og:image" content="img/meta/work.png" />
 
-  <!--  Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://wagtrung.netlify.app/works">
-  <meta property="og:title" content="Works - WagTrung">
-  <meta property="og:description"
-    content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions.">
-  <meta property="og:image" content="img/meta/work.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://wagtrung.netlify.app/works" />
+    <meta property="twitter:title" content="Works - WagTrung" />
+    <meta
+      property="twitter:description"
+      content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions."
+    />
+    <meta property="twitter:image" content="img/meta/work.png" />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://wagtrung.netlify.app/works">
-  <meta property="twitter:title" content="Works - WagTrung">
-  <meta property="twitter:description"
-    content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions.">
-  <meta property="twitter:image" content="img/meta/work.png">
-
-  <!-- Google fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    <!-- Google fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" /> -->
-   
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css" />
-<link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/vendors.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
 
+    <title>Creative Works</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
-  <meta name="theme-color" content="#ffffff" />
+    <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
+  </head>
 
-  <title>Creative Works</title>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <body class="preloader-visible" data-barba="wrapper">
+    <modal-pass data-file="cv">
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <input
+          type="text"
+          placeholder="Type your given passcode"
+          id="passInput"
+        />
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="passSubmit"
+        >
+          Download Now
+        </a>
+      </div>
+    </modal-pass>
 
-<script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
-</head>
-
-<body class="preloader-visible  " data-barba="wrapper">
-  <modal-pass data-file="cv">
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-    <input type="text" placeholder="Type your given passcode" id="passInput">
-    <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="passSubmit">
-    Download Now
-    </a>
-    </div>
-  </modal-pass>
-
-<modal-unlock>
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-    <input type="text" placeholder="Type your given passcode" id="unlockpassInput">
-    <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="unlockSubmit">
-    Unlock to read
-    </a>
-    </div>
-  </modal-unlock>
-  <!-- <div class="cursorx  ">is-cursor-active</div> -->
-
-  <!---------------------->
-  <!-- 0                -->
-  <!-- PRE-LOAD         -->
-  <!--                  -->
-  <!---------------------->
-  <!-- preloader start -->
-  <div class="preloader js-preloader">
-    <div class="preloader__bg"></div>
-
-    <div class="preloader__progress">
-      <div class="preloader__progress__inner"></div>
-    </div>
-  </div>
-  <!-- preloader end -->
-  <div class="header2">
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-    </div>
-  </div>
-  <!-- barba container start -->
-  <div class="barba-container" data-barba="container">
+    <modal-unlock>
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <input
+          type="text"
+          placeholder="Type your given passcode"
+          id="unlockpassInput"
+        />
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="unlockSubmit"
+        >
+          Unlock to read
+        </a>
+      </div>
+    </modal-unlock>
+    <!-- <div class="cursorx  ">is-cursor-active</div> -->
 
     <!---------------------->
     <!-- 0                -->
-    <!-- BACK TO TOP      -->
+    <!-- PRE-LOAD         -->
     <!--                  -->
     <!---------------------->
-    <!-- to-top-button start -->
-    <div data-cursor class="backButton js-backButton">
-      <span class="backButton__bg"></span>
-      <div class="backButton__icon__wrap">
-        <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+    <!-- preloader start -->
+    <div class="preloader js-preloader">
+      <div class="preloader__bg"></div>
+
+      <div class="preloader__progress">
+        <div class="preloader__progress__inner"></div>
       </div>
     </div>
-    <!-- to-top-button end -->
-
-    <main class="">
-     <!---------------------->
+    <!-- preloader end -->
+    <div class="header2">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+    <!-- barba container start -->
+    <div class="barba-container" data-barba="container">
+      <!---------------------->
       <!-- 0                -->
-      <!-- NAV OUT         -->
+      <!-- BACK TO TOP      -->
       <!--                  -->
       <!---------------------->
-      <header class=" header -light -sticky-light js-header">
-        <!-- header__bar start -->
-        <div class="header__bar ">
-          <div class="header__logo js-header-logo">
-            <a data-barba href="index.html">
-              <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
-              <div class="header__logo__dark js-lazy">
-                <div class="header__logo__dark__inner"></div>
-              </div>          
-            </a>
-          </div>
+      <!-- to-top-button start -->
+      <div data-cursor class="backButton js-backButton">
+        <span class="backButton__bg"></span>
+        <div class="backButton__icon__wrap">
+          <i
+            class="backButton__button js-top-button"
+            data-feather="arrow-up"
+          ></i>
+        </div>
+      </div>
+      <!-- to-top-button end -->
 
-          <div class="cen">
-            <!-- Translate -->
-            <!-- <div class="">
+      <main class="">
+        <!---------------------->
+        <!-- 0                -->
+        <!-- NAV OUT         -->
+        <!--                  -->
+        <!---------------------->
+        <header class="header -light -sticky-light js-header">
+          <!-- header__bar start -->
+          <div class="header__bar">
+            <div class="header__logo js-header-logo">
+              <a data-barba href="index.html">
+                <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
+                <div class="header__logo__dark js-lazy">
+                  <div class="header__logo__dark__inner"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="cen">
+              <!-- Translate -->
+              <!-- <div class="">
               <ul class="trans mr-16">
                 <li >
                   <a class="vi" href="#" title="Tiếng Việt">
@@ -154,109 +183,138 @@
               </ul>
               <div id="google_translate_element2"></div>
             </div> -->
-            <!-- <div id='google_translate_element'>index</div> -->
-            <div class=" header__menu js-header-menu">
-              <button type="button" class="nav-button-open js-nav-open">
-                <i class="icon" data-feather="menu"></i>
-              </button>
+              <!-- <div id='google_translate_element'>index</div> -->
+              <div class="header__menu js-header-menu">
+                <button type="button" class="nav-button-open js-nav-open">
+                  <i class="icon" data-feather="menu"></i>
+                </button>
+              </div>
             </div>
-
           </div>
-        </div>
-        <!-- header__bar end -->
+          <!-- header__bar end -->
 
-        <!---------------------->
-        <!-- 0                -->
-        <!-- NAV INSIDE         -->
-        <!--                  -->
-        <!---------------------->
-        <nav class="nav js-nav">
-          <div class="nav__inner js-nav-inner">
-            <div class="nav__bg js-nav-bg" style="position:relative">
-              <div class="bg-grid"></div>
-              <!-- style="border-bottom: 4px solid; -->
-              <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
-              <div class="nav__container">
-                <div class="nav__header">
-                  <button type="button" class="nav-button-back js-nav-back">
-                    <i class="icon" data-feather="arrow-left-circle"></i>
-                  </button>
+          <!---------------------->
+          <!-- 0                -->
+          <!-- NAV INSIDE         -->
+          <!--                  -->
+          <!---------------------->
+          <nav class="nav js-nav">
+            <div class="nav__inner js-nav-inner">
+              <div class="nav__bg js-nav-bg" style="position: relative">
+                <div class="bg-grid"></div>
+                <!-- style="border-bottom: 4px solid; -->
+                <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
+                <div class="nav__container">
+                  <div class="nav__header">
+                    <button type="button" class="nav-button-back js-nav-back">
+                      <i class="icon" data-feather="arrow-left-circle"></i>
+                    </button>
 
-                  <button type="button" class="mt-24 nav-btn-close js-nav-close pointer-events-none">
-                    <i class="icon str-weight-3xl" data-feather="x"></i>
-                  </button>
-
-                </div>
-
-                <div class="nav__content">
-                  <div class="nav__content__left">
-                    <div class="navList__wrap">
-
-                      <ul class="navList js-navList">
-                        <li>
-                          <a class="stagerhover" data-barba href="index.html"> Home </a>
-                        </li>
-
-                        <li>
-                          <a class="stagerhover" data-barba href="case-studies.html">
-                            Case Study
-                          </a>
-                        </li>
-
-
-
-                        <li>
-                          <a class="stagerhover" data-barba href="about-me.html"> Experiences </a>
-                        </li>
-
-                        <li>
-                          <a class="stagerhover" data-barba href="works.html">
-                            Designs
-                          </a>
-                        </li>
-
-                        <li>
-                          <a target="_blank"
-                            class="modalcta button -sm -outline-white text-white  -light ">
-                            <i class="icon mr-8" data-feather="download"></i> Download my CV
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                    <button
+                      type="button"
+                      class="mt-24 nav-btn-close js-nav-close pointer-events-none"
+                    >
+                      <i class="icon str-weight-3xl" data-feather="x"></i>
+                    </button>
                   </div>
 
-                  <div class="nav__content__right">
-                    <div class="nav__info">
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500 ">
-                          Digital Thinker
-                        </h5>
+                  <div class="nav__content">
+                    <div class="nav__content__left">
+                      <div class="navList__wrap">
+                        <ul class="navList js-navList">
+                          <li>
+                            <a class="stagerhover" data-barba href="index.html">
+                              Home
+                            </a>
+                          </li>
 
-                        <div class="nav__info__content text-lg mt-16">
-                          <p>Ngo Quang Trung</p>
-                        </div>
+                          <li>
+                            <a
+                              class="stagerhover"
+                              data-barba
+                              href="case-studies.html"
+                            >
+                              Case Study
+                            </a>
+                          </li>
+
+                          <li>
+                            <a
+                              class="stagerhover"
+                              data-barba
+                              href="about-me.html"
+                            >
+                              Experiences
+                            </a>
+                          </li>
+
+                          <li>
+                            <a class="stagerhover" data-barba href="works.html">
+                              Designs
+                            </a>
+                          </li>
+
+                          <li>
+                            <a
+                              target="_blank"
+                              class="modalcta button -sm -outline-white text-white -light"
+                            >
+                              <i class="icon mr-8" data-feather="download"></i>
+                              Download my CV
+                            </a>
+                          </li>
+                        </ul>
                       </div>
+                    </div>
 
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500 ">
-                          Social sites
-                        </h5>
+                    <div class="nav__content__right">
+                      <div class="nav__info">
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Digital Thinker
+                          </h5>
 
-                        <div class="nav__info__content text-lg mt-16">
-                          <a class="stagerhover" target="_blank"
-                            href="https://www.linkedin.com/in/wagtrung/">LinkedIn</a>
-                          <a class="stagerhover" target="_blank" href="https://www.behance.com/powow/">Behance</a>
-
+                          <div class="nav__info__content text-lg mt-16">
+                            <p>Ngo Quang Trung</p>
+                          </div>
                         </div>
-                      </div>
 
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500 ">Contact Me</h5>
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Social sites
+                          </h5>
 
-                        <div class="nav__info__content text-lg mt-16">
-                          <a class="stagerhover" href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
-                          <a class="stagerhover" href="tel:+84938074106">+84 938 074 106</a>
+                          <div class="nav__info__content text-lg mt-16">
+                            <a
+                              class="stagerhover"
+                              target="_blank"
+                              href="https://www.linkedin.com/in/wagtrung/"
+                              >LinkedIn</a
+                            >
+                            <a
+                              class="stagerhover"
+                              target="_blank"
+                              href="https://www.behance.com/powow/"
+                              >Behance</a
+                            >
+                          </div>
+                        </div>
 
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Contact Me
+                          </h5>
+
+                          <div class="nav__info__content text-lg mt-16">
+                            <a
+                              class="stagerhover"
+                              href="mailto:nqt99designs@gmail.com"
+                              >nqt99designs@gmail.com</a
+                            >
+                            <a class="stagerhover" href="tel:+84938074106"
+                              >+84 938 074 106</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -264,1022 +322,1808 @@
                 </div>
               </div>
             </div>
-        </nav>
-        <!-- nav end -->
-      </header>
-      <!-- header end -->
-
-
-
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-
-
-      <!-- section start -->
-      <section data-anim-wrap class="layout-pt-xl">
-        <div class="container-fluid sm:container">
-          <!-- row start -->
-          <div class="row justify-content-center text-center">
-            <div class="col-sm-12 sectionHeading -xl">
-              <div class="layout-pb-md" data-anim-child="slide-up">
-                <!-- <p class="sectionHeading__subtitle">Artwork gallery</p> -->
-                <h1 class="sectionHeading__title bdline2 ">Creative Works</h1>
-                <div class="col-md-5  mx-auto mt-8 sm:d-none ">
-                  <p class="text-base leading-3xl fw-500 ">My portfolio showcases designs crafted for international clients through freelance projects and various creative competitions.</p>
-                </div>
-
-              </div>
-
-              <div class="" data-anim-child="slide-down ">
-                <div id="filters">
-                  <button class="btn btn-primary active" data-filter="*">All Designs</button>
-                  <button class="btn btn-primary" data-filter=".web">UI Design</button>
-                  <button class="btn btn-primary" data-filter=".design">Graphic</button>
-                  <button class="btn btn-primary" data-filter=".brand">Branding</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <!-- row end -->
-
-
-          <section class="site-section col-sm-12 ">
-
-            <div class="">
-
-              <div id="posts" class="row layout-pt-xs">
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (1).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div class="d-block sm:d-none " data-anim-child="img-up cover-white">
-                      <img class="img-fluid minh"   src="img/work/ui/ui (1).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                    <div class="d-none sm:d-block" data-anim-child="img-up cover-white">
-                      <img class="img-fluid minh"  src="img/work/ui/ui (1).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (1).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div class="d-block sm:d-none " data-anim-child="img-up cover-white">
-                      <img class="img-fluid minh"  src="img/work/brand (1).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                    <div class="d-none sm:d-block" data-anim-child="img-up cover-white">
-                      <img class="img-fluid minh"   src="img/work/brand (1).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                
-
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (1).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div class="d-block sm:d-none " data-anim-child="img-up cover-white">
-                      <img class="img-fluid minh"  src="img/work/design/de (1).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                    <div class="d-none sm:d-block" data-anim-child="img-up cover-white">
-                      <img class="img-fluid minh"   src="img/work/design/de (1).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <!--  -->
-
-
-
-                <!-- brand -->
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (3).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img class="img-fluid minh" src="img/work/brand (3).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (4).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img class="img-fluid minh"  src="img/work/brand (4).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <!-- web2 -->
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (5).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img class="img-fluid minh"   loading="lazy" src="img/work/ui/ui (5).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (6).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img class="img-fluid minh"   loading="lazy" src="img/work/ui/ui (6).png">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (6).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img class="img-fluid minh"   loading="lazy" src="img/work/ui/ui (6).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (7).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img class="img-fluid minh"    loading="lazy" src="img/work/ui/ui (7).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <!-- brand 2 -->
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (5).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img class="img-fluid minh"    loading="lazy" src="img/work/brand (5).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (6).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img class="img-fluid minh"    loading="lazy" src="img/work/brand (6).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (7).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img class="img-fluid minh"    loading="lazy" src="img/work/brand (7).jpg">
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <!-- graphic 1 -->
-
-                
-                
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (23).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (23).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <!-- new load -->
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (22).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (22).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (21).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (21).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (20).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (20).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                
-                <!-- brand 2 -->
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (8).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (8).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (9).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (9).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (10).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (10).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (11).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (11).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (12).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (12).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (13).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (13).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (14).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (14).jpg" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (15).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (15).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (16).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (16).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (17).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (17).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (18).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (18).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (19).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (19).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (20).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (20).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (21).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (21).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (22).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (22).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (23).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (23).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (24).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (24).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (25).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (25).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (26).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (26).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (27).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (27).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (28).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (28).jpg" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (29).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (29).jpg" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (30).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (30).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (31).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (31).jpg" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (32).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (32).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (33).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (33).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (34).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (34).jpg" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (35).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (35).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (36).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (36).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (37).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (37).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (38).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (38).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (39).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (39).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (40).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (40).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (41).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (41).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (42).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (42).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (43).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (43).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (44).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (44).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (45).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (45).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (46).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (46).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (47).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (47).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (48).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (48).jpg" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (49).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (49).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (50).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (50).jpg" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (51).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (51).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (52).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (52).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (53).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (53).jpg" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (54).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (54).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (55).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (55).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (56).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (56).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (57).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (57).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (58).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (58).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (59).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (59).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (60).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (60).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (61).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (61).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (62).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (62).jpg" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (63).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (63).jpg" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (1).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (1).png" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (2).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (2).png" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (3).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (3).png" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
+          </nav>
+          <!-- nav end -->
+        </header>
+        <!-- header end -->
+
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+
+        <!-- section start -->
+        <section data-anim-wrap class="layout-pt-xl">
+          <div class="container-fluid sm:container">
+            <!-- row start -->
+            <div class="row justify-content-center text-center">
+              <div class="col-sm-12 sectionHeading -xl">
+                <div class="layout-pb-md" data-anim-child="slide-up">
+                  <!-- <p class="sectionHeading__subtitle">Artwork gallery</p> -->
+                  <h1 class="sectionHeading__title bdline2">Creative Works</h1>
+                  <div class="col-md-5 mx-auto mt-8 sm:d-none">
+                    <p class="text-base leading-3xl fw-500">
+                      My portfolio showcases designs crafted for international
+                      clients through freelance projects and various creative
+                      competitions.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="" data-anim-child="slide-down ">
+                  <div id="filters">
+                    <button class="btn btn-primary active" data-filter="*">
+                      All Designs
+                    </button>
+                    <button class="btn btn-primary" data-filter=".web">
+                      UI Design
+                    </button>
+                    <button class="btn btn-primary" data-filter=".design">
+                      Graphic
+                    </button>
+                    <button class="btn btn-primary" data-filter=".brand">
+                      Branding
+                    </button>
+                  </div>
                 </div>
-
-                <div class="item brand col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/brand (4).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/brand (4).png" class="img-fluid minh"  >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                
-
-
-                <!-- UI -web -->
-
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (1).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/ui/ui (1).png" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (1).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (1).png" class="img-fluid minh"   >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (2).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/ui/ui (2).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (2).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/ui/ui (2).png" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (3).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/ui/ui (3).png" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (3).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/ui/ui (3).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (4).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/ui/ui (4).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (5).png" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/ui/ui (5).png" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                
-
-                <div class="item web col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/ui/ui (8).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/ui/ui (8).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-
-                <!-- graphic 2-->
-
-
-
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (19).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (19).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (18).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (18).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (17).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (17).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (16).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img  loading="lazy" src="img/work/design/de (16).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (15).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (15).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (14).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (14).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (13).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (13).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (12).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (12).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (11).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (11).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (2).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (2).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-               
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (4).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (4).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (5).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (5).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (6).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (6).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (8).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (8).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (9).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (9).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-                <div class="item design col-lg-4 col-md-6 col-sm-12   sm:px-0">
-                  <a href="img/work/design/de (10).jpg" class="item-wrap fancybox " data-fancybox="gallery2">
-                    <div data-anim="img-up cover-white">
-                      <img loading="lazy" src="img/work/design/de (10).jpg" class="img-fluid minh"    >
-                      <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
-                    </div>
-                  </a>
-                </div>
-
-
-
-
-
-
               </div>
             </div>
+            <!-- row end -->
 
-          </section>
+            <section class="site-section col-sm-12">
+              <div class="">
+                <div id="posts" class="row layout-pt-xs">
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (1).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div
+                        class="d-block sm:d-none"
+                        data-anim-child="img-up cover-white"
+                      >
+                        <img
+                          class="img-fluid minh"
+                          src="img/work/ui/ui (1).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                      <div
+                        class="d-none sm:d-block"
+                        data-anim-child="img-up cover-white"
+                      >
+                        <img
+                          class="img-fluid minh"
+                          src="img/work/ui/ui (1).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
 
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (1).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div
+                        class="d-block sm:d-none"
+                        data-anim-child="img-up cover-white"
+                      >
+                        <img
+                          class="img-fluid minh"
+                          src="img/work/brand (1).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                      <div
+                        class="d-none sm:d-block"
+                        data-anim-child="img-up cover-white"
+                      >
+                        <img
+                          class="img-fluid minh"
+                          src="img/work/brand (1).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
 
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (1).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div
+                        class="d-block sm:d-none"
+                        data-anim-child="img-up cover-white"
+                      >
+                        <img
+                          class="img-fluid minh"
+                          src="img/work/design/de (1).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                      <div
+                        class="d-none sm:d-block"
+                        data-anim-child="img-up cover-white"
+                      >
+                        <img
+                          class="img-fluid minh"
+                          src="img/work/design/de (1).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
 
+                  <!--  -->
 
+                  <!-- brand -->
 
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (3).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          class="img-fluid minh"
+                          src="img/work/brand (3).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
 
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (4).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          class="img-fluid minh"
+                          src="img/work/brand (4).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
 
+                  <!-- web2 -->
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (5).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          class="img-fluid minh"
+                          loading="lazy"
+                          src="img/work/ui/ui (5).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
 
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (6).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          class="img-fluid minh"
+                          loading="lazy"
+                          src="img/work/ui/ui (6).png"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
 
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (6).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          class="img-fluid minh"
+                          loading="lazy"
+                          src="img/work/ui/ui (6).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
 
-          <!-- row start -->
-          <!-- <div class="cate row x-gap-32 layout-pt-sm "  >
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (7).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          class="img-fluid minh"
+                          loading="lazy"
+                          src="img/work/ui/ui (7).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- brand 2 -->
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (5).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          class="img-fluid minh"
+                          loading="lazy"
+                          src="img/work/brand (5).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (6).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          class="img-fluid minh"
+                          loading="lazy"
+                          src="img/work/brand (6).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (7).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          class="img-fluid minh"
+                          loading="lazy"
+                          src="img/work/brand (7).jpg"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- graphic 1 -->
+
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (23).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (23).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- new load -->
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (22).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (22).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (21).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (21).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (20).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (20).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- brand 2 -->
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (8).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (8).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (9).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (9).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (10).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (10).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (11).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (11).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (12).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (12).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (13).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (13).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (14).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (14).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (15).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (15).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (16).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (16).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (17).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (17).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (18).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (18).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (19).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (19).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (20).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (20).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (21).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (21).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (22).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (22).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (23).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (23).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (24).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (24).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (25).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (25).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (26).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (26).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (27).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (27).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (28).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (28).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (29).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (29).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (30).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (30).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (31).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (31).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (32).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (32).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (33).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (33).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (34).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (34).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (35).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (35).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (36).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (36).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (37).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (37).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (38).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (38).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (39).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (39).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (40).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (40).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (41).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (41).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (42).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (42).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (43).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (43).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (44).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (44).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (45).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (45).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (46).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (46).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (47).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (47).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (48).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (48).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (49).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (49).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (50).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (50).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (51).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (51).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (52).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (52).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (53).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (53).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (54).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (54).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (55).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (55).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (56).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (56).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (57).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (57).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (58).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (58).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (59).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (59).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (60).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (60).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (61).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (61).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (62).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (62).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (63).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (63).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (1).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (1).png"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (2).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (2).png"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (3).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (3).png"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item brand col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/brand (4).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/brand (4).png"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- UI -web -->
+
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (1).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/ui/ui (1).png"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (1).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (1).png"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (2).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/ui/ui (2).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (2).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/ui/ui (2).png"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (3).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/ui/ui (3).png"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (3).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/ui/ui (3).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (4).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/ui/ui (4).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (5).png"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/ui/ui (5).png"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item web col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/ui/ui (8).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/ui/ui (8).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- graphic 2-->
+
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (19).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (19).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (18).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (18).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (17).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (17).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (16).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (16).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (15).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (15).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (14).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (14).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (13).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (13).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (12).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (12).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (11).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (11).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (2).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (2).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (4).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (4).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (5).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (5).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (6).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (6).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (8).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (8).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (9).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (9).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item design col-lg-4 col-md-6 col-sm-12 sm:px-0">
+                    <a
+                      href="img/work/design/de (10).jpg"
+                      class="item-wrap fancybox"
+                      data-fancybox="gallery2"
+                    >
+                      <div data-anim="img-up cover-white">
+                        <img
+                          loading="lazy"
+                          src="img/work/design/de (10).jpg"
+                          class="img-fluid minh"
+                        />
+                        <!--  <span class="icon-search2"><i class="icon" data-feather="search"></i></span> -->
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- row start -->
+            <!-- <div class="cate row x-gap-32 layout-pt-sm "  >
             <div class="col-lg-4 col-md-6 col-sm-12  ">
               <div class="imgWork">
                 <img class="column" src="img/work/a (35).jpg" alt="">
@@ -1331,205 +2175,268 @@
          
 
           </div> -->
-          <!-- row end -->
-
-
-        </div>
-      </section>
-      <!-- section end -->
-
-      <!---------------------->
-      <!-- 4                -->
-      <!-- CALL ME NOT        -->
-      <!--                  -->
-      <!---------------------->
-
-      <!-- section start -->
-      <section class="layout-pt-lg">
-        <div data-parallax="0.7" class="z-5 js-image layout-pt-lg layout-pb-lg">
-          <div data-parallax-target class="bg-image js-lazy" data-bg="img/general/bg-mic2.jpg"></div>
-          <div class="mas2 " style="opacity: 0.82"></div>
-          <div class="bg-grid"></div>
-          <!-- container start -->
-          <div class="container">
-            <!-- row start -->
-            <div class="row justify-content-center text-center">
-              <div class="col-lg-12 sm:px-0 ">
-                <div class="sectionHeading -md ">
-                  <p class="sectionHeading__subtitle -light mb-32 " data-anim="slide-up  delay-2">
-                    Your next projects ?
-                  </p>
-                  <h2 class="sectionHeading__title  text-white sm:d-none" data-anim="slide-up delay-3">
-                    Create <span class="greenbg ">more impact</span> <br class="sm:d-none d-block" />
-                    with <span class="bluebg2 ">less work</span>
-                  </h2>
-                  <h2 class="sectionHeading__title text-white d-none sm:d-block" data-anim="slide-up delay-3">
-                    Create more impact with less work
-                  </h2>
-                  <a href="mailto:nqt99designs@gmail.com?subject=New%20Connection%20&body=Hi%2C%20I%20saw%20you%20on%20your%20website"
-                    class="button -md -outline-white -light mt-32 " data-anim="slide-up delay-4">
-                    <i class="icon mr-8" style="width:20px" data-feather="message-circle"></i> Say hi to me
-                    <!-- Send an email-->
-                  </a>
-  
-                </div>
-              </div>
-            </div>
             <!-- row end -->
-  
           </div>
-          <!-- container end -->
-        </div>
-      </section>
-      <!-- section end -->
+        </section>
+        <!-- section end -->
 
+        <!---------------------->
+        <!-- 4                -->
+        <!-- CALL ME NOT        -->
+        <!--                  -->
+        <!---------------------->
 
-     
-
-      <!-- Font Awesome CDN -->
-      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/> -->
-
-      <div data-cursor id="share-buttons" class="js-backButton2 d-none sm:d-flex  ">
-
-
-        <a class="x" data-barba href="about-me.html">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 3C10.5784 3 9.23422 3.32998 8.0387 3.9166C8.38086 4.44823 8.57841 5.0817 8.57841 5.75999C8.57841 7.65022 7.04684 9.18196 5.15682 9.18196C4.59063 9.18196 4.05703 9.04345 3.58656 8.79903C3.20774 9.79303 3 10.8726 3 11.999C3 16.971 7.03055 21 12 21C16.9695 21 21 16.971 21 11.999C21 7.02693 16.9715 3 12 3ZM12 15C10.5 15 9 13.8892 9 11.999C9 10.2202 10.5 9.18196 12 9.18196C13.5 9.18196 15 10.5 15 11.999C15 14 13.5 15 12 15Z" stroke="#101019" stroke-width="1.75"/>
-          </svg>
-        </a>
-
-        <a class="x" href="mailto:nqt99designs@gmail.com">
-          <i class="icon" style="width:20px" data-feather="mail"></i>
-
-        </a>
-
-        <a class="x" href="tel:+84938074106">
-          <i class="icon" style="width:20px" data-feather="phone-call"></i>
-          
-        </a>
-
-      </div>
-
-      <!---------------------->
-      <!-- 6                -->
-      <!-- FOOTER         -->
-      <!--                  -->
-      <!---------------------->
-      <footer class="footer -type-1 ">
-        <!-- container start -->
-        <div class="container">
-          <div class="footer__top">
-            <!-- row start -->
-            <div class="row y-gap-48 justify-content-between">
-              <div class="col-lg-auto ">
-                <div class="px-0">
-                  <div id="svgContainer" class="">
-
-                    <lottie-player src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
-                      background="transparent" speed="1" loop autoplay></lottie-player>
+        <!-- section start -->
+        <section class="layout-pt-lg">
+          <div
+            data-parallax="0.7"
+            class="z-5 js-image layout-pt-lg layout-pb-lg"
+          >
+            <div
+              data-parallax-target
+              class="bg-image js-lazy"
+              data-bg="img/general/bg-mic2.jpg"
+            ></div>
+            <div class="mas2" style="opacity: 0.82"></div>
+            <div class="bg-grid"></div>
+            <!-- container start -->
+            <div class="container">
+              <!-- row start -->
+              <div class="row justify-content-center text-center">
+                <div class="col-lg-12 sm:px-0">
+                  <div class="sectionHeading -md">
+                    <p
+                      class="sectionHeading__subtitle -light mb-32"
+                      data-anim="slide-up  delay-2"
+                    >
+                      Your next projects ?
+                    </p>
+                    <h2
+                      class="sectionHeading__title text-white sm:d-none"
+                      data-anim="slide-up delay-3"
+                    >
+                      Create <span class="greenbg">more impact</span>
+                      <br class="sm:d-none d-block" />
+                      with <span class="bluebg2">less work</span>
+                    </h2>
+                    <h2
+                      class="sectionHeading__title text-white d-none sm:d-block"
+                      data-anim="slide-up delay-3"
+                    >
+                      Create more impact with less work
+                    </h2>
+                    <a
+                      href="mailto:nqt99designs@gmail.com?subject=New%20Connection%20&body=Hi%2C%20I%20saw%20you%20on%20your%20website"
+                      class="button -md -outline-white -light mt-32"
+                      data-anim="slide-up delay-4"
+                    >
+                      <i
+                        class="icon mr-8"
+                        style="width: 20px"
+                        data-feather="message-circle"
+                      ></i>
+                      Say hi to me
+                      <!-- Send an email-->
+                    </a>
                   </div>
                 </div>
+              </div>
+              <!-- row end -->
+            </div>
+            <!-- container end -->
+          </div>
+        </section>
+        <!-- section end -->
 
-                <!-- <a data-barba href="index.html" class="footer__logo text-black">
+        <!-- Font Awesome CDN -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/> -->
+
+        <div
+          data-cursor
+          id="share-buttons"
+          class="js-backButton2 d-none sm:d-flex"
+        >
+          <a class="x" data-barba href="about-me.html">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 3C10.5784 3 9.23422 3.32998 8.0387 3.9166C8.38086 4.44823 8.57841 5.0817 8.57841 5.75999C8.57841 7.65022 7.04684 9.18196 5.15682 9.18196C4.59063 9.18196 4.05703 9.04345 3.58656 8.79903C3.20774 9.79303 3 10.8726 3 11.999C3 16.971 7.03055 21 12 21C16.9695 21 21 16.971 21 11.999C21 7.02693 16.9715 3 12 3ZM12 15C10.5 15 9 13.8892 9 11.999C9 10.2202 10.5 9.18196 12 9.18196C13.5 9.18196 15 10.5 15 11.999C15 14 13.5 15 12 15Z"
+                stroke="#101019"
+                stroke-width="1.75"
+              />
+            </svg>
+          </a>
+
+          <a class="x" href="mailto:nqt99designs@gmail.com">
+            <i class="icon" style="width: 20px" data-feather="mail"></i>
+          </a>
+
+          <a class="x" href="tel:+84938074106">
+            <i class="icon" style="width: 20px" data-feather="phone-call"></i>
+          </a>
+        </div>
+
+        <!---------------------->
+        <!-- 6                -->
+        <!-- FOOTER         -->
+        <!--                  -->
+        <!---------------------->
+        <footer class="footer -type-1">
+          <!-- container start -->
+          <div class="container">
+            <div class="footer__top">
+              <!-- row start -->
+              <div class="row y-gap-48 justify-content-between">
+                <div class="col-lg-auto">
+                  <div class="px-0">
+                    <div id="svgContainer" class="">
+                      <lottie-player
+                        src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay
+                      ></lottie-player>
+                    </div>
+                  </div>
+
+                  <!-- <a data-barba href="index.html" class="footer__logo text-black">
                   <img class="js-lazy" data-srcset="img/logo/logo.svg" height="29px!important" alt="WagTrung Logo" />
 
                 </a> -->
-
-
-              </div>
-
-
-              <div class="col-lg-auto col-sm-4">
-
-                <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8 ">Links</h4>
-
-                <div class="footer__content text-base text-dark mt-8  ">
-                  <div>
-                    <a data-barba href="case-studies.html" class="button -underline stagerhover stagerhover">Case Study</a>
-                  </div>
-
-                  <div>
-                    <a data-barba href="about-me.html" class="button -underline stagerhover sm:mt-4 mt-12 stagerhover">Experiences</a>
-                  </div>
-
-                  <div>
-                    <a data-barba href="works.html" class="button -underline stagerhover sm:mt-4 mt-12 stagerhover">Designs</a>
-                  </div>
-
-
-
                 </div>
-              </div>
 
-              <div class="col-lg-3 col-sm-6">
-                <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8 ">Info</h4>
+                <div class="col-lg-auto col-sm-4">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Links</h4>
 
-                <div class="footer__content text-base text-dark mb-16 sm:mt-12">
-                  <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
-                  <div>
-                    <a data-barba class="button -underline stagerhover sm:mt-4 mt-12"
-                      href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
+                  <div class="footer__content text-base text-dark mt-8">
+                    <div>
+                      <a
+                        data-barba
+                        href="case-studies.html"
+                        class="button -underline stagerhover stagerhover"
+                        >Case Study</a
+                      >
+                    </div>
+
+                    <div>
+                      <a
+                        data-barba
+                        href="about-me.html"
+                        class="button -underline stagerhover sm:mt-4 mt-12 stagerhover"
+                        >Experiences</a
+                      >
+                    </div>
+
+                    <div>
+                      <a
+                        data-barba
+                        href="works.html"
+                        class="button -underline stagerhover sm:mt-4 mt-12 stagerhover"
+                        >Designs</a
+                      >
+                    </div>
                   </div>
-                  <div>
-                    <a data-barba class="button -underline stagerhover sm:mt-4 mt-12" href="tel:+84938074106">+84 938 074 106</a>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Info</h4>
+
+                  <div
+                    class="footer__content text-base text-dark mb-16 sm:mt-12"
+                  >
+                    <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
+                    <div>
+                      <a
+                        data-barba
+                        class="button -underline stagerhover sm:mt-4 mt-12"
+                        href="mailto:nqt99designs@gmail.com"
+                        >nqt99designs@gmail.com</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        data-barba
+                        class="button -underline stagerhover sm:mt-4 mt-12"
+                        href="tel:+84938074106"
+                        >+84 938 074 106</a
+                      >
+                    </div>
                   </div>
-
                 </div>
-              </div>
 
-
-
-              <div class="col-lg-auto col-auto">
-                <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8 ">Explore more</h4>
-                <div class="social -bordered mt-16 sm:mt-16">
-                  <a class="social__item  text-black " href="#">
-                    <i class="fa fa-behance"></i>
-                  </a>
-                  <a class="social__item  text-black" href="https://www.linkedin.com/in/wagtrung/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- row end -->
-          </div>
-
-          <div class="footer__bottom layout-pb-md">
-            <!-- row start -->
-            <div class="row ">
-              <div class="col">
-                <div class="footer__copyright">
-                  <div class="d-flex align-items-center x-gap-32">
-                    <a target="_blank"
-                      
-                      class="modalcta button -sm -outline-black -light text-black sm:d-none" style="font-size:.8rem">
-                      <i class="icon size-2xs str-width-lg  mr-8" data-feather="download"></i>Download my CV
+                <div class="col-lg-auto col-auto">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">
+                    Explore more
+                  </h4>
+                  <div class="social -bordered mt-16 sm:mt-16">
+                    <a class="social__item text-black" href="#">
+                      <i class="fa fa-behance"></i>
                     </a>
-                    <p class="text-left fw-500 text-dark">
-                      © 2022, designed & coded by <a data-barba href="about-me.html">
-                        <span class="button -underline4 pb-0 text-sm text-dark "> wagtrung.</span>
-                      </a>
-                    </p>
+                    <a
+                      class="social__item text-black"
+                      href="https://www.linkedin.com/in/wagtrung/"
+                    >
+                      <i class="fa fa-linkedin"></i>
+                    </a>
                   </div>
                 </div>
               </div>
+              <!-- row end -->
             </div>
-            <!-- row end © 2020, This web is fully coded by wagtrung.    -->
+
+            <div class="footer__bottom layout-pb-md">
+              <!-- row start -->
+              <div class="row">
+                <div class="col">
+                  <div class="footer__copyright">
+                    <div class="d-flex align-items-center x-gap-32">
+                      <a
+                        target="_blank"
+                        class="modalcta button -sm -outline-black -light text-black sm:d-none"
+                        style="font-size: 0.8rem"
+                      >
+                        <i
+                          class="icon size-2xs str-width-lg mr-8"
+                          data-feather="download"
+                        ></i
+                        >Download my CV
+                      </a>
+                      <p class="text-left fw-500 text-dark">
+                        © 2022, designed & coded by
+                        <a data-barba href="about-me.html">
+                          <span
+                            class="button -underline4 pb-0 text-sm text-dark"
+                          >
+                            wagtrung.</span
+                          >
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row end © 2020, This web is fully coded by wagtrung.    -->
+            </div>
           </div>
-        </div>
-        <!-- container end -->
-      </footer>
-      <!-- footer end  -->
-    </main>
-  </div>
-  <!-- barba container end -->
+          <!-- container end -->
+        </footer>
+        <!-- footer end  -->
+      </main>
+    </div>
+    <!-- barba container end -->
 
-  <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script type="module" src="js/main.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
- 
-
-</body>
-
+    <!-- JavaScript -->
+    <script src="js/vendors.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
 </html>

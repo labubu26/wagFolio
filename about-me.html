@@ -1,147 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) hello nè master -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) hello nè master -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-Q2V304TRLZ");
+    </script>
 
-    gtag('config', 'G-Q2V304TRLZ');
-  </script>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Required meta tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Primary Meta Tags -->
+    <meta
+      name="description"
+      content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions."
+    />
 
-  <!-- Primary Meta Tags -->
-  <meta name="description"
-    content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions." />
+    <!--  Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wagtrung.netlify.app/about-me" />
+    <meta property="og:title" content="About WagTrung" />
+    <meta
+      property="og:description"
+      content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions."
+    />
+    <meta property="og:image" content="img/meta/about.png" />
 
-  <!--  Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://wagtrung.netlify.app/about-me" />
-  <meta property="og:title" content="About WagTrung" />
-  <meta property="og:description"
-    content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions." />
-  <meta property="og:image" content="img/meta/about.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://wagtrung.netlify.app/about-me"
+    />
+    <meta property="twitter:title" content="About WagTrung" />
+    <meta
+      property="twitter:description"
+      content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions."
+    />
+    <meta property="twitter:image" content="img/meta/home.png" />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://wagtrung.netlify.app/about-me" />
-  <meta property="twitter:title" content="About WagTrung" />
-  <meta property="twitter:description"
-    content="UI/UX designer dedicated to creating user-centric digital experiences. Specializing in interaction design, prototyping, and crafting intuitive interfaces. Explore my portfolio and services for impactful design solutions." />
-  <meta property="twitter:image" content="img/meta/home.png" />
-
-  <!-- Google fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    <!-- Google fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" /> -->
-     
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css" />
-<link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/vendors.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
-  <meta name="theme-color" content="#ffffff" />
+    <title>About Me</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 
-  <title>About Me</title>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
+  </head>
 
-<script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script></head>
+  <body class="preloader-visible" data-barba="wrapper">
+    <modal-pass data-file="cv">
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <div class="d-flex align-items-center w-full">
+          <input
+            type="text"
+            placeholder="Type your given passcode"
+            id="passInput"
+          />
+        </div>
 
-<body class="preloader-visible" data-barba="wrapper">
-
-  <modal-pass data-file="cv">
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-      <div class="d-flex align-items-center w-full">
-        <input type="text" placeholder="Type your given passcode" id="passInput" >
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="passSubmit"
+        >
+          Download Now
+        </a>
       </div>
-    
-    <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="passSubmit">
-    Download Now
-    </a>
-    </div>
-  </modal-pass>
+    </modal-pass>
 
-<modal-unlock>
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-    <input type="text" placeholder="Type your given passcode" id="unlockpassInput">
-    <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="unlockSubmit">
-    Unlock to read
-    </a>
-    </div>
-  </modal-unlock>
+    <modal-unlock>
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <input
+          type="text"
+          placeholder="Type your given passcode"
+          id="unlockpassInput"
+        />
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="unlockSubmit"
+        >
+          Unlock to read
+        </a>
+      </div>
+    </modal-unlock>
 
-  
-
-  <!---------------------->
-  <!-- 0                -->
-  <!-- PRE-LOAD         -->
-  <!--                  -->
-  <!---------------------->
-  <!-- preloader start -->
-  <div class="preloader js-preloader">
-    <div class="preloader__bg"></div>
-
-    <div class="preloader__progress">
-      <div class="preloader__progress__inner"></div>
-    </div>
-  </div>
-  <!-- preloader end -->
-
-  <div class="header2">
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-    </div>
-  </div>
-  <!-- barba container start -->
-  <div class="barba-container" data-barba="container">
     <!---------------------->
     <!-- 0                -->
-    <!-- BACK TO TOP      -->
+    <!-- PRE-LOAD         -->
     <!--                  -->
     <!---------------------->
-    <!-- to-top-button start -->
-    <div data-cursor class="backButton js-backButton">
-      <span class="backButton__bg"></span>
-      <div class="backButton__icon__wrap">
-        <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+    <!-- preloader start -->
+    <div class="preloader js-preloader">
+      <div class="preloader__bg"></div>
+
+      <div class="preloader__progress">
+        <div class="preloader__progress__inner"></div>
       </div>
     </div>
-    <!-- to-top-button end -->
+    <!-- preloader end -->
 
-    <main class="text-lg sm:text-base">
-       <!---------------------->
+    <div class="header2">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+    <!-- barba container start -->
+    <div class="barba-container" data-barba="container">
+      <!---------------------->
       <!-- 0                -->
-      <!-- NAV WRITTING OUT -->
+      <!-- BACK TO TOP      -->
       <!--                  -->
       <!---------------------->
-      <header class=" header -light -sticky-light js-header">
-        <!-- header__bar start -->
-        <div class="header__bar ">
-          <div class="header__logo js-header-logo">
-            <a data-barba href="index.html">
-              <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
-              <div class="header__logo__dark js-lazy">
-                <div class="header__logo__dark__inner"></div>
-              </div>          
-            </a>
-          </div>
+      <!-- to-top-button start -->
+      <div data-cursor class="backButton js-backButton">
+        <span class="backButton__bg"></span>
+        <div class="backButton__icon__wrap">
+          <i
+            class="backButton__button js-top-button"
+            data-feather="arrow-up"
+          ></i>
+        </div>
+      </div>
+      <!-- to-top-button end -->
 
-          <div class="header__menu js-header-menu row align-items-start justify-content-end col-4">
-            <!-- <div class="col-4 text-center md:d-none">
+      <main class="text-lg sm:text-base">
+        <!---------------------->
+        <!-- 0                -->
+        <!-- NAV WRITTING OUT -->
+        <!--                  -->
+        <!---------------------->
+        <header class="header -light -sticky-light js-header">
+          <!-- header__bar start -->
+          <div class="header__bar">
+            <div class="header__logo js-header-logo">
+              <a data-barba href="index.html">
+                <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
+                <div class="header__logo__dark js-lazy">
+                  <div class="header__logo__dark__inner"></div>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="header__menu js-header-menu row align-items-start justify-content-end col-4"
+            >
+              <!-- <div class="col-4 text-center md:d-none">
               <a data-barba href="writing.html">
                 <div class="button -underline4 text-cen2 fw-600 text-base text-dark">
                   <i class="icon size-3xs mr-8 text-accent2" data-feather="edit-3"></i>
@@ -150,482 +184,569 @@
               </a>
             </div> -->
 
-            <div class="col-4 text-center md:d-none">
-              <a data-barba target="_blank">
-                <div class="modalcta button -underline4 text-cen2 fw-600 text-base text-dark">
-                  <i class="icon size-3xs mr-8 text-accent2" data-feather="download"></i>
-                  My CV
-                </div>
-              </a>
-            </div>
-            <div class="col-auto ml-8 md:px-0 md:ml-0">
-              <button type="button" class="nav-button-open js-nav-open">
-                <i class="icon" data-feather="menu"></i>
-              </button>
+              <div class="col-4 text-center md:d-none">
+                <a data-barba target="_blank">
+                  <div
+                    class="modalcta button -underline4 text-cen2 fw-600 text-base text-dark"
+                  >
+                    <i
+                      class="icon size-3xs mr-8 text-accent2"
+                      data-feather="download"
+                    ></i>
+                    My CV
+                  </div>
+                </a>
+              </div>
+              <div class="col-auto ml-8 md:px-0 md:ml-0">
+                <button type="button" class="nav-button-open js-nav-open">
+                  <i class="icon" data-feather="menu"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- header__bar end -->
+          <!-- header__bar end -->
 
-        <!---------------------->
-        <!-- 0                -->
-        <!-- NAV INSIDE         -->
-        <!--                  -->
-        <!---------------------->
-        <nav class="nav js-nav">
-          <div class="nav__inner js-nav-inner">
-            <div class="nav__bg js-nav-bg" style="position:relative">
-              <div class="bg-grid"></div>
-              <!-- style="border-bottom: 4px solid; -->
-              <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
-              <div class="nav__container">
-                <div class="nav__header">
-                  <button type="button" class="nav-button-back js-nav-back">
-                    <i class="icon" data-feather="arrow-left-circle"></i>
-                  </button>
+          <!---------------------->
+          <!-- 0                -->
+          <!-- NAV INSIDE         -->
+          <!--                  -->
+          <!---------------------->
+          <nav class="nav js-nav">
+            <div class="nav__inner js-nav-inner">
+              <div class="nav__bg js-nav-bg" style="position: relative">
+                <div class="bg-grid"></div>
+                <!-- style="border-bottom: 4px solid; -->
+                <!-- border-image-slice: 1; border-image-source: linear-gradient(90deg, rgba(69,91,243,1) 0%, rgba(29,168,241,1) 18%, rgba(39,208,152,1) 39%, rgba(3, 10, 32, 0.956) 69%)" -->
+                <div class="nav__container">
+                  <div class="nav__header">
+                    <button type="button" class="nav-button-back js-nav-back">
+                      <i class="icon" data-feather="arrow-left-circle"></i>
+                    </button>
 
-                  <button type="button" class="mt-24 nav-btn-close js-nav-close pointer-events-none">
-                    <i class="icon str-weight-3xl" data-feather="x"></i>
-                  </button>
+                    <button
+                      type="button"
+                      class="mt-24 nav-btn-close js-nav-close pointer-events-none"
+                    >
+                      <i class="icon str-weight-3xl" data-feather="x"></i>
+                    </button>
+                  </div>
 
+                  <div class="nav__content">
+                    <div class="nav__content__left">
+                      <div class="navList__wrap">
+                        <ul class="navList js-navList">
+                          <li>
+                            <a class="stagerhover" data-barba href="index.html">
+                              Home
+                            </a>
+                          </li>
+
+                          <li>
+                            <a
+                              class="stagerhover"
+                              data-barba
+                              href="case-studies.html"
+                            >
+                              Case Study
+                            </a>
+                          </li>
+
+                          <li>
+                            <a
+                              class="stagerhover"
+                              data-barba
+                              href="about-me.html"
+                            >
+                              Experiences
+                            </a>
+                          </li>
+
+                          <li>
+                            <a class="stagerhover" data-barba href="works.html">
+                              Designs
+                            </a>
+                          </li>
+
+                          <li>
+                            <a
+                              target="_blank"
+                              class="modalcta button -sm -outline-white text-white -light"
+                            >
+                              <i class="icon mr-8" data-feather="download"></i>
+                              Download my CV
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="nav__content__right">
+                      <div class="nav__info">
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Digital Thinker
+                          </h5>
+
+                          <div class="nav__info__content text-lg mt-16">
+                            <p>Ngo Quang Trung</p>
+                          </div>
+                        </div>
+
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Social sites
+                          </h5>
+
+                          <div class="nav__info__content text-lg mt-16">
+                            <a
+                              class="stagerhover"
+                              target="_blank"
+                              href="https://www.linkedin.com/in/wagtrung/"
+                              >LinkedIn</a
+                            >
+                            <a
+                              class="stagerhover"
+                              target="_blank"
+                              href="https://www.behance.com/powow/"
+                              >Behance</a
+                            >
+                          </div>
+                        </div>
+
+                        <div class="nav__info__item js-navInfo-item">
+                          <h5 class="text-sm tracking-none fw-500">
+                            Contact Me
+                          </h5>
+
+                          <div class="nav__info__content text-lg mt-16">
+                            <a
+                              class="stagerhover"
+                              href="mailto:nqt99designs@gmail.com"
+                              >nqt99designs@gmail.com</a
+                            >
+                            <a class="stagerhover" href="tel:+84938074106"
+                              >+84 938 074 106</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- nav end -->
+        </header>
+        <!-- header end -->
+
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+
+        <!-- section start   -->
+
+        <section class="layout-pt-2xl">
+          <div data-anim-wrap>
+            <!-- container start -->
+            <div class="container">
+              <!-- row start -->
+              <div class="row justify-content-between">
+                <div class="col-lg-6 col-sm-12" data-anim-child="slide-up">
+                  <div class="sectionHeading -sm">
+                    <h1 class="sectionHeading__title poppins">
+                      Greetings, <br class="d-block md:d-none" /><span
+                        class="bd2line pb-8 sm:pl-0"
+                      >
+                        Call me Trung.</span
+                      >
+                      <!-- <mark>Quang Trung</mark> -->
+                    </h1>
+                    <p class="col-sm-10 pl-0 ttext-black mt-40 sm:mt-16">
+                      Creative UX/UI Designer, facilitating and supporting human
+                      interactions with approachable user experience for
+                      products.
+                    </p>
+                  </div>
                 </div>
 
-                <div class="nav__content">
-                  <div class="nav__content__left">
-                    <div class="navList__wrap">
+                <div class="col-lg-6 col-sm-12">
+                  <div data-anim-child="slide-up delay-1">
+                    <!-- <p class="  fw-400" >
+                    I design websites and mobile apps for startups to help them launch their product and attract more customers.
+                  </p> -->
+                    <p class="md:mt-20">
+                      With IT background, I consistently strive to develop
+                      <mark>user-centric solutions</mark> encompassing user
+                      research, personas, empathy mapping, user flows, journey
+                      mapping, information architecture, wireframing,
+                      prototyping, design systems, and usability testing. I find
+                      immense satisfaction in shepherding projects from
+                      conceptualization to tangible design, particularly when
+                      the end result is in the user's hands. Moreover,
+                      <mark
+                        >I actively engage in various creative
+                        competitions</mark
+                      >, exploring diverse realms such as branding, graphic
+                      design, key visual creation, and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- row end -->
+            </div>
+            <!-- container end -->
 
-                      <ul class="navList js-navList">
+            <!-- container start -->
+            <!-- <a data-anim-child="slide-up" href="https://www.youtube.com/watch?v=-JRyjxlwy1Q" target="_blank"
+            rel="noopener noreferrer"> -->
+            <div class="container-fluid px-0 layout-pt-xl text-center">
+              <div data-parallax="0.5" class="h-lg sm:h-md">
+                <div
+                  data-parallax-target
+                  class="bg-image js-lazy"
+                  data-bg="img/backgrounds/about.jpg"
+                ></div>
+              </div>
+            </div>
+            <!-- </a> -->
+            <!-- container end -->
+          </div>
+        </section>
+        <!-- section end -->
+
+        <div data-anim="slide-up" class="figma-cursor">
+          <svg
+            width="20"
+            height="23"
+            viewBox="0 0 20 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.83553 19.1728C5.59728 19.5736 4.98856 19.459 4.91245 18.999L2.16648 2.40288C2.09679 1.98167 2.55301 1.67251 2.9184 1.89334L16.7021 10.2239C17.0816 10.4533 16.9969 11.0264 16.5674 11.1363L9.74531 12.8815C9.61707 12.9143 9.50708 12.9966 9.43944 13.1104L5.83553 19.1728Z"
+              fill="#18AB6E"
+            />
+          </svg>
+          <span class="figma-name">wag</span>
+        </div>
+
+        <!---------------------->
+        <!--                  -->
+        <!-- EXPERIENCES      -->
+        <!--                  -->
+        <!---------------------->
+        <section
+          class="layout-pt-lg layout-pb-lg border-bottom-dark noSm"
+          data-anim-wrap
+        >
+          <!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div class="row" data-anim="fade">
+              <div class="col-md-12 col-lg-9">
+                <div class="sectionHeading -sm">
+                  <p class="sectionHeading__subtitle mb-8 sm:d-none">
+                    Creative Field
+                  </p>
+                  <h2 class="sectionHeading__title">Experiences</h2>
+                </div>
+              </div>
+            </div>
+            <!-- row end -->
+
+            <!-- row start -->
+            <div
+              class="row no-gutters mb-16 layout-pt-xs sm:d-none"
+              style="padding: 2.5rem 120px 0px 0px"
+              data-anim="fade"
+            >
+              <div class="col-md-3 sm:d-none">
+                <p class="title-xs fw-500 text-dark">Time</p>
+              </div>
+
+              <div class="col-md-4">
+                <p class="title-xs fw-500 text-dark">Job Title</p>
+              </div>
+
+              <div class="col-md-4 offset-md-1">
+                <p class="title-xs fw-500 text-dark">Company Name</p>
+              </div>
+
+              <!-- <div class="col-lg-2 offset-lg-1 col-md-3 ">
+              <p class="title-xs fw-500 text-dark">
+                Link
+              </p>
+            </div> -->
+            </div>
+            <!-- row end -->
+
+            <div class="section- border-bottom-dark noSm">
+              <!-- jobnow INSPIRE job -->
+              <button class="accordion sm active sm:px-0" data-anim="slide-up">
+                <!-- 1 row start 2023-->
+                <div
+                  class="row align-items-center no-gutters border-bottom-dark noSm"
+                >
+                  <div class="col-md-3 sm:d-none">
+                    <p class="text-black sm:text-dark sm:text-sm fw-500">
+                      Jun 2023 - Now
+                    </p>
+                    <p class="text-base text-dark sm:d-none">1 year 3 months</p>
+                  </div>
+
+                  <div class="col-md-4 sm:mt-8">
+                    <p class="text-black fw-500 sm:fw-500">
+                      Product Designer (UI/UX)
+                    </p>
+                    <p class="text-base text-dark">Full-time</p>
+                  </div>
+
+                  <div class="col-md-4 offset-md-1">
+                    <div class="img-gray sm:mt-8 d-flex align-items-center">
+                      <img
+                        src="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM3RkSWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c59c6bf584d6e45fde1c767e0130a99fd1853269/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJc0FXa0NMQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--15c3f2f3e11927673ae52b71712c1f66a7a1b7bd/ava1.png"
+                        alt=""
+                        height="40px"
+                      />
+                      <p
+                        class="fw-500 ml-16 sm:ml-8 text-black sm:text-dark sm:text-base"
+                      >
+                        Inspirelab Technology
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- row end -->
+              </button>
+              <div class="panel">
+                <div class="row x-gap-72 justify-content-start">
+                  <div class="col-md-7 col-sm-12" data-anim="slide-up delay-1">
+                    <p class="subcap text-sm text-cen2 leading-1">
+                      Contributions
+                    </p>
+                    <ul class="dot text-base text-dark mb-12 mt-16 sm:mt-12">
+                      <li>
+                        Built a design system using Figma variables (2023) and
+                        <mark
+                          >managed GitLab repositories for token files in JSON
+                          format</mark
+                        >
+                        across two development teams.
+                      </li>
+                      <li>
+                        Designed and implemented interface screens for gaming
+                        and payment products; contributed to branding for
+                        cryptocurrency, advertising, and payment side projects.
+                      </li>
+                      <li>
+                        Conducted desk research, competitive analysis, user
+                        flows, and facilitated handoff and kickoff meetings, as
+                        well as UAT.
+                      </li>
+                      <li>
+                        Collaborated in an
+                        <mark
+                          >Agile development team with a Lean UX approach</mark
+                        >
+                        using Slack, Jira, and Confluence.
+                      </li>
+                      <li>
+                        Optimized assets for improved loading performance and
+                        supported 2D graphics.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class="col-md-5 col-sm-12 sm:mt-16"
+                    data-anim="slide-up delay-3"
+                  >
+                    <p class="subcap text-sm text-cen2 leading-1">
+                      Achievements
+                    </p>
+                    <ul class="dot text-dark mb-12 mt-12 text-base">
+                      <li class="-suc -gray">
+                        <p>Rising star award.</p>
+                      </li>
+                      <li class="-suc -gray">
+                        <p>360 Review by colleagues : Performance 5/5</p>
+                      </li>
+                    </ul>
+                    <div class="row pt-16 sm:pb-24">
+                      <div class="col-6">
+                        <div data-anim="img-up cover-light-1 ">
+                          <img
+                            data-enlargable
+                            class="img-fluid"
+                            src="img/general/rising.png"
+                          />
+                          <!-- <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">IA - Leave Request page</p> -->
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div data-anim="img-up cover-light-1  ">
+                          <img
+                            data-enlargable
+                            class="img-fluid"
+                            src="img/general/space.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- job1 MEU job -->
+              <button class="accordion sm sm:px-0" data-anim="slide-up">
+                <!-- 1 row start 2023-->
+                <div
+                  class="row align-items-center no-gutters border-bottom-dark noSm"
+                >
+                  <div class="col-md-3 sm:d-none">
+                    <p class="text-black sm:text-dark sm:text-sm fw-500">
+                      Mar 2021 - Aug 2022
+                    </p>
+                    <p class="text-base text-dark sm:d-none">Almost 2 years</p>
+                  </div>
+
+                  <div class="col-md-4 sm:mt-8">
+                    <p class="text-black fw-500 sm:fw-500">
+                      Digital Product Designer
+                    </p>
+                    <p class="text-base text-dark">Full-time</p>
+                  </div>
+
+                  <div class="col-md-4 offset-md-1">
+                    <div class="img-gray sm:mt-8 d-flex align-items-center">
+                      <img
+                        src="http://meu-solutions.com/wp-content/uploads/2020/08/MeU-logo-newest-08-150.png"
+                        alt=""
+                        height="40px"
+                      />
+                      <p
+                        class="fw-500 ml-16 sm:ml-8 text-black sm:text-dark sm:text-base"
+                      >
+                        MEU Solutions
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- row end -->
+              </button>
+              <div class="panel">
+                <div class="row x-gap-72 justify-content-start">
+                  <div class="col-md-7 col-sm-12">
+                    <p class="subcap text-sm text-cen2 leading-1">
+                      Contributions
+                    </p>
+                    <ul class="dot text-base text-dark mb-12 mt-16 sm:mt-12">
+                      <li>
+                        Enhance user flows to boost productivity 3 times faster
+                        in HRM System, and gain 20% user engagement by
+                        re-designing existing UIs and evaluate heuristic testing
+                      </li>
+                      <li>
+                        Support development team with the knowledge of HTML/CSS/
+                        JavaScript and Vue Framework to drive desired outcomes.
+                      </li>
+                      <li>
+                        Partnered with product manager to find opportunities and
+                        integrate user requirements intro product strategy
+                      </li>
+                      <li>
+                        Help improve information architecture by assisting with
+                        card sorting and build wireframes to effectively
+                        communicate interaction and design concepts.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-5 col-sm-12 sm:mt-16">
+                    <p class="subcap text-sm text-cen2 leading-1">
+                      Achievements
+                    </p>
+                    <ul class="dot text-dark mb-12 mt-12 text-base">
+                      <li class="-suc -gray">
+                        <p>
+                          Create user-centered designs that can be reusable to
+                          boost productivity.
+                        </p>
+                      </li>
+                      <li class="-suc -gray">
+                        <p>
+                          Redesign the process that helps projects gain more
+                          customer.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- job2 -->
+              <button class="accordion sm sm:px-0" data-anim="slide-up">
+                <!-- 1 row start 2023-->
+                <div
+                  class="row align-items-center no-gutters border-bottom-dark noSm"
+                >
+                  <div class="col-md-3 sm:d-none">
+                    <p class="text-black sm:text-dark sm:text-sm fw-500">
+                      Jan - Nov 2020
+                    </p>
+                    <p class="text-base text-dark sm:d-none">10 months</p>
+                  </div>
+
+                  <div class="col-md-4 sm:mt-8">
+                    <p class="text-black fw-500 sm:fw-500">UI/UX Designer</p>
+                    <p class="text-base text-dark">Full-time</p>
+                  </div>
+
+                  <div class="col-md-4 offset-md-1">
+                    <div class="img-gray sm:mt-8 d-flex align-items-center">
+                      <img src="/img/general/tinder.png" height="40px" />
+                      <p
+                        class="fw-500 ml-16 sm:ml-8 text-black sm:text-dark sm:text-base"
+                      >
+                        Alo IELTS
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- row end -->
+              </button>
+              <div class="panel">
+                <div class="row x-gap-60 justify-content-start">
+                  <div class="col-md-7 col-sm-12 sm:mr-0">
+                    <div>
+                      <p class="subcap text-sm text-cen2 leading-1">
+                        Contributions
+                      </p>
+                      <ul class="dot text-dark mb-12 mt-12 text-base">
                         <li>
-                          <a class="stagerhover" data-barba href="index.html"> Home </a>
+                          Design reusable components for desktop mobile devices
+                          with consistent UI design system, patterns, libraries
+                          and assets.
                         </li>
-
                         <li>
-                          <a class="stagerhover" data-barba href="case-studies.html">
-                            Case Study
-                          </a>
+                          Conduct user research, analyze usability testing to
+                          drive design decisions and provide MVP solutions.
                         </li>
-
-
-
                         <li>
-                          <a class="stagerhover" data-barba href="about-me.html"> Experiences </a>
+                          Prepare mockups proposals to internal team and key
+                          stakeholders with prototypes for review and feedback
                         </li>
-
                         <li>
-                          <a class="stagerhover" data-barba href="works.html">
-                            Designs
-                          </a>
-                        </li>
-
-                        <li>
-                          <a target="_blank"
-                            class="modalcta button -sm -outline-white text-white  -light ">
-                            <i class="icon mr-8" data-feather="download"></i> Download my CV
-                          </a>
+                          Make sure everything delivered is user centered,
+                          cost-effective, easy to use, desirable and accessible.
                         </li>
                       </ul>
                     </div>
                   </div>
 
-                  <div class="nav__content__right">
-                    <div class="nav__info">
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500 ">
-                          Digital Thinker
-                        </h5>
-
-                        <div class="nav__info__content text-lg mt-16">
-                          <p>Ngo Quang Trung</p>
-                        </div>
-                      </div>
-
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500 ">
-                          Social sites
-                        </h5>
-
-                        <div class="nav__info__content text-lg mt-16">
-                          <a class="stagerhover" target="_blank"
-                            href="https://www.linkedin.com/in/wagtrung/">LinkedIn</a>
-                          <a class="stagerhover" target="_blank" href="https://www.behance.com/powow/">Behance</a>
-
-                        </div>
-                      </div>
-
-                      <div class="nav__info__item js-navInfo-item">
-                        <h5 class="text-sm tracking-none fw-500 ">Contact Me</h5>
-
-                        <div class="nav__info__content text-lg mt-16">
-                          <a class="stagerhover" href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
-                          <a class="stagerhover" href="tel:+84938074106">+84 938 074 106</a>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </nav>
-        <!-- nav end -->
-      </header>
-      <!-- header end -->
-
-
-
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-
-      <!-- section start   -->
-
-      <section class="layout-pt-2xl">
-        <div data-anim-wrap>
-          <!-- container start -->
-          <div class="container">
-            <!-- row start -->
-            <div class="row justify-content-between">
-              <div class="col-lg-6 col-sm-12" data-anim-child="slide-up">
-                <div class="sectionHeading -sm">
-                 
-                  <h1 class="sectionHeading__title poppins">
-                    Greetings,  <br class="d-block md:d-none" /><span class="bd2line pb-8 sm:pl-0">
-                     Call me Trung.</span>
-                    <!-- <mark>Quang Trung</mark> -->
-                  </h1>
-                  <p class="col-sm-10 pl-0 ttext-black mt-40 sm:mt-16">
-                    Creative UX/UI Designer, facilitating
-                    and supporting human interactions with approachable user
-                    experience for products.
-                  </p>
-                  
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-sm-12">
-                <div data-anim-child="slide-up delay-1">
-                  <!-- <p class="  fw-400" >
-                    I design websites and mobile apps for startups to help them launch their product and attract more customers.
-                  </p> -->
-                  <p class="md:mt-20">
-                    With IT background, I consistently strive to develop <mark>user-centric solutions</mark> encompassing user research, personas, empathy mapping, user flows, journey mapping, information architecture, wireframing, prototyping, design systems, and usability testing. I find immense satisfaction in shepherding projects from conceptualization to tangible design, particularly when the end result is in the user's hands.
-                  </br>
-                </br>
-Moreover, <mark>I actively engage in various creative competitions</mark>, exploring diverse realms such as branding, graphic design, key visual creation, and more.
-
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- row end -->
-          </div>
-          <!-- container end -->
-          
-          <!-- container start -->
-          <!-- <a data-anim-child="slide-up" href="https://www.youtube.com/watch?v=-JRyjxlwy1Q" target="_blank"
-            rel="noopener noreferrer"> -->
-            <div class="container-fluid px-0 layout-pt-xl text-center">
-              <div  data-parallax="0.5" class="h-lg sm:h-md">
-                <div data-parallax-target class="bg-image js-lazy" data-bg="img/backgrounds/about.jpg"></div>
-              </div>
-            </div>
-          <!-- </a> -->
-          <!-- container end -->
-        </div>
-      </section>
-      <!-- section end -->
-     
-      
-
-      <div data-anim="slide-up" class="figma-cursor">
-
-          <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M5.83553 19.1728C5.59728 19.5736 4.98856 19.459 4.91245 18.999L2.16648 2.40288C2.09679 1.98167 2.55301 1.67251 2.9184 1.89334L16.7021 10.2239C17.0816 10.4533 16.9969 11.0264 16.5674 11.1363L9.74531 12.8815C9.61707 12.9143 9.50708 12.9966 9.43944 13.1104L5.83553 19.1728Z"
-              fill="#18AB6E" />
-          </svg>
-          <span class="figma-name">wag</span>
-
-      </div>
-
-    
-
-
-
-      <!---------------------->
-      <!--                  -->
-      <!-- EXPERIENCES      -->
-      <!--                  -->
-      <!---------------------->
-      <section class="layout-pt-lg layout-pb-lg border-bottom-dark noSm" data-anim-wrap>
-        <!-- container start -->
-        <div class="container">
-          <!-- row start -->
-          <div class="row" data-anim="fade">
-            <div class="col-md-12 col-lg-9">
-              <div class="sectionHeading -sm">
-                <p class="sectionHeading__subtitle mb-8 sm:d-none">
-                  Creative Field
-                </p>
-                <h2 class="sectionHeading__title">Experiences</h2>
-              </div>
-            </div>
-          </div>
-          <!-- row end -->
-
-          <!-- row start -->
-          <div class="row no-gutters mb-16 layout-pt-xs sm:d-none" style="padding: 2.5rem 120px 0px 0px" data-anim="fade">
-            <div class="col-md-3 sm:d-none">
-              <p class="title-xs fw-500 text-dark">Time</p>
-            </div>
-
-            <div class="col-md-4">
-              <p class="title-xs fw-500 text-dark">Job Title</p>
-            </div>
-
-            <div class="col-md-4 offset-md-1">
-              <p class="title-xs fw-500 text-dark">Company Name</p>
-            </div>
-
-            <!-- <div class="col-lg-2 offset-lg-1 col-md-3 ">
-              <p class="title-xs fw-500 text-dark">
-                Link
-              </p>
-            </div> -->
-          </div>
-          <!-- row end -->
-
-          <div class="section- border-bottom-dark noSm" >
-            <!-- jobnow INSPIRE job -->
-            <button class="accordion sm active sm:px-0" data-anim="slide-up">
-              <!-- 1 row start 2023-->
-              <div class="row align-items-center no-gutters border-bottom-dark noSm">
-                <div class="col-md-3 sm:d-none">
-                  <p class="text-black sm:text-dark sm:text-sm fw-500">
-                    Jun 2023 - Now
-                  </p>
-                  <p class="text-base text-dark sm:d-none">1 year 3 months</p>
-                </div>
-
-                <div class="col-md-4 sm:mt-8">
-                  <p class="text-black fw-500 sm:fw-500">
-                    Product Designer (UI/UX)
-                  </p>
-                  <p class="text-base text-dark">Full-time</p>
-                </div>
-
-                <div class="col-md-4 offset-md-1">
-                  <div class="img-gray sm:mt-8 d-flex align-items-center">
-                    <img
-                      src="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM3RkSWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c59c6bf584d6e45fde1c767e0130a99fd1853269/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJc0FXa0NMQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--15c3f2f3e11927673ae52b71712c1f66a7a1b7bd/ava1.png"
-                      alt="" height="40px" />
-                    <p class="fw-500 ml-16 sm:ml-8 text-black sm:text-dark sm:text-base">
-                      Inspirelab Technology
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- row end -->
-            </button>
-            <div class="panel" >
-              <div class="row x-gap-72 justify-content-start" >
-                <div class="col-md-7 col-sm-12" data-anim="slide-up delay-1">
-                  <p class="subcap text-sm text-cen2 leading-1">
-                     
-                    Contributions
-                  </p>
-                  <ul class="dot text-base text-dark mb-12 mt-16 sm:mt-12">
-                    <li>
-                      Built a design system using Figma variables (2023) and <mark>managed GitLab repositories for token files in JSON format</mark> across two development teams.
-                    </li>
-                    <li>Designed and implemented interface screens for gaming and payment products; contributed to branding for cryptocurrency, advertising, and payment side projects.</li>
-                    <li>
-                      Conducted desk research, competitive analysis, user flows, and facilitated handoff and kickoff meetings, as well as UAT.
-                    </li>
-                    <li>
-                      Collaborated in an <mark>Agile development team with a Lean UX approach</mark> using Slack, Jira, and Confluence.
-                    </li>
-                    <li>
-                      Optimized assets for improved loading performance and supported 2D graphics.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="col-md-5 col-sm-12 sm:mt-16" data-anim="slide-up delay-3">
-                  <p class="subcap text-sm text-cen2 leading-1">
-                     
-                    Achievements
-                  </p>
-                  <ul class="dot text-dark mb-12 mt-12 text-base">
-                    <li class="-suc -gray">
-                      <p>
-                        Rising star award. 
-                      </p>
-                    </li>
-                    <li class="-suc -gray">
-                      <p>
-                        360 Review by colleagues : Performance 5/5
-                      </p>
-                    </li>
-                  </ul>
-                  <div class="row pt-16 sm:pb-24">
-                    <div class="col-6">
-                      <div data-anim="img-up cover-light-1 ">
-                        <img data-enlargable class="img-fluid" src="img/general/rising.png">
-                        <!-- <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">IA - Leave Request page</p> -->
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div data-anim="img-up cover-light-1  ">
-                        <img data-enlargable class="img-fluid " src="img/general/space.png">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- job1 MEU job -->
-            <button class="accordion sm sm:px-0" data-anim="slide-up">
-              <!-- 1 row start 2023-->
-              <div class="row align-items-center no-gutters border-bottom-dark noSm">
-                <div class="col-md-3 sm:d-none">
-                  <p class="text-black sm:text-dark sm:text-sm fw-500">
-                    Mar 2021 - Aug 2022
-                  </p>
-                  <p class="text-base text-dark sm:d-none">Almost 2 years</p>
-                </div>
-
-                <div class="col-md-4 sm:mt-8">
-                  <p class="text-black fw-500 sm:fw-500">
-                    Digital Product Designer
-                  </p>
-                  <p class="text-base text-dark">Full-time</p>
-                </div>
-
-                <div class="col-md-4 offset-md-1">
-                  <div class="img-gray sm:mt-8 d-flex align-items-center">
-                    <img src="http://meu-solutions.com/wp-content/uploads/2020/08/MeU-logo-newest-08-150.png" alt=""
-                      height="40px" />
-                    <p class="fw-500 ml-16 sm:ml-8 text-black sm:text-dark sm:text-base">
-                      MEU Solutions
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- row end -->
-            </button>
-            <div class="panel">
-              <div class="row x-gap-72 justify-content-start">
-                <div class="col-md-7 col-sm-12">
-                  <p class="subcap text-sm text-cen2 leading-1">
-                     
-                    Contributions
-                  </p>
-                  <ul class="dot text-base text-dark mb-12 mt-16 sm:mt-12">
-                    <li>
-                      Enhance user flows to boost productivity 3 times faster
-                      in HRM System, and gain 20% user engagement by
-                      re-designing existing UIs and evaluate heuristic testing
-                    </li>
-                    <li>
-                      Support development team with the knowledge of HTML/CSS/
-                      JavaScript and Vue Framework to drive desired outcomes.
-                    </li>
-                    <li>
-                      Partnered with product manager to find opportunities and
-                      integrate user requirements intro product strategy
-                    </li>
-                    <li>
-                      Help improve information architecture by assisting with
-                      card sorting and build wireframes to effectively
-                      communicate interaction and design concepts.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="col-md-5 col-sm-12 sm:mt-16">
-                  <p class="subcap text-sm text-cen2 leading-1">
-                     
-                    Achievements
-                  </p>
-                  <ul class="dot text-dark mb-12 mt-12 text-base">
-                    <li class="-suc -gray">
-                      <p>
-                        Create user-centered designs that can be reusable to
-                        boost productivity.
-                      </p>
-                    </li>
-                    <li class="-suc -gray">
-                      <p>
-                        Redesign the process that helps projects gain more
-                        customer.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- job2 -->
-            <button class="accordion sm sm:px-0" data-anim="slide-up">
-              <!-- 1 row start 2023-->
-              <div class="row align-items-center no-gutters border-bottom-dark noSm">
-                <div class="col-md-3 sm:d-none">
-                  <p class="text-black sm:text-dark sm:text-sm fw-500">
-                    Jan - Nov 2020
-                  </p>
-                  <p class="text-base text-dark sm:d-none">10 months</p>
-                </div>
-
-                <div class="col-md-4 sm:mt-8">
-                  <p class="text-black fw-500 sm:fw-500">UI/UX Designer</p>
-                  <p class="text-base text-dark">Full-time</p>
-                </div>
-
-                <div class="col-md-4 offset-md-1">
-                  <div class="img-gray sm:mt-8 d-flex align-items-center">
-                    <img src="/img/general/tinder.png" height="40px" />
-                    <p class="fw-500 ml-16 sm:ml-8 text-black sm:text-dark sm:text-base">
-                      Alo IELTS
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- row end -->
-            </button>
-            <div class="panel">
-              <div class="row x-gap-60 justify-content-start">
-                <div class="col-md-7 col-sm-12 sm:mr-0">
-                  <div>
-                    <p class="subcap text-sm text-cen2 leading-1">
-                       Contributions
-                    </p>
-                    <ul class="dot text-dark mb-12 mt-12 text-base">
-                      <li>
-                        Design reusable components for desktop mobile devices
-                        with consistent UI design system, patterns, libraries
-                        and assets.
-                      </li>
-                      <li>
-                        Conduct user research, analyze usability testing to
-                        drive design decisions and provide MVP solutions.
-                      </li>
-                      <li>
-                        Prepare mockups proposals to internal team and key
-                        stakeholders with prototypes for review and feedback
-                      </li>
-                      <li>
-                        Make sure everything delivered is user centered,
-                        cost-effective, easy to use, desirable and accessible.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <!-- <div class="col-md-5 offset-md-1 col-sm-12  sm:mt-32  ">
+                  <!-- <div class="col-md-5 offset-md-1 col-sm-12  sm:mt-32  ">
                   <h3 class="text-base  fw-500 sm:fw-400 text-dark text-cen2 "><i class="icon mr-16 size-3xs sm:mr-8 str-weight-2xl "
                       data-feather="award"></i>
                     Achievements</h3>
@@ -639,148 +760,169 @@ Moreover, <mark>I actively engage in various creative competitions</mark>, explo
 
                   </ul>
                 </div> -->
+                </div>
               </div>
-            </div>
 
-            <!-- 99d job 99design -->
-            <button class="accordion sm sm:px-0" data-anim="slide-up">
-              <div class="row align-items-center no-gutters border-bottom-dark noSm">
-                <div class="col-md-3 sm:d-none">
-                  <p class="text-black sm:text-dark sm:text-sm fw-500">
-                    Jan 2017 - Jan 2020
-                  </p>
-                  <p class="text-base text-dark sm:d-none">3 years</p>
-                </div>
-
-                <div class="col-md-4 sm:mt-8">
-                  <p class="text-black fw-500 sm:fw-500">
-                    Creative Designer (UI & Graphic)
-                  </p>
-                  <p class="text-base text-dark">Freelance</p>
-                </div>
-
-                <div class="col-md-4 offset-md-1">
-                  <div class="img-gray sm:mt-8 d-flex align-items-center">
-                    <img
-                      src="https://yt3.googleusercontent.com/eWCOCRGpixa9wtQTyXhYZPH0bjE4Ea50wSrOh_6PCnjFcIWRPD4j8EwE9oQxACYRpI7GeBGflQ=s900-c-k-c0x00ffffff-no-rj"
-                      alt="" height="40px" />
-                    <p class="fw-500 ml-16 sm:ml-8 text-black sm:text-dark sm:text-base">
-                      99designs
+              <!-- 99d job 99design -->
+              <button class="accordion sm sm:px-0" data-anim="slide-up">
+                <div
+                  class="row align-items-center no-gutters border-bottom-dark noSm"
+                >
+                  <div class="col-md-3 sm:d-none">
+                    <p class="text-black sm:text-dark sm:text-sm fw-500">
+                      Jan 2017 - Jan 2020
                     </p>
+                    <p class="text-base text-dark sm:d-none">3 years</p>
+                  </div>
+
+                  <div class="col-md-4 sm:mt-8">
+                    <p class="text-black fw-500 sm:fw-500">
+                      Creative Designer (UI & Graphic)
+                    </p>
+                    <p class="text-base text-dark">Freelance</p>
+                  </div>
+
+                  <div class="col-md-4 offset-md-1">
+                    <div class="img-gray sm:mt-8 d-flex align-items-center">
+                      <img
+                        src="https://yt3.googleusercontent.com/eWCOCRGpixa9wtQTyXhYZPH0bjE4Ea50wSrOh_6PCnjFcIWRPD4j8EwE9oQxACYRpI7GeBGflQ=s900-c-k-c0x00ffffff-no-rj"
+                        alt=""
+                        height="40px"
+                      />
+                      <p
+                        class="fw-500 ml-16 sm:ml-8 text-black sm:text-dark sm:text-base"
+                      >
+                        99designs
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </button>
-            <div class="panel">
-              <div class="row x-gap-60 justify-content-start">
-                <div class="col-md-7 col-sm-12 sm:mr-0">
-                  <p class="subcap text-sm text-cen2 leading-1">
-                     
-                    Contributions
-                  </p>
-                  <ul class="dot text-dark mb-12 mt-12 text-base">
-                    <li>Design and redesign brand identity</li>
-                    <li>
-                      Understand and Analyze client briefs and the
-                      requirements
-                    </li>
-                    <li>
-                      Adjust and modify the designs following client requests
-                    </li>
-                    <li>
-                      Conduct UI Designs, Brand Guidelines, Visual Concept,
-                      Graphic Designs, Mockups, Banners, Covers, and Posters
-                      by connecting with global clients .
-                    </li>
-
-                  </ul>
-                  <div class="row pt-16 sm:pb-24">
-                    <div class="col-6">
-                      <div data-anim="img-up cover-light-1 ">
-                        <img data-enlargable class="img-fluid noi2" src="img/general/99d1.png">
+              </button>
+              <div class="panel">
+                <div class="row x-gap-60 justify-content-start">
+                  <div class="col-md-7 col-sm-12 sm:mr-0">
+                    <p class="subcap text-sm text-cen2 leading-1">
+                      Contributions
+                    </p>
+                    <ul class="dot text-dark mb-12 mt-12 text-base">
+                      <li>Design and redesign brand identity</li>
+                      <li>
+                        Understand and Analyze client briefs and the
+                        requirements
+                      </li>
+                      <li>
+                        Adjust and modify the designs following client requests
+                      </li>
+                      <li>
+                        Conduct UI Designs, Brand Guidelines, Visual Concept,
+                        Graphic Designs, Mockups, Banners, Covers, and Posters
+                        by connecting with global clients .
+                      </li>
+                    </ul>
+                    <div class="row pt-16 sm:pb-24">
+                      <div class="col-6">
+                        <div data-anim="img-up cover-light-1 ">
+                          <img
+                            data-enlargable
+                            class="img-fluid noi2"
+                            src="img/general/99d1.png"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div data-anim="img-up cover-light-1  ">
+                          <img
+                            data-enlargable
+                            class="img-fluid noi2"
+                            src="img/general/99d2.png"
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div data-anim="img-up cover-light-1  ">
-                        <img data-enlargable class="img-fluid noi2" src="img/general/99d2.png">
-                      </div>
-                    </div>
-
                   </div>
-                </div>
 
-                <div class="col-md-5 col-sm-12 sm:mt-16">
-                  <p class="subcap text-sm text-cen2 leading-1">
-                     
-                    Achievements
-                  </p>
-                  <ul class="dot text-dark mb-12 mt-12 text-base">
-                    <li class="-suc -gray">
-                      <p>
-                        Create 30+ worldwide Landing Pages, Brand Identities,
-                        ect.
-                        <a href="works.html" target="_blank"
-                          class="button -underline4 text-base sm:text-base text-black text-cen2 px-4 py-0">
-                          <i class="icon size-3xs mr-8 text-accent2" data-feather="external-link"></i>
-                          My Designs
-                        </a>
-                      </p>
-                    </li>
-                    <li class="-suc -gray">
-                      <p>
-                        Connect with global clients & receive great
-                        compliments for the design works.
-                      </p>
-                    </li>
-                  </ul>
-
-
-
+                  <div class="col-md-5 col-sm-12 sm:mt-16">
+                    <p class="subcap text-sm text-cen2 leading-1">
+                      Achievements
+                    </p>
+                    <ul class="dot text-dark mb-12 mt-12 text-base">
+                      <li class="-suc -gray">
+                        <p>
+                          Create 30+ worldwide Landing Pages, Brand Identities,
+                          ect.
+                          <a
+                            href="works.html"
+                            target="_blank"
+                            class="button -underline4 text-base sm:text-base text-black text-cen2 px-4 py-0"
+                          >
+                            <i
+                              class="icon size-3xs mr-8 text-accent2"
+                              data-feather="external-link"
+                            ></i>
+                            My Designs
+                          </a>
+                        </p>
+                      </li>
+                      <li class="-suc -gray">
+                        <p>
+                          Connect with global clients & receive great
+                          compliments for the design works.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- container end -->
-      </section>
-      <!-- section end -->
-       
+          <!-- container end -->
+        </section>
+        <!-- section end -->
 
-      <!-- <div class="sm:d-block py-16 bg-light-1">
+        <!-- <div class="sm:d-block py-16 bg-light-1">
       </div> -->
         <!-- HORIZONTAL FLUID  -->
         <div>
-          <div class="bg-dark-3 layout-pt-md h-full layout-pb-md" style="position: relative">
+          <div
+            class="bg-dark-3 layout-pt-md h-full layout-pb-md"
+            style="position: relative"
+          >
             <div class="bg-grid2"></div>
             <div class="col-md-11 mx-auto">
               <div class="row justify-content-center">
                 <div class="col-lg-4 md:pb-64 text-center">
-                  <h1 class=" text-8xl sm:text-6xl fw-700 bluebg2 poppins tracking-super-tight ">
+                  <h1
+                    class="text-8xl sm:text-6xl fw-700 bluebg2 poppins tracking-super-tight"
+                  >
                     10+
                   </h1>
                   <p class="text-xl sm:text-lg leading-xl fw-500">
-                    Creative Awards 
+                    Creative Awards
                   </p>
                 </div>
-  
+
                 <div class="col-lg-4 md:pb-64 text-center">
-                  <h1 class=" text-8xl sm:text-6xl fw-700 bluebg2 poppins tracking-super-tight ">
+                  <h1
+                    class="text-8xl sm:text-6xl fw-700 bluebg2 poppins tracking-super-tight"
+                  >
                     1.000+
                   </h1>
                   <p class="text-xl sm:text-lg leading-xl fw-500">
                     Design Screens
                   </p>
                 </div>
-  
+
                 <div class="col-lg-4 text-center">
-                  <h1 class=" text-8xl sm:text-6xl fw-700 bluebg2 poppins tracking-super-tight ">
+                  <h1
+                    class="text-8xl sm:text-6xl fw-700 bluebg2 poppins tracking-super-tight"
+                  >
                     20+
                   </h1>
                   <p class="text-xl sm:text-lg leading-xl fw-500">
                     Global Clients
                   </p>
                 </div>
-  
+
                 <!-- <div class="col-lg-3  text-center">
                   <h1 class=" text-8xl sm:text-6xl fw-700 bluebg2 poppins   ">
                     20+
@@ -794,248 +936,55 @@ Moreover, <mark>I actively engage in various creative competitions</mark>, explo
         </div>
         <!-- HORIZONTAL FLUID - end -->
 
-
-      <!---------------------->
-      <!-- 3               -->
-      <!-- ACHIVEMENT       -->
-      <!--                  -->
-      <!---------------------->
-      <section class="layout-pb-lg layout-pt-lg border-bottom-dark noSm" data-anim="slide-up delay-2">
-        <!-- container start -->
-        <div class="container">
-          <!-- row start -->
-          <div class="row">
-            <div class="col-md-7 col-lg-9">
-              <div class="sectionHeading -sm">
-                <p class="sectionHeading__subtitle mb-8 sm:d-none">
-                  Happy to share
-                </p>
-                <h2 class="sectionHeading__title">
-                  Achievements <span class="badge sm:d-none">10</span>
-                </h2>
+        <!---------------------->
+        <!-- 3               -->
+        <!-- ACHIVEMENT       -->
+        <!--                  -->
+        <!---------------------->
+        <section
+          class="layout-pb-lg layout-pt-lg border-bottom-dark noSm"
+          data-anim="slide-up delay-2"
+        >
+          <!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div class="row">
+              <div class="col-md-7 col-lg-9">
+                <div class="sectionHeading -sm">
+                  <p class="sectionHeading__subtitle mb-8 sm:d-none">
+                    Happy to share
+                  </p>
+                  <h2 class="sectionHeading__title">
+                    Achievements <span class="badge sm:d-none">10</span>
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- row end -->
+            <!-- row end -->
 
-          <!-- row start -->
-          <div class="row no-gutters mb-16 layout-pt-xs sm:d-none">
-            <div class="col-md-5">
-              <p class="title-xs fw-500 text-dark">Award Title</p>
-            </div>
-
-            <div class="col-lg-3 offset-lg-1 col-md-4">
-              <p class="title-xs fw-500 text-dark">Features</p>
-            </div>
-
-            <div class="col-lg-2 offset-lg-1 col-md-3">
-              <p class="title-xs fw-500 text-dark">Link</p>
-            </div>
-          </div>
-          <!-- row end -->
-
-          <div class="section- border-bottom-dark noSm relative">
-            <!-- 1 row start 2023-->
-            <div class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32">
-              <div class="col-lg-1 col-md-1">
-                <p class="text-black sm:text-dark sm:text-sm fw-500">2023</p>
-              </div>
-
-              <div class="col-md-4 sm:mt-8">
-                <p class="text-black fw-500">
-                  <span class="kkk mr-8">
-                    <span class="kk animate-ping"></span>
-                  </span>
-                  The First Prize - 50th anniversary between The UK & Vietnam
-                </p>
+            <!-- row start -->
+            <div class="row no-gutters mb-16 layout-pt-xs sm:d-none">
+              <div class="col-md-5">
+                <p class="title-xs fw-500 text-dark">Award Title</p>
               </div>
 
               <div class="col-lg-3 offset-lg-1 col-md-4">
-                <div class="img-gray mt-16 sm:mt-16 d-flex x-gap-32">
-                  <img
-                    src="https://www.poverty-action.org/sites/default/files/atoms/image/2020/02/19/british%20embassy.jpg"
-                    alt="" height="40px" />
-                  <img src="https://upload.wikimedia.org/wikipedia/vi/2/22/Vietnamnet-Logo.png" alt="" height="40px" />
-                  <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Hanoitv.png" alt="" height="40px" />
-                </div>
+                <p class="title-xs fw-500 text-dark">Features</p>
               </div>
 
-              <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                <a href="https://toquoc.vn/cong-bo-logo-ky-niem-50-nam-thiet-lap-quan-he-ngoai-giao-viet-nam-anh-20221214162042402.htm"
-                  target="_blank" class="button -underline4 text-base text-black text-cen2">
-                  View detail
-                  <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
-                </a>
+              <div class="col-lg-2 offset-lg-1 col-md-3">
+                <p class="title-xs fw-500 text-dark">Link</p>
               </div>
             </div>
             <!-- row end -->
 
-            <!-- 2 row start 2022-->
-            <div class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32">
-              <div class="col-lg-1 col-md-1">
-                <p class="text-black sm:text-dark sm:text-sm fw-500">2022</p>
-              </div>
-
-              <div class="col-md-4 sm:mt-8">
-                <p class="text-black fw-500">
-                  <span class="kkk mr-8">
-                    <span class="kk animate-ping"></span>
-                  </span>
-                  The Special Prize - 30th anniversary between Korea & Vietnam
-                </p>
-              </div>
-
-              <div class="col-lg-3 offset-lg-1 col-md-4">
-                <div class="img-gray mt-16 d-flex x-gap-32">
-                  <img src="https://www.mofa.go.kr/upload/notice/20180213125055622.jpg" alt="" height="35px" />
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Logo_VTV1_HD.png" alt=""
-                    height="35px" />
-                </div>
-              </div>
-
-              <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                <a href="vn-kr.html" target="_blank" class="button -underline4 text-base text-black text-cen2">
-                  View detail
-                  <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- row end -->
-
-            <!-- 3 row start 2022 asus -->
-            <div class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32">
-              <div class="col-lg-1 col-md-1">
-                <p class="text-black sm:text-dark sm:text-sm fw-500">2022</p>
-              </div>
-
-              <div class="col-md-4 sm:mt-8">
-                <p class="text-black fw-500">
-                  <span class="kkk mr-8">
-                    <span class="kk animate-ping"></span>
-                  </span>
-                  The First Prize - ASUS Zenbook 10 years anniversary
-                </p>
-              </div>
-
-              <div class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4">
-                <div class="img-gray mt-16 d-flex x-gap-32">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/ASUS_Corporate_Logo.svg/2560px-ASUS_Corporate_Logo.svg.png"
-                    alt="" height="25px" />
-                </div>
-              </div>
-
-              <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                <a href="https://zentalk.vn/threads/asus-cong-bo-giai-thuong-cuoc-thi-thiet-ke-logo-asus-zenbook.5106/"
-                  target="_blank" class="button -underline4 text-base text-black text-cen2">
-                  View detail
-                  <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- row end -->
-
-            <!-- 4 row start 2022 lenovo-->
-            <div class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32">
-              <div class="col-lg-1 col-md-1">
-                <p class="text-black sm:text-dark sm:text-sm fw-500">2022</p>
-              </div>
-
-              <div class="col-md-4 sm:mt-8">
-                <p class="text-black fw-500">
-                  Inspiring Award - Lenovo Yoga Artwork Design Contest
-                </p>
-              </div>
-
-              <div class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4">
-                <div class="img-gray mt-16 d-flex x-gap-32">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lenovo_logo_2015.svg/2560px-Lenovo_logo_2015.svg.png"
-                    alt="" height="20px" />
-                </div>
-              </div>
-
-              <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                <a href="https://www.facebook.com/story.php?story_fbid=4784924211529995&id=183243898364739&mibextid=Nif5oz"
-                  target="_blank" class="button -underline4 text-base text-black text-cen2">
-                  View detail
-                  <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- row end -->
-
-            <!-- 5 row start 2022 samsung -->
-            <div class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32">
-              <div class="col-lg-1 col-md-1">
-                <p class="text-black sm:text-dark sm:text-sm fw-500">2022</p>
-              </div>
-
-              <div class="col-md-4 sm:mt-8">
-                <p class="text-black fw-500">
-                  The Third Prize - "Phá Cách Tạo Gu" Case Design Contest
-                </p>
-              </div>
-
-              <div class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4">
-                <div class="img-gray mt-16 d-flex x-gap-32">
-                  <img
-                    src="https://static.vecteezy.com/system/resources/thumbnails/014/018/566/small/samsung-logo-on-transparent-background-free-vector.jpg"
-                    alt="" height="40px" />
-                  <img src="https://rgb.vn/wp-content/uploads/2021/02/RGB-Creative_Vibes_logo-mainsite-1.png" alt=""
-                    height="40px" />
-                </div>
-              </div>
-
-              <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                <a href="https://vnexpress.net/galaxy-z-flip3-thanh-chu-de-sang-tao-cho-gioi-tre-4482521.html"
-                  target="_blank" class="button -underline4 text-base text-black text-cen2">
-                  View detail
-                  <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
-                </a>
-              </div>
-            </div>
-            <!-- row end -->
-
-            <div id="more">
-              <!-- 6 row start 2021 Green  -->
-              <div class="row no-gutters p-item border-bottom-dark noSm 2 py-24 sm:py-32">
+            <div class="section- border-bottom-dark noSm relative">
+              <!-- 1 row start 2023-->
+              <div
+                class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32"
+              >
                 <div class="col-lg-1 col-md-1">
-                  <p class="text-black sm:text-dark sm:text-sm fw-500">
-                    2021
-                  </p>
-                </div>
-
-                <div class="col-md-4 sm:mt-8">
-                  <p class="text-black fw-500">
-                    The First Prize - Logo design Green Youth Labs
-                  </p>
-                </div>
-
-                <div class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4">
-                  <div class="img-gray mt-16 d-flex x-gap-32">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Logo_Friedrich_Ebert_Stiftung.svg/2560px-Logo_Friedrich_Ebert_Stiftung.svg.png"
-                      alt="" height="35px" />
-                  </div>
-                </div>
-
-                <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                  <a href="https://vietnam.fes.de/program/green-youth-labs" target="_blank"
-                    class="button -underline4 text-base text-black text-cen2">
-                    View detail
-                    <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
-                  </a>
-                </div>
-              </div>
-              <!-- row end -->
-
-              <!-- 7 row start vfcd 2021-->
-              <div class="row no-gutters p-item border-bottom-dark noSm 2 py-24 sm:py-32">
-                <div class="col-lg-1 col-md-1">
-                  <p class="text-black sm:text-dark sm:text-sm fw-500">
-                    2021
-                  </p>
+                  <p class="text-black sm:text-dark sm:text-sm fw-500">2023</p>
                 </div>
 
                 <div class="col-md-4 sm:mt-8">
@@ -1043,37 +992,52 @@ Moreover, <mark>I actively engage in various creative competitions</mark>, explo
                     <span class="kkk mr-8">
                       <span class="kk animate-ping"></span>
                     </span>
-                    Inspiring Award - Key Visual Vietnam Festival of
-                    Creativity & Design by RMIT University
+                    The First Prize - 50th anniversary between The UK & Vietnam
                   </p>
                 </div>
 
-                <div class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4">
-                  <div class="img-gray mt-16 d-flex x-gap-32">
-                    <!-- <img src="https://2020.vfcd.events/wp-content/themes/vfcd/BLANK/images/logo.svg" alt=""
-                      height="30px"> -->
+                <div class="col-lg-3 offset-lg-1 col-md-4">
+                  <div class="img-gray mt-16 sm:mt-16 d-flex x-gap-32">
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/RMIT_University_Logo.svg/2560px-RMIT_University_Logo.svg.png"
-                      alt="" height="30px" />
+                      src="https://www.poverty-action.org/sites/default/files/atoms/image/2020/02/19/british%20embassy.jpg"
+                      alt=""
+                      height="40px"
+                    />
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/vi/2/22/Vietnamnet-Logo.png"
+                      alt=""
+                      height="40px"
+                    />
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/en/6/6a/Hanoitv.png"
+                      alt=""
+                      height="40px"
+                    />
                   </div>
                 </div>
 
                 <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                  <a href="https://vfcd.events/en/news/vfcd-graphic-design-contest-2021-found-its-winners/"
-                    target="_blank" class="button -underline4 text-base text-black text-cen2">
+                  <a
+                    href="https://toquoc.vn/cong-bo-logo-ky-niem-50-nam-thiet-lap-quan-he-ngoai-giao-viet-nam-anh-20221214162042402.htm"
+                    target="_blank"
+                    class="button -underline4 text-base text-black text-cen2"
+                  >
                     View detail
-                    <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
+                    <i
+                      class="icon size-3xs ml-8 text-dark"
+                      data-feather="external-link"
+                    ></i>
                   </a>
                 </div>
               </div>
               <!-- row end -->
 
-              <!-- 8 row start 2020 vina-->
-              <div class="row no-gutters p-item border-bottom-dark noSm 2 py-24 sm:py-32">
+              <!-- 2 row start 2022-->
+              <div
+                class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32"
+              >
                 <div class="col-lg-1 col-md-1">
-                  <p class="text-black sm:text-dark sm:text-sm fw-500">
-                    2020
-                  </p>
+                  <p class="text-black sm:text-dark sm:text-sm fw-500">2022</p>
                 </div>
 
                 <div class="col-md-4 sm:mt-8">
@@ -1081,539 +1045,929 @@ Moreover, <mark>I actively engage in various creative competitions</mark>, explo
                     <span class="kkk mr-8">
                       <span class="kk animate-ping"></span>
                     </span>
-                    Top 25 Nationwide - Costume Design "VINAMAN" by Ngo Thanh
-                    Van
+                    The Special Prize - 30th anniversary between Korea & Vietnam
                   </p>
                 </div>
 
-                <div class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4">
-                  <!-- <p class="   text-black sm:text-base">
-                  Studi68
-                </p> -->
+                <div class="col-lg-3 offset-lg-1 col-md-4">
                   <div class="img-gray mt-16 d-flex x-gap-32">
-                    <img src="https://blisssaigon.com/wp-content/uploads/2020/11/Featured-Vinaman.png" alt=""
-                      height="40px" />
+                    <img
+                      src="https://www.mofa.go.kr/upload/notice/20180213125055622.jpg"
+                      alt=""
+                      height="35px"
+                    />
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Logo_VTV1_HD.png"
+                      alt=""
+                      height="35px"
+                    />
                   </div>
                 </div>
 
                 <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                  <a href="https://thanhnien.vn/ngo-thanh-van-he-lo-thiet-ke-trang-phuc-cho-sieu-anh-hung-vinaman-1851016025.htm"
-                    target="_blank" class="button -underline4 text-base text-black text-cen2">
+                  <a
+                    href="vn-kr.html"
+                    target="_blank"
+                    class="button -underline4 text-base text-black text-cen2"
+                  >
                     View detail
-                    <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
+                    <i
+                      class="icon size-3xs ml-8 text-dark"
+                      data-feather="external-link"
+                    ></i>
                   </a>
                 </div>
               </div>
               <!-- row end -->
 
-              <!-- 9 row start 2019 Loai plastic-->
-              <div class="row no-gutters p-item border-bottom-dark noSm 2 py-24 sm:py-32">
+              <!-- 3 row start 2022 asus -->
+              <div
+                class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32"
+              >
                 <div class="col-lg-1 col-md-1">
-                  <p class="text-black sm:text-dark sm:text-sm fw-500">
-                    2019
-                  </p>
+                  <p class="text-black sm:text-dark sm:text-sm fw-500">2022</p>
                 </div>
 
                 <div class="col-md-4 sm:mt-8">
                   <p class="text-black fw-500">
-                    Top 30 Design - "LoaiPlastic" for environmental
-                    protection.
+                    <span class="kkk mr-8">
+                      <span class="kk animate-ping"></span>
+                    </span>
+                    The First Prize - ASUS Zenbook 10 years anniversary
                   </p>
                 </div>
 
                 <div class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4">
                   <div class="img-gray mt-16 d-flex x-gap-32">
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Grab_%28application%29_logo.svg/2560px-Grab_%28application%29_logo.svg.png"
-                      alt="" height="25px" />
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/ASUS_Corporate_Logo.svg/2560px-ASUS_Corporate_Logo.svg.png"
+                      alt=""
+                      height="25px"
+                    />
                   </div>
                 </div>
 
                 <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                  <a href="https://www.facebook.com/story.php?story_fbid=1649567995175740&id=1597264207072786&mibextid=Nif5oz"
-                    target="_blank" class="button -underline4 text-base text-black text-cen2">
+                  <a
+                    href="https://zentalk.vn/threads/asus-cong-bo-giai-thuong-cuoc-thi-thiet-ke-logo-asus-zenbook.5106/"
+                    target="_blank"
+                    class="button -underline4 text-base text-black text-cen2"
+                  >
                     View detail
-                    <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
+                    <i
+                      class="icon size-3xs ml-8 text-dark"
+                      data-feather="external-link"
+                    ></i>
                   </a>
                 </div>
               </div>
               <!-- row end -->
 
-              <!-- 10 row start 2019 Reno-->
-              <div class="row no-gutters p-item py-24 sm:py-32">
+              <!-- 4 row start 2022 lenovo-->
+              <div
+                class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32"
+              >
                 <div class="col-lg-1 col-md-1">
-                  <p class="text-black sm:text-dark sm:text-sm fw-500">
-                    2019
-                  </p>
+                  <p class="text-black sm:text-dark sm:text-sm fw-500">2022</p>
                 </div>
 
                 <div class="col-md-4 sm:mt-8">
                   <p class="text-black fw-500">
-                    The Most Creative Award - "Tôi là Reno" by Oppo Vietnam
+                    Inspiring Award - Lenovo Yoga Artwork Design Contest
                   </p>
                 </div>
 
                 <div class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4">
                   <div class="img-gray mt-16 d-flex x-gap-32">
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/OPPO_LOGO_2019.svg/2560px-OPPO_LOGO_2019.svg.png"
-                      alt="" height="25px" />
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lenovo_logo_2015.svg/2560px-Lenovo_logo_2015.svg.png"
+                      alt=""
+                      height="20px"
+                    />
                   </div>
                 </div>
 
                 <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
-                  <a href="https://www.facebook.com/story.php?story_fbid=1329821980504181&id=132578406895217&mibextid=Nif5oz"
-                    target="_blank" class="button -underline4 text-base text-black text-cen2">
+                  <a
+                    href="https://www.facebook.com/story.php?story_fbid=4784924211529995&id=183243898364739&mibextid=Nif5oz"
+                    target="_blank"
+                    class="button -underline4 text-base text-black text-cen2"
+                  >
                     View detail
-                    <i class="icon size-3xs ml-8 text-dark" data-feather="external-link"></i>
+                    <i
+                      class="icon size-3xs ml-8 text-dark"
+                      data-feather="external-link"
+                    ></i>
                   </a>
                 </div>
               </div>
               <!-- row end -->
-            </div>
 
-            <div id="blurmask"></div>
-            <div class="cen">
-              <button onclick="moreplease()" id="btnMore" class="button -md -outline-black -light mt-16 mx-auto">
-              Show More
-              <i class="icon size-xs str-width-lg size-xs ml-4" data-feather="chevron-down"></i>
-            </button>
-          </div>
-            
-          </div>
-        </div>
-        <!-- container end -->
-      </section>
-      <!-- section end -->
+              <!-- 5 row start 2022 samsung -->
+              <div
+                class="row no-gutters p-item border-bottom-dark noSm py-24 sm:py-32"
+              >
+                <div class="col-lg-1 col-md-1">
+                  <p class="text-black sm:text-dark sm:text-sm fw-500">2022</p>
+                </div>
 
+                <div class="col-md-4 sm:mt-8">
+                  <p class="text-black fw-500">
+                    The Third Prize - "Phá Cách Tạo Gu" Case Design Contest
+                  </p>
+                </div>
 
-      <!---------------------->
-      <!-- 2                -->
-      <!-- vid     -->
-      <!--                  -->
-      <!---------------------->
-      <section class="banner">
-        <div class="videocontainer">
-          <video class="videoembed" autoplay muted playsinline loop>
-            <source src="img/vid/about.mp4" type="video/mp4" />
-          </video>
+                <div class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4">
+                  <div class="img-gray mt-16 d-flex x-gap-32">
+                    <img
+                      src="https://static.vecteezy.com/system/resources/thumbnails/014/018/566/small/samsung-logo-on-transparent-background-free-vector.jpg"
+                      alt=""
+                      height="40px"
+                    />
+                    <img
+                      src="https://rgb.vn/wp-content/uploads/2021/02/RGB-Creative_Vibes_logo-mainsite-1.png"
+                      alt=""
+                      height="40px"
+                    />
+                  </div>
+                </div>
 
-          <div class="banner-title relative">
-            <div class="bg-grid"></div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
+                  <a
+                    href="https://vnexpress.net/galaxy-z-flip3-thanh-chu-de-sang-tao-cho-gioi-tre-4482521.html"
+                    target="_blank"
+                    class="button -underline4 text-base text-black text-cen2"
+                  >
+                    View detail
+                    <i
+                      class="icon size-3xs ml-8 text-dark"
+                      data-feather="external-link"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+              <!-- row end -->
 
-            <!-- container start -->
-            <div data-anim="slide-up" p class="container">
-              <!-- row start -->
-              <div class="row justify-content-center text-center" d>
-                <div class="col-lg-9 col-sm-12">
-                  <div class="sectionHeading -lg">
-                    <h4 class="sectionHeading__title text-white textmore-3">
-                      " <span class="">Great things</span> are done by a
-                      series of small things brought together."
-                    </h4>
-                    <p class="sectionHeading__subtitle -light mt-32">
-                      - Vincent Van Gogh -
+              <div id="more">
+                <!-- 6 row start 2021 Green  -->
+                <div
+                  class="row no-gutters p-item border-bottom-dark noSm 2 py-24 sm:py-32"
+                >
+                  <div class="col-lg-1 col-md-1">
+                    <p class="text-black sm:text-dark sm:text-sm fw-500">
+                      2021
                     </p>
                   </div>
 
-                  <!-- <a data-barba href="about-me.html" class="button -md -outline-white -light text-white wf-800 mt-32 mt-48 sm:mt-8">
+                  <div class="col-md-4 sm:mt-8">
+                    <p class="text-black fw-500">
+                      The First Prize - Logo design Green Youth Labs
+                    </p>
+                  </div>
+
+                  <div
+                    class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4"
+                  >
+                    <div class="img-gray mt-16 d-flex x-gap-32">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Logo_Friedrich_Ebert_Stiftung.svg/2560px-Logo_Friedrich_Ebert_Stiftung.svg.png"
+                        alt=""
+                        height="35px"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
+                    <a
+                      href="https://vietnam.fes.de/program/green-youth-labs"
+                      target="_blank"
+                      class="button -underline4 text-base text-black text-cen2"
+                    >
+                      View detail
+                      <i
+                        class="icon size-3xs ml-8 text-dark"
+                        data-feather="external-link"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- row end -->
+
+                <!-- 7 row start vfcd 2021-->
+                <div
+                  class="row no-gutters p-item border-bottom-dark noSm 2 py-24 sm:py-32"
+                >
+                  <div class="col-lg-1 col-md-1">
+                    <p class="text-black sm:text-dark sm:text-sm fw-500">
+                      2021
+                    </p>
+                  </div>
+
+                  <div class="col-md-4 sm:mt-8">
+                    <p class="text-black fw-500">
+                      <span class="kkk mr-8">
+                        <span class="kk animate-ping"></span>
+                      </span>
+                      Inspiring Award - Key Visual Vietnam Festival of
+                      Creativity & Design by RMIT University
+                    </p>
+                  </div>
+
+                  <div
+                    class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4"
+                  >
+                    <div class="img-gray mt-16 d-flex x-gap-32">
+                      <!-- <img src="https://2020.vfcd.events/wp-content/themes/vfcd/BLANK/images/logo.svg" alt=""
+                      height="30px"> -->
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/RMIT_University_Logo.svg/2560px-RMIT_University_Logo.svg.png"
+                        alt=""
+                        height="30px"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
+                    <a
+                      href="https://vfcd.events/en/news/vfcd-graphic-design-contest-2021-found-its-winners/"
+                      target="_blank"
+                      class="button -underline4 text-base text-black text-cen2"
+                    >
+                      View detail
+                      <i
+                        class="icon size-3xs ml-8 text-dark"
+                        data-feather="external-link"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- row end -->
+
+                <!-- 8 row start 2020 vina-->
+                <div
+                  class="row no-gutters p-item border-bottom-dark noSm 2 py-24 sm:py-32"
+                >
+                  <div class="col-lg-1 col-md-1">
+                    <p class="text-black sm:text-dark sm:text-sm fw-500">
+                      2020
+                    </p>
+                  </div>
+
+                  <div class="col-md-4 sm:mt-8">
+                    <p class="text-black fw-500">
+                      <span class="kkk mr-8">
+                        <span class="kk animate-ping"></span>
+                      </span>
+                      Top 25 Nationwide - Costume Design "VINAMAN" by Ngo Thanh
+                      Van
+                    </p>
+                  </div>
+
+                  <div
+                    class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4"
+                  >
+                    <!-- <p class="   text-black sm:text-base">
+                  Studi68
+                </p> -->
+                    <div class="img-gray mt-16 d-flex x-gap-32">
+                      <img
+                        src="https://blisssaigon.com/wp-content/uploads/2020/11/Featured-Vinaman.png"
+                        alt=""
+                        height="40px"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
+                    <a
+                      href="https://thanhnien.vn/ngo-thanh-van-he-lo-thiet-ke-trang-phuc-cho-sieu-anh-hung-vinaman-1851016025.htm"
+                      target="_blank"
+                      class="button -underline4 text-base text-black text-cen2"
+                    >
+                      View detail
+                      <i
+                        class="icon size-3xs ml-8 text-dark"
+                        data-feather="external-link"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- row end -->
+
+                <!-- 9 row start 2019 Loai plastic-->
+                <div
+                  class="row no-gutters p-item border-bottom-dark noSm 2 py-24 sm:py-32"
+                >
+                  <div class="col-lg-1 col-md-1">
+                    <p class="text-black sm:text-dark sm:text-sm fw-500">
+                      2019
+                    </p>
+                  </div>
+
+                  <div class="col-md-4 sm:mt-8">
+                    <p class="text-black fw-500">
+                      Top 30 Design - "LoaiPlastic" for environmental
+                      protection.
+                    </p>
+                  </div>
+
+                  <div
+                    class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4"
+                  >
+                    <div class="img-gray mt-16 d-flex x-gap-32">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Grab_%28application%29_logo.svg/2560px-Grab_%28application%29_logo.svg.png"
+                        alt=""
+                        height="25px"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
+                    <a
+                      href="https://www.facebook.com/story.php?story_fbid=1649567995175740&id=1597264207072786&mibextid=Nif5oz"
+                      target="_blank"
+                      class="button -underline4 text-base text-black text-cen2"
+                    >
+                      View detail
+                      <i
+                        class="icon size-3xs ml-8 text-dark"
+                        data-feather="external-link"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- row end -->
+
+                <!-- 10 row start 2019 Reno-->
+                <div class="row no-gutters p-item py-24 sm:py-32">
+                  <div class="col-lg-1 col-md-1">
+                    <p class="text-black sm:text-dark sm:text-sm fw-500">
+                      2019
+                    </p>
+                  </div>
+
+                  <div class="col-md-4 sm:mt-8">
+                    <p class="text-black fw-500">
+                      The Most Creative Award - "Tôi là Reno" by Oppo Vietnam
+                    </p>
+                  </div>
+
+                  <div
+                    class="col-lg-3 offset-lg-1 col-lg-3 offset-lg-1 col-md-4"
+                  >
+                    <div class="img-gray mt-16 d-flex x-gap-32">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/OPPO_LOGO_2019.svg/2560px-OPPO_LOGO_2019.svg.png"
+                        alt=""
+                        height="25px"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2 offset-lg-1 col-md-3 sm:mt-24">
+                    <a
+                      href="https://www.facebook.com/story.php?story_fbid=1329821980504181&id=132578406895217&mibextid=Nif5oz"
+                      target="_blank"
+                      class="button -underline4 text-base text-black text-cen2"
+                    >
+                      View detail
+                      <i
+                        class="icon size-3xs ml-8 text-dark"
+                        data-feather="external-link"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- row end -->
+              </div>
+
+              <div id="blurmask"></div>
+              <div class="cen">
+                <button
+                  onclick="moreplease()"
+                  id="btnMore"
+                  class="button -md -outline-black -light mt-16 mx-auto"
+                >
+                  Show More
+                  <i
+                    class="icon size-xs str-width-lg size-xs ml-4"
+                    data-feather="chevron-down"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- container end -->
+        </section>
+        <!-- section end -->
+
+        <!---------------------->
+        <!-- 2                -->
+        <!-- vid     -->
+        <!--                  -->
+        <!---------------------->
+        <section class="banner">
+          <div class="videocontainer">
+            <video class="videoembed" autoplay muted playsinline loop>
+              <source src="img/vid/about.mp4" type="video/mp4" />
+            </video>
+
+            <div class="banner-title relative">
+              <div class="bg-grid"></div>
+
+              <!-- container start -->
+              <div data-anim="slide-up" p class="container">
+                <!-- row start -->
+                <div class="row justify-content-center text-center" d>
+                  <div class="col-lg-9 col-sm-12">
+                    <div class="sectionHeading -lg">
+                      <h4 class="sectionHeading__title text-white textmore-3">
+                        " <span class="">Great things</span> are done by a
+                        series of small things brought together."
+                      </h4>
+                      <p class="sectionHeading__subtitle -light mt-32">
+                        - Vincent Van Gogh -
+                      </p>
+                    </div>
+
+                    <!-- <a data-barba href="about-me.html" class="button -md -outline-white -light text-white wf-800 mt-32 mt-48 sm:mt-8">
                     More about me <i class="icon ml-8" data-feather="arrow-right"></i>
                   </a> -->
+                  </div>
                 </div>
               </div>
+              <!-- row end -->
             </div>
-            <!-- row end -->
           </div>
-        </div>
 
-        <!-- container end -->
-      </section>
-      <!-- section end -->
+          <!-- container end -->
+        </section>
+        <!-- section end -->
 
-      
-      <!-- <div class="sm:d-block py-16 bg-light-1"> -->
+        <!-- <div class="sm:d-block py-16 bg-light-1"> -->
         <!-- DIVIDER SM -->
-      <!-- </div> -->
+        <!-- </div> -->
 
-      <!---------------------->
-      <!-- 3               -->
-      <!-- EDUCA       -->
-      <!--                  -->
-      <!---------------------->
-      <section class="layout-pb-lg layout-pt-lg">
-        <!-- container start -->
-        <div class="container relative">
-          <!-- row start -->
-          <div class="row x-gap-60 align-items-start justify-content-between">
-            <div class="col-md-4 sm:mr-0">
-              <div class="sectionHeading -sm">
-                <div class="sectionHeading__subtitle mb-8 sm:d-none">
-                  Proudly
-                </div>
-                <h1 class="sectionHeading__title">Academic Performance</h1>
-                <!-- <p class="pl-0    text-black sm:text-base mt-24 sm:d-none">Computer Science & Engineering</p> -->
-              </div>
-            </div>
-            <div class="col-md-8 row y-gap-60 x-gap-60 sm:mt-24">
-              <div class="col-md-6 relative">
-                <img class="img-gray rounded-0" src="img/general/iu.png" alt="" height="40px" />
-                <p class="pl-0 fw-600 text-black mt-24 sm:mt-8">
-                  International University
-                </p>
-                <p class="pl-0 text-base mt-8 sm:mt-0">
-                  <mark>Thesis score: 87/100, GPA: Good</mark>
-                  <br />Notable courses: Software Engineering, Web
-                  Development, Human & Computer Interaction, ect.
-                </p>
-                <!-- <a href="https://hcmiu.edu.vn/" target="_blank"
-                      class="mt-16 button -underline4 text-base text-black text-cen2">
-                      View detail <i class="icon h-8 size-2xs text-dark ml-8" data-feather="external-link"></i>
-                    </a> -->
-              </div>
-
-              <div class="col-md-6 img-gray rounded-0">
-                <img src="img/general/vnu.png" alt="" height="40px" />
-
-                <p class="pl-0 fw-600 text-black mt-24 sm:mt-8">
-                  Vietnam National University
-                </p>
-                <p class="pl-0 text-base mt-8 sm:mt-0">
-                  VNUHCM is one of the two largest national research
-                  universities in Vietnam, including HCMUS, HCMIU, UIT, USSH,
-                  UEL, HCMUT
-                </p>
-
-                <!-- <a href="https://hcmiu.edu.vn/" target="_blank"
-                      class="mt-16 button -underline4 text-base text-black text-cen2">
-                      View detail <i class="icon h-8 size-2xs text-dark ml-8" data-feather="external-link"></i>
-                    </a> -->
-              </div>
-
-              <div class="col-md-6 relative">
-                <img class="img-gray rounded-0" src="img/general/ie.png" alt="" height="40px" />
-                <p class="pl-0 fw-600 text-black mt-24 sm:mt-8">
-                  IELTS Certificate
-                </p>
-                <p class="pl-0 text-base mt-8 sm:mt-0">
-                  <mark>6.0 Overall</mark> with 6.5 in Speaking & Reading Test
-                  at IDP Center, 27 April 2022.
-                </p>
-                <!-- <a href="https://hcmiu.edu.vn/" target="_blank"
-                      class="mt-16 button -underline4 text-base text-black text-cen2">
-                      View detail <i class="icon h-8 size-2xs text-dark ml-8" data-feather="external-link"></i>
-                    </a> -->
-              </div>
-
-              <div class="col-md-6 img-gray rounded-0">
-                <img src="https://filethpt.hcm.edu.vn//UploadImages/Config/thpttanbinh/LOGO_TANBINH.jpg" alt=""
-                  height="40px" />
-                <p class="pl-0 fw-600 text-black mt-24 sm:mt-8">
-                  High & Secondary Schools
-                </p>
-                <p class="pl-0 text-base mt-8 sm:mt-0">
-                  12 Consecutive years of Excellent student achievement.
-                </p>
-                <!-- <a href="https://hcmiu.edu.vn/" target="_blank"
-                      class="mt-16 button -underline4 text-base text-black text-cen2">
-                      View detail <i class="icon h-8 size-2xs text-dark ml-8" data-feather="external-link"></i>
-                    </a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- HORIZONTAL FLUID  -->
-      <div style="position: relative" data-anim-wrap>
-        <div class="bg-grid"></div>
-        <div class="bg-dark-3 layout-pt-lg h-full layout-pb-lg d-flex justify-content-center align-items-center">
-          <div data-anim-child="slide-up delay-1" class="col-md-10 text-center">
-            <h1 class="text-7xl sm:text-4xl text-white fw-600">
-              Keep <span class="greenbg">Learning </span>
-            </h1>
-            <p class="badge-dark mt-16 sm:d-none">
-              Check out my Key Competences bellow 🤩
-            </p>
-          </div>
-        </div>
-        <div class="md:d-none">
-          <img class="lax" src="img/general/book-1.png" alt="" />
-          <img class="lax2" src="img/general/book-3.png" alt="" />
-
-          <img class="lax3" src="img/general/book-2.png" alt="" />
-          <img class="lax4" src="img/general/book-4.png" alt="" />
-        </div>
-      </div>
-      <!-- HORIZONTAL FLUID - end -->
-
-      <!---------------------->
-      <!-- 3               -->
-      <!-- SKILL       -->
-      <!--                  -->
-      <!---------------------->
-      <section data-anim="slide-up" class="layout-pt-lg layout-pb-lg">
-        <!-- container start -->
-        <div class="container">
-          <!-- row start -->
-          <div class="row x-gap-72 align-items-start justify-content-center y-gap-40">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <p class="text-3xl sm:text-xl text-black fw-600 sm:fw-600">
-                Skills
-              </p>
-
-              <ul class="dot text-dark text-base mb-12 md:mb-8 mt-16 sm:mt-8 fw-500 sm:fw-400">
-                <li class="-suc">User research, Design Thinking</li>
-                <li class="-suc">Personas, Journey maps, User Flows</li>
-                <li class="-suc">Wire-framing, Prototyping</li>
-                <li class="-suc">Usability Testing</li>
-                <li class="-suc">Mockups, Presentation</li>
-                <li class="-suc">Illustration, 2D Animation</li>
-                <li class="-suc">Agile Scrum</li>
-
-                <li class="-suc -gray">VueJs, HTML, JavaScript, Gsap</li>
-                <li class="-suc -gray">
-                  CSS, Tailwind, Boostrap, Ant-design
-                </li>
-                <li class="-suc -gray">
-                  Graphic Design, Branding, Keyvisual
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <p class="text-3xl sm:text-xl text-black fw-600 sm:fw-600">
-                Software
-              </p>
-
-              <ul class="dot text-dark text-base mb-12 md:mb-8 mt-16 sm:mt-8 fw-500 sm:fw-400">
-                <li class="-suc">Figma</li>
-                <li class="-suc">Adobe Photoshop</li>
-                <li class="-suc">Adobe Illustrator</li>
-                <li class="-suc">Zeplin</li>
-                <li class="-suc">Maze</li>
-                <li class="-suc">Jitter / Lottie</li>
-                <li class="-suc">Jira/ Trello / Notion</li>
-                <li class="-suc -gray">VSCode</li>
-                <li class="-suc -gray">Github</li>
-                <li class="-suc -gray">Microsoft Offices</li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <p class="text-3xl sm:text-xl text-black fw-600 sm:fw-600">
-                Soft Skills
-              </p>
-
-              <ul class="dot text-dark text-base mb-12 md:mb-8 mt-16 sm:mt-8 fw-500 sm:fw-400">
-                <li class="-suc">Empathetic</li>
-                <li class="-suc">Analytical Thinking</li>
-                <li class="-suc">Problem Solving</li>
-                <li class="-suc">Collaborative</li>
-                <li class="-suc">English Fluency</li>
-                <li class="-suc">Self learning</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!---------------------->
-      <!-- 4                -->
-      <!-- CV        -->
-      <!--                  -->
-      <!---------------------->
-
-      <!-- section start -->
-      <section>
-        <div data-parallax="0.4" class="z-5 js-image layout-pt-lg layout-pb-lg">
-          <div data-parallax-target class="bg-image js-lazy" data-bg="img/general/bg-mic.jpg"></div>
-          <div class="mas2" style="opacity: 0.9"></div>
-          <div class="bg-grid"></div>
+        <!---------------------->
+        <!-- 3               -->
+        <!-- EDUCA       -->
+        <!--                  -->
+        <!---------------------->
+        <section class="layout-pb-lg layout-pt-lg">
           <!-- container start -->
           <div class="container relative">
             <!-- row start -->
-            <div class="row justify-content-center text-center">
-              <div class="">
-                <div class="sectionHeading -md">
-                  <!-- <p class="sectionHeading__subtitle -light mb-32 ">
+            <div class="row x-gap-60 align-items-start justify-content-between">
+              <div class="col-md-4 sm:mr-0">
+                <div class="sectionHeading -sm">
+                  <div class="sectionHeading__subtitle mb-8 sm:d-none">
+                    Proudly
+                  </div>
+                  <h1 class="sectionHeading__title">Academic Performance</h1>
+                  <!-- <p class="pl-0    text-black sm:text-base mt-24 sm:d-none">Computer Science & Engineering</p> -->
+                </div>
+              </div>
+              <div class="col-md-8 row y-gap-60 x-gap-60 sm:mt-24">
+                <div class="col-md-6 relative">
+                  <img
+                    class="img-gray rounded-0"
+                    src="img/general/iu.png"
+                    alt=""
+                    height="40px"
+                  />
+                  <p class="pl-0 fw-600 text-black mt-24 sm:mt-8">
+                    International University
+                  </p>
+                  <p class="pl-0 text-base mt-8 sm:mt-0">
+                    <mark>Thesis score: 87/100, GPA: Good</mark>
+                    <br />Notable courses: Software Engineering, Web
+                    Development, Human & Computer Interaction, ect.
+                  </p>
+                  <!-- <a href="https://hcmiu.edu.vn/" target="_blank"
+                      class="mt-16 button -underline4 text-base text-black text-cen2">
+                      View detail <i class="icon h-8 size-2xs text-dark ml-8" data-feather="external-link"></i>
+                    </a> -->
+                </div>
+
+                <div class="col-md-6 img-gray rounded-0">
+                  <img src="img/general/vnu.png" alt="" height="40px" />
+
+                  <p class="pl-0 fw-600 text-black mt-24 sm:mt-8">
+                    Vietnam National University
+                  </p>
+                  <p class="pl-0 text-base mt-8 sm:mt-0">
+                    VNUHCM is one of the two largest national research
+                    universities in Vietnam, including HCMUS, HCMIU, UIT, USSH,
+                    UEL, HCMUT
+                  </p>
+
+                  <!-- <a href="https://hcmiu.edu.vn/" target="_blank"
+                      class="mt-16 button -underline4 text-base text-black text-cen2">
+                      View detail <i class="icon h-8 size-2xs text-dark ml-8" data-feather="external-link"></i>
+                    </a> -->
+                </div>
+
+                <div class="col-md-6 relative">
+                  <img
+                    class="img-gray rounded-0"
+                    src="img/general/ie.png"
+                    alt=""
+                    height="40px"
+                  />
+                  <p class="pl-0 fw-600 text-black mt-24 sm:mt-8">
+                    IELTS Certificate
+                  </p>
+                  <p class="pl-0 text-base mt-8 sm:mt-0">
+                    <mark>6.0 Overall</mark> with 6.5 in Speaking & Reading Test
+                    at IDP Center, 27 April 2022.
+                  </p>
+                  <!-- <a href="https://hcmiu.edu.vn/" target="_blank"
+                      class="mt-16 button -underline4 text-base text-black text-cen2">
+                      View detail <i class="icon h-8 size-2xs text-dark ml-8" data-feather="external-link"></i>
+                    </a> -->
+                </div>
+
+                <div class="col-md-6 img-gray rounded-0">
+                  <img
+                    src="https://filethpt.hcm.edu.vn//UploadImages/Config/thpttanbinh/LOGO_TANBINH.jpg"
+                    alt=""
+                    height="40px"
+                  />
+                  <p class="pl-0 fw-600 text-black mt-24 sm:mt-8">
+                    High & Secondary Schools
+                  </p>
+                  <p class="pl-0 text-base mt-8 sm:mt-0">
+                    12 Consecutive years of Excellent student achievement.
+                  </p>
+                  <!-- <a href="https://hcmiu.edu.vn/" target="_blank"
+                      class="mt-16 button -underline4 text-base text-black text-cen2">
+                      View detail <i class="icon h-8 size-2xs text-dark ml-8" data-feather="external-link"></i>
+                    </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- HORIZONTAL FLUID  -->
+        <div style="position: relative" data-anim-wrap>
+          <div class="bg-grid"></div>
+          <div
+            class="bg-dark-3 layout-pt-lg h-full layout-pb-lg d-flex justify-content-center align-items-center"
+          >
+            <div
+              data-anim-child="slide-up delay-1"
+              class="col-md-10 text-center"
+            >
+              <h1 class="text-7xl sm:text-4xl text-white fw-600">
+                Keep <span class="greenbg">Learning </span>
+              </h1>
+              <p class="badge-dark mt-16 sm:d-none">
+                Check out my Key Competences bellow 🤩
+              </p>
+            </div>
+          </div>
+          <div class="md:d-none">
+            <img class="lax" src="img/general/book-1.png" alt="" />
+            <img class="lax2" src="img/general/book-3.png" alt="" />
+
+            <img class="lax3" src="img/general/book-2.png" alt="" />
+            <img class="lax4" src="img/general/book-4.png" alt="" />
+          </div>
+        </div>
+        <!-- HORIZONTAL FLUID - end -->
+
+        <!---------------------->
+        <!-- 3               -->
+        <!-- SKILL       -->
+        <!--                  -->
+        <!---------------------->
+        <section data-anim="slide-up" class="layout-pt-lg layout-pb-lg">
+          <!-- container start -->
+          <div class="container">
+            <!-- row start -->
+            <div
+              class="row x-gap-72 align-items-start justify-content-center y-gap-40"
+            >
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <p class="text-3xl sm:text-xl text-black fw-600 sm:fw-600">
+                  Skills
+                </p>
+
+                <ul
+                  class="dot text-dark text-base mb-12 md:mb-8 mt-16 sm:mt-8 fw-500 sm:fw-400"
+                >
+                  <li class="-suc">User research, Design Thinking</li>
+                  <li class="-suc">Personas, Journey maps, User Flows</li>
+                  <li class="-suc">Wire-framing, Prototyping</li>
+                  <li class="-suc">Usability Testing</li>
+                  <li class="-suc">Mockups, Presentation</li>
+                  <li class="-suc">Illustration, 2D Animation</li>
+                  <li class="-suc">Agile Scrum</li>
+
+                  <li class="-suc -gray">VueJs, HTML, JavaScript, Gsap</li>
+                  <li class="-suc -gray">
+                    CSS, Tailwind, Boostrap, Ant-design
+                  </li>
+                  <li class="-suc -gray">
+                    Graphic Design, Branding, Keyvisual
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <p class="text-3xl sm:text-xl text-black fw-600 sm:fw-600">
+                  Software
+                </p>
+
+                <ul
+                  class="dot text-dark text-base mb-12 md:mb-8 mt-16 sm:mt-8 fw-500 sm:fw-400"
+                >
+                  <li class="-suc">Figma</li>
+                  <li class="-suc">Adobe Photoshop</li>
+                  <li class="-suc">Adobe Illustrator</li>
+                  <li class="-suc">Zeplin</li>
+                  <li class="-suc">Maze</li>
+                  <li class="-suc">Jitter / Lottie</li>
+                  <li class="-suc">Jira/ Trello / Notion</li>
+                  <li class="-suc -gray">VSCode</li>
+                  <li class="-suc -gray">Github</li>
+                  <li class="-suc -gray">Microsoft Offices</li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <p class="text-3xl sm:text-xl text-black fw-600 sm:fw-600">
+                  Soft Skills
+                </p>
+
+                <ul
+                  class="dot text-dark text-base mb-12 md:mb-8 mt-16 sm:mt-8 fw-500 sm:fw-400"
+                >
+                  <li class="-suc">Empathetic</li>
+                  <li class="-suc">Analytical Thinking</li>
+                  <li class="-suc">Problem Solving</li>
+                  <li class="-suc">Collaborative</li>
+                  <li class="-suc">English Fluency</li>
+                  <li class="-suc">Self learning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!---------------------->
+        <!-- 4                -->
+        <!-- CV        -->
+        <!--                  -->
+        <!---------------------->
+
+        <!-- section start -->
+        <section>
+          <div
+            data-parallax="0.4"
+            class="z-5 js-image layout-pt-lg layout-pb-lg"
+          >
+            <div
+              data-parallax-target
+              class="bg-image js-lazy"
+              data-bg="img/general/bg-mic.jpg"
+            ></div>
+            <div class="mas2" style="opacity: 0.9"></div>
+            <div class="bg-grid"></div>
+            <!-- container start -->
+            <div class="container relative">
+              <!-- row start -->
+              <div class="row justify-content-center text-center">
+                <div class="">
+                  <div class="sectionHeading -md">
+                    <!-- <p class="sectionHeading__subtitle -light mb-32 ">
                   Looking for my Resume?
                 </p> -->
-                  <h2 class="sectionHeading__title text-white">
-                    <span class="sm:text-3xl">My Resume in PDF</span>
-                  </h2>
+                    <h2 class="sectionHeading__title text-white">
+                      <span class="sm:text-3xl">My Resume in PDF</span>
+                    </h2>
 
-                  <!-- Modal cta -->
-                  <a target="_blank" 
-                    class="button -md -white mt-32 text-black modalcta">
-                    <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
-                    Download CV Here
-                  </a>
+                    <!-- Modal cta -->
+                    <a
+                      target="_blank"
+                      class="button -md -white mt-32 text-black modalcta"
+                    >
+                      <i
+                        class="icon mr-8"
+                        style="width: 20px"
+                        data-feather="download"
+                      ></i>
+                      Download CV Here
+                    </a>
 
-                  <!-- <a target="_blank" onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
+                    <!-- <a target="_blank" onclick="checkpass('img/backgrounds/CV_QuangTrung_UIUX.pdf','CV_QuangTrung_UIUX.pdf')"
                     class="button -md -white mt-32 text-black">
                     <i class="icon mr-8" style="width: 20px" data-feather="download"></i>
                     Download CV Here
                   </a> -->
-                  
-
-
-                </div>
-              </div>
-            </div>
-            <!-- row end -->
-          </div>
-          <!-- container end -->
-        </div>
-      </section>
-      <!-- section end -->
-
-      <!-- Font Awesome CDN -->
-      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/> -->
-
-      <div data-cursor id="share-buttons" class="js-backButton2 d-none sm:d-flex  ">
-
-
-        <a class="x" data-barba href="about-me.html">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 3C10.5784 3 9.23422 3.32998 8.0387 3.9166C8.38086 4.44823 8.57841 5.0817 8.57841 5.75999C8.57841 7.65022 7.04684 9.18196 5.15682 9.18196C4.59063 9.18196 4.05703 9.04345 3.58656 8.79903C3.20774 9.79303 3 10.8726 3 11.999C3 16.971 7.03055 21 12 21C16.9695 21 21 16.971 21 11.999C21 7.02693 16.9715 3 12 3ZM12 15C10.5 15 9 13.8892 9 11.999C9 10.2202 10.5 9.18196 12 9.18196C13.5 9.18196 15 10.5 15 11.999C15 14 13.5 15 12 15Z" stroke="#101019" stroke-width="1.75"/>
-          </svg>
-        </a>
-
-        <a class="x" href="mailto:nqt99designs@gmail.com">
-          <i class="icon" style="width:20px" data-feather="mail"></i>
-
-        </a>
-
-        <a class="x" href="tel:+84938074106">
-          <i class="icon" style="width:20px" data-feather="phone-call"></i>
-          
-        </a>
-
-      </div>
-
-     <!---------------------->
-      <!-- 6                -->
-      <!-- FOOTER         -->
-      <!--                  -->
-      <!---------------------->
-      <footer class="footer -type-1 ">
-        <!-- container start -->
-        <div class="container">
-          <div class="footer__top">
-            <!-- row start -->
-            <div class="row y-gap-48 justify-content-between">
-              <div class="col-lg-auto ">
-                <div class="px-0">
-                  <div id="svgContainer" class="">
-
-                    <lottie-player src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
-                      background="transparent" speed="1" loop autoplay></lottie-player>
                   </div>
                 </div>
+              </div>
+              <!-- row end -->
+            </div>
+            <!-- container end -->
+          </div>
+        </section>
+        <!-- section end -->
 
-                <!-- <a data-barba href="index.html" class="footer__logo text-black">
+        <!-- Font Awesome CDN -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/> -->
+
+        <div
+          data-cursor
+          id="share-buttons"
+          class="js-backButton2 d-none sm:d-flex"
+        >
+          <a class="x" data-barba href="about-me.html">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 3C10.5784 3 9.23422 3.32998 8.0387 3.9166C8.38086 4.44823 8.57841 5.0817 8.57841 5.75999C8.57841 7.65022 7.04684 9.18196 5.15682 9.18196C4.59063 9.18196 4.05703 9.04345 3.58656 8.79903C3.20774 9.79303 3 10.8726 3 11.999C3 16.971 7.03055 21 12 21C16.9695 21 21 16.971 21 11.999C21 7.02693 16.9715 3 12 3ZM12 15C10.5 15 9 13.8892 9 11.999C9 10.2202 10.5 9.18196 12 9.18196C13.5 9.18196 15 10.5 15 11.999C15 14 13.5 15 12 15Z"
+                stroke="#101019"
+                stroke-width="1.75"
+              />
+            </svg>
+          </a>
+
+          <a class="x" href="mailto:nqt99designs@gmail.com">
+            <i class="icon" style="width: 20px" data-feather="mail"></i>
+          </a>
+
+          <a class="x" href="tel:+84938074106">
+            <i class="icon" style="width: 20px" data-feather="phone-call"></i>
+          </a>
+        </div>
+
+        <!---------------------->
+        <!-- 6                -->
+        <!-- FOOTER         -->
+        <!--                  -->
+        <!---------------------->
+        <footer class="footer -type-1">
+          <!-- container start -->
+          <div class="container">
+            <div class="footer__top">
+              <!-- row start -->
+              <div class="row y-gap-48 justify-content-between">
+                <div class="col-lg-auto">
+                  <div class="px-0">
+                    <div id="svgContainer" class="">
+                      <lottie-player
+                        src="https://lottie.host/c6077e8d-c1c3-47ea-bbad-5fbef374604f/bXR6IyPCaR.json"
+                        background="transparent"
+                        speed="1"
+                        loop
+                        autoplay
+                      ></lottie-player>
+                    </div>
+                  </div>
+
+                  <!-- <a data-barba href="index.html" class="footer__logo text-black">
                   <img class="js-lazy" data-srcset="img/logo/logo.svg" height="29px!important" alt="WagTrung Logo" />
 
                 </a> -->
-
-
-              </div>
-
-
-              <div class="col-lg-auto col-sm-4">
-
-                <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8 ">Links</h4>
-
-                <div class="footer__content text-base text-dark mt-8  ">
-                  <div>
-                    <a data-barba href="case-studies.html" class="button -underline stagerhover stagerhover">Case Study</a>
-                  </div>
-
-                  <div>
-                    <a data-barba href="about-me.html" class="button -underline stagerhover sm:mt-4 mt-12 stagerhover">Experiences</a>
-                  </div>
-
-                  <div>
-                    <a data-barba href="works.html" class="button -underline stagerhover sm:mt-4 mt-12 stagerhover">Designs</a>
-                  </div>
-
-
-
                 </div>
-              </div>
 
-              <div class="col-lg-3 col-sm-6">
-                <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8 ">Info</h4>
+                <div class="col-lg-auto col-sm-4">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Links</h4>
 
-                <div class="footer__content text-base text-dark mb-16 sm:mt-12">
-                  <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
-                  <div>
-                    <a data-barba class="button -underline stagerhover sm:mt-4 mt-12"
-                      href="mailto:nqt99designs@gmail.com">nqt99designs@gmail.com</a>
+                  <div class="footer__content text-base text-dark mt-8">
+                    <div>
+                      <a
+                        data-barba
+                        href="case-studies.html"
+                        class="button -underline stagerhover stagerhover"
+                        >Case Study</a
+                      >
+                    </div>
+
+                    <div>
+                      <a
+                        data-barba
+                        href="about-me.html"
+                        class="button -underline stagerhover sm:mt-4 mt-12 stagerhover"
+                        >Experiences</a
+                      >
+                    </div>
+
+                    <div>
+                      <a
+                        data-barba
+                        href="works.html"
+                        class="button -underline stagerhover sm:mt-4 mt-12 stagerhover"
+                        >Designs</a
+                      >
+                    </div>
                   </div>
-                  <div>
-                    <a data-barba class="button -underline stagerhover sm:mt-4 mt-12" href="tel:+84938074106">+84 938 074 106</a>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">Info</h4>
+
+                  <div
+                    class="footer__content text-base text-dark mb-16 sm:mt-12"
+                  >
+                    <p class="mb-4 mt-16">Binh Tan, HCM City, Viet Nam</p>
+                    <div>
+                      <a
+                        data-barba
+                        class="button -underline stagerhover sm:mt-4 mt-12"
+                        href="mailto:nqt99designs@gmail.com"
+                        >nqt99designs@gmail.com</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        data-barba
+                        class="button -underline stagerhover sm:mt-4 mt-12"
+                        href="tel:+84938074106"
+                        >+84 938 074 106</a
+                      >
+                    </div>
                   </div>
-
                 </div>
-              </div>
 
-
-
-              <div class="col-lg-auto col-auto">
-                <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8 ">Explore more</h4>
-                <div class="social -bordered mt-16 sm:mt-16">
-                  <a class="social__item  text-black " href="#">
-                    <i class="fa fa-behance"></i>
-                  </a>
-                  <a class="social__item  text-black" href="https://www.linkedin.com/in/wagtrung/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- row end -->
-          </div>
-
-          <div class="footer__bottom layout-pb-md">
-            <!-- row start -->
-            <div class="row ">
-              <div class="col">
-                <div class="footer__copyright">
-                  <div class="d-flex align-items-center x-gap-32">
-                    <a target="_blank"
-                      
-                      class="modalcta button -sm -outline-black -light text-black sm:d-none" style="font-size:.8rem">
-                      <i class="icon size-2xs str-width-lg  mr-8" data-feather="download"></i>Download my CV
+                <div class="col-lg-auto col-auto">
+                  <h4 class="text-xl fw-500 text-black mb-24 sm:mb-8">
+                    Explore more
+                  </h4>
+                  <div class="social -bordered mt-16 sm:mt-16">
+                    <a class="social__item text-black" href="#">
+                      <i class="fa fa-behance"></i>
                     </a>
-                    <p class="text-left fw-500 text-dark">
-                      © 2022, designed & coded by <a data-barba href="about-me.html">
-                        <span class="button -underline4 pb-0 text-sm text-dark "> wagtrung.</span>
-                      </a>
-                    </p>
+                    <a
+                      class="social__item text-black"
+                      href="https://www.linkedin.com/in/wagtrung/"
+                    >
+                      <i class="fa fa-linkedin"></i>
+                    </a>
                   </div>
                 </div>
               </div>
+              <!-- row end -->
             </div>
-            <!-- row end © 2020, This web is fully coded by wagtrung.    -->
+
+            <div class="footer__bottom layout-pb-md">
+              <!-- row start -->
+              <div class="row">
+                <div class="col">
+                  <div class="footer__copyright">
+                    <div class="d-flex align-items-center x-gap-32">
+                      <a
+                        target="_blank"
+                        class="modalcta button -sm -outline-black -light text-black sm:d-none"
+                        style="font-size: 0.8rem"
+                      >
+                        <i
+                          class="icon size-2xs str-width-lg mr-8"
+                          data-feather="download"
+                        ></i
+                        >Download my CV
+                      </a>
+                      <p class="text-left fw-500 text-dark">
+                        © 2022, designed & coded by
+                        <a data-barba href="about-me.html">
+                          <span
+                            class="button -underline4 pb-0 text-sm text-dark"
+                          >
+                            wagtrung.</span
+                          >
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row end © 2020, This web is fully coded by wagtrung.    -->
+            </div>
           </div>
-        </div>
-        <!-- container end -->
-      </footer>
-      <!-- footer end  -->
-    </main>
-  </div>
-  <!-- barba container end -->
+          <!-- container end -->
+        </footer>
+        <!-- footer end  -->
+      </main>
+    </div>
+    <!-- barba container end -->
 
-  <!-- JavaScript -->
+    <!-- JavaScript -->
 
-  <script src="js/vendors.js"></script>
-  <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
-  <script type="module" src="js/main.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/vendors.js"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
+    <script type="module" src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
 
-
-
-  <!-- checkpass modal-->
-
-</body>
-
+    <!-- checkpass modal-->
+  </body>
 </html>
