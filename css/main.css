@@ -19744,8 +19744,7 @@ body {
 }
 
 .curso-grow {
-  --circle-grow: 60px;
-
+  --circle-grow: 64px;
   height: var(--circle-grow);
   width: var(--circle-grow);
   top: calc(var(--circle-grow) / 2 * -1);
