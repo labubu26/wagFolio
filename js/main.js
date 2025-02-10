@@ -1142,30 +1142,49 @@ import modalUnlock from "./module/modalunlock.js";
       // const Chetong = document.querySelector('.js-che-tong');
       else {
 
-        if(document.querySelector('.js-tao')){
-        const taos = gsap.utils.toArray('.js-tao .split__line');
+        if (document.querySelector('.js-tao')) {
+          const taos = gsap.utils.toArray('.js-tao .split__line');
+          const taosub = gsap.utils.toArray('.js-taosub');
 
+          
           // chế
-        taos.forEach(tao => {
-          tl.to(tao, {
-            stagger: 1,
-            duration: 1,
-            ease: 'quart.out',
-            opacity: 1,
-            y: '0%',
-            lineHeight: '1.3',
-            scrollTrigger: {
-              trigger: tao,
-              markers: false,
-              scrub: 1.5,
-              start: "top bottom",
-              end: "top bottom",
-            }
-          })
-        });
+          taos.forEach(tao => {
+            let ko = gsap.timeline({
+              scrollTrigger: {
+                trigger: tao,
+                markers: false,
+                scrub: 1.8,
+                start: "top bottom",
+                end: "top bottom",
+              }
+  
+            });
+
+            ko.fromTo(tao, { skewY: 6}, {
+              stagger: 0.5,
+              duration: 2,
+              ease: 'stepped.out',
+              opacity: 1,
+              y: '0%',
+              lineHeight: '1.3',
+              skewY: 0,
+             
+            },  '>0')
+            .from(taosub,{
+              stagger: 0.5,
+              duration: 1,
+              ease: 'stepped.out',
+              opacity: 0,
+              skewY: 4,
+              y: '5%',
+              transformOrigin:'left center'
+             
+            },  '>-0.5')
+              
+          });
 
         }
-        
+
 
       }
 
@@ -3571,6 +3590,7 @@ document.querySelector("#passSubmit").addEventListener("click", () => {
 
 
 var elm;
+
 document.querySelector("#unlockSubmit").addEventListener("click", () => {
   let val = document.querySelector("#unlockpassInput").value;
   let pass = elm.dataset.pass || "wagpost";
@@ -3999,15 +4019,15 @@ function stagerhover() {
 
 // block
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
+document.addEventListener("keydown", function (event) {
+  if (event.ctrlKey) {
+    event.preventDefault();
   }
-  if(event.keyCode == 123){
-     event.preventDefault();
+  if (event.keyCode == 123) {
+    event.preventDefault();
   }
 });
 
 document.addEventListener("contextmenu",
   event => event.preventDefault()
-  );
+);

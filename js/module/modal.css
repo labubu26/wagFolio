@@ -73,3 +73,10 @@ a{
 #closeBtn:hover svg{
   stroke: red
 }
+
+@media (max-width: 767px) {
+  .modal-content {
+    padding:2rem;
+    margin:2rem
+  }
+}
