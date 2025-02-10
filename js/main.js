@@ -252,13 +252,8 @@ import modalUnlock from "./module/modalunlock.js";
           }
 
           tl
-            .set(progress, {
-              opacity: 0,
-              scale: 100,
-            })
-            .set(progressInner, {
-              scaleX: 0,
-            })
+          
+     
             .set(bg, {
               // translateX: "0%",
               opacity: 1,
@@ -281,8 +276,8 @@ import modalUnlock from "./module/modalunlock.js";
               opacity: 1,
               scale: 2,
             },)
-            .to(progressInner, {
-              scaleX: 1,
+            .from(progressInner, {
+              scaleX: 0,
               duration: 0.4,
               ease: 'none',
             }, '>0.1')
@@ -309,7 +304,7 @@ import modalUnlock from "./module/modalunlock.js";
 
           return tl
             .to(progress, {
-              // delay: 0.2,
+              delay: 0.4,
               duration: 1,
               ease: 'quart.inOut',
               opacity: 0,
@@ -328,7 +323,7 @@ import modalUnlock from "./module/modalunlock.js";
                 document.documentElement.classList.remove('overflow-hidden');
                 document.body.classList.remove('overflow-hidden');
               },
-            }, '>-0.4')
+            }, '>-0.5')
 
         },
         extendTimeline: true,
