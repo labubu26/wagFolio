@@ -252,8 +252,8 @@ import modalUnlock from "./module/modalunlock.js";
           }
 
           tl
-          
-     
+
+
             .set(bg, {
               // translateX: "0%",
               opacity: 1,
@@ -1141,7 +1141,7 @@ import modalUnlock from "./module/modalunlock.js";
           const taos = gsap.utils.toArray('.js-tao .split__line');
           const taosub = gsap.utils.toArray('.js-taosub');
 
-          
+
           // chế
           taos.forEach(tao => {
             let ko = gsap.timeline({
@@ -1152,10 +1152,10 @@ import modalUnlock from "./module/modalunlock.js";
                 start: "top bottom",
                 end: "top bottom",
               }
-  
+
             });
 
-            ko.fromTo(tao, { skewY: 6}, {
+            ko.fromTo(tao, { skewY: 6 }, {
               stagger: 0.5,
               duration: 2,
               ease: 'stepped.out',
@@ -1163,19 +1163,19 @@ import modalUnlock from "./module/modalunlock.js";
               y: '0%',
               lineHeight: '1.3',
               skewY: 0,
-             
-            },  '>0')
-            .from(taosub,{
-              stagger: 0.5,
-              duration: 1,
-              ease: 'stepped.out',
-              opacity: 0,
-              skewY: 4,
-              y: '5%',
-              transformOrigin:'left center'
-             
-            },  '>-0.5')
-              
+
+            }, '>0')
+              .from(taosub, {
+                stagger: 0.5,
+                duration: 1,
+                ease: 'stepped.out',
+                opacity: 0,
+                skewY: 4,
+                y: '5%',
+                transformOrigin: 'left center'
+
+              }, '>-0.5')
+
           });
 
         }
@@ -2818,7 +2818,47 @@ import modalUnlock from "./module/modalunlock.js";
   function a() {
 
 
+    // job faq
+    var job = document.querySelectorAll(".job-item");
+    if (!job) return;
+    else {
 
+
+      job.forEach(item => {
+        const details = item.querySelector(".job-details");
+
+        item.addEventListener("click", function () {
+
+          // Mở thì mở
+          //   if (item.classList.contains("active")) {
+          //     details.style.maxHeight = "0";
+          //     item.classList.remove("active");
+          // } else {
+          //     item.classList.add("active");
+          //     details.style.maxHeight = details.scrollHeight + "px"; 
+          // }
+
+          // 1 mở only
+          // Đóng tất cả job-items trước
+          job.forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove("active");
+              otherItem.querySelector(".job-details").style.maxHeight = "0";
+            }
+          });
+
+          // Toggle trạng thái active cho item được click
+
+          if (item.classList.contains("active")) {
+            details.style.maxHeight = "0";
+            item.classList.remove("active");
+          } else {
+            item.classList.add("active");
+            details.style.maxHeight = details.scrollHeight + "px";
+          }
+        });
+      });
+    }
 
     // acc faq
     var acc = document.querySelectorAll(".accordion");
@@ -3834,7 +3874,7 @@ function cursomove() {
     mouse.y = e.y;
   });
 
-  const alllink = document.querySelectorAll("a, .button, button, .img-enlargable , .bg-image, .backButton, .img-comp-slider, .js-prev, .js-next");
+  const alllink = document.querySelectorAll("a, .button, button, .job-item, .img-enlargable , .bg-image, .backButton, .img-comp-slider, .js-prev, .js-next");
 
   alllink.forEach(link => {
     link.addEventListener("mouseleave", () => {

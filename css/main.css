@@ -6797,8 +6797,8 @@ img {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__title {
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  line-height: 1.4;
   font-weight: 500;
   font-family: var(--font-secondary);
   color: var(--bg-dark-3);
@@ -17242,6 +17242,70 @@ body.compensate-for-scrollbar {
   font-weight: 500;
 }
 
+/* FAQ job */
+.job-container {
+}
+
+.job-item {
+  /* padding: 20px 0; */
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: opacity 0.3s ease;
+  position: relative;
+}
+
+
+.job-details {
+  overflow: hidden;
+  max-height: 0;
+  /* transform: scaleY(0); */
+  /* transform-origin: top; */
+  /* opacity: 0; */
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out;}
+
+.job-item.active .job-details {
+  /* transform: scaleY(1); */
+  /* opacity: 1; */
+}
+
+.job-item.active .job-details, .job-container:hover .job-item.active {
+  /* opacity: 1; */
+  /* padding: 15px 0 20px; */
+}
+
+
+/* .job-container:hover .job-item {
+  opacity: 0.5;
+}
+
+.job-container .job-item:hover {
+  opacity: 1;
+} */
+
+.job-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--bg-dark-4);
+  transform: scaleX(0);
+  transform-origin: 100% center;
+  transition: transform 0.7s ease-in-out 0s;}
+
+.job-item:hover::before{
+  transform: scaleX(1);
+  transform-origin: 0%;
+}
+
+.job-item.active:hover::before{
+  transform: scaleX(0);
+  transform-origin: 100% center;
+}
+
+
+
 /* ACCC FAQ */
 .accordion {
   min-height: 120px;
@@ -17255,7 +17319,7 @@ body.compensate-for-scrollbar {
   transition: all 0.5s;
 }
 
-.active,
+.accordion .active,
 .accordion:hover {
   /* background-color: #ccc; */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 27px 63px -49px;
