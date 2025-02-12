@@ -17248,7 +17248,7 @@ body.compensate-for-scrollbar {
 
 .job-item {
   /* padding: 20px 0; */
-  cursor: pointer;
+  /* cursor: pointer; */
   border-bottom: 1px solid #ddd;
   transition: opacity 0.3s ease;
   position: relative;
@@ -17261,7 +17261,7 @@ body.compensate-for-scrollbar {
   /* transform: scaleY(0); */
   /* transform-origin: top; */
   /* opacity: 0; */
-  transition: max-height 0.4s ease-out, opacity 0.3s ease-out;}
+  transition: max-height 0.4s ease-out;}
 
 .job-item.active .job-details {
   /* transform: scaleY(1); */
