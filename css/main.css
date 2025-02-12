@@ -407,7 +407,7 @@
   opacity: 0;
   transition-property: opacity, transform;
   pointer-events: none;
-  transition-duration: 1.2s;
+  transition-duration: 0.8s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 

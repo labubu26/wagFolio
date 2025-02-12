@@ -2819,45 +2819,41 @@ import modalUnlock from "./module/modalunlock.js";
 
 
     // job faq
-    var job = document.querySelectorAll(".job-item");
-    if (!job) return;
+    var jobwrap = document.querySelectorAll(".job-container");
+    if (!jobwrap) return;
     else {
 
 
-      job.forEach(item => {
-        const details = item.querySelector(".job-details");
-
-        item.addEventListener("click", function () {
-
-          // Mở thì mở
-          //   if (item.classList.contains("active")) {
-          //     details.style.maxHeight = "0";
-          //     item.classList.remove("active");
-          // } else {
-          //     item.classList.add("active");
-          //     details.style.maxHeight = details.scrollHeight + "px"; 
-          // }
-
-          // 1 mở only
-          // Đóng tất cả job-items trước
-          job.forEach(otherItem => {
-            if (otherItem !== item) {
-              otherItem.classList.remove("active");
-              otherItem.querySelector(".job-details").style.maxHeight = "0";
+      jobwrap.forEach(container => {
+        const jobItems = container.querySelectorAll(".job-item");
+      
+        jobItems.forEach(item => {
+          const details = item.querySelector(".job-details");
+      
+          item.addEventListener("click", function () {
+            // Mặc định là chế độ single-open, chỉ mở một item trong container
+            if (!container.classList.contains("job-multi-open")) {
+              jobItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                  otherItem.classList.remove("active");
+                  otherItem.querySelector(".job-details").style.maxHeight = "0";
+                }
+              });
+            }
+      
+            // Toggle trạng thái active của item được click
+            if (item.classList.contains("active")) {
+              details.style.maxHeight = "0";
+              item.classList.remove("active");
+            } else {
+              item.classList.add("active");
+              details.style.maxHeight = details.scrollHeight + "px";
             }
           });
-
-          // Toggle trạng thái active cho item được click
-
-          if (item.classList.contains("active")) {
-            details.style.maxHeight = "0";
-            item.classList.remove("active");
-          } else {
-            item.classList.add("active");
-            details.style.maxHeight = details.scrollHeight + "px";
-          }
         });
       });
+      
+      
     }
 
     // acc faq
