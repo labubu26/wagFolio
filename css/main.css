@@ -1688,6 +1688,23 @@ h6 {
   font-size: var(--text-xl);
 }
 
+.subcap {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: var(--font-dark);
+}
+
+.subtext {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+  /* font-weight: 500; */
+  line-height: 1.6;
+  color: var(--font-dark);
+}
+
 .text-xs {
   font-size: var(--text-xs);
 }
@@ -6792,8 +6809,9 @@ img {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__img__inner {
-  transition: all 1.4s ease-in-out;
-  transform-origin: center center;
+  transition: transform 1.4s ease;
+  transform: scale(1.025);
+  transform-origin: center;
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__title {
@@ -6883,7 +6901,7 @@ img {
 }
 
 .portfolioCard.-type-1.-hover:hover .portfolioCard__img__inner {
-  /* transform: scale(1.1); */
+  transform: scale(1);
 }
 
 .portfolioCard.-type-1.-hover:hover .portfolioCard__category {
@@ -19535,7 +19553,9 @@ mark {
 .flex-start {
   align-items: flex-start;
 }
-
+.flex-1{
+flex: 1
+}
 .wrap {
   flex-wrap: wrap;
 }
@@ -19621,22 +19641,7 @@ body {
   
   #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
  .goog-text-highlight { background: none !important; box-shadow: none !important;} */
-.subcap {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.6px;
-  color: var(--font-dark);
-}
 
-.subtext {
-  font-size: 1.25rem;
-  margin-top: 1.25rem;
-  /* font-weight: 500; */
-  line-height: 1.6;
-  color: var(--font-dark);
-}
 
 .p-sticky {
   height: 100vh;

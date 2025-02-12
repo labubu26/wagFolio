@@ -1134,12 +1134,11 @@ import modalUnlock from "./module/modalunlock.js";
         return tl;
       }
 
-      // const Chetong = document.querySelector('.js-che-tong');
       else {
 
         if (document.querySelector('.js-tao')) {
           const taos = gsap.utils.toArray('.js-tao .split__line');
-          const taosub = gsap.utils.toArray('.js-taosub');
+          // const taosub = gsap.utils.toArray('.js-taosub');
 
 
           // chế
@@ -1148,44 +1147,32 @@ import modalUnlock from "./module/modalunlock.js";
               scrollTrigger: {
                 trigger: tao,
                 markers: false,
-                scrub: 1.8,
-                start: "top bottom",
-                end: "top bottom",
-              }
-
+                scrub: 0.2,
+                start: "top 100%",
+                end: "top 100%",
+                once: true, // Custom logic để chỉ chạy 1 lần
+                onEnter: () => ko.play(), // Chỉ chạy khi cuộn vào
+                onLeaveBack: () => ko.kill(), // Ngăn chạy lại khi cuộn ngược
+              },
             });
-
-            ko.fromTo(tao, { skewY: 6 }, {
-              stagger: 0.5,
-              duration: 2,
-              ease: 'stepped.out',
-              opacity: 1,
-              y: '0%',
-              lineHeight: '1.3',
-              skewY: 0,
-
-            }, '>0')
-              .from(taosub, {
-                stagger: 0.5,
-                duration: 1,
+          
+            ko.fromTo(
+              tao,
+              { skewY: 10, opacity: 0},
+              {  
+                // stagger: 0.2,
+                duration: 0.8,
                 ease: 'stepped.out',
-                opacity: 0,
-                skewY: 4,
-                y: '5%',
-                transformOrigin: 'left center'
+                opacity: 1,
+                y: '0%',
+                lineHeight: 'initial',
+                skewY: 0,}
+            );
 
-              }, '>-0.5')
-
+            
           });
-
         }
-
-
       }
-
-
-
-
     }
 
     function mastheadBlogArticle(tl) {
@@ -2826,10 +2813,10 @@ import modalUnlock from "./module/modalunlock.js";
 
       jobwrap.forEach(container => {
         const jobItems = container.querySelectorAll(".job-item");
-      
+
         jobItems.forEach(item => {
           const details = item.querySelector(".job-details");
-      
+
           item.addEventListener("click", function () {
             // Mặc định là chế độ single-open, chỉ mở một item trong container
             if (!container.classList.contains("job-multi-open")) {
@@ -2840,7 +2827,7 @@ import modalUnlock from "./module/modalunlock.js";
                 }
               });
             }
-      
+
             // Toggle trạng thái active của item được click
             if (item.classList.contains("active")) {
               details.style.maxHeight = "0";
@@ -2852,8 +2839,8 @@ import modalUnlock from "./module/modalunlock.js";
           });
         });
       });
-      
-      
+
+
     }
 
     // acc faq
