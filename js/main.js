@@ -1130,7 +1130,7 @@ import modalUnlock from "./module/modalunlock.js";
               { skewY: 10},
               {  
                 // stagger: 0.2,
-                duration: 1.1,
+                duration: 0.9,
                 ease: 'stepped.out',
                 // opacity: 1,
                 y: '0%',
