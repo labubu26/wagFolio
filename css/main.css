@@ -15509,10 +15509,10 @@ html.full-page-slider body {
     max-width: 100%;
   }
   .fancy-grid.-col-2 .fancy-grid__item:nth-child(2n + 2) {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
   .fancy-grid.-col-2 .fancy-grid__item:nth-child(1n + 2) {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
 }
 
