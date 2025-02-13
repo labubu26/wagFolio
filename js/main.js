@@ -1116,9 +1116,9 @@ import modalUnlock from "./module/modalunlock.js";
               scrollTrigger: {
                 trigger: tao,
                 markers: false,
-                scrub: 0.3,
-                start: "center 100%",
-                end: "center 100%",
+                scrub: 0.2,
+                start: "top 100%",
+                end: "top 100%",
                 once: true, // Custom logic để chỉ chạy 1 lần
                 onEnter: () => ko.play(), // Chỉ chạy khi cuộn vào
                 onLeaveBack: () => ko.kill(), // Ngăn chạy lại khi cuộn ngược
@@ -1131,7 +1131,7 @@ import modalUnlock from "./module/modalunlock.js";
               { skewY: 5},
               {  
                 // stagger: 0.2,
-                duration: 0.6,
+                duration: 0.9,
                 ease: 'stepped.out',
                 // opacity: 1,
                 y: '0%',
