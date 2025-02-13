@@ -1114,7 +1114,7 @@ import modalUnlock from "./module/modalunlock.js";
             let ko = gsap.timeline({
               scrollTrigger: {
                 trigger: tao,
-                markers: true,
+                markers: false,
                 scrub: 0.5,
                 start: "center 100%",
                 end: "center 100%",
