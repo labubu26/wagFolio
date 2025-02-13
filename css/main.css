@@ -1843,7 +1843,7 @@ h6 {
 
 @media (max-width: 575px) {
   .subcap {
-    font-size: 0.75rem;
+    /* font-size: 1rem; */
     line-height: inherit;
   }
   .xs\:text-xs {
@@ -4359,6 +4359,8 @@ h6 {
   .backButton {
     bottom: 5.5rem;
     right: 1rem;
+    width: 3rem;
+  height: 3rem;
   }
 
   .js-backButton2.is-visible {
@@ -4368,12 +4370,7 @@ h6 {
   }
 }
 
-@media (max-width: 575px) {
-  .backButton {
-    width: 68px;
-    height: 68px;
-  }
-}
+
 
 .backButton__bg {
   position: absolute;
@@ -4667,7 +4664,7 @@ h6 {
   line-height: 1;
   letter-spacing: -0.04em;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 5.5rem;
 }
 
 @media (max-width: 1229px) {
@@ -6040,7 +6037,7 @@ body.is-cursor-active * {
 }
 
 img {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .masthead.-type-1 .masthead__text {
@@ -6203,7 +6200,7 @@ img {
 @media (max-width: 767px) {
   .masthead.-type-4 {
 
-    align-items: end;
+    /* align-items: end; */
   }
   .masthead.-type-4 .masthead__img {
     height: 60vh;
@@ -6229,9 +6226,9 @@ img {
 }
 
 .masthead.-type-4 .masthead__title {
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   font-size: 5rem;
-  line-height: 1.25em;
+  line-height: 1em;
   font-family: var(--font-secondary);
   font-weight: 700;
 }
@@ -6816,7 +6813,7 @@ img {
 }
 
 .portfolioCard__img {
-  border-radius: 2px;
+  border-radius: 4px;
   overflow: hidden;
   /* max-height: 50%; */
 }
@@ -17541,7 +17538,7 @@ body.compensate-for-scrollbar {
   /* padding-bottom: 2rem; */
   /* filter: grayscale(1); */
   transition: all 0.5s ease;
-  border-radius: 2px;
+  border-radius: 4px;
   margin-bottom: 2rem;
   box-shadow: -2px 5px 20px -10px #a8a8a840;
 }
@@ -17589,7 +17586,7 @@ body.compensate-for-scrollbar {
   /* flex: 1; */
   background: rgb(255 255 255);
 
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px !important;
 }
 
@@ -17798,7 +17795,7 @@ body.compensate-for-scrollbar {
   width: 230px;
   height: auto;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .lax {
@@ -17833,7 +17830,7 @@ body.compensate-for-scrollbar {
   position: relative;
   margin-bottom: 2rem;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: rgba(141, 141, 143, 0.2) 0px 8px 56px -16px;
 }
 
@@ -18702,7 +18699,7 @@ blockquote:after {
   display: flex;
   justify-content: center;
   padding: 1.375rem;
-  border-right: 1px solid var(--bg-dark-6);
+  border-right: 1px solid hsl(0deg 0% 0% / 5%);
 }
 
 .x i {
@@ -19754,7 +19751,7 @@ body {
     padding: 0px;
     background-size: 0% 100%;
     background-repeat: no-repeat;
-    border-radius: 2px;
+    border-radius: 4px;
     transition: background-size 2s ease-in-out;
   }
 

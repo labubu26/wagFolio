@@ -245,7 +245,7 @@
                               data-barba
                               href="about-me.html"
                             >
-                              Experiences
+                              About
                             </a>
                           </li>
 
@@ -375,17 +375,16 @@
                       Jump to my work<i class="icon ml-8" style="color:rgb(27, 215, 155)"
                         data-feather="arrow-right"></i>
                     </button> -->
-                      <a
+                      <button
                         data-barba
-                        class="button -lg -black text-white mr-12 sm:d-none"
+                        class="button -lg -black text-white mr-12 js-button-scroll-button"
                         data-barba
-                        href="about-me.html"
                       >
                         WORK EXPERIENCES<i
                           class="icon ml-8"
                           data-feather="arrow-right"
                         ></i>
-                      </a>
+                      </button>
                       <a
                         target="_blank"
                         href="https://www.linkedin.com/in/wagtrung/"
@@ -394,15 +393,14 @@
                         LINKEDIN
                         <!-- Get in touch-->
                       </a>
-                      <a
+                      <!-- <a
                         target="_blank"
                         href="https://www.linkedin.com/in/wagtrung/"
                         class="button -lg -black text-white d-none sm:d-block"
                       >
                         Join me on LinkedIn
                         <i class="icon ml-8" data-feather="arrow-right"></i>
-                        <!-- Get in touch-->
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </div>
@@ -587,14 +585,20 @@
               </div>
             </div>
 
-            <div class="fancy-grid__item ">
+            <div class="fancy-grid__item">
               <p class="subtext">
-                Featured works showcasing my user-centered solutions for digital
-                founders. Want to see more designs?
+                Featured works showcasing my user-centric solutions in some
+                projects. You can view
+                <a data-barba href="case-studies.html">
+                  <span class="button -underline4 pb-0 text-black"
+                    >All Case Studies</span
+                  >
+                </a>
+                or just
                 <a data-barba href="works.html">
                   <span class="button -underline4 pb-0 text-black"
-                    >Take a look!</span
-                  >
+                    >More Designs</span
+                  >.
                 </a>
               </p>
             </div>
@@ -959,14 +963,36 @@
           </div>
           <!-- row end -->
 
-          <div class="layout-pt-md text-center" data-anim="slide-up delay-2">
-            <a href="/case-studies.html" data-barba>
-              <span
-                class="button -underline4 text-dark text-2xl sm:text-xl normal"
-                >All case studies
-                <i class="icon ml-4" data-feather="arrow-right"></i>
-              </span>
-            </a>
+          <div
+            class="layout-pt-md d-none sm:d-flex is-in-view"
+            data-anim="slide-up"
+          >
+            <div class="flex-1 text-left">
+              <a href="/case-studies.html" data-barba="">
+                <span
+                  class="button -underline4 text-black text-2xl sm:text-xl normal"
+                  >All CaseStudy
+                  <i
+                    class="icon mr-8"
+                    style="width: 20px"
+                    data-feather="arrow-up-right"
+                  ></i>
+                </span>
+              </a>
+            </div>
+            <div class="flex-1 text-right">
+              <a href="/works.html" data-barba="">
+                <span
+                  class="button -underline4 text-black text-2xl sm:text-xl normal"
+                  >All Designs
+                  <i
+                    class="icon mr-8"
+                    style="width: 20px"
+                    data-feather="arrow-up-right"
+                  ></i>
+                </span>
+              </a>
+            </div>
           </div>
 
           <!-- container end -->
@@ -1208,7 +1234,7 @@
                   </h2> -->
                   <div class="js-tao" data-split="lines" data-split-page-reveal>
                     <h2 class="sectionHeading__title text-white">
-                      From Design to The Society.
+                      Bring Design into Our Society.
                     </h2>
                   </div>
                   <!-- <h2
@@ -1245,7 +1271,7 @@
                   <!-- loli -->
                   <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy rounder-base"
@@ -1282,7 +1308,7 @@
                   <!-- KR-VN -->
                   <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <!-- <div class="ratio ratio-16:9 bg-image swiper-lazy rounder-base"
                     data-background="img/general/vnkr.gif">
@@ -1330,7 +1356,7 @@
                   <!-- IELT  -->
                   <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1366,7 +1392,7 @@
                   <!-- ASUS -->
                   <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1402,7 +1428,7 @@
                   <!-- UK-VN -->
                   <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1439,7 +1465,7 @@
                   <!-- VINAMAN -->
                   <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1475,7 +1501,7 @@
                   <!-- VFCD -->
                   <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1511,7 +1537,7 @@
                   <!-- LoaiPlastic -->
                   <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1548,7 +1574,7 @@
                   <!-- Sumsung  -->
                   <!-- <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1582,7 +1608,7 @@
                   <!-- Oppo  -->
                   <!-- <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1618,7 +1644,7 @@
                   <!-- logo  -->
                   <!-- <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1654,7 +1680,7 @@
                   <!-- Lenovo -->
                   <!-- <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <div
                       class="ratio ratio-16:9 bg-image swiper-lazy"
@@ -1690,7 +1716,7 @@
                   <!-- MUVN  -->
                   <div
                     class="swiper-slide slider-slide"
-                    style="border-radius: 2px; overflow: hidden"
+                    style="border-radius: 4px; overflow: hidden"
                   >
                     <!-- <div class="ratio ratio-16:9 bg-image swiper-lazy" data-background="img/general/muvn.gif">
                   </div> -->
@@ -1761,7 +1787,7 @@
         <!---------------------->
 
         <!-- section start xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-        <section class="layout-pt-lg">
+        <section class="layout-pt-lg" data-anim="slide-up">
           <!-- container start -->
           <div class="container">
             <div class="row align-items-start layout-pb-xs">
@@ -1832,14 +1858,14 @@
                       </div>
                       <!-- content job -->
                       <div class="col-md-6 col-sm-12">
-                        <div class="pb-32 border-bottom-dark2">
+                        <div class="pb-32 border-bottom-dark2 sm:pt-24">
                           <p class="text-2xl text-black leading-xl sm:text-xl">
                             Built a Figma design system & manage via GitLab,
                             designed UI, optimized assets, conducted desk
                             research, and collaborated in Agile team.
                           </p>
                         </div>
-                        <div class="row py-32">
+                        <div class="row py-32 sm:pt-24">
                           <div class="col-md-2 col-sm-12">
                             <p class="text-black text-base">Achievements</p>
                           </div>
@@ -1886,14 +1912,14 @@
                       <div class="col-md-4 sm:d-none"></div>
                       <!-- content job -->
                       <div class="col-md-6 col-sm-12">
-                        <div class="pb-32 border-bottom-dark2">
+                        <div class="pb-32 border-bottom-dark2 sm:pt-24">
                           <p class="text-2xl text-black leading-xl sm:text-xl">
                             Improved HRM user flows, increasing user engagement
                             by 20% in HRM. Redesigned UIs, conducted heuristic
                             tests, and experienced with data visualization.
                           </p>
                         </div>
-                        <div class="row py-32">
+                        <div class="row py-32 sm:pt-24">
                           <div class="col-md-2 col-sm-12">
                             <p class="text-black text-base">Achievements</p>
                           </div>
@@ -1937,7 +1963,7 @@
                       <div class="col-md-4 sm:d-none"></div>
                       <!-- content job -->
                       <div class="col-md-6 col-sm-12">
-                        <div class="pb-32 border-bottom-dark2">
+                        <div class="pb-32 border-bottom-dark2 sm:pt-24">
                           <p class="text-2xl text-black leading-xl sm:text-xl">
                             Designed reusable components for desktop & mobile
                             with a consistent UI system. Conducted research,
@@ -1945,7 +1971,7 @@
                             accessible designs.
                           </p>
                         </div>
-                        <div class="row py-32">
+                        <div class="row py-32 sm:pt-24">
                           <div class="col-md-2 col-sm-12">
                             <p class="text-black text-base">Achievements</p>
                           </div>
@@ -2012,14 +2038,14 @@
                       </div>
                       <!-- content job -->
                       <div class="col-md-6 col-sm-12">
-                        <div class="pb-32 border-bottom-dark2">
+                        <div class="pb-32 border-bottom-dark2 sm:pt-24">
                           <p class="text-2xl text-black leading-xl sm:text-xl">
                             Designed and refined brand identities, Adapted
                             designs to feedback. Created UI designs, Logo &
                             brand guidelines.
                           </p>
                         </div>
-                        <div class="row py-32">
+                        <div class="row py-32 sm:pt-24">
                           <div class="col-md-2 col-sm-12">
                             <p class="text-black text-base">Achievements</p>
                           </div>
@@ -2049,7 +2075,15 @@
           class="js-backButton2 d-none sm:d-flex"
         >
           <a
-            class="x text-black fw-700"
+            class="x text-black fw-500"
+            href="https://www.linkedin.com/in/wagtrung/"
+            target="_blank"
+          >
+            Linkedin
+          </a>
+
+          <a
+            class="x text-black fw-500"
             href="https://zalo.me/0938074106"
             target="_blank"
           >
@@ -2069,12 +2103,12 @@
             Zalo
           </a>
 
-          <a class="x text-black fw-700" href="mailto:nqt99designs@gmail.com">
+          <a class="x text-black fw-500" href="mailto:nqt99designs@gmail.com">
             Mail
             <!-- <i class="icon" style="width: 20px" data-feather="mail"></i> -->
           </a>
 
-          <a class="x text-black fw-700" href="tel:+84938074106">
+          <a class="x text-black fw-500" href="tel:+84938074106">
             Call
             <!-- <i class="icon" style="width: 20px" data-feather="phone-call"></i> -->
           </a>
@@ -2144,7 +2178,7 @@
                         data-barba
                         href="about-me.html"
                         class="button -underline stagerhover sm:mt-4 mt-12 stagerhover"
-                        >Experiences</a
+                        >About</a
                       >
                     </div>
 
@@ -2213,11 +2247,11 @@
                 <div class="col">
                   <div class="footer__copyright">
                     <div class="d-flex align-items-center x-gap-32">
-                      <p class="text-left fw-500 text-dark">
+                      <p class="text-left text-dark">
                         © 2022, designed & coded by
                         <a data-barba href="about-me.html">
                           <span
-                            class="button -underline4 pb-0 text-sm text-dark"
+                            class="button -underline4 pb-0 text-sm text-black"
                           >
                             wagtrung.</span
                           >
