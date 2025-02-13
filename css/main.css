@@ -6222,7 +6222,7 @@ img {
 .masthead.-type-4 .masthead__text {
   font-size: 1.25rem;
   margin-top: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.6;
   color: var(--font-dark);
 }

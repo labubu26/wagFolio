@@ -1114,14 +1114,14 @@ import modalUnlock from "./module/modalunlock.js";
             let ko = gsap.timeline({
               scrollTrigger: {
                 trigger: tao,
-                markers: false,
-                scrub: 0.3,
-                start: "top 100%",
-                end: "top 100%",
+                markers: true,
+                scrub: 0.5,
+                start: "center 100%",
+                end: "center 100%",
                 once: true, // Custom logic để chỉ chạy 1 lần
                 onEnter: () => ko.play(), // Chỉ chạy khi cuộn vào
                 onLeaveBack: () => ko.kill(), // Ngăn chạy lại khi cuộn ngược
-                // invalidateOnRefresh: true,
+                invalidateOnRefresh: true
               },
             });
           
@@ -1129,8 +1129,8 @@ import modalUnlock from "./module/modalunlock.js";
               tao,
               { skewY: 10},
               {  
-                // stagger: 0.2,
-                duration: 0.9,
+                stagger: 0.2,
+                duration: 0.6,
                 ease: 'stepped.out',
                 // opacity: 1,
                 y: '0%',
@@ -2776,6 +2776,8 @@ import modalUnlock from "./module/modalunlock.js";
 
     // job faq
     var jobwrap = document.querySelectorAll(".job-container");
+
+
     if (!jobwrap) return;
     else {
 
@@ -2808,7 +2810,9 @@ import modalUnlock from "./module/modalunlock.js";
             }
             setTimeout(() => {
               ScrollTrigger.refresh();
+              console.log(ScrollTrigger.refresh())
             }, 300);
+       
           });
         });
       });
