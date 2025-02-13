@@ -170,8 +170,7 @@ import modalUnlock from "./module/modalunlock.js";
           const tl = gsap.timeline();
 
           if (!document.body.classList.contains('preloader-visible')) {
-            document.documentElement.classList.remove('html-overflow-hidden');
-            document.documentElement.classList.remove('playthumb');
+            document.documentElement.classList.remove('html-overflow-hidden', 'playthumb');
 
             return tl;
           }
@@ -240,78 +239,49 @@ import modalUnlock from "./module/modalunlock.js";
 
     // STAGE 2   STAGE 2    STAGE 2    V STAGE 2    STAGE 2 
     function show() {
-
       gsap.registerEffect({
         name: 'preloaderShow',
         effect: (target, config) => {
-
           const tl = gsap.timeline();
-
-          if (!preloader) {
-            return tl;
-          }
-
-          tl
-
-
-            .set(bg, {
-              // translateX: "0%",
-              opacity: 1,
-              display: "block",
-            })
-
+          if (!preloader) return tl;
+    
+          return tl.set(bg, { opacity: 1, display: "block" })
             .from(bg, {
               ease: 'quart.inOut',
               duration: 0.5,
               translateX: "-100%",
-              // background: "blue",
-              onStart: () => {
-                // bg.classList.remove('origin-left');
-                document.documentElement.classList.add('html-overflow-hidden');
-              },
+              onStart: () => document.documentElement.classList.add('html-overflow-hidden')
             }, '>0')
             .to(progress, {
               duration: 0.9,
               ease: 'quart.out',
               opacity: 1,
-              scale: 2,
-            },)
+              scale: 2
+            })
             .from(progressInner, {
               scaleX: 0,
               duration: 0.4,
-              ease: 'none',
-            }, '>0.1')
-
-
-          return tl;
-
+              ease: 'none'
+            }, '>0.1');
         },
-        extendTimeline: true,
+        extendTimeline: true
       });
-
     }
 
 
 
     // STAGE 3   STAGE 3    STAGE 3    V STAGE 3    STAGE 3 
     function hide() {
-
       gsap.registerEffect({
         name: 'preloaderHide',
         effect: (target, config) => {
-
-          const tl = gsap.timeline();
-
-          return tl
+          return gsap.timeline()
             .to(progress, {
               delay: 0.4,
               duration: 1,
               ease: 'quart.inOut',
               opacity: 0,
-              scale: 100,
-              // onStart: () => {
-              //   bg.classList.add('origin-left');
-              // }
+              scale: 100
             }, '>0')
             .to(bg, {
               ease: 'quart.inOut',
@@ -319,17 +289,15 @@ import modalUnlock from "./module/modalunlock.js";
               opacity: 0,
               display: "none",
               onComplete: () => {
-                document.documentElement.classList.remove('html-overflow-hidden');
-                document.documentElement.classList.remove('overflow-hidden');
+                document.documentElement.classList.remove('html-overflow-hidden', 'overflow-hidden');
                 document.body.classList.remove('overflow-hidden');
-              },
-            }, '>-0.5')
-
+              }
+            }, '>-0.5');
         },
-        extendTimeline: true,
+        extendTimeline: true
       });
-
     }
+    
 
     function init() {
 
@@ -1147,23 +1115,24 @@ import modalUnlock from "./module/modalunlock.js";
               scrollTrigger: {
                 trigger: tao,
                 markers: false,
-                scrub: 0.2,
+                scrub: 0.3,
                 start: "top 100%",
                 end: "top 100%",
                 once: true, // Custom logic để chỉ chạy 1 lần
                 onEnter: () => ko.play(), // Chỉ chạy khi cuộn vào
                 onLeaveBack: () => ko.kill(), // Ngăn chạy lại khi cuộn ngược
+                // invalidateOnRefresh: true,
               },
             });
           
             ko.fromTo(
               tao,
-              { skewY: 10, opacity: 0},
+              { skewY: 10},
               {  
                 // stagger: 0.2,
-                duration: 0.8,
+                duration: 1.1,
                 ease: 'stepped.out',
-                opacity: 1,
+                // opacity: 1,
                 y: '0%',
                 lineHeight: 'initial',
                 skewY: 0,}
@@ -2818,6 +2787,7 @@ import modalUnlock from "./module/modalunlock.js";
           const details = item.querySelector(".job-details");
 
           item.addEventListener("click", function () {
+            
             // Mặc định là chế độ single-open, chỉ mở một item trong container
             if (!container.classList.contains("job-multi-open")) {
               jobItems.forEach(otherItem => {
@@ -2836,6 +2806,9 @@ import modalUnlock from "./module/modalunlock.js";
               item.classList.add("active");
               details.style.maxHeight = details.scrollHeight + "px";
             }
+            setTimeout(() => {
+              ScrollTrigger.refresh();
+            }, 300);
           });
         });
       });
