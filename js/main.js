@@ -989,6 +989,7 @@ import modalUnlock from "./module/modalunlock.js";
           duration: 1.0,
           ease: 'quart.out',
           y: '0%',
+          lineHeight: 'initial',
         }, '>-0.8')
         .to(text, {
           stagger: 0.1,
@@ -1115,7 +1116,7 @@ import modalUnlock from "./module/modalunlock.js";
               scrollTrigger: {
                 trigger: tao,
                 markers: false,
-                scrub: 0.5,
+                scrub: 0.3,
                 start: "center 100%",
                 end: "center 100%",
                 once: true, // Custom logic để chỉ chạy 1 lần
@@ -1130,7 +1131,7 @@ import modalUnlock from "./module/modalunlock.js";
               { skewY: 5},
               {  
                 // stagger: 0.2,
-                duration: 1,
+                duration: 0.6,
                 ease: 'stepped.out',
                 // opacity: 1,
                 y: '0%',
