@@ -17309,7 +17309,7 @@ body.compensate-for-scrollbar {
   transition: max-height 0.4s ease-out;}
 
 .job-item.active .job-details {
-  max-height: 500px;
+  max-height: 1000px;
   /* transform: scaleY(1); */
   /* opacity: 1; */
 }
