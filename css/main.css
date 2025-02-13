@@ -4682,7 +4682,7 @@ h6 {
 @media (max-width: 575px) {
   .sectionHeading.-xl .sectionHeading__title {
     letter-spacing: -0.03em; 
-    font-size: 3.25rem; 
+    font-size: 3rem; 
     /* line-height: initial;  */
     /* font-family: var(--font-secondary); 
     font-weight: 700;  */
@@ -6318,7 +6318,7 @@ img {
 }
 @media (max-width: 576px) {
   .masthead.-type-4 .masthead__title {
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
   .masthead.-type-4 .masthead__text {
     font-size: 1.25rem;
