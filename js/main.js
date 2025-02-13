@@ -1127,10 +1127,10 @@ import modalUnlock from "./module/modalunlock.js";
           
             ko.fromTo(
               tao,
-              { skewY: 10},
+              { skewY: 5},
               {  
-                stagger: 0.2,
-                duration: 0.6,
+                // stagger: 0.2,
+                duration: 1,
                 ease: 'stepped.out',
                 // opacity: 1,
                 y: '0%',
