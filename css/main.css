@@ -6903,6 +6903,19 @@ img {
     width: 1rem;
     /* color: var(--bg-dark-2); */
   }
+  .portfolioCard__title__sub {
+    background: linear-gradient(to left, var(--font-light-main) 50%, #000 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    background-position: 0% 0;
+    display: inline;
+    transition: background-position 0.8s ease-in-out;
+  }
+  
+  .portfolioCard.-type-1.-hover:hover .portfolioCard__title__sub {
+    background-position: 0% 0;
+  }
 }
 
 .portfolioCard.-type-1.-hover:hover .portfolioCard__img {
@@ -15509,10 +15522,10 @@ html.full-page-slider body {
     max-width: 100%;
   }
   .fancy-grid.-col-2 .fancy-grid__item:nth-child(2n + 2) {
-    margin-top: 3.5rem;
+    margin-top: 4rem;
   }
   .fancy-grid.-col-2 .fancy-grid__item:nth-child(1n + 2) {
-    margin-top: 3.5rem;
+    margin-top: 4rem;
   }
 }
 
