@@ -5403,7 +5403,7 @@ body.is-cursor-active * {
 }
 
 .swiper-slide {
-  box-shadow: rgb(0 0 0 / 4%) 0px 0px 24px 1px;
+  /* box-shadow: rgb(0 0 0 / 4%) 0px 0px 24px 1px; */
 }
 
 /*--------------------------------------------------
@@ -7572,6 +7572,10 @@ img {
 .border-bottom-dark2 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
+.border-left-dark {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
 
 .section-border-bottom-dark > *:last-child {
   border-bottom: unset;

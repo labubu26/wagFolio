@@ -2179,27 +2179,27 @@ import modalUnlock from "./module/modalunlock.js";
   }
 
   function sectionSlidersInit2() {
-
     const sectionSlider = document.querySelectorAll('.js-section-slider2');
-
+  
     if (!sectionSlider.length) return;
-
+  
     for (let i = 0; i < sectionSlider.length; i++) {
       const el = sectionSlider[i];
-
+  
       let gap = 0;
       let autoplay = 5000;
       let effect = '';
       let loop = false;
       let centered = false;
       let pagination = false;
-
+      let cols_auto = false;  // New variable for cols_auto
+  
       if (el.getAttribute('data-gap')) gap = el.getAttribute('data-gap');
       if (el.getAttribute('autoplay')) autoplay = el.getAttribute('autoplay');
       if (el.getAttribute('effect')) effect = el.getAttribute('effect');
       if (el.hasAttribute('data-loop')) loop = true;
       if (el.hasAttribute('data-center')) centered = true;
-
+  
       if (el.hasAttribute('data-pagination')) {
         pagination = {
           el: el.querySelector('.js-pagination'),
@@ -2209,27 +2209,30 @@ import modalUnlock from "./module/modalunlock.js";
           clickable: true
         };
       }
-
-
+  
       const colsArray = el.getAttribute('data-slider-col').split(' ');
-
+  
       let cols_base = 1;
       let cols_lg = 1;
       let cols_md = 1;
       let cols_sm = 1;
-
+  
       colsArray.forEach(el => {
         if (el.includes('base')) cols_base = el.slice(-1);
         if (el.includes('lg')) cols_lg = el.slice(-1);
         if (el.includes('md')) cols_md = el.slice(-1);
         if (el.includes('sm')) cols_sm = el.slice(-1);
+        if (el.includes('auto')) cols_auto = true; // Check for 'auto' in data-slider-col
       });
-
+  
+      // Determine slidesPerView based on cols_auto
+      let slidesPerView = cols_auto ? 'auto' : parseInt(cols_base);
+  
       new Swiper(el, {
         autoplay: {
           delay: parseInt(autoplay),
         },
-
+  
         effect: effect,
         coverflowEffect: {
           rotate: 30,
@@ -2241,37 +2244,37 @@ import modalUnlock from "./module/modalunlock.js";
         fadeEffect: {
           crossFade: true
         },
-
+  
         speed: 800,
-        autoHeight: true,
+        autoHeight: false,
         spaceBetween: parseInt(gap),
         centeredSlides: centered,
         parallax: true,
-
+  
         loop: loop,
-
+  
         lazy: {
           loadPrevNext: true,
         },
-
-        slidesPerView: parseInt(cols_base),
-
+  
+        slidesPerView: slidesPerView,  // Use 'auto' if cols_auto is true, otherwise use cols_base
+  
         breakpoints: {
           1199: { slidesPerView: parseInt(cols_lg) },
           991: { slidesPerView: parseInt(cols_md) },
           767: { slidesPerView: parseInt(cols_sm) },
         },
-
+  
         navigation: {
           prevEl: el.querySelector('.js-prev'),
           nextEl: el.querySelector('.js-next'),
         },
-
+  
         pagination: pagination,
       });
     }
-
   }
+  
 
   /*--------------------------------------------------
     09. Contact form
