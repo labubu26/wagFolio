@@ -2255,6 +2255,7 @@ import modalUnlock from "./module/modalunlock.js";
   
         lazy: {
           loadPrevNext: true,
+          loadPrevNextAmount: 3,
         },
   
         slidesPerView: slidesPerView,  // Use 'auto' if cols_auto is true, otherwise use cols_base
