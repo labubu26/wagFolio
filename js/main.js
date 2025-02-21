@@ -2229,6 +2229,7 @@ import modalUnlock from "./module/modalunlock.js";
       let slidesPerView = cols_auto ? 'auto' : parseInt(cols_base);
   
       new Swiper(el, {
+
         autoplay: {
           delay: parseInt(autoplay),
         },
@@ -3833,13 +3834,25 @@ function cursomove() {
   let currentScale = 0; // Track current scale value
   let currentAngle = 0; // Track current angle value
 
+
+
   // Update mouse position on the 'mousemove' event
-  window.addEventListener('mousemove', (e) => {
+  // window.addEventListener('pointermove', (e) => {
+  //   mouse.x = e.x;
+  //   mouse.y = e.y;
+  // });
+
+  const updateMousePosition = (e) => {
     mouse.x = e.x;
     mouse.y = e.y;
-  });
+  };
+  
+  // Lắng nghe cả `pointermove` và `dragover`
+  window.addEventListener('pointermove', updateMousePosition);
 
-  const alllink = document.querySelectorAll("a, .button, button, .job-item, .img-enlargable , .bg-image, .backButton, .img-comp-slider, .js-prev, .js-next");
+
+
+  const alllink = document.querySelectorAll("a, .button, button, .job-item, .img-enlargable , .backButton, .img-comp-slider, .js-prev, .js-next");
 
   alllink.forEach(link => {
     link.addEventListener("mouseleave", () => {
@@ -3879,7 +3892,7 @@ function cursomove() {
   });
 
   // Smoothing factor for cursor movement speed (0 = smoother, 1 = instant)
-  const speed = 1;
+  const speed = 0.6;
 
   // Start animation
   const tick = () => {
