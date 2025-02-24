@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-Q2V304TRLZ');
-</script>
+      gtag("config", "G-Q2V304TRLZ");
+    </script>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -51,8 +56,12 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/vendors.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" />
@@ -62,42 +71,57 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 
-<script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>  </head>
+    <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
+  </head>
 
   <body class="preloader-visible" data-barba="wrapper">
-
     <!-- Lock content link có pass -->
     <script>
       // Get the referrer URL
       const referrer = document.referrer;
 
       // Check if the referrer is from the index.html page
-      if (referrer !== 'https://wagtrung.com/index.html') {
-          // Redirect the user back to the index page
-          window.location.replace('https://wagtrung.com/index.html');
+      if (referrer !== "https://wagtrung.com/index.html") {
+        // Redirect the user back to the index page
+        window.location.replace("https://wagtrung.com/index.html");
       }
-  </script>
+    </script>
 
-  <modal-pass data-file="cv">
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-    <input type="text" placeholder="Type your given passcode" id="passInput">
-    <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="passSubmit">
-    Download Now
-    </a>
-    </div>
-  </modal-pass>
+    <modal-pass data-file="cv">
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <input
+          type="text"
+          placeholder="Type your given passcode"
+          id="passInput"
+        />
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="passSubmit"
+        >
+          Download Now
+        </a>
+      </div>
+    </modal-pass>
 
-  <modal-unlock>
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-    <input type="text" placeholder="Type your given passcode" id="unlockpassInput">
-    <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="unlockSubmit">
-    Unlock to read
-    </a>
-    </div>
-  </modal-unlock>
-
+    <modal-unlock>
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <input
+          type="text"
+          placeholder="Type your given passcode"
+          id="unlockpassInput"
+        />
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="unlockSubmit"
+        >
+          Unlock to read
+        </a>
+      </div>
+    </modal-unlock>
 
     <!---------------------->
     <!-- 0                -->
@@ -131,37 +155,37 @@
       </div>
 
       <main class="">
-       <!---------------------->
-      <!-- 0                -->
-      <!-- NAV Invert OUT         -->
-      <!--                  -->
-      <!---------------------->
-      <header class=" header -light -sticky-light js-header">
-        <!-- header__bar invert   start -->
-        <div class="header__bar invert">
-          <div class="header__logo js-header-logo">
-            <a data-barba href="index.html">
-              <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
-              <div class="header__logo__dark js-lazy">
-                <div class="header__logo__dark__inner"></div>
-              </div>          
-            </a>
-          </div>
-
-          <div class="header__menu js-header-menu">
-            <button type="button" class="nav-button-open js-nav-open">
-              <i class="icon" data-feather="menu"></i>
-            </button>
-          </div>
-        </div>
-        <!-- header__bar invert   end -->
-
         <!---------------------->
         <!-- 0                -->
-        <!-- NAV INSIDE         -->
+        <!-- NAV Invert OUT         -->
         <!--                  -->
         <!---------------------->
-        <nav class="nav js-nav">
+        <header class="header -light -sticky-light js-header">
+          <!-- header__bar invert   start -->
+          <div class="header__bar invert">
+            <div class="header__logo js-header-logo">
+              <a data-barba href="index.html">
+                <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
+                <div class="header__logo__dark js-lazy">
+                  <div class="header__logo__dark__inner"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="header__menu js-header-menu">
+              <button type="button" class="nav-button-open js-nav-open">
+                <i class="icon" data-feather="menu"></i>
+              </button>
+            </div>
+          </div>
+          <!-- header__bar invert   end -->
+
+          <!---------------------->
+          <!-- 0                -->
+          <!-- NAV INSIDE         -->
+          <!--                  -->
+          <!---------------------->
+          <nav class="nav js-nav">
             <div class="nav__inner js-nav-inner">
               <div class="nav__bg js-nav-bg" style="position: relative">
                 <div class="bg-grid"></div>
@@ -286,16 +310,14 @@
               </div>
             </div>
           </nav>
-        <!-- nav end -->
-      </header>
-      <!-- header end -->
+          <!-- nav end -->
+        </header>
+        <!-- header end -->
 
-
-
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
 
         <!---------------------->
         <!--                 -->
@@ -553,7 +575,7 @@
         <!----------------------><!---------------------->
         <div
           id="section-3"
-          class="ufo-sec--navigation container layout-pb-md layout-pt-md "
+          class="ufo-sec--navigation container layout-pb-md layout-pt-md"
         >
           <!-- <h2 class="text-4xl sm:text-2xl     fw-600 text-center mb-40 sm:mb-32">The Design Process</h2> -->
 
@@ -635,7 +657,7 @@
             <div class="row justify-content-center">
               <div class="col-md-9">
                 <div class="">
-                  <h2 class="text-4xl sm:text-2xl fw-600 mb-16 ">
+                  <h2 class="text-4xl sm:text-2xl fw-600 mb-16">
                     About this Project
                   </h2>
 
@@ -684,7 +706,7 @@
                         <div class="col-md-4">
                           <div class="noi text-center py-32">
                             <div class="text-cen2">
-                              <h3 class="text-4xl sm:text-2xl fw-600  ">Top 1</h3>
+                              <h3 class="text-4xl sm:text-2xl fw-600">Top 1</h3>
                               <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
                             <i class="icon size-2xs str-width-3xl text-dark" data-feather="user"></i>
                           </div> -->
@@ -699,7 +721,7 @@
                         <div class="col-md-4">
                           <div class="noi text-center py-32">
                             <div class="text-cen2">
-                              <h3 class="text-4xl sm:text-2xl fw-600  ">43k+</h3>
+                              <h3 class="text-4xl sm:text-2xl fw-600">43k+</h3>
                             </div>
                             <p class="text-lg sm:text-base mt-8">
                               Vietnamese Deaths
@@ -710,7 +732,7 @@
                         <div class="col-md-4">
                           <div class="noi text-center py-32">
                             <div class="text-cen2">
-                              <h3 class="text-4xl sm:text-2xl fw-600  ">6,6M+</h3>
+                              <h3 class="text-4xl sm:text-2xl fw-600">6,6M+</h3>
                             </div>
                             <p class="text-lg sm:text-base mt-8">
                               Global Deaths
@@ -733,7 +755,7 @@
                         <div class="col-md-4">
                           <div class="noi text-center py-32">
                             <div class="text-cen2">
-                              <h3 class="text-4xl sm:text-2xl fw-600  ">
+                              <h3 class="text-4xl sm:text-2xl fw-600">
                                 Variants
                               </h3>
                             </div>
@@ -746,7 +768,7 @@
                         <div class="col-md-4">
                           <div class="noi text-center py-32">
                             <div class="text-cen2">
-                              <h3 class="text-4xl sm:text-2xl fw-600  ">
+                              <h3 class="text-4xl sm:text-2xl fw-600">
                                 Endemic
                               </h3>
                             </div>
@@ -759,7 +781,7 @@
                         <div class="col-md-4">
                           <div class="noi text-center py-32">
                             <div class="text-cen2">
-                              <h3 class="text-4xl sm:text-2xl fw-600  ">500k+</h3>
+                              <h3 class="text-4xl sm:text-2xl fw-600">500k+</h3>
                             </div>
                             <p class="text-base mt-16 sm:mt-12">
                               Daily Global Deaths
@@ -861,7 +883,7 @@
         <!-- Feature           --><!---------------------->
         <!--                  --><!---------------------->
         <!----------------------><!---------------------->
-        <div id="section-5" class="layout-pt-xl ">
+        <div id="section-5" class="layout-pt-xl">
           <div data-parallax="0.5" class="z-5 js-image">
             <div
               data-parallax-target
@@ -899,7 +921,7 @@
                     Disease.sh API
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">Truthful Data Source </span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32 pr-48">
@@ -950,7 +972,7 @@
                     Playing with charts
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">View charts as you want </span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32">
@@ -978,7 +1000,7 @@
                     Search & Sort
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">View a country you want</span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32">
@@ -1027,7 +1049,7 @@
                     National covid-19 prediction
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">Scheduling without hesitation</span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32">
@@ -1055,7 +1077,7 @@
                     Recommendation
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">Control the Virus spread</span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32">
@@ -1105,7 +1127,7 @@
                     Vaccines efficiency
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">National Vaccine evaluation </span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32">
@@ -1132,7 +1154,7 @@
                     Continental comparison
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">countries in the same region</span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32">
@@ -1182,7 +1204,7 @@
                     IP Detection
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">Your country is our priority.</span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32">
@@ -1209,7 +1231,7 @@
                     Wordwide situation
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">Global pandemic tracking</span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32">
@@ -1257,7 +1279,7 @@
                     Deployment Github x Netlify
                   </p>
                 </div>
-                <h2 class="text-4xl sm:text-2xl fw-600  ">
+                <h2 class="text-4xl sm:text-2xl fw-600">
                   <span class="">Free for online accessing</span>
                 </h2>
                 <p class="text-base fw-400 mt-16 sm:mb-32">
@@ -1273,7 +1295,7 @@
         <!-- Process           --><!---------------------->
         <!--                  --><!---------------------->
         <!----------------------><!---------------------->
-        <div id="section-7" class="layout-pt-xl ">
+        <div id="section-7" class="layout-pt-xl">
           <div data-parallax="0.5" class="bg-dark-3 z-5 js-image">
             <div
               data-parallax-target
@@ -1503,7 +1525,7 @@
                     />
                     <div class="ml-16">
                       <div class="text-cen2">
-                        <h3 class="text-3xl sm:text-xl  fw-600">Vue 3</h3>
+                        <h3 class="text-3xl sm:text-xl fw-600">Vue 3</h3>
                       </div>
                       <p class="text-sm sm:mt-12">Front-end Framework</p>
                     </div>
@@ -1518,7 +1540,7 @@
                     />
                     <div class="ml-16">
                       <div class="text-cen2">
-                        <h3 class="text-3xl sm:text-xl  fw-600">Vue X</h3>
+                        <h3 class="text-3xl sm:text-xl fw-600">Vue X</h3>
                       </div>
                       <p class="text-sm sm:mt-12">State Management</p>
                     </div>
@@ -1533,7 +1555,7 @@
                     />
                     <div class="ml-16">
                       <div class="text-cen2">
-                        <h3 class="text-3xl sm:text-xl  fw-600">Node JS</h3>
+                        <h3 class="text-3xl sm:text-xl fw-600">Node JS</h3>
                       </div>
                       <p class="text-sm sm:mt-12">JS environment</p>
                     </div>
@@ -1548,7 +1570,7 @@
                     />
                     <div class="ml-16">
                       <div class="text-cen2">
-                        <h3 class="text-3xl sm:text-xl  fw-600">HighCharts</h3>
+                        <h3 class="text-3xl sm:text-xl fw-600">HighCharts</h3>
                       </div>
                       <p class="text-sm sm:mt-12">Charting Library</p>
                     </div>
@@ -1563,7 +1585,7 @@
                     />
                     <div class="ml-16">
                       <div class="text-cen2">
-                        <h3 class="text-3xl sm:text-xl  fw-600">Ant Design</h3>
+                        <h3 class="text-3xl sm:text-xl fw-600">Ant Design</h3>
                       </div>
                       <p class="text-sm sm:mt-12">Component Framework</p>
                     </div>
@@ -1578,7 +1600,7 @@
                     />
                     <div class="ml-16">
                       <div class="text-cen2">
-                        <h3 class="text-3xl sm:text-xl  fw-600">Axios</h3>
+                        <h3 class="text-3xl sm:text-xl fw-600">Axios</h3>
                       </div>
                       <p class="text-sm sm:mt-12">Fetching method</p>
                     </div>
@@ -1593,7 +1615,7 @@
                     />
                     <div class="ml-16">
                       <div class="text-cen2">
-                        <h3 class="text-3xl sm:text-xl  fw-600">Tailwind</h3>
+                        <h3 class="text-3xl sm:text-xl fw-600">Tailwind</h3>
                       </div>
                       <p class="text-sm sm:mt-12">CSS framework</p>
                     </div>
@@ -1608,7 +1630,7 @@
                     />
                     <div class="ml-16">
                       <div class="text-cen2">
-                        <h3 class="text-3xl sm:text-xl  fw-600">Lodash</h3>
+                        <h3 class="text-3xl sm:text-xl fw-600">Lodash</h3>
                       </div>
                       <p class="text-sm sm:mt-12">JavaScript utility library</p>
                     </div>
@@ -1623,7 +1645,7 @@
                     />
                     <div class="ml-16">
                       <div class="text-cen2">
-                        <h3 class="text-3xl sm:text-xl  fw-600">Numeral</h3>
+                        <h3 class="text-3xl sm:text-xl fw-600">Numeral</h3>
                       </div>
                       <p class="text-sm sm:mt-12">Number Formatter</p>
                     </div>
@@ -1640,7 +1662,7 @@
                         />
                         <div class="ml-16">
                           <div class="text-cen2">
-                            <h3 class="text-3xl sm:text-xl  fw-600">Moment</h3>
+                            <h3 class="text-3xl sm:text-xl fw-600">Moment</h3>
                           </div>
                           <p class="text-sm sm:mt-12">Date Formatter</p>
                         </div>
@@ -1655,7 +1677,7 @@
                         />
                         <div class="ml-16">
                           <div class="text-cen2">
-                            <h3 class="text-3xl sm:text-xl  fw-600">
+                            <h3 class="text-3xl sm:text-xl fw-600">
                               GeoPlugin
                             </h3>
                           </div>
@@ -1672,7 +1694,7 @@
                         />
                         <div class="ml-16">
                           <div class="text-cen2">
-                            <h3 class="text-3xl sm:text-xl  fw-600">
+                            <h3 class="text-3xl sm:text-xl fw-600">
                               Regression
                             </h3>
                           </div>
@@ -1691,7 +1713,7 @@
                         />
                         <div class="ml-16">
                           <div class="text-cen2">
-                            <h3 class="text-3xl sm:text-xl  fw-600">skmeans</h3>
+                            <h3 class="text-3xl sm:text-xl fw-600">skmeans</h3>
                           </div>
                           <p class="text-sm sm:mt-12">
                             ML Method for Clustering
@@ -1852,42 +1874,46 @@
                 <div
                   class="row col-md-11 justify-content-center align-items-center"
                 >
-                    <div class="col-md-6">
-                      <div class="sm:pb-40 text-left">
-                        <h1 class="text-7xl sm:text-4xl fw-600 bluebg2 poppins ">
-                          Evaluation
+                  <div class="col-md-6">
+                    <div class="sm:pb-40 text-left">
+                      <h1 class="text-7xl sm:text-4xl fw-600 bluebg2 poppins">
+                        Evaluation
+                      </h1>
+                      <p class="text-xl sm:text-lg leading-xl fw-500">
+                        The overall achievement
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row x-gap-40">
+                      <div class="sm:pb-40 text-center">
+                        <h1 class="text-7xl sm:text-4xl fw-600 bluebg2 poppins">
+                          1
                         </h1>
-                        <p class="text-xl sm:text-lg leading-xl fw-500 ">
-                          The overall achievement
+                        <p class="text-xl sm:text-lg leading-xl fw-500">
+                          Member
+                        </p>
+                      </div>
+
+                      <div class="sm:pb-40 text-center">
+                        <h1 class="text-7xl sm:text-4xl fw-600 bluebg2 poppins">
+                          6
+                        </h1>
+                        <p class="text-xl sm:text-lg leading-xl fw-500">
+                          Months
+                        </p>
+                      </div>
+
+                      <div class="sm:pb-40 text-center">
+                        <h1 class="text-7xl sm:text-4xl fw-600 bluebg2 poppins">
+                          10+
+                        </h1>
+                        <p class="text-xl sm:text-lg leading-xl fw-500">
+                          Features
                         </p>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="row x-gap-40">
-                        <div class="sm:pb-40 text-center">
-                          <h1 class="text-7xl sm:text-4xl fw-600 bluebg2 poppins ">1</h1>
-                          <p class="text-xl sm:text-lg leading-xl fw-500 ">
-                            Member
-                          </p>
-                        </div>
-
-                        <div class="sm:pb-40 text-center">
-                          <h1 class="text-7xl sm:text-4xl fw-600 bluebg2 poppins ">6</h1>
-                          <p class="text-xl sm:text-lg leading-xl fw-500 ">
-                            Months
-                          </p>
-                        </div>
-
-                        <div class="sm:pb-40 text-center">
-                          <h1 class="text-7xl sm:text-4xl fw-600 bluebg2 poppins ">
-                            10+
-                          </h1>
-                          <p class="text-xl sm:text-lg leading-xl fw-500 ">
-                            Features
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2096,7 +2122,7 @@
                   <div class="ml-24 sm:ml-0">
                     <p class="badgeText4">UI/UX casestudy</p>
                     <h3
-                      class="text-4xl sm:text-3xl fw-400 text-white leading-xl  "
+                      class="text-4xl sm:text-3xl fw-400 text-white leading-xl"
                     >
                       Human Resource Management
                     </h3>
@@ -2128,7 +2154,7 @@
                   <div class="mr-24 sm:mr-0">
                     <p class="badgeText4">UI/UX casestudy</p>
                     <h3
-                      class="text-4xl sm:text-3xl fw-400 text-white leading-xl  "
+                      class="text-4xl sm:text-3xl fw-400 text-white leading-xl"
                     >
                       IELTS Tinder Platform
                     </h3>
@@ -2154,7 +2180,7 @@
         </section>
         <!-- section end -->
 
-      <!---------------------->
+        <!---------------------->
         <!-- 6                -->
         <!-- FOOTER         -->
         <!--                  -->
@@ -2230,8 +2256,6 @@
                         >About</a
                       >
                     </div>
-
-                    
                   </div>
                 </div>
 
@@ -2324,8 +2348,11 @@
     <!-- JavaScript jlk-->
     <script src="js/vendors.js"></script>
     <script type="module" src="js/main.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
- 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
     <!-- <script src="js/erp-system.js"></script> -->
     <!-- <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script> -->

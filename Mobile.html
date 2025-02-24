@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-Q2V304TRLZ');
-</script>
+      gtag("config", "G-Q2V304TRLZ");
+    </script>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -47,8 +52,12 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/vendors.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" />
@@ -58,29 +67,45 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 
-<script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>  </head>
+    <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
+  </head>
 
   <body class="preloader-visible" data-barba="wrapper">
+    <modal-pass data-file="cv">
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <input
+          type="text"
+          placeholder="Type your given passcode"
+          id="passInput"
+        />
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="passSubmit"
+        >
+          Download Now
+        </a>
+      </div>
+    </modal-pass>
 
-  <modal-pass data-file="cv">
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-    <input type="text" placeholder="Type your given passcode" id="passInput">
-    <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="passSubmit">
-    Download Now
-    </a>
-    </div>
-  </modal-pass>
-
-<modal-unlock>
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-    <input type="text" placeholder="Type your given passcode" id="unlockpassInput">
-    <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="unlockSubmit">
-    Unlock to read
-    </a>
-    </div>
-  </modal-unlock>
+    <modal-unlock>
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <input
+          type="text"
+          placeholder="Type your given passcode"
+          id="unlockpassInput"
+        />
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="unlockSubmit"
+        >
+          Unlock to read
+        </a>
+      </div>
+    </modal-unlock>
     <!---------------------->
     <!-- 0                -->
     <!-- PRE-LOAD         -->
@@ -113,37 +138,37 @@
       </div>
 
       <main class="text-lg sm:text-base fw-400">
-      <!---------------------->
-      <!-- 0                -->
-      <!-- NAV Invert OUT         -->
-      <!--                  -->
-      <!---------------------->
-      <header class=" header -light -sticky-light js-header">
-        <!-- header__bar invert   start -->
-        <div class="header__bar invert">
-          <div class="header__logo js-header-logo">
-            <a data-barba href="index.html">
-              <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
-              <div class="header__logo__dark js-lazy">
-                <div class="header__logo__dark__inner"></div>
-              </div>          
-            </a>
-          </div>
-
-          <div class="header__menu js-header-menu">
-            <button type="button" class="nav-button-open js-nav-open">
-              <i class="icon" data-feather="menu"></i>
-            </button>
-          </div>
-        </div>
-        <!-- header__bar invert   end -->
-
         <!---------------------->
         <!-- 0                -->
-        <!-- NAV INSIDE         -->
+        <!-- NAV Invert OUT         -->
         <!--                  -->
         <!---------------------->
-        <nav class="nav js-nav">
+        <header class="header -light -sticky-light js-header">
+          <!-- header__bar invert   start -->
+          <div class="header__bar invert">
+            <div class="header__logo js-header-logo">
+              <a data-barba href="index.html">
+                <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
+                <div class="header__logo__dark js-lazy">
+                  <div class="header__logo__dark__inner"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="header__menu js-header-menu">
+              <button type="button" class="nav-button-open js-nav-open">
+                <i class="icon" data-feather="menu"></i>
+              </button>
+            </div>
+          </div>
+          <!-- header__bar invert   end -->
+
+          <!---------------------->
+          <!-- 0                -->
+          <!-- NAV INSIDE         -->
+          <!--                  -->
+          <!---------------------->
+          <nav class="nav js-nav">
             <div class="nav__inner js-nav-inner">
               <div class="nav__bg js-nav-bg" style="position: relative">
                 <div class="bg-grid"></div>
@@ -268,23 +293,20 @@
               </div>
             </div>
           </nav>
-        <!-- nav end -->
-      </header>
-      <!-- header end -->
+          <!-- nav end -->
+        </header>
+        <!-- header end -->
 
-
-
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
 
         <!---------------------->
         <!--                 -->
         <!-- INTRO BG + TEXT  -->
         <!--                  -->
         <!---------------------->
-        
 
         <div class="container-fluid px-0 relative">
           <div class="h-125vh bg-dark-3">
@@ -319,7 +341,7 @@
                       <div class="col-md-8" data-split="lines">
                         <p class="js-info-item masthead__text">
                           Commercial floor to support real estate purchase and
-                            sale.
+                          sale.
                         </p>
                       </div>
                     </div>
@@ -572,26 +594,20 @@
                 <img  class="img-fluid rounded-0" src="img/i-mobile/4.png">
                 <img  class="img-fluid rounded-0" src="img/i-mobile/6.png"> -->
                 <!-- <img  class="img-fluid rounded-0" src="img/i-mobile/7.png"> -->
-                <img
-                  class="img-fluid "
-                  src="img/i-mobile/tr (2).png"
-                />
+                <img class="img-fluid" src="img/i-mobile/tr (2).png" />
                 <p
                   class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
                 >
-                Buyers Dashboard Page
+                  Buyers Dashboard Page
                 </p>
               </div>
 
               <div class="layout-pt-xs" data-anim="img-up cover-light-1 ">
-                <img
-                  class="img-fluid "
-                  src="img/i-mobile/tr (3).png"
-                />
+                <img class="img-fluid" src="img/i-mobile/tr (3).png" />
                 <p
                   class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
                 >
-                Admin/Seller Dashboard Page
+                  Admin/Seller Dashboard Page
                 </p>
               </div>
 
@@ -602,25 +618,25 @@
                 Change the display of charts to suit the limited display space
                 of mobile devices, in addition to prioritizing the user's needs.
                 and finally omit unnecessary parts for informational purposes
-                only. 
+                only.
               </p>
 
               <div class="layout-pt-xs row x-gap-60">
                 <div class="col-md-6">
                   <img class="img-fluid" src="img/i-mobile/tr (6).png" />
                   <p
-                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
-                >
-                  Mobile Login Page
-                </p>
+                    class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                  >
+                    Mobile Login Page
+                  </p>
                 </div>
                 <div class="col-md-6">
                   <img class="img-fluid noi" src="img/i-mobile/tr (5).png" />
                   <p
-                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
-                >
-                  Mobile Buyers Dashboard
-                </p>
+                    class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                  >
+                    Mobile Buyers Dashboard
+                  </p>
                 </div>
               </div>
             </div>
@@ -712,7 +728,7 @@
         </section>
         <!-- section end -->
 
-      <!---------------------->
+        <!---------------------->
         <!-- 6                -->
         <!-- FOOTER         -->
         <!--                  -->
@@ -788,8 +804,6 @@
                         >About</a
                       >
                     </div>
-
-                    
                   </div>
                 </div>
 
@@ -882,8 +896,11 @@
     <!-- JavaScript -->
     <script src="js/vendors.js"></script>
     <script type="module" src="js/main.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
- 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
     <!-- <script src="js/erp-system.js"></script> -->
     <!-- <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script> -->
