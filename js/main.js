@@ -244,7 +244,7 @@ import modalUnlock from "./module/modalunlock.js";
         effect: (target, config) => {
           const tl = gsap.timeline();
           if (!preloader) return tl;
-    
+
           return tl.set(bg, { opacity: 1, display: "block" })
             .from(bg, {
               ease: 'quart.inOut',
@@ -297,7 +297,7 @@ import modalUnlock from "./module/modalunlock.js";
         extendTimeline: true
       });
     }
-    
+
 
     function init() {
 
@@ -1125,21 +1125,22 @@ import modalUnlock from "./module/modalunlock.js";
                 invalidateOnRefresh: true
               },
             });
-          
+
             ko.fromTo(
               tao,
-              { skewY: 5},
-              {  
+              { skewY: 5 },
+              {
                 // stagger: 0.2,
                 duration: 0.9,
                 ease: 'stepped.out',
                 // opacity: 1,
                 y: '0%',
                 lineHeight: 'initial',
-                skewY: 0,}
+                skewY: 0,
+              }
             );
 
-            
+
           });
         }
       }
@@ -2180,12 +2181,12 @@ import modalUnlock from "./module/modalunlock.js";
 
   function sectionSlidersInit2() {
     const sectionSlider = document.querySelectorAll('.js-section-slider2');
-  
+
     if (!sectionSlider.length) return;
-  
+
     for (let i = 0; i < sectionSlider.length; i++) {
       const el = sectionSlider[i];
-  
+
       let gap = 0;
       let autoplay = 5000;
       let effect = '';
@@ -2193,13 +2194,13 @@ import modalUnlock from "./module/modalunlock.js";
       let centered = false;
       let pagination = false;
       let cols_auto = false;  // New variable for cols_auto
-  
+
       if (el.getAttribute('data-gap')) gap = el.getAttribute('data-gap');
       if (el.getAttribute('autoplay')) autoplay = el.getAttribute('autoplay');
       if (el.getAttribute('effect')) effect = el.getAttribute('effect');
       if (el.hasAttribute('data-loop')) loop = true;
       if (el.hasAttribute('data-center')) centered = true;
-  
+
       if (el.hasAttribute('data-pagination')) {
         pagination = {
           el: el.querySelector('.js-pagination'),
@@ -2209,14 +2210,14 @@ import modalUnlock from "./module/modalunlock.js";
           clickable: true
         };
       }
-  
+
       const colsArray = el.getAttribute('data-slider-col').split(' ');
-  
+
       let cols_base = 1;
       let cols_lg = 1;
       let cols_md = 1;
       let cols_sm = 1;
-  
+
       colsArray.forEach(el => {
         if (el.includes('base')) cols_base = el.slice(-1);
         if (el.includes('lg')) cols_lg = el.slice(-1);
@@ -2224,16 +2225,16 @@ import modalUnlock from "./module/modalunlock.js";
         if (el.includes('sm')) cols_sm = el.slice(-1);
         if (el.includes('auto')) cols_auto = true; // Check for 'auto' in data-slider-col
       });
-  
+
       // Determine slidesPerView based on cols_auto
       let slidesPerView = cols_auto ? 'auto' : parseInt(cols_base);
-  
+
       new Swiper(el, {
 
         autoplay: {
           delay: parseInt(autoplay),
         },
-  
+
         effect: effect,
         coverflowEffect: {
           rotate: 30,
@@ -2245,38 +2246,38 @@ import modalUnlock from "./module/modalunlock.js";
         fadeEffect: {
           crossFade: true
         },
-  
+
         speed: 800,
         autoHeight: false,
         spaceBetween: parseInt(gap),
         centeredSlides: centered,
         parallax: true,
-  
+
         loop: loop,
-  
+
         lazy: {
           loadPrevNext: true,
           loadPrevNextAmount: 3,
         },
-  
+
         slidesPerView: slidesPerView,  // Use 'auto' if cols_auto is true, otherwise use cols_base
-  
+
         breakpoints: {
           1199: { slidesPerView: parseInt(cols_lg) },
           991: { slidesPerView: parseInt(cols_md) },
           767: { slidesPerView: parseInt(cols_sm) },
         },
-  
+
         navigation: {
           prevEl: el.querySelector('.js-prev'),
           nextEl: el.querySelector('.js-next'),
         },
-  
+
         pagination: pagination,
       });
     }
   }
-  
+
 
   /*--------------------------------------------------
     09. Contact form
@@ -2795,7 +2796,7 @@ import modalUnlock from "./module/modalunlock.js";
           const details = item.querySelector(".job-details");
 
           item.addEventListener("click", function () {
-            
+
             // Mặc định là chế độ single-open, chỉ mở một item trong container
             if (!container.classList.contains("job-multi-open")) {
               jobItems.forEach(otherItem => {
@@ -2818,13 +2819,53 @@ import modalUnlock from "./module/modalunlock.js";
               ScrollTrigger.refresh();
               console.log(ScrollTrigger.refresh())
             }, 300);
-       
+
           });
         });
       });
 
 
     }
+
+
+    // tab gpt
+    var tabgpt = document.querySelectorAll(".tabgpt-container");
+    if(!tabgpt) return;
+    else{
+      function initializeTabs(container) {
+        const tabs = container.querySelectorAll(".tabgpt-tab");
+        const contents = container.querySelectorAll(".tabgpt-content");
+  
+        function activateTab(tab) {
+          tabs.forEach(t => t.classList.remove("active"));
+          contents.forEach(c => {
+            c.classList.remove("active");
+            c.style.transform = "translateY(20px)";
+            c.style.opacity = "0";
+          });
+  
+          tab.classList.add("active");
+          const targetContent = container.querySelector(`#${tab.dataset.target}`);
+          targetContent.classList.add("active");
+          setTimeout(() => {
+            targetContent.style.transform = "translateY(0)";
+            targetContent.style.opacity = "1";
+          }, 10);
+        }
+  
+        tabs.forEach(tab => {
+          tab.addEventListener("click", () => activateTab(tab));
+        });
+  
+        if (tabs.length > 0) activateTab(tabs[0]);
+      }
+  
+      tabgpt.forEach(initializeTabs);
+    }
+
+    
+   
+   
 
     // acc faq
     var acc = document.querySelectorAll(".accordion");
@@ -3093,6 +3134,11 @@ import modalUnlock from "./module/modalunlock.js";
           }
         }
       )
+        .to('.upContent', {
+          transform: ' scale(0.5)',
+          y: '90%',
+          ease: "power2.out",
+        }, 0)
 
         .to('.uiLab',
           {
@@ -3100,11 +3146,7 @@ import modalUnlock from "./module/modalunlock.js";
             ease: "ease.in",
           }, 0)
 
-        .to('.upContent', {
-          transform: ' scale(0.5)',
-          y: '60%',
-          ease: "power2",
-        }, 0)
+
 
 
 
@@ -3846,7 +3888,7 @@ function cursomove() {
     mouse.x = e.x;
     mouse.y = e.y;
   };
-  
+
   // Lắng nghe cả `pointermove` và `dragover`
   window.addEventListener('pointermove', updateMousePosition);
 
