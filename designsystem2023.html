@@ -1,145 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2V304TRLZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-Q2V304TRLZ");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Primary Meta Tags -->
+    <meta
+      name="keywords"
+      content="ui/ux designer, designer, ui/ux designer là gì, it viec,thiết kế web
+  , tuyển dụng ui/ux designer, ux research, Ngo Quang Trung, Quang Trung, wagtrung, cv, portfolio, uxfolio"
+    />
+    <meta name="title" content="WagTrung" />
+    <meta
+      name="description"
+      content="An UX Case Study by WagTrung - Ngo Quang Trung"
+    />
 
-    gtag('config', 'G-Q2V304TRLZ');
-  </script>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Primary Meta Tags -->
-  <meta name="keywords" content="ui/ux designer, designer, ui/ux designer là gì, it viec,thiết kế web
-  , tuyển dụng ui/ux designer, ux research, Ngo Quang Trung, Quang Trung, wagtrung, cv, portfolio, uxfolio" />
-  <meta name="title" content="WagTrung">
-  <meta name="description" content="An UX Case Study by WagTrung - Ngo Quang Trung">
+    <!--  Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wagtrung.com/erp-system" />
+    <meta property="og:title" content="WagTrung" />
+    <meta
+      property="og:description"
+      content="An UX Case Study by WagTrung - Ngo Quang Trung"
+    />
+    <meta property="og:image" content="img/meta/case.png" />
 
-  <!--  Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://wagtrung.com/erp-system">
-  <meta property="og:title" content="WagTrung">
-  <meta property="og:description" content="An UX Case Study by WagTrung - Ngo Quang Trung">
-  <meta property="og:image" content="img/meta/case.png">
-
-
-  <!-- Google fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    <!-- Google fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" /> -->
-   
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/vendors.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/vendors.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
-  <meta name="theme-color" content="#ffffff" />
+    <title>Design System 2023</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 
-  <title>Design System 2023</title>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
+  </head>
 
-<script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script></head>
-
-<body class="preloader-visible" data-barba="wrapper">
-
+  <body class="preloader-visible" data-barba="wrapper">
     <!-- Lock content link có pass -->
     <script>
       // Get the referrer URL
       const referrer = document.referrer;
 
       // Check if the referrer is from the index.html page
-      if (referrer !== 'https://wagtrung.com/index.html') {
-          // Redirect the user back to the index page
-          window.location.replace('https://wagtrung.com/index.html');
+      if (referrer !== "https://wagtrung.com/index.html") {
+        // Redirect the user back to the index page
+        window.location.replace("https://wagtrung.com/index.html");
       }
-  </script>
+    </script>
 
-  <modal-pass data-file="cv">
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-      <input type="text" placeholder="Type your given passcode" id="passInput">
-      <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="passSubmit">
-        Download Now
-      </a>
-    </div>
-  </modal-pass>
+    <modal-pass data-file="cv">
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <input
+          type="text"
+          placeholder="Type your given passcode"
+          id="passInput"
+        />
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="passSubmit"
+        >
+          Download Now
+        </a>
+      </div>
+    </modal-pass>
 
-  <modal-unlock>
-    <!-- <div slot="info"></div> -->
-    <div class="cen-col mt-24">
-      <input type="text" placeholder="Type your given passcode" id="unlockpassInput">
-      <a target="_blank" class="button -md -black w-1/1 rounded-base  mt-40 " id="unlockSubmit">
-        Unlock to read
-      </a>
-    </div>
-  </modal-unlock>
-  <!---------------------->
-  <!-- 0                -->
-  <!-- PRE-LOAD         -->
-  <!--                  -->
-  <!---------------------->
+    <modal-unlock>
+      <!-- <div slot="info"></div> -->
+      <div class="cen-col mt-24">
+        <input
+          type="text"
+          placeholder="Type your given passcode"
+          id="unlockpassInput"
+        />
+        <a
+          target="_blank"
+          class="button -md -black w-1/1 rounded-base mt-40"
+          id="unlockSubmit"
+        >
+          Unlock to read
+        </a>
+      </div>
+    </modal-unlock>
+    <!---------------------->
+    <!-- 0                -->
+    <!-- PRE-LOAD         -->
+    <!--                  -->
+    <!---------------------->
 
-  <div class="preloader js-preloader">
-    <div class="preloader__bg"></div>
+    <div class="preloader js-preloader">
+      <div class="preloader__bg"></div>
 
-    <div class="preloader__progress">
-      <div class="preloader__progress__inner"></div>
-    </div>
-  </div>
-
-  <div class="header2">
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-    </div>
-  </div>
-
-  <div class="barba-container" data-barba="container">
-
-
-    <div data-cursor class="backButton js-backButton">
-      <span class="backButton__bg"></span>
-      <div class="backButton__icon__wrap">
-        <i class="backButton__button js-top-button" data-feather="arrow-up"></i>
+      <div class="preloader__progress">
+        <div class="preloader__progress__inner"></div>
       </div>
     </div>
 
-    <main class="text-lg sm:text-base ">
-      <!---------------------->
-      <!-- 0                -->
-      <!-- NAV Invert OUT         -->
-      <!--                  -->
-      <!---------------------->
-      <header class=" header -light -sticky-light js-header">
-        <!-- header__bar invert   start -->
-        <div class="header__bar invert">
-          <div class="header__logo js-header-logo">
-            <a data-barba href="index.html">
-              <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
-              <div class="header__logo__dark js-lazy">
-                <div class="header__logo__dark__inner"></div>
-              </div>          
-            </a>
-          </div>
+    <div class="header2">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
 
-          <div class="header__menu js-header-menu">
-            <button type="button" class="nav-button-open js-nav-open">
-              <i class="icon" data-feather="menu"></i>
-            </button>
-          </div>
+    <div class="barba-container" data-barba="container">
+      <div data-cursor class="backButton js-backButton">
+        <span class="backButton__bg"></span>
+        <div class="backButton__icon__wrap">
+          <i
+            class="backButton__button js-top-button"
+            data-feather="arrow-up"
+          ></i>
         </div>
-        <!-- header__bar invert   end -->
-<!---------------------->
+      </div>
+
+      <main class="text-lg sm:text-base">
+        <!---------------------->
+        <!-- 0                -->
+        <!-- NAV Invert OUT         -->
+        <!--                  -->
+        <!---------------------->
+        <header class="header -light -sticky-light js-header">
+          <!-- header__bar invert   start -->
+          <div class="header__bar invert">
+            <div class="header__logo js-header-logo">
+              <a data-barba href="index.html">
+                <!-- <img class="header__logo__dark js-lazy"  data-srcset="img/logo/logo.svg"  alt="WagTrung Logo" />   -->
+                <div class="header__logo__dark js-lazy">
+                  <div class="header__logo__dark__inner"></div>
+                </div>
+              </a>
+            </div>
+
+            <div class="header__menu js-header-menu">
+              <button type="button" class="nav-button-open js-nav-open">
+                <i class="icon" data-feather="menu"></i>
+              </button>
+            </div>
+          </div>
+          <!-- header__bar invert   end -->
+          <!---------------------->
           <!-- 0                -->
           <!-- NAV INSIDE         -->
           <!--                  -->
@@ -270,99 +301,100 @@
             </div>
           </nav>
           <!-- nav end -->
-      </header>
-      <!-- header end -->
+        </header>
+        <!-- header end -->
 
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
+        <!-- END-NAV -->
 
-
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-      <!-- END-NAV -->
-
-
-
-
-      <!---------------------->
-      <!--                 -->
-      <!-- INTRO BG + TEXT  -->
-      <!--                  -->
-      <!---------------------->
-      <div class="container-fluid px-0 relative">
-        <div class="h-125vh bg-dark-3">
-          <section
-            class="masthead -type-1 js-masthead-type-work-1 js-shapes sm:text-center"
-          >
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-md-10 col-sm-12 z-3 upContent">
-                  <div class="row justify-content-center text-center">
-                    <!-- sub top -->
-                    <div
-                      class="col-md-12"
-                      data-split="lines"
-                      data-split-page-reveal
-                    >
-                      <p class="masthead__subtitle tagSub js-subtitle">
-                        Design Token
-                      </p>
-                    </div>
-                    <!-- Title -->
-                    <div
-                      class="col-md-12"
-                      data-split="lines"
-                      data-split-page-reveal
-                    >
-                      <h1 class="masthead__title text-white js-title">
-                        Design System
-                      </h1>
-                    </div>
-                    <!-- sub bot -->
-                    <div class="col-md-8" data-split="lines">
-                      <p class="js-info-item masthead__text">
-                        Building components & Design Token that boost development time.
-                      </p>
+        <!---------------------->
+        <!--                 -->
+        <!-- INTRO BG + TEXT  -->
+        <!--                  -->
+        <!---------------------->
+        <div class="container-fluid px-0 relative">
+          <div class="h-125vh bg-dark-3">
+            <section
+              class="masthead -type-1 js-masthead-type-work-1 js-shapes sm:text-center"
+            >
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-md-10 col-sm-12 z-3 upContent">
+                    <div class="row justify-content-center text-center">
+                      <!-- sub top -->
+                      <div
+                        class="col-md-12"
+                        data-split="lines"
+                        data-split-page-reveal
+                      >
+                        <p class="masthead__subtitle tagSub js-subtitle">
+                          Design Token
+                        </p>
+                      </div>
+                      <!-- Title -->
+                      <div
+                        class="col-md-12"
+                        data-split="lines"
+                        data-split-page-reveal
+                      >
+                        <h1 class="masthead__title text-white js-title">
+                          Design System
+                        </h1>
+                      </div>
+                      <!-- sub bot -->
+                      <div class="col-md-8" data-split="lines">
+                        <p class="js-info-item masthead__text">
+                          Building components & Design Token that boost
+                          development time.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
-      </div>
 
-      <!---------------------->
-      <!--                 -->
-      <!-- IPAD             -->
-      <!--                  -->
-      <!---------------------->
-      <div class="d-flex sm:container justify-content-center align-items-center uiLabHead">
-        <div class="col-lg-10  uiLab">
-          <div class="img-wrap2">
-
-            <!-- video 16:9-->
-            <!-- <div class=" wrap16-9">
+        <!---------------------->
+        <!--                 -->
+        <!-- IPAD             -->
+        <!--                  -->
+        <!---------------------->
+        <div
+          class="d-flex sm:container justify-content-center align-items-center uiLabHead"
+        >
+          <div class="col-lg-10 uiLab">
+            <div class="img-wrap2">
+              <!-- video 16:9-->
+              <!-- <div class=" wrap16-9">
               <iframe class="content16-9" width="100%" height="100%"
                 src="https://www.youtube.com/embed/JzHiTFuiuzo?autoplay=1&rel=0&showinfo=0&color=white&modestbranding=1"
                 frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; "
                 allowfullscreen></iframe>
             </div> -->
 
-            <!-- img 16:9 -->
-            <!-- <div data-parallax="0.95" class="ratio ratio-16:9 ">
+              <!-- img 16:9 -->
+              <!-- <div data-parallax="0.95" class="ratio ratio-16:9 ">
                 <div data-parallax-target class="bg-image2 js-lazy" data-bg="img/4-ERP-casestudy/tinder.png"></div>
               </div> -->
 
-            <!-- compare -->
-            <div class="img-comp-container ">
-              <!-- New right -->
-              <div class="img-comp-img"><img src="/img/i-ds/intro-dark.png" /></div>
-              <!-- Old left -->
-              <div class="img-comp-img img-comp-overlay"><img src="/img/i-ds/intro-light.png" /></div>
-            </div>
+              <!-- compare -->
+              <div class="img-comp-container">
+                <!-- New right -->
+                <div class="img-comp-img">
+                  <img src="/img/i-ds/intro-dark.png" />
+                </div>
+                <!-- Old left -->
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="/img/i-ds/intro-light.png" />
+                </div>
+              </div>
 
-            <!-- IPAD SLIDER (js-sliderMain-type-2 js-nav-prev   -  js-section-slider2 js-prev) -->
-            <!-- <div>
+              <!-- IPAD SLIDER (js-sliderMain-type-2 js-nav-prev   -  js-section-slider2 js-prev) -->
+              <!-- <div>
               <div class="js-section-slider2 " data-slider-col="base-1 lg-1 md-1 sm-1" data-gap="0" data-center
                 data-loop effect="fade" autoplay="30000" data-pagination>
                 <div class="swiper-wrapper">
@@ -390,189 +422,192 @@
               </div>
             </div> -->
 
-            <!-- slash light ipad -->
-            <div class="img-wrap3"></div>
+              <!-- slash light ipad -->
+              <div class="img-wrap3"></div>
+            </div>
           </div>
         </div>
 
-      </div>
-
-
-      <!----------------------><!---------------------->
-      <!-- CONTAINER        --><!---------------------->
-      <!-- ROLE             --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div class="container ">
-        <div class=" layout-pt-md layout-pb-md cen">
-          <div class="row y-gap-40 x-gap-40 col-md-11 sm:px-0 sm:text-center justify-content-center">
-
-            <div class="col-lg-3 col-sm-6 ">
-              <div class="text-cen2">
-                <i class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs" data-feather="navigation"></i>
-                <p class="   text-black  ">
-                  Role
+        <!----------------------><!---------------------->
+        <!-- CONTAINER        --><!---------------------->
+        <!-- ROLE             --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div class="container">
+          <div class="layout-pt-md layout-pb-md cen">
+            <div
+              class="row y-gap-40 x-gap-40 col-md-11 sm:px-0 sm:text-center justify-content-center"
+            >
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="navigation"
+                  ></i>
+                  <p class="text-black">Role</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">
+                  Product Designer
                 </p>
               </div>
-              <p class=" sm:fw-500 text-dark leading-xl mt-8">
-                Product Designer</p>
-            </div>
 
-            <div class="col-lg-3 col-sm-6 ">
-              <div class="text-cen2">
-                <i class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs" data-feather="clock"></i>
-                <p class=" text-black ">
-                  Timeline
-                </p>
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="clock"
+                  ></i>
+                  <p class="text-black">Timeline</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">August 2023</p>
               </div>
-              <p class=" sm:fw-500 text-dark leading-xl mt-8">
-                August 2023</p>
-            </div>
 
-            <div class="col-lg-3 col-sm-6 ">
-              <div class="text-cen2">
-                <i class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs" data-feather="grid"></i>
-                <p class=" text-black ">
-                  Categories
-                </p>
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="grid"
+                  ></i>
+                  <p class="text-black">Categories</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">Design system</p>
               </div>
-              <p class=" sm:fw-500 text-dark leading-xl mt-8">
-                Design system</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 ">
-              <div class="text-cen2">
-                <i class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs" data-feather="user"></i>
-                <p class=" text-black ">
-                  Client
-                </p>
+              <div class="col-lg-3 col-sm-6">
+                <div class="text-cen2">
+                  <i
+                    class="icon mr-16 sm:mr-8 text-dark str-width-3xl size-2xs"
+                    data-feather="user"
+                  ></i>
+                  <p class="text-black">Client</p>
+                </div>
+                <p class="sm:fw-500 text-dark leading-xl mt-8">Horizon</p>
               </div>
-              <p class=" sm:fw-500 text-dark leading-xl mt-8">
-                Horizon</p>
             </div>
-
           </div>
         </div>
-      </div>
 
-      <!-- <div id="google_translate_element"></div> -->
+        <!-- <div id="google_translate_element"></div> -->
 
+        <!-- DIVIDER -->
+        <div class="py-8 bg-light-1"></div>
 
+        <!-- SHARE STICK -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        />
+        <div data-cursor id="share-buttons" class="js-backButton2">
+          <p
+            class="mb-24 fw-600 text-xs text-center bg-light-1 px-8 py-4 rounded-base sm:d-none"
+          >
+            Share
+          </p>
 
-      <!-- DIVIDER -->
-      <div class="py-8  bg-light-1"></div>
+          <!-- facebook -->
+          <a class="facebook" target="blank"><i class="fab fa-facebook"></i></a>
 
+          <!-- linkedin -->
+          <!-- <a class="linkedin" target="blank"><i class="fab fa-linkedin"></i></a> -->
 
-      <!-- SHARE STICK -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
-      <div data-cursor id="share-buttons" class="js-backButton2">
+          <!-- reddit -->
+          <a class="reddit" target="blank"><i class="fab fa-reddit"></i></a>
 
-        <p class="mb-24 fw-600 text-xs text-center bg-light-1 px-8 py-4 rounded-base sm:d-none">Share</p>
+          <!-- whatsapp-->
+          <a class="whatsapp" target="blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
 
-        <!-- facebook -->
-        <a class="facebook" target="blank"><i class="fab fa-facebook"></i></a>
+        <!----------------------><!---------------------->
+        <!-- CONTAINER         --><!---------------------->
+        <!-- 0. OVERVIEW       --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div data-anim="slide-up delay-3" class="container layout-pt-md">
+          <div class="row justify-content-center">
+            <div class="col-md-9">
+              <div class="">
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-16">Introduction</h2>
 
-        <!-- linkedin -->
-        <!-- <a class="linkedin" target="blank"><i class="fab fa-linkedin"></i></a> -->
-
-
-        <!-- reddit -->
-        <a class="reddit" target="blank"><i class="fab fa-reddit"></i></a>
-
-        <!-- whatsapp-->
-        <a class="whatsapp" target="blank"><i class="fab fa-whatsapp"></i></a>
-
-      </div>
-
-
-      <!----------------------><!---------------------->
-      <!-- CONTAINER         --><!---------------------->
-      <!-- 0. OVERVIEW       --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div data-anim="slide-up delay-3" class="container layout-pt-md   ">
-        <div class="row justify-content-center">
-
-          <div class="col-md-9">
-            <div class="">
-
-              <h2 class="text-4xl sm:text-2xl fw-600 mb-16   ">Introduction</h2>
-
-
-              <p class=" text-black">
-                Team chúng tôi đã xây dựng <mark>Design System khi Figma vừa release bản Beta đầu tiên.</mark>. Nghe có
-                vẻ hơi mạo hiểm ở giai đoạn đó
-                , nhưng với tầm nhìn chiến lược của Leader, và trên tinh thần "Dream it, Dare it, Do it", chúng tôi đã
-                xây dựng bản DS đầu tiên dựa trên Material UI. Nhưng sau khi đưa vào sử dụng, <mark>nó không thực sự
-                  hoàn hảo như chúng tôi nghĩ.</mark>
-                Do đó Team tôi đã tiến hành Research các hệ thống DS trên thj trường như Uber DS, Adobe DS, Alassian
-                DS,.. Thì chúng tôi nhận ra rằng DS phải phục vụ cho từng Product nhất định, thay vì apply một cách máy
-                móc từ Product này sang product khác.
-
-              </p>
-              <p class=" mt-24 sm:mt-16">
-
-                Và cuối cùng , Bộ DS thứ 2 được làm ra, nhằm linh hoạt phục vụ cho <mark>định hướng của sản phẩm là 1
-                  Product
-                  về White-lablel </mark> (Có Thể đổi Theme theo nhu cầu từng khách hàng), ngoài ra hỗ trợ phần Light và
-                Dark mode
-                để tăng tính tiếp cận với nhiều đối tượng khách hàng.
-              </p>
+                <p class="text-black">
+                  Team chúng tôi đã xây dựng
+                  <mark
+                    >Design System khi Figma vừa release bản Beta đầu
+                    tiên.</mark
+                  >. Nghe có vẻ hơi mạo hiểm ở giai đoạn đó , nhưng với tầm nhìn
+                  chiến lược của Leader, và trên tinh thần "Dream it, Dare it,
+                  Do it", chúng tôi đã xây dựng bản DS đầu tiên dựa trên
+                  Material UI. Nhưng sau khi đưa vào sử dụng,
+                  <mark>nó không thực sự hoàn hảo như chúng tôi nghĩ.</mark>
+                  Do đó Team tôi đã tiến hành Research các hệ thống DS trên thj
+                  trường như Uber DS, Adobe DS, Alassian DS,.. Thì chúng tôi
+                  nhận ra rằng DS phải phục vụ cho từng Product nhất định, thay
+                  vì apply một cách máy móc từ Product này sang product khác.
+                </p>
+                <p class="mt-24 sm:mt-16">
+                  Và cuối cùng , Bộ DS thứ 2 được làm ra, nhằm linh hoạt phục vụ
+                  cho
+                  <mark
+                    >định hướng của sản phẩm là 1 Product về White-lablel
+                  </mark>
+                  (Có Thể đổi Theme theo nhu cầu từng khách hàng), ngoài ra hỗ
+                  trợ phần Light và Dark mode để tăng tính tiếp cận với nhiều
+                  đối tượng khách hàng.
+                </p>
+              </div>
             </div>
-
-
           </div>
         </div>
-      </div>
 
+        <!----------------------><!---------------------->
+        <!-- STICK            --><!---------------------->
+        <!-- 5 steps          --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div
+          id="section-3"
+          class="ufo-sec--navigation container layout-pb-md layout-pt-md"
+        >
+          <!-- <h2 class="text-4xl sm:text-2xl     fw-600 text-center mb-40 sm:mb-32">The Design Process</h2> -->
 
-
-
-
-
-
-      <!----------------------><!---------------------->
-      <!-- STICK            --><!---------------------->
-      <!-- 5 steps          --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-3" class=" ufo-sec--navigation container layout-pb-md layout-pt-md ">
-        <!-- <h2 class="text-4xl sm:text-2xl     fw-600 text-center mb-40 sm:mb-32">The Design Process</h2> -->
-
-        <div class="sticky-header" id="sticky-header" data-start="4" data-end="6" style="z-index: 2000;">
-
-          <!-- Stick short -->
-          <div class="grid col-md-11 mx-auto">
-            <div class="navigation-mobile-display">
-              <div class="navigation-step-display nav-step checked"></div>
-              <div class="navigation-dropdown-toggle"></div>
-            </div>
-
-            <div class="navigation-steps ">
-              <div class="nav-step">
-                <div class="nav-step-content">
-                  <a href="#section-4" class="step-link">
-                    <div class="step-number">1</div>
-                    <div class="step-name">Challenges</div>
-                  </a>
-                </div>
+          <div
+            class="sticky-header"
+            id="sticky-header"
+            data-start="4"
+            data-end="6"
+            style="z-index: 2000"
+          >
+            <!-- Stick short -->
+            <div class="grid col-md-11 mx-auto">
+              <div class="navigation-mobile-display">
+                <div class="navigation-step-display nav-step checked"></div>
+                <div class="navigation-dropdown-toggle"></div>
               </div>
-              <div class="nav-step">
-                <div class="nav-step-content">
-                  <a href="#section-5" class="step-link">
-                    <div class="step-number">2</div>
-                    <div class="step-name">Solutions</div>
-                  </a>
+
+              <div class="navigation-steps">
+                <div class="nav-step">
+                  <div class="nav-step-content">
+                    <a href="#section-4" class="step-link">
+                      <div class="step-number">1</div>
+                      <div class="step-name">Challenges</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="nav-step">
-                <div class="nav-step-content">
-                  <a href="#section-6" class="step-link">
-                    <div class="step-number">3</div>
-                    <div class="step-name">Takeaways</div>
-                  </a>
+                <div class="nav-step">
+                  <div class="nav-step-content">
+                    <a href="#section-5" class="step-link">
+                      <div class="step-number">2</div>
+                      <div class="step-name">Solutions</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <!-- <div class="nav-step">
+                <div class="nav-step">
+                  <div class="nav-step-content">
+                    <a href="#section-6" class="step-link">
+                      <div class="step-number">3</div>
+                      <div class="step-name">Takeaways</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- <div class="nav-step">
                 <div class="nav-step-content">
                   <a href="#section-8" class="step-link">
                     <div class="step-number">4</div>
@@ -580,7 +615,7 @@
                   </a>
                 </div>
               </div> -->
-              <!-- <div class="nav-step">
+                <!-- <div class="nav-step">
                 <div class="nav-step-content">
                   <a href="#section-9" class="step-link">
                     <div class="step-number">5</div>
@@ -588,414 +623,494 @@
                   </a>
                 </div>
               </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="sm:d-block py-8  bg-light-1">
-        <!-- DIVIDER -->
-      </div>
-
-      <!----------------------><!---------------------->
-      <!-- 4               --><!---------------------->
-      <!-- challenge        --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-4">
-
-        <!---------------------->
-        <!--                 -->
-        <!-- fLUID - TEXTCEN   -->
-        <!--                  -->
-        <!---------------------->
-        <div class="">
-          <div data-parallax="0" class=" z-5 js-image ">
-            <div data-parallax-target class="bg-image js-lazy" data-bg="img/general/bbgg.jpg">
-            </div>
-            <div class="mas"></div>
-            <!-- <div class="bg-grid"></div> -->
-            <div class=" layout-pt-lg  layout-pb-lg h-full container  d-flex justify-content-center align-items-center">
-              <div class="col-md-10 text-center">
-                <h1 class="text-7xl sm:text-4xl   text-white fw-600 ">The <span class="greenbg pb-0">Challenges</span>
-                </h1>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="container layout-pt-md    ">
-          <div class="row justify-content-center">
+        <div class="sm:d-block py-8 bg-light-1">
+          <!-- DIVIDER -->
+        </div>
 
+        <!----------------------><!---------------------->
+        <!-- 4               --><!---------------------->
+        <!-- challenge        --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div id="section-4">
+          <!---------------------->
+          <!--                 -->
+          <!-- fLUID - TEXTCEN   -->
+          <!--                  -->
+          <!---------------------->
+          <div class="">
+            <div data-parallax="0" class="z-5 js-image">
+              <div
+                data-parallax-target
+                class="bg-image js-lazy"
+                data-bg="img/general/bbgg.jpg"
+              ></div>
+              <div class="mas"></div>
+              <!-- <div class="bg-grid"></div> -->
+              <div
+                class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center"
+              >
+                <div class="col-md-10 text-center">
+                  <h1 class="text-7xl sm:text-4xl text-white fw-600">
+                    The <span class="greenbg pb-0">Challenges</span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <div class="col-md-9">
+          <div class="container layout-pt-md">
+            <div class="row justify-content-center">
+              <div class="col-md-9">
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-16">
+                  The Challenges
+                </h2>
+                <p class="text-black">
+                  Mặc dù Design System được xây dựng để Designers và Developers
+                  được xuông sẻ, và giảm áp lực về timeline và deadlines ở phía
+                  developers khi có bất kì thay đổi về components
+                  <mark
+                    >. Ở bản DS đầu tiên chúng tôi, nhận được rất nhiều lời phàn
+                    nàn về nó
+                  </mark>
+                  Những lỗi đến từ Figma khi còn là bản beta, hoặc Về quy cách
+                  sử dụng và quy trình changelog.
+                </p>
 
-              <h2 class="text-4xl sm:text-2xl fw-600 mb-16   ">The Challenges</h2>
-              <p class=" text-black ">
-                Mặc dù Design System được xây dựng để Designers và Developers được xuông sẻ, và giảm áp lực về timeline
-                và deadlines ở phía developers khi có bất kì thay đổi về components <mark>. Ở bản DS đầu tiên chúng tôi,
-                  nhận được rất nhiều lời phàn nàn về nó
-                </mark> Những lỗi đến từ Figma khi còn là bản beta, hoặc Về quy cách sử dụng và quy trình changelog.
-              </p>
-
-              <p class="mt-24 sm:mt-16 ">
-                Bạn có thể xem thêm một vaì đoạn hội thoại bên dưới để hình dung rõ hơn về hành trình cải tiến DS của
-                chúng tôi.
-              </p>
-              <!-- img-fit -->
-              <!-- <div data-anim="img-up cover-light-1 ">
+                <p class="mt-24 sm:mt-16">
+                  Bạn có thể xem thêm một vaì đoạn hội thoại bên dưới để hình
+                  dung rõ hơn về hành trình cải tiến DS của chúng tôi.
+                </p>
+                <!-- img-fit -->
+                <!-- <div data-anim="img-up cover-light-1 ">
               <img data-enlargable class="img-fluid" src="img/4-ERP-casestudy/ia.png">
               <p class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24 ">IA - Leave Request page</p>
             </div> -->
 
-              <!-- tab -->
-              <div class="layout-pt-xs">
-                <div class="tab-wrapper noitab">
-                  <div class="tab-header" full-width border>
-                    <button class="tab-btn">Developers Say</button>
-                    <button class="tab-btn">Designers Do</button>
-                    <div class="underline"></div>
-                  </div>
-                  <div class="tab-body">
-                    <div class="tab-content">
-                      <!-- LIST -->
-
-                      <ul class="list-ic vertical dotted">
-
-
-                        <li>
-                          <span class="num">1</span>
-                          <p class=" ">
-                            <span class="text-black d-inline-block fw-500 mr-4">Beta Dream: </span>Dev bên a nhiều khi
-                            có những thư viện mặc dù là xịn xò nhưng khi nó mới alpha, beta thì tụi a sẽ không dùng luôn
-                            á
-                          </p>
-                          <a data-barba
-                            href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1691499295176929?thread_ts=1691495279.748549&cid=C05LR28UPPC"
-                            target="_blank" class="ml-8 button -underline4 text-base text-black text-cen2">
-                            Open Slack
-                            <i class="icon size-3xs ml-8 text-dark" data-feather="arrow-up-right"></i>
-                          </a>
-                        </li>
-
-                        <li>
-                          <span class="num">2</span>
-                          <p class=" ">
-                            <span class="text-black d-inline-block fw-500 mr-4">Figma Beta problem: </span>Dính mã token
-                            đã xoá (missing library)
-                          </p>
-                          <a data-barba
-                            href="https://inspire-lab-vietnam.slack.com/archives/C05FL4TK6KD/p1691950069926549"
-                            target="_blank" class="ml-8 button -underline4 text-base text-black text-cen2">
-                            Open Slack
-                            <i class="icon size-3xs ml-8 text-dark" data-feather="arrow-up-right"></i>
-                          </a>
-                        </li>
-
-                        <li>
-                          <span class="num">3</span>
-                          <p class=" ">
-                            <span class="text-black d-inline-block fw-500 mr-4">Change Token Key: </span>Tôi phải
-                            đi rà lại và thay thế rất nhiều các Key token cũ
-                          </p>
-                          <a data-barba
-                            href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1696208591836679"
-                            target="_blank" class="ml-8 button -underline4 text-base text-black text-cen2">
-                            Open Slack
-                            <i class="icon size-3xs ml-8 text-dark" data-feather="arrow-up-right"></i>
-                          </a>
-                        </li>
-
-                        <li>
-                          <span class="num">4</span>
-                          <p class=" ">
-                            <span class="text-black d-inline-block fw-500 mr-4">2 Teams use 1 shared gitlab link :
-                            </span>Tại sao team anh kick team tôi ra mà không báo trước?
-                          </p>
-                          <a data-barba
-                            href="https://inspire-lab-vietnam.slack.com/archives/C05FL4TK6KD/p1699611930021179"
-                            target="_blank" class="ml-8 button -underline4 text-base text-black text-cen2">
-                            Open Slack
-                            <i class="icon size-3xs ml-8 text-dark" data-feather="arrow-up-right"></i>
-                          </a>
-                        </li>
-
-
-                        <li>
-                          <span class="num">5</span>
-                          <p class=" ">
-                            <span class="text-black d-inline-block fw-500 mr-4">Convert KIT to DS </span> Hôm thì sài
-                            màu native, hồm thì gắn màu token, em phải sửa nhiều lần
-                          </p>
-                          <a data-barba
-                            href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1694062789064509"
-                            target="_blank" class="ml-8 button -underline4 text-base text-black text-cen2">
-                            Open Slack
-                            <i class="icon size-3xs ml-8 text-dark" data-feather="arrow-up-right"></i>
-                          </a>
-                        </li>
-
-                        <li>
-                          <span class="num">6</span>
-                          <p class=" ">
-                            <span class="text-black d-inline-block fw-500 mr-4"> Wrong Color : </span> Neutral-0 là màu
-                            xám mà em
-                          </p>
-                          <a data-barba
-                            href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1695827479055619"
-                            target="_blank" class="ml-8 button -underline4 text-base text-black text-cen2">
-                            Open Slack
-                            <i class="icon size-3xs ml-8 text-dark" data-feather="arrow-up-right"></i>
-                          </a>
-                        </li>
-
-
-
-
-                      </ul>
+                <!-- tab -->
+                <div class="layout-pt-xs">
+                  <div class="tab-wrapper noitab">
+                    <div class="tab-header" full-width border>
+                      <button class="tab-btn">Developers Say</button>
+                      <button class="tab-btn">Designers Do</button>
+                      <div class="underline"></div>
                     </div>
+                    <div class="tab-body">
+                      <div class="tab-content">
+                        <!-- LIST -->
 
-                    <div class="tab-content">
-                      <ul class="list-ic vertical dotted">
+                        <ul class="list-ic vertical dotted">
+                          <li>
+                            <span class="num">1</span>
+                            <p class=" ">
+                              <span
+                                class="text-black d-inline-block fw-500 mr-4"
+                                >Beta Dream: </span
+                              >Dev bên a nhiều khi có những thư viện mặc dù là
+                              xịn xò nhưng khi nó mới alpha, beta thì tụi a sẽ
+                              không dùng luôn á
+                            </p>
+                            <a
+                              data-barba
+                              href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1691499295176929?thread_ts=1691495279.748549&cid=C05LR28UPPC"
+                              target="_blank"
+                              class="ml-8 button -underline4 text-base text-black text-cen2"
+                            >
+                              Open Slack
+                              <i
+                                class="icon size-3xs ml-8 text-dark"
+                                data-feather="arrow-up-right"
+                              ></i>
+                            </a>
+                          </li>
 
+                          <li>
+                            <span class="num">2</span>
+                            <p class=" ">
+                              <span
+                                class="text-black d-inline-block fw-500 mr-4"
+                                >Figma Beta problem: </span
+                              >Dính mã token đã xoá (missing library)
+                            </p>
+                            <a
+                              data-barba
+                              href="https://inspire-lab-vietnam.slack.com/archives/C05FL4TK6KD/p1691950069926549"
+                              target="_blank"
+                              class="ml-8 button -underline4 text-base text-black text-cen2"
+                            >
+                              Open Slack
+                              <i
+                                class="icon size-3xs ml-8 text-dark"
+                                data-feather="arrow-up-right"
+                              ></i>
+                            </a>
+                          </li>
 
+                          <li>
+                            <span class="num">3</span>
+                            <p class=" ">
+                              <span
+                                class="text-black d-inline-block fw-500 mr-4"
+                                >Change Token Key: </span
+                              >Tôi phải đi rà lại và thay thế rất nhiều các Key
+                              token cũ
+                            </p>
+                            <a
+                              data-barba
+                              href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1696208591836679"
+                              target="_blank"
+                              class="ml-8 button -underline4 text-base text-black text-cen2"
+                            >
+                              Open Slack
+                              <i
+                                class="icon size-3xs ml-8 text-dark"
+                                data-feather="arrow-up-right"
+                              ></i>
+                            </a>
+                          </li>
 
-                        <li>
-                          <span class="num">1</span>
-                          <p class=" ">
-                            <span class="text-black d-inline-block fw-500 mr-4">Changelog Flow: </span> Devs says: Like
-                          </p>
-                          <a data-barba
-                            href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1695007202562739"
-                            target="_blank" class="ml-8 button -underline4 text-base text-black text-cen2">
-                            Open Slack
-                            <i class="icon size-3xs ml-8 text-dark" data-feather="arrow-up-right"></i>
-                          </a>
-                        </li>
+                          <li>
+                            <span class="num">4</span>
+                            <p class=" ">
+                              <span
+                                class="text-black d-inline-block fw-500 mr-4"
+                                >2 Teams use 1 shared gitlab link : </span
+                              >Tại sao team anh kick team tôi ra mà không báo
+                              trước?
+                            </p>
+                            <a
+                              data-barba
+                              href="https://inspire-lab-vietnam.slack.com/archives/C05FL4TK6KD/p1699611930021179"
+                              target="_blank"
+                              class="ml-8 button -underline4 text-base text-black text-cen2"
+                            >
+                              Open Slack
+                              <i
+                                class="icon size-3xs ml-8 text-dark"
+                                data-feather="arrow-up-right"
+                              ></i>
+                            </a>
+                          </li>
 
+                          <li>
+                            <span class="num">5</span>
+                            <p class=" ">
+                              <span
+                                class="text-black d-inline-block fw-500 mr-4"
+                                >Convert KIT to DS
+                              </span>
+                              Hôm thì sài màu native, hồm thì gắn màu token, em
+                              phải sửa nhiều lần
+                            </p>
+                            <a
+                              data-barba
+                              href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1694062789064509"
+                              target="_blank"
+                              class="ml-8 button -underline4 text-base text-black text-cen2"
+                            >
+                              Open Slack
+                              <i
+                                class="icon size-3xs ml-8 text-dark"
+                                data-feather="arrow-up-right"
+                              ></i>
+                            </a>
+                          </li>
 
-                        <li>
-                          <span class="num">2</span>
-                          <p class=" ">
-                            <span class="text-black d-inline-block fw-500 mr-4">Change Theme successfully : </span> Devs
-                            says: Nothing
-                          </p>
-                          <a data-barba
-                            href="https://inspire-lab-vietnam.slack.com/archives/C05FL4TK6KD/p1706256252319569"
-                            target="_blank" class="ml-8 button -underline4 text-base text-black text-cen2">
-                            Open Slack
-                            <i class="icon size-3xs ml-8 text-dark" data-feather="arrow-up-right"></i>
-                          </a>
-                        </li>
+                          <li>
+                            <span class="num">6</span>
+                            <p class=" ">
+                              <span
+                                class="text-black d-inline-block fw-500 mr-4"
+                              >
+                                Wrong Color :
+                              </span>
+                              Neutral-0 là màu xám mà em
+                            </p>
+                            <a
+                              data-barba
+                              href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1695827479055619"
+                              target="_blank"
+                              class="ml-8 button -underline4 text-base text-black text-cen2"
+                            >
+                              Open Slack
+                              <i
+                                class="icon size-3xs ml-8 text-dark"
+                                data-feather="arrow-up-right"
+                              ></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
 
+                      <div class="tab-content">
+                        <ul class="list-ic vertical dotted">
+                          <li>
+                            <span class="num">1</span>
+                            <p class=" ">
+                              <span
+                                class="text-black d-inline-block fw-500 mr-4"
+                                >Changelog Flow:
+                              </span>
+                              Devs says: Like
+                            </p>
+                            <a
+                              data-barba
+                              href="https://inspire-lab-vietnam.slack.com/archives/C05LR28UPPC/p1695007202562739"
+                              target="_blank"
+                              class="ml-8 button -underline4 text-base text-black text-cen2"
+                            >
+                              Open Slack
+                              <i
+                                class="icon size-3xs ml-8 text-dark"
+                                data-feather="arrow-up-right"
+                              ></i>
+                            </a>
+                          </li>
 
-
-                      </ul>
+                          <li>
+                            <span class="num">2</span>
+                            <p class=" ">
+                              <span
+                                class="text-black d-inline-block fw-500 mr-4"
+                                >Change Theme successfully :
+                              </span>
+                              Devs says: Nothing
+                            </p>
+                            <a
+                              data-barba
+                              href="https://inspire-lab-vietnam.slack.com/archives/C05FL4TK6KD/p1706256252319569"
+                              target="_blank"
+                              class="ml-8 button -underline4 text-base text-black text-cen2"
+                            >
+                              Open Slack
+                              <i
+                                class="icon size-3xs ml-8 text-dark"
+                                data-feather="arrow-up-right"
+                              ></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-
-
-
             </div>
-
           </div>
         </div>
 
-
-
-      </div>
-
-      <!----------------------><!---------------------->
-      <!-- 5               --><!---------------------->
-      <!-- solu        --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-5">
-
-
-        <!---------------------->
-        <!--                 -->
-        <!-- fLUID - TEXTCEN   -->
-        <!--                  -->
-        <!---------------------->
-        <div class="layout-pt-xl ">
-          <div data-parallax="0" class=" z-5 js-image ">
-            <div data-parallax-target class="bg-image js-lazy" data-bg="img/general/bbgg.jpg">
-            </div>
-            <div class="mas"></div>
-            <!-- <div class="bg-grid"></div> -->
-            <div class=" layout-pt-lg  layout-pb-lg h-full container  d-flex justify-content-center align-items-center">
-              <div class="col-md-10 text-center">
-                <h1 class="text-7xl sm:text-4xl   text-white fw-600 ">The <span class="greenbg pb-0">Solutions</span>
-                </h1>
+        <!----------------------><!---------------------->
+        <!-- 5               --><!---------------------->
+        <!-- solu        --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div id="section-5">
+          <!---------------------->
+          <!--                 -->
+          <!-- fLUID - TEXTCEN   -->
+          <!--                  -->
+          <!---------------------->
+          <div class="layout-pt-xl">
+            <div data-parallax="0" class="z-5 js-image">
+              <div
+                data-parallax-target
+                class="bg-image js-lazy"
+                data-bg="img/general/bbgg.jpg"
+              ></div>
+              <div class="mas"></div>
+              <!-- <div class="bg-grid"></div> -->
+              <div
+                class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center"
+              >
+                <div class="col-md-10 text-center">
+                  <h1 class="text-7xl sm:text-4xl text-white fw-600">
+                    The <span class="greenbg pb-0">Solutions</span>
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-
-        <div class="container layout-pt-md    ">
-          <div class="row justify-content-center">
-
-
-            <div class="col-md-9">
-
-              <h2 class="text-4xl sm:text-2xl fw-600 mb-16   ">Any ideas and solutions?</h2>
-              <!-- <p class=" text-black ">
+          <div class="container layout-pt-md">
+            <div class="row justify-content-center">
+              <div class="col-md-9">
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-16">
+                  Any ideas and solutions?
+                </h2>
+                <!-- <p class=" text-black ">
                 After having focus groups, we need to understand more about user issues. Therefore, <mark>the Team
                   conducted
                   different interviews for each target feature</mark> in the entire HRM system, at different times.
               </p> -->
 
-              <p class=" ">
-                Ở giai đoạn đầu, Vì không được cấp một Gitlab, hoặc github để quán lý các file Token ở dạng JSON, nên
-                team design sẽ gửi phần xuất ra của Varibale Token này qua Drive đến Dev,
-                Sau đó, Chúng tôi được cấp một Gitlab repo để quản lý các Token này (Gitlab hỗ trợ lưu trữ và quản lý
-                files dễ dàng, và track được các phần thay đổi ở nội dung files).
-                Nhưng khi DS chưa statble, chúng tôi có nhiều lần commit, và bị Dev phàn nàn về việc này, vì những thay
-                dổi liên tục, và họ không thể keep track được. Do đó, sau này chúng tôi vẫn xuất file và để Dev push lên
-                gitlab thay vì là designers.
-                <br><br>
+                <p class=" ">
+                  Ở giai đoạn đầu, Vì không được cấp một Gitlab, hoặc github để
+                  quán lý các file Token ở dạng JSON, nên team design sẽ gửi
+                  phần xuất ra của Varibale Token này qua Drive đến Dev, Sau đó,
+                  Chúng tôi được cấp một Gitlab repo để quản lý các Token này
+                  (Gitlab hỗ trợ lưu trữ và quản lý files dễ dàng, và track được
+                  các phần thay đổi ở nội dung files). Nhưng khi DS chưa
+                  statble, chúng tôi có nhiều lần commit, và bị Dev phàn nàn về
+                  việc này, vì những thay dổi liên tục, và họ không thể keep
+                  track được. Do đó, sau này chúng tôi vẫn xuất file và để Dev
+                  push lên gitlab thay vì là designers.
+                  <br /><br />
 
-                <span class="text-black fw-500">1. Quá trình phát triển DS của project:</span> Tại sao lựa chọn
-                DS(Variable) thay vì Style (Figma)
-                <br><br>
+                  <span class="text-black fw-500"
+                    >1. Quá trình phát triển DS của project:</span
+                  >
+                  Tại sao lựa chọn DS(Variable) thay vì Style (Figma)
+                  <br /><br />
 
-                <span class="text-black fw-500">2. Quy trình làm việc với dev:</span> Update / Changelog / Export-Manage
-                (gitlab) / Release
-                <br><br>
+                  <span class="text-black fw-500"
+                    >2. Quy trình làm việc với dev:</span
+                  >
+                  Update / Changelog / Export-Manage (gitlab) / Release
+                  <br /><br />
 
-                <span class="text-black fw-500">3. Quy trình làm việc với designer:</span> Naming convention / Component
-                Property / Public Library / Sync handoff files
-                <br><br>
-
-
-
-              </p>
-
+                  <span class="text-black fw-500"
+                    >3. Quy trình làm việc với designer:</span
+                  >
+                  Naming convention / Component Property / Public Library / Sync
+                  handoff files <br /><br />
+                </p>
+              </div>
             </div>
+          </div>
 
+          <!---------------------->
+          <!-- FLUID           -->
+          <!-- SLIDER           -->
+          <!--                  -->
+          <!---------------------->
+          <div class="layout-pt-xs">
+            <div
+              class="js-section-slider2 relative"
+              data-slider-col="base-2 lg-2 md-1 sm-1"
+              data-gap="60"
+              autoplay="40000"
+              data-loop
+              data-center
+              data-pagination
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slider-slide">
+                  <div
+                    class="ratio ratio-4:3 bg-image swiper-lazy"
+                    data-enlargable="img/i-ds/Si-1.png"
+                    data-background="img/i-ds/Si-1.png"
+                  ></div>
+                </div>
+
+                <div class="swiper-slide slider-slide">
+                  <div
+                    class="ratio ratio-4:3 bg-image swiper-lazy"
+                    data-enlargable="img/i-ds/Si-2.png"
+                    data-background="img/i-ds/Si-2.png"
+                  ></div>
+                </div>
+
+                <!-- <div class="swiper-pagination"></div> -->
+                <div class="js-prev in">
+                  <i
+                    class="icon str-width-xl size-md text-black"
+                    data-feather="arrow-left"
+                  ></i>
+                </div>
+                <div class="js-next in">
+                  <i
+                    class="icon str-width-xl size-md text-black"
+                    data-feather="arrow-right"
+                  ></i>
+                </div>
+
+                <div class="pagination -dark pb-4 mt-48 js-pagination"></div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!---------------------->
-        <!-- FLUID           -->
-        <!-- SLIDER           -->
-        <!--                  -->
-        <!---------------------->
-        <div class="layout-pt-xs">
-          <div class="js-section-slider2 relative" data-slider-col="base-2 lg-2 md-1 sm-1" data-gap="60" autoplay="40000"
-            data-loop data-center data-pagination>
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide slider-slide">
-                <div class="ratio ratio-4:3 bg-image swiper-lazy " data-enlargable="img/i-ds/Si-1.png"
-                  data-background="img/i-ds/Si-1.png">
+        <!----------------------><!---------------------->
+        <!-- 5                --><!---------------------->
+        <!-- takeaway           --><!---------------------->
+        <!--                  --><!---------------------->
+        <!----------------------><!---------------------->
+        <div id="section-6">
+          <!---------------------->
+          <!--                 -->
+          <!-- fLUID - TEXTCEN   -->
+          <!--                  -->
+          <!---------------------->
+          <div class="layout-pt-xl">
+            <div data-parallax="0" class="z-5 js-image">
+              <div
+                data-parallax-target
+                class="bg-image js-lazy"
+                data-bg="img/general/bbgg.jpg"
+              ></div>
+              <div class="mas"></div>
+              <!-- <div class="bg-grid"></div> -->
+              <div
+                class="layout-pt-lg layout-pb-lg h-full container d-flex justify-content-center align-items-center"
+              >
+                <div class="col-md-10 text-center">
+                  <h1 class="text-7xl sm:text-4xl text-white fw-600">
+                    The <span class="greenbg pb-0">Outcome</span>
+                  </h1>
                 </div>
               </div>
-
-
-              <div class="swiper-slide slider-slide">
-                <div class="ratio ratio-4:3 bg-image swiper-lazy " data-enlargable="img/i-ds/Si-2.png"
-                  data-background="img/i-ds/Si-2.png">
-                </div>
-              </div>
-
-          
-
-              
-            <!-- <div class="swiper-pagination"></div> -->
-            <div class="js-prev in "><i class="icon str-width-xl size-md text-black" data-feather="arrow-left"></i>
-            </div>
-            <div class="js-next in"><i class="icon str-width-xl size-md text-black" data-feather="arrow-right"></i>
-            </div>
-
-            <div class="pagination -dark pb-4 mt-48 js-pagination"></div>
-          </div>
-        </div>
-
-
-
-      </div>
-
-
-
-      <!----------------------><!---------------------->
-      <!-- 5                --><!---------------------->
-      <!-- takeaway           --><!---------------------->
-      <!--                  --><!---------------------->
-      <!----------------------><!---------------------->
-      <div id="section-6">
-
-        <!---------------------->
-        <!--                 -->
-        <!-- fLUID - TEXTCEN   -->
-        <!--                  -->
-        <!---------------------->
-        <div class="layout-pt-xl ">
-          <div data-parallax="0" class=" z-5 js-image ">
-            <div data-parallax-target class="bg-image js-lazy" data-bg="img/general/bbgg.jpg">
-            </div>
-            <div class="mas"></div>
-            <!-- <div class="bg-grid"></div> -->
-            <div class=" layout-pt-lg  layout-pb-lg h-full container  d-flex justify-content-center align-items-center">
-              <div class="col-md-10 text-center">
-                <h1 class="text-7xl sm:text-4xl   text-white fw-600 ">The <span class="greenbg pb-0">Outcome</span></h1>
-              </div>
             </div>
           </div>
-        </div>
 
-
-
-        <div class="container layout-pt-md     ">
-          <div class="row justify-content-center">
-
-
-            <div class="col-md-9">
-
-              <h2 class="text-4xl sm:text-2xl fw-600 mb-16   ">What i have learnt.</h2>
-              <!-- <p class=" text-black ">
+          <div class="container layout-pt-md">
+            <div class="row justify-content-center">
+              <div class="col-md-9">
+                <h2 class="text-4xl sm:text-2xl fw-600 mb-16">
+                  What i have learnt.
+                </h2>
+                <!-- <p class=" text-black ">
                 After having focus groups, we need to understand more about user issues. Therefore, <mark>the Team
                   conducted
                   different interviews for each target feature</mark> in the entire HRM system, at different times.
               </p> -->
 
-              <p class=" ">
-                Dưới góc nhìn là 1 manager, Việc xây dựng Design System, cần 1 nguồn nhân lực phù hợp bao gồm cả
-                Designer và Developer, để phối hợp nhịp nhàng giữu phần logic và các thay đổi về Design
-                , Để tăng tính linh hoạt và cắt giảm thời gian Development. Nhưng mọi người trong cùng một dự án nên
-                nhìn chung về sản phẩm, thay vì đóng khung trách nhiệm và vai trò
-                <mark>DS hiện tại đã cut off tối đa thời gian mà Dev phải làm, khi có thay đổi (changelog) ở bất kỳ
-                  components nào. Thực tế cho thấy, với việc đổi theme từ Product Brand A sang Product Brand B, Dev đã
-                  plan cho việc đổi này tầm 2-3 tuần với nhân sự là 2 người. Nhưng với DS, thì chỉ cần 1 nhân sự và 1-2
-                  ngày là công việc đã hoàn tất</mark>
-                <br><br>
+                <p class=" ">
+                  Dưới góc nhìn là 1 manager, Việc xây dựng Design System, cần 1
+                  nguồn nhân lực phù hợp bao gồm cả Designer và Developer, để
+                  phối hợp nhịp nhàng giữu phần logic và các thay đổi về Design
+                  , Để tăng tính linh hoạt và cắt giảm thời gian Development.
+                  Nhưng mọi người trong cùng một dự án nên nhìn chung về sản
+                  phẩm, thay vì đóng khung trách nhiệm và vai trò
+                  <mark
+                    >DS hiện tại đã cut off tối đa thời gian mà Dev phải làm,
+                    khi có thay đổi (changelog) ở bất kỳ components nào. Thực tế
+                    cho thấy, với việc đổi theme từ Product Brand A sang Product
+                    Brand B, Dev đã plan cho việc đổi này tầm 2-3 tuần với nhân
+                    sự là 2 người. Nhưng với DS, thì chỉ cần 1 nhân sự và 1-2
+                    ngày là công việc đã hoàn tất</mark
+                  >
+                  <br /><br />
 
-                Dưới góc nhìn của Designer, Thì việc build DS hoàn toàn nằm ở phía Designer là rất tốn thời gian đối
-                với các project sử dụng components liên đới đến nhiều files và folders, mà việc share library bằng Style
-                Figma như thông thường là một bất cập.
-
-              </p>
-
-
-
+                  Dưới góc nhìn của Designer, Thì việc build DS hoàn toàn nằm ở
+                  phía Designer là rất tốn thời gian đối với các project sử dụng
+                  components liên đới đến nhiều files và folders, mà việc share
+                  library bằng Style Figma như thông thường là một bất cập.
+                </p>
+              </div>
             </div>
-
           </div>
-        </div>
 
-
-
-        <!---------------------->
-        <!--                  -->
-        <!-- FLUID - 4ITEMS   -->
-        <!--                  -->
-        <!---------------------->
-        <!-- <div class="layout-pt-xs" >
+          <!---------------------->
+          <!--                  -->
+          <!-- FLUID - 4ITEMS   -->
+          <!--                  -->
+          <!---------------------->
+          <!-- <div class="layout-pt-xs" >
           <div class="bg-gradi-green layout-pt-lg  h-full  layout-pb-lg " style="position:relative;">
             <div class="bg-grid2"></div>
             <div class="col-md-11 mx-auto">
@@ -1039,86 +1154,95 @@
             </div>
           </div>
         </div> -->
-        <!--  -->
-
-      </div>
-
-
-      <!-- section start -->
-      <section class="projects-nav layout-pt-xl">
-        <!-- row start -->
-        <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a data-barba href="erp-system.html" class="projects-nav__item -prev bg-dark-3">
-              <div class="projects-nav__img">
-                <div class="bg-image js-lazy" data-bg="img/general/hrmpng.png"></div>
-              </div>
-
-              <div class="projects-nav__content">
-                <div class="projects-nav__icon">
-                  <i class="size-xl str-width-md text-white" data-feather="arrow-left-circle"></i>
-                </div>
-                <div class="ml-24 sm:ml-0">
-                  <p class="badgeText4">UI/UX casestudy</p>
-                  <h3 class="text-4xl sm:text-3xl fw-400 text-white leading-xl">
-                    Human Resource Management
-                  </h3>
-                </div>
-
-                <p class="
-                        projects-nav__text
-                        -prev
-                        text-sm
-                        fw-500
-                        text-white
-                        tracking-md
-                        uppercase
-                      ">
-                  PREV
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-6">
-            <a data-barba href="vn-kr.html" class="projects-nav__item -next bg-dark-3">
-              <div class="projects-nav__img">
-                <div class="bg-image js-lazy" data-bg="img/general/thumbnail-vnkr.png"></div>
-              </div>
-
-              <div class="projects-nav__content">
-                <div class="mr-24 sm:mr-0">
-                  <p class="badgeText4">Branding</p>
-                  <h3 class="text-4xl sm:text-3xl fw-400 text-white leading-xl">
-                    30 Vietnam - Korea Diplomatic Relations
-                  </h3>
-                </div>
-
-
-                <div class="projects-nav__icon">
-                  <i class="size-xl str-width-md text-white" data-feather="arrow-right-circle"></i>
-                </div>
-
-                <p class="
-                        projects-nav__text
-                        -next
-                        text-sm
-                        fw-500
-                        text-white
-                        tracking-md
-                        uppercase
-                      ">
-                  NEXT
-                </p>
-              </div>
-            </a>
-          </div>
+          <!--  -->
         </div>
-        <!-- row end -->
-      </section>
-      <!-- section end -->
 
-     <!---------------------->
+        <!-- section start -->
+        <section class="projects-nav layout-pt-xl">
+          <!-- row start -->
+          <div class="row no-gutters">
+            <div class="col-lg-6">
+              <a
+                data-barba
+                href="erp-system.html"
+                class="projects-nav__item -prev bg-dark-3"
+              >
+                <div class="projects-nav__img">
+                  <div
+                    class="bg-image js-lazy"
+                    data-bg="img/general/hrmpng.png"
+                  ></div>
+                </div>
+
+                <div class="projects-nav__content">
+                  <div class="projects-nav__icon">
+                    <i
+                      class="size-xl str-width-md text-white"
+                      data-feather="arrow-left-circle"
+                    ></i>
+                  </div>
+                  <div class="ml-24 sm:ml-0">
+                    <p class="badgeText4">UI/UX casestudy</p>
+                    <h3
+                      class="text-4xl sm:text-3xl fw-400 text-white leading-xl"
+                    >
+                      Human Resource Management
+                    </h3>
+                  </div>
+
+                  <p
+                    class="projects-nav__text -prev text-sm fw-500 text-white tracking-md uppercase"
+                  >
+                    PREV
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-6">
+              <a
+                data-barba
+                href="vn-kr.html"
+                class="projects-nav__item -next bg-dark-3"
+              >
+                <div class="projects-nav__img">
+                  <div
+                    class="bg-image js-lazy"
+                    data-bg="img/general/thumbnail-vnkr.png"
+                  ></div>
+                </div>
+
+                <div class="projects-nav__content">
+                  <div class="mr-24 sm:mr-0">
+                    <p class="badgeText4">Branding</p>
+                    <h3
+                      class="text-4xl sm:text-3xl fw-400 text-white leading-xl"
+                    >
+                      30 Vietnam - Korea Diplomatic Relations
+                    </h3>
+                  </div>
+
+                  <div class="projects-nav__icon">
+                    <i
+                      class="size-xl str-width-md text-white"
+                      data-feather="arrow-right-circle"
+                    ></i>
+                  </div>
+
+                  <p
+                    class="projects-nav__text -next text-sm fw-500 text-white tracking-md uppercase"
+                  >
+                    NEXT
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- row end -->
+        </section>
+        <!-- section end -->
+
+        <!---------------------->
         <!-- 6                -->
         <!-- FOOTER         -->
         <!--                  -->
@@ -1194,8 +1318,6 @@
                         >About</a
                       >
                     </div>
-
-                    
                   </div>
                 </div>
 
@@ -1273,31 +1395,28 @@
           <!-- container end -->
         </footer>
         <!-- footer end  -->
-
-    </main>
-  </div>
-  <!-- barba container end -->
-  <!-- <a  onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl"
+      </main>
+    </div>
+    <!-- barba container end -->
+    <!-- <a  onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl"
     style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32"
       alt="English" /></a>
   <a  onclick="doGTranslate('en|vn');return false;" title="Vietnamese" class="gflag nturl"
     style="background-position:-100px -400px;">vn</a> -->
-  <!-- <a href="#" onclick="doGTranslate('en|ru');return false;" title="German" class="gflag nturl"
+    <!-- <a href="#" onclick="doGTranslate('en|ru');return false;" title="German" class="gflag nturl"
     style="background-position:-500px -200px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32"
       alt="German" /></a> -->
 
+    <!-- JavaScript -->
+    <script src="js/vendors.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
 
-
-
-  <!-- JavaScript -->
-  <script src="js/vendors.js"></script>
-  <script type="module" src="js/main.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
-  <!-- <script src="js/erp-system.js"></script> -->
-  <!-- <script type="text/javascript"
+    <!-- <script src="js/erp-system.js"></script> -->
+    <!-- <script type="text/javascript"
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script> -->
-
-</body>
-
+  </body>
 </html>
