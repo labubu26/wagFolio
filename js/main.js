@@ -3573,7 +3573,7 @@ document.querySelector("#passSubmit").addEventListener("click", () => {
   val = document.querySelector("#passInput").value;
 
   if (val && modalElement.dataset.file == "cv") {
-    checkpass(val, "wagcv", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
+    checkpass(val, "viewcv", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
   }
   // else if(modalElement.dataset.file == "ie"){
   //   checkpass(val, "ie1234",'img/backgrounds/ie.jpg', 'IELTS_QuangTrung.jpg');
