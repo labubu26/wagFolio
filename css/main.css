@@ -6829,13 +6829,13 @@ img {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__title {
-  font-size: 1.6rem;
-  line-height: 1.4;
+  font-size: 1.5rem;
+  line-height: 1.5;
   font-weight: 500;
   font-family: var(--font-secondary);
   color: var(--bg-dark-3);
   /* letter-spacing: -0.02em; */
-  margin: 1.6rem 0 0px;
+  margin: 1.5rem 0 0px;
   transition: all 0.6s ease-in-out;
 }
 
