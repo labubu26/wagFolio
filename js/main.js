@@ -3406,28 +3406,27 @@ import modalUnlock from "./module/modalunlock.js";
     }
 
     // social
-    const fb = document.querySelector('.facebook');
+    // const fb = document.querySelector('.facebook');
 
-    if (fb) {
-      const link = encodeURI(window.location.href);
-      const msg = encodeURIComponent('Hey, I found this amazing casestudy from Quang Trung');
-      const title = encodeURIComponent('Article or Post Title Here');
+    // if (fb) {
+    //   const link = encodeURI(window.location.href);
+    //   const msg = encodeURIComponent('Hey, I found this amazing casestudy from Quang Trung');
+    //   const title = encodeURIComponent('Article or Post Title Here');
 
-      fb.href = `https://www.facebook.com/share.php?u=${link}`;
+    //   fb.href = `https://www.facebook.com/share.php?u=${link}`;
 
-      // const linkedIn = document.querySelector('.linkedin');
-      // linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
 
-      const reddit = document.querySelector('.reddit');
-      if (reddit) {
-        reddit.href = `http://www.reddit.com/submit?url=${link}&title=${title}`;
-      }
 
-      const whatsapp = document.querySelector('.whatsapp');
-      if (whatsapp) {
-        whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${link}`;
-      }
-    }
+    //   const reddit = document.querySelector('.reddit');
+    //   if (reddit) {
+    //     reddit.href = `http://www.reddit.com/submit?url=${link}&title=${title}`;
+    //   }
+
+    //   const whatsapp = document.querySelector('.whatsapp');
+    //   if (whatsapp) {
+    //     whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${link}`;
+    //   }
+    // }
 
 
 
