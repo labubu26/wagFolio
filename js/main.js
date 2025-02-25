@@ -3134,11 +3134,7 @@ import modalUnlock from "./module/modalunlock.js";
           }
         }
       )
-        .to('.upContent', {
-          transform: ' scale(0.5)',
-          y: '90%',
-          ease: "power2.out",
-        }, 0)
+        
 
         .to('.uiLab',
           {
