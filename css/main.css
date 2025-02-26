@@ -17985,12 +17985,13 @@ body.compensate-for-scrollbar {
 }
 
 .uiLabHead {
-  margin-top: -52.5vh;
+  margin-top: -50%;
+  transform:translateY(50%);
   position: relative;
   z-index: 7;
   perspective: 500px;
   transform-origin: center;
-  /* transform: translateY(-50%); */
+  margin-bottom: 25%;
 
 }
 
@@ -18564,9 +18565,7 @@ blockquote:after {
 
 .noi {
   background: #ffffff;
-  box-shadow: rgb(113 113 113 / 2%) 0px 0px 33px 0px,
-    rgb(113 113 113 / 6%) 0px 69px 37px -60px;
-  border: 2px solid #e8e8e854;
+  border: 1px solid hsla(0, 0%, 0%, 0.05);
   border-radius: 8px;
 
   /* box-shadow: 0px 49px 76px 13px #7171710a, 0px 6px 50px 2px #6666660f; */
@@ -18576,24 +18575,20 @@ blockquote:after {
   padding: 24px;
   position: relative;
   background: rgb(255, 255, 255);
-  box-shadow: rgba(113, 113, 113, 0.06) 3px 4px 40px 5px,
-    rgba(113, 113, 113, 0.06) 1px 1px 19px -5px;
-  /* margin-top: 2.5rem; */
+  border: 1px solid hsla(0, 0%, 0%, 0.05);
   border-radius: 16px;
 }
 
 .noitab.small {
   /* background: #fcfcfd; */
   padding: 24px 16px;
-  box-shadow: 0 40px 32px -24px rgba(15, 15, 15, 0.12);
-  border: 1px solid #e6e8ecce;
+  border: 1px solid hsla(0, 0%, 0%, 0.05);
 }
 
 .noitab.big {
   padding: 32px 28px;
   border-radius: 24px;
-  box-shadow: 0 64px 64px -48px rgba(31, 47, 70, 0.12);
-  border: 2px solid #e6e8ecce;
+  border: 1px solid hsla(0, 0%, 0%, 0.05);
 }
 
 .noi2 {
@@ -18607,8 +18602,7 @@ blockquote:after {
 
 .noi3 {
   background: #ffffff;
-  box-shadow: rgb(113 113 113 / 6%) 3px 4px 60px 5px,
-    rgb(113 113 113 / 6%) 1px 1px 19px -5px;
+  border: 1px solid hsla(0, 0%, 0%, 0.05);
   /* border: 2px solid #e8e8e854; */
   border-radius: 16px;
   position: relative;
@@ -19821,7 +19815,12 @@ body {
   }
 
   .uiLabHead {
-    margin-top: -25vh;
+    /* margin-top: -50%;
+    transform:translateY(50%) */
+  }
+  .uiLab {
+
+    box-shadow: rgb(84 82 98 / 20%) 0px 98px 32px -81px;
 
   }
 
