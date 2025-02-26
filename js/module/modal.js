@@ -25,7 +25,7 @@ export default class modalPass extends HTMLElement {
         </div>
 
         <slot name="info">
-        <h4 class="fw-600">Protected Content.<h4>
+        <h4 class="leading-sm fw-600">Protected Content.</h4>
         
         <p class="mt-8 fw-400 text-dark text-base ">To download please enter the
          passcode from <a class="button -underline4 px-4 fw-600 text-black" href="mailto:nqt99designs@gmail.com">WAG🖐️</a></p>

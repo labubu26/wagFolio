@@ -77,6 +77,6 @@ a{
 @media (max-width: 767px) {
   .modal-content {
     padding:2rem;
-    margin:2rem
+    margin:1.5rem
   }
 }

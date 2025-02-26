@@ -26,7 +26,7 @@ export default class modalUnlock extends HTMLElement {
         </div>
 
         <slot name="info">
-        <h4 class="fw-600">Protected Content.<h4>
+        <h4 class="leading-sm fw-600">Protected Content.</h4>
         
         <p class="mt-8 fw-400 text-dark text-base ">To view please enter the
          passcode from
