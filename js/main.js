@@ -123,7 +123,7 @@ import modalUnlock from "./module/modalunlock.js";
     feather.replace();
     videoBtn();
     a();
-    moreplease();
+    // moreplease();
     StickScrollSection();
     cursomove();
     // hoverChange();
@@ -2830,12 +2830,12 @@ import modalUnlock from "./module/modalunlock.js";
 
     // tab gpt
     var tabgpt = document.querySelectorAll(".tabgpt-container");
-    if(!tabgpt) return;
-    else{
+    if (!tabgpt) return;
+    else {
       function initializeTabs(container) {
         const tabs = container.querySelectorAll(".tabgpt-tab");
         const contents = container.querySelectorAll(".tabgpt-content");
-  
+
         function activateTab(tab) {
           tabs.forEach(t => t.classList.remove("active"));
           contents.forEach(c => {
@@ -2843,7 +2843,7 @@ import modalUnlock from "./module/modalunlock.js";
             c.style.transform = "translateY(20px)";
             c.style.opacity = "0";
           });
-  
+
           tab.classList.add("active");
           const targetContent = container.querySelector(`#${tab.dataset.target}`);
           targetContent.classList.add("active");
@@ -2852,20 +2852,20 @@ import modalUnlock from "./module/modalunlock.js";
             targetContent.style.opacity = "1";
           }, 10);
         }
-  
+
         tabs.forEach(tab => {
           tab.addEventListener("click", () => activateTab(tab));
         });
-  
+
         if (tabs.length > 0) activateTab(tabs[0]);
       }
-  
+
       tabgpt.forEach(initializeTabs);
     }
 
-    
-   
-   
+
+
+
 
     // acc faq
     var acc = document.querySelectorAll(".accordion");
@@ -3134,7 +3134,7 @@ import modalUnlock from "./module/modalunlock.js";
           }
         }
       )
-        
+
 
         .to('.uiLab',
           {
@@ -3607,7 +3607,7 @@ var modalUnlockElement = document.querySelector("modal-unlock");
 
 document.querySelector("#passSubmit").addEventListener("click", () => {
   var val = "";
-  val = document.querySelector("#passInput").value;
+  val = document.querySelector("#passInput").value.toLowerCase();
 
   if (val && modalElement.dataset.file == "cv") {
     checkpass(val, "viewcv", 'img/backgrounds/CV_QuangTrung_UIUX.pdf', 'CV_QuangTrung_UIUX.pdf');
@@ -3707,27 +3707,27 @@ window.customElements.define('modal-unlock', modalUnlock);
 
 
 
-// more moreplease
-function moreplease() {
-  var moreText = document.getElementById("more");
-  var btnMore = document.getElementById("btnMore");
-  var blurmask = document.getElementById("blurmask");
+// // more moreplease
+// function moreplease() {
+//   var moreText = document.getElementById("more");
+//   var btnMore = document.getElementById("btnMore");
+//   var blurmask = document.getElementById("blurmask");
 
-  if (!btnMore) return;
-  else {
-    btnMore.addEventListener("click", () => {
-      if (moreText.classList.contains('open')) {
-        moreText.classList.remove('open')
-        btnMore.innerHTML = "Show more";
-        blurmask.style.opacity = "1";
-      } else {
-        moreText.classList.add('open');
-        btnMore.innerHTML = "Show less";
-        blurmask.style.opacity = "0";
-      }
-    });
-  }
-}
+//   if (!btnMore) return;
+//   else {
+//     btnMore.addEventListener("click", () => {
+//       if (moreText.classList.contains('open')) {
+//         moreText.classList.remove('open')
+//         btnMore.innerHTML = "Show more";
+//         blurmask.style.opacity = "1";
+//       } else {
+//         moreText.classList.add('open');
+//         btnMore.innerHTML = "Show less";
+//         blurmask.style.opacity = "0";
+//       }
+//     });
+//   }
+// }
 
 
 
