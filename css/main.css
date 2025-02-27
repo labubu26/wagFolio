@@ -17235,6 +17235,9 @@ body.compensate-for-scrollbar {
 .casestudy p{
   margin-bottom: 1rem;
 }
+.casestudy h5{
+  margin: 2rem 0 0.5rem;
+}
 .casestudy .subscript{
   font-style: italic;
   text-align: center;
@@ -17246,7 +17249,7 @@ body.compensate-for-scrollbar {
 .casestudy .highlight{
   /* font-size: var(--text-xl); */
   color:var(--bg-dark-3);
-  /* font-weight: 600; */
+  font-weight: 500;
 }
 .casestudy .metric{
   font-size: inherit;

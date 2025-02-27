@@ -414,35 +414,51 @@
             <div class="col-md-8">
               <h2 class="text-4xl sm:text-2xl fw-600">Summary</h2>
 
-              <p class="text-black">
-                This platform allows you to find English speaking practice
-                friends according to different sections of the IELTS speaking
-                test. Its predecessor was a mobile application that was later
-                taken over by another UI/UX team that was later designed and
-                changed some unnecessary functional flows for the web version.
+              <p>
+                Alopay is a third-party payment gateway supporting banking,
+                telco, crypto, and e-wallets.
+                <mark
+                  >After launching the MVP, we refined the experience in the
+                  next iteration, enhancing key UX metrics to drive higher
+                  conversions, better retention, and smoother B2B
+                  integration.</mark
+                >
+              </p>
+
+              <p>
+                By applying the Double Diamond UX process, we optimized B2C mobile &
+                landscape usability, and
+                introduced a full B2B integration flow.
               </p>
             </div>
             <!-- PT ABOUT PROJECT -->
-            <div class="col-md-8 layout-pt-xs">
+            <div class="col-md-8 layout-pt-md">
               <h2 class="text-4xl sm:text-2xl fw-600">About Project</h2>
 
-              <p class="text-black">
-                This platform allows you to
-                <mark
-                  >find English speaking practice friends according to different
-                  sections of the IELTS speaking test.</mark
-                >
-                Its predecessor was a mobile application that was later taken
-                over by another UI/UX team that was later designed and changed
-                some unnecessary functional flows for the web version.
-              </p>
+              <h5>Product Overview</h5>
+              <ul>
+                <li>
+                  Alopay enables websites and gaming platforms to accept
+                  multiple payment methods.
+                </li>
+                <li>
+                  Users initiate transactions through a payment window
+                  displaying a QR code or bank transfer details.
+                </li>
+                <li>
+                  Alopay generates revenue through commissions on successful
+                  transactions.
+                </li>
+              </ul>
+
+              <h5>The Role</h5>
               <p>
-                Previously, the team oriented the main functions quite
-                specifically from the needs and insights from users as well as
-                obtained the Prototypes of the previous mobile version (but
-                needed to redesign the style to suit the target user from 18 to
-                25). Therefore, the process of product redesign has also been
-                outlined for each stage.
+                I collaborated with the Product Manager and Dev Team to deliver
+                Alopay’s MVP—a responsive web-based payment portal for B2C
+                users. I designed the entire payment flow, optimized for mobile,
+                and worked closely with engineers to ensure seamless
+                implementation. After launch, we iterated based on feedback and
+                expanded to support B2B integration.
               </p>
             </div>
           </div>
@@ -496,7 +512,6 @@
                     </a>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -517,11 +532,12 @@
                 <h2 class="text-4xl sm:text-2xl fw-600">Background</h2>
 
                 <p>
-                  We are tracking the current onboarding and registration for
-                  new BAEMIN Users, we found out that there was a drop off of
-                  about 10% users at the first screen, which means after
-                  installing the app, users open app, see the first screen and
-                  then quit app.
+                  We are tracking the current The MVP version of Alopay was
+                  well-optimized for desktop payments. However, on mobile and
+                  portrait mode, we observed a high bounce rate at a critical
+                  step: after users selected Alopay from a list of payment
+                  providers and were redirected to the payment page, many left
+                  without completing the transaction.
                 </p>
               </div>
               <!-- compare -->
@@ -537,102 +553,54 @@
                 <p class="subscript">UI Redesign Challenge</p>
               </div>
               <!-- PT PROBLEM -->
-              <div class="col-md-8 layout-pt-xs">
+              <div class="col-md-8 layout-pt-md">
                 <h2 class="text-4xl sm:text-2xl fw-600">The Problems</h2>
                 <p>
-                  We take a closer look at the first landing screen where users
-                  drops. Our current design does not show a clear CTA or what we
-                  offer (the Tittle text does not say clearly what we have, it
-                  is said in the smaller text and users may not read this).
-                </p>
-                <p class="metric">Conversion rate</p>
-                <p>
-                  Overall conversion rate from installed app to finish setting
-                  up an account is not high:
-                  <mark class="highlight">
-                    60% to under 70% of users completed</mark
+                  Analyzing the UI where users dropped off on mobile,<mark
+                    >we found that key payment details were partially hidden,
+                    requiring users to scroll before they could complete the
+                    transaction.</mark
                   >
-                  the onboarding and registration flow
+                  This extra friction directly impacted Alopay’s North Star
+                  Metric—successful payment completion.
                 </p>
-
-                <p class="metric">Returning Users</p>
-                <p>
-                  For returning users who forgot their password, the forgot
-                  password recovery flow is not good, with around 25% users
-                  could not reset their password and quit using BAEMIN
-                  afterwards.
-                </p>
-
-                <p class="metric">Other problems</p>
-                <p>
-                  The current UI of registration steps are considered to be low
-                  contrast and hard to read
-                </p>
+                <ul>
+                  <li>
+                    <p class="metric">Low Conversion Rate (6%)</p>
+                    <p>due to friction in the payment process.</p>
+                  </li>
+                  <li>
+                    <p class="metric">High Bounce Rate (60%),</p>
+                    <p>indicating users abandoned transactions early.</p>
+                  </li>
+                  <li>
+                    <p class="metric">Low User Retention Rate (10%),</p>
+                    <p>showing a poor first-time experience.</p>
+                  </li>
+                </ul>
               </div>
               <!-- PT GOALS -->
-              <div class="col-md-8 layout-pt-xs">
+              <div class="col-md-8 layout-pt-md">
                 <h2 class="text-4xl sm:text-2xl fw-600">Objectives & Goals</h2>
-
-                <p class="metric">What we want to achieve:</p>
-                <ol>
+                <ul>
                   <li>
-                    To improve the usability and heuristic of the current UI
-                    design
+                    <p class="metric">
+                      Successful Transactions & Returning Users
+                    </p>
+                    <p>
+                      Reduce Bounce Rate & Increase Conversion Rate for those
+                      find it cost time to make Transactions in portal &
+                      landscape view.
+                    </p>
                   </li>
                   <li>
-                    To reduce (or remove) the drop rate at the first step. We
-                    want user to proceed to registration instead of dropping at
-                    the first screen
+                    <p class="metric">Expanding Integration</p>
+                    <p>
+                      Increase B2B Adoption, support different kinds of business
+                      with our payment integration.
+                    </p>
                   </li>
-
-                  <li>
-                    Maintain the current Conversion rate for Registration
-                    Successfully as one of the success metric
-                  </li>
-                </ol>
-
-                <p class="metric">Returning Users</p>
-                <p>
-                  For returning users who forgot their password, the forgot
-                  password recovery flow is not good, with around 25% users
-                  could not reset their password and quit using BAEMIN
-                  afterwards.
-                </p>
-
-                <p class="metric">Other problems</p>
-                <p>
-                  The current UI of registration steps are considered to be low
-                  contrast and hard to read
-                </p>
-              </div>
-              <!-- PT GOALS -->
-              <div class="col-md-8 layout-pt-xs">
-                <h2 class="text-4xl sm:text-2xl fw-600">
-                  Review of the current design
-                </h2>
-                <p>
-                  Currently, we design the address at the checkout step with a
-                  very big text, intending to capture their attention, and we
-                  assumed that users would notice the big “Friendship Tower” as
-                  their current address and would know that the delivery address
-                  may be wrong
-                </p>
-              </div>
-              <!-- img-fit -->
-              <div
-                class="col-md-9 layout-pt-xs"
-                data-anim="img-up cover-light-1 "
-              >
-                <img
-                  data-enlargable
-                  class="img-fluid"
-                  src="/img/case/alopay/landi.png"
-                />
-                <p
-                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
-                >
-                  IA - Leave Request page
-                </p>
+                </ul>
               </div>
             </div>
           </div>
@@ -663,79 +631,181 @@
 
           <div class="container layout-pt-md">
             <div class="row justify-content-center">
+              <!-- Discover -->
               <div class="col-md-8">
-                <h2 class="text-4xl sm:text-2xl fw-600">
-                  Any ideas and solutions?
-                </h2>
+                <h2 class="text-4xl sm:text-2xl fw-600">1. Discovery</h2>
+                <ul>
+                  <li>
+                    <p class="metric">Data Analysis:</p>
+                    <p>
+                      Tracked user interactions, scroll behavior, session
+                      duration, and used device.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="metric">Heatmaps & Click Tracking</p>
+                    <p>Showed QR codes were often hidden partly on mobile.</p>
+                  </li>
+                </ul>
 
+                <h5>Key Insights:</h5>
+
+                <ul>
+                  <li>
+                    Most drop-offs happened within 3 seconds of opening the
+                    payment window.
+                  </li>
+                  <li>
+                    Users didn’t notice they had to scroll to see the full QR
+                    code.
+                  </li>
+                  <li>
+                    70% of gamers/paying users use a smartphone.
+                  </li>
+                  <li>
+                    Screenshot the Detail & QR code to pay later instead of
+                    entering details manually.
+                  </li>
+                </ul>
+              </div>
+              <!-- Define -->
+              <div class="col-md-8 layout-pt-md">
+                <h2 class="text-4xl sm:text-2xl fw-600">2. Define</h2>
                 <p>
-                  There were many solutions that we ideated. But tt takes time
+                  Through empathy mapping and user journey mapping, we
+                  identified key friction points that needed improvement,
+                  leading us to define:
+                </p>
+                <h5>Primary personas</h5>
+                <ul>
+                  <li>
+                    <p class="metric">
+                      Persona 1: B2C Gamer (Thanh, 23, Mobile User)
+                    </p>
+                    <p>
+                      Plays mobile games frequently. Needs quick & seamless
+                      payment without distractions. Gets frustrated when payment
+                      steps are unclear.
+                    </p>
+                    <ul>
+                      <li>
+                        <span class="highlight">Goal:</span> Quickly complete
+                        in-game purchases.
+                      </li>
+                      <li>
+                        <span class="highlight">Pain Point:</span> Struggles
+                        with QR visibility and scrolling on mobile, leading to
+                        drop-offs.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p class="metric">
+                      Persona 2: B2B Platform Owner (Linh, 32, Business
+                      Developer)
+                    </p>
+                    <p>
+                      Wants a plug-and-play payment system for their platform.
+                      Prefers a full payment flow integration, not just a
+                      Transaction Infor. Expects low support effort and high
+                      automation.
+                    </p>
+                    <ul>
+                      <li>
+                        <span class="highlight">Goal:</span> Seamlessly
+                        integrate Alopay into their platform.
+                      </li>
+                      <li>
+                        <span class="highlight">Pain Point:</span> Wanted a full
+                        payment flow, not just a Transaction step.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- Problem statement -->
+                <h5>Problem statement</h5>
+                <p>
+                  Clustering and mapping from the painpoints, we synthesized 2
+                  critical UX challenges:
+                </p>
+                <ol>
+                  <li>
+                    QR code & transfer details were not fully visible on mobile,
+                    increasing abandonment.
+                  </li>
+                  <li>
+                    B2B partners needed a more comprehensive integration option.
+                  </li>
+                </ol>
+                <!-- PHMW -->
+                <h5>HMW</h5>
+                <p>
+                  Based on our research, we formulated key "How Might We" (HMW)
+                  questions to guide our design decisions:
+                </p>
+                <ol>
+                  <li>
+                    HMW improve QR code visibility on mobile & landscape to
+                    reduce payment drop-off?
+                  </li>
+                  <li>
+                    HMW provide a more seamless B2B payment integration flow?
+                  </li>
+                </ol>
+              </div>
+              <!-- Design -->
+              <div class="col-md-8 layout-pt-md">
+                <h2 class="text-4xl sm:text-2xl fw-600">3. Ideate</h2>
+                <p>
+                  There were many solutions that we ideated. But it takes time
                   to solve all the issues. We decided to solve problems that
                   occur at the most crucial moments first.
                 </p>
+                <ul>
+                  <li>
+                    <h5 class="highlight"
+                      >Optimized Mobile & Landscape UI for B2C Users</h5
+                    >
+                    <ul>
+                      <li>
+                        Redesigned the payment window layout so the QR code is
+                        always fully visible.
+                      </li>
+                      <li>
+                        Introduced a sticky “Copy Payment Info” button for
+                        easier manual transfers.
+                      </li>
+                      <li>
+                        Used progressive disclosure to show necessary
+                        information at the right time.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h5 class="highlight"
+                      >Full B2B Payment Flow Integration</h5
+                    >
+                    <ul>
+                      <li>
+                        Enabled B2B platforms to embed Alopay’s entire payment
+                        selection flow (from choosing a payment method to
+                        transaction confirmation).
+                      </li>
+                      <li>
+                        Provided customizable API & SDK documentation for
+                        seamless integration.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- Deliver -->
+              <div class="col-md-8 layout-pt-md">
+                <h2 class="text-4xl sm:text-2xl fw-600">4. Deliver</h2>
                 <p>
-                  If we can prevent users from placing the order at the wrong
-                  address, it can help to reduce the frustration of canceling
-                  the order afterward.
+                  <!-- After iterating based on feedback, we launched the refined
+                  payment experience: -->
                 </p>
-                <p>
-                  Most cases for this issue are when users are at a different
-                  location than the delivery address in the app. We'll try to
-                  detect their physical location and compare the distance with
-                  the address (only works for users who allowed GPS access).
-                </p>
-                <p>
-                  If the distance exceeds 500 meters, we will display a small
-                  note on the screen. If users still press the Order button, we
-                  then show a popup to confirm if that is correct. Here are the
-                  designs
-                </p>
-
-                <div class="layout-pt-xs">
-                  <div class="row y-gap-32 x-gap-32">
-                    <div class="col-md-6">
-                      <div class="noi2 text-center py-40">
-                        <div class="text-cen2">
-                          <h3 class="text-2xl sm:text-xl fw-600">
-                            Color palette
-                          </h3>
-
-                          <!-- <div class="px-8 py-4 rounded-base d-inline-block ml-8">
-                      <i class="icon size-2xs str-width-2xl text-dark" data-feather="user"></i>
-                    </div> -->
-                        </div>
-
-                        <p class="mt-8">
-                          <!-- <span class="dotcen">Colors</span>  -->
-                          60/30/10
-                        </p>
-                        <div class="color">
-                          <div
-                            class="color-60"
-                            style="background: #fafafa"
-                          ></div>
-                          <div
-                            class="color-30"
-                            style="background: #e4e4e4"
-                          ></div>
-                          <div
-                            class="color-10"
-                            style="background: #ff385c"
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="noi2 text-center py-40">
-                        <div class="text-cen2">
-                          <h3 class="text-2xl sm:text-xl fw-600">Typography</h3>
-                        </div>
-                        <p class="mt-8">Poppins (1.25)</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -852,20 +922,27 @@
           <div class="container layout-pt-md">
             <div class="row justify-content-center">
               <div class="col-md-8">
-                <h2 class="text-4xl sm:text-2xl fw-600">What i have learnt.</h2>
-                <!-- <p class=" text-black ">
-                After having focus groups, we need to understand more about user issues. Therefore, <mark>the Team
-                  conducted
-                  different interviews for each target feature</mark> in the entire HRM system, at different times.
-              </p> -->
-
+                
+                <h5>Outcomes</h5>
                 <p>
-                  After releasing this feature, we tracked the data again and as
-                  you can see in the chart below, the percentage of order
-                  cancellation drops to somewhere around 10 to 18 percent of
-                  total orders. We were happy with this results and would then
-                  continue to improve other issues as mentioned above.
+                  By optimizing the payment flow, we doubled the conversion rate
+                  (6% → 10%) and cut bounce rate by 14%. Improved visibility
+                  boosted user retention (10% → 21%), while expanded B2B
+                  integration drove adoption up by 20%. Overall, payments became
+                  30% faster, creating a smoother experience for both users and
+                  partners.
                 </p>
+                <h5>Future Improvements</h5>
+                <ul>
+                  <li>
+                    Some payment providers still require manual confirmation
+                    (limitation on their side).
+                  </li>
+                  <li>
+                    Exploring one-click payments for repeat users to further
+                    increase retention.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
