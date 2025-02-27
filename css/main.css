@@ -17971,14 +17971,14 @@ body.compensate-for-scrollbar {
 
 .tagSub {
   /* border: 1px solid #1be09b63; */
-  color: rgba(255, 255, 255, 0.385);
+  /* color: rgba(255, 255, 255, 0.385); */
   display: inline-block;
   /* margin: 32px 0 32px;
   padding: 8px 12px; */
   /* line-height: 1.2; */
   /* border-radius: 6px; */
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   /* background: #1dc37c17; */
@@ -19177,8 +19177,8 @@ input#deslizador::-ms-tooltip {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 14px;
-  padding: 6px 14px;
+  font-size: 12px;
+  padding: 4px 12px;
   border-radius: 4px;
   margin: 24px;
   /* background: #0c0c0c8a; */
@@ -19505,7 +19505,7 @@ mark {
   position: relative !important;
   line-height: 1;
   z-index: 1;
-  background: linear-gradient(0deg, #1ed79d 5%, #ffffff2d 0%);
+  background: linear-gradient(0deg, #00e39c 2%, #ffffff00 0%);
   padding: 2px 0px;
   background-size: 0% 100%;
   background-repeat: no-repeat;
