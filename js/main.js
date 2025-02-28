@@ -2781,6 +2781,7 @@ import modalUnlock from "./module/modalunlock.js";
   function a() {
 
 
+
     // job faq
     var jobwrap = document.querySelectorAll(".job-container");
 
@@ -2826,6 +2827,9 @@ import modalUnlock from "./module/modalunlock.js";
 
 
     }
+
+    
+    
 
 
     // tab gpt
@@ -3510,12 +3514,13 @@ import modalUnlock from "./module/modalunlock.js";
   //   lazyImageObserver.observe(lazyImage);
   // });
 
+  
+
 
 
 })();
 
 // duuoiws Call 1 lần thôi
-
 
 
 
@@ -3662,6 +3667,7 @@ window.customElements.define('modal-unlock', modalUnlock);
 
 
 
+
 // cate
 
 // function filterSelection(c) {
@@ -3744,9 +3750,13 @@ function myFunction() {
 }
 
 
+
+
 function beforeAfter() {
   document.getElementById('separador').style.width = document.getElementById('deslizador').value + "%";
 }
+
+
 
 
 
