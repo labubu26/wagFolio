@@ -438,8 +438,9 @@
               <h5>Product Overview</h5>
               <ul>
                 <li>
-                  Alopay enables websites and gaming platforms to accept
-                  multiple payment methods.
+                  Alopay provides an API for websites and gaming platforms to
+                  process payments after users select a method and amount from
+                  their sites, in its first MVP version.
                 </li>
                 <li>
                   Users initiate transactions through a payment window
@@ -458,7 +459,7 @@
                 users. I designed the entire payment flow, optimized for mobile,
                 and worked closely with engineers to ensure seamless
                 implementation. After launch, we iterated based on feedback and
-                expanded to support B2B integration.
+                expanded to support full B2B integration.
               </p>
             </div>
           </div>
@@ -550,17 +551,15 @@
                 <p
                   class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
                 >
-                  Our First MVP in Portal view and Landscape view
+                  Our First MVP in Portal and Landscape view
                 </p>
               </div>
               <!-- PT PROBLEM -->
               <div class="col-md-8 layout-pt-md">
                 <h2 class="text-4xl sm:text-2xl fw-600">The Problems</h2>
                 <p>
-                  Analyzing the UI where users dropped off on mobile,<mark
-                    >we found that key payment details were partially hidden,
-                    requiring users to scroll before they could complete the
-                    transaction.</mark
+                  Analyzing the UI where users dropped off on mobile,<mark>
+                    mobile users could not complete the transaction.</mark
                   >
                   This extra friction directly impacted Alopay’s North Star
                   Metric—successful payment completion.
@@ -679,7 +678,7 @@
                   <p
                     class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
                   >
-                    Current MVP Flow.
+                    Our current MVP Flow.
                   </p>
                 </div>
               </div>
@@ -693,12 +692,12 @@
                   </li>
                   <li>
                     Users didn’t notice they had to scroll to see the full QR
-                    code.
+                    code on mobile device.
                   </li>
                   <li>70% of gamers/paying users use a smartphone.</li>
                   <li>
-                    Screenshot the Detail & QR code to pay later instead of
-                    entering details manually.
+                    Users tend to screenshot the detail & QR code to pay later
+                    instead of entering details manually.
                   </li>
                 </ul>
               </div>
@@ -706,9 +705,8 @@
               <div class="col-md-8 layout-pt-md">
                 <h2 class="text-4xl sm:text-2xl fw-600">2. Define</h2>
                 <p>
-                  Through empathy mapping and user journey mapping, we
-                  identified key friction points that needed improvement,
-                  leading us to define Primary personas:
+                  Clustering and mapping from those Insights, leading us to
+                  define our Primary personas:
                 </p>
                 <h5>Persona 1:</h5>
 
@@ -752,8 +750,8 @@
                 <!-- Problem statement -->
                 <h5>Problem statement</h5>
                 <p>
-                  Clustering and mapping from the painpoints, we synthesized 2
-                  critical UX challenges:
+                  Throughout the Empathy, Journey map of each personas, we
+                  synthesized 2 critical UX challenges:
                 </p>
                 <ol>
                   <li>
@@ -767,7 +765,7 @@
                 <!-- PHMW -->
                 <h5>HMW</h5>
                 <p>
-                  Based on our research, we formulated key "How Might We" (HMW)
+                  Based on the problems, we formulated key "How Might We"
                   questions to guide our design decisions:
                 </p>
                 <ol>
@@ -793,16 +791,14 @@
                 </h5>
                 <ol>
                   <li>
-                    Redesigned the payment window layout so the QR code is
-                    always fully visible.
+                    Revamped the payment window layout so the QR code is always
+                    fully visible & the information details are more compact.
                   </li>
+
                   <li>
-                    Introduced a sticky “Copy Payment Info” button for easier
-                    manual transfers.
-                  </li>
-                  <li>
-                    Used progressive disclosure to show necessary information at
-                    the right time.
+                    Used progressive disclosure to display necessary information
+                    at the right time, supporting different types of B2B
+                    partners.
                   </li>
                 </ol>
               </div>
@@ -912,78 +908,44 @@
               <div class="col-md-8">
                 <h5>Outcomes</h5>
                 <p>
-                  By optimizing the payment flow, we doubled the conversion rate
-                  (6% → 10%) and cut bounce rate by 14%. Improved visibility
-                  boosted user retention (10% → 21%), while expanded B2B
-                  integration drove adoption up by 20%. Overall, payments became
-                  30% faster, creating a smoother experience for both users and
-                  partners.
+                  By optimizing the payment flow, we mostly doubled the
+                  conversion rate (6% → 10%) and cut bounce rate by 14%.
+                  Improved visibility boosted user retention (10% → 21%), while
+                  expanded B2B integration drove adoption up by 20%. Overall,
+                  payments became 30% faster, creating a smoother experience for
+                  both users and partners.
                 </p>
                 <h5>Future Improvements</h5>
                 <ul>
                   <li>
-                    Some payment providers still require manual confirmation
-                    (limitation on their side).
+                    On the technical side, customers still need to manually
+                    confirm the payment after transferring funds for the system
+                    to verify, as automation has not been implemented yet.
                   </li>
                   <li>
                     Exploring one-click payments for repeat users to further
                     increase retention.
                   </li>
                 </ul>
+                <h5>Key takeaways</h5>
+                <ul>
+                  <li>
+                    <span class="highlight">High usability:</span> Minimize scrolling and avoid hiding critical
+                    payment information.
+                  </li>
+                  <li>
+                    <span class="highlight">Speed & Automation:</span> Fast system response and automation
+                    encourage user retention.
+                  </li>
+                  <li>
+                    <span class="highlight">Balance between aesthetics & usability:</span> Ensure a visually
+                    appealing design while maintaining a seamless user
+                    experience.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-
-          <!---------------------->
-          <!--                  -->
-          <!-- FLUID - 4ITEMS   -->
-          <!--                  -->
-          <!---------------------->
-          <!-- <div class="layout-pt-xs" >
-          <div class="bg-gradi-green layout-pt-md  h-full  layout-pb-md " style="position:relative;">
-            <div class="bg-grid2"></div>
-            <div class="col-md-11 mx-auto">
-              <div class="row y-gap-60 x-gap-60 ">
-
-                <div class="col-lg-3 sm:pb-40 text-center">
-                  <h1 class="text-7xl sm:text-4xl  fw-600 greenbg   ">
-                    2
-                  </h1>
-                  <p class="text-xl  leading-xl mt-16 sm:mt-16 fw-500    ">
-                    Buttons</p>
-                </div>
-
-                <div class="col-lg-3 sm:pb-40 text-center">
-                  <h1 class="text-7xl sm:text-4xl  fw-600 greenbg   ">
-                    1,785
-                  </h1>
-                  <p class="text-xl  leading-xl mt-16 sm:mt-16 fw-500    ">
-                    clicks over 4 months</p>
-                </div>
-
-
-                <div class="col-lg-3 sm:pb-40 text-center">
-                  <h1 class="text-7xl sm:text-4xl  fw-600 greenbg   ">
-                    5+
-                  </h1>
-                  <p class="text-xl  leading-xl mt-16 sm:mt-16 fw-500    ">
-                    Iterations</p>
-                </div>
-
-
-                <div class="col-lg-3 sm:pb-40 text-center">
-                  <h1 class="text-7xl sm:text-4xl  fw-600 greenbg   ">
-                    6
-                  </h1>
-                  <p class="text-xl  leading-xl mt-16 sm:mt-16 fw-500    ">
-                    Cups of coffee</p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div> -->
-          <!--  -->
         </div>
 
         <!-- section start -->
