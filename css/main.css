@@ -17949,6 +17949,7 @@ body.compensate-for-scrollbar {
   width: 100%;
   /* height: auto; */
   /* min-height: 200px; */
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
   background: #f1f5fc;
 }
 .img-fluid .minh {
@@ -19123,6 +19124,7 @@ input#deslizador::-ms-tooltip {
   height: 100%;
   top: 0;
   background-color: var(--bg-dark-3);
+  /* backdrop-filter: invert(1); */
   /* box-shadow: 0 0 80px 12px #0000001f; */
 }
 
@@ -19205,6 +19207,8 @@ input#deslizador::-ms-tooltip {
   background-repeat: no-repeat;
   animation: 4s ease-in-out 0s infinite normal none running bg-move;
 }
+
+
 @keyframes bg-move {
   0% {
     background-position: -400px 0;
