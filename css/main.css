@@ -16265,7 +16265,7 @@ html.full-page-slider body {
     font-weight: 500;
   }
 
-  .ufo-sec--navigation .sticky-header.sticked .step-number:hover {
+  .ufo-sec--navigation .sticky-header.sticked .nav-step-content:hover .step-number ,.ufo-sec--navigation .sticky-header.sticked .step-number:hover {
     background: var(--checkedStepColor);
     border-color: var(--checkedStepColor);
     color: #fff;
@@ -17236,6 +17236,18 @@ body.compensate-for-scrollbar {
 }
 .casestudy p{
   margin-bottom: 1rem;
+}
+.casestudy mark{
+  background: linear-gradient(to left, var(--font-dark) 50%, #000 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  display: inline;
+  transition: background-position 1.5s ease-in-out;
+}
+.casestudy .markOkay{
+  background-position: 0% 0;
 }
 .casestudy h5{
   margin: 2rem 0 0.5rem;
@@ -19133,9 +19145,9 @@ input#deslizador::-ms-tooltip {
   position: absolute;
   z-index: 8;
   top: 0px;
-  left: -10vw;
+  left: -5vw;
   bottom: 0px;
-  width: 20vw;
+  width: 10vw;
   background: transparent;
 }
 
@@ -19195,6 +19207,7 @@ input#deslizador::-ms-tooltip {
   padding: 4px 12px;
   border-radius: 4px;
   margin: 24px;
+  text-wrap: nowrap;
   /* background: #0c0c0c8a; */
   backdrop-filter: blur(4px);
   background: #0c0c0c8a;
@@ -19208,7 +19221,13 @@ input#deslizador::-ms-tooltip {
   animation: 4s ease-in-out 0s infinite normal none running bg-move;
 }
 
+.img-comp-overlay[data-before]::before {
+  content: attr(data-before); /* Nếu có data-text thì hiển thị giá trị đó */
+}
+.img-comp-img:first-child[data-after]:after{
+  content: attr(data-after); /* Nếu có data-text thì hiển thị giá trị đó */
 
+}
 @keyframes bg-move {
   0% {
     background-position: -400px 0;
@@ -19790,7 +19809,7 @@ body {
   mark {
     color: inherit;
     position: relative;
-    background: linear-gradient(0deg, #60d591e4 6%, #bafbc529 0%);
+    /* background: linear-gradient(0deg, #60d591e4 6%, #bafbc529 0%); */
     padding: 0px;
     background-size: 0% 100%;
     background-repeat: no-repeat;

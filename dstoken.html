@@ -59,7 +59,7 @@
     <link rel="shortcut icon" href="img/favicon/favicon.ico" />
     <meta name="theme-color" content="#ffffff" />
 
-    <title>Design Audit</title>
+    <title>Design System</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     <script src="https://unpkg.com/@rive-app/canvas@2.17.3"></script>
@@ -313,7 +313,7 @@
                         data-split-page-reveal
                       >
                         <p class="masthead__subtitle tagSub js-subtitle">
-                          Design Audit
+                          Design System
                         </p>
                       </div>
                       <!-- Title -->
@@ -323,14 +323,14 @@
                         data-split-page-reveal
                       >
                         <h1 class="masthead__title text-white js-title">
-                          Game UI Template
+                          Design System
                         </h1>
                       </div>
                       <!-- sub bot -->
                       <div class="col-md-8" data-split="lines">
                         <p class="js-info-item masthead__text">
-                          Revamped the embedded UI for games via heuristic
-                          evaluation.
+                          Token DS for white-label product with dark theme &
+                          multi brands supported.
                         </p>
                       </div>
                     </div>
@@ -353,10 +353,13 @@
             <div class="img-wrap2">
               <!-- compare -->
               <div class="img-comp-container">
-                <div class="img-comp-img" data-after="After audit">
+                <div class="img-comp-img" data-after="After Audit">
                   <img src="/img/case/audit/main-new.png" />
                 </div>
-                <div class="img-comp-img img-comp-overlay"  data-before="Before audit">
+                <div
+                  class="img-comp-img img-comp-overlay"
+                  data-before="Before Audit"
+                >
                   <img src="/img/case/audit/main-old.png" />
                 </div>
               </div>
@@ -375,7 +378,7 @@
               <div class="row justify-content-between">
                 <div class="col-md-3 col-6 sm:mb-16">
                   <p class="text-black">My Role</p>
-                  <p class="">Product Designer</p>
+                  <p class="">DS Executor</p>
                 </div>
 
                 <div class="col-md-3 col-6 sm:mb-16">
@@ -389,7 +392,7 @@
                 </div>
                 <div class="col-md-auto col-6">
                   <p class="text-black">From</p>
-                  <p>Game Platform</p>
+                  <p>White-label product</p>
                 </div>
               </div>
             </div>
@@ -416,14 +419,13 @@
               <h2 class="text-4xl sm:text-2xl fw-600">Summary</h2>
 
               <p>
-                A leading game provider wanted to strengthen brand recognition
-                across their embedded UI elements while improving usability.
-                Beyond just a logo, they needed a cohesive, scalable design
-                system that ensured consistency across all games. Our task was
-                to audit, refine, and optimize these UI components for better
-                accessibility, adaptability with a dynamic color token system,
-                allowing effortless theme adaptation without extra development
-                effort, and mobile responsiveness.
+                As the product scaled, we moved from a UI Kit to a structured
+                Design System to ensure consistency, reduce duplication, and
+                improve scalability.
+                <mark
+                  >A token-based approach enabled light/dark mode and
+                  multi-brand support for our whitelabel B2B clients.</mark
+                >
               </p>
             </div>
             <!-- PT ABOUT PROJECT -->
@@ -432,23 +434,20 @@
 
               <h5>Product Overview</h5>
               <p>
-                This project was part of an initiative to enhance the embedded
-                UI elements within the provider’s existing games. The objective
-                was to improve navigation efficiency, ensure visual consistency,
-                and strengthen brand recognition across their portfolio. By
-                refining in-game UI components—such as buttons, modals, and
-                in-game panels—we aimed to create a cohesive and seamless
-                experience without altering the core game design.
+                Initially built as a UI Kit, the design became fragmented across
+                multiple Figma files as the product expanded. To solve this, we
+                developed a shared Design System, ensuring seamless sync,
+                branding consistency, and efficient scaling.
               </p>
 
               <h5>The Role</h5>
               <p>
-                I took full ownership of this project, starting with evaluating
-                the existing UI based on heuristic principles and UX laws. From
-                there, I proposed solutions at both the micro and meso levels,
-                ensuring usability and consistency across embedded UI
-                components. I was also responsible for executing the redesign
-                and delivering the final solution to the client.
+                I led the Design System from the ground up, ensuring scalability
+                and brand flexibility. While Tiến focused on desktop UI and Uyên
+                assisted in component building, I drove the token-based system,
+                adapted brand guidelines, and defined component specs. After the
+                first DS release, I continued refining and maintaining updates
+                to keep it evolving.
               </p>
             </div>
           </div>
@@ -520,57 +519,58 @@
               <!-- BACKGROUND -->
               <div class="col-md-8">
                 <h2 class="text-4xl sm:text-2xl fw-600">
-                  Heuristic Evaluation of the Existing UI
+                  Problems & Challenges
                 </h2>
-
-                <p>We conducted a heuristic evaluation and found that:</p>
-                <ul>
-                  <li>
-                    UI inconsistencies across games disrupted the user
-                    experience.
-                  </li>
-                  <li>
-                    Lack of scalability, requiring manual adjustments for each
-                    new integration.
-                  </li>
-                  <li>
-                    Brand recognition was weak, as UI elements didn’t reinforce
-                    a unified identity.
-                  </li>
-                </ul>
-              </div>
-              <!-- img-fit -->
-              <div
-                class="layout-pt-xs col-md-9"
-                data-anim="img-up cover-light-1 "
-              >
-                <img
-                  data-enlargable
-                  class="img-fluid"
-                  src="img/case/audit/his-old.png"
-                />
-                <p
-                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
-                >
-                  One of the current UI before Design Audit
+                <p>
+                  As the design scaled across desktop and mobile,
+                  inconsistencies emerged due to duplicate work and lack of
+                  synchronization.<mark>
+                    Managing multiple Figma files without a structured system
+                    led to inefficient updates, higher maintenance costs, and
+                    slower design processes.</mark
+                  >
                 </p>
+
+                <p>
+                  The challenge was to build a flexible Design System that
+                  could:
+                </p>
+                <ol>
+                  <li>
+                    <mark>Standardize components </mark>across different Figma
+                    files.
+                  </li>
+                  <li>
+                    <mark>Support light & dark mode</mark> through a token-based
+                    system.
+                  </li>
+                  <li>
+                    <mark>Adapt DS to multiple brands</mark> for a white-label
+                    B2B product without requiring major redesigns.
+                  </li>
+                </ol>
               </div>
 
               <!-- PT GOALS -->
               <div class="col-md-8 layout-pt-md">
                 <h2 class="text-4xl sm:text-2xl fw-600">Goals & Objectives</h2>
 
-                <ul>
+                <ol>
                   <li>
-                    Improving systematization, not relying on one-off
-                    adjustments per game.
+                    Develop a comprehensive Design System, covering foundations
+                    (colors, typography, spacing…) and components (buttons,
+                    modals, forms…).
                   </li>
-                  <li>A scalable UI approach for future expansions.</li>
                   <li>
-                    flexible theming solution was needed to adapt UI elements
-                    dynamically without heavy rework.
+                    Establish a Token Design System to automate theme switching,
+                    support multi-branding, and enable light/dark mode
+                    seamlessly.
                   </li>
-                </ul>
+                  <li>
+                    Sync all UI designs in Figma with the DS to optimize design
+                    workflows and developer handoff.
+                  </li>
+                </ol>
               </div>
             </div>
           </div>
@@ -603,22 +603,17 @@
             <div class="row justify-content-center">
               <!-- Discover -->
               <div class="col-md-8">
-                <h2 class="text-4xl sm:text-2xl fw-600">Pre-Audit Analysis</h2>
-                <h5>1. UX Maturity Assessment</h5>
+                <h2 class="text-4xl sm:text-2xl fw-600">Building Components</h2>
+                <h5>1. Foundations</h5>
                 <ul>
                   <li>
                     The team was at an emerging UX maturity level (Stage 3),
                     meaning resources were limited for extensive research.
                   </li>
-                  <li>
-                    We prioritized a Heuristic Evaluation at both micro and meso
-                    levels to address usability and consistency, rather than
-                    conducting a full-scale UX audit with complex usability
-                    testing.
-                  </li>
+                  <li>spacing (8pt-grid)</li>
                 </ul>
 
-                <h5>2. Product Life Cycle Analysis</h5>
+                <h5>2. Components</h5>
                 <ul>
                   <li>
                     The product was in the Growth & Maturity stage (Stage 2 &
@@ -632,125 +627,23 @@
                   </li>
                 </ul>
 
-                <h5>3. Applying Heuristic Principles</h5>
+                <h5>3. Guidelines Specs & Anatomy</h5>
                 <p>
                   We discovered & applied Jakob Nielsen’s 10 Usability
                   Heuristics & 20 UX Laws to identify usability gaps and
-                  optimize the experience. 
+                  optimize the experience
                 </p>
               </div>
 
-              <!---------------------->
-              <!-- FLUID           -->
-              <!-- SLIDER           -->
-              <!--                  -->
-              <!---------------------->
-              <div class="layout-pt-xs col-md-12">
-                <div
-                  class="js-section-slider2 relative"
-                  data-slider-col="base-2 lg-2 md-1 sm-1"
-                  autoplay="3000"
-                  data-gap="24"
-                  data-loop
-                  data-center
-                  data-pagination
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/au-1.png"
-                        data-background="/img/case/audit/au-1.png"
-                      ></div>
-                    </div>
-
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/au-2.png"
-                        data-background="/img/case/audit/au-2.png"
-                      ></div>
-                    </div>
-
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/au-3.png"
-                        data-background="/img/case/audit/au-3.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/au-4.png"
-                        data-background="/img/case/audit/au-4.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/au-5.png"
-                        data-background="/img/case/audit/au-5.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/au-6.png"
-                        data-background="/img/case/audit/au-6.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/au-7.png"
-                        data-background="/img/case/audit/au-7.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/au-8.png"
-                        data-background="/img/case/audit/au-8.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/au-9.png"
-                        data-background="/img/case/audit/au-9.png"
-                      ></div>
-                    </div>
-                  </div>
-                  <!-- <div class="swiper-pagination"></div> -->
-                  <div class="js-prev u">
-                    <i
-                      class="icon str-width-xl size-md text-black"
-                      data-feather="arrow-left"
-                    ></i>
-                  </div>
-                  <div class="js-next u">
-                    <i
-                      class="icon str-width-xl size-md text-black"
-                      data-feather="arrow-right"
-                    ></i>
-                  </div>
-
-                  <div class="pagination -dark pb-4 mt-48 js-pagination"></div>
-                </div>
-              </div>
-
-              <!-- Style & Direction -->
+              <!-- token -->
 
               <div class="col-md-8 layout-pt-md">
-                <h2 class="text-4xl sm:text-2xl fw-600">
-                  Style & Art Direction
-                </h2>
+                <h2 class="text-4xl sm:text-2xl fw-600">Token Design</h2>
                 <p>
                   After conducting a competitive analysis of other game
                   providers, we identified that
                   <mark>
-                    dark themes and overlay with blur overlay were commonly used
+                    dark themes and overlay with blur filters were commonly used
                     across the industry.</mark
                   >
                 </p>
@@ -766,13 +659,16 @@
                   </li>
                 </ol>
               </div>
-               <!-- compare -->
-               <div class="layout-pt-xs col-md-9">
+              <!-- compare -->
+              <div class="layout-pt-xs col-md-9">
                 <div class="img-comp-container">
                   <div class="img-comp-img" data-after="theme default">
                     <img src="/img/case/audit/style1.png" />
                   </div>
-                  <div class="img-comp-img img-comp-overlay" data-before="theme sea">
+                  <div
+                    class="img-comp-img img-comp-overlay"
+                    data-before="theme sea"
+                  >
                     <img src="/img/case/audit/style2.png" />
                   </div>
                 </div>
@@ -782,204 +678,6 @@
                   New UI Design Style after audit with flexible theme by token
                   color
                 </p>
-              </div>
-
-              <!-- Discover -->
-              <div class="col-md-8 layout-pt-md">
-                <h2 class="text-4xl sm:text-2xl fw-600">Heuristic Proposal</h2>
-                <h5>
-                  1. Micro-Level Improvements (Component-Level Enhancements)
-                </h5>
-                <ul>
-                  <li>
-                    Maintaining familiar industry component patterns like
-                    datepicker, reducing the need for users to relearn
-                    interactions.
-                  </li>
-                  <li>
-                    Implemented a design token system to allow dynamic theme
-                    adaptation per game.
-                  </li>
-                  <li>
-                    Refined visual hierarchy and spacing for improved
-                    readability and usability. On mobile, key interactions were
-                    shifted to a bottom sheet for a unified, intuitive
-                    experience.
-                  </li>
-                </ul>
-              </div>
-
-              <!-- compare -->
-              <div class="layout-pt-xs col-md-9">
-                <div class="img-comp-container">
-                  <div class="img-comp-img">
-                    <img src="/img/case/audit/his-new.png" />
-                  </div>
-                  <div class="img-comp-img img-comp-overlay">
-                    <img src="/img/case/audit/his-old.png" />
-                  </div>
-                </div>
-                <p
-                  class="text-base text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
-                >
-                  Old vs New Design in History Template with redesigned
-                  components.
-                </p>
-              </div>
-              <!-- img-fit -->
-              <div
-                class="layout-pt-xs col-md-9"
-                data-anim="img-up cover-light-1 "
-              >
-                <img
-                  data-enlargable
-                  class="img-fluid"
-                  src="img/case/audit/newau-4.png"
-                />
-                <img
-                  data-enlargable
-                  class="img-fluid mt-32"
-                  src="img/case/audit/newau-5.png"
-                />
-                <img
-                  data-enlargable
-                  class="img-fluid mt-32"
-                  src="img/case/audit/newau-6.png"
-                />
-                <p
-                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
-                >
-                  Other UIs on Mobile after Design Audit
-                </p>
-              </div>
-
-              <div class="col-md-8">
-                <h5>2. Meso-Level Improvements (Flow UX Enhancements)</h5>
-                <p>
-                  We made sound controls instantly accessible, eliminating extra
-                  steps. Game details were restructured into three sticky
-                  sections for effortless navigation. The date picker was
-                  arranged and formatted to match East Asian reading habits,
-                  making interactions feel natural.
-                </p>
-              </div>
-
-              <!-- img-fit -->
-              <div
-                class="layout-pt-xs col-md-9"
-                data-anim="img-up cover-light-1 "
-              >
-                <img
-                  data-enlargable
-                  class="img-fluid"
-                  src="img/case/audit/newau-3.png"
-                />
-                <img
-                  data-enlargable
-                  class="img-fluid mt-32"
-                  src="img/case/audit/newau-2.png"
-                />
-                <img
-                  data-enlargable
-                  class="img-fluid mt-32"
-                  src="img/case/audit/newau-1.png"
-                />
-                <p
-                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
-                >
-                  Other UIs on Web after Design Audit
-                </p>
-              </div>
-
-              <!---------------------->
-              <!-- FLUID           -->
-              <!-- SLIDER           -->
-              <!--                  -->
-              <!---------------------->
-              <div class="layout-pt-xs col-md-12">
-                <div
-                  class="js-section-slider2 relative"
-                  data-slider-col="base-2 lg-2 md-1 sm-1"
-                  autoplay="3000"
-                  data-gap="24"
-                  data-loop
-                  data-center
-                  data-pagination
-                >
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/newau-7.png"
-                        data-background="/img/case/audit/newau-7.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/newau-8.png"
-                        data-background="/img/case/audit/newau-8.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/newau-9.png"
-                        data-background="/img/case/audit/newau-9.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/newau-10.png"
-                        data-background="/img/case/audit/newau-10.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/newau-11.png"
-                        data-background="/img/case/audit/newau-11.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/newau-12.png"
-                        data-background="/img/case/audit/newau-12.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/newau-13.png"
-                        data-background="/img/case/audit/newau-13.png"
-                      ></div>
-                    </div>
-                    <div class="swiper-slide slider-slide">
-                      <div
-                        class="ratio ratio-16:9 bg-image swiper-lazy"
-                        data-enlargable="/img/case/audit/newau-14.png"
-                        data-background="/img/case/audit/newau-14.png"
-                      ></div>
-                    </div>
-                  </div>
-                  <!-- <div class="swiper-pagination"></div> -->
-                  <div class="js-prev u">
-                    <i
-                      class="icon str-width-xl size-md text-black"
-                      data-feather="arrow-left"
-                    ></i>
-                  </div>
-                  <div class="js-next u">
-                    <i
-                      class="icon str-width-xl size-md text-black"
-                      data-feather="arrow-right"
-                    ></i>
-                  </div>
-
-                  <div class="pagination -dark pb-4 mt-48 js-pagination"></div>
-                </div>
               </div>
             </div>
           </div>

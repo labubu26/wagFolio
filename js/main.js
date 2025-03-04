@@ -2517,10 +2517,15 @@ import modalUnlock from "./module/modalunlock.js";
     }
 
     button.addEventListener('click', () => {
+      observer.disconnect(); // Tắt Observer để tránh bị ghi đè
       gsap.to(scrollElement, {
         duration: duration(),
         ease: 'power2.inOut',
         scrollTo: 0,
+        onComplete: () => {
+          document.documentElement.style.scrollBehavior = "smooth"; // Bật lại smooth scroll
+          observer.observe(document.body, { childList: true, subtree: true }); // Bật lại observer
+        },
       });
     })
 
@@ -4075,7 +4080,15 @@ function stagerhover() {
   }
 }
 
+const observer = new MutationObserver(() => {
+  if (document.querySelector(".sticky-header")) {
+    document.documentElement.style.scrollBehavior = "smooth";
+  } else {
+    document.documentElement.style.scrollBehavior = "auto";
+  }
+});
 
+observer.observe(document.body, { childList: true, subtree: true });
 
 // block
 
