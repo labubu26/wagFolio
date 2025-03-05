@@ -6839,9 +6839,10 @@ img {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__img__inner {
-  transition: transform 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   transform: scale(1.025);
   transform-origin: center;
+  transition: transform 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__title {
