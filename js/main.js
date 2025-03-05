@@ -3293,7 +3293,7 @@ import modalUnlock from "./module/modalunlock.js";
         backgroundSize: 'contain',
         width: '100%', height: '100%',
         position: 'fixed',
-        zIndex: '10000',
+        zIndex: '2000',
         top: '0', left: '0',
         cursor: 'var(--cursorZoomOut)'
       }).click(function () {

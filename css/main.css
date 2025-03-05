@@ -6839,7 +6839,7 @@ img {
 }
 
 .portfolioCard.-type-1.-hover .portfolioCard__img__inner {
-  transition: transform 1.4s ease;
+  transition: transform 2.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   transform: scale(1.025);
   transform-origin: center;
 }
@@ -7431,8 +7431,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 13.75rem;
-  padding-bottom: 13.75rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 @media (max-width: 991px) {
