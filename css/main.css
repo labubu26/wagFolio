@@ -1047,7 +1047,7 @@ ul, ol
 }
 li{
   padding-left: 0;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
 }
 
 h1,
@@ -17237,6 +17237,10 @@ body.compensate-for-scrollbar {
 .casestudy p{
   margin-bottom: 1rem;
 }
+.casestudy p:has(+ ul),
+.casestudy p:has(+ ol) {
+  margin-bottom: 0.5rem;
+}
 .casestudy mark{
   background: linear-gradient(to left, var(--font-dark) 50%, #000 50%);
   -webkit-background-clip: text;
@@ -17270,6 +17274,33 @@ body.compensate-for-scrollbar {
   color:var(--bg-dark-3);
   margin-bottom: 0;
   font-weight: 500;
+}
+.casestudy .insight{
+  margin: 3rem 0 ;
+  padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: relative;
+}
+.casestudy .insight::after{
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  height: 12px;
+  width: 96%;
+  transform: translateX(-50%);
+  background:  rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 2px 2px;
+
+}
+.pros, .cons{
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+  border-top: 3px solid #04c57c;
+}
+.cons{
+  border-top-color: #d91b37;
 }
 @media (max-width: 767px) {
   .casestudy h5{

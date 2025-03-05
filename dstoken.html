@@ -330,7 +330,7 @@
                       <div class="col-md-8" data-split="lines">
                         <p class="js-info-item masthead__text">
                           Token DS for white-label product with dark theme &
-                          multi brands supported.
+                          brand customization.
                         </p>
                       </div>
                     </div>
@@ -351,17 +351,13 @@
         >
           <div class="col-lg-10 uiLab">
             <div class="img-wrap2">
-              <!-- compare -->
-              <div class="img-comp-container">
-                <div class="img-comp-img" data-after="After Audit">
-                  <img src="/img/case/audit/main-new.png" />
-                </div>
+              <!-- img 16:9 -->
+              <div data-parallax="0.5" class="ratio ratio-16:9">
                 <div
-                  class="img-comp-img img-comp-overlay"
-                  data-before="Before Audit"
-                >
-                  <img src="/img/case/audit/main-old.png" />
-                </div>
+                  data-parallax-target
+                  class="bg-image2 js-lazy"
+                  data-bg="img/case/ds/main.png"
+                ></div>
               </div>
             </div>
           </div>
@@ -423,8 +419,8 @@
                 Design System to ensure consistency, reduce duplication, and
                 improve scalability.
                 <mark
-                  >A token-based approach enabled light/dark mode and
-                  multi-brand support for our whitelabel B2B clients.</mark
+                  >A token-based approach enabled light/dark mode and brand
+                  customization for our whitelabel B2B clients.</mark
                 >
               </p>
             </div>
@@ -545,8 +541,8 @@
                     system.
                   </li>
                   <li>
-                    <mark>Adapt DS to multiple brands</mark> for a white-label
-                    B2B product without requiring major redesigns.
+                    <mark>Adapt DS to new brands</mark> for a white-label B2B
+                    product without requiring major redesigns.
                   </li>
                 </ol>
               </div>
@@ -563,7 +559,7 @@
                   </li>
                   <li>
                     Establish a Token Design System to automate theme switching,
-                    support multi-branding, and enable light/dark mode
+                    support Brand customization, and enable light/dark mode
                     seamlessly.
                   </li>
                   <li>
@@ -601,84 +597,513 @@
 
           <div class="container layout-pt-md">
             <div class="row justify-content-center">
-              <!-- Discover -->
-              <div class="col-md-8">
-                <h2 class="text-4xl sm:text-2xl fw-600">Building Components</h2>
-                <h5>1. Foundations</h5>
-                <ul>
-                  <li>
-                    The team was at an emerging UX maturity level (Stage 3),
-                    meaning resources were limited for extensive research.
-                  </li>
-                  <li>spacing (8pt-grid)</li>
-                </ul>
-
-                <h5>2. Components</h5>
-                <ul>
-                  <li>
-                    The product was in the Growth & Maturity stage (Stage 2 &
-                    3), requiring both brand consistency and expansion.
-                  </li>
-                  <li>
-                    Our solution needed to: strengthen brand recognition across
-                    all embedded UI elements. Improve usability and scalability
-                    for future expansions. Ensure a consistent experience,
-                    making the product more recognizable and easier to navigate.
-                  </li>
-                </ul>
-
-                <h5>3. Guidelines Specs & Anatomy</h5>
-                <p>
-                  We discovered & applied Jakob Nielsen’s 10 Usability
-                  Heuristics & 20 UX Laws to identify usability gaps and
-                  optimize the experience
-                </p>
-              </div>
-
               <!-- token -->
 
-              <div class="col-md-8 layout-pt-md">
-                <h2 class="text-4xl sm:text-2xl fw-600">Token Design</h2>
+              <div class="col-md-8">
+                <h2 class="text-4xl sm:text-2xl fw-600">Token Designs</h2>
+                <h5>1. Token Analysis</h5>
+
                 <p>
-                  After conducting a competitive analysis of other game
-                  providers, we identified that
-                  <mark>
-                    dark themes and overlay with blur filters were commonly used
-                    across the industry.</mark
-                  >
+                  Evaluation Criteria for Existing Design Systems (DS) Based on
+                  Project Needs
                 </p>
                 <ol>
                   <li>
-                    Maintaining Domain Consistency to avoid alienating users
-                    with a drastically different style, we aligned our UI
-                    aesthetics with industry standards.
+                    Light/Dark Mode Support: Is it supported, and how is it
+                    implemented?
                   </li>
                   <li>
-                    Implemented a design token color to allow dynamic theme
-                    adaptation per game.
+                    White-Label Adaptability: Can a new brand be applied
+                    automatically without manually reassigning tokens in the UI?
                   </li>
                 </ol>
-              </div>
-              <!-- compare -->
-              <div class="layout-pt-xs col-md-9">
-                <div class="img-comp-container">
-                  <div class="img-comp-img" data-after="theme default">
-                    <img src="/img/case/audit/style1.png" />
+                <!-- img-fit -->
+                <div class="layout-pt-md" data-anim="img-up cover-light-1 ">
+                  <img
+                    data-enlargable
+                    class="img-fluid"
+                    src="img/case/ds/ds-m.png"
+                  />
+                </div>
+                <h5>Material Design 3</h5>
+                <ol>
+                  <li>
+                    <mark>Ref Layer:</mark> Map to raw hex value, Functional
+                    Naming (Primary, Secondary, Tertiary, Error..)
+                  </li>
+                  <li>
+                    <mark>Sys Layer :</mark> Map to Ref layer Key in Light/Dark
+                    Mode, Brand-UI Naming (Primary, Surface, Outline,..)
+                  </li>
+                  <li>
+                    <mark>Comp Layer:</mark> Map to Sys layer Key, Component
+                    Naming (Button, FAB, Checkbox,...)
+                  </li>
+                </ol>
+
+                <div class="row x-gap-32">
+                  <div class="col-md-6">
+                    <div class="pros">
+                      <p class="text-black fw-600">PROS</p>
+                      <ul>
+                        <li>
+                          <mark>New Brand Adaptation:</mark> Update token raw
+                          values without altering key references, as keys in the
+                          Ref Layer follow a functional naming convention (e.g.,
+                          Primary/Secondary) rather than specific colors.
+                        </li>
+                        <li>
+                          <mark>Light/Dark Mode:</mark> Managed at the Sys
+                          Layer, switching modes updates key values while
+                          keeping everything else intact automatically.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div
-                    class="img-comp-img img-comp-overlay"
-                    data-before="theme sea"
-                  >
-                    <img src="/img/case/audit/style2.png" />
+                  <div class="col-md-6">
+                    <div class="cons">
+                      <p class="text-black fw-600">CONS</p>
+
+                      <ul>
+                        <li>
+                          Sys-level naming (e.g., primary, on-primary, surface,
+                          on-surface) can restrict design creativity during
+                          development by enforcing rigid structures, making
+                          usage and recall harder. MU3’s DS suits stable
+                          products with minimal design changes.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <p
-                  class="text-base text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
-                >
-                  New UI Design Style after audit with flexible theme by token
-                  color
+
+                <!-- img-fit -->
+                <div class="layout-pt-md" data-anim="img-up cover-light-1 ">
+                  <img
+                    data-enlargable
+                    class="img-fluid"
+                    src="img/case/ds/ds-ad.png"
+                  />
+                </div>
+                <h5>Adobe Spectrum</h5>
+                <ol>
+                  <li>
+                    <mark>Global Layer:</mark> Map to raw hex value, Color
+                    Naming (Blue, Red, Green,..)
+                  </li>
+                  <li>
+                    <mark>Alias Layer:</mark> Map to Global layer Key in
+                    Light/Dark Mode, Brand-UI Naming (Accent, Background,
+                    Text,..)
+                  </li>
+                  <li>
+                    <mark>Comp Layer:</mark> Map to Alias layer Key, Component
+                    Naming (Button, Toast, Text-field,...)
+                  </li>
+                </ol>
+
+                <div class="row x-gap-32">
+                  <div class="col-md-6">
+                    <div class="pros">
+                      <p class="text-black fw-600">PROS</p>
+                      <ul>
+                        <li>
+                          <mark>Light/Dark Mode:</mark> Managed at the Alias
+                          Layer, switching modes updates key values while alias
+                          keys are unchanged.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="cons">
+                      <p class="text-black fw-600">CONS</p>
+
+                      <ul>
+                        <li>
+                          <mark>New Brand Adaptation:</mark> Since the global
+                          layer uses color names (e.g., blue, red), updating a
+                          brand requires reassigning Alias layer values to new
+                          Global Layer keys. Dev remains unaffected, but
+                          designers must manually repick alias values in
+                          Light/Dark Mode.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- img-fit -->
+                <div class="layout-pt-md" data-anim="img-up cover-light-1 ">
+                  <img
+                    data-enlargable
+                    class="img-fluid"
+                    src="img/case/ds/ds-a.png"
+                  />
+                </div>
+                <h5>Atlassian</h5>
+                <ol>
+                  <li>
+                    <mark>Base Layer:</mark> Map to raw hex value, Color Naming
+                    (Purple, Red, blue,..)
+                  </li>
+                  <li>
+                    <mark>Semantic Layer:</mark> Map to Base layer Key in
+                    Light/Dark Mode, UI Naming (Text, Background, Border,
+                    Icon,..)
+                  </li>
+                </ol>
+
+                <div class="row x-gap-32">
+                  <div class="col-md-6">
+                    <div class="pros">
+                      <p class="text-black fw-600">PROS</p>
+                      <ul>
+                        <li>
+                          <mark>Light/Dark Mode:</mark> Managed at the Semantic
+                          Layer, switching modes updates key values while the
+                          keys are not affected, so the UI is stable.
+                        </li>
+                        <li>
+                          <mark>Semantic Naming:</mark> Naming based on UI
+                          elements (Text, Background, Border, Icon...) enhances
+                          flexibility and creativity for designers, removing
+                          restrictions on usage. This approach adapts well to
+                          both startup products and stable ones, ensuring
+                          greater design freedom.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="cons">
+                      <p class="text-black fw-600">CONS</p>
+
+                      <ul>
+                        <li>
+                          <mark>New Brand Adaptation:</mark> Since the base
+                          layer uses color names (e.g., blue, red), updating a
+                          brand requires reassigning Semantic layer values to
+                          new Base key colors.
+                        </li>
+                        <li>
+                          <mark>No Component Layer:</mark> Suitable for products
+                          with minimal component adjustments. However, without
+                          it, any UI component changes require manual changelogs
+                          and dev updates, instead of automated updates via the
+                          component layer in the JSON file.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="insight">
+                  <p class="text-black fw-600">📌 KEY INSIGHTS</p>
+                  <p>
+                    After evaluating leading Design Systems (DS) in the market,
+                    <mark
+                      >it’s clear that each system is tailored to optimize
+                      either efficiency or flexibility based on product
+                      needs.</mark
+                    >
+                  </p>
+                  <ul>
+                    <li>
+                      <mark>Structure:</mark> DS layers range from 2 to 3 levels
+                      (Global, Alias, Component)
+                    </li>
+                    <li>
+                      <mark>Naming Conventions:</mark>
+                      <ol>
+                        <li>
+                          Layer 1: Named by color properties (red10, green100,
+                          blue900) or functional brand/state (primary10,
+                          secondary20, error100).
+                        </li>
+                        <li>
+                          Layer 2: Named by UI function (text, background,
+                          border) or brand/state attributes (primary, info,
+                          warning).
+                        </li>
+                        <li>
+                          Layer 3: Named by specific components, following a
+                          prefix order from foundation base (color, elevation,
+                          font). Ex: button-primary-default-background-color or
+                          color-button-primary-default-background
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+
+                <h5 class="layout-pt-md">2. Our Solution for White-label DS</h5>
+
+                <!-- compare -->
+                <div class="layout-pt-xs">
+                  <div class="img-comp-container">
+                    <div class="img-comp-img" data-after="Brand B">
+                      <img src="/img/case/ds/ds-us2.png" />
+                    </div>
+                    <div
+                      class="img-comp-img img-comp-overlay"
+                      data-before="Brand A"
+                    >
+                      <img src="/img/case/ds/ds-us1.png" />
+                    </div>
+                  </div>
+                </div>
+
+                <ol class="mt-32">
+                  <li>
+                    <mark>Supporting brand customization</mark> by using
+                    Functional naming (e.g., Primary, Secondary) in Ref Layer
+                    avoids rearrangement of key token.
+                  </li>
+                  <li>
+                    <mark>Simply switching Light/Dark modes</mark> updates
+                    values while key tokens remain unchanged. Sys Layer naming
+                    as UI function for flexibility in design.
+                  </li>
+                  <li>
+                    <mark>No dev effort is needed for Component changes,</mark>
+                    as every changes syncs automatically via the Token JSON
+                    files when exported.
+                  </li>
+                </ol>
+
+                <!-- img-fit -->
+                <div class="layout-pt-xs" data-anim="img-up cover-light-1 ">
+                  <img
+                    data-enlargable
+                    class="img-fluid"
+                    src="img/case/ds/token-structure.png"
+                  />
+                  <p
+                    class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                  >
+                    Our Token Structure JSON File
+                  </p>
+                </div>
+
+                <!---------------------->
+                <!-- FLUID           -->
+                <!-- SLIDER           -->
+                <!--                  -->
+                <!---------------------->
+                <div class="layout-pt-xs col-md-12">
+                  <div
+                    class="js-section-slider2 relative"
+                    data-slider-col="base-1 lg-1 md-1 sm-1"
+                    autoplay="6000"
+                    data-gap="24"
+                    data-center
+                    data-loop
+                    data-pagination
+                  >
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide slider-slide">
+                        <div
+                          class="ratio ratio-16:9 bg-image swiper-lazy"
+                          data-enlargable="/img/case/ds/token1.png"
+                          data-background="/img/case/ds/token1.png"
+                        ></div>
+                      </div>
+
+                      <div class="swiper-slide slider-slide">
+                        <div
+                          class="ratio ratio-16:9 bg-image swiper-lazy"
+                          data-enlargable="/img/case/ds/token2.png"
+                          data-background="/img/case/ds/token2.png"
+                        ></div>
+                      </div>
+
+                      <div class="swiper-slide slider-slide">
+                        <div
+                          class="ratio ratio-16:9 bg-image swiper-lazy"
+                          data-enlargable="/img/case/ds/token3.png"
+                          data-background="/img/case/ds/token3.png"
+                        ></div>
+                      </div>
+                      <div class="swiper-slide slider-slide">
+                        <div
+                          class="ratio ratio-16:9 bg-image swiper-lazy"
+                          data-enlargable="/img/case/ds/token4.png"
+                          data-background="/img/case/ds/token4.png"
+                        ></div>
+                      </div>
+                      <div class="swiper-slide slider-slide">
+                        <div
+                          class="ratio ratio-16:9 bg-image swiper-lazy"
+                          data-enlargable="/img/case/ds/token5.png"
+                          data-background="/img/case/ds/token5.png"
+                        ></div>
+                      </div>
+                      <div class="swiper-slide slider-slide">
+                        <div
+                          class="ratio ratio-16:9 bg-image swiper-lazy"
+                          data-enlargable="/img/case/ds/token6.png"
+                          data-background="/img/case/ds/token6.png"
+                        ></div>
+                      </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="js-prev u">
+                      <i
+                        class="icon str-width-xl size-md text-black"
+                        data-feather="arrow-left"
+                      ></i>
+                    </div>
+                    <div class="js-next u">
+                      <i
+                        class="icon str-width-xl size-md text-black"
+                        data-feather="arrow-right"
+                      ></i>
+                    </div>
+
+                    <div
+                      class="pagination -dark pb-4 mt-48 js-pagination"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- component -->
+              <div class="col-md-8 layout-pt-md">
+                <h2 class="text-4xl sm:text-2xl fw-600">Building Components</h2>
+                <h5>1. Foundations</h5>
+                <p>
+                  Established core elements like typography, color, 8pt Grid -
+                  spacing, and elevation to ensure consistency and flexibility
+                  across the system. This also included defining design tokens
+                  to support light/dark mode and Brand customization.
                 </p>
               </div>
+
+              <!-- img-fit -->
+              <div
+                class="col-md-9 layout-pt-xs"
+                data-anim="img-up cover-light-1 "
+              >
+                <img
+                  data-enlargable
+                  class="img-fluid"
+                  src="img/case/ds/comp-color.png"
+                />
+              </div>
+
+              <!-- img-fit -->
+              <div
+                class="col-md-9 layout-pt-xs"
+                data-anim="img-up cover-light-1 "
+              >
+                <img
+                  data-enlargable
+                  class="img-fluid"
+                  src="img/case/ds/comp-typo.png"
+                />
+              </div>
+
+              <!-- img-fit -->
+              <div
+                class="col-md-9 layout-pt-xs"
+                data-anim="img-up cover-light-1 "
+              >
+                <img
+                  data-enlargable
+                  class="img-fluid"
+                  src="img/case/ds/comp-icon.png"
+                />
+              </div>
+
+              <!-- img-fit -->
+              <div
+                class="col-md-9 layout-pt-xs"
+                data-anim="img-up cover-light-1 "
+              >
+                <img
+                  data-enlargable
+                  class="img-fluid"
+                  src="img/case/ds/comp-space.png"
+                />
+                <p
+                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                >
+                  Foudations System
+                </p>
+              </div>
+
+              <div class="col-md-8 layout-pt-md">
+                <h5>2. Components</h5>
+                <p>
+                  Built essential UI components by Atomic Design with variants
+                  for different states (default, hover, pressed, selected,
+                  disabled) and apply slot for flexible positioning:
+                </p>
+                <!-- img-fit -->
+              <div
+              class="pt-16"
+              data-anim="img-up cover-light-1 "
+            >
+              <img
+                data-enlargable
+                class="img-fluid"
+                src="img/case/ds/atomic.jpg"
+              />
+             
+            </div>
+                <h5><mark>List of Components</mark></h5>
+
+                <p>
+                  Buttons,Text fields, Dropdowns, Checkboxes, Radio buttons,
+                  Toggles, Date & Time Pickers ,Standard Modal, Confirmation
+                  Dialogs, Bottom Sheets,Breadcrumbs, Tabs,
+                  Pagination, Alerts, Toasts, Tooltips, Popovers, Avatars,
+                  Badges, Loading, Skeleton States, Progress Indicators.
+                </p>
+                <h5><mark> Guidelines Specs & Anatomy</mark></h5>
+                <p>
+                  Documented usage guidelines, anatomy, specs. Every component
+                  was structured with clear constraints and customization
+                  options, ensuring easy implementation without breaking
+                  consistency.
+                </p>
+              </div>
+
+              <!-- img-fit -->
+              <div
+                class="col-md-9 layout-pt-xs"
+                data-anim="img-up cover-light-1 "
+              >
+                <img
+                  data-enlargable
+                  class="img-fluid"
+                  src="img/case/ds/comp-button.png"
+                />
+                <p
+                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                >
+                  A Button Component Design
+                </p>
+              </div>
+              <!-- img-fit -->
+              <div
+                class="layout-pt-xs col-md-9"
+                data-anim="img-up cover-light-1 "
+              >
+                <img
+                  data-enlargable
+                  class="img-fluid"
+                  src="img/case/ds/comp-log.png"
+                />
+
+                <p
+                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
+                >
+                  Update component changes upon DS release.
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
@@ -709,58 +1134,26 @@
           <div class="container layout-pt-md">
             <div class="row justify-content-center">
               <div class="col-md-8">
-                <h5>Outcomes</h5>
+                <h5><mark>3x Faster Design Workflow</mark></h5>
                 <p>
-                  New games adopted the UI 40% faster, The design token system
-                  allowed seamless multi-theme customization.
+                  With the new Design System, designers can deliver UI
+                  components 3 times faster by eliminating redundant and
+                  unsynchronized work. No more recreating components manually.
                 </p>
+                <h5><mark>50% Reduction in Development Time</mark></h5>
                 <p>
-                  By systematizing the embedded UI, we improved efficiency,
-                  consistency, and adaptability, ensuring a smoother experience
-                  for both game developers and players.
+                  Developers no longer need to manually adjust colors, spacing,
+                  or typography based on lengthy changelogs. All updates are
+                  automatically synced via Token JSON files pushed to GitLab,
+                  significantly cutting down revision time.
                 </p>
-              </div>
-              <div class="col-md-8">
-                <h5>Takeaways</h5>
-
+                <h5><mark>Just 1 week for White-Label Adaptation</mark></h5>
                 <p>
-                  We foster a culture of knowledge sharing, where team members
-                  regularly exchange insights on various topics. After
-                  completing the design audit, I leveraged this culture by
-                  organizing an sharing workshop.
-                </p>
-              </div>
-
-              <!-- img-fit -->
-              <div
-                class="layout-pt-xs col-md-9"
-                data-anim="img-up cover-light-1 "
-              >
-                <img
-                  data-enlargable
-                  class="img-fluid"
-                  src="img/case/audit/share-1.png"
-                />
-                <img
-                  data-enlargable
-                  class="img-fluid mt-32"
-                  src="img/case/audit/share-2.png"
-                />
-
-                <p
-                  class="text-base sm:text-sm text-center italic mt-16 mb-32 sm:mb-24"
-                >
-                  Sharing moment, after a successful Design Audit with my Team.
-                </p>
-              </div>
-
-              <div class="col-md-8">
-                <p>
-                  Instead of my one-way presentation, I designed a quiz to
-                  engage the team, encouraging diverse perspectives and deeper
-                  discussions about the topic Design Audit. This not only
-                  strengthened our collective understanding of the product but
-                  also reinforced collaboration and a shared UX mindset.
+                  After launch, a client requested a brand adaptation. The
+                  default navy theme seamlessly switched to their green with
+                  minimal effort. In just one week, designers fine-tuned
+                  contrast and tokens, while developers avoided manual color
+                  updates—something impossible before the DS.
                 </p>
               </div>
             </div>
