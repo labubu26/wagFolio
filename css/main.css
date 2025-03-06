@@ -17257,6 +17257,9 @@ body.compensate-for-scrollbar {
 .casestudy h5{
   margin: 2rem 0 0.5rem;
 }
+.casestudy nav h5 {
+  margin: 0; /* hoặc giữ nguyên giá trị mặc định */
+}
 .casestudy .subscript{
   font-style: italic;
   text-align: center;
