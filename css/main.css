@@ -18057,7 +18057,7 @@ body.compensate-for-scrollbar {
 
 .uiLab {
   width: 100%;
-  min-height: 30vh;
+  /* min-height: 30vh; */
   padding: 32px 32px 40px 32px;
   background: linear-gradient(333deg, rgb(15 18 24), rgb(30, 33, 40));
   box-shadow: rgb(84 82 98 / 45%) 0px 98px 32px -81px;
@@ -19148,7 +19148,7 @@ input#deslizador::-ms-tooltip {
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px;
   border: 2px solid #e8e8e854;
-  min-height: 200px;
+  min-height: 20px;
 }
 
 .img-comp-img {
