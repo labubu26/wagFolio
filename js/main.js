@@ -2584,7 +2584,7 @@ import modalUnlock from "./module/modalunlock.js";
 
     if (!target) return;
 
-    const destination = document.querySelector('section:nth-of-type(5)');
+    const destination = document.querySelector('section:nth-of-type(4)');
 
     target.addEventListener('click', () => {
       gsap.to(window.document.documentElement, {
