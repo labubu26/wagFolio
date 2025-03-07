@@ -17924,7 +17924,7 @@ body.compensate-for-scrollbar {
   margin-bottom: 2rem;
   overflow: hidden;
   border-radius: 4px;
-  box-shadow: rgba(141, 141, 143, 0.2) 0px 8px 56px -16px;
+  /* box-shadow: rgba(141, 141, 143, 0.2) 0px 8px 56px -16px; */
 }
 
 .item .item-wrap .icon-search2 {
