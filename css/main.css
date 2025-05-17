@@ -6894,6 +6894,10 @@ img {
 }
 
 @media (max-width: 767px) {
+
+  .portfolioCard.-type-1 .portfolioCard__content{
+    display: none;
+  }
   .portfolioCard.-type-1 .portfolioCard__contentCover {
     display: none;
   }
